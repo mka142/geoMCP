@@ -113,7 +113,7 @@ def test_constraints_for_a_gmina_with_nature_mining_and_floods() -> None:
     assert gmina
     r = constraints.get_constraints(gmina)
     items = {i.key: i for i in r.items}
-    assert not r.gaps
+    assert all("SOPO" in g for g in r.gaps)  # landslides: PIG-PIB refuses queries (October 2026)
     assert any("Bystrzyc" in n for n in items["natura2000_habitats"].names)
     assert 0 < (items["flood_1pct"].share or 0) < 0.5 and items["mining_terrain"].count > 0
 

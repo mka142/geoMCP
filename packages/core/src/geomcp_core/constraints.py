@@ -88,7 +88,10 @@ VOIVODESHIPS = {
 }  # fmt: skip
 
 STATIC_TTL_S = 30 * 24 * 3600
+PARTIAL_TTL_S = 24 * 3600  # a result with gaps is kept a day, so a provider outage heals without a cache purge
 WARNING_TTL_S = 1800
+GDOS_COUNT = 200
+Group = tuple[list["Constraint"], list[str]]  # what a source group found, and what it could not answer
 
 
 class Constraint(BaseModel):
@@ -117,10 +120,30 @@ def _metric(geom: BaseGeometry) -> BaseGeometry:
 
 
 def _json(url: str, params: dict[str, Any], post: bool = False) -> Any:
+    """A JSON answer; ArcGIS reports failures as `{"error": ...}` with HTTP 200, which must not read as "none here"."""
     with http.client(120) as c:
         if post:  # polygons with many vertices exceed URL limits
-            return http.with_retries(lambda: http.json_of(c.post(url, data=params)))
-        return http.with_retries(lambda: http.json_of(c.get(url, params=params)))
+            r = http.with_retries(lambda: http.check(c.post(url, data=params)))
+        else:
+            r = http.with_retries(lambda: http.check(c.get(url, params=params)))
+    try:
+        payload = r.json()
+    except ValueError as e:
+        raise GeomcpError("source_error", f"{r.url.host} answered with something other than JSON.") from e
+    if isinstance(payload, dict) and "error" in payload:
+        error: Any = payload["error"]
+        message = error.get("message", str(error)) if isinstance(error, dict) else str(error)
+        raise GeomcpError("source_error", f"{r.url.host}: {message}")
+    return payload
+
+
+def _features(payload: dict[str, Any], label: str) -> list[dict[str, Any]]:
+    """The features of an ArcGIS or GeoServer answer, refusing a truncated one (its shares would be too small)."""
+    features: list[dict[str, Any]] = payload.get("features", [])
+    truncated = payload.get("exceededTransferLimit") or (payload.get("properties") or {}).get("exceededTransferLimit")
+    if truncated or len(features) >= GDOS_COUNT:
+        raise GeomcpError("source_error", f"{label}: more features than the service returns at once.")
+    return features
 
 
 def _overlap(
@@ -148,9 +171,10 @@ def _overlap(
     return round(share, 4), count, names[:10]
 
 
-def _gdos(area: Area, geom: BaseGeometry) -> list[Constraint]:
+def _gdos(area: Area, geom: BaseGeometry) -> Group:
     minx, miny, maxx, maxy = geom.bounds
     out: list[Constraint] = []
+    gaps: list[str] = []
     for key, (layer, label) in PROTECTED.items():
         params = {
             "service": "WFS",
@@ -160,9 +184,13 @@ def _gdos(area: Area, geom: BaseGeometry) -> list[Constraint]:
             "outputFormat": "application/json",
             "srsName": "EPSG:4326",
             "bbox": f"{miny},{minx},{maxy},{maxx},urn:ogc:def:crs:EPSG::4326",  # lat,lon order for this CRS URN
-            "count": 200,
+            "count": GDOS_COUNT,
         }
-        features = _json(GDOS, params).get("features", [])
+        try:
+            features = _features(_json(GDOS, params), label)
+        except GeomcpError as e:
+            gaps.append(f"{label}: {e.message}")
+            continue
         share, count, names = _overlap(geom, features, ("nazwa", "kod"))
         out.append(
             Constraint(
@@ -176,13 +204,14 @@ def _gdos(area: Area, geom: BaseGeometry) -> list[Constraint]:
                 licence="public data (GDOŚ)",
             )
         )
-    return out
+    return out, gaps
 
 
-def _pig(area: Area, geom: BaseGeometry) -> list[Constraint]:
+def _pig(area: Area, geom: BaseGeometry) -> Group:
     minx, miny, maxx, maxy = geom.bounds
     envelope = {"xmin": minx, "ymin": miny, "xmax": maxx, "ymax": maxy, "spatialReference": {"wkid": 4326}}
     out: list[Constraint] = []
+    gaps: list[str] = []
     for key, (path, label, fields) in GEOLOGY.items():
         params = {
             "geometry": json.dumps(envelope),
@@ -194,7 +223,11 @@ def _pig(area: Area, geom: BaseGeometry) -> list[Constraint]:
             "outSR": 4326,
             "f": "geojson",
         }
-        features = _json(f"{PIG}/{path}/query", params).get("features", [])
+        try:
+            features = _features(_json(f"{PIG}/{path}/query", params), label)
+        except GeomcpError as e:  # the SOPO landslide layers refuse queries (October 2026): a gap, not "none"
+            gaps.append(f"{label}: {e.message}")
+            continue
         share, count, names = _overlap(geom, features, fields)
         out.append(
             Constraint(
@@ -210,15 +243,19 @@ def _pig(area: Area, geom: BaseGeometry) -> list[Constraint]:
         )
     hull = geom.convex_hull
     ring = [list(p) for p in hull.exterior.coords] if isinstance(hull, Polygon) else []
-    stats = _json(
-        EGMS,
-        {
-            "geometry": json.dumps({"rings": [ring], "spatialReference": {"wkid": 4326}}),
-            "geometryType": "esriGeometryPolygon",
-            "f": "json",
-        },
-        post=True,
-    ).get("statistics", [{}])[0]
+    try:
+        stats = _json(
+            EGMS,
+            {
+                "geometry": json.dumps({"rings": [ring], "spatialReference": {"wkid": 4326}}),
+                "geometryType": "esriGeometryPolygon",
+                "f": "json",
+            },
+            post=True,
+        ).get("statistics", [{}])[0]
+    except GeomcpError as e:
+        gaps.append(f"ground motion (EGMS): {e.message}")
+        stats = {}
     if stats.get("count"):
         out.append(
             Constraint(
@@ -231,7 +268,7 @@ def _pig(area: Area, geom: BaseGeometry) -> list[Constraint]:
                 licence="Copernicus open data",
             )
         )
-    return out
+    return out, gaps
 
 
 def flood_layers(capabilities_xml: str) -> str:
@@ -306,22 +343,28 @@ def _flood_share(geom: BaseGeometry, service: str) -> float:
     return round(flooded / inside, 4) if inside else 0.0
 
 
-def _flood(area: Area, geom: BaseGeometry) -> list[Constraint]:
+def _flood(area: Area, geom: BaseGeometry) -> Group:
     if area.area_km2 > FLOOD_MAX_KM2:
         raise GeomcpError("area_too_large", f"Flood zones are computed for areas up to {FLOOD_MAX_KM2:.0f} km².")
     out: list[Constraint] = []
+    gaps: list[str] = []
     for key, (service, label) in FLOOD_SCENARIOS.items():
+        try:
+            share = _flood_share(geom, service)
+        except (GeomcpError, httpx.HTTPStatusError) as e:
+            gaps.append(f"{label}: {getattr(e, 'message', str(e))}")
+            continue
         out.append(
             Constraint(
                 key=key,
                 category="flood",
                 label=label,
-                share=_flood_share(geom, service),
+                share=share,
                 source="ISOK flood hazard maps (Wody Polskie)",
                 licence="public data (Wody Polskie)",
             )
         )
-    return out
+    return out, gaps
 
 
 NOISE_WMS = "https://iip.ekoportal.gov.pl/geoserver/wms"
@@ -357,7 +400,7 @@ def _band_style(layer: str) -> str:
     )
 
 
-def _noise(area: Area, geom: BaseGeometry) -> list[Constraint]:
+def _noise(area: Area, geom: BaseGeometry) -> Group:
     """Share of the area at Lden of 55 dB and more (annoyance) and 65 dB and more (health risk) per source."""
     from rasterio.features import geometry_mask
     from rasterio.transform import from_bounds
@@ -397,7 +440,7 @@ def _noise(area: Area, geom: BaseGeometry) -> list[Constraint]:
                 source="GIOŚ strategic noise maps 2017 (round 3)", licence="CC-BY-4.0 (GIOŚ)",
             )
         )  # fmt: skip
-    return out
+    return out, []
 
 
 IUNG = "https://susza.iung.pulawy.pl/wykazy/{year},{terc}/"
@@ -523,9 +566,9 @@ def get_constraints(area_id: str) -> ConstraintsResult:
     items: list[Constraint] = []
     gaps: list[str] = []
     notices: list[str] = []
-    static = cache.get("constraints", key)
+    static: dict[str, list[Any]] | None = cache.get("constraints", key)
     if static is None:
-        static = []
+        static = {"items": [], "gaps": []}
         with ThreadPoolExecutor(max_workers=4) as pool:
             futures = {
                 name_: pool.submit(fn, area, geom)
@@ -533,14 +576,17 @@ def get_constraints(area_id: str) -> ConstraintsResult:
             }
             for group, fut in futures.items():
                 try:
-                    static.extend(c.model_dump(mode="json") for c in fut.result())
+                    found, missing = fut.result()
+                    static["items"].extend(c.model_dump(mode="json") for c in found)
+                    static["gaps"].extend(f"{group}: {m}" for m in missing)
                 except GeomcpError as e:
-                    gaps.append(f"{group}: {e.message}")
+                    static["gaps"].append(f"{group}: {e.message}")
                 except httpx.HTTPStatusError as e:  # one provider changing its API must not sink the others
-                    gaps.append(f"{group}: {e.request.url.host} answered HTTP {e.response.status_code}")
-        if not gaps:
-            cache.put("constraints", key, static, STATIC_TTL_S)
-    items.extend(Constraint.model_validate(c) for c in static)
+                    static["gaps"].append(f"{group}: {e.request.url.host} answered HTTP {e.response.status_code}")
+        # a partial answer is cached as partial (its gaps travel with it) and expires soon
+        cache.put("constraints", key, static, PARTIAL_TTL_S if static["gaps"] else STATIC_TTL_S)
+    items.extend(Constraint.model_validate(c) for c in static["items"])
+    gaps.extend(static["gaps"])
     try:
         voivodeship = VOIVODESHIPS[terc[:2]]
         items.extend(_warnings(area, terc, voivodeship))

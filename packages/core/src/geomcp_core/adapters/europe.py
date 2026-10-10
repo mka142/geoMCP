@@ -308,6 +308,10 @@ class CorineAdapter(_Facts):
                     payload: dict[str, Any] = http.with_retries(
                         lambda u=url, p=params: http.json_of(client.post(u, data=p))
                     )
+                    if "error" in payload or payload.get("exceededTransferLimit"):  # ArcGIS answers 200 either way
+                        raise GeomcpError(
+                            "source_error", f"CORINE {year}: {payload.get('error') or 'truncated answer'}"
+                        )
                     groups: dict[str, float] = {}
                     for f in payload.get("features", []):
                         group = _clc_group(str(f["properties"].get(field) or ""))

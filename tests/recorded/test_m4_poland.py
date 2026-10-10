@@ -34,7 +34,9 @@ def test_get_statistics_compares_the_gmina_with_higher_units() -> None:
 def test_flood_zones_on_the_odra_floodplain() -> None:
     r = constraints.get_constraints(KOZANOW)
     shares = {i.key: i.share for i in r.items if i.category == "flood"}
-    assert not r.gaps
+    # the PIG-PIB landslide layers refuse queries ("operation is not supported"): reported, never read as "none"
+    assert all(g.startswith("geology: ") and "SOPO" in g for g in r.gaps) and len(r.gaps) == 2
+    assert not any(i.key.startswith("landslide") for i in r.items)
     assert 0 < (shares["flood_10pct"] or 0) <= (shares["flood_1pct"] or 0) <= (shares["flood_02pct"] or 0) <= 1
 
 
