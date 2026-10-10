@@ -1,0 +1,253 @@
+interactions:
+- request:
+    body: <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ns="http://CIS/BIR/PUBL/2014/07"
+      xmlns:dat="http://CIS/BIR/PUBL/2014/07/DataContract"><soap:Header xmlns:wsa="http://www.w3.org/2005/08/addressing"><wsa:To>https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc</wsa:To><wsa:Action>http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/Zaloguj</wsa:Action></soap:Header><soap:Body><ns:Zaloguj><ns:pKluczUzytkownika>abcde12345abcde12345</ns:pKluczUzytkownika></ns:Zaloguj></soap:Body></soap:Envelope>
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '530'
+      content-type:
+      - application/soap+xml; charset=utf-8
+      host:
+      - wyszukiwarkaregontest.stat.gov.pl
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: POST
+    uri: https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc
+  response:
+    body:
+      string: "\r\n--uuid:f7958d02-86b1-4c31-a811-f095ba4a5485+id=376173\r\nContent-ID:
+        <http://tempuri.org/0>\r\nContent-Transfer-Encoding: 8bit\r\nContent-Type:
+        application/xop+xml;charset=utf-8;type=\"application/soap+xml\"\r\n\r\n<s:Envelope
+        xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a=\"http://www.w3.org/2005/08/addressing\"><s:Header><a:Action
+        s:mustUnderstand=\"1\">http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/ZalogujResponse</a:Action></s:Header><s:Body><ZalogujResponse
+        xmlns=\"http://CIS/BIR/PUBL/2014/07\"><ZalogujResult>3e9bx2hhue76gy5e688x</ZalogujResult></ZalogujResponse></s:Body></s:Envelope>\r\n--uuid:f7958d02-86b1-4c31-a811-f095ba4a5485+id=376173--\r\n"
+    headers:
+      cache-control:
+      - private,no-cache, no-store, max-age=0, must-revalidate
+      content-length:
+      - '650'
+      content-security-policy:
+      - default-src 'self'
+      content-type:
+      - multipart/related; type="application/xop+xml";start="<http://tempuri.org/0>";boundary="uuid:f7958d02-86b1-4c31-a811-f095ba4a5485+id=376173";start-info="application/soap+xml"
+      date:
+      - Sat, 10 Oct 2026 15:40:25 GMT
+      mime-version:
+      - '1.0'
+      pragma:
+      - no-cache
+      server:
+      - Microsoft-IIS/7.5
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      - max-age=15552000
+      x-aspnet-version:
+      - 2.0.50727
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - deny
+    status:
+      code: 200
+      message: OK
+- request:
+    body: <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ns="http://CIS/BIR/PUBL/2014/07"
+      xmlns:dat="http://CIS/BIR/PUBL/2014/07/DataContract"><soap:Header xmlns:wsa="http://www.w3.org/2005/08/addressing"><wsa:To>https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc</wsa:To><wsa:Action>http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DaneSzukajPodmioty</wsa:Action></soap:Header><soap:Body><ns:DaneSzukajPodmioty><ns:pParametryWyszukiwania><dat:Nip>5261040828</dat:Nip></ns:pParametryWyszukiwania></ns:DaneSzukajPodmioty></soap:Body></soap:Envelope>
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '582'
+      content-type:
+      - application/soap+xml; charset=utf-8
+      host:
+      - wyszukiwarkaregontest.stat.gov.pl
+      sid:
+      - 3e9bx2hhue76gy5e688x
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: POST
+    uri: https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc
+  response:
+    body:
+      string: "\r\n--uuid:f7958d02-86b1-4c31-a811-f095ba4a5485+id=376176\r\nContent-ID:
+        <http://tempuri.org/0>\r\nContent-Transfer-Encoding: 8bit\r\nContent-Type:
+        application/xop+xml;charset=utf-8;type=\"application/soap+xml\"\r\n\r\n<s:Envelope
+        xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a=\"http://www.w3.org/2005/08/addressing\"><s:Header><a:Action
+        s:mustUnderstand=\"1\">http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DaneSzukajPodmiotyResponse</a:Action></s:Header><s:Body><DaneSzukajPodmiotyResponse
+        xmlns=\"http://CIS/BIR/PUBL/2014/07\"><DaneSzukajPodmiotyResult>&lt;root&gt;&#xD;\n
+        \ &lt;dane&gt;&#xD;\n    &lt;Regon&gt;000331501&lt;/Regon&gt;&#xD;\n    &lt;Nip&gt;5261040828&lt;/Nip&gt;&#xD;\n
+        \   &lt;StatusNip /&gt;&#xD;\n    &lt;Nazwa&gt;G\u0141\xD3WNY URZ\u0104D STATYSTYCZNY&lt;/Nazwa&gt;&#xD;\n
+        \   &lt;Wojewodztwo&gt;MAZOWIECKIE&lt;/Wojewodztwo&gt;&#xD;\n    &lt;Powiat&gt;m.
+        st. Warszawa&lt;/Powiat&gt;&#xD;\n    &lt;Gmina&gt;\u015Ar\xF3dmie\u015Bcie&lt;/Gmina&gt;&#xD;\n
+        \   &lt;Miejscowosc&gt;Warszawa&lt;/Miejscowosc&gt;&#xD;\n    &lt;KodPocztowy&gt;00-925&lt;/KodPocztowy&gt;&#xD;\n
+        \   &lt;Ulica&gt;ul. Test-Krucza&lt;/Ulica&gt;&#xD;\n    &lt;NrNieruchomosci&gt;208&lt;/NrNieruchomosci&gt;&#xD;\n
+        \   &lt;NrLokalu /&gt;&#xD;\n    &lt;Typ&gt;P&lt;/Typ&gt;&#xD;\n    &lt;SilosID&gt;6&lt;/SilosID&gt;&#xD;\n
+        \   &lt;DataZakonczeniaDzialalnosci /&gt;&#xD;\n    &lt;MiejscowoscPoczty&gt;Warszawa&lt;/MiejscowoscPoczty&gt;&#xD;\n
+        \ &lt;/dane&gt;&#xD;\n&lt;/root&gt;</DaneSzukajPodmiotyResult></DaneSzukajPodmiotyResponse></s:Body></s:Envelope>\r\n--uuid:f7958d02-86b1-4c31-a811-f095ba4a5485+id=376176--\r\n"
+    headers:
+      cache-control:
+      - private,no-cache, no-store, max-age=0, must-revalidate
+      content-length:
+      - '1549'
+      content-security-policy:
+      - default-src 'self'
+      content-type:
+      - multipart/related; type="application/xop+xml";start="<http://tempuri.org/0>";boundary="uuid:f7958d02-86b1-4c31-a811-f095ba4a5485+id=376176";start-info="application/soap+xml"
+      date:
+      - Sat, 10 Oct 2026 15:40:26 GMT
+      mime-version:
+      - '1.0'
+      pragma:
+      - no-cache
+      server:
+      - Microsoft-IIS/7.5
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      - max-age=15552000
+      x-aspnet-version:
+      - 2.0.50727
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - deny
+    status:
+      code: 200
+      message: OK
+- request:
+    body: <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ns="http://CIS/BIR/PUBL/2014/07"
+      xmlns:dat="http://CIS/BIR/PUBL/2014/07/DataContract"><soap:Header xmlns:wsa="http://www.w3.org/2005/08/addressing"><wsa:To>https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc</wsa:To><wsa:Action>http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DanePobierzPelnyRaport</wsa:Action></soap:Header><soap:Body><ns:DanePobierzPelnyRaport><ns:pRegon>000331501</ns:pRegon><ns:pNazwaRaportu>BIR11OsPrawnaPkd</ns:pNazwaRaportu></ns:DanePobierzPelnyRaport></soap:Body></soap:Envelope>
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '595'
+      content-type:
+      - application/soap+xml; charset=utf-8
+      host:
+      - wyszukiwarkaregontest.stat.gov.pl
+      sid:
+      - 3e9bx2hhue76gy5e688x
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: POST
+    uri: https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc
+  response:
+    body:
+      string: "\r\n--uuid:f7958d02-86b1-4c31-a811-f095ba4a5485+id=376179\r\nContent-ID:
+        <http://tempuri.org/0>\r\nContent-Transfer-Encoding: 8bit\r\nContent-Type:
+        application/xop+xml;charset=utf-8;type=\"application/soap+xml\"\r\n\r\n<s:Envelope
+        xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a=\"http://www.w3.org/2005/08/addressing\"><s:Header><a:Action
+        s:mustUnderstand=\"1\">http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DanePobierzPelnyRaportResponse</a:Action></s:Header><s:Body><DanePobierzPelnyRaportResponse
+        xmlns=\"http://CIS/BIR/PUBL/2014/07\"><DanePobierzPelnyRaportResult>&lt;root&gt;&#xD;\n
+        \ &lt;dane&gt;&#xD;\n    &lt;praw_pkdKod&gt;8411Z&lt;/praw_pkdKod&gt;&#xD;\n
+        \   &lt;praw_pkdNazwa&gt;KIEROWANIE PODSTAWOWYMI RODZAJAMI DZIA\u0141ALNO\u015ACI
+        PUBLICZNEJ&lt;/praw_pkdNazwa&gt;&#xD;\n    &lt;praw_pkdPrzewazajace&gt;1&lt;/praw_pkdPrzewazajace&gt;&#xD;\n
+        \ &lt;/dane&gt;&#xD;\n&lt;/root&gt;</DanePobierzPelnyRaportResult></DanePobierzPelnyRaportResponse></s:Body></s:Envelope>\r\n--uuid:f7958d02-86b1-4c31-a811-f095ba4a5485+id=376179--\r\n"
+    headers:
+      cache-control:
+      - private,no-cache, no-store, max-age=0, must-revalidate
+      content-length:
+      - '1011'
+      content-security-policy:
+      - default-src 'self'
+      content-type:
+      - multipart/related; type="application/xop+xml";start="<http://tempuri.org/0>";boundary="uuid:f7958d02-86b1-4c31-a811-f095ba4a5485+id=376179";start-info="application/soap+xml"
+      date:
+      - Sat, 10 Oct 2026 15:40:26 GMT
+      mime-version:
+      - '1.0'
+      pragma:
+      - no-cache
+      server:
+      - Microsoft-IIS/7.5
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      - max-age=15552000
+      x-aspnet-version:
+      - 2.0.50727
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - deny
+    status:
+      code: 200
+      message: OK
+- request:
+    body: <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ns="http://CIS/BIR/PUBL/2014/07"
+      xmlns:dat="http://CIS/BIR/PUBL/2014/07/DataContract"><soap:Header xmlns:wsa="http://www.w3.org/2005/08/addressing"><wsa:To>https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc</wsa:To><wsa:Action>http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DaneSzukajPodmioty</wsa:Action></soap:Header><soap:Body><ns:DaneSzukajPodmioty><ns:pParametryWyszukiwania><dat:Nip>1111111111</dat:Nip></ns:pParametryWyszukiwania></ns:DaneSzukajPodmioty></soap:Body></soap:Envelope>
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '582'
+      content-type:
+      - application/soap+xml; charset=utf-8
+      host:
+      - wyszukiwarkaregontest.stat.gov.pl
+      sid:
+      - 3e9bx2hhue76gy5e688x
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: POST
+    uri: https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc
+  response:
+    body:
+      string: "\r\n--uuid:f7958d02-86b1-4c31-a811-f095ba4a5485+id=376181\r\nContent-ID:
+        <http://tempuri.org/0>\r\nContent-Transfer-Encoding: 8bit\r\nContent-Type:
+        application/xop+xml;charset=utf-8;type=\"application/soap+xml\"\r\n\r\n<s:Envelope
+        xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a=\"http://www.w3.org/2005/08/addressing\"><s:Header><a:Action
+        s:mustUnderstand=\"1\">http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DaneSzukajPodmiotyResponse</a:Action></s:Header><s:Body><DaneSzukajPodmiotyResponse
+        xmlns=\"http://CIS/BIR/PUBL/2014/07\"><DaneSzukajPodmiotyResult>&lt;root&gt;&#xD;\n
+        \ &lt;dane&gt;&#xD;\n    &lt;ErrorCode&gt;4&lt;/ErrorCode&gt;&#xD;\n    &lt;ErrorMessagePl&gt;Nie
+        znaleziono podmiotu dla podanych kryteri\xF3w wyszukiwania.&lt;/ErrorMessagePl&gt;&#xD;\n
+        \   &lt;ErrorMessageEn&gt;No data found for the specified search criteria.&lt;/ErrorMessageEn&gt;&#xD;\n
+        \   &lt;Nip&gt;1111111111&lt;/Nip&gt;&#xD;\n  &lt;/dane&gt;&#xD;\n&lt;/root&gt;</DaneSzukajPodmiotyResult></DaneSzukajPodmiotyResponse></s:Body></s:Envelope>\r\n--uuid:f7958d02-86b1-4c31-a811-f095ba4a5485+id=376181--\r\n"
+    headers:
+      cache-control:
+      - private,no-cache, no-store, max-age=0, must-revalidate
+      content-length:
+      - '1065'
+      content-security-policy:
+      - default-src 'self'
+      content-type:
+      - multipart/related; type="application/xop+xml";start="<http://tempuri.org/0>";boundary="uuid:f7958d02-86b1-4c31-a811-f095ba4a5485+id=376181";start-info="application/soap+xml"
+      date:
+      - Sat, 10 Oct 2026 15:40:26 GMT
+      mime-version:
+      - '1.0'
+      pragma:
+      - no-cache
+      server:
+      - Microsoft-IIS/7.5
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      - max-age=15552000
+      x-aspnet-version:
+      - 2.0.50727
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - deny
+    status:
+      code: 200
+      message: OK
+version: 1

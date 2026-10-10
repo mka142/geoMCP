@@ -1,0 +1,104 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - dane.biznes.gov.pl
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: GET
+    uri: https://dane.biznes.gov.pl/api/ceidg/v3/firmy?limit=5&miasto=Smolec&pkd=4322Z&status=AKTYWNY
+  response:
+    body:
+      string: "{\"firmy\": [{\"id\": \"B88B6E6E-A676-430D-A08B-648C2F8EE5A5\", \"nazwa\":
+        \"REDACTED\", \"adresDzialalnosci\": {\"ulica\": \"REDACTED\", \"budynek\":
+        \"REDACTED\", \"miasto\": \"SMOLEC\", \"wojewodztwo\": \"dolno\u015Bl\u0105skie\",
+        \"powiat\": \"wroc\u0142awski\", \"gmina\": \"K\u0105ty Wroc\u0142awskie\",
+        \"kraj\": \"PL\", \"kod\": \"55-080\", \"terc\": \"0223045\", \"simc\": \"0875187\",
+        \"ulic\": \"06274\"}, \"wlasciciel\": {\"imie\": \"REDACTED\", \"nazwisko\":
+        \"REDACTED\", \"nip\": \"REDACTED\", \"regon\": \"REDACTED\"}, \"dataRozpoczecia\":
+        \"2026-01-15\", \"status\": \"AKTYWNY\", \"link\": \"https://dane.biznes.gov.pl/api/ceidg/v3/firma/B88B6E6E-A676-430D-A08B-648C2F8EE5A5\"},
+        {\"id\": \"825C8F27-9E9D-4AFA-BDE7-4284D6F3B2AD\", \"nazwa\": \"REDACTED\",
+        \"adresDzialalnosci\": {\"ulica\": \"REDACTED\", \"budynek\": \"REDACTED\",
+        \"lokal\": \"REDACTED\", \"miasto\": \"Smolec\", \"wojewodztwo\": \"DOLNO\u015AL\u0104SKIE\",
+        \"powiat\": \"wroc\u0142awski\", \"gmina\": \"K\u0105ty Wroc\u0142awskie\",
+        \"kraj\": \"PL\", \"kod\": \"55-080\", \"terc\": \"0223045\", \"simc\": \"0875187\",
+        \"ulic\": \"03554\"}, \"wlasciciel\": {\"imie\": \"REDACTED\", \"nazwisko\":
+        \"REDACTED\", \"nip\": \"REDACTED\", \"regon\": \"REDACTED\"}, \"dataRozpoczecia\":
+        \"2024-11-12\", \"status\": \"AKTYWNY\", \"link\": \"https://dane.biznes.gov.pl/api/ceidg/v3/firma/825C8F27-9E9D-4AFA-BDE7-4284D6F3B2AD\"},
+        {\"id\": \"37306E83-EF4D-489D-863C-42A3AA45CB67\", \"nazwa\": \"REDACTED\",
+        \"adresDzialalnosci\": {\"ulica\": \"REDACTED\", \"budynek\": \"REDACTED\",
+        \"lokal\": \"REDACTED\", \"miasto\": \"Smolec\", \"wojewodztwo\": \"DOLNO\u015AL\u0104SKIE\",
+        \"powiat\": \"wroc\u0142awski\", \"gmina\": \"K\u0105ty Wroc\u0142awskie\",
+        \"kraj\": \"PL\", \"kod\": \"55-080\", \"terc\": \"0223045\", \"simc\": \"0875187\",
+        \"ulic\": \"18403\"}, \"wlasciciel\": {\"imie\": \"REDACTED\", \"nazwisko\":
+        \"REDACTED\", \"nip\": \"REDACTED\", \"regon\": \"REDACTED\"}, \"dataRozpoczecia\":
+        \"2024-07-08\", \"status\": \"AKTYWNY\", \"link\": \"https://dane.biznes.gov.pl/api/ceidg/v3/firma/37306E83-EF4D-489D-863C-42A3AA45CB67\"},
+        {\"id\": \"6A05800A-ADCE-4441-B02C-857B5BD6B08B\", \"nazwa\": \"REDACTED\",
+        \"adresDzialalnosci\": {\"ulica\": \"REDACTED\", \"budynek\": \"REDACTED\",
+        \"lokal\": \"REDACTED\", \"miasto\": \"Smolec\", \"wojewodztwo\": \"DOLNO\u015AL\u0104SKIE\",
+        \"powiat\": \"wroc\u0142awski\", \"gmina\": \"K\u0105ty Wroc\u0142awskie\",
+        \"kraj\": \"PL\", \"kod\": \"55-080\", \"terc\": \"0223045\", \"simc\": \"0875187\",
+        \"ulic\": \"18511\"}, \"wlasciciel\": {\"imie\": \"REDACTED\", \"nazwisko\":
+        \"REDACTED\", \"nip\": \"REDACTED\", \"regon\": \"REDACTED\"}, \"dataRozpoczecia\":
+        \"2024-04-02\", \"status\": \"AKTYWNY\", \"link\": \"https://dane.biznes.gov.pl/api/ceidg/v3/firma/6A05800A-ADCE-4441-B02C-857B5BD6B08B\"},
+        {\"id\": \"4FB75C2B-281A-4361-85FD-48F191FEAC8A\", \"nazwa\": \"REDACTED\",
+        \"adresDzialalnosci\": {\"ulica\": \"REDACTED\", \"budynek\": \"REDACTED\",
+        \"miasto\": \"Smolec\", \"wojewodztwo\": \"DOLNO\u015AL\u0104SKIE\", \"powiat\":
+        \"wroc\u0142awski\", \"gmina\": \"K\u0105ty Wroc\u0142awskie\", \"kraj\":
+        \"PL\", \"kod\": \"55-080\", \"terc\": \"0223045\", \"simc\": \"0875187\",
+        \"ulic\": \"02387\"}, \"wlasciciel\": {\"imie\": \"REDACTED\", \"nazwisko\":
+        \"REDACTED\", \"nip\": \"REDACTED\", \"regon\": \"REDACTED\"}, \"dataRozpoczecia\":
+        \"2023-10-02\", \"status\": \"AKTYWNY\", \"link\": \"https://dane.biznes.gov.pl/api/ceidg/v3/firma/4FB75C2B-281A-4361-85FD-48F191FEAC8A\"}],
+        \"count\": 56, \"links\": {\"next\": \"https://dane.biznes.gov.pl/api/ceidg/v3/firmy?pkd=4322Z&miasto=Smolec&status=AKTYWNY&limit=5&page=1\",
+        \"prev\": \"https://dane.biznes.gov.pl/api/ceidg/v3/firmy?pkd=4322Z&miasto=Smolec&status=AKTYWNY&limit=5&page=0\",
+        \"self\": \"https://dane.biznes.gov.pl/api/ceidg/v3/firmy?pkd=4322Z&miasto=Smolec&status=AKTYWNY&limit=5&page=0\",
+        \"first\": \"https://dane.biznes.gov.pl/api/ceidg/v3/firmy?pkd=4322Z&miasto=Smolec&status=AKTYWNY&limit=5&page=0\",
+        \"last\": \"https://dane.biznes.gov.pl/api/ceidg/v3/firmy?pkd=4322Z&miasto=Smolec&status=AKTYWNY&limit=5&page=11\"},
+        \"properties\": {\"dc:title\": \"firmy\", \"dc:description\": \"Zwraca list\u0119
+        firm\", \"dc:language\": \"pl-PL\", \"schema:provider\": \"Ministerstwo Rozwoju
+        i Technologii\", \"schema:datePublished\": \"2026-10-10 09:09:58\"}}"
+    headers:
+      cache-control:
+      - max-age=0, no-cache, no-store
+      connection:
+      - keep-alive
+      content-length:
+      - '3619'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sat, 10 Oct 2026 19:09:58 GMT
+      expires:
+      - Sat, 10 Oct 2026 19:09:58 GMT
+      pragma:
+      - no-cache
+      server-timing:
+      - edge; dur=2
+      - origin; dur=592
+      - cdn-cache; desc=MISS
+      - ak_p; desc="1791659398115_35086693_167177377_59359_13334_34_46_-";dur=1
+      strict-transport-security:
+      - max-age=15552000
+      vary:
+      - Accept-Encoding
+      x-correlation-id:
+      - ed959762-dc10-4a79-a929-fc4b47eaaa87
+      x-gravitee-transaction-id:
+      - 303049f9-4640-4c98-b049-f94640cc98dd
+      x-rate-limit-limit:
+      - '1000'
+      x-rate-limit-remaining:
+      - '981'
+      x-rate-limit-reset:
+      - '1791661953701'
+    status:
+      code: 200
+      message: OK
+version: 1

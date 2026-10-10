@@ -1,0 +1,750 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - wl-api.mf.gov.pl
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: GET
+    uri: https://wl-api.mf.gov.pl/api/search/nip/5250000251?date=2026-10-09
+  response:
+    body:
+      string: "{\"result\":{\"subject\":{\"name\":\"POLSKIE KOLEJE PA\u0143STWOWE
+        SP\xD3\u0141KA AKCYJNA\",\"nip\":\"5250000251\",\"statusVat\":\"Czynny\",\"regon\":\"000126801\",\"pesel\":null,\"krs\":\"0000019193\",\"residenceAddress\":null,\"workingAddress\":\"ALEJE
+        JEROZOLIMSKIE 142A, 02-305 WARSZAWA\",\"representatives\":[],\"authorizedClerks\":[],\"partners\":[],\"registrationLegalDate\":\"1996-01-01\",\"registrationDenialBasis\":null,\"registrationDenialDate\":null,\"restorationBasis\":null,\"restorationDate\":null,\"removalBasis\":null,\"removalDate\":null,\"exemptionSmeDate\":null,\"accountNumbers\":[\"03102010260000180204792091\",\"64102010260000120204790608\",\"71102010260000190204790624\",\"79102010260000140204791986\",\"53113010170020071408200081\",\"20102010260000180205032539\",\"25102010260000160205032547\",\"49102010260000110205032554\",\"75102010260000140205032521\",\"36160014621802530840000001\",\"14124062921111001082672152\",\"11113010170020071408200061\",\"73114010100000313049001003\",\"59124062921111001082673670\",\"31102010260000120203829447\",\"79113010170020071408200001\",\"05113010170020071408200072\",\"34113010170020071408200035\",\"32113010170020071408200071\",\"06113010170020071408200054\",\"63124062921111001082673016\",\"52124062921111001082664678\",\"21102010260000170207222054\",\"09105000861000009151637023\",\"31105000861000009151637015\",\"90102010260000120207465885\",\"14102010260000140203485596\",\"44124062921111001082666568\",\"04124062921111001082672817\",\"39124062921111001082673351\",\"61113010170020071408200034\",\"17102010260000150203485687\",\"28102010260000150203485877\",\"11102010260000100203709334\",\"88124062921111001082665776\",\"88113010170020071408200033\",\"75102010260000120203485760\",\"95113010170020071408200004\",\"33113010170020071408200053\",\"39124062921111001082665688\",\"24102010260000100203709391\",\"17102010260000140204578441\",\"67102010260000130203485661\",\"15102010260000110203486016\",\"41113010170020071408200006\",\"84102010260000140203829462\",\"33124062921111001082674332\",\"96124062921111001082666311\",\"43113010170020071408200067\",\"86113010170020071408200069\",\"22102010260000130203485695\",\"16113010170020071408200068\",\"65113010170020071408200059\",\"67113000070020071408200078\",\"17113010170020071408200050\",\"38113010170020071408200060\",\"46102010260000170203485455\",\"03124062921111001082665851\",\"41114010100000313049001191\",\"08114011400000307569001035\",\"13102010260000190203709342\",\"22102010260000100203485745\",\"76102010260000150203829363\",\"48114010100000307569001003\",\"71113010170020071408200048\",\"75124062921111001082398775\",\"97124062921111001082665226\",\"81113010170020071408200062\",\"03114011080000307569001072\",\"70102010260000110203485802\",\"07124062921111001082674606\",\"23102010260000140203485919\",\"49113010170020071408200056\",\"04102010260000150203709409\",\"27113010170020071408200064\",\"72113010170020071408200030\",\"71124062921111001082398847\",\"45124062921111001082672758\",\"25113010170020071408200003\",\"26102010260000140203831864\",\"39124062921111001082674127\",\"36124062921111001082666324\",\"80124062921111001082668054\",\"20102010260000130203485828\",\"30113010170020071408200010\",\"03113010170020071408200011\",\"63124062921111001082671852\",\"27124062921111001082673276\",\"15124062921111001082673104\",\"40113000070020071408200079\",\"54102010260000140203486040\",\"63102010260000150203915733\",\"30102010260000120203485794\",\"26124062921111001082672615\",\"16124062921111001082665617\",\"60114010780000307569001033\",\"46102010260000100203485992\",\"51124062921111001082666151\",\"17102010260000120203485737\",\"58124062921111001082668256\",\"26102010260000140203829439\",\"33109028510000000130094171\",\"76113010170020071408200055\",\"77113010170020071408200037\",\"31102010260000150203829397\",\"98102010260000170203485489\",\"96124062921111001082665923\",\"35113010170020071408200017\",\"41124062921111001082672442\",\"44113010170020071408200049\",\"70124062921111001082673957\",\"20102010260000160203485778\",\"10124062921111001082672224\",\"75114010100000307569001002\",\"62102010260000120203485703\",\"74124062921111001082667871\",\"05124062921111001082673478\",\"09102010260000160203709367\",\"10102010260000190204304200\",\"93124062921111001082666656\",\"33124062921111001082671810\",\"85102010420000850202164721\",\"54114011240000307569001005\",\"51114010650000307569001031\",\"22124062921111001082666382\",\"49102010260000160203486032\",\"54114010100000352386001008\",\"89124062921111001082674488\",\"12113010170020071408200043\",\"38102010260000110203485893\",\"35124062921111001082674781\",\"70116022020000000230247668\",\"80124062921111001082665532\",\"84113010170020071408200008\",\"59102010260000140203485562\",\"56113010170020071408200027\",\"90102010260000140204426292\",\"13113000070020071408200080\",\"82124062921111001082665981\",\"97113010170020071408200065\",\"23102010260000170203485869\",\"98113000070020071408200005\",\"51102010260000150203485463\",\"64102010260000120203485570\",\"59124062921111001082672312\",\"83124062921111001082665284\",\"93124062921797001077807770\",\"03102010260000110203485844\",\"39124062921111001082671605\",\"55124062921111001082666467\",\"44102010260000180203486024\",\"09124062921111001082672048\",\"76102010260000120203829413\",\"84114010100000313049001193\",\"57113010170020071408200009\",\"78102010260000130203485851\",\"79102010260000160203829454\",\"73113010170020071408200012\",\"40124062921111001082666252\",\"98113010170020071408200047\",\"64113010170020071408200077\",\"82113010170020071408200044\",\"50113010170020071408200038\",\"40124062921111001082671490\",\"48113010170020071408200074\",\"81102010260000100203829421\",\"28113010170020071408200046\",\"52113010170020071408200002\",\"82124062921111001082669279\",\"59113010170020071408600001\",\"55113010170020071408200045\",\"87113010170020071408200051\",\"39113010170020071408200042\",\"10124062921111001082673582\",\"75113010170020071408200073\",\"50109028510000000130094156\",\"23113010170020071408200039\",\"45102010260000130203486057\",\"39124062921111001077807637\",\"35114010100000313049001008\",\"35102010260000190203485943\",\"54102010260000130203485604\",\"44124062921111001082674231\",\"22113010170020071408200057\",\"59113010170020071408200070\",\"67102010260000100203485711\",\"85102010260000160204426284\",\"41102010260000120203485984\",\"06102010260000120203485547\",\"07113010170020071408200036\",\"66113010170020071408200041\",\"92114010100000307569001181\",\"30124062921111001082672543\",\"20102010260000110202217651\",\"90124062921111001082666904\",\"60113010170020071408200052\",\"92113010170020071408200058\",\"89114010810000307569001004\",\"84124062921111001088921184\",\"74124062921978001077807695\",\"89124062921111001082666728\",\"46116022020000000244040918\",\"12102010260000170203485679\",\"93113010170020071408200040\",\"33102010260000100203485935\",\"14113010170020071408200007\",\"78102010260000100203485901\",\"14102010260000140203709375\",\"02124062921111001082666063\",\"33102010260000130203485885\",\"72124062921111001082665385\",\"03124062921111001082667985\",\"46114010100000313049001004\",\"62114010100000293182001006\",\"25102010260000140203485786\",\"84114010100000307569001228\",\"21124062921111001082671735\",\"06102010260000120205605870\",\"09102010260000130205605961\",\"76102010260000110205605920\",\"93102010260000130205605904\",\"02113000070020071408200084\",\"29113000070020071408200083\",\"56113000070020071408200082\",\"84102010260000180207536412\",\"59102010260000120206937793\",\"68124062921111001082665457\",\"45113000070020071408200086\",\"72113000070020071408200085\",\"07113000070020071408200091\",\"18113000070020071408200087\",\"34113000070020071408200090\",\"61113000070020071408200089\",\"77113000070020071408200092\",\"88113000070020071408200088\",\"82102010260000130203770377\",\"09102010260000160203485588\"],\"hasVirtualAccounts\":true},\"requestId\":\"re9Lw-98nl2j5\",\"requestDateTime\":\"09-10-2026
+        14:55:41\"}}"
+    headers:
+      access-control-allow-headers:
+      - access-control-allow-origin
+      access-control-allow-methods:
+      - GET,OPTIONS
+      cache-control:
+      - max-age=0
+      connection:
+      - keep-alive
+      content-type:
+      - application/json;charset=UTF-8
+      date:
+      - Fri, 09 Oct 2026 12:55:41 GMT
+      server:
+      - nginx
+      set-cookie:
+      - visid_incap_3092761=nwblFnh/QAyZoQsJrKMbHUzkyGoAAAAAQUIPAAAAAAAQtlbbRF1lkO/oP+dYZpMq;
+        expires=Fri, 08 Oct 2027 20:03:03 GMT; HttpOnly; path=/; Domain=.mf.gov.pl;
+        Secure; SameSite=None
+      - incap_ses_682_3092761=5DKwRhevpBx81RdUevN2CUzkyGoAAAAAUZqwgD1RfkQ1MbtXYrhphQ==;
+        path=/; Domain=.mf.gov.pl; Secure; SameSite=None
+      strict-transport-security:
+      - max-age=31536000
+      transfer-encoding:
+      - chunked
+      x-cdn:
+      - Imperva
+      x-iinfo:
+      - 47-29843498-29843449 PNNN RT(1791550541078 73) q(0 0 0 -1) r(1 1) U24
+    status:
+      code: 200
+      message: ''
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api-krs.ms.gov.pl
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: GET
+    uri: https://api-krs.ms.gov.pl/api/krs/OdpisAktualny/0000019193?rejestr=P&format=json
+  response:
+    body:
+      string: "{\n  \"odpis\": {\n    \"rodzaj\": \"Aktualny\",\n    \"naglowekA\":
+        {\n      \"rejestr\": \"RejP\",\n      \"numerKRS\": \"0000019193\",\n      \"dataCzasOdpisu\":
+        \"09.10.2026 14:55:41\",\n      \"stanZDnia\": \"08.10.2026\",\n      \"dataRejestracjiWKRS\":
+        \"11.06.2001\",\n      \"numerOstatniegoWpisu\": 216,\n      \"dataOstatniegoWpisu\":
+        \"08.10.2026\",\n      \"sygnaturaAktSprawyDotyczacejOstatniegoWpisu\": \"WA.XII
+        NS-REJ.KRS/62293/26/498\",\n      \"oznaczenieSaduDokonujacegoOstatniegoWpisu\":
+        \"S\u0104D REJONOWY DLA M.ST. WARSZAWY W WARSZAWIE, XII WYDZIA\u0141 GOSPODARCZY
+        KRAJOWEGO REJESTRU S\u0104DOWEGO\",\n      \"stanPozycji\": 1\n    },\n    \"dane\":
+        {\n      \"dzial1\": {\n        \"danePodmiotu\": {\n          \"formaPrawna\":
+        \"SP\xD3\u0141KA AKCYJNA\",\n          \"identyfikatory\": {\n            \"regon\":
+        \"00012680100000\",\n            \"nip\": \"5250000251\"\n          },\n          \"nazwa\":
+        \"POLSKIE KOLEJE PA\u0143STWOWE SP\xD3\u0141KA AKCYJNA\",\n          \"daneOWczesniejszejRejestracji\":
+        {\n            \"nazwaPoprzedniegoRejestru\": \"RHB\",\n            \"numerWPoprzednimRejestrze\":
+        \"63218\",\n            \"sadProwadzacyRejestr\": \"S\u0104D REJONOWY DLA
+        M. ST. WARSZAWY -S\u0104D GOSPODARCZY -XVI WYDZIA\u0141 REJESTROWY\"\n          },\n
+        \         \"czyProwadziDzialalnoscZInnymiPodmiotami\": false,\n          \"czyPosiadaStatusOPP\":
+        false\n        },\n        \"siedzibaIAdres\": {\n          \"siedziba\":
+        {\n            \"kraj\": \"POLSKA\",\n            \"wojewodztwo\": \"MAZOWIECKIE\",\n
+        \           \"powiat\": \"WARSZAWA\",\n            \"gmina\": \"WARSZAWA\",\n
+        \           \"miejscowosc\": \"WARSZAWA\"\n          },\n          \"adres\":
+        {\n            \"ulica\": \"ALEJE JEROZOLIMSKIE\",\n            \"nrDomu\":
+        \"142A\",\n            \"miejscowosc\": \"WARSZAWA\",\n            \"kodPocztowy\":
+        \"02-305\",\n            \"poczta\": \"WARSZAWA\",\n            \"kraj\":
+        \"POLSKA\"\n          },\n          \"adresStronyInternetowej\": \"WWW.PKP.PL\",\n
+        \         \"adresDoDoreczenElektronicznychWpisanyDoBAE\": \"AE:PL-45041-90153-DJGFJ-26\"\n
+        \       },\n        \"jednostkiTerenoweOddzialy\": [\n          {\n            \"nazwa\":
+        \"POLSKIE KOLEJE PA\u0143STWOWE SP\xD3\u0141KA AKCYJNA ODDZIA\u0141 GOSPODAROWANIA
+        NIERUCHOMO\u015ACIAMI W GDA\u0143SKU - PKP S.A. ODDZIA\u0141 GOSPODAROWANIA
+        NIERUCHOMO\u015ACIAMI W GDA\u0143SKU\",\n            \"siedziba\": {\n              \"kraj\":
+        \"POLSKA\",\n              \"wojewodztwo\": \"POMORSKIE\",\n              \"powiat\":
+        \"M. GDA\u0143SK\",\n              \"gmina\": \"M. GDA\u0143SK\",\n              \"miejscowosc\":
+        \"GDA\u0143SK\"\n            },\n            \"adres\": {\n              \"ulica\":
+        \"DYREKCYJNA\",\n              \"nrDomu\": \"2-4\",\n              \"miejscowosc\":
+        \"GDA\u0143SK\",\n              \"kodPocztowy\": \"80-852\",\n              \"poczta\":
+        \"GDA\u0143SK\",\n              \"kraj\": \"POLSKA\"\n            }\n          },\n
+        \         {\n            \"nazwa\": \"POLSKIE KOLEJE PA\u0143STWOWE SP\xD3\u0141KA
+        AKCYJNA ODDZIA\u0141 GOSPODAROWANIA NIERUCHOMO\u015ACIAMI W KATOWICACH - PKP
+        S.A. ODDZIA\u0141 GOSPODAROWANIA NIERUCHOMO\u015ACIAMI W KATOWICACH\",\n            \"siedziba\":
+        {\n              \"kraj\": \"POLSKA\",\n              \"wojewodztwo\": \"\u015AL\u0104SKIE\",\n
+        \             \"powiat\": \"KATOWICE\",\n              \"gmina\": \"KATOWICE\",\n
+        \             \"miejscowosc\": \"KATOWICE\"\n            },\n            \"adres\":
+        {\n              \"ulica\": \"UL. KONSTANTEGO DAMROTA\",\n              \"nrDomu\":
+        \"8\",\n              \"miejscowosc\": \"KATOWICE\",\n              \"kodPocztowy\":
+        \"40-022\",\n              \"poczta\": \"KATOWICE\",\n              \"kraj\":
+        \"POLSKA\"\n            }\n          },\n          {\n            \"nazwa\":
+        \"POLSKIE KOLEJE PA\u0143STWOWE SP\xD3\u0141KA AKCYJNA ODDZIA\u0141 GOSPODAROWANIA
+        NIERUCHOMO\u015ACIAMI W KRAKOWIE - PKP S.A. ODDZIA\u0141 GOSPODAROWANIA NIERUCHOMO\u015ACIAMI
+        W KRAKOWIE\",\n            \"siedziba\": {\n              \"kraj\": \"POLSKA\",\n
+        \             \"wojewodztwo\": \"MA\u0141OPOLSKIE\",\n              \"powiat\":
+        \"M. KRAK\xD3W\",\n              \"gmina\": \"M. KRAK\xD3W\",\n              \"miejscowosc\":
+        \"KRAK\xD3W\"\n            },\n            \"adres\": {\n              \"ulica\":
+        \"KAMIENNA\",\n              \"nrDomu\": \"8\",\n              \"miejscowosc\":
+        \"KRAK\xD3W\",\n              \"kodPocztowy\": \"30-001\",\n              \"poczta\":
+        \"KRAK\xD3W\",\n              \"kraj\": \"POLSKA\"\n            }\n          },\n
+        \         {\n            \"nazwa\": \"POLSKIE KOLEJE PA\u0143STWOWE SP\xD3\u0141KA
+        AKCYJNA ODDZIA\u0141 GOSPODAROWANIA NIERUCHOMO\u015ACIAMI W POZNANIU - PKP
+        S.A. ODDZIA\u0141 GOSPODAROWANIA NIERUCHOMO\u015ACIAMI W POZNANIU\",\n            \"siedziba\":
+        {\n              \"kraj\": \"POLSKA\",\n              \"wojewodztwo\": \"WIELKOPOLSKIE\",\n
+        \             \"powiat\": \"M. POZNA\u0143\",\n              \"gmina\": \"M.
+        POZNA\u0143\",\n              \"miejscowosc\": \"POZNA\u0143\"\n            },\n
+        \           \"adres\": {\n              \"ulica\": \"AL. NIEPODLEG\u0141O\u015ACI\",\n
+        \             \"nrDomu\": \"8\",\n              \"miejscowosc\": \"POZNA\u0143\",\n
+        \             \"kodPocztowy\": \"61-875\",\n              \"poczta\": \"POZNA\u0143\",\n
+        \             \"kraj\": \"POLSKA\"\n            }\n          },\n          {\n
+        \           \"nazwa\": \"POLSKIE KOLEJE PA\u0143STWOWE SP\xD3\u0141KA AKCYJNA
+        ODDZIA\u0141 GOSPODAROWANIA NIERUCHOMO\u015ACIAMI W WARSZAWIE - PKP S.A. ODDZIA\u0141
+        GOSPODAROWANIA NIERUCHOMO\u015ACIAMI W WARSZAWIE\",\n            \"siedziba\":
+        {\n              \"kraj\": \"POLSKA\",\n              \"wojewodztwo\": \"MAZOWIECKIE\",\n
+        \             \"powiat\": \"M.ST. WARSZAWA\",\n              \"gmina\": \"M.ST.
+        WARSZAWA\",\n              \"miejscowosc\": \"WARSZAWA\"\n            },\n
+        \           \"adres\": {\n              \"ulica\": \"ARMATNIA\",\n              \"nrDomu\":
+        \"14\",\n              \"miejscowosc\": \"WARSZAWA\",\n              \"kodPocztowy\":
+        \"01-246\",\n              \"poczta\": \"WARSZAWA\",\n              \"kraj\":
+        \"POLSKA\"\n            }\n          },\n          {\n            \"nazwa\":
+        \"POLSKIE KOLEJE PA\u0143STWOWE SP\xD3\u0141KA AKCYJNA ODDZIA\u0141 GOSPODAROWANIA
+        NIERUCHOMO\u015ACIAMI WE WROC\u0141AWIU - PKP S.A. ODDZIA\u0141 GOSPODAROWANIA
+        NIERUCHOMO\u015ACIAMI WE WROC\u0141AWIU\",\n            \"siedziba\": {\n
+        \             \"kraj\": \"POLSKA\",\n              \"wojewodztwo\": \"DOLNO\u015AL\u0104SKIE\",\n
+        \             \"powiat\": \"M. WROC\u0141AW\",\n              \"gmina\": \"M.
+        WROC\u0141AW\",\n              \"miejscowosc\": \"WROC\u0141AW\"\n            },\n
+        \           \"adres\": {\n              \"ulica\": \"JOANNIT\xD3W\",\n              \"nrDomu\":
+        \"13\",\n              \"miejscowosc\": \"WROC\u0141AW\",\n              \"kodPocztowy\":
+        \"50-525\",\n              \"poczta\": \"WROC\u0141AW\",\n              \"kraj\":
+        \"POLSKA\"\n            }\n          },\n          {\n            \"nazwa\":
+        \"\\\"PKP S.A. ODDZIA\u0141 INFRASTRUKTURA KOLEJOWA\\\" Z SIEDZIB\u0104 W
+        WARSZAWIE\",\n            \"siedziba\": {\n              \"kraj\": \"POLSKA\",\n
+        \             \"wojewodztwo\": \"MAZOWIECKIE\",\n              \"powiat\":
+        \"WARSZAWA\",\n              \"gmina\": \"WARSZAWA\",\n              \"miejscowosc\":
+        \"WARSZAWA\"\n            },\n            \"adres\": {\n              \"ulica\":
+        \"UL. SZCZ\u0118\u015ALIWICKA\",\n              \"nrDomu\": \"62\",\n              \"miejscowosc\":
+        \"WARSZAWA\",\n              \"kodPocztowy\": \"00-973\",\n              \"poczta\":
+        \"WARSZAWA\",\n              \"kraj\": \"POLSKA\"\n            }\n          },\n
+        \         {\n            \"nazwa\": \"PKP S.A.-ODDZIA\u0141 KOLEJOWA MEDYCYNA
+        PRACY W WARSZAWIE\",\n            \"siedziba\": {\n              \"kraj\":
+        \"POLSKA\",\n              \"wojewodztwo\": \"MAZOWIECKIE\",\n              \"powiat\":
+        \"WARSZAWA\",\n              \"gmina\": \"WARSZAWA\",\n              \"miejscowosc\":
+        \"WARSZAWA\"\n            },\n            \"adres\": {\n              \"ulica\":
+        \"ALEJE JEROZOLIMSKIE\",\n              \"nrDomu\": \"56 C\",\n              \"miejscowosc\":
+        \"WARSZAWA\",\n              \"kodPocztowy\": \"00-803\",\n              \"poczta\":
+        \"WARSZAWA\",\n              \"kraj\": \"POLSKA\"\n            }\n          }\n
+        \       ],\n        \"umowaStatut\": {\n          \"informacjaOZawarciuZmianieUmowyStatutu\":
+        [\n            {\n              \"zawarcieZmianaUmowyStatutu\": \"1 GRUDNIA
+        2000 R.,NOTARIUSZ KATARZYNA MARIA SZACHU\u0141OWICZ-DESZCZY\u0143SKA,KANCELARIA
+        NOTARIALNA W WARSZAWIE ,UL.MARSZA\u0141KOWSKA 53 M.22 ,00-676 WARSZAWA NR
+        REP.A 7781/2000 .\"\n            },\n            {\n              \"zawarcieZmianaUmowyStatutu\":
+        \"09.10.2001R. REPERTORIUM A NR 2028/2001, NOTARIUSZ MARZENA RADLI\u0143SKA,
+        KANCELARIA NOTARIALNA 02-094 WARSZAWA, UL. GR\xD3JECKA 53/57.\\nPAR. 4-ZMIANA,
+        TYTU\u0141 ROZDZIA\u0141U II-ZMIANA, PAR. 7 UST. 1-ZMIANA, M.4 PAR. 8 UST.
+        1-ZMIANA, PAR. 9 UST. 1-ZMIANA, PAR. 10 UST. 5-ZMIANA, TYTU\u0141 ROZDZIA\u0141U
+        IV-ZMIANA, PAR. 12-ZMIANA, PAR. 13 UST. 3-ZMIANA, PAR. 13 UST. 4-DODANY, PAR.
+        14 UST. 1-ZMIANA, UST. 2-ZMIANA, UST. 3 PKT 1-ZMIANA, PAR. 17 UST. 5 I 8-ZMIANA,
+        PAR. 22 UST. 1, UST.2 PKT 1,2,3 I 11-ZMIANA, PAR. 22 UST. 2 PKT 13-USUNI\u0118TY,
+        PAR. 22 UST. 2 DOTYCHCZASOWY PKT 14 OZNACZONY JAKO 13-ZMIANA, PAR. 24 UST.
+        3 PKT 3-ZMIANA, PAR. 25 UST. 1 I UST. 3-ZMIANA, PAR. 27 UST. 3 PKT 4-ZMIANA,
+        PAR 28 UST. 2 I UST. 3-ZMIANA, PAR. 30 UST. 1 PKT 1,2,3,4,5, I 7, UST. 2 I
+        UST. 3-ZMIANA, PAR. 31-ZMIANA, PAR. 32 UST. 2-ZMIANA, PAR. 34 UST.1 PKT 1-ZMIANA,
+        PAR. 35 PKT 1, 3 I 4-ZMIANA, PAR.36 UST. 2-ZMIANA, PAR. 37 UST. 1 I UST. 2-ZMIANA.\"\n
+        \           },\n            {\n              \"zawarcieZmianaUmowyStatutu\":
+        \"12 GRUDNIA 2001R. REPERTORIUM A NR 2733/2001, NOTARIUSZ MARZENA RADLI\u0143SKA,
+        KANCELARIA NOTARIALNA 02-094 WARSZAWA, UL.GR\xD3JECKA 53/57 M.4\\n- PAR.13
+        UST.4 - USUNI\u0118TY\"\n            },\n            {\n              \"zawarcieZmianaUmowyStatutu\":
+        \"AKT NOTARIALNY Z DNIA 17 MARCA 2003 R., REP. A NR 486/2003, SPORZ\u0104DZONY
+        PRZEZ NOTARIUSZA MARZEN\u0118 RADLI\u0143SK\u0104; WPROWADZONO ZMIANY W: PAR.7,
+        PAR.14, PAR.20, PAR.22, PAR.30.\"\n            },\n            {\n              \"zawarcieZmianaUmowyStatutu\":
+        \"AKT NOTARIALNY Z DNIA 09 LIPCA 2003R., REP. A NR 1793/2003, SPORZ\u0104DZONY
+        PRZEZ NOTARIUSZA MARZEN\u0118 RADLI\u0143SK\u0104; WPROWADZONO ZMIANY W: PAR.9
+        I W PAR.10.\"\n            },\n            {\n              \"zawarcieZmianaUmowyStatutu\":
+        \"AKT NOTARIALNY Z DNIA 27 WRZE\u015ANIA 2004 R., REP. A NR 2243/04, SPORZ\u0104DZONY
+        PRZEZ NOTARIUSZA MARZENN\u0118 RADLI\u0143SK\u0104, WPROWADZONO ZMIANY W:
+        PAR.7, PAR.13, PAR.14, PAR.17, PAR.22 I W PAR.30.\"\n            },\n            {\n
+        \             \"zawarcieZmianaUmowyStatutu\": \"AKT NOTARIALNY Z DNIA 20 WRZE\u015ANIA
+        2005R. REP.A NR 1534/2005, SPORZ\u0104DZONY PRZEZ NOTARIUSZA MARZEN\u0118
+        RADLI\u0143SK\u0104;\\nWPROWADZONO ZMIANY W : \xA77, \xA713, \xA714, \xA717
+        I W \xA730.\"\n            },\n            {\n              \"zawarcieZmianaUmowyStatutu\":
+        \"09.10.2009 R.\\nREP. A NR 66531/2009, NOTARIUSZ W WARSZAWIE TOMASZ CYGAN\\n\xA77
+        UST.1, \xA713 DO \xA717, \xA720, \xA722, \xA723, \xA730, \xA735, \xA737\"\n
+        \           },\n            {\n              \"zawarcieZmianaUmowyStatutu\":
+        \"AKT NOTARIALNY Z DNIA 9.10.2009 R., REP. A NR 66531/2009 SPORZ\u0104DZONY
+        PRZEZ NOTARIUSZA TOMASZA CYGANA Z KANCELARII NOTARIALNEJ TOMASZ CYGAN - NOTARIUSZ,
+        EWA MROCZEK - NOTARIUSZ, SP\xD3\u0141KA CYWILNA, 02-304 WARSZAWA, AL.JEROZOLIMSKIE
+        133/43, OBEJMUJ\u0104CY CHWA\u0141\u0118 NR 20 NADZWYCZAJNEGO WALNEGO ZGROMADZENIA
+        PKP S.A. Z DNIA 9.10.2009 R., W SPRAWIE TEKSTU JEDNOLITEGO STATUTU PKP S.A.\"\n
+        \           },\n            {\n              \"zawarcieZmianaUmowyStatutu\":
+        \"19.08.2011 R., REP. A NR 63244/2011, NOTARIUSZ TOMASZ CYGAN, 02-304 WARSZAWA,
+        AL. JEROZOLIMSKIE 133/43\\nW \xA730 UST.1 DODAJE SI\u0118 PKT 24A.\"\n            },\n
+        \           {\n              \"zawarcieZmianaUmowyStatutu\": \"AKT NOTARIALNY
+        Z DNIA 08.08.2012 R., REP. A NR 22574/2012 SPORZ\u0104DZONY PRZEZ NOTARIUSZA
+        TOMASZA CYGANA Z KANCELARII NOTARIALNEJ TOMASZA CYGAN - NOTARIUSZ EWA MROCZEK
+        - NOTARIUSZ SP\xD3\u0141KA CYWILNA, 02-304 WARSZAWA, AL.JEROZOLIMSKIE 133/43,
+        \xA730 UST.1 PKT 24A\"\n            },\n            {\n              \"zawarcieZmianaUmowyStatutu\":
+        \"AKT NOTARIALNY Z DNIA 28.11.2012 R., REP. A NR 34091/2012, SPORZ\u0104DZONY
+        PRZEZ NOTARIUSZA TOMASZA CYGANA Z KANCELARII NOTARIALNEJ TOMASZ CYGAN - NOTARIUSZ
+        EWA MROCZEK - NOTARIUSZ SP\xD3\u0141KA CYWILNA, 02-304 WARSZAWA, AL.JEROZOLIMSKIE
+        133/43, W \xA77 DODAJE SI\u0118 PKT 36 - 45\"\n            },\n            {\n
+        \             \"zawarcieZmianaUmowyStatutu\": \"18.03.2014 R., REP. A NR 7433/2014
+        NOTARIUSZ TOMASZ CYGAN Z KANCELARII NOTARIALNEJ W WARSZAWIE AL. JEROZOLIMSKIE
+        133/43 \\nZMIANA \xA722 UST. 2 PKT 6 ORAZ PKT 7 STATUTU SP\xD3\u0141KI\"\n
+        \           },\n            {\n              \"zawarcieZmianaUmowyStatutu\":
+        \"11 KWIETNIA 2014 ROK, REPERTORIUM A NR 8951/2014\\nNOTARIUSZ TOMASZ CYGAN
+        W KANCELARII NOTARIALNEJ W WARSZAWIE AL.JEROZOLIMSKIE 133/43\\nZMIENIONO:
+        \xA714 UST.5 PKT.3, \xA722 UST.2 PKT.6, \xA722 UST.2 PKT.7, \xA722 UST.2 PKT.10,
+        \xA722 UST.2 PKT.11, \xA722 UST.2 PKT.15, \xA730 UST.1 PKT.15, \xA730 UST.1
+        PKT.16, \xA730 UST.1 PKT.16A.\\nDODANO: W \xA730 UST.1 DODANO PKT.16B, \xA730
+        UST.1 DODANO PKT.16C\\nUCHYLONO: W \xA730 UST.1 PKT.24 UCHYLONO LIT.C.\"\n
+        \           },\n            {\n              \"zawarcieZmianaUmowyStatutu\":
+        \"28.04.2014 R., REP. A NR 10601/2014\\nNOTARIUSZ TOMASZ CYGAN Z KANCELARII
+        NOTARIALNEJ W WARSZAWIE AL. JEROZOLIMSKIE 133/43\\n\\nZMIENIONO: \xA717 UST.
+        4, \xA730 UST. 2\"\n            },\n            {\n              \"zawarcieZmianaUmowyStatutu\":
+        \"30.06.2014 R., REP. A NR 16507/2014; NOTARIUSZ TOMASZ CYGAN, KANCELARIA
+        NOTARIALNA TOMASZ CYGAN - NOTARIUSZ, EWA MROCZEK - NOTARIUSZ, MAGDALENA NOWAK
+        - NOTARIUSZ SP\xD3\u0141KA CYWILNA, WARSZAWA\\n\\nZMIENIONO: \xA75 UST. 3.\"\n
+        \           },\n            {\n              \"zawarcieZmianaUmowyStatutu\":
+        \"17-09-2015 R., REPERTORIUM A NR 14424/2015, NOTARIUSZ TOMASZ CYGAN, KANCELARIA
+        NOTARIALNA TOMASZ CYGAN - NOTARIUSZ EWA MROCZEK - NOTARIUSZ MAGDALENA NOWAK
+        - NOTARIUSZ SP\xD3\u0141KA CYWILNA, AL. JEROZOLIMSKIE 133/43, 02-304 WARSZAWA\\nZMIENIONO:
+        \xA7 7 UST 1 PKT 45, \xA7 14 UST. 5 PKT 2, \xA7 37 UST. 1\\nDODANO: \xA7 7
+        UST 1 PKT 46 - 48\\nUSUNI\u0118TO: \xA737 UST. 4 I 5\"\n            },\n            {\n
+        \             \"zawarcieZmianaUmowyStatutu\": \"02.11.2015 R. REPERTORIUM
+        A NR 16149/2015 NOTARIUSZ TOMASZ CYGAN - KANCELARIA NOTARIALNA TOMASZ CYGAN
+        - NOTARIUSZ, EWA MROCZEK - NOTARIUSZ, MAGDALENA NOWAK - NOTARIUSZ SP\xD3\u0141KA
+        CYWILNA, AL. JEROZOLIMSKIE 133/43, 02-304 WARSZAWA,\\nZMIENIONO: \xA717 UST.
+        5,\\nDODANO: \xA717 UST. 12.\"\n            },\n            {\n              \"zawarcieZmianaUmowyStatutu\":
+        \"10.11.2015 R., REP. A NR 16498/2015, NOTARIUSZ TOMASZ CYGAN- KANCELARIA
+        NOTARIALNA TOMASZ CYGAN- NOTARIUSZ EWA MROCZEK- NOTARIUSZ, MAGDALENA NOWAK-
+        NOTARIUSZ SP\xD3\u0141KA CYWILNA, AL. JEROZOLIMSKIE 133/43, 02-304 WARSZAWA,
+        ZMIENIONO \xA730 UST.2\"\n            },\n            {\n              \"zawarcieZmianaUmowyStatutu\":
+        \"02.12.2015R., REP.A NR 17276/2015, NOTARIUSZ TOMASZ CYGAN - KANCELARIA NOTARIALNA
+        TOMASZ CYGAN - NOTARIUSZ EWA MROCZEK - NOTARIUSZ, MAGDALENA NOWAK - NOTARIUSZ
+        SP\xD3\u0141KA CYWILNA, AL.JEROZOLIMSKIE 133/43, 02-304 WARSZAWA, UCHYLONO
+        \xA717 UST.12\"\n            },\n            {\n              \"zawarcieZmianaUmowyStatutu\":
+        \"13.04.2016 R., REP. A NR 3847/2016, NOTARIUSZ TOMASZ CYGAN, KANCELARIA NOTARIALNA
+        AL.JEROZOLIMSKIE 133/43 02-304 WARSZAWA;\\nZMIENIONO: \xA717 UST. 4 STATUTU.\"\n
+        \           },\n            {\n              \"zawarcieZmianaUmowyStatutu\":
+        \"07.07.2017R., REP.A NR 5756/2017, NOTARIUSZ W WARSZAWIE TOMASZ CYGAN, ZMIENIONO:
+        \xA74, \xA77 UST.1 PKT 48, \xA713 UST.1, \xA714 UST.3 PKT 4, \xA714 UST.5
+        I 6, \xA716 UST.1, \xA716 UST.3-5, \xA717 UST.7, \xA717 UST.11, \xA722 UST.2
+        PKT 6 I 7, \xA722 UST.2 PKT 10 I 11, \xA722 UST.2 PKT 13, \xA723 UST.2 I 3,
+        \xA727 UST.3, \xA729, \xA730 UST.1 PKT 16 I 16A, \xA730 UST.1 PKT 20, \xA730
+        UST.2, \xA732 UST.1 I 2, DODANO: \xA77 UST.1 PKT 49 I 50, \xA714 UST.3 PKT
+        4A, \xA714 UST.11, \xA717 UST.1A, \xA717 UST.4A, \xA722 UST.2 PKT 15A I 15B,
+        \xA723 UST.1A, \xA730 UST.1 PKT 14A-14D, \xA730 UST.1 PKT 20A I 20B, \xA738,
+        UCHYLONO: \xA716 UST.6, \xA722 UST.2 PKT 7A, \xA730 UST.1 PKT 17.\"\n            },\n
+        \           {\n              \"zawarcieZmianaUmowyStatutu\": \"09.08.2018
+        R., REP. A NR 11021/2018, NOTARIUSZ MAREK WATRAKIEWICZ, KANCELARIA NOTARIALNA
+        W WARSZAWIE, ZMIANA \xA7 7 UST. 1 PKT 50), DODANO \xA7 7 UST. 1 PKT 51 - PKT
+        56)\"\n            },\n            {\n              \"zawarcieZmianaUmowyStatutu\":
+        \"30.12.2019 R., REP. A NR 39076/2019, NOTARIUSZ ROBERT B\u0141ASZCZAK, KANCELARIA
+        NOTARIALNA W WARSZAWIE, ZMIANA: \xA7 4, \xA7 10 UST. 4 I 5, \xA7 13 UST. 3,
+        \xA7 14 UST. 3 PKT 4 I PKT 4A, \xA7 14 UST. 11, \xA7 17 UST. 4A, \xA7 18 UST.
+        2, \xA7 22 UST. 2 PKT 7, PKT 7B, PKT 10, PKT 11 LIT. A), PKT 14, PKT 15A LIT.
+        A), \xA7 30 UST. 1 PKT 7, PKT 14A, W PKT 14B LIR. B), W PKT 14C LIT. A, PKT
+        14D, PKT 16B, PKT 24, W \xA7 35 PKT 2-4, \xA7 37 UST. 3.\\nDODANO: W \xA7
+        4 UST. 2, W \xA7 14 W UST. 3 PKT 6 I 7. W \xA7 30 W UST. 1 W PKT 24 LIT. E)
+        I F), W \xA7 22 W UST. 2 PKT 9A, PKT 15C. PRZEPISY UCHYLONE: W \xA7 14 UST.
+        4, W \xA7 30 W UST. 1 PKT 20A, \xA7 32, \xA7 38 UST. 2\"\n            },\n
+        \           {\n              \"zawarcieZmianaUmowyStatutu\": \"14.08.2020,
+        REP. A NR 32141/2020, NOTARIUSZ ROBERT B\u0141ASZCZAK, KANCELARIA NOTARIALNA
+        W WARSZAWIE, ZMIANA: \xA7 19 UST. 2, \xA7 20 UST. 4.\"\n            },\n            {\n
+        \             \"zawarcieZmianaUmowyStatutu\": \"8 KWIETNIA 2021 R. REPERTORIUM
+        A NR 11750/2021, ROBERT B\u0141ASZCZAK NOTARIUSZ W WARSZAWIE PROWADZ\u0104CY
+        KANCELARI\u0118 PRZY PALCU BANKOWYM 1; KANCELARIA NOTARIALNA PAWE\u0141 B\u0141ASZCZAK,
+        ROBERT B\u0141ASZCZAK, RAFA\u0141 G\u0104SIEWSKI, MICHA\u0141 B\u0141ASZCZAK,
+        MONIKA FYK, TOMASZ MERTA, NOTARIUSZE SP\xD3\u0141KA CYWILNA, 00-0139 WARSZAWA,
+        PLAC BANKOWY 1.\\nPRZEPISY ZMIENIONE: \xA7 10 UST. 1,2,3; \xA7 19 UST. 2;
+        \xA7 20 UST. 3 I 4; W \xA7 36 UST. 4; W\xA7 37 UST. 2.\\n\\nPRZEPISY DODANE:
+        W \xA7 20 DODANO UST. 4A; W \xA7 30 W UST. 1 DODANO PKT 25A; W \xA7 36 DODANO
+        UST.\\n5\"\n            },\n            {\n              \"zawarcieZmianaUmowyStatutu\":
+        \"29.12.2022 R., REP. A NR 52434/2022, NOTARIUSZ TOMASZ MERTA, KANCELARIA
+        NOTARIALNA W WARSZAWIE PRZY PALCU BANKOWYM 1,\\n1. \xA77 \u2013 PO UST. 2
+        DODAJE SI\u0118 UST. 3 I 4; DOTYCHCZASOWY UST. 3 OTRZYMUJE NR 5, DOTYCHCZASOWY
+        UST. 4 OTRZYMUJE NR 6 I NOWE BRZMIENIE. \\n2. \xA714 \u2013 PO UST. 1 DODAJE
+        SI\u0118 UST. 2, DOTYCHCZASOWY UST. 2 OTRZYMUJE NR 3, DOTYCHCZASOWY UST. 3
+        OTRZYMUJE NR 4 I W PKT 4) I PKT 4A) NOWE BRZMIENIE, DOTYCHCZASOWY UST. 4 OTRZYMUJE
+        NR 5, DOTYCHCZASOWY UST. 5 OTRZYMUJE NR 6 I W PKT 1) NOWE BRZMIENIE, DOTYCHCZASOWY
+        UST. 6 OTRZYMUJE NR 7 I NOWE BRZMIENIE, DOTYCHCZASOWE UST. 7 I 8 OTRZYMUJ\u0104
+        ODPOWIEDNIO NR 8 I 9, PO UST. 9 W NOWYM BRZMIENIU DODAJE SI\u0118 UST. 10
+        I UST. 11, DOTYCHCZASOWY UST. 9 OTRZYMUJE NR 12, PO UST. 12 W NOWYM BRZMIENIU
+        DODAJE SI\u0118 UST. 13-15, DOTYCHCZASOWE UST. 10 I 11 OTRZYMUJ\u0104 ODPOWIEDNIO
+        NR 16 I 17, PO UST. 17 W NOWYM BRZMIENIU DODAJE SI\u0118 UST. 18.\\n3. \xA715
+        \u2013 ZMIENIONO UST. 3.\\n4. \xA719 \u2013 PO UST. 1 DODAJE SI\u0118 UST.2,
+        DOTYCHCZASOWE UST. 2 I 3 OTRZYMUJ\u0104 ODPOWIEDNIO NR 3 I 4.\\n5. \xA720
+        - ZMIENIONO UST. 1, PO UST.1 DODAJE SI\u0118 UST.2, DOTYCHCZASOWE UST. 2-6
+        OTRZYMUJ\u0104 ODPOWIEDNIO NR 3-7. \\n6. \xA7 22 - PO UST.1 DODAJE SI\u0118
+        UST.2; DOTYCHCZASOWY UST. 2 OTRZYMUJE NR 3; W UST. 3 W NOWYM BRZMIENIU: ZMIENIA
+        SI\u0118 PKT 4) I 8), PO PKT 8) DODAJE SI\u0118 PKT 9) I 10), DOTYCHCZASOWE
+        PKT 9)-12) OTRZYMUJ\u0104 ODPOWIEDNIO NR 11)-14), DOTYCHCZASOWY PKT 13) OTRZYMUJE
+        NR 15 I NOWE BRZMIENIE, DOTYCHCZASOWE PKT 14-15A OTRZYMUJ\u0104 ODPOWIEDNIO
+        NR 16-17A, DOTYCHCZASOWY PKT 15B) OTRZYMUJE NR 17B I NOWE BRZMIENIE, DOTYCHCZASOWY
+        PKT 15C) OTRZYMUJE NR 17C, PO PKT 17C W NOWYM BRZMIENIU DODAJE SI\u0118 PKT
+        18), DOTYCHCZASOWY PKT 16) OTRZYMUJE NR 19 I NOWE BRZMIENIE.\\n7. \xA723 \u2013
+        PO UST. 1A DODAJE SI\u0118 UST. 2 I 3, DOTYCHCZASOWE UST. 2-4 OTRZYMUJ\u0104
+        ODPOWIEDNIO NR 4-6.\\n8. \xA730 \u2013 PO UST. 4 DODAJE SI\u0118 UST. 5.\\n9.
+        \xA735 \u2013 ZMIENIA SI\u0118 PKT 4).\"\n            },\n            {\n
+        \             \"zawarcieZmianaUmowyStatutu\": \"04.04.2023 R.; REP. A NR 9410/2023;
+        NOTARIUSZ ROBERT B\u0141ASZCZAK; KANCELARIA NOTARIALNA W WARSZAWIE PRZY PLACU
+        BANKOWYM 1, 00-139 WARSZAWA.\\nZMIENIONO: \xA713 UST. 1 ZDANIE PIERWSZE, \xA713
+        UST. 6, \xA730 UST. 1 PKT 19).\"\n            },\n            {\n              \"zawarcieZmianaUmowyStatutu\":
+        \"18.11.2024 R., REPERTORIUM A NR 25331/2024; NOTARIUSZ MAREK WATRAKIEWICZ;
+        KANCELARIA NOTARIALNA W WARSZAWIE PRZY UL. BOYA-\u017BELE\u0143SKIEGO 6/26,
+        \\n00-621 WARSZAWA;\\nDODANO: \xA713\xB9, \xA722 UST. 3 PKT 8A I 8B.\"\n            },\n
+        \           {\n              \"zawarcieZmianaUmowyStatutu\": \"29.10.2025
+        R., REPERTORIUM A NR 19734/2025, NOTARIUSZ MAREK WATRAKIEWICZ; KANCELARIA
+        NOTARIALNA W WARSZAWIE PRZY UL. BOYA-\u017BELE\u0143SKIEGO 6/26, 00-621 WARSZAWA;\\nZMIENIONO:
+        \xA713 UST. 5, \xA717 UST. 1, \xA717 UST. 10, \xA722 UST. 3 PKT 16), \xA730
+        UST. 1 PKT 24);\\nDODANO: \xA720 UST. 6A.\"\n            }\n          ]\n
+        \       },\n        \"pozostaleInformacje\": {\n          \"czasNaJakiUtworzonyZostalPodmiot\":
+        \"NIEOZNACZONY\",\n          \"czyUmowaStatutPrzyznajeUprawnieniaOsobiste\":
+        false,\n          \"czyObligatoriuszeMajaPrawoDoUdzialuWZysku\": false\n        },\n
+        \       \"sposobPowstaniaPodmiotu\": {\n          \"okolicznosciPowstania\":
+        \"PRZEKSZTA\u0141CENIE\",\n          \"opisSposobuPowstaniaInformacjaOUchwale\":
+        \"AKT KOMERCJALIZACJI PRZEDSI\u0118BIORSTWA PA\u0143STWOWEGO \\\"POLSKIE KOLEJE
+        PA\u0143STWOWE\\\" Z DNIA 01.12.2000 R. - NA PODSTAWIE ART. 3 UST.1 I 3 USTAWY
+        Z DNIA 08.09.2000 R. O KOMERCJALIZACJI,RESTRUKTURYZACJI I PRYWATYZACJI PRZEDSI\u0118BIORSTWA
+        PA\u0143STWOWEGO \\\"POLSKIE KOLEJE PA\u0143STWOWE\\\" / DZ.U.NR 84,POZ.948/\",\n
+        \         \"podmioty\": [\n            {\n              \"nazwa\": \"POLSKIE
+        KOLEJE PA\u0143STWOWE SP\xD3\u0141KA AKCYJNA - PKP S.A.,------\",\n              \"krajNazwaRejestruEwidencji\":
+        \"------,RHB\",\n              \"numerWRejestrzeAlboEwidencji\": \"63218\",\n
+        \             \"nazwaSaduOrganuProwadzacegoRejestrEwidencje\": \"S\u0104D
+        REJONOWY DLA M. ST. WARSZAWY - S\u0104D GOSPODARCZY - XVI WYDZIA\u0141 REJESTROWY\",\n
+        \             \"identyfikator\": {\n                \"regon\": \"00012680100000\"\n
+        \             }\n            }\n          ]\n        },\n        \"jedynyAkcjonariusz\":
+        [\n          {\n            \"nazwa\": \"SKARB PA\u0143STWA\",\n            \"identyfikator\":
+        {},\n            \"krs\": {\n              \"krs\": \"0000000000\"\n            },\n
+        \           \"czyPosiadaCaloscAkcji\": false\n          }\n        ],\n        \"kapital\":
+        {\n          \"wysokoscKapitaluZakladowego\": {\n            \"wartosc\":
+        \"10150715600,00\",\n            \"waluta\": \"PLN\"\n          },\n          \"lacznaLiczbaAkcjiUdzialow\":
+        \"101507156\",\n          \"wartoscJednejAkcji\": {\n            \"wartosc\":
+        \"100,00\",\n            \"waluta\": \"PLN\"\n          },\n          \"czescKapitaluWplaconegoPokrytego\":
+        {\n            \"wartosc\": \"10150715600,00\",\n            \"waluta\": \"PLN\"\n
+        \         },\n          \"wniesioneAporty\": {}\n        },\n        \"emisjeAkcji\":
+        [\n          {\n            \"nazwaSeriiAkcji\": \"SERIA B\",\n            \"liczbaAkcjiWSerii\":
+        \"1507156\",\n            \"czyAkcjeUprzywilejowaneLiczbaAkcjiRodzajUprzywilejowania\":
+        \"AKCJE NIE S\u0104 UPRZYWILEJOWANE\"\n          },\n          {\n            \"nazwaSeriiAkcji\":
+        \"SERIA A\",\n            \"liczbaAkcjiWSerii\": \"100000000\",\n            \"czyAkcjeUprzywilejowaneLiczbaAkcjiRodzajUprzywilejowania\":
+        \"AKCJE NIE S\u0104 UPRZYWILEJOWANE\"\n          }\n        ],\n        \"wzmiankaOUpowaznieniuDoEmisjiWarrantowSubskrypcyjnych\":
+        {\n          \"czyZarzadJestUprawnionyDoEmisjiWarrantowSubskrypcyjnych\":
+        false\n        }\n      },\n      \"dzial2\": {\n        \"reprezentacja\":
+        {\n          \"nazwaOrganu\": \"ZARZ\u0104D SP\xD3\u0141KI\",\n          \"sposobReprezentacji\":
+        \"DO SK\u0141ADANIA O\u015AWIADCZE\u0143 WOLI I PODPISYWANIA W IMIENIU SP\xD3\u0141KI
+        WYMAGANE JEST WSP\xD3\u0141DZIA\u0141ANIE PREZESA I CZ\u0141ONKA ZARZ\u0104DU,
+        DW\xD3CH CZ\u0141ONK\xD3W ZARZ\u0104DU ALBO JEDNEGO CZ\u0141ONKA ZARZ\u0104DU
+        \u0141\u0104CZNIE Z PROKURENTEM. JE\u017BELI ZARZ\u0104D JEST JEDNOOSOOWY,
+        DO SK\u0141ADANIA O\u015AWIADCZE\u0143 WOLI I PODPISYWANIA W IMIENIU SP\xD3\u0141KI
+        UPOWA\u017BNIONY JEST JEDEN CZ\u0141ONEK ZARZ\u0104DU. PREZES ZARZ\u0104DU
+        SP\xD3\u0141KI, W ZAKRESIE REALIZACJI ZADA\u0143 OBRONNYCH W SP\xD3\u0141CE
+        WYNIKAJ\u0104CYCH Z PRZEPIS\xD3W O POWSZECHNYM OBOWI\u0104ZKU OBRONY ORAZ
+        KOORDYNACJI ZADA\u0143 OBRONNYCH REALIZOWANYCH W SP\xD3\u0141KACH UTWORZONYCH
+        PRZEZ PKP S.A. NA PODSTAWIE ART. 14, 15 I 19 USTAWY Z DNIA 8 WRZE\u015ANIA
+        2000 R. O KOMERCJALIZACJI, RESTRUKTURYZACJI I PRYWATYZACJI PRZEDSI\u0118BIORSTWA
+        PA\u0143STWOWEGO POLSKIE KOLEJE PA\u0143STWOWE (DZ. U. 2000 NR 84 POZ. 948
+        Z P\xD3\u0179N. ZM), UPRAWNIONY JEST DO JEDNOOSOBOWEGO SK\u0141ADANIA O\u015AWIADCZE\u0143
+        WOLI I PODPISYWANIA W IMIENIU SP\xD3\u0141KI.\",\n          \"sklad\": [\n
+        \           {\n              \"nazwisko\": {\n                \"nazwiskoICzlon\":
+        \"B*****\"\n              },\n              \"imiona\": {\n                \"imie\":
+        \"A***\",\n                \"imieDrugie\": \"M*****\"\n              },\n
+        \             \"identyfikator\": {\n                \"pesel\": \"8**********\"\n
+        \             },\n              \"funkcjaWOrganie\": \"PREZES ZARZ\u0104DU\",\n
+        \             \"czyZawieszona\": false\n            },\n            {\n              \"nazwisko\":
+        {\n                \"nazwiskoICzlon\": \"L********\"\n              },\n              \"imiona\":
+        {\n                \"imie\": \"P****\",\n                \"imieDrugie\": \"J**\"\n
+        \             },\n              \"identyfikator\": {\n                \"pesel\":
+        \"7**********\"\n              },\n              \"funkcjaWOrganie\": \"CZ\u0141ONEK
+        ZARZ\u0104DU\",\n              \"czyZawieszona\": false\n            },\n
+        \           {\n              \"nazwisko\": {\n                \"nazwiskoICzlon\":
+        \"G*****\"\n              },\n              \"imiona\": {\n                \"imie\":
+        \"D******\",\n                \"imieDrugie\": \"G*******\"\n              },\n
+        \             \"identyfikator\": {\n                \"pesel\": \"7**********\"\n
+        \             },\n              \"funkcjaWOrganie\": \"WICEPREZES ZARZ\u0104DU\",\n
+        \             \"czyZawieszona\": false\n            },\n            {\n              \"nazwisko\":
+        {\n                \"nazwiskoICzlon\": \"B*********\"\n              },\n
+        \             \"imiona\": {\n                \"imie\": \"A******\",\n                \"imieDrugie\":
+        \"S********\"\n              },\n              \"identyfikator\": {\n                \"pesel\":
+        \"8**********\"\n              },\n              \"funkcjaWOrganie\": \"CZ\u0141ONEK
+        ZARZ\u0104DU\",\n              \"czyZawieszona\": false\n            }\n          ]\n
+        \       },\n        \"organNadzoru\": [\n          {\n            \"nazwa\":
+        \"RADA NADZORCZA\",\n            \"sklad\": [\n              {\n                \"nazwisko\":
+        {\n                  \"nazwiskoICzlon\": \"M*****\"\n                },\n
+        \               \"imiona\": {\n                  \"imie\": \"L*****\"\n                },\n
+        \               \"identyfikator\": {\n                  \"pesel\": \"6**********\"\n
+        \               }\n              },\n              {\n                \"nazwisko\":
+        {\n                  \"nazwiskoICzlon\": \"M*******\"\n                },\n
+        \               \"imiona\": {\n                  \"imie\": \"B******\",\n
+        \                 \"imieDrugie\": \"A***\"\n                },\n                \"identyfikator\":
+        {\n                  \"pesel\": \"6**********\"\n                }\n              },\n
+        \             {\n                \"nazwisko\": {\n                  \"nazwiskoICzlon\":
+        \"P********\"\n                },\n                \"imiona\": {\n                  \"imie\":
+        \"J**\"\n                },\n                \"identyfikator\": {\n                  \"pesel\":
+        \"5**********\"\n                }\n              },\n              {\n                \"nazwisko\":
+        {\n                  \"nazwiskoICzlon\": \"M*****\"\n                },\n
+        \               \"imiona\": {\n                  \"imie\": \"A******\"\n                },\n
+        \               \"identyfikator\": {\n                  \"pesel\": \"6**********\"\n
+        \               }\n              },\n              {\n                \"nazwisko\":
+        {\n                  \"nazwiskoICzlon\": \"S********\"\n                },\n
+        \               \"imiona\": {\n                  \"imie\": \"\u0141*****\",\n
+        \                 \"imieDrugie\": \"Z*******\"\n                },\n                \"identyfikator\":
+        {\n                  \"pesel\": \"7**********\"\n                }\n              },\n
+        \             {\n                \"nazwisko\": {\n                  \"nazwiskoICzlon\":
+        \"W*****\"\n                },\n                \"imiona\": {\n                  \"imie\":
+        \"T*****\"\n                },\n                \"identyfikator\": {\n                  \"pesel\":
+        \"7**********\"\n                }\n              },\n              {\n                \"nazwisko\":
+        {\n                  \"nazwiskoICzlon\": \"O**********\"\n                },\n
+        \               \"imiona\": {\n                  \"imie\": \"A***\",\n                  \"imieDrugie\":
+        \"S********\"\n                },\n                \"identyfikator\": {\n
+        \                 \"pesel\": \"8**********\"\n                }\n              },\n
+        \             {\n                \"nazwisko\": {\n                  \"nazwiskoICzlon\":
+        \"S**********\"\n                },\n                \"imiona\": {\n                  \"imie\":
+        \"M*****\",\n                  \"imieDrugie\": \"B*********\"\n                },\n
+        \               \"identyfikator\": {\n                  \"pesel\": \"8**********\"\n
+        \               }\n              },\n              {\n                \"nazwisko\":
+        {\n                  \"nazwiskoICzlon\": \"N*******\"\n                },\n
+        \               \"imiona\": {\n                  \"imie\": \"B******\",\n
+        \                 \"imieDrugie\": \"J****\"\n                },\n                \"identyfikator\":
+        {\n                  \"pesel\": \"9**********\"\n                }\n              }\n
+        \           ]\n          }\n        ],\n        \"prokurenci\": [\n          {\n
+        \           \"nazwisko\": {\n              \"nazwiskoICzlon\": \"S*******\"\n
+        \           },\n            \"imiona\": {\n              \"imie\": \"M*****\",\n
+        \             \"imieDrugie\": \"M****\"\n            },\n            \"identyfikator\":
+        {\n              \"pesel\": \"7**********\"\n            },\n            \"rodzajProkury\":
+        \"\u0141\u0104CZNA\"\n          },\n          {\n            \"nazwisko\":
+        {\n              \"nazwiskoICzlon\": \"S***\"\n            },\n            \"imiona\":
+        {\n              \"imie\": \"M******\",\n              \"imieDrugie\": \"Z*******\"\n
+        \           },\n            \"identyfikator\": {\n              \"pesel\":
+        \"6**********\"\n            },\n            \"rodzajProkury\": \"\u0141\u0104CZNA\"\n
+        \         }\n        ]\n      },\n      \"dzial3\": {\n        \"przedmiotDzialalnosci\":
+        {\n          \"przedmiotPrzewazajacejDzialalnosci\": [\n            {\n              \"opis\":
+        \"DZIA\u0141ALNO\u015A\u0106 FIRM CENTRALNYCH (HEAD OFFICES) I HOLDING\xD3W,
+        Z WY\u0141\u0104CZENIEM HOLDING\xD3W FINANSOWYCH\",\n              \"kodDzial\":
+        \"70\",\n              \"kodKlasa\": \"10\",\n              \"kodPodklasa\":
+        \"Z\"\n            }\n          ],\n          \"przedmiotPozostalejDzialalnosci\":
+        [\n            {\n              \"opis\": \"WYNAJEM I ZARZ\u0104DZANIE NIERUCHOMO\u015ACIAMI
+        W\u0141ASNYMI LUB DZIER\u017BAWIONYMI\",\n              \"kodDzial\": \"68\",\n
+        \             \"kodKlasa\": \"20\",\n              \"kodPodklasa\": \"Z\"\n
+        \           },\n            {\n              \"opis\": \"KUPNO I SPRZEDA\u017B
+        NIERUCHOMO\u015ACI NA W\u0141ASNY RACHUNEK\",\n              \"kodDzial\":
+        \"68\",\n              \"kodKlasa\": \"10\",\n              \"kodPodklasa\":
+        \"Z\"\n            },\n            {\n              \"opis\": \"DZIA\u0141ALNO\u015A\u0106
+        US\u0141UGOWA WSPOMAGAJ\u0104CA TRANSPORT L\u0104DOWY\",\n              \"kodDzial\":
+        \"52\",\n              \"kodKlasa\": \"21\",\n              \"kodPodklasa\":
+        \"Z\"\n            },\n            {\n              \"opis\": \"REALIZACJA
+        PROJEKT\xD3W BUDOWLANYCH ZWI\u0104ZANYCH ZE WZNOSZENIEM BUDYNK\xD3W\",\n              \"kodDzial\":
+        \"41\",\n              \"kodKlasa\": \"10\",\n              \"kodPodklasa\":
+        \"Z\"\n            },\n            {\n              \"opis\": \"ROBOTY BUDOWLANE
+        ZWI\u0104ZANE ZE WZNOSZENIEM BUDYNK\xD3W MIESZKALNYCH I NIEMIESZKALNYCH\",\n
+        \             \"kodDzial\": \"41\",\n              \"kodKlasa\": \"20\",\n
+        \             \"kodPodklasa\": \"Z\"\n            },\n            {\n              \"opis\":
+        \"ROZBI\xD3RKA I BURZENIE OBIEKT\xD3W BUDOWLANYCH\",\n              \"kodDzial\":
+        \"43\",\n              \"kodKlasa\": \"11\",\n              \"kodPodklasa\":
+        \"Z\"\n            },\n            {\n              \"opis\": \"PRAKTYKA LEKARSKA
+        OG\xD3LNA\",\n              \"kodDzial\": \"86\",\n              \"kodKlasa\":
+        \"21\",\n              \"kodPodklasa\": \"Z\"\n            },\n            {\n
+        \             \"opis\": \"POZOSTA\u0141A DZIA\u0141ALNO\u015A\u0106 W ZAKRESIE
+        OPIEKI ZDROWOTNEJ, GDZIE INDZIEJ NIESKLASYFIKOWANA\",\n              \"kodDzial\":
+        \"86\",\n              \"kodKlasa\": \"90\",\n              \"kodPodklasa\":
+        \"E\"\n            },\n            {\n              \"opis\": \"POZOSTA\u0141E
+        DORADZTWO W ZAKRESIE PROWADZENIA DZIA\u0141ALNO\u015ACI GOSPODARCZEJ I ZARZ\u0104DZANIA\",\n
+        \             \"kodDzial\": \"70\",\n              \"kodKlasa\": \"22\",\n
+        \             \"kodPodklasa\": \"Z\"\n            }\n          ]\n        },\n
+        \       \"wzmiankiOZlozonychDokumentach\": {\n          \"wzmiankaOZlozeniuRocznegoSprawozdaniaFinansowego\":
+        [\n            {\n              \"dataZlozenia\": \"31.07.2001\",\n              \"zaOkresOdDo\":
+        \"01.01.2000R.-31.12.2000R.\"\n            },\n            {\n              \"dataZlozenia\":
+        \"13.08.2002\",\n              \"zaOkresOdDo\": \"1.01.2001 - 31.12.2001\"\n
+        \           },\n            {\n              \"dataZlozenia\": \"30.07.2003\",\n
+        \             \"zaOkresOdDo\": \"01.01.2002 - 31.12.2002\"\n            },\n
+        \           {\n              \"dataZlozenia\": \"19.07.2004\",\n              \"zaOkresOdDo\":
+        \"01.01.2003 - 31.12.2003\"\n            },\n            {\n              \"dataZlozenia\":
+        \"14.07.2005\",\n              \"zaOkresOdDo\": \"01.01.2004 - 31.12.2004\"\n
+        \           },\n            {\n              \"dataZlozenia\": \"17.07.2006\",\n
+        \             \"zaOkresOdDo\": \"01.01.2005-31.12.2005\"\n            },\n
+        \           {\n              \"dataZlozenia\": \"31.07.2007\",\n              \"zaOkresOdDo\":
+        \"01.01.2006 - 31.12.2006\"\n            },\n            {\n              \"dataZlozenia\":
+        \"14.08.2008\",\n              \"zaOkresOdDo\": \"01.01.2007 - 31.12.2007\"\n
+        \           },\n            {\n              \"dataZlozenia\": \"15.07.2009\",\n
+        \             \"zaOkresOdDo\": \"01.01.2008-31.12.2008\"\n            },\n
+        \           {\n              \"dataZlozenia\": \"09.07.2010\",\n              \"zaOkresOdDo\":
+        \"01.01.2009 - 31.12.2009\"\n            },\n            {\n              \"dataZlozenia\":
+        \"16.06.2011\",\n              \"zaOkresOdDo\": \"01.01.2010 - 31.12.2010\"\n
+        \           },\n            {\n              \"dataZlozenia\": \"10.07.2012\",\n
+        \             \"zaOkresOdDo\": \"01.01.2011-31.12.2011\"\n            },\n
+        \           {\n              \"dataZlozenia\": \"03.07.2013\",\n              \"zaOkresOdDo\":
+        \"01.01.2012 - 31.12.2012\"\n            },\n            {\n              \"dataZlozenia\":
+        \"03.07.2014\",\n              \"zaOkresOdDo\": \"OD 01.01.2013 DO 31.12.2013\"\n
+        \           },\n            {\n              \"dataZlozenia\": \"06.05.2015\",\n
+        \             \"zaOkresOdDo\": \"OD 01.01.2014 DO 31.12.2014\"\n            },\n
+        \           {\n              \"dataZlozenia\": \"08.07.2016\",\n              \"zaOkresOdDo\":
+        \"OD 01.01.2015 DO 31.12.2015\"\n            },\n            {\n              \"dataZlozenia\":
+        \"19.07.2017\",\n              \"zaOkresOdDo\": \"OD 01.01.2016 DO 31.12.2016\"\n
+        \           },\n            {\n              \"dataZlozenia\": \"06.08.2018\",\n
+        \             \"zaOkresOdDo\": \"OD 01.01.2017 DO 31.12.2017\"\n            },\n
+        \           {\n              \"dataZlozenia\": \"19.07.2019\",\n              \"zaOkresOdDo\":
+        \"OD 01.01.2018 DO 31.12.2018\"\n            },\n            {\n              \"dataZlozenia\":
+        \"24.08.2020\",\n              \"zaOkresOdDo\": \"OD 01.01.2019 DO 31.12.2019\"\n
+        \           },\n            {\n              \"dataZlozenia\": \"03.08.2021\",\n
+        \             \"zaOkresOdDo\": \"OD 01.01.2020 DO 31.12.2020\"\n            },\n
+        \           {\n              \"dataZlozenia\": \"04.08.2022\",\n              \"zaOkresOdDo\":
+        \"OD 01.01.2021 DO 31.12.2021\"\n            },\n            {\n              \"dataZlozenia\":
+        \"05.07.2023\",\n              \"zaOkresOdDo\": \"OD 01.01.2022 DO 31.12.2022\"\n
+        \           },\n            {\n              \"dataZlozenia\": \"05.08.2024\",\n
+        \             \"zaOkresOdDo\": \"OD 01.01.2023 DO 31.12.2023\"\n            },\n
+        \           {\n              \"dataZlozenia\": \"08.07.2025\",\n              \"zaOkresOdDo\":
+        \"OD 01.01.2024 DO 31.12.2024\"\n            },\n            {\n              \"dataZlozenia\":
+        \"09.07.2026\",\n              \"zaOkresOdDo\": \"OD 01.01.2025 DO 31.12.2025\"\n
+        \           }\n          ],\n          \"wzmiankaOZlozeniuOpiniiBieglegoRewidentaSprawozdaniaZBadania\":
+        [\n            {\n              \"zaOkresOdDo\": \"01.01.2000R.-31.12.2000R.\"\n
+        \           },\n            {\n              \"zaOkresOdDo\": \"1.01.2001
+        - 31.12.2001\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2002 - 31.12.2002\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2003 - 31.12.2003\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2004 - 31.12.2004\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2005-31.12.2005\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2006 - 31.12.2006\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2007 - 31.12.2007\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2008-31.12.2008\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2009 - 31.12.2009\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2010 - 31.12.2010\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2011-31.12.2011\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2012 - 31.12.2012\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2013 DO 31.12.2013\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2014 DO 31.12.2014\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2015 DO 31.12.2015\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2016 DO 31.12.2016\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2017 DO 31.12.2017\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2018 DO 31.12.2018\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2019 DO 31.12.2019\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2020 DO 31.12.2020\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2021 DO 31.12.2021\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2022 DO 31.12.2022\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2023 DO 31.12.2023\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2024 DO 31.12.2024\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2025 DO 31.12.2025\"\n            }\n          ],\n          \"wzmiankaOZlozeniuUchwalyPostanowieniaOZatwierdzeniuRocznegoSprawozdaniaFinansowego\":
+        [\n            {\n              \"zaOkresOdDo\": \"01.01.2000R.-31.12.2000R.\"\n
+        \           },\n            {\n              \"zaOkresOdDo\": \"1.01.2001
+        - 31.12.2001\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2002 - 31.12.2002\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2003 - 31.12.2003\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2004 - 31.12.2004\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2005-31.12.2005\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2006 - 31.12.2006\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2007 - 31.12.2007\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2008 - 31.12.2008\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2009 - 31.12.2009\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2010 - 31.12.2010\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2011-31.12.2011\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2012 - 31.12.2012\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2013 DO 31.12.2013\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2014 DO 31.12.2014\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2015 DO 31.12.2015\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2016 DO 31.12.2016\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2017 DO 31.12.2017\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2018 DO 31.12.2018\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2019 DO 31.12.2019\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2020 DO 31.12.2020\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2021 DO 31.12.2021\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2022 DO 31.12.2022\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2023 DO 31.12.2023\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2024 DO 31.12.2024\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2025 DO 31.12.2025\"\n            }\n          ],\n          \"wzmiankaOZlozeniuSprawozdaniaZDzialalnosci\":
+        [\n            {\n              \"zaOkresOdDo\": \"01.01.2000R.-31.12.2000R.\"\n
+        \           },\n            {\n              \"zaOkresOdDo\": \"1.01.2001
+        - 31.12.2001\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2002 - 31.12.2002\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2003 - 31.12.2003\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2004 - 31.12.2004\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2005-31.12.2005\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"0101.2006 - 31.12.2006\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2007 - 31.12.2007\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2008-31.12.2008\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2009 - 31.12.2009\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2010 - 31.12.2010\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2011-31.12.2011\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2012 - 31.12.2012\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2013 DO 31.12.2013\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2014 DO 31.12.2014\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2015 DO 31.12.2015\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2016 DO 31.12.2016\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2017 DO 31.12.2017\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2018 DO 31.12.2018\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2019 DO 31.12.2019\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2020 DO 31.12.2020\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2021 DO 31.12.2021\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2022 DO 31.12.2022\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2023 DO 31.12.2023\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2024 DO 31.12.2024\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2025 DO 31.12.2025\"\n            }\n          ]\n        },\n
+        \       \"sprawozdaniaGrupyKapitalowej\": {\n          \"wzmiankaOZlozeniuSkonsolidowanegoRocznegoSprawozdaniaFinansowego\":
+        [\n            {\n              \"dataZlozenia\": \"24.09.2007\",\n              \"zaOkresOdDo\":
+        \"01.01.2006 - 31.12.2006\"\n            },\n            {\n              \"dataZlozenia\":
+        \"08.09.2008\",\n              \"zaOkresOdDo\": \"01.01.2007 - 31.12.2007\"\n
+        \           },\n            {\n              \"dataZlozenia\": \"15.09.2009\",\n
+        \             \"zaOkresOdDo\": \"01.01.2008 - 31.12.2008\"\n            },\n
+        \           {\n              \"dataZlozenia\": \"15.07.2010\",\n              \"zaOkresOdDo\":
+        \"01.01.2009 - 31.12.2009\"\n            },\n            {\n              \"dataZlozenia\":
+        \"13.07.2011\",\n              \"zaOkresOdDo\": \"01.01.2010 - 31.12.2010\"\n
+        \           },\n            {\n              \"dataZlozenia\": \"10.07.2012\",\n
+        \             \"zaOkresOdDo\": \"01.01.2011-31.12.2011\"\n            },\n
+        \           {\n              \"dataZlozenia\": \"03.07.2013\",\n              \"zaOkresOdDo\":
+        \"01.01.2012 - 31.12.2012\"\n            },\n            {\n              \"dataZlozenia\":
+        \"03.07.2014\",\n              \"zaOkresOdDo\": \"OD 01.01.2013 DO 31.12.2013\"\n
+        \           },\n            {\n              \"dataZlozenia\": \"06.05.2015\",\n
+        \             \"zaOkresOdDo\": \"OD 01.01.2014 DO 31.12.2014\"\n            },\n
+        \           {\n              \"dataZlozenia\": \"08.07.2016\",\n              \"zaOkresOdDo\":
+        \"OD 01.01.2015 DO 31.12.2015\"\n            },\n            {\n              \"dataZlozenia\":
+        \"19.07.2017\",\n              \"zaOkresOdDo\": \"OD 01.01.2016 DO 31.12.2016\"\n
+        \           },\n            {\n              \"dataZlozenia\": \"06.08.2018\",\n
+        \             \"zaOkresOdDo\": \"OD 01.01.2017 DO 31.12.2017\"\n            },\n
+        \           {\n              \"dataZlozenia\": \"19.07.2019\",\n              \"zaOkresOdDo\":
+        \"OD 01.01.2018 DO 31.12.2018\"\n            },\n            {\n              \"dataZlozenia\":
+        \"24.08.2020\",\n              \"zaOkresOdDo\": \"OD 01.01.2019 DO 31.12.2019\"\n
+        \           },\n            {\n              \"dataZlozenia\": \"03.08.2021\",\n
+        \             \"zaOkresOdDo\": \"OD 01.01.2020 DO 31.12.2020\"\n            },\n
+        \           {\n              \"dataZlozenia\": \"04.08.2022\",\n              \"zaOkresOdDo\":
+        \"OD 01.01.2021 DO 31.12.2021\"\n            },\n            {\n              \"dataZlozenia\":
+        \"05.07.2023\",\n              \"zaOkresOdDo\": \"OD 01.01.2022 DO 31.12.2022\"\n
+        \           },\n            {\n              \"dataZlozenia\": \"05.08.2024\",\n
+        \             \"zaOkresOdDo\": \"OD 01.01.2023 DO 31.12.2023\"\n            },\n
+        \           {\n              \"dataZlozenia\": \"08.07.2025\",\n              \"zaOkresOdDo\":
+        \"OD 01.01.2024 DO 31.12.2024\"\n            },\n            {\n              \"dataZlozenia\":
+        \"09.07.2026\",\n              \"zaOkresOdDo\": \"OD 01.01.2025 DO 31.12.2025\"\n
+        \           }\n          ],\n          \"wzmiankaOZlozeniuOpiniiBieglegoRewidentaSprawozdaniaZBadania\":
+        [\n            {\n              \"zaOkresOdDo\": \"01.01.2006 - 31.12.2006\"\n
+        \           },\n            {\n              \"zaOkresOdDo\": \"01.01.2007
+        - 31.12.2007\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2008 - 31.12.2008\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2009 - 31.12.2009\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2010 - 31.12.2010\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2011-31.12.2011\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2012 - 31.12.2012\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2013 DO 31.12.2013\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2014 DO 31.12.2014\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2015 DO 31.12.2015\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2016 DO 31.12.2016\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2017 DO 31.12.2017\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2018 DO 31.12.2018\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2019 DO 31.12.2019\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2020 DO 31.12.2020\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2021 DO 31.12.2021\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2022 DO 31.12.2022\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2023 DO 31.12.2023\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2024 DO 31.12.2024\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2025 DO 31.12.2025\"\n            }\n          ],\n          \"wzmiankaOZlozeniuUchwalyPostanowieniaOZatwierdzeniuSkonsolidowanegoRocznegoSprawozdaniaFinansowego\":
+        [\n            {\n              \"zaOkresOdDo\": \"01.01.2006 - 31.12.2006\"\n
+        \           },\n            {\n              \"zaOkresOdDo\": \"01.01.2007
+        - 31.12.2007\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2008 - 31.12.2008\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2009 - 31.12.2009\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2010 - 31.12.2010\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2011-31.12.2011\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2012 - 31.12.2012\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2013 DO 31.12.2013\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2014 DO 31.12.2014\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2015 DO 31.12.2015\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2016 DO 31.12.2016\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2017 DO 31.12.2017\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2018 DO 31.12.2018\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2019 DO 31.12.2019\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2020 DO 31.12.2020\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2021 DO 31.12.2021\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2022 DO 31.12.2022\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2023 DO 31.12.2023\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2024 DO 31.12.2024\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2025 DO 31.12.2025\"\n            }\n          ],\n          \"wzmiankaOZlozeniuSprawozdaniaZDzialalnosciGrupyKapitalowejSpolkiDominujacejLacznie\":
+        [\n            {\n              \"zaOkresOdDo\": \"01.01.2006 - 31.12.2006\"\n
+        \           },\n            {\n              \"zaOkresOdDo\": \"01.01.2007
+        - 31.12.2007\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2009 - 31.12.2009\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2010 - 31.12.2010\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2011-31.12.2011\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"01.01.2012 - 31.12.2012\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2013 DO 31.12.2013\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2014 DO 31.12.2014\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2015 DO 31.12.2015\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2016 DO 31.12.2016\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2017 DO 31.12.2017\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2018 DO 31.12.2018\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2019 DO 31.12.2019\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2020 DO 31.12.2020\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2021 DO 31.12.2021\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2022 DO 31.12.2022\"\n            },\n            {\n              \"zaOkresOdDo\":
+        \"OD 01.01.2023 DO 31.12.2023\"\n            }\n          ],\n          \"wzmiankaOZlozeniuSprawozdaniaZDzialalnosciGrupyKapitalowej\":
+        [\n            {\n              \"zaOkresOdDo\": \"OD 01.01.2024 DO 31.12.2024\"\n
+        \           },\n            {\n              \"zaOkresOdDo\": \"OD 01.01.2025
+        DO 31.12.2025\"\n            }\n          ]\n        },\n        \"informacjaODniuKonczacymRokObrotowy\":
+        {\n          \"dzienKonczacyPierwszyRokObrotowy\": \"31.12.2001\"\n        }\n
+        \     },\n      \"dzial4\": {},\n      \"dzial5\": {},\n      \"dzial6\":
+        {\n        \"polaczeniePodzialPrzeksztalcenie\": [\n          {\n            \"okreslenieOkolicznosci\":
+        \"PRZEJ\u0118CIE INNEJ SP\xD3\u0141KI\",\n            \"opisPolaczeniaPodzialuPrzeksztalcenia\":
+        \"PO\u0141\u0104CZENIE PRZEZ PRZEJ\u0118CIE W TRYBIE ART. 492 \xA7 1 PKT 1
+        K.S.H. POPRZEZ PRZENIESIENIE CA\u0141EGO MAJ\u0104TKU DRUKARNIA KOLEJOWA KRAK\xD3W
+        SP. Z O.O. Z SIEDZIB\u0104 W W\u0118GRZCACH (SP\xD3\u0141KA PRZEJMOWANA) NA
+        PKP S.A. Z SIEDZIB\u0104 W WARSZAWIE (SP\xD3\u0141KA PRZEJMUJ\u0104CA), ZGODNIE
+        Z ART. 516 \xA7 6 K.S.H. I ART. 515 \xA7 1 K.S.H. - BEZ PODWY\u017BSZENIA
+        KAPITA\u0141U ZAK\u0141ADOWEGO SP\xD3\u0141KI PRZJMUJ\u0104CEJ. UCHWA\u0141A
+        NR 36/2018 NADZWYCZAJNEGO WALNEGO ZGROMADZENIA PKP S.A. Z 09.08.2018 R., NOTARIUSZ
+        MAREK WATRAKIEWICZ, REP. A NR 11021/2018 I UCHWA\u0141A NR 1 NADZWYCZAJNEGO
+        ZGROMADZENIA WSP\xD3LNIK\xD3W DRUKARNIA KOLEJOWA KRAK\xD3W SP. Z O.O. Z 24.09.2018
+        R., NOTARIUSZ MAREK WATRAKIEWICZ, REP. A NR 13442/2018\",\n            \"podmiotyPrzejmowane\":
+        [\n              {\n                \"nazwa\": \"DRUKARNIA KOLEJOWA KRAK\xD3W
+        SP\xD3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015ACI\u0104, SP\xD3\u0141KA
+        Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015ACI\u0104\",\n                \"krajNazwaRejestru\":
+        \"POLSKA, KRAJOWY REJESTR S\u0104DOWY\",\n                \"krs\": {\n                  \"krs\":
+        \"0000027610\"\n                },\n                \"nazwaSadu\": \"*******\",\n
+        \               \"identyfikator\": {\n                  \"regon\": \"35711392800000\"\n
+        \               }\n              }\n            ]\n          }\n        ]\n
+        \     }\n    }\n  }\n}"
+    headers:
+      content-length:
+      - '51412'
+      content-type:
+      - application/json
+      date:
+      - Fri, 09 Oct 2026 12:55:41 GMT
+      server:
+      - Kestrel
+      set-cookie:
+      - 6475d63c34b0b267c9d3efec13bec86b=d53bb845816558f196c83acf08dbd9d0; path=/;
+        HttpOnly; Secure; SameSite=None
+    status:
+      code: 200
+      message: OK
+version: 1

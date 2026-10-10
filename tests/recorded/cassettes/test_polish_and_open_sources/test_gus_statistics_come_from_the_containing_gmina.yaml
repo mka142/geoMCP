@@ -1,0 +1,133 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - uldk.gugik.gov.pl
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: GET
+    uri: https://uldk.gugik.gov.pl/?request=GetCommuneByXY&xy=17.032%2C51.109999256240854%2C4326&result=teryt%2Ccommune
+  response:
+    body:
+      string: "0\n026401_1|Wroc\u0142aw (miasto)\n"
+    headers:
+      access-control-allow-origin:
+      - '*'
+      connection:
+      - Keep-Alive
+      content-length:
+      - '29'
+      content-type:
+      - text/plain; charset=UTF-8
+      date:
+      - Thu, 08 Oct 2026 14:55:56 GMT
+      keep-alive:
+      - timeout=5, max=500
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - bdl.stat.gov.pl
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: GET
+    uri: https://bdl.stat.gov.pl/api/v1/units/search?name=Wroc%C5%82aw&level=6&page-size=100&format=json
+  response:
+    body:
+      string: "{\"totalRecords\":6,\"page\":0,\"pageSize\":100,\"links\":{\"first\":\"https://bdl.stat.gov.pl/api/v1/units/search?name=Wroc%C5%82aw&level=6&page-size=100&format=json&page=0\",\"self\":\"https://bdl.stat.gov.pl/api/v1/units/search?name=Wroc%C5%82aw&level=6&page-size=100&format=json&page=0\",\"last\":\"https://bdl.stat.gov.pl/api/v1/units/search?name=Wroc%C5%82aw&level=6&page-size=100&format=json&page=0\"},\"results\":[{\"id\":\"030210423043\",\"name\":\"K\u0105ty
+        Wroc\u0142awskie\",\"parentId\":\"030210423000\",\"level\":6,\"kind\":\"3\",\"hasDescription\":false},{\"id\":\"030210423044\",\"name\":\"K\u0105ty
+        Wroc\u0142awskie - miasto\",\"parentId\":\"030210423043\",\"level\":6,\"kind\":\"4\",\"hasDescription\":false},{\"id\":\"030210423045\",\"name\":\"K\u0105ty
+        Wroc\u0142awskie - obszar wiejski\",\"parentId\":\"030210423043\",\"level\":6,\"kind\":\"5\",\"hasDescription\":false},{\"id\":\"030210564011\",\"name\":\"Wroc\u0142aw\",\"parentId\":\"030210564000\",\"level\":6,\"kind\":\"1\",\"hasDescription\":false},{\"id\":\"040416707011\",\"name\":\"Inowroc\u0142aw\",\"parentId\":\"040416707000\",\"level\":6,\"kind\":\"1\",\"hasDescription\":false},{\"id\":\"040416707042\",\"name\":\"Inowroc\u0142aw\",\"parentId\":\"040416707000\",\"level\":6,\"kind\":\"2\",\"hasDescription\":false}]}"
+    headers:
+      age:
+      - '1574'
+      cache-control:
+      - public,max-age=1800
+      content-length:
+      - '1123'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Thu, 08 Oct 2026 14:56:10 GMT
+      etag:
+      - SQjU_zrLCLKtlRQoXI0DcQ
+      set-cookie:
+      - cookie=85e497491d001d5aeeddc2fb0cafc76a;max-age=1800;Path=/;HttpOnly
+      - cookiesession1=678B288A6A71DA0AA3CC9BCF68BAD2D2;Expires=Fri, 08 Oct 2027 14:56:12
+        GMT;Path=/;HttpOnly
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains
+      vary:
+      - Accept,Accept-Language
+      x-rate-limit-limit:
+      - 7d
+      x-rate-limit-remaining:
+      - '9994'
+      x-rate-limit-reset:
+      - '2026-10-15T14:13:21.2455626Z'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - bdl.stat.gov.pl
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: GET
+    uri: https://bdl.stat.gov.pl/api/v1/data/by-unit/030210564011?var-id=60559&var-id=72305&var-id=76037&var-id=450551&var-id=453193&var-id=747060&var-id=1548700&format=json
+  response:
+    body:
+      string: "{\"totalRecords\":7,\"unitId\":\"030210564011\",\"unitName\":\"Wroc\u0142aw\",\"aggregateId\":1,\"results\":[{\"id\":60559,\"measureUnitId\":26,\"lastUpdate\":\"2026-08-13T12:00:40.073\",\"values\":[{\"year\":\"2002\",\"val\":2182.6,\"attrId\":1},{\"year\":\"2003\",\"val\":2177.1,\"attrId\":1},{\"year\":\"2004\",\"val\":2172.7,\"attrId\":1},{\"year\":\"2005\",\"val\":2171.6,\"attrId\":1},{\"year\":\"2006\",\"val\":2167.3,\"attrId\":1},{\"year\":\"2007\",\"val\":2161.5,\"attrId\":1},{\"year\":\"2008\",\"val\":2158.9,\"attrId\":1},{\"year\":\"2009\",\"val\":2158.8,\"attrId\":1},{\"year\":\"2010\",\"val\":2153.9,\"attrId\":1},{\"year\":\"2011\",\"val\":2155.7,\"attrId\":1},{\"year\":\"2012\",\"val\":2155.5,\"attrId\":1},{\"year\":\"2013\",\"val\":2158.6,\"attrId\":1},{\"year\":\"2014\",\"val\":2166.8,\"attrId\":1},{\"year\":\"2015\",\"val\":2171.2,\"attrId\":1},{\"year\":\"2016\",\"val\":2177.7,\"attrId\":1},{\"year\":\"2017\",\"val\":2180.8,\"attrId\":1},{\"year\":\"2018\",\"val\":2187.9,\"attrId\":1},{\"year\":\"2019\",\"val\":2195.4,\"attrId\":1},{\"year\":\"2020\",\"val\":2300.4,\"attrId\":1},{\"year\":\"2021\",\"val\":2302.8,\"attrId\":1},{\"year\":\"2022\",\"val\":2302.1,\"attrId\":1},{\"year\":\"2023\",\"val\":2301.0,\"attrId\":1},{\"year\":\"2024\",\"val\":2298.1,\"attrId\":1},{\"year\":\"2025\",\"val\":2297.2,\"attrId\":1}]},{\"id\":72305,\"measureUnitId\":26,\"lastUpdate\":\"2026-05-06T08:51:41.913\",\"values\":[{\"year\":\"1995\",\"val\":641974,\"attrId\":1},{\"year\":\"1996\",\"val\":640600,\"attrId\":1},{\"year\":\"1997\",\"val\":639399,\"attrId\":1},{\"year\":\"1998\",\"val\":637877,\"attrId\":1},{\"year\":\"1999\",\"val\":643522,\"attrId\":1},{\"year\":\"2000\",\"val\":640614,\"attrId\":1},{\"year\":\"2001\",\"val\":640804,\"attrId\":1},{\"year\":\"2002\",\"val\":639150,\"attrId\":1},{\"year\":\"2003\",\"val\":637548,\"attrId\":1},{\"year\":\"2004\",\"val\":636268,\"attrId\":1},{\"year\":\"2005\",\"val\":635932,\"attrId\":1},{\"year\":\"2006\",\"val\":634630,\"attrId\":1},{\"year\":\"2007\",\"val\":632930,\"attrId\":1},{\"year\":\"2008\",\"val\":632162,\"attrId\":1},{\"year\":\"2009\",\"val\":632146,\"attrId\":1},{\"year\":\"2010\",\"val\":630691,\"attrId\":1},{\"year\":\"2011\",\"val\":631235,\"attrId\":1},{\"year\":\"2012\",\"val\":631188,\"attrId\":1},{\"year\":\"2013\",\"val\":632067,\"attrId\":1},{\"year\":\"2014\",\"val\":634487,\"attrId\":1},{\"year\":\"2015\",\"val\":635759,\"attrId\":1},{\"year\":\"2016\",\"val\":637683,\"attrId\":1},{\"year\":\"2017\",\"val\":638586,\"attrId\":1},{\"year\":\"2018\",\"val\":640648,\"attrId\":1},{\"year\":\"2019\",\"val\":642869,\"attrId\":1},{\"year\":\"2020\",\"val\":673592,\"attrId\":1},{\"year\":\"2021\",\"val\":674312,\"attrId\":1},{\"year\":\"2022\",\"val\":674079,\"attrId\":1},{\"year\":\"2023\",\"val\":673743,\"attrId\":1},{\"year\":\"2024\",\"val\":672882,\"attrId\":1},{\"year\":\"2025\",\"val\":672601,\"attrId\":1}]},{\"id\":76037,\"measureUnitId\":4,\"lastUpdate\":\"2026-07-24T12:22:37.537\",\"values\":[{\"year\":\"1995\",\"val\":426385854,\"attrId\":1},{\"year\":\"1996\",\"val\":615297592,\"attrId\":1},{\"year\":\"1997\",\"val\":813049769,\"attrId\":1},{\"year\":\"1998\",\"val\":1209333296,\"attrId\":1},{\"year\":\"1999\",\"val\":1303045370,\"attrId\":1},{\"year\":\"2000\",\"val\":1488544848,\"attrId\":1},{\"year\":\"2001\",\"val\":1483505975,\"attrId\":1},{\"year\":\"2002\",\"val\":1463405631,\"attrId\":1},{\"year\":\"2003\",\"val\":1482366482,\"attrId\":1},{\"year\":\"2004\",\"val\":1739187394,\"attrId\":1},{\"year\":\"2005\",\"val\":2141964973,\"attrId\":1},{\"year\":\"2006\",\"val\":2437471407.33,\"attrId\":1},{\"year\":\"2007\",\"val\":2667198918.87,\"attrId\":1},{\"year\":\"2008\",\"val\":2621775347.27,\"attrId\":1},{\"year\":\"2009\",\"val\":2737507200.85,\"attrId\":1},{\"year\":\"2010\",\"val\":3169243293.24,\"attrId\":1},{\"year\":\"2011\",\"val\":3504771704.59,\"attrId\":1},{\"year\":\"2012\",\"val\":3591871474.48,\"attrId\":1},{\"year\":\"2013\",\"val\":3610600866.19,\"attrId\":1},{\"year\":\"2014\",\"val\":3537544007.65,\"attrId\":1},{\"year\":\"2015\",\"val\":3613996216.91,\"attrId\":1},{\"year\":\"2016\",\"val\":4039095717.68,\"attrId\":1},{\"year\":\"2017\",\"val\":4134982645.24,\"attrId\":1},{\"year\":\"2018\",\"val\":4456648391.83,\"attrId\":1},{\"year\":\"2019\",\"val\":4928475532.71,\"attrId\":1},{\"year\":\"2020\",\"val\":5175360707.73,\"attrId\":1},{\"year\":\"2021\",\"val\":6193646460.94,\"attrId\":1},{\"year\":\"2022\",\"val\":6147436138.96,\"attrId\":1},{\"year\":\"2023\",\"val\":6378603279.09,\"attrId\":1},{\"year\":\"2024\",\"val\":7727962649.72,\"attrId\":1},{\"year\":\"2025\",\"val\":8232304918.58,\"attrId\":1}]},{\"id\":450551,\"measureUnitId\":1,\"lastUpdate\":\"2026-06-10T13:24:27.447\",\"values\":[{\"year\":\"2002\",\"val\":-2.43,\"attrId\":1},{\"year\":\"2003\",\"val\":-2.37,\"attrId\":1},{\"year\":\"2004\",\"val\":-2.21,\"attrId\":1},{\"year\":\"2005\",\"val\":-1.78,\"attrId\":1},{\"year\":\"2006\",\"val\":-1.47,\"attrId\":1},{\"year\":\"2007\",\"val\":-1.34,\"attrId\":1},{\"year\":\"2008\",\"val\":-0.43,\"attrId\":1},{\"year\":\"2009\",\"val\":-0.80,\"attrId\":1},{\"year\":\"2010\",\"val\":0.25,\"attrId\":1},{\"year\":\"2011\",\"val\":-0.11,\"attrId\":1},{\"year\":\"2012\",\"val\":-0.57,\"attrId\":1},{\"year\":\"2013\",\"val\":-0.65,\"attrId\":1},{\"year\":\"2014\",\"val\":0.13,\"attrId\":1},{\"year\":\"2015\",\"val\":-0.69,\"attrId\":1},{\"year\":\"2016\",\"val\":1.01,\"attrId\":1},{\"year\":\"2017\",\"val\":0.45,\"attrId\":1},{\"year\":\"2018\",\"val\":0.75,\"attrId\":1},{\"year\":\"2019\",\"val\":0.87,\"attrId\":1},{\"year\":\"2020\",\"val\":-0.92,\"attrId\":1},{\"year\":\"2021\",\"val\":-2.02,\"attrId\":1},{\"year\":\"2022\",\"val\":-1.38,\"attrId\":1},{\"year\":\"2023\",\"val\":-1.77,\"attrId\":1},{\"year\":\"2024\",\"val\":-1.93,\"attrId\":1},{\"year\":\"2025\",\"val\":-1.78,\"attrId\":1}]},{\"id\":453193,\"measureUnitId\":26,\"lastUpdate\":\"2026-06-23T13:32:26.09\",\"values\":[{\"year\":\"2003\",\"val\":0.3,\"attrId\":1},{\"year\":\"2004\",\"val\":1.2,\"attrId\":1},{\"year\":\"2005\",\"val\":2.2,\"attrId\":1},{\"year\":\"2006\",\"val\":-0.5,\"attrId\":1},{\"year\":\"2007\",\"val\":-0.3,\"attrId\":1},{\"year\":\"2008\",\"val\":0.3,\"attrId\":1},{\"year\":\"2009\",\"val\":1.3,\"attrId\":1},{\"year\":\"2010\",\"val\":1.1,\"attrId\":1},{\"year\":\"2011\",\"val\":1.0,\"attrId\":1},{\"year\":\"2012\",\"val\":1.4,\"attrId\":1},{\"year\":\"2013\",\"val\":2.2,\"attrId\":1},{\"year\":\"2014\",\"val\":3.0,\"attrId\":1},{\"year\":\"2015\",\"val\":0.0,\"attrId\":4},{\"year\":\"2016\",\"val\":3.2,\"attrId\":1},{\"year\":\"2017\",\"val\":2.2,\"attrId\":1},{\"year\":\"2018\",\"val\":2.3,\"attrId\":1},{\"year\":\"2019\",\"val\":3.2,\"attrId\":1},{\"year\":\"2020\",\"val\":1.9,\"attrId\":1},{\"year\":\"2021\",\"val\":1.4,\"attrId\":1},{\"year\":\"2022\",\"val\":1.5,\"attrId\":1},{\"year\":\"2023\",\"val\":1.4,\"attrId\":1},{\"year\":\"2024\",\"val\":0.9,\"attrId\":1},{\"year\":\"2025\",\"val\":1.2,\"attrId\":1}]},{\"id\":747060,\"measureUnitId\":1,\"lastUpdate\":\"2026-04-20T12:16:09.8\",\"values\":[{\"year\":\"2002\",\"val\":5.5,\"attrId\":1},{\"year\":\"2003\",\"val\":6.1,\"attrId\":1},{\"year\":\"2004\",\"val\":3.2,\"attrId\":1},{\"year\":\"2005\",\"val\":3.1,\"attrId\":1},{\"year\":\"2006\",\"val\":6.9,\"attrId\":1},{\"year\":\"2007\",\"val\":5.2,\"attrId\":1},{\"year\":\"2008\",\"val\":8.4,\"attrId\":1},{\"year\":\"2009\",\"val\":9.3,\"attrId\":1},{\"year\":\"2010\",\"val\":7.4,\"attrId\":1},{\"year\":\"2011\",\"val\":6.0,\"attrId\":1},{\"year\":\"2012\",\"val\":10.6,\"attrId\":1},{\"year\":\"2013\",\"val\":12.4,\"attrId\":1},{\"year\":\"2014\",\"val\":9.4,\"attrId\":1},{\"year\":\"2015\",\"val\":10.5,\"attrId\":1},{\"year\":\"2016\",\"val\":13.3,\"attrId\":1},{\"year\":\"2017\",\"val\":13.9,\"attrId\":1},{\"year\":\"2018\",\"val\":14.8,\"attrId\":1},{\"year\":\"2019\",\"val\":17.8,\"attrId\":1},{\"year\":\"2020\",\"val\":16.3,\"attrId\":1},{\"year\":\"2021\",\"val\":16.4,\"attrId\":1},{\"year\":\"2022\",\"val\":13.4,\"attrId\":1},{\"year\":\"2023\",\"val\":12.1,\"attrId\":1},{\"year\":\"2024\",\"val\":9.0,\"attrId\":1},{\"year\":\"2025\",\"val\":11.4,\"attrId\":1}]},{\"id\":1548700,\"measureUnitId\":1,\"lastUpdate\":\"2026-04-02T09:58:46.913\",\"values\":[{\"year\":\"2009\",\"val\":128,\"attrId\":1},{\"year\":\"2010\",\"val\":143,\"attrId\":1},{\"year\":\"2011\",\"val\":144,\"attrId\":1},{\"year\":\"2012\",\"val\":146,\"attrId\":1},{\"year\":\"2013\",\"val\":150,\"attrId\":1},{\"year\":\"2014\",\"val\":147,\"attrId\":11},{\"year\":\"2015\",\"val\":114,\"attrId\":1},{\"year\":\"2016\",\"val\":115,\"attrId\":1},{\"year\":\"2017\",\"val\":120,\"attrId\":1},{\"year\":\"2018\",\"val\":133,\"attrId\":1},{\"year\":\"2019\",\"val\":125,\"attrId\":1},{\"year\":\"2020\",\"val\":104,\"attrId\":1},{\"year\":\"2021\",\"val\":126,\"attrId\":1},{\"year\":\"2022\",\"val\":167,\"attrId\":1},{\"year\":\"2023\",\"val\":158,\"attrId\":1},{\"year\":\"2024\",\"val\":148,\"attrId\":1},{\"year\":\"2025\",\"val\":152,\"attrId\":1}]}]}"
+    headers:
+      cache-control:
+      - public,max-age=1800
+      content-length:
+      - '7598'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Thu, 08 Oct 2026 14:56:11 GMT
+      etag:
+      - WPDZE1pvfx24O1wVJ29xhQ
+      set-cookie:
+      - cookie=85e497491d001d5aeeddc2fb0dafc76a;max-age=1800;Path=/;HttpOnly
+      - cookiesession1=678B288AFF57CA5255E30012CDD64308;Expires=Fri, 08 Oct 2027 14:56:13
+        GMT;Path=/;HttpOnly
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains
+      vary:
+      - Accept,Accept-Language
+      x-rate-limit-limit:
+      - 7d
+      x-rate-limit-remaining:
+      - '9998'
+      x-rate-limit-reset:
+      - '2026-10-15T14:29:57.2069328Z'
+    status:
+      code: 200
+      message: OK
+version: 1

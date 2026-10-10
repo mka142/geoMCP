@@ -1,0 +1,69 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - mapy.geoportal.gov.pl
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: GET
+    uri: https://mapy.geoportal.gov.pl/wss/ext/KrajowaIntegracjaMiejscowychPlanowZagospodarowaniaPrzestrzennego?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetFeatureInfo&LAYERS=plany%2Cwektor-str%2Cwektor-pow%2Cwektor-lzb%2Craster&QUERY_LAYERS=plany%2Cwektor-str%2Cwektor-pow%2Cwektor-lzb%2Craster&STYLES=&CRS=EPSG%3A2180&BBOX=243059.78056719527%2C567627.876732444%2C243069.78056719527%2C567637.876732444&WIDTH=11&HEIGHT=11&I=5&J=5&INFO_FORMAT=text%2Fhtml&FEATURE_COUNT=10
+  response:
+    body:
+      string: "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\"><html
+        xmlns:esri_wms=\"http://www.esri.com/wms\" xmlns=\"http://www.esri.com/wms\">\r\n<head>\r\n<meta
+        http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\"></meta>\r\n<style
+        type=\"text/css\">\r\n\t\t\t\t\ttable, th, td {\r\n\t\t\t\t\t\tborder:1px
+        solid #e5e5e5;\r\n\t\t\t\t\t\tborder-collapse:collapse;\r\n\t\t\t\t\t\tfont-family:
+        arial;\t\t\t\t\t\r\n\t\t\t\t\t\tfont-size: 80%;\t\t\t\t\t\t\r\n\t\t\t\t\t\tcolor:
+        #333333\r\n\t\t\t\t\t}   \t\t\t\t\t\r\n\t\t\t\t\tth, td {\r\n\t\t\t\t\t\tvalign:
+        top;\r\n\t\t\t\t\t\ttext-align: center;\r\n\t\t\t\t\t}\t\t\t\t\t\r\n\t\t\t\t\tth
+        {\r\n\t\t\t\t\t\tbackground-color: #aed7ff\r\n\t\t\t\t\t}\r\n\t\t\t\t</style>\r\n</head>\r\n<body>\r\n<h5>FeatureInfoCollection
+        - layer name: 'Przeznaczenia MPZP skala od 1:2000'</h5>\r\n<table width=\"100%\"
+        cellpadding=\"0\" cellspacing=\"0\" border=\"1\">\r\n<tbody>\r\n<tr>\r\n<th>id_pg</th>\r\n<th>gdb_id</th>\r\n<th>Uchwalenie</th>\r\n<th>Data
+        uchwalenia</th>\r\n<th>Og\u0142oszenie</th>\r\n<th>Data DUWM</th>\r\n<th>Data
+        obowi\u0105zywania</th>\r\n<th>Oznaczenie</th>\r\n<th>Nazwa MPZP</th>\r\n<th>WWW</th>\r\n<th>Rodzaj
+        oznaczenia</th>\r\n<th>opis_oznac</th>\r\n<th>Shape</th>\r\n<th>Data zasilenia</th>\r\n</tr>\r\n<tr>\r\n<td>9648</td>\r\n<td>5C4FD46743530B4AE0630D0A1EAC0BE7</td>\r\n<td>LXXXVIII/2145/17</td>\r\n<td>08.11.2017</td>\r\n<td>2017.7618</td>\r\n<td>23.11.2017</td>\r\n<td>08.12.2017</td>\r\n<td>MW/U.31</td>\r\n<td>KAZIMIERZ</td>\r\n<td>http://www.bip.krakow.pl/?dok_id=92971</td>\r\n<td>MW/U</td>\r\n<td>Tereny
+        zabudowy mieszkaniowo - us\u0142ugowej (MW/U.1-MW/U.57)</td>\r\n<td>Polygon</td>\r\n<td>2026-10-08</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<h5>FeatureInfoCollection
+        - layer name: 'Przeznaczenia MPZP skala od 1:1000 - 1:2000'</h5>\r\n<table
+        width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"1\">\r\n<tbody>\r\n<tr>\r\n<th>id_pg</th>\r\n<th>gdb_id</th>\r\n<th>Uchwalenie</th>\r\n<th>Data
+        uchwalenia</th>\r\n<th>Og\u0142oszenie</th>\r\n<th>Data DUWM</th>\r\n<th>Data
+        obowi\u0105zywania</th>\r\n<th>Oznaczenie</th>\r\n<th>Nazwa MPZP</th>\r\n<th>WWW</th>\r\n<th>Rodzaj
+        oznaczenia</th>\r\n<th>opis_oznac</th>\r\n<th>Shape</th>\r\n<th>Data zasilenia</th>\r\n</tr>\r\n<tr>\r\n<td>9648</td>\r\n<td>5C4FD46743530B4AE0630D0A1EAC0BE7</td>\r\n<td>LXXXVIII/2145/17</td>\r\n<td>08.11.2017</td>\r\n<td>2017.7618</td>\r\n<td>23.11.2017</td>\r\n<td>08.12.2017</td>\r\n<td>MW/U.31</td>\r\n<td>KAZIMIERZ</td>\r\n<td>http://www.bip.krakow.pl/?dok_id=92971</td>\r\n<td>MW/U</td>\r\n<td>Tereny
+        zabudowy mieszkaniowo - us\u0142ugowej (MW/U.1-MW/U.57)</td>\r\n<td>Polygon</td>\r\n<td>2026-10-08</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<h5>FeatureInfoCollection
+        - layer name: 'Przeznaczenia MPZP - skala do 1:1000'</h5>\r\n<table width=\"100%\"
+        cellpadding=\"0\" cellspacing=\"0\" border=\"1\">\r\n<tbody>\r\n<tr>\r\n<th>id_pg</th>\r\n<th>gdb_id</th>\r\n<th>Uchwalenie</th>\r\n<th>Data
+        uchwalenia</th>\r\n<th>Og\u0142oszenie</th>\r\n<th>Data DUWM</th>\r\n<th>Data
+        obowi\u0105zywania</th>\r\n<th>Oznaczenie</th>\r\n<th>Nazwa MPZP</th>\r\n<th>WWW</th>\r\n<th>Rodzaj
+        oznaczenia</th>\r\n<th>opis_oznac</th>\r\n<th>Shape</th>\r\n<th>Data zasilenia</th>\r\n</tr>\r\n<tr>\r\n<td>9648</td>\r\n<td>5C4FD46743530B4AE0630D0A1EAC0BE7</td>\r\n<td>LXXXVIII/2145/17</td>\r\n<td>08.11.2017</td>\r\n<td>2017.7618</td>\r\n<td>23.11.2017</td>\r\n<td>08.12.2017</td>\r\n<td>MW/U.31</td>\r\n<td>KAZIMIERZ</td>\r\n<td>http://www.bip.krakow.pl/?dok_id=92971</td>\r\n<td>MW/U</td>\r\n<td>Tereny
+        zabudowy mieszkaniowo - us\u0142ugowej (MW/U.1-MW/U.57)</td>\r\n<td>Polygon</td>\r\n<td>2026-10-08</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</body>\r\n</html>\r\n"
+    headers:
+      access-control-allow-origin:
+      - '*'
+      connection:
+      - Keep-Alive
+      content-length:
+      - '3303'
+      content-type:
+      - text/html
+      date:
+      - Fri, 09 Oct 2026 12:17:19 GMT
+      keep-alive:
+      - timeout=5, max=96
+      set-cookie:
+      - gahLaQu1eeYooCu=!9DdKwMiU9+wR5Fo1jp1oiKAqZQw+bx9bwKgRB3BPe4pzJEGZLYUbr7JJGdBdqJ1YLSx2gkdh0N3jVQA=;
+        path=/; Httponly; Secure
+      - TS017e0801=01e9e35b22b66c9c7a4d482526089256275768829f091944759573798067c56851e5f841f188f6a18890ba58ceb6a0f332ffde11ff9ff590ea5c2cc487f32756b4565e537c;
+        Path=/; Domain=.mapy.geoportal.gov.pl
+      vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+version: 1

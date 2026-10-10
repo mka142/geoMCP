@@ -1,0 +1,706 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - uldk.gugik.gov.pl
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: GET
+    uri: https://uldk.gugik.gov.pl/?request=GetCommuneByXY&xy=17.032%2C51.109999256240854%2C4326&result=teryt%2Ccommune
+  response:
+    body:
+      string: "0\n026401_1|Wroc\u0142aw (miasto)\n"
+    headers:
+      access-control-allow-origin:
+      - '*'
+      connection:
+      - Keep-Alive
+      content-length:
+      - '29'
+      content-type:
+      - text/plain; charset=UTF-8
+      date:
+      - Fri, 09 Oct 2026 11:09:24 GMT
+      keep-alive:
+      - timeout=5, max=500
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - bdl.stat.gov.pl
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: GET
+    uri: https://bdl.stat.gov.pl/api/v1/units/search?name=Wroc%C5%82aw&level=6&page-size=100&format=json
+  response:
+    body:
+      string: "{\"totalRecords\":6,\"page\":0,\"pageSize\":100,\"links\":{\"first\":\"https://bdl.stat.gov.pl/api/v1/units/search?name=Wroc%C5%82aw&level=6&page-size=100&format=json&page=0\",\"self\":\"https://bdl.stat.gov.pl/api/v1/units/search?name=Wroc%C5%82aw&level=6&page-size=100&format=json&page=0\",\"last\":\"https://bdl.stat.gov.pl/api/v1/units/search?name=Wroc%C5%82aw&level=6&page-size=100&format=json&page=0\"},\"results\":[{\"id\":\"030210423043\",\"name\":\"K\u0105ty
+        Wroc\u0142awskie\",\"parentId\":\"030210423000\",\"level\":6,\"kind\":\"3\",\"hasDescription\":false},{\"id\":\"030210423044\",\"name\":\"K\u0105ty
+        Wroc\u0142awskie - miasto\",\"parentId\":\"030210423043\",\"level\":6,\"kind\":\"4\",\"hasDescription\":false},{\"id\":\"030210423045\",\"name\":\"K\u0105ty
+        Wroc\u0142awskie - obszar wiejski\",\"parentId\":\"030210423043\",\"level\":6,\"kind\":\"5\",\"hasDescription\":false},{\"id\":\"030210564011\",\"name\":\"Wroc\u0142aw\",\"parentId\":\"030210564000\",\"level\":6,\"kind\":\"1\",\"hasDescription\":false},{\"id\":\"040416707011\",\"name\":\"Inowroc\u0142aw\",\"parentId\":\"040416707000\",\"level\":6,\"kind\":\"1\",\"hasDescription\":false},{\"id\":\"040416707042\",\"name\":\"Inowroc\u0142aw\",\"parentId\":\"040416707000\",\"level\":6,\"kind\":\"2\",\"hasDescription\":false}]}"
+    headers:
+      age:
+      - '331'
+      cache-control:
+      - public,max-age=1800
+      content-length:
+      - '1123'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 09 Oct 2026 11:09:28 GMT
+      etag:
+      - SQjU_zrLCLKtlRQoXI0DcQ
+      set-cookie:
+      - cookie=85e497491d001d5aeeddc2fb69cbc86a;max-age=1800;Path=/;HttpOnly
+      - cookiesession1=678B288A0504DDA85C7C386A4197DE8B;Expires=Sat, 09 Oct 2027 11:09:29
+        GMT;Path=/;HttpOnly
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains
+      vary:
+      - Accept,Accept-Language
+      x-rate-limit-limit:
+      - 7d
+      x-rate-limit-remaining:
+      - '9996'
+      x-rate-limit-reset:
+      - '2026-10-16T10:53:11.2464060Z'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - bdl.stat.gov.pl
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: GET
+    uri: https://bdl.stat.gov.pl/api/v1/units/030210564011?format=json
+  response:
+    body:
+      string: "{\"id\":\"030210564011\",\"name\":\"Wroc\u0142aw\",\"parentId\":\"030210564000\",\"level\":6,\"kind\":\"1\",\"hasDescription\":false,\"years\":[1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026]}"
+    headers:
+      age:
+      - '329'
+      cache-control:
+      - public,max-age=1800
+      content-length:
+      - '279'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 09 Oct 2026 11:09:29 GMT
+      etag:
+      - iCROQXfc8CkqiY6NCwRvOw
+      set-cookie:
+      - cookie=85e497491d001d5aeeddc2fb6acbc86a;max-age=1800;Path=/;HttpOnly
+      - cookiesession1=678B288AB18E8C34A5AB7D606DBD56E2;Expires=Sat, 09 Oct 2027 11:09:30
+        GMT;Path=/;HttpOnly
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains
+      vary:
+      - Accept,Accept-Language
+      x-rate-limit-limit:
+      - 7d
+      x-rate-limit-remaining:
+      - '9998'
+      x-rate-limit-reset:
+      - '2026-10-16T11:03:59.4441764Z'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - bdl.stat.gov.pl
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: GET
+    uri: https://bdl.stat.gov.pl/api/v1/units/030210564000?format=json
+  response:
+    body:
+      string: "{\"id\":\"030210564000\",\"name\":\"Powiat m. Wroc\u0142aw\",\"parentId\":\"030210500000\",\"level\":5,\"kind\":\"2\",\"hasDescription\":false,\"years\":[1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026]}"
+    headers:
+      age:
+      - '328'
+      cache-control:
+      - public,max-age=1800
+      content-length:
+      - '289'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 09 Oct 2026 11:09:29 GMT
+      etag:
+      - GVGuE3cqy4eee1qr6-2W_g
+      set-cookie:
+      - cookie=85e497491d001d5aeeddc2fb6bcbc86a;max-age=1800;Path=/;HttpOnly
+      - cookiesession1=678B288A484668675AD370C0EE4A29B2;Expires=Sat, 09 Oct 2027 11:09:31
+        GMT;Path=/;HttpOnly
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains
+      vary:
+      - Accept,Accept-Language
+      x-rate-limit-limit:
+      - 7d
+      x-rate-limit-remaining:
+      - '9998'
+      x-rate-limit-reset:
+      - '2026-10-16T11:04:01.6313263Z'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - bdl.stat.gov.pl
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: GET
+    uri: https://bdl.stat.gov.pl/api/v1/units/030210500000?format=json
+  response:
+    body:
+      string: "{\"id\":\"030210500000\",\"name\":\"PODREGION MIASTO WROC\u0141AW\",\"parentId\":\"030210000000\",\"level\":4,\"hasDescription\":false,\"years\":[1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026]}"
+    headers:
+      age:
+      - '327'
+      cache-control:
+      - public,max-age=1800
+      content-length:
+      - '285'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 09 Oct 2026 11:09:30 GMT
+      etag:
+      - qxSOgESMYn63p5eBJH5_LA
+      set-cookie:
+      - cookie=85e497491d001d5aeeddc2fb6ccbc86a;max-age=1800;Path=/;HttpOnly
+      - cookiesession1=678B288A601960E0B13E024C176EA248;Expires=Sat, 09 Oct 2027 11:09:32
+        GMT;Path=/;HttpOnly
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains
+      vary:
+      - Accept,Accept-Language
+      x-rate-limit-limit:
+      - 7d
+      x-rate-limit-remaining:
+      - '9998'
+      x-rate-limit-reset:
+      - '2026-10-16T11:04:03.2769578Z'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - bdl.stat.gov.pl
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: GET
+    uri: https://bdl.stat.gov.pl/api/v1/units/030210000000?format=json
+  response:
+    body:
+      string: "{\"id\":\"030210000000\",\"name\":\"REGION DOLNO\u015AL\u0104SKIE\",\"parentId\":\"030200000000\",\"level\":3,\"hasDescription\":false,\"years\":[1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026]}"
+    headers:
+      age:
+      - '974'
+      cache-control:
+      - public,max-age=1800
+      content-length:
+      - '281'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 09 Oct 2026 11:09:32 GMT
+      etag:
+      - E-tjILXhfJl0OWodgeiewQ
+      set-cookie:
+      - cookie=85e497491d001d5aeeddc2fb6dcbc86a;max-age=1800;Path=/;HttpOnly
+      - cookiesession1=678B288A5DEEEDC317718DB8FFC06E16;Expires=Sat, 09 Oct 2027 11:09:33
+        GMT;Path=/;HttpOnly
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains
+      vary:
+      - Accept,Accept-Language
+      x-rate-limit-limit:
+      - 7d
+      x-rate-limit-remaining:
+      - '9996'
+      x-rate-limit-reset:
+      - '2026-10-16T10:53:17.6519729Z'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - bdl.stat.gov.pl
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: GET
+    uri: https://bdl.stat.gov.pl/api/v1/units/030200000000?format=json
+  response:
+    body:
+      string: "{\"id\":\"030200000000\",\"name\":\"DOLNO\u015AL\u0104SKIE\",\"parentId\":\"030000000000\",\"level\":2,\"hasDescription\":false,\"years\":[1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026]}"
+    headers:
+      age:
+      - '974'
+      cache-control:
+      - public,max-age=1800
+      content-length:
+      - '274'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 09 Oct 2026 11:09:35 GMT
+      etag:
+      - 9W1DRZi2CJ0l2Jqo5_HtDw
+      set-cookie:
+      - cookie=85e497491d001d5aeeddc2fb70cbc86a;max-age=1800;Path=/;HttpOnly
+      - cookiesession1=678B288AEF670BA5196805E5FF4B07C4;Expires=Sat, 09 Oct 2027 11:09:36
+        GMT;Path=/;HttpOnly
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains
+      vary:
+      - Accept,Accept-Language
+      x-rate-limit-limit:
+      - 7d
+      x-rate-limit-remaining:
+      - '9996'
+      x-rate-limit-reset:
+      - '2026-10-16T10:53:19.1630541Z'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - bdl.stat.gov.pl
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: GET
+    uri: https://bdl.stat.gov.pl/api/v1/units/030000000000?format=json
+  response:
+    body:
+      string: "{\"id\":\"030000000000\",\"name\":\"MAKROREGION PO\u0141UDNIOWO-ZACHODNI\",\"parentId\":\"000000000000\",\"level\":1,\"hasDescription\":false,\"years\":[1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026]}"
+    headers:
+      age:
+      - '974'
+      cache-control:
+      - public,max-age=1800
+      content-length:
+      - '292'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 09 Oct 2026 11:09:37 GMT
+      etag:
+      - 7vEE6xP54n_mR0LlR0K6lA
+      set-cookie:
+      - cookie=85e497491d001d5aeeddc2fb73cbc86a;max-age=1800;Path=/;HttpOnly
+      - cookiesession1=678B288A8CD589B4F3A262D7C4877EFB;Expires=Sat, 09 Oct 2027 11:09:39
+        GMT;Path=/;HttpOnly
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains
+      vary:
+      - Accept,Accept-Language
+      x-rate-limit-limit:
+      - 7d
+      x-rate-limit-remaining:
+      - '9996'
+      x-rate-limit-reset:
+      - '2026-10-16T10:53:21.6796727Z'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - bdl.stat.gov.pl
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: GET
+    uri: https://bdl.stat.gov.pl/api/v1/units/000000000000?format=json
+  response:
+    body:
+      string: '{"id":"000000000000","name":"POLSKA","level":0,"hasDescription":false,"years":[1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026]}'
+    headers:
+      age:
+      - '975'
+      cache-control:
+      - public,max-age=1800
+      content-length:
+      - '240'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 09 Oct 2026 11:09:38 GMT
+      etag:
+      - we3gh_LJzBk4Yb1NNAvnKw
+      set-cookie:
+      - cookie=85e497491d001d5aeeddc2fb74cbc86a;max-age=1800;Path=/;HttpOnly
+      - cookiesession1=678B288A88AE647214C3B2CD5B31057A;Expires=Sat, 09 Oct 2027 11:09:40
+        GMT;Path=/;HttpOnly
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains
+      vary:
+      - Accept,Accept-Language
+      x-rate-limit-limit:
+      - 7d
+      x-rate-limit-remaining:
+      - '9996'
+      x-rate-limit-reset:
+      - '2026-10-16T10:53:23.7320839Z'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - bdl.stat.gov.pl
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: GET
+    uri: https://bdl.stat.gov.pl/api/v1/data/by-unit/030210564011?var-id=72305&page-size=100&year=2023&format=json
+  response:
+    body:
+      string: "{\"totalRecords\":1,\"unitId\":\"030210564011\",\"unitName\":\"Wroc\u0142aw\",\"aggregateId\":1,\"results\":[{\"id\":72305,\"measureUnitId\":26,\"lastUpdate\":\"2026-05-06T08:51:41.913\",\"values\":[{\"year\":\"2023\",\"val\":673743,\"attrId\":1}]}]}"
+    headers:
+      cache-control:
+      - public,max-age=1800
+      content-length:
+      - '214'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 09 Oct 2026 11:09:39 GMT
+      etag:
+      - Hvr85WwXjkJE75Ou66xfjQ
+      set-cookie:
+      - cookie=85e497491d001d5aeeddc2fb74cbc86a;max-age=1800;Path=/;HttpOnly
+      - cookiesession1=678B288A6E3C60BBF0D9D25CBE27AD8B;Expires=Sat, 09 Oct 2027 11:09:40
+        GMT;Path=/;HttpOnly
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains
+      vary:
+      - Accept,Accept-Language
+      x-rate-limit-limit:
+      - 7d
+      x-rate-limit-remaining:
+      - '9999'
+      x-rate-limit-reset:
+      - '2026-10-16T11:09:39.8511274Z'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - bdl.stat.gov.pl
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: GET
+    uri: https://bdl.stat.gov.pl/api/v1/data/by-unit/030210564000?var-id=72305&page-size=100&year=2023&format=json
+  response:
+    body:
+      string: "{\"totalRecords\":1,\"unitId\":\"030210564000\",\"unitName\":\"Powiat
+        m. Wroc\u0142aw\",\"aggregateId\":1,\"results\":[{\"id\":72305,\"measureUnitId\":26,\"lastUpdate\":\"2026-05-06T08:51:41.913\",\"values\":[{\"year\":\"2023\",\"val\":673743,\"attrId\":1}]}]}"
+    headers:
+      cache-control:
+      - public,max-age=1800
+      content-length:
+      - '224'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 09 Oct 2026 11:09:40 GMT
+      etag:
+      - Jp7C8JtDcg3N5xJlFfgkIg
+      set-cookie:
+      - cookie=85e497491d001d5aeeddc2fb76cbc86a;max-age=1800;Path=/;HttpOnly
+      - cookiesession1=678B288AE013CC28AD296F0EBBCECC12;Expires=Sat, 09 Oct 2027 11:09:42
+        GMT;Path=/;HttpOnly
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains
+      vary:
+      - Accept,Accept-Language
+      x-rate-limit-limit:
+      - 7d
+      x-rate-limit-remaining:
+      - '9999'
+      x-rate-limit-reset:
+      - '2026-10-16T11:09:41.3378385Z'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - bdl.stat.gov.pl
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: GET
+    uri: https://bdl.stat.gov.pl/api/v1/data/by-unit/030200000000?var-id=72305&page-size=100&year=2023&format=json
+  response:
+    body:
+      string: "{\"totalRecords\":1,\"unitId\":\"030200000000\",\"unitName\":\"DOLNO\u015AL\u0104SKIE\",\"aggregateId\":1,\"results\":[{\"id\":72305,\"measureUnitId\":26,\"lastUpdate\":\"2026-05-06T08:51:41.913\",\"values\":[{\"year\":\"2023\",\"val\":2879271,\"attrId\":1}]}]}"
+    headers:
+      cache-control:
+      - public,max-age=1800
+      content-length:
+      - '221'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 09 Oct 2026 11:09:42 GMT
+      etag:
+      - 6PA8Vy7iRE8r72SPLG4Y_A
+      set-cookie:
+      - cookie=85e497491d001d5aeeddc2fb78cbc86a;max-age=1800;Path=/;HttpOnly
+      - cookiesession1=678B288A7FDFB8EBD86C3851B99AC29B;Expires=Sat, 09 Oct 2027 11:09:44
+        GMT;Path=/;HttpOnly
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains
+      vary:
+      - Accept,Accept-Language
+      x-rate-limit-limit:
+      - 7d
+      x-rate-limit-remaining:
+      - '9998'
+      x-rate-limit-reset:
+      - '2026-10-16T10:53:27.9030899Z'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - bdl.stat.gov.pl
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: GET
+    uri: https://bdl.stat.gov.pl/api/v1/data/by-unit/000000000000?var-id=72305&page-size=100&year=2023&format=json
+  response:
+    body:
+      string: '{"totalRecords":1,"unitId":"000000000000","unitName":"POLSKA","aggregateId":1,"results":[{"id":72305,"measureUnitId":26,"lastUpdate":"2026-05-06T08:51:41.913","values":[{"year":"2023","val":37636508,"attrId":1}]}]}'
+    headers:
+      cache-control:
+      - public,max-age=1800
+      content-length:
+      - '214'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 09 Oct 2026 11:09:45 GMT
+      etag:
+      - x9pq6UJHyzqk0Eo_qKAXJg
+      set-cookie:
+      - cookie=85e497491d001d5aeeddc2fb7acbc86a;max-age=1800;Path=/;HttpOnly
+      - cookiesession1=678B288A07ADEEA4F7BB86C697C3F4F9;Expires=Sat, 09 Oct 2027 11:09:46
+        GMT;Path=/;HttpOnly
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains
+      vary:
+      - Accept,Accept-Language
+      x-rate-limit-limit:
+      - 7d
+      x-rate-limit-remaining:
+      - '9997'
+      x-rate-limit-reset:
+      - '2026-10-16T10:47:21.7042917Z'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - bdl.stat.gov.pl
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: GET
+    uri: https://bdl.stat.gov.pl/api/v1/variables/72305?format=json
+  response:
+    body:
+      string: "{\"id\":72305,\"subjectId\":\"P2137\",\"n1\":\"og\xF3\u0142em\",\"n2\":\"og\xF3\u0142em\",\"level\":6,\"measureUnitId\":26,\"measureUnitName\":\"osoba\",\"years\":[1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025]}"
+    headers:
+      age:
+      - '1516'
+      cache-control:
+      - public,max-age=1800
+      content-length:
+      - '284'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 09 Oct 2026 11:09:46 GMT
+      etag:
+      - JRlcRoHM1DskUUu2PvfGzg
+      set-cookie:
+      - cookie=85e497491d001d5aeeddc2fb7bcbc86a;max-age=1800;Path=/;HttpOnly
+      - cookiesession1=678B288A960E24EADD7751C656F29651;Expires=Sat, 09 Oct 2027 11:09:47
+        GMT;Path=/;HttpOnly
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains
+      vary:
+      - Accept,Accept-Language
+      x-rate-limit-limit:
+      - 7d
+      x-rate-limit-remaining:
+      - '9998'
+      x-rate-limit-reset:
+      - '2026-10-16T10:53:30.6068643Z'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - bdl.stat.gov.pl
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: GET
+    uri: https://bdl.stat.gov.pl/api/v1/subjects/P2137?format=json
+  response:
+    body:
+      string: "{\"id\":\"P2137\",\"parentId\":\"G7\",\"name\":\"Ludno\u015B\u0107
+        wg grup wieku i p\u0142ci\",\"hasVariables\":true,\"children\":[],\"years\":[1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025],\"availability\":[{\"year\":\"1995\",\"levels\":[6],\"quarterly\":\"R\"},{\"year\":\"1996\",\"levels\":[6],\"quarterly\":\"R\"},{\"year\":\"1997\",\"levels\":[6],\"quarterly\":\"R\"},{\"year\":\"1998\",\"levels\":[6],\"quarterly\":\"R\"},{\"year\":\"1999\",\"levels\":[6],\"quarterly\":\"R\"},{\"year\":\"2000\",\"levels\":[6],\"quarterly\":\"R\"},{\"year\":\"2001\",\"levels\":[6],\"quarterly\":\"R\"},{\"year\":\"2002\",\"levels\":[6],\"quarterly\":\"R\"},{\"year\":\"2003\",\"levels\":[6],\"quarterly\":\"R\"},{\"year\":\"2004\",\"levels\":[6],\"quarterly\":\"R\"},{\"year\":\"2005\",\"levels\":[6],\"quarterly\":\"R\"},{\"year\":\"2006\",\"levels\":[6],\"quarterly\":\"R\"},{\"year\":\"2007\",\"levels\":[6],\"quarterly\":\"R\"},{\"year\":\"2008\",\"levels\":[6],\"quarterly\":\"R\"},{\"year\":\"2009\",\"levels\":[6],\"quarterly\":\"R\"},{\"year\":\"2010\",\"levels\":[6],\"quarterly\":\"R\"},{\"year\":\"2011\",\"levels\":[6],\"quarterly\":\"R\"},{\"year\":\"2012\",\"levels\":[6],\"quarterly\":\"R\"},{\"year\":\"2013\",\"levels\":[6],\"quarterly\":\"R\"},{\"year\":\"2014\",\"levels\":[6],\"quarterly\":\"R\"},{\"year\":\"2015\",\"levels\":[6],\"quarterly\":\"R\"},{\"year\":\"2016\",\"levels\":[6],\"quarterly\":\"R\"},{\"year\":\"2017\",\"levels\":[6],\"quarterly\":\"R\"},{\"year\":\"2018\",\"levels\":[6],\"quarterly\":\"R\"},{\"year\":\"2019\",\"levels\":[6],\"quarterly\":\"R\"},{\"year\":\"2020\",\"levels\":[6],\"quarterly\":\"R\"},{\"year\":\"2021\",\"levels\":[6],\"quarterly\":\"R\"},{\"year\":\"2022\",\"levels\":[6],\"quarterly\":\"R\"},{\"year\":\"2023\",\"levels\":[6],\"quarterly\":\"R\"},{\"year\":\"2024\",\"levels\":[6],\"quarterly\":\"R\"},{\"year\":\"2025\",\"levels\":[6],\"quarterly\":\"R\"}],\"dimensions\":[\"Wiek\",\"P\u0142e\u0107\"],\"lastUpdate\":\"2026-05-06T09:18:21.973\",\"description\":\"Dane
+        wg podzia\u0142u administracyjnego na dzie\u0144 31 grudnia.\"}"
+    headers:
+      age:
+      - '923'
+      cache-control:
+      - public,max-age=1800
+      content-length:
+      - '1826'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 09 Oct 2026 11:09:47 GMT
+      etag:
+      - 6VXSBgAyAs6oLfriIygC_w
+      set-cookie:
+      - cookie=85e497491d001d5aeeddc2fb7ccbc86a;max-age=1800;Path=/;HttpOnly
+      - cookiesession1=678B288A69E42A0034CC00A95432C658;Expires=Sat, 09 Oct 2027 11:09:48
+        GMT;Path=/;HttpOnly
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains
+      vary:
+      - Accept,Accept-Language
+      x-rate-limit-limit:
+      - 7d
+      x-rate-limit-remaining:
+      - '9999'
+      x-rate-limit-reset:
+      - '2026-10-16T11:09:47.3026030Z'
+    status:
+      code: 200
+      message: OK
+version: 1

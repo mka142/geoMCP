@@ -1,0 +1,7 @@
+# GEOMCP_DOMAIN must point at this VPS for automatic HTTPS; "localhost" uses Caddy's local CA.
+{$GEOMCP_DOMAIN:localhost} {
+	encode zstd gzip
+	reverse_proxy geomcp:8000 {
+		flush_interval -1
+	}
+}

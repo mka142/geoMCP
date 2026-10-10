@@ -1,0 +1,140 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - uldk.gugik.gov.pl
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: GET
+    uri: https://uldk.gugik.gov.pl/?request=GetParcelById&id=026401_1.0001.2395&result=geom_wkt&srid=4326
+  response:
+    body:
+      string: '0
+
+        SRID=4326;POLYGON((17.031641618534 51.1102401006138,17.0315466071186 51.1101014387508,17.0319093258018
+        51.1100043961146,17.0319043424122 51.1099968484587,17.0320226423731 51.1099648266946,17.0320846165933
+        51.1100498069129,17.0321177339253 51.1101092781978,17.0319791364375 51.1101469663314,17.031641618534
+        51.1102401006138))
+
+        '
+    headers:
+      access-control-allow-origin:
+      - '*'
+      connection:
+      - Keep-Alive
+      content-length:
+      - '327'
+      content-type:
+      - text/plain; charset=UTF-8
+      date:
+      - Fri, 09 Oct 2026 12:25:53 GMT
+      keep-alive:
+      - timeout=5, max=500
+      vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - mapy.geoportal.gov.pl
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: GET
+    uri: https://mapy.geoportal.gov.pl/wss/ext/KrajowaIntegracjaMiejscowychPlanowZagospodarowaniaPrzestrzennego?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetFeatureInfo&LAYERS=plany%2Cwektor-str%2Cwektor-pow%2Cwektor-lzb%2Craster&QUERY_LAYERS=plany%2Cwektor-str%2Cwektor-pow%2Cwektor-lzb%2Craster&STYLES=&CRS=EPSG%3A2180&BBOX=362203.0658714413%2C362266.8128508241%2C362213.0658714413%2C362276.8128508241&WIDTH=11&HEIGHT=11&I=5&J=5&INFO_FORMAT=text%2Fhtml&FEATURE_COUNT=10
+  response:
+    body:
+      string: "m. Wroc\u0142aw: brak wyniku dla wskazanego obszaru"
+    headers:
+      access-control-allow-origin:
+      - '*'
+      connection:
+      - Keep-Alive
+      content-length:
+      - '47'
+      content-type:
+      - text/html
+      date:
+      - Fri, 09 Oct 2026 12:25:59 GMT
+      keep-alive:
+      - timeout=5, max=90
+      set-cookie:
+      - gahLaQu1eeYooCu=!QoFiWnil1D0nFc81jp1oiKAqZQw+bwXclikKU5JprXtqohiKFcOD107lWg+Zenl/2ZP7YnRFs1w5Vf0=;
+        path=/; Httponly; Secure
+      - TS017e0801=01e9e35b2220d65c20aeb679258054a8201ac52ac8237981b753e6141a87463317c02ad6d26d48ecf74b80eae8ecbbe44e79d838df045a9b34a32fb1258a9aa83b29dbd092;
+        Path=/; Domain=.mapy.geoportal.gov.pl
+      vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - integracja.gugik.gov.pl
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: GET
+    uri: https://integracja.gugik.gov.pl/cgi-bin/KrajowaIntegracjaEwidencjiGruntow?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetFeatureInfo&LAYERS=dzialki%2Cuzytki&QUERY_LAYERS=dzialki%2Cuzytki&STYLES=&CRS=EPSG%3A2180&BBOX=362203.0658714413%2C362266.8128508241%2C362213.0658714413%2C362276.8128508241&WIDTH=11&HEIGHT=11&I=5&J=5&INFO_FORMAT=text%2Fhtml&FEATURE_COUNT=10
+  response:
+    body:
+      string: "<html>\n<head><meta http-equiv=\"Content-Type\" content=\"text/html;
+        charset=utf-8\">\n<title>026401_1.0001.2395</title>\n<style>\n                .getfeatureinfo-egib
+        {font-family: sans-serif; font-size: 11px;}\n                .getfeatureinfo-egib
+        th {padding: 3px 5px 3px 4px; text-align: left; background-color: rgb(200,
+        200, 220);}\n                .getfeatureinfo-egib td {padding: 3px 3px 4px;
+        text-align: left; background-color: rgb(215, 220, 235);}\n        </style>\n</head>\n<body>\n<table
+        class=\"getfeatureinfo-egib\">\n        <tr><td>Identyfikator dzia\u0142ki</td><td>026401_1.0001.2395</td></tr>\n
+        \       <tr><td>Wojew\xF3dztwo</td><td>dolno\u015Bl\u0105skie</td></tr>\n
+        \       <tr><td>Powiat</td><td>powiat Wroc\u0142aw</td></tr>\n        <tr><td>Nazwa
+        gminy</td><td>Wroc\u0142aw</td></tr>\n        <tr><td>Nazwa obr\u0119bu</td><td>Stare
+        Miasto</td></tr>\n        <tr><td>Numer dzia\u0142ki</td><td>2395</td></tr>\n
+        \       <tr><td>Pole pow. w ewidencji grunt\xF3w (ha)</td><td>0.0618</td></tr>\n
+        \       <tr><td>Grupa rejestrowa</td><td>15</td></tr>\n        <tr><td>Oznaczenie
+        u\u017Cytku</td><td></td></tr>\n        <tr><td>Oznaczenie konturu</td><td>Bi</td></tr>\n
+        \       <tr><td>Data publikacji danych</td><td>2026-10-08</td></tr>\n        <tr><td>Informacje
+        o pochodzeniu danych</td><td>Organem odpowiedzialnym za prezentowane dane
+        ewidencji grunt\xF3w i budynk\xF3w jest w\u0142a\u015Bciwy miejscowo starosta
+        (art. 7d pkt 1 lit. a tiret pierwsze ustawy Prawo geodezyjne i kartograficzne).</td></tr></table>\n<center>\n<img
+        src='https://mapy.geoportal.gov.pl/iMapLite/api/srv/QR_gen?ref=https%3A%2F%2Fmapy.geoportal.gov.pl%2Fmobile%2F%3FidentifyParcel%3D026401_1.0001.2395&amp;size=128'/>\n</center>\n</body>\n</html>"
+    headers:
+      access-control-allow-origin:
+      - '*'
+      connection:
+      - Keep-Alive
+      content-length:
+      - '1659'
+      content-type:
+      - text/html
+      date:
+      - Fri, 09 Oct 2026 12:25:54 GMT
+      keep-alive:
+      - timeout=5, max=500
+      vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+version: 1

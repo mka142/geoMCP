@@ -1,0 +1,1523 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.gios.gov.pl
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: GET
+    uri: https://api.gios.gov.pl/pjp-api/v1/rest/station/findAll?size=500
+  response:
+    body:
+      string: "{\"@context\":{\"stationList\":\"s:values\",\"meta\":\"https://schema.org/meta\",\"totalPages\":\"https://schema.org/totalPages\",\"links\":\"https://schema.org/links\"},\"@context\":{\"Lista
+        stacji pomiar\xF3w\":{\"@id\":\"https://api.gios.gov.pl/pjp-api/v1/rest/station/findAll\"},\"links\":\"https://schema.org/relatedLink\",\"totalPages\":\"https://schema.org/numberOfPages\"},\"Lista
+        stacji pomiarowych\":[{\"Identyfikator stacji\":11,\"Kod stacji\":\"DsCzerStraza\",\"Nazwa
+        stacji\":\"Czerniawa\",\"WGS84 \u03C6 N\":\"50.912475\",\"WGS84 \u03BB E\":\"15.312190\",\"Identyfikator
+        miasta\":142,\"Nazwa miasta\":\"Czerniawa\",\"Gmina\":\"\u015Awierad\xF3w-Zdr\xF3j\",\"Powiat\":\"luba\u0144ski\",\"Wojew\xF3dztwo\":\"DOLNO\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        Stra\u017Cacka 7\"},{\"Identyfikator stacji\":16,\"Kod stacji\":\"DsDziePilsud\",\"Nazwa
+        stacji\":\"Dzier\u017Coni\xF3w, ul. Pi\u0142sudskiego\",\"WGS84 \u03C6 N\":\"50.732817\",\"WGS84
+        \u03BB E\":\"16.648050\",\"Identyfikator miasta\":198,\"Nazwa miasta\":\"Dzier\u017Coni\xF3w\",\"Gmina\":\"Dzier\u017Coni\xF3w\",\"Powiat\":\"dzier\u017Coniowski\",\"Wojew\xF3dztwo\":\"DOLNO\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        Pi\u0142sudskiego 26\"},{\"Identyfikator stacji\":38,\"Kod stacji\":\"DsKlodzSzkol\",\"Nazwa
+        stacji\":\"K\u0142odzko, ul. Szkolna\",\"WGS84 \u03C6 N\":\"50.433493\",\"WGS84
+        \u03BB E\":\"16.653660\",\"Identyfikator miasta\":368,\"Nazwa miasta\":\"K\u0142odzko\",\"Gmina\":\"K\u0142odzko\",\"Powiat\":\"k\u0142odzki\",\"Wojew\xF3dztwo\":\"DOLNO\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        Szkolna 8\"},{\"Identyfikator stacji\":52,\"Kod stacji\":\"DsLegAlRzecz\",\"Nazwa
+        stacji\":\"Legnica, Al. Rzeczypospolitej\",\"WGS84 \u03C6 N\":\"51.204503\",\"WGS84
+        \u03BB E\":\"16.180513\",\"Identyfikator miasta\":453,\"Nazwa miasta\":\"Legnica\",\"Gmina\":\"Legnica\",\"Powiat\":\"Legnica\",\"Wojew\xF3dztwo\":\"DOLNO\u015AL\u0104SKIE\",\"Ulica\":\"Al.
+        Rzeczypospolitej 10/12\"},{\"Identyfikator stacji\":70,\"Kod stacji\":\"DsOlawZolnAK\",\"Nazwa
+        stacji\":\"O\u0142awa, ul. \u017Bo\u0142nierzy Armii Krajowej\",\"WGS84 \u03C6
+        N\":\"50.942073\",\"WGS84 \u03BB E\":\"17.291333\",\"Identyfikator miasta\":642,\"Nazwa
+        miasta\":\"O\u0142awa\",\"Gmina\":\"O\u0142awa\",\"Powiat\":\"o\u0142awski\",\"Wojew\xF3dztwo\":\"DOLNO\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        \u017Bo\u0142nierzy AK 9\"},{\"Identyfikator stacji\":71,\"Kod stacji\":\"DsOlesBrzozo\",\"Nazwa
+        stacji\":\"Ole\u015Bnica, ul. Brzozowa\",\"WGS84 \u03C6 N\":\"51.217483\",\"WGS84
+        \u03BB E\":\"17.389997\",\"Identyfikator miasta\":637,\"Nazwa miasta\":\"Ole\u015Bnica\",\"Gmina\":\"Ole\u015Bnica\",\"Powiat\":\"ole\u015Bnicki\",\"Wojew\xF3dztwo\":\"DOLNO\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        Brzozowa 7\"},{\"Identyfikator stacji\":74,\"Kod stacji\":\"DsOsieczow21\",\"Nazwa
+        stacji\":\"Osiecz\xF3w\",\"WGS84 \u03C6 N\":\"51.317630\",\"WGS84 \u03BB E\":\"15.431719\",\"Identyfikator
+        miasta\":648,\"Nazwa miasta\":\"Osiecz\xF3w\",\"Gmina\":\"Osiecznica\",\"Powiat\":\"boles\u0142awiecki\",\"Wojew\xF3dztwo\":\"DOLNO\u015AL\u0104SKIE\",\"Ulica\":null},{\"Identyfikator
+        stacji\":77,\"Kod stacji\":\"DsPolKasztan\",\"Nazwa stacji\":\"Polkowice,
+        ul. Kasztanowa\",\"WGS84 \u03C6 N\":\"51.502370\",\"WGS84 \u03BB E\":\"16.075051\",\"Identyfikator
+        miasta\":721,\"Nazwa miasta\":\"Polkowice\",\"Gmina\":\"Polkowice\",\"Powiat\":\"polkowicki\",\"Wojew\xF3dztwo\":\"DOLNO\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        Kasztanowa 29\"},{\"Identyfikator stacji\":93,\"Kod stacji\":\"DsSzczaKolej\",\"Nazwa
+        stacji\":\"Szczawno-Zdr\xF3j, ul. Kolejowa\",\"WGS84 \u03C6 N\":\"50.804189\",\"WGS84
+        \u03BB E\":\"16.254111\",\"Identyfikator miasta\":915,\"Nazwa miasta\":\"Szczawno-Zdr\xF3j\",\"Gmina\":\"Szczawno-Zdr\xF3j\",\"Powiat\":\"wa\u0142brzyski\",\"Wojew\xF3dztwo\":\"DOLNO\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        Kolejowa 14\"},{\"Identyfikator stacji\":109,\"Kod stacji\":\"DsWalbrzWyso\",\"Nazwa
+        stacji\":\"Wa\u0142brzych, ul. Wysockiego\",\"WGS84 \u03C6 N\":\"50.768729\",\"WGS84
+        \u03BB E\":\"16.269677\",\"Identyfikator miasta\":998,\"Nazwa miasta\":\"Wa\u0142brzych\",\"Gmina\":\"Wa\u0142brzych\",\"Powiat\":\"Wa\u0142brzych\",\"Wojew\xF3dztwo\":\"DOLNO\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        Wysockiego 11\"},{\"Identyfikator stacji\":114,\"Kod stacji\":\"DsWrocBartni\",\"Nazwa
+        stacji\":\"Wroc\u0142aw, ul. Bartnicza\",\"WGS84 \u03C6 N\":\"51.115933\",\"WGS84
+        \u03BB E\":\"17.141125\",\"Identyfikator miasta\":1064,\"Nazwa miasta\":\"Wroc\u0142aw\",\"Gmina\":\"Wroc\u0142aw\",\"Powiat\":\"Wroc\u0142aw\",\"Wojew\xF3dztwo\":\"DOLNO\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        Bartnicza\"},{\"Identyfikator stacji\":115,\"Kod stacji\":\"DsWrocNaGrob\",\"Nazwa
+        stacji\":\"Wroc\u0142aw, ul. Na Grobli\",\"WGS84 \u03C6 N\":\"51.103456\",\"WGS84
+        \u03BB E\":\"17.059225\",\"Identyfikator miasta\":1064,\"Nazwa miasta\":\"Wroc\u0142aw\",\"Gmina\":\"Wroc\u0142aw\",\"Powiat\":\"Wroc\u0142aw\",\"Wojew\xF3dztwo\":\"DOLNO\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        Na Grobli\"},{\"Identyfikator stacji\":117,\"Kod stacji\":\"DsWrocWybCon\",\"Nazwa
+        stacji\":\"Wroc\u0142aw, wyb. Conrada-Korzeniowskiego\",\"WGS84 \u03C6 N\":\"51.129378\",\"WGS84
+        \u03BB E\":\"17.029250\",\"Identyfikator miasta\":1064,\"Nazwa miasta\":\"Wroc\u0142aw\",\"Gmina\":\"Wroc\u0142aw\",\"Powiat\":\"Wroc\u0142aw\",\"Wojew\xF3dztwo\":\"DOLNO\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        Wyb. J.Conrada-Korzeniowskiego 18\"},{\"Identyfikator stacji\":122,\"Kod stacji\":\"DsWrocOrzech\",\"Nazwa
+        stacji\":\"Wroc\u0142aw, ul. Orzechowa\",\"WGS84 \u03C6 N\":\"51.077525\",\"WGS84
+        \u03BB E\":\"17.042817\",\"Identyfikator miasta\":1064,\"Nazwa miasta\":\"Wroc\u0142aw\",\"Gmina\":\"Wroc\u0142aw\",\"Powiat\":\"Wroc\u0142aw\",\"Wojew\xF3dztwo\":\"DOLNO\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        Orzechowa 61\"},{\"Identyfikator stacji\":129,\"Kod stacji\":\"DsWrocAlWisn\",\"Nazwa
+        stacji\":\"Wroc\u0142aw, Al. Wi\u015Bniowa\",\"WGS84 \u03C6 N\":\"51.086225\",\"WGS84
+        \u03BB E\":\"17.012689\",\"Identyfikator miasta\":1064,\"Nazwa miasta\":\"Wroc\u0142aw\",\"Gmina\":\"Wroc\u0142aw\",\"Powiat\":\"Wroc\u0142aw\",\"Wojew\xF3dztwo\":\"DOLNO\u015AL\u0104SKIE\",\"Ulica\":\"Al.
+        Wi\u015Bniowa/ul. Powst. \u015Al\u0105skich\"},{\"Identyfikator stacji\":134,\"Kod
+        stacji\":\"DsZgorBohGet\",\"Nazwa stacji\":\"Zgorzelec, ul. Bohater\xF3w Getta\",\"WGS84
+        \u03C6 N\":\"51.150391\",\"WGS84 \u03BB E\":\"15.008175\",\"Identyfikator
+        miasta\":1101,\"Nazwa miasta\":\"Zgorzelec\",\"Gmina\":\"Zgorzelec\",\"Powiat\":\"zgorzelecki\",\"Wojew\xF3dztwo\":\"DOLNO\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        Bohater\xF3w Getta 1a\"},{\"Identyfikator stacji\":142,\"Kod stacji\":\"KpGrudPilsud\",\"Nazwa
+        stacji\":\"Grudzi\u0105dz, ul. Pi\u0142sudskiego\",\"WGS84 \u03C6 N\":\"53.493550\",\"WGS84
+        \u03BB E\":\"18.762139\",\"Identyfikator miasta\":269,\"Nazwa miasta\":\"Grudzi\u0105dz\",\"Gmina\":\"Grudzi\u0105dz\",\"Powiat\":\"Grudzi\u0105dz\",\"Wojew\xF3dztwo\":\"KUJAWSKO-POMORSKIE\",\"Ulica\":\"ul.
+        Pi\u0142sudskiego 51\"},{\"Identyfikator stacji\":143,\"Kod stacji\":\"KpInowSolank\",\"Nazwa
+        stacji\":\"Inowroc\u0142aw, ul. Solankowa\",\"WGS84 \u03C6 N\":\"52.793122\",\"WGS84
+        \u03BB E\":\"18.241044\",\"Identyfikator miasta\":287,\"Nazwa miasta\":\"Inowroc\u0142aw\",\"Gmina\":\"Inowroc\u0142aw\",\"Powiat\":\"inowroc\u0142awski\",\"Wojew\xF3dztwo\":\"KUJAWSKO-POMORSKIE\",\"Ulica\":\"ul.
+        Solankowa\"},{\"Identyfikator stacji\":145,\"Kod stacji\":\"KpToruWSikor\",\"Nazwa
+        stacji\":\"Toru\u0144, ul. Wa\u0142y gen. Sikorskiego\",\"WGS84 \u03C6 N\":\"53.012475\",\"WGS84
+        \u03BB E\":\"18.605681\",\"Identyfikator miasta\":966,\"Nazwa miasta\":\"Toru\u0144\",\"Gmina\":\"Toru\u0144\",\"Powiat\":\"Toru\u0144\",\"Wojew\xF3dztwo\":\"KUJAWSKO-POMORSKIE\",\"Ulica\":\"ul.
+        Wa\u0142y gen. Sikorskiego 12\"},{\"Identyfikator stacji\":150,\"Kod stacji\":\"KpBydFieldor\",\"Nazwa
+        stacji\":\"Bydgoszcz, ul. Fieldorfa\",\"WGS84 \u03C6 N\":\"53.151452\",\"WGS84
+        \u03BB E\":\"18.132062\",\"Identyfikator miasta\":90,\"Nazwa miasta\":\"Bydgoszcz\",\"Gmina\":\"Bydgoszcz\",\"Powiat\":\"Bydgoszcz\",\"Wojew\xF3dztwo\":\"KUJAWSKO-POMORSKIE\",\"Ulica\":\"ul.
+        gen. Augusta Emila Fieldorfa \u201ENila\u201D 13\"},{\"Identyfikator stacji\":156,\"Kod
+        stacji\":\"KpBydPlPozna\",\"Nazwa stacji\":\"Bydgoszcz, Pl. Pozna\u0144ski\",\"WGS84
+        \u03C6 N\":\"53.121764\",\"WGS84 \u03BB E\":\"17.987906\",\"Identyfikator
+        miasta\":90,\"Nazwa miasta\":\"Bydgoszcz\",\"Gmina\":\"Bydgoszcz\",\"Powiat\":\"Bydgoszcz\",\"Wojew\xF3dztwo\":\"KUJAWSKO-POMORSKIE\",\"Ulica\":\"Plac
+        Pozna\u0144ski\"},{\"Identyfikator stacji\":158,\"Kod stacji\":\"KpBydWarszaw\",\"Nazwa
+        stacji\":\"Bydgoszcz, ul. Warszawska\",\"WGS84 \u03C6 N\":\"53.134083\",\"WGS84
+        \u03BB E\":\"17.995708\",\"Identyfikator miasta\":90,\"Nazwa miasta\":\"Bydgoszcz\",\"Gmina\":\"Bydgoszcz\",\"Powiat\":\"Bydgoszcz\",\"Wojew\xF3dztwo\":\"KUJAWSKO-POMORSKIE\",\"Ulica\":\"ul.
+        Warszawska 10\"},{\"Identyfikator stacji\":164,\"Kod stacji\":\"KpCiechTezni\",\"Nazwa
+        stacji\":\"Ciechocinek, ul. T\u0119\u017Cniowa\",\"WGS84 \u03C6 N\":\"52.888422\",\"WGS84
+        \u03BB E\":\"18.780908\",\"Identyfikator miasta\":122,\"Nazwa miasta\":\"Ciechocinek\",\"Gmina\":\"Ciechocinek\",\"Powiat\":\"aleksandrowski\",\"Wojew\xF3dztwo\":\"KUJAWSKO-POMORSKIE\",\"Ulica\":\"ul.
+        T\u0119\u017Cniowa - Park T\u0119\u017Cniowy\"},{\"Identyfikator stacji\":183,\"Kod
+        stacji\":\"KpGrudSienki\",\"Nazwa stacji\":\"Grudzi\u0105dz, ul. Sienkiewicza\",\"WGS84
+        \u03C6 N\":\"53.491831\",\"WGS84 \u03BB E\":\"18.752503\",\"Identyfikator
+        miasta\":269,\"Nazwa miasta\":\"Grudzi\u0105dz\",\"Gmina\":\"Grudzi\u0105dz\",\"Powiat\":\"Grudzi\u0105dz\",\"Wojew\xF3dztwo\":\"KUJAWSKO-POMORSKIE\",\"Ulica\":\"ul.
+        Sienkiewicza 27\"},{\"Identyfikator stacji\":190,\"Kod stacji\":\"KpKoniczynka\",\"Nazwa
+        stacji\":\"Koniczynka, Pojezierze Che\u0142mi\u0144skie\",\"WGS84 \u03C6 N\":\"53.080647\",\"WGS84
+        \u03BB E\":\"18.684258\",\"Identyfikator miasta\":391,\"Nazwa miasta\":\"Koniczynka\",\"Gmina\":\"\u0141ysomice\",\"Powiat\":\"toru\u0144ski\",\"Wojew\xF3dztwo\":\"KUJAWSKO-POMORSKIE\",\"Ulica\":\"Pojezierze
+        Che\u0142mi\u0144skie\"},{\"Identyfikator stacji\":206,\"Kod stacji\":\"KpToruDziewu\",\"Nazwa
+        stacji\":\"Toru\u0144, ul. Dziewulskiego\",\"WGS84 \u03C6 N\":\"53.028647\",\"WGS84
+        \u03BB E\":\"18.666103\",\"Identyfikator miasta\":966,\"Nazwa miasta\":\"Toru\u0144\",\"Gmina\":\"Toru\u0144\",\"Powiat\":\"Toru\u0144\",\"Wojew\xF3dztwo\":\"KUJAWSKO-POMORSKIE\",\"Ulica\":\"ul.
+        Dziewulskiego 1\"},{\"Identyfikator stacji\":208,\"Kod stacji\":\"KpToruKaszow\",\"Nazwa
+        stacji\":\"Toru\u0144, ul. Przy Kaszowniku\",\"WGS84 \u03C6 N\":\"53.017628\",\"WGS84
+        \u03BB E\":\"18.612808\",\"Identyfikator miasta\":966,\"Nazwa miasta\":\"Toru\u0144\",\"Gmina\":\"Toru\u0144\",\"Powiat\":\"Toru\u0144\",\"Wojew\xF3dztwo\":\"KUJAWSKO-POMORSKIE\",\"Ulica\":\"ul.
+        Przy Kaszowniku\"},{\"Identyfikator stacji\":225,\"Kod stacji\":\"KpWloclOkrze\",\"Nazwa
+        stacji\":\"W\u0142oc\u0142awek, ul. Okrzei\",\"WGS84 \u03C6 N\":\"52.658467\",\"WGS84
+        \u03BB E\":\"19.059314\",\"Identyfikator miasta\":1046,\"Nazwa miasta\":\"W\u0142oc\u0142awek\",\"Gmina\":\"W\u0142oc\u0142awek\",\"Powiat\":\"W\u0142oc\u0142awek\",\"Wojew\xF3dztwo\":\"KUJAWSKO-POMORSKIE\",\"Ulica\":\"ul.
+        Okrzei\"},{\"Identyfikator stacji\":232,\"Kod stacji\":\"KpZielBoryTu\",\"Nazwa
+        stacji\":\"Zielonka, Bory Tucholskie\",\"WGS84 \u03C6 N\":\"53.662117\",\"WGS84
+        \u03BB E\":\"17.934017\",\"Identyfikator miasta\":1104,\"Nazwa miasta\":\"Zielonka\",\"Gmina\":\"Tuchola\",\"Powiat\":\"tucholski\",\"Wojew\xF3dztwo\":\"KUJAWSKO-POMORSKIE\",\"Ulica\":\"Bory
+        Tucholskie\"},{\"Identyfikator stacji\":236,\"Kod stacji\":\"LbBiaPodOrze\",\"Nazwa
+        stacji\":\"Bia\u0142a Podlaska, ul. Orzechowa\",\"WGS84 \u03C6 N\":\"52.029194\",\"WGS84
+        \u03BB E\":\"23.149389\",\"Identyfikator miasta\":26,\"Nazwa miasta\":\"Bia\u0142a
+        Podlaska\",\"Gmina\":\"Bia\u0142a Podlaska\",\"Powiat\":\"Bia\u0142a Podlaska\",\"Wojew\xF3dztwo\":\"LUBELSKIE\",\"Ulica\":\"ul.
+        Orzechowa\"},{\"Identyfikator stacji\":248,\"Kod stacji\":\"LbJarczWolaM\",\"Nazwa
+        stacji\":\"Jarczew, IMGW\",\"WGS84 \u03C6 N\":\"51.814367\",\"WGS84 \u03BB
+        E\":\"21.972375\",\"Identyfikator miasta\":301,\"Nazwa miasta\":\"Jarczew\",\"Gmina\":\"Wola
+        Mys\u0142owska\",\"Powiat\":\"\u0142ukowski\",\"Wojew\xF3dztwo\":\"LUBELSKIE\",\"Ulica\":null},{\"Identyfikator
+        stacji\":250,\"Kod stacji\":\"LbKrasKoszar\",\"Nazwa stacji\":\"Kra\u015Bnik,
+        ul. Koszarowa\",\"WGS84 \u03C6 N\":\"50.928239\",\"WGS84 \u03BB E\":\"22.228308\",\"Identyfikator
+        miasta\":420,\"Nazwa miasta\":\"Kra\u015Bnik\",\"Gmina\":\"Kra\u015Bnik\",\"Powiat\":\"kra\u015Bnicki\",\"Wojew\xF3dztwo\":\"LUBELSKIE\",\"Ulica\":\"ul.
+        Koszarowa 10A\"},{\"Identyfikator stacji\":258,\"Kod stacji\":\"LbLubSliwins\",\"Nazwa
+        stacji\":\"Lublin, ul. \u015Aliwi\u0144skiego\",\"WGS84 \u03C6 N\":\"51.273078\",\"WGS84
+        \u03BB E\":\"22.551675\",\"Identyfikator miasta\":489,\"Nazwa miasta\":\"Lublin\",\"Gmina\":\"Lublin\",\"Powiat\":\"Lublin\",\"Wojew\xF3dztwo\":\"LUBELSKIE\",\"Ulica\":\"ul.
+        \u015Aliwi\u0144skiego 5\"},{\"Identyfikator stacji\":266,\"Kod stacji\":\"LbLubObywate\",\"Nazwa
+        stacji\":\"Lublin, ul. Obywatelska\",\"WGS84 \u03C6 N\":\"51.259431\",\"WGS84
+        \u03BB E\":\"22.569133\",\"Identyfikator miasta\":489,\"Nazwa miasta\":\"Lublin\",\"Gmina\":\"Lublin\",\"Powiat\":\"Lublin\",\"Wojew\xF3dztwo\":\"LUBELSKIE\",\"Ulica\":\"ul.
+        Obywatelska 13\"},{\"Identyfikator stacji\":275,\"Kod stacji\":\"LbRadzPodSit\",\"Nazwa
+        stacji\":\"Radzy\u0144 Podlaski, ul. Sitkowskiego\",\"WGS84 \u03C6 N\":\"51.780000\",\"WGS84
+        \u03BB E\":\"22.625944\",\"Identyfikator miasta\":778,\"Nazwa miasta\":\"Radzy\u0144
+        Podlaski\",\"Gmina\":\"Radzy\u0144 Podlaski\",\"Powiat\":\"radzy\u0144ski\",\"Wojew\xF3dztwo\":\"LUBELSKIE\",\"Ulica\":\"ul.
+        Sitkowskiego 1b\"},{\"Identyfikator stacji\":282,\"Kod stacji\":\"LbWilczopole\",\"Nazwa
+        stacji\":\"Wilczopole\",\"WGS84 \u03C6 N\":\"51.163542\",\"WGS84 \u03BB E\":\"22.598608\",\"Identyfikator
+        miasta\":1035,\"Nazwa miasta\":\"Wilczopole\",\"Gmina\":\"G\u0142usk\",\"Powiat\":\"lubelski\",\"Wojew\xF3dztwo\":\"LUBELSKIE\",\"Ulica\":null},{\"Identyfikator
+        stacji\":285,\"Kod stacji\":\"LbZamoHrubie\",\"Nazwa stacji\":\"Zamo\u015B\u0107,
+        ul. Hrubieszowska\",\"WGS84 \u03C6 N\":\"50.716628\",\"WGS84 \u03BB E\":\"23.290247\",\"Identyfikator
+        miasta\":1081,\"Nazwa miasta\":\"Zamo\u015B\u0107\",\"Gmina\":\"Zamo\u015B\u0107\",\"Powiat\":\"Zamo\u015B\u0107\",\"Wojew\xF3dztwo\":\"LUBELSKIE\",\"Ulica\":\"ul.
+        Hrubieszowska 69A\"},{\"Identyfikator stacji\":289,\"Kod stacji\":\"LdBrzeReform\",\"Nazwa
+        stacji\":\"Brzeziny, ul. Reformacka\",\"WGS84 \u03C6 N\":\"51.797806\",\"WGS84
+        \u03BB E\":\"19.756094\",\"Identyfikator miasta\":81,\"Nazwa miasta\":\"Brzeziny\",\"Gmina\":\"Brzeziny\",\"Powiat\":\"brzezi\u0144ski\",\"Wojew\xF3dztwo\":\"\u0141\xD3DZKIE\",\"Ulica\":\"ul.
+        Reformacka 1\"},{\"Identyfikator stacji\":291,\"Kod stacji\":\"LdGajewUjWod\",\"Nazwa
+        stacji\":\"Gajew, Uj\u0119cie Wody\",\"WGS84 \u03C6 N\":\"52.143258\",\"WGS84
+        \u03BB E\":\"19.233217\",\"Identyfikator miasta\":209,\"Nazwa miasta\":\"Gajew\",\"Gmina\":\"Witonia\",\"Powiat\":\"\u0142\u0119czycki\",\"Wojew\xF3dztwo\":\"\u0141\xD3DZKIE\",\"Ulica\":\"Uj\u0119cie
+        wody\"},{\"Identyfikator stacji\":295,\"Kod stacji\":\"LdLodzCzerni\",\"Nazwa
+        stacji\":\"\u0141\xF3d\u017A, ul. Czernika\",\"WGS84 \u03C6 N\":\"51.758050\",\"WGS84
+        \u03BB E\":\"19.529786\",\"Identyfikator miasta\":516,\"Nazwa miasta\":\"\u0141\xF3d\u017A\",\"Gmina\":\"\u0141\xF3d\u017A\",\"Powiat\":\"\u0141\xF3d\u017A\",\"Wojew\xF3dztwo\":\"\u0141\xD3DZKIE\",\"Ulica\":\"ul.
+        Czernika 1/3\"},{\"Identyfikator stacji\":296,\"Kod stacji\":\"LdLodzGdansk\",\"Nazwa
+        stacji\":\"\u0141\xF3d\u017A, ul. Gda\u0144ska\",\"WGS84 \u03C6 N\":\"51.775378\",\"WGS84
+        \u03BB E\":\"19.450992\",\"Identyfikator miasta\":516,\"Nazwa miasta\":\"\u0141\xF3d\u017A\",\"Gmina\":\"\u0141\xF3d\u017A\",\"Powiat\":\"\u0141\xF3d\u017A\",\"Wojew\xF3dztwo\":\"\u0141\xD3DZKIE\",\"Ulica\":\"ul.
+        Gda\u0144ska 16\"},{\"Identyfikator stacji\":302,\"Kod stacji\":\"LdLodzLegion\",\"Nazwa
+        stacji\":\"\u0141\xF3d\u017A, ul. Legion\xF3w\",\"WGS84 \u03C6 N\":\"51.776417\",\"WGS84
+        \u03BB E\":\"19.452936\",\"Identyfikator miasta\":516,\"Nazwa miasta\":\"\u0141\xF3d\u017A\",\"Gmina\":\"\u0141\xF3d\u017A\",\"Powiat\":\"\u0141\xF3d\u017A\",\"Wojew\xF3dztwo\":\"\u0141\xD3DZKIE\",\"Ulica\":\"ul.
+        Legion\xF3w 1\"},{\"Identyfikator stacji\":314,\"Kod stacji\":\"LdPabiKonsta\",\"Nazwa
+        stacji\":\"Pabianice, ul. Konstantynowska\",\"WGS84 \u03C6 N\":\"51.667981\",\"WGS84
+        \u03BB E\":\"19.368683\",\"Identyfikator miasta\":667,\"Nazwa miasta\":\"Pabianice\",\"Gmina\":\"Pabianice\",\"Powiat\":\"pabianicki\",\"Wojew\xF3dztwo\":\"\u0141\xD3DZKIE\",\"Ulica\":\"ul.
+        Konstantynowska\"},{\"Identyfikator stacji\":319,\"Kod stacji\":\"LdParzniUjWo\",\"Nazwa
+        stacji\":\"Parzniewice, Uj\u0119cie Wody\",\"WGS84 \u03C6 N\":\"51.291175\",\"WGS84
+        \u03BB E\":\"19.517556\",\"Identyfikator miasta\":673,\"Nazwa miasta\":\"Parzniewice\",\"Gmina\":\"Wola
+        Krzysztoporska\",\"Powiat\":\"piotrkowski\",\"Wojew\xF3dztwo\":\"\u0141\xD3DZKIE\",\"Ulica\":\"Uj\u0119cie
+        wody\"},{\"Identyfikator stacji\":322,\"Kod stacji\":\"LdPioTrKraPr\",\"Nazwa
+        stacji\":\"Piotrk\xF3w Trybunalski, ul. Krakowskie Przedmie\u015Bcie\",\"WGS84
+        \u03C6 N\":\"51.404406\",\"WGS84 \u03BB E\":\"19.696956\",\"Identyfikator
+        miasta\":703,\"Nazwa miasta\":\"Piotrk\xF3w Trybunalski\",\"Gmina\":\"Piotrk\xF3w
+        Trybunalski\",\"Powiat\":\"Piotrk\xF3w Trybunalski\",\"Wojew\xF3dztwo\":\"\u0141\xD3DZKIE\",\"Ulica\":\"ul.
+        Krakowskie Przedmie\u015Bcie 13\"},{\"Identyfikator stacji\":331,\"Kod stacji\":\"LdRadomsRoln\",\"Nazwa
+        stacji\":\"Radomsko, ul. Rolna\",\"WGS84 \u03C6 N\":\"51.067417\",\"WGS84
+        \u03BB E\":\"19.448714\",\"Identyfikator miasta\":773,\"Nazwa miasta\":\"Radomsko\",\"Gmina\":\"Radomsko\",\"Powiat\":\"radomszcza\u0144ski\",\"Wojew\xF3dztwo\":\"\u0141\xD3DZKIE\",\"Ulica\":\"ul.
+        Rolna 2\"},{\"Identyfikator stacji\":345,\"Kod stacji\":\"LdToMaSwAnto\",\"Nazwa
+        stacji\":\"Tomasz\xF3w Mazowiecki ul. \u015Aw. Antoniego\",\"WGS84 \u03C6
+        N\":\"51.526225\",\"WGS84 \u03BB E\":\"20.016858\",\"Identyfikator miasta\":965,\"Nazwa
+        miasta\":\"Tomasz\xF3w Mazowiecki\",\"Gmina\":\"Tomasz\xF3w Mazowiecki\",\"Powiat\":\"tomaszowski\",\"Wojew\xF3dztwo\":\"\u0141\xD3DZKIE\",\"Ulica\":\"ul.
+        \u015Aw. Antoniego 43/45\"},{\"Identyfikator stacji\":347,\"Kod stacji\":\"LdWielunPOW1\",\"Nazwa
+        stacji\":\"Wielu\u0144, ul. POW\",\"WGS84 \u03C6 N\":\"51.217828\",\"WGS84
+        \u03BB E\":\"18.581828\",\"Identyfikator miasta\":1028,\"Nazwa miasta\":\"Wielu\u0144\",\"Gmina\":\"Wielu\u0144\",\"Powiat\":\"wielu\u0144ski\",\"Wojew\xF3dztwo\":\"\u0141\xD3DZKIE\",\"Ulica\":\"ul.
+        POW 12\"},{\"Identyfikator stacji\":350,\"Kod stacji\":\"LdZduWoKrole\",\"Nazwa
+        stacji\":\"Zdu\u0144ska Wola, ul. Kr\xF3lewska\",\"WGS84 \u03C6 N\":\"51.601378\",\"WGS84
+        \u03BB E\":\"18.940117\",\"Identyfikator miasta\":1096,\"Nazwa miasta\":\"Zdu\u0144ska
+        Wola\",\"Gmina\":\"Zdu\u0144ska Wola\",\"Powiat\":\"zdu\u0144skowolski\",\"Wojew\xF3dztwo\":\"\u0141\xD3DZKIE\",\"Ulica\":\"ul.
+        Kr\xF3lewska 10\"},{\"Identyfikator stacji\":355,\"Kod stacji\":\"LdZgieMielcz\",\"Nazwa
+        stacji\":\"Zgierz, ul. Mielczarskiego\",\"WGS84 \u03C6 N\":\"51.856692\",\"WGS84
+        \u03BB E\":\"19.421231\",\"Identyfikator miasta\":1100,\"Nazwa miasta\":\"Zgierz\",\"Gmina\":\"Zgierz\",\"Powiat\":\"zgierski\",\"Wojew\xF3dztwo\":\"\u0141\xD3DZKIE\",\"Ulica\":\"ul.
+        Mielczarskiego 1\"},{\"Identyfikator stacji\":361,\"Kod stacji\":\"LuGorzKosGdy\",\"Nazwa
+        stacji\":\"Gorz\xF3w Wlkp. ul. Kosynier\xF3w Gdy\u0144skich\",\"WGS84 \u03C6
+        N\":\"52.738214\",\"WGS84 \u03BB E\":\"15.228667\",\"Identyfikator miasta\":246,\"Nazwa
+        miasta\":\"Gorz\xF3w Wielkopolski\",\"Gmina\":\"Gorz\xF3w Wielkopolski\",\"Powiat\":\"Gorz\xF3w
+        Wielkopolski\",\"Wojew\xF3dztwo\":\"LUBUSKIE\",\"Ulica\":\"ul. Kosynier\xF3w
+        Gdy\u0144skich\"},{\"Identyfikator stacji\":362,\"Kod stacji\":\"LuGorzPilsud\",\"Nazwa
+        stacji\":\"Gorz\xF3w Wlkp. ul. Pi\u0142sudskiego\",\"WGS84 \u03C6 N\":\"52.747044\",\"WGS84
+        \u03BB E\":\"15.246294\",\"Identyfikator miasta\":246,\"Nazwa miasta\":\"Gorz\xF3w
+        Wielkopolski\",\"Gmina\":\"Gorz\xF3w Wielkopolski\",\"Powiat\":\"Gorz\xF3w
+        Wielkopolski\",\"Wojew\xF3dztwo\":\"LUBUSKIE\",\"Ulica\":\"ul. Pi\u0142sudskiego\"},{\"Identyfikator
+        stacji\":374,\"Kod stacji\":\"LuSmolBytnic\",\"Nazwa stacji\":\"Smolary Bytnickie\",\"WGS84
+        \u03C6 N\":\"52.172222\",\"WGS84 \u03BB E\":\"15.206667\",\"Identyfikator
+        miasta\":848,\"Nazwa miasta\":\"Smolary Bytnickie\",\"Gmina\":\"Bytnica\",\"Powiat\":\"kro\u015Bnie\u0144ski\",\"Wojew\xF3dztwo\":\"LUBUSKIE\",\"Ulica\":\"Smolary
+        Bytnickie 45A\"},{\"Identyfikator stacji\":376,\"Kod stacji\":\"LuSulecDudka\",\"Nazwa
+        stacji\":\"Sul\u0119cin ul. Dudka\",\"WGS84 \u03C6 N\":\"52.437722\",\"WGS84
+        \u03BB E\":\"15.122444\",\"Identyfikator miasta\":903,\"Nazwa miasta\":\"Sul\u0119cin\",\"Gmina\":\"Sul\u0119cin\",\"Powiat\":\"sul\u0119ci\u0144ski\",\"Wojew\xF3dztwo\":\"LUBUSKIE\",\"Ulica\":\"ul.
+        Dudka\"},{\"Identyfikator stacji\":379,\"Kod stacji\":\"LuWsKaziWiel\",\"Nazwa
+        stacji\":\"Wschowa ul. Kazimierza Wielkiego\",\"WGS84 \u03C6 N\":\"51.799722\",\"WGS84
+        \u03BB E\":\"16.317500\",\"Identyfikator miasta\":1066,\"Nazwa miasta\":\"Wschowa\",\"Gmina\":\"Wschowa\",\"Powiat\":\"wschowski\",\"Wojew\xF3dztwo\":\"LUBUSKIE\",\"Ulica\":\"ul.
+        Kazimierza Wielkiego\"},{\"Identyfikator stacji\":382,\"Kod stacji\":\"LuZarySzyman\",\"Nazwa
+        stacji\":\"\u017Bary, ul. Szymanowskiego \",\"WGS84 \u03C6 N\":\"51.642656\",\"WGS84
+        \u03BB E\":\"15.127808\",\"Identyfikator miasta\":1119,\"Nazwa miasta\":\"\u017Bary\",\"Gmina\":\"\u017Bary\",\"Powiat\":\"\u017Carski\",\"Wojew\xF3dztwo\":\"LUBUSKIE\",\"Ulica\":\"ul.
+        Szymanowskiego 8\"},{\"Identyfikator stacji\":387,\"Kod stacji\":\"LuZielKrotka\",\"Nazwa
+        stacji\":\"Zielona G\xF3ra ul. Kr\xF3tka\",\"WGS84 \u03C6 N\":\"51.939783\",\"WGS84
+        \u03BB E\":\"15.518861\",\"Identyfikator miasta\":1103,\"Nazwa miasta\":\"Zielona
+        G\xF3ra\",\"Gmina\":\"Zielona G\xF3ra\",\"Powiat\":\"Zielona G\xF3ra\",\"Wojew\xF3dztwo\":\"LUBUSKIE\",\"Ulica\":\"ul.
+        Kr\xF3tka\"},{\"Identyfikator stacji\":391,\"Kod stacji\":\"MpBochKonfed\",\"Nazwa
+        stacji\":\"Bochnia, ul. Konfederat\xF3w Barskich\",\"WGS84 \u03C6 N\":\"49.969017\",\"WGS84
+        \u03BB E\":\"20.439511\",\"Identyfikator miasta\":51,\"Nazwa miasta\":\"Bochnia\",\"Gmina\":\"Bochnia\",\"Powiat\":\"boche\u0144ski\",\"Wojew\xF3dztwo\":\"MA\u0141OPOLSKIE\",\"Ulica\":\"ul.
+        Konfederat\xF3w Barskich\"},{\"Identyfikator stacji\":398,\"Kod stacji\":\"MpGorlKrasin\",\"Nazwa
+        stacji\":\"Gorlice, ul. Krasi\u0144skiego\",\"WGS84 \u03C6 N\":\"49.658889\",\"WGS84
+        \u03BB E\":\"21.163336\",\"Identyfikator miasta\":244,\"Nazwa miasta\":\"Gorlice\",\"Gmina\":\"Gorlice\",\"Powiat\":\"gorlicki\",\"Wojew\xF3dztwo\":\"MA\u0141OPOLSKIE\",\"Ulica\":\"ul.
+        Krasi\u0144skiego\"},{\"Identyfikator stacji\":400,\"Kod stacji\":\"MpKrakAlKras\",\"Nazwa
+        stacji\":\"Krak\xF3w, Aleja Krasi\u0144skiego\",\"WGS84 \u03C6 N\":\"50.057678\",\"WGS84
+        \u03BB E\":\"19.926189\",\"Identyfikator miasta\":415,\"Nazwa miasta\":\"Krak\xF3w\",\"Gmina\":\"Krak\xF3w\",\"Powiat\":\"Krak\xF3w\",\"Wojew\xF3dztwo\":\"MA\u0141OPOLSKIE\",\"Ulica\":\"Al.
+        Krasi\u0144skiego\"},{\"Identyfikator stacji\":401,\"Kod stacji\":\"MpKrakBujaka\",\"Nazwa
+        stacji\":\"Krak\xF3w, ul. Bujaka\",\"WGS84 \u03C6 N\":\"50.010575\",\"WGS84
+        \u03BB E\":\"19.949189\",\"Identyfikator miasta\":415,\"Nazwa miasta\":\"Krak\xF3w\",\"Gmina\":\"Krak\xF3w\",\"Powiat\":\"Krak\xF3w\",\"Wojew\xF3dztwo\":\"MA\u0141OPOLSKIE\",\"Ulica\":\"ul.
+        Bujaka\"},{\"Identyfikator stacji\":402,\"Kod stacji\":\"MpKrakBulwar\",\"Nazwa
+        stacji\":\"Krak\xF3w, ul. Bulwarowa\",\"WGS84 \u03C6 N\":\"50.069308\",\"WGS84
+        \u03BB E\":\"20.053492\",\"Identyfikator miasta\":415,\"Nazwa miasta\":\"Krak\xF3w\",\"Gmina\":\"Krak\xF3w\",\"Powiat\":\"Krak\xF3w\",\"Wojew\xF3dztwo\":\"MA\u0141OPOLSKIE\",\"Ulica\":\"ul.
+        Bulwarowa\"},{\"Identyfikator stacji\":426,\"Kod stacji\":\"MpNoSaczNadb\",\"Nazwa
+        stacji\":\"Nowy S\u0105cz, ul. Nadbrze\u017Cna\",\"WGS84 \u03C6 N\":\"49.619281\",\"WGS84
+        \u03BB E\":\"20.714403\",\"Identyfikator miasta\":623,\"Nazwa miasta\":\"Nowy
+        S\u0105cz\",\"Gmina\":\"Nowy S\u0105cz\",\"Powiat\":\"Nowy S\u0105cz\",\"Wojew\xF3dztwo\":\"MA\u0141OPOLSKIE\",\"Ulica\":\"ul.
+        Nadbrze\u017Cna\"},{\"Identyfikator stacji\":437,\"Kod stacji\":\"MpSkawOsOgro\",\"Nazwa
+        stacji\":\"Skawina, Os. Ogrody\",\"WGS84 \u03C6 N\":\"49.971047\",\"WGS84
+        \u03BB E\":\"19.830422\",\"Identyfikator miasta\":834,\"Nazwa miasta\":\"Skawina\",\"Gmina\":\"Skawina\",\"Powiat\":\"krakowski\",\"Wojew\xF3dztwo\":\"MA\u0141OPOLSKIE\",\"Ulica\":\"Os.
+        Ogrody\"},{\"Identyfikator stacji\":443,\"Kod stacji\":\"MpSzymbaGorl\",\"Nazwa
+        stacji\":\"Szymbark\",\"WGS84 \u03C6 N\":\"49.633714\",\"WGS84 \u03BB E\":\"21.116833\",\"Identyfikator
+        miasta\":930,\"Nazwa miasta\":\"Szymbark\",\"Gmina\":\"Gorlice\",\"Powiat\":\"gorlicki\",\"Wojew\xF3dztwo\":\"MA\u0141OPOLSKIE\",\"Ulica\":\"Szymbark
+        430\"},{\"Identyfikator stacji\":444,\"Kod stacji\":\"MpTarBitStud\",\"Nazwa
+        stacji\":\"Tarn\xF3w, ul. Bitwy pod Studziankami\",\"WGS84 \u03C6 N\":\"50.020169\",\"WGS84
+        \u03BB E\":\"21.004167\",\"Identyfikator miasta\":958,\"Nazwa miasta\":\"Tarn\xF3w\",\"Gmina\":\"Tarn\xF3w\",\"Powiat\":\"Tarn\xF3w\",\"Wojew\xF3dztwo\":\"MA\u0141OPOLSKIE\",\"Ulica\":\"ul.
+        Bitwy pod Studziankami\"},{\"Identyfikator stacji\":449,\"Kod stacji\":\"MpTrzebOsZWM\",\"Nazwa
+        stacji\":\"Trzebinia, Os. Zwi\u0105zku Walki M\u0142odych\",\"WGS84 \u03C6
+        N\":\"50.159406\",\"WGS84 \u03BB E\":\"19.477464\",\"Identyfikator miasta\":974,\"Nazwa
+        miasta\":\"Trzebinia\",\"Gmina\":\"Trzebinia\",\"Powiat\":\"chrzanowski\",\"Wojew\xF3dztwo\":\"MA\u0141OPOLSKIE\",\"Ulica\":\"Os.
+        Widokowe (dawne os. ZWM)\"},{\"Identyfikator stacji\":450,\"Kod stacji\":\"MpTuchChopin\",\"Nazwa
+        stacji\":\"Tuch\xF3w, ul. Chopina\",\"WGS84 \u03C6 N\":\"49.894169\",\"WGS84
+        \u03BB E\":\"21.051061\",\"Identyfikator miasta\":980,\"Nazwa miasta\":\"Tuch\xF3w\",\"Gmina\":\"Tuch\xF3w\",\"Powiat\":\"tarnowski\",\"Wojew\xF3dztwo\":\"MA\u0141OPOLSKIE\",\"Ulica\":\"ul.
+        Chopina\"},{\"Identyfikator stacji\":455,\"Kod stacji\":\"MpNiepo3Maja\",\"Nazwa
+        stacji\":\"Niepo\u0142omice, ul. 3 Maja\",\"WGS84 \u03C6 N\":\"50.035117\",\"WGS84
+        \u03BB E\":\"20.212689\",\"Identyfikator miasta\":597,\"Nazwa miasta\":\"Niepo\u0142omice\",\"Gmina\":\"Niepo\u0142omice\",\"Powiat\":\"wielicki\",\"Wojew\xF3dztwo\":\"MA\u0141OPOLSKIE\",\"Ulica\":\"ul.
+        3 Maja\"},{\"Identyfikator stacji\":459,\"Kod stacji\":\"MpZakopaSien\",\"Nazwa
+        stacji\":\"Zakopane, ul. Sienkiewicza\",\"WGS84 \u03C6 N\":\"49.293564\",\"WGS84
+        \u03BB E\":\"19.960083\",\"Identyfikator miasta\":1076,\"Nazwa miasta\":\"Zakopane\",\"Gmina\":\"Zakopane\",\"Powiat\":\"tatrza\u0144ski\",\"Wojew\xF3dztwo\":\"MA\u0141OPOLSKIE\",\"Ulica\":\"ul.
+        Sienkiewicza\"},{\"Identyfikator stacji\":460,\"Kod stacji\":\"MzBelsIGFPAN\",\"Nazwa
+        stacji\":\"Belsk Du\u017Cy, IGF PAN\",\"WGS84 \u03C6 N\":\"51.835242\",\"WGS84
+        \u03BB E\":\"20.791912\",\"Identyfikator miasta\":19,\"Nazwa miasta\":\"Belsk
+        Du\u017Cy\",\"Gmina\":\"Gr\xF3jec\",\"Powiat\":\"gr\xF3jecki\",\"Wojew\xF3dztwo\":\"MAZOWIECKIE\",\"Ulica\":\"Osiedle
+        PAN 1\"},{\"Identyfikator stacji\":466,\"Kod stacji\":\"MzGranicaKPN\",\"Nazwa
+        stacji\":\"Granica, KPN\",\"WGS84 \u03C6 N\":\"52.285858\",\"WGS84 \u03BB
+        E\":\"20.454653\",\"Identyfikator miasta\":259,\"Nazwa miasta\":\"Granica\",\"Gmina\":\"Kampinos\",\"Powiat\":\"warszawski
+        zachodni\",\"Wojew\xF3dztwo\":\"MAZOWIECKIE\",\"Ulica\":\"Kampinoski Park
+        Narodowy\"},{\"Identyfikator stacji\":471,\"Kod stacji\":\"MzLegZegrzyn\",\"Nazwa
+        stacji\":\"Legionowo, ul. Zegrzy\u0144ska\",\"WGS84 \u03C6 N\":\"52.407578\",\"WGS84
+        \u03BB E\":\"20.955928\",\"Identyfikator miasta\":452,\"Nazwa miasta\":\"Legionowo\",\"Gmina\":\"Legionowo\",\"Powiat\":\"legionowski\",\"Wojew\xF3dztwo\":\"MAZOWIECKIE\",\"Ulica\":\"ul.
+        Zegrzy\u0144ska 38\"},{\"Identyfikator stacji\":485,\"Kod stacji\":\"MzOtwoBrzozo\",\"Nazwa
+        stacji\":\"Otwock, ul. Brzozowa\",\"WGS84 \u03C6 N\":\"52.115725\",\"WGS84
+        \u03BB E\":\"21.237297\",\"Identyfikator miasta\":662,\"Nazwa miasta\":\"Otwock\",\"Gmina\":\"Otwock\",\"Powiat\":\"otwocki\",\"Wojew\xF3dztwo\":\"MAZOWIECKIE\",\"Ulica\":\"ul.
+        Brzozowa 2\"},{\"Identyfikator stacji\":488,\"Kod stacji\":\"MzPiasPulask\",\"Nazwa
+        stacji\":\"Piast\xF3w, ul. Pu\u0142askiego\",\"WGS84 \u03C6 N\":\"52.191728\",\"WGS84
+        \u03BB E\":\"20.837489\",\"Identyfikator miasta\":685,\"Nazwa miasta\":\"Piast\xF3w\",\"Gmina\":\"Piast\xF3w\",\"Powiat\":\"pruszkowski\",\"Wojew\xF3dztwo\":\"MAZOWIECKIE\",\"Ulica\":\"ul.
+        Pu\u0142askiego 6/8\"},{\"Identyfikator stacji\":497,\"Kod stacji\":\"MzPlocKroJad\",\"Nazwa
+        stacji\":\"P\u0142ock, ul. Kr\xF3lowej Jadwigi\",\"WGS84 \u03C6 N\":\"52.556279\",\"WGS84
+        \u03BB E\":\"19.687672\",\"Identyfikator miasta\":707,\"Nazwa miasta\":\"P\u0142ock\",\"Gmina\":\"P\u0142ock\",\"Powiat\":\"P\u0142ock\",\"Wojew\xF3dztwo\":\"MAZOWIECKIE\",\"Ulica\":\"ul.
+        Kr\xF3lowej Jadwigi 4\"},{\"Identyfikator stacji\":501,\"Kod stacji\":\"MzPlocMiReja\",\"Nazwa
+        stacji\":\"P\u0142ock, ul. Reja\",\"WGS84 \u03C6 N\":\"52.550938\",\"WGS84
+        \u03BB E\":\"19.709791\",\"Identyfikator miasta\":707,\"Nazwa miasta\":\"P\u0142ock\",\"Gmina\":\"P\u0142ock\",\"Powiat\":\"P\u0142ock\",\"Wojew\xF3dztwo\":\"MAZOWIECKIE\",\"Ulica\":\"ul.
+        Miko\u0142aja Reja 28\"},{\"Identyfikator stacji\":510,\"Kod stacji\":\"MzRad25Czerw\",\"Nazwa
+        stacji\":\"Radom, ul. 25 Czerwca\",\"WGS84 \u03C6 N\":\"51.406080\",\"WGS84
+        \u03BB E\":\"21.166819\",\"Identyfikator miasta\":771,\"Nazwa miasta\":\"Radom\",\"Gmina\":\"Radom\",\"Powiat\":\"Radom\",\"Wojew\xF3dztwo\":\"MAZOWIECKIE\",\"Ulica\":\"ul.
+        25 Czerwca 1976 70\"},{\"Identyfikator stacji\":512,\"Kod stacji\":\"MzRadHallera\",\"Nazwa
+        stacji\":\"Radom, ul. Hallera\",\"WGS84 \u03C6 N\":\"51.415324\",\"WGS84 \u03BB
+        E\":\"21.171285\",\"Identyfikator miasta\":771,\"Nazwa miasta\":\"Radom\",\"Gmina\":\"Radom\",\"Powiat\":\"Radom\",\"Wojew\xF3dztwo\":\"MAZOWIECKIE\",\"Ulica\":\"ul.
+        Hallera\"},{\"Identyfikator stacji\":515,\"Kod stacji\":\"MzRadTochter\",\"Nazwa
+        stacji\":\"Radom, ul. Tochtermana\",\"WGS84 \u03C6 N\":\"51.399084\",\"WGS84
+        \u03BB E\":\"21.147474\",\"Identyfikator miasta\":771,\"Nazwa miasta\":\"Radom\",\"Gmina\":\"Radom\",\"Powiat\":\"Radom\",\"Wojew\xF3dztwo\":\"MAZOWIECKIE\",\"Ulica\":\"ul.
+        Tochtermana 1\"},{\"Identyfikator stacji\":517,\"Kod stacji\":\"MzSiedKonars\",\"Nazwa
+        stacji\":\"Siedlce, ul. Konarskiego\",\"WGS84 \u03C6 N\":\"52.172145\",\"WGS84
+        \u03BB E\":\"22.282001\",\"Identyfikator miasta\":823,\"Nazwa miasta\":\"Siedlce\",\"Gmina\":\"Siedlce\",\"Powiat\":\"Siedlce\",\"Wojew\xF3dztwo\":\"MAZOWIECKIE\",\"Ulica\":\"ul.
+        Konarskiego 11\"},{\"Identyfikator stacji\":530,\"Kod stacji\":\"MzWarAlNiepo\",\"Nazwa
+        stacji\":\"Warszawa, Al. Niepodleg\u0142o\u015Bci\",\"WGS84 \u03C6 N\":\"52.219298\",\"WGS84
+        \u03BB E\":\"21.004724\",\"Identyfikator miasta\":1006,\"Nazwa miasta\":\"Warszawa\",\"Gmina\":\"Warszawa\",\"Powiat\":\"Warszawa\",\"Wojew\xF3dztwo\":\"MAZOWIECKIE\",\"Ulica\":\"Al.
+        Niepodleg\u0142o\u015Bci 227/233\"},{\"Identyfikator stacji\":532,\"Kod stacji\":\"MzWarAKrzywo\",\"Nazwa
+        stacji\":\"Warszawa, ul. Krzywo\u0144\",\"WGS84 \u03C6 N\":\"52.228649\",\"WGS84
+        \u03BB E\":\"20.917513\",\"Identyfikator miasta\":1006,\"Nazwa miasta\":\"Warszawa\",\"Gmina\":\"Warszawa\",\"Powiat\":\"Warszawa\",\"Wojew\xF3dztwo\":\"MAZOWIECKIE\",\"Ulica\":\"ul.
+        Anieli Krzywo\u0144\"},{\"Identyfikator stacji\":538,\"Kod stacji\":\"MzWarTolstoj\",\"Nazwa
+        stacji\":\"Warszawa, ul. To\u0142stoja\",\"WGS84 \u03C6 N\":\"52.285073\",\"WGS84
+        \u03BB E\":\"20.933018\",\"Identyfikator miasta\":1006,\"Nazwa miasta\":\"Warszawa\",\"Gmina\":\"Warszawa\",\"Powiat\":\"Warszawa\",\"Wojew\xF3dztwo\":\"MAZOWIECKIE\",\"Ulica\":\"ul.
+        To\u0142stoja 2\"},{\"Identyfikator stacji\":550,\"Kod stacji\":\"MzWarWokalna\",\"Nazwa
+        stacji\":\"Warszawa, ul. Wokalna\",\"WGS84 \u03C6 N\":\"52.160772\",\"WGS84
+        \u03BB E\":\"21.033819\",\"Identyfikator miasta\":1006,\"Nazwa miasta\":\"Warszawa\",\"Gmina\":\"Warszawa\",\"Powiat\":\"Warszawa\",\"Wojew\xF3dztwo\":\"MAZOWIECKIE\",\"Ulica\":\"ul.
+        Wokalna 1\"},{\"Identyfikator stacji\":552,\"Kod stacji\":\"MzWarKondrat\",\"Nazwa
+        stacji\":\"Warszawa, ul. Kondratowicza\",\"WGS84 \u03C6 N\":\"52.290864\",\"WGS84
+        \u03BB E\":\"21.042458\",\"Identyfikator miasta\":1006,\"Nazwa miasta\":\"Warszawa\",\"Gmina\":\"Warszawa\",\"Powiat\":\"Warszawa\",\"Wojew\xF3dztwo\":\"MAZOWIECKIE\",\"Ulica\":\"ul.
+        Kondratowicza 8\"},{\"Identyfikator stacji\":562,\"Kod stacji\":\"MzZyraRoosev\",\"Nazwa
+        stacji\":\"\u017Byrard\xF3w, ul. Roosevelta\",\"WGS84 \u03C6 N\":\"52.053811\",\"WGS84
+        \u03BB E\":\"20.429892\",\"Identyfikator miasta\":1130,\"Nazwa miasta\":\"\u017Byrard\xF3w\",\"Gmina\":\"\u017Byrard\xF3w\",\"Powiat\":\"\u017Cyrardowski\",\"Wojew\xF3dztwo\":\"MAZOWIECKIE\",\"Ulica\":\"ul.
+        Roosevelta 2\"},{\"Identyfikator stacji\":568,\"Kod stacji\":\"OpKKozBSmial\",\"Nazwa
+        stacji\":\"K\u0119dzierzyn-Ko\u017Ale, ul. \u015Amia\u0142ego\",\"WGS84 \u03C6
+        N\":\"50.349608\",\"WGS84 \u03BB E\":\"18.236575\",\"Identyfikator miasta\":355,\"Nazwa
+        miasta\":\"K\u0119dzierzyn-Ko\u017Ale\",\"Gmina\":\"K\u0119dzierzyn-Ko\u017Ale\",\"Powiat\":\"k\u0119dzierzy\u0144sko-kozielski\",\"Wojew\xF3dztwo\":\"OPOLSKIE\",\"Ulica\":\"ul.
+        Boles\u0142awa \u015Amia\u0142ego 5\"},{\"Identyfikator stacji\":577,\"Kod
+        stacji\":\"OpKluczMicki\",\"Nazwa stacji\":\"Kluczbork, ul. Mickiewicza\",\"WGS84
+        \u03C6 N\":\"50.972181\",\"WGS84 \u03BB E\":\"18.207575\",\"Identyfikator
+        miasta\":363,\"Nazwa miasta\":\"Kluczbork\",\"Gmina\":\"Kluczbork\",\"Powiat\":\"kluczborski\",\"Wojew\xF3dztwo\":\"OPOLSKIE\",\"Ulica\":\"ul.
+        Mickiewicza 10\"},{\"Identyfikator stacji\":584,\"Kod stacji\":\"OpOlesSlowac\",\"Nazwa
+        stacji\":\"Olesno, ul. S\u0142owackiego\",\"WGS84 \u03C6 N\":\"50.876983\",\"WGS84
+        \u03BB E\":\"18.416878\",\"Identyfikator miasta\":636,\"Nazwa miasta\":\"Olesno\",\"Gmina\":\"Olesno\",\"Powiat\":\"oleski\",\"Wojew\xF3dztwo\":\"OPOLSKIE\",\"Ulica\":\"ul.
+        S\u0142owackiego\"},{\"Identyfikator stacji\":590,\"Kod stacji\":\"OpOpoleOsAKr\",\"Nazwa
+        stacji\":\"Opole, Os. Armii Krajowej\",\"WGS84 \u03C6 N\":\"50.676856\",\"WGS84
+        \u03BB E\":\"17.950278\",\"Identyfikator miasta\":645,\"Nazwa miasta\":\"Opole\",\"Gmina\":\"Opole\",\"Powiat\":\"Opole\",\"Wojew\xF3dztwo\":\"OPOLSKIE\",\"Ulica\":\"Os.
+        Armii Krajowej\"},{\"Identyfikator stacji\":600,\"Kod stacji\":\"OpZdziePiast\",\"Nazwa
+        stacji\":\"Zdzieszowice, ul. Piast\xF3w\",\"WGS84 \u03C6 N\":\"50.423533\",\"WGS84
+        \u03BB E\":\"18.120739\",\"Identyfikator miasta\":1097,\"Nazwa miasta\":\"Zdzieszowice\",\"Gmina\":\"Zdzieszowice\",\"Powiat\":\"krapkowicki\",\"Wojew\xF3dztwo\":\"OPOLSKIE\",\"Ulica\":\"ul.
+        Piast\xF3w 6\"},{\"Identyfikator stacji\":609,\"Kod stacji\":\"PdBialWarsza\",\"Nazwa
+        stacji\":\"Bia\u0142ystok, ul. Warszawska\",\"WGS84 \u03C6 N\":\"53.129306\",\"WGS84
+        \u03BB E\":\"23.181744\",\"Identyfikator miasta\":35,\"Nazwa miasta\":\"Bia\u0142ystok\",\"Gmina\":\"Bia\u0142ystok\",\"Powiat\":\"Bia\u0142ystok\",\"Wojew\xF3dztwo\":\"PODLASKIE\",\"Ulica\":\"ul.
+        Warszawska 75 A\"},{\"Identyfikator stacji\":612,\"Kod stacji\":\"PdBorsukowiz\",\"Nazwa
+        stacji\":\"Borsukowizna, Szk\xF3\u0142ka Le\u015Bna\",\"WGS84 \u03C6 N\":\"53.215492\",\"WGS84
+        \u03BB E\":\"23.642153\",\"Identyfikator miasta\":63,\"Nazwa miasta\":\"Borsukowizna\",\"Gmina\":\"Krynki\",\"Powiat\":\"sok\xF3lski\",\"Wojew\xF3dztwo\":\"PODLASKIE\",\"Ulica\":null},{\"Identyfikator
+        stacji\":618,\"Kod stacji\":\"PdLomSikorsk\",\"Nazwa stacji\":\"\u0141om\u017Ca,
+        ul. Sikorskiego\",\"WGS84 \u03C6 N\":\"53.181394\",\"WGS84 \u03BB E\":\"22.054381\",\"Identyfikator
+        miasta\":513,\"Nazwa miasta\":\"\u0141om\u017Ca\",\"Gmina\":\"\u0141om\u017Ca\",\"Powiat\":\"\u0141om\u017Ca\",\"Wojew\xF3dztwo\":\"PODLASKIE\",\"Ulica\":\"ul.
+        Sikorskiego 48/94\"},{\"Identyfikator stacji\":631,\"Kod stacji\":\"PkJarosPruch\",\"Nazwa
+        stacji\":\"Jaros\u0142aw, ul. Pruchnicka\",\"WGS84 \u03C6 N\":\"50.012083\",\"WGS84
+        \u03BB E\":\"22.674772\",\"Identyfikator miasta\":303,\"Nazwa miasta\":\"Jaros\u0142aw\",\"Gmina\":\"Jaros\u0142aw\",\"Powiat\":\"jaros\u0142awski\",\"Wojew\xF3dztwo\":\"PODKARPACKIE\",\"Ulica\":\"Pruchnicka\"},{\"Identyfikator
+        stacji\":638,\"Kod stacji\":\"PkJasloSikor\",\"Nazwa stacji\":\"Jaslo, ul.
+        Sikorskiego\",\"WGS84 \u03C6 N\":\"49.744886\",\"WGS84 \u03BB E\":\"21.454617\",\"Identyfikator
+        miasta\":306,\"Nazwa miasta\":\"Jas\u0142o\",\"Gmina\":\"Jas\u0142o\",\"Powiat\":\"jasielski\",\"Wojew\xF3dztwo\":\"PODKARPACKIE\",\"Ulica\":\"Sikorskiego\"},{\"Identyfikator
+        stacji\":646,\"Kod stacji\":\"PkKrosKletow\",\"Nazwa stacji\":\"Krosno, ul.
+        Klet\xF3wki\",\"WGS84 \u03C6 N\":\"49.690169\",\"WGS84 \u03BB E\":\"21.749700\",\"Identyfikator
+        miasta\":425,\"Nazwa miasta\":\"Krosno\",\"Gmina\":\"Krosno\",\"Powiat\":\"Krosno\",\"Wojew\xF3dztwo\":\"PODKARPACKIE\",\"Ulica\":\"Klet\xF3wki\"},{\"Identyfikator
+        stacji\":659,\"Kod stacji\":\"PkNiskoSzkla\",\"Nazwa stacji\":\"Nisko, ul.
+        Szklarniowa\",\"WGS84 \u03C6 N\":\"50.529892\",\"WGS84 \u03BB E\":\"22.112467\",\"Identyfikator
+        miasta\":600,\"Nazwa miasta\":\"Nisko\",\"Gmina\":\"Nisko\",\"Powiat\":\"ni\u017Ca\u0144ski\",\"Wojew\xF3dztwo\":\"PODKARPACKIE\",\"Ulica\":\"Szklarniowa\"},{\"Identyfikator
+        stacji\":665,\"Kod stacji\":\"PkPrzemGrunw\",\"Nazwa stacji\":\"Przemy\u015Bl,
+        ul. Grunwaldzka\",\"WGS84 \u03C6 N\":\"49.784339\",\"WGS84 \u03BB E\":\"22.756239\",\"Identyfikator
+        miasta\":748,\"Nazwa miasta\":\"Przemy\u015Bl\",\"Gmina\":\"Przemy\u015Bl\",\"Powiat\":\"Przemy\u015Bl\",\"Wojew\xF3dztwo\":\"PODKARPACKIE\",\"Ulica\":\"Grunwaldzka\"},{\"Identyfikator
+        stacji\":671,\"Kod stacji\":\"PkRzeszRejta\",\"Nazwa stacji\":\"Rzesz\xF3w,
+        Al. Rejtana\",\"WGS84 \u03C6 N\":\"50.024242\",\"WGS84 \u03BB E\":\"22.010575\",\"Identyfikator
+        miasta\":810,\"Nazwa miasta\":\"Rzesz\xF3w\",\"Gmina\":\"Rzesz\xF3w\",\"Powiat\":\"Rzesz\xF3w\",\"Wojew\xF3dztwo\":\"PODKARPACKIE\",\"Ulica\":\"Al.
+        Rejtana\"},{\"Identyfikator stacji\":678,\"Kod stacji\":\"PkSanoSadowa\",\"Nazwa
+        stacji\":\"Sanok, ul. Sadowa\",\"WGS84 \u03C6 N\":\"49.571731\",\"WGS84 \u03BB
+        E\":\"22.195892\",\"Identyfikator miasta\":814,\"Nazwa miasta\":\"Sanok\",\"Gmina\":\"Sanok\",\"Powiat\":\"sanocki\",\"Wojew\xF3dztwo\":\"PODKARPACKIE\",\"Ulica\":\"Sadowa\"},{\"Identyfikator
+        stacji\":684,\"Kod stacji\":\"PkTarnDabrow\",\"Nazwa stacji\":\"Tarnobrzeg,
+        ul. D\u0105browskiej\",\"WGS84 \u03C6 N\":\"50.575742\",\"WGS84 \u03BB E\":\"21.688367\",\"Identyfikator
+        miasta\":954,\"Nazwa miasta\":\"Tarnobrzeg\",\"Gmina\":\"Tarnobrzeg\",\"Powiat\":\"Tarnobrzeg\",\"Wojew\xF3dztwo\":\"PODKARPACKIE\",\"Ulica\":\"Marii
+        D\u0105browskiej\"},{\"Identyfikator stacji\":706,\"Kod stacji\":\"PmGdaPowWiel\",\"Nazwa
+        stacji\":\"Gda\u0144sk, ul. Powsta\u0144c\xF3w Wielkopolskich\",\"WGS84 \u03C6
+        N\":\"54.398639\",\"WGS84 \u03BB E\":\"18.614333\",\"Identyfikator miasta\":218,\"Nazwa
+        miasta\":\"Gda\u0144sk\",\"Gmina\":\"Gda\u0144sk\",\"Powiat\":\"Gda\u0144sk\",\"Wojew\xF3dztwo\":\"POMORSKIE\",\"Ulica\":\"ul.
+        Powsta\u0144c\xF3w Wielkopolskich\"},{\"Identyfikator stacji\":725,\"Kod stacji\":\"PmSlupKniazi\",\"Nazwa
+        stacji\":\"S\u0142upsk, ul. Kniaziewicza\",\"WGS84 \u03C6 N\":\"54.463611\",\"WGS84
+        \u03BB E\":\"17.046722\",\"Identyfikator miasta\":846,\"Nazwa miasta\":\"S\u0142upsk\",\"Gmina\":\"S\u0142upsk\",\"Powiat\":\"S\u0142upsk\",\"Wojew\xF3dztwo\":\"POMORSKIE\",\"Ulica\":\"ul.
+        Kniaziewicza 30\"},{\"Identyfikator stacji\":729,\"Kod stacji\":\"PmGdaPowWars\",\"Nazwa
+        stacji\":\"Gda\u0144sk, ul. Powsta\u0144c\xF3w Warszawskich\",\"WGS84 \u03C6
+        N\":\"54.353196\",\"WGS84 \u03BB E\":\"18.635267\",\"Identyfikator miasta\":218,\"Nazwa
+        miasta\":\"Gda\u0144sk\",\"Gmina\":\"Gda\u0144sk\",\"Powiat\":\"Gda\u0144sk\",\"Wojew\xF3dztwo\":\"POMORSKIE\",\"Ulica\":\"ul.
+        Powsta\u0144c\xF3w Warszawskich\"},{\"Identyfikator stacji\":731,\"Kod stacji\":\"PmGdaWyzwole\",\"Nazwa
+        stacji\":\"Gda\u0144sk, ul. Wyzwolenia\",\"WGS84 \u03C6 N\":\"54.400788\",\"WGS84
+        \u03BB E\":\"18.657332\",\"Identyfikator miasta\":218,\"Nazwa miasta\":\"Gda\u0144sk\",\"Gmina\":\"Gda\u0144sk\",\"Powiat\":\"Gda\u0144sk\",\"Wojew\xF3dztwo\":\"POMORSKIE\",\"Ulica\":\"ul.
+        Wyzwolenia\"},{\"Identyfikator stacji\":732,\"Kod stacji\":\"PmGdyPorebsk\",\"Nazwa
+        stacji\":\"Gdynia, ul. Por\u0119bskiego\",\"WGS84 \u03C6 N\":\"54.560836\",\"WGS84
+        \u03BB E\":\"18.493331\",\"Identyfikator miasta\":219,\"Nazwa miasta\":\"Gdynia\",\"Gmina\":\"Gdynia\",\"Powiat\":\"Gdynia\",\"Wojew\xF3dztwo\":\"POMORSKIE\",\"Ulica\":\"ul.
+        Por\u0119bskiego\"},{\"Identyfikator stacji\":736,\"Kod stacji\":\"PmGdaLeczkow\",\"Nazwa
+        stacji\":\"Gda\u0144sk, ul. Leczkowa\",\"WGS84 \u03C6 N\":\"54.380139\",\"WGS84
+        \u03BB E\":\"18.619766\",\"Identyfikator miasta\":218,\"Nazwa miasta\":\"Gda\u0144sk\",\"Gmina\":\"Gda\u0144sk\",\"Powiat\":\"Gda\u0144sk\",\"Wojew\xF3dztwo\":\"POMORSKIE\",\"Ulica\":\"ul.
+        Leczkowa\"},{\"Identyfikator stacji\":740,\"Kod stacji\":\"PmKosTargowa\",\"Nazwa
+        stacji\":\"Ko\u015Bcierzyna, ul. Targowa\",\"WGS84 \u03C6 N\":\"54.120694\",\"WGS84
+        \u03BB E\":\"17.975861\",\"Identyfikator miasta\":406,\"Nazwa miasta\":\"Ko\u015Bcierzyna\",\"Gmina\":\"Ko\u015Bcierzyna\",\"Powiat\":\"ko\u015Bcierski\",\"Wojew\xF3dztwo\":\"POMORSKIE\",\"Ulica\":\"ul.
+        Targowa\"},{\"Identyfikator stacji\":741,\"Kod stacji\":\"PmMalMickiew\",\"Nazwa
+        stacji\":\"Malbork, ul. Mickiewicza\",\"WGS84 \u03C6 N\":\"54.031247\",\"WGS84
+        \u03BB E\":\"19.032899\",\"Identyfikator miasta\":527,\"Nazwa miasta\":\"Malbork\",\"Gmina\":\"Malbork\",\"Powiat\":\"malborski\",\"Wojew\xF3dztwo\":\"POMORSKIE\",\"Ulica\":\"ul.
+        Mickiewicza\"},{\"Identyfikator stacji\":742,\"Kod stacji\":\"PmLebMalczew\",\"Nazwa
+        stacji\":\"L\u0119bork, ul. Malczewskiego\",\"WGS84 \u03C6 N\":\"54.546167\",\"WGS84
+        \u03BB E\":\"17.746194\",\"Identyfikator miasta\":464,\"Nazwa miasta\":\"L\u0119bork\",\"Gmina\":\"L\u0119bork\",\"Powiat\":\"l\u0119borski\",\"Wojew\xF3dztwo\":\"POMORSKIE\",\"Ulica\":\"ul.
+        Malczewskiego\"},{\"Identyfikator stacji\":743,\"Kod stacji\":\"PmLinieKosci\",\"Nazwa
+        stacji\":\"Liniewko Ko\u015Bcierskie\",\"WGS84 \u03C6 N\":\"54.104111\",\"WGS84
+        \u03BB E\":\"18.182972\",\"Identyfikator miasta\":469,\"Nazwa miasta\":\"Liniewko
+        Ko\u015Bcierskie\",\"Gmina\":\"Nowa Karczma\",\"Powiat\":\"ko\u015Bcierski\",\"Wojew\xF3dztwo\":\"POMORSKIE\",\"Ulica\":null},{\"Identyfikator
+        stacji\":747,\"Kod stacji\":\"PmKwiSportow\",\"Nazwa stacji\":\"Kwidzyn, ul.
+        Sportowa\",\"WGS84 \u03C6 N\":\"53.722361\",\"WGS84 \u03BB E\":\"18.936917\",\"Identyfikator
+        miasta\":449,\"Nazwa miasta\":\"Kwidzyn\",\"Gmina\":\"Kwidzyn\",\"Powiat\":\"kwidzy\u0144ski\",\"Wojew\xF3dztwo\":\"POMORSKIE\",\"Ulica\":\"ul.
+        Sportowa\"},{\"Identyfikator stacji\":750,\"Kod stacji\":\"PmLebaRabka1\",\"Nazwa
+        stacji\":\"\u0141eba, IMGW\",\"WGS84 \u03C6 N\":\"54.754139\",\"WGS84 \u03BB
+        E\":\"17.534528\",\"Identyfikator miasta\":506,\"Nazwa miasta\":\"\u0141eba\",\"Gmina\":\"\u0141eba\",\"Powiat\":\"l\u0119borski\",\"Wojew\xF3dztwo\":\"POMORSKIE\",\"Ulica\":\"ul.
+        R\u0105bka 1A\"},{\"Identyfikator stacji\":756,\"Kod stacji\":\"SkBuskRokosz\",\"Nazwa
+        stacji\":\"Busko-Zdr\xF3j, ul. Rokosza\",\"WGS84 \u03C6 N\":\"50.453621\",\"WGS84
+        \u03BB E\":\"20.715640\",\"Identyfikator miasta\":88,\"Nazwa miasta\":\"Busko-Zdr\xF3j\",\"Gmina\":\"Busko-Zdr\xF3j\",\"Powiat\":\"buski\",\"Wojew\xF3dztwo\":\"\u015AWI\u0118TOKRZYSKIE\",\"Ulica\":\"ul.
+        Rokosza 1\"},{\"Identyfikator stacji\":769,\"Kod stacji\":\"SkNowiParkow\",\"Nazwa
+        stacji\":\"Nowiny, ul. Parkowa\",\"WGS84 \u03C6 N\":\"50.823108\",\"WGS84
+        \u03BB E\":\"20.533506\",\"Identyfikator miasta\":616,\"Nazwa miasta\":\"Nowiny\",\"Gmina\":\"Nowiny\",\"Powiat\":\"kielecki\",\"Wojew\xF3dztwo\":\"\u015AWI\u0118TOKRZYSKIE\",\"Ulica\":\"ul.
+        Parkowa\"},{\"Identyfikator stacji\":777,\"Kod stacji\":\"SkOzarOsWzgo\",\"Nazwa
+        stacji\":\"O\u017Car\xF3w, Os. Wzg\xF3rze\",\"WGS84 \u03C6 N\":\"50.887132\",\"WGS84
+        \u03BB E\":\"21.660726\",\"Identyfikator miasta\":666,\"Nazwa miasta\":\"O\u017Car\xF3w\",\"Gmina\":\"O\u017Car\xF3w\",\"Powiat\":\"opatowski\",\"Wojew\xF3dztwo\":\"\u015AWI\u0118TOKRZYSKIE\",\"Ulica\":\"Os.
+        Wzg\xF3rze 52\"},{\"Identyfikator stacji\":778,\"Kod stacji\":\"SkPolaRuszcz\",\"Nazwa
+        stacji\":\"Po\u0142aniec, ul. Ruszcza\u0144ska\",\"WGS84 \u03C6 N\":\"50.429014\",\"WGS84
+        \u03BB E\":\"21.277367\",\"Identyfikator miasta\":723,\"Nazwa miasta\":\"Po\u0142aniec\",\"Gmina\":\"Po\u0142aniec\",\"Powiat\":\"staszowski\",\"Wojew\xF3dztwo\":\"\u015AWI\u0118TOKRZYSKIE\",\"Ulica\":\"ul.
+        Ruszcza\u0144ska 23\"},{\"Identyfikator stacji\":785,\"Kod stacji\":\"SkStaraZlota\",\"Nazwa
+        stacji\":\"Starachowice, ul. Z\u0142ota\",\"WGS84 \u03C6 N\":\"51.050611\",\"WGS84
+        \u03BB E\":\"21.084175\",\"Identyfikator miasta\":872,\"Nazwa miasta\":\"Starachowice\",\"Gmina\":\"Starachowice\",\"Powiat\":\"starachowicki\",\"Wojew\xF3dztwo\":\"\u015AWI\u0118TOKRZYSKIE\",\"Ulica\":\"ul.
+        Z\u0142ota\"},{\"Identyfikator stacji\":789,\"Kod stacji\":\"SlBielKossak\",\"Nazwa
+        stacji\":\"Bielsko-Bia\u0142a, ul. Kossak-Szczuckiej\",\"WGS84 \u03C6 N\":\"49.813464\",\"WGS84
+        \u03BB E\":\"19.027318\",\"Identyfikator miasta\":41,\"Nazwa miasta\":\"Bielsko-Bia\u0142a\",\"Gmina\":\"Bielsko-Bia\u0142a\",\"Powiat\":\"Bielsko-Bia\u0142a\",\"Wojew\xF3dztwo\":\"\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        Kossak-Szczuckiej 19\"},{\"Identyfikator stacji\":791,\"Kod stacji\":\"SlBielSterni\",\"Nazwa
+        stacji\":\"Bielsko-Bia\u0142a, ul. Sternicza\",\"WGS84 \u03C6 N\":\"49.806389\",\"WGS84
+        \u03BB E\":\"19.023194\",\"Identyfikator miasta\":41,\"Nazwa miasta\":\"Bielsko-Bia\u0142a\",\"Gmina\":\"Bielsko-Bia\u0142a\",\"Powiat\":\"Bielsko-Bia\u0142a\",\"Wojew\xF3dztwo\":\"\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        Sternicza 4\"},{\"Identyfikator stacji\":798,\"Kod stacji\":\"SlCzestoArmK\",\"Nazwa
+        stacji\":\"Cz\u0119stochowa, Al. AK/Jana Paw\u0142a II\",\"WGS84 \u03C6 N\":\"50.817217\",\"WGS84
+        \u03BB E\":\"19.118997\",\"Identyfikator miasta\":146,\"Nazwa miasta\":\"Cz\u0119stochowa\",\"Gmina\":\"Cz\u0119stochowa\",\"Powiat\":\"Cz\u0119stochowa\",\"Wojew\xF3dztwo\":\"\u015AL\u0104SKIE\",\"Ulica\":\"Aleja
+        Armii Krajowej 2\"},{\"Identyfikator stacji\":800,\"Kod stacji\":\"SlCzestoBacz\",\"Nazwa
+        stacji\":\"Cz\u0119stochowa, ul. Baczy\u0144skiego\",\"WGS84 \u03C6 N\":\"50.836389\",\"WGS84
+        \u03BB E\":\"19.130111\",\"Identyfikator miasta\":146,\"Nazwa miasta\":\"Cz\u0119stochowa\",\"Gmina\":\"Cz\u0119stochowa\",\"Powiat\":\"Cz\u0119stochowa\",\"Wojew\xF3dztwo\":\"\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        Baczy\u0144skiego 2\"},{\"Identyfikator stacji\":804,\"Kod stacji\":\"SlCzestoZana\",\"Nazwa
+        stacji\":\"Cz\u0119stochowa, ul. Zana\",\"WGS84 \u03C6 N\":\"50.801918\",\"WGS84
+        \u03BB E\":\"19.106961\",\"Identyfikator miasta\":146,\"Nazwa miasta\":\"Cz\u0119stochowa\",\"Gmina\":\"Cz\u0119stochowa\",\"Powiat\":\"Cz\u0119stochowa\",\"Wojew\xF3dztwo\":\"\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        Zana 6\"},{\"Identyfikator stacji\":805,\"Kod stacji\":\"SlDabroTysia\",\"Nazwa
+        stacji\":\"D\u0105browa G\xF3rnicza, ul. Tysi\u0105clecia\",\"WGS84 \u03C6
+        N\":\"50.329111\",\"WGS84 \u03BB E\":\"19.231222\",\"Identyfikator miasta\":157,\"Nazwa
+        miasta\":\"D\u0105browa G\xF3rnicza\",\"Gmina\":\"D\u0105browa G\xF3rnicza\",\"Powiat\":\"D\u0105browa
+        G\xF3rnicza\",\"Wojew\xF3dztwo\":\"\u015AL\u0104SKIE\",\"Ulica\":\"ul. Tysi\u0105clecia
+        25 a\"},{\"Identyfikator stacji\":809,\"Kod stacji\":\"SlGliwicMewy\",\"Nazwa
+        stacji\":\"Gliwice, ul. Mewy\",\"WGS84 \u03C6 N\":\"50.279481\",\"WGS84 \u03BB
+        E\":\"18.655736\",\"Identyfikator miasta\":221,\"Nazwa miasta\":\"Gliwice\",\"Gmina\":\"Gliwice\",\"Powiat\":\"Gliwice\",\"Wojew\xF3dztwo\":\"\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        Mewy 34\"},{\"Identyfikator stacji\":810,\"Kod stacji\":\"SlGodGliniki\",\"Nazwa
+        stacji\":\"God\xF3w, ul. Gliniki\",\"WGS84 \u03C6 N\":\"49.921875\",\"WGS84
+        \u03BB E\":\"18.471278\",\"Identyfikator miasta\":234,\"Nazwa miasta\":\"God\xF3w\",\"Gmina\":\"God\xF3w\",\"Powiat\":\"wodzis\u0142awski\",\"Wojew\xF3dztwo\":\"\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        Gliniki\"},{\"Identyfikator stacji\":814,\"Kod stacji\":\"SlKatoKossut\",\"Nazwa
+        stacji\":\"Katowice, ul. Kossutha\",\"WGS84 \u03C6 N\":\"50.264611\",\"WGS84
+        \u03BB E\":\"18.975028\",\"Identyfikator miasta\":350,\"Nazwa miasta\":\"Katowice\",\"Gmina\":\"Katowice\",\"Powiat\":\"Katowice\",\"Wojew\xF3dztwo\":\"\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        Kossutha 6\"},{\"Identyfikator stacji\":818,\"Kod stacji\":\"SlKnurJedNar\",\"Nazwa
+        stacji\":\"Knur\xF3w, ul. Jedno\u015Bci Narodowej\",\"WGS84 \u03C6 N\":\"50.233167\",\"WGS84
+        \u03BB E\":\"18.655722\",\"Identyfikator miasta\":369,\"Nazwa miasta\":\"Knur\xF3w\",\"Gmina\":\"Knur\xF3w\",\"Powiat\":\"gliwicki\",\"Wojew\xF3dztwo\":\"\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        Jedno\u015Bci Narodowej 5\"},{\"Identyfikator stacji\":825,\"Kod stacji\":\"SlMyszMiedzi\",\"Nazwa
+        stacji\":\"Myszk\xF3w, ul. Miedziana\",\"WGS84 \u03C6 N\":\"50.579733\",\"WGS84
+        \u03BB E\":\"19.326700\",\"Identyfikator miasta\":581,\"Nazwa miasta\":\"Myszk\xF3w\",\"Gmina\":\"Myszk\xF3w\",\"Powiat\":\"myszkowski\",\"Wojew\xF3dztwo\":\"\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        Miedziana 3\"},{\"Identyfikator stacji\":834,\"Kod stacji\":\"SlRybniBorki\",\"Nazwa
+        stacji\":\"Rybnik, ul. Borki\",\"WGS84 \u03C6 N\":\"50.111181\",\"WGS84 \u03BB
+        E\":\"18.516139\",\"Identyfikator miasta\":804,\"Nazwa miasta\":\"Rybnik\",\"Gmina\":\"Rybnik\",\"Powiat\":\"Rybnik\",\"Wojew\xF3dztwo\":\"\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        Borki 37 d\"},{\"Identyfikator stacji\":837,\"Kod stacji\":\"SlSosnoLubel\",\"Nazwa
+        stacji\":\"Sosnowiec, ul. Lubelska\",\"WGS84 \u03C6 N\":\"50.285956\",\"WGS84
+        \u03BB E\":\"19.184399\",\"Identyfikator miasta\":862,\"Nazwa miasta\":\"Sosnowiec\",\"Gmina\":\"Sosnowiec\",\"Powiat\":\"Sosnowiec\",\"Wojew\xF3dztwo\":\"\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        Lubelska 51\"},{\"Identyfikator stacji\":839,\"Kod stacji\":\"SlTarnoLitew\",\"Nazwa
+        stacji\":\"Tarnowskie G\xF3ry, ul. Litewska\",\"WGS84 \u03C6 N\":\"50.444736\",\"WGS84
+        \u03BB E\":\"18.829639\",\"Identyfikator miasta\":957,\"Nazwa miasta\":\"Tarnowskie
+        G\xF3ry\",\"Gmina\":\"Tarnowskie G\xF3ry\",\"Powiat\":\"tarnog\xF3rski\",\"Wojew\xF3dztwo\":\"\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        Litewska 6\"},{\"Identyfikator stacji\":841,\"Kod stacji\":\"SlTychyTolst\",\"Nazwa
+        stacji\":\"Tychy, ul. To\u0142stoja\",\"WGS84 \u03C6 N\":\"50.099903\",\"WGS84
+        \u03BB E\":\"18.990236\",\"Identyfikator miasta\":988,\"Nazwa miasta\":\"Tychy\",\"Gmina\":\"Tychy\",\"Powiat\":\"Tychy\",\"Wojew\xF3dztwo\":\"\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        To\u0142stoja 1\"},{\"Identyfikator stacji\":842,\"Kod stacji\":\"SlUstronSana\",\"Nazwa
+        stacji\":\"Ustro\u0144, ul. Sanatoryjna\",\"WGS84 \u03C6 N\":\"49.719731\",\"WGS84
+        \u03BB E\":\"18.826722\",\"Identyfikator miasta\":993,\"Nazwa miasta\":\"Ustro\u0144\",\"Gmina\":\"Ustro\u0144\",\"Powiat\":\"cieszy\u0144ski\",\"Wojew\xF3dztwo\":\"\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        Sanatoryjna 7\"},{\"Identyfikator stacji\":845,\"Kod stacji\":\"SlWodzGalczy\",\"Nazwa
+        stacji\":\"Wodzis\u0142aw \u015Al\u0105ski, ul. Ga\u0142czy\u0144skiego\",\"WGS84
+        \u03C6 N\":\"50.007629\",\"WGS84 \u03BB E\":\"18.455548\",\"Identyfikator
+        miasta\":1050,\"Nazwa miasta\":\"Wodzis\u0142aw \u015Al\u0105ski\",\"Gmina\":\"Wodzis\u0142aw
+        \u015Al\u0105ski\",\"Powiat\":\"wodzis\u0142awski\",\"Wojew\xF3dztwo\":\"\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        Ga\u0142czy\u0144skiego 1\"},{\"Identyfikator stacji\":853,\"Kod stacji\":\"SlZlotPotLes\",\"Nazwa
+        stacji\":\"Z\u0142oty Potok, Le\u015Bnicz\xF3wka\",\"WGS84 \u03C6 N\":\"50.710889\",\"WGS84
+        \u03BB E\":\"19.458797\",\"Identyfikator miasta\":1111,\"Nazwa miasta\":\"Z\u0142oty
+        Potok\",\"Gmina\":\"Jan\xF3w\",\"Powiat\":\"cz\u0119stochowski\",\"Wojew\xF3dztwo\":\"\u015AL\u0104SKIE\",\"Ulica\":\"Le\u015Bnicz\xF3wka
+        Kamienna G\xF3ra\"},{\"Identyfikator stacji\":856,\"Kod stacji\":\"SlZywieKoper\",\"Nazwa
+        stacji\":\"\u017Bywiec, ul. Kopernika\",\"WGS84 \u03C6 N\":\"49.671602\",\"WGS84
+        \u03BB E\":\"19.234446\",\"Identyfikator miasta\":1131,\"Nazwa miasta\":\"\u017Bywiec\",\"Gmina\":\"\u017Bywiec\",\"Powiat\":\"\u017Cywiecki\",\"Wojew\xF3dztwo\":\"\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        Kopernika 83 a\"},{\"Identyfikator stacji\":861,\"Kod stacji\":\"WmElbBazynsk\",\"Nazwa
+        stacji\":\"Elbl\u0105g, ul. Ba\u017Cy\u0144skiego\",\"WGS84 \u03C6 N\":\"54.167847\",\"WGS84
+        \u03BB E\":\"19.410942\",\"Identyfikator miasta\":202,\"Nazwa miasta\":\"Elbl\u0105g\",\"Gmina\":\"Elbl\u0105g\",\"Powiat\":\"Elbl\u0105g\",\"Wojew\xF3dztwo\":\"WARMI\u0143SKO-MAZURSKIE\",\"Ulica\":\"ul.
+        Ba\u017Cy\u0144skiego 6\"},{\"Identyfikator stacji\":870,\"Kod stacji\":\"WmGoldJacwie\",\"Nazwa
+        stacji\":\"Go\u0142dap, ul. Ja\u0107wieska\",\"WGS84 \u03C6 N\":\"54.305908\",\"WGS84
+        \u03BB E\":\"22.307681\",\"Identyfikator miasta\":241,\"Nazwa miasta\":\"Go\u0142dap\",\"Gmina\":\"Go\u0142dap\",\"Powiat\":\"go\u0142dapski\",\"Wojew\xF3dztwo\":\"WARMI\u0143SKO-MAZURSKIE\",\"Ulica\":\"ul.
+        Ja\u0107wieska 17\"},{\"Identyfikator stacji\":875,\"Kod stacji\":\"WmNiTraugutt\",\"Nazwa
+        stacji\":\"Nidzica, ul.Traugutta\",\"WGS84 \u03C6 N\":\"53.361112\",\"WGS84
+        \u03BB E\":\"20.422046\",\"Identyfikator miasta\":591,\"Nazwa miasta\":\"Nidzica\",\"Gmina\":\"Nidzica\",\"Powiat\":\"nidzicki\",\"Wojew\xF3dztwo\":\"WARMI\u0143SKO-MAZURSKIE\",\"Ulica\":\"ul.
+        Traugutta\"},{\"Identyfikator stacji\":877,\"Kod stacji\":\"WmOlsPuszkin\",\"Nazwa
+        stacji\":\"Olsztyn, ul. Puszkina\",\"WGS84 \u03C6 N\":\"53.789233\",\"WGS84
+        \u03BB E\":\"20.486075\",\"Identyfikator miasta\":639,\"Nazwa miasta\":\"Olsztyn\",\"Gmina\":\"Olsztyn\",\"Powiat\":\"Olsztyn\",\"Wojew\xF3dztwo\":\"WARMI\u0143SKO-MAZURSKIE\",\"Ulica\":\"ul.
+        Puszkina 16\"},{\"Identyfikator stacji\":882,\"Kod stacji\":\"WmPuszczaBor\",\"Nazwa
+        stacji\":\"Diabla G\xF3ra, Puszcza Borecka\",\"WGS84 \u03C6 N\":\"54.124819\",\"WGS84
+        \u03BB E\":\"22.038056\",\"Identyfikator miasta\":167,\"Nazwa miasta\":\"Diabla
+        G\xF3ra\",\"Gmina\":\"Kruklanki\",\"Powiat\":\"gi\u017Cycki\",\"Wojew\xF3dztwo\":\"WARMI\u0143SKO-MAZURSKIE\",\"Ulica\":\"Diabla
+        G\xF3ra\"},{\"Identyfikator stacji\":890,\"Kod stacji\":\"WpGniePaczko\",\"Nazwa
+        stacji\":\"Gniezno, ul. Paczkowskiego\",\"WGS84 \u03C6 N\":\"52.539283\",\"WGS84
+        \u03BB E\":\"17.612239\",\"Identyfikator miasta\":232,\"Nazwa miasta\":\"Gniezno\",\"Gmina\":\"Gniezno\",\"Powiat\":\"gnie\u017Anie\u0144ski\",\"Wojew\xF3dztwo\":\"WIELKOPOLSKIE\",\"Ulica\":\"ul.
+        Paczkowskiego 13\"},{\"Identyfikator stacji\":902,\"Kod stacji\":\"WpKoniWyszyn\",\"Nazwa
+        stacji\":\"Konin, ul. Wyszy\u0144skiego\",\"WGS84 \u03C6 N\":\"52.225650\",\"WGS84
+        \u03BB E\":\"18.268927\",\"Identyfikator miasta\":393,\"Nazwa miasta\":\"Konin\",\"Gmina\":\"Konin\",\"Powiat\":\"Konin\",\"Wojew\xF3dztwo\":\"WIELKOPOLSKIE\",\"Ulica\":\"ul.
+        Wyszy\u0144skiego 3\"},{\"Identyfikator stacji\":912,\"Kod stacji\":\"WpNoTomSzpit\",\"Nazwa
+        stacji\":\"Nowy Tomy\u015Bl, ul. Sienkiewicza\",\"WGS84 \u03C6 N\":\"52.316748\",\"WGS84
+        \u03BB E\":\"16.142154\",\"Identyfikator miasta\":627,\"Nazwa miasta\":\"Nowy
+        Tomy\u015Bl\",\"Gmina\":\"Nowy Tomy\u015Bl\",\"Powiat\":\"nowotomyski\",\"Wojew\xF3dztwo\":\"WIELKOPOLSKIE\",\"Ulica\":\"ul.
+        Szpitalna\"},{\"Identyfikator stacji\":920,\"Kod stacji\":\"WpPilaKusoci\",\"Nazwa
+        stacji\":\"Pila, ul. Kusoci\u0144skiego\",\"WGS84 \u03C6 N\":\"53.154408\",\"WGS84
+        \u03BB E\":\"16.759572\",\"Identyfikator miasta\":699,\"Nazwa miasta\":\"Pi\u0142a\",\"Gmina\":\"Pi\u0142a\",\"Powiat\":\"pilski\",\"Wojew\xF3dztwo\":\"WIELKOPOLSKIE\",\"Ulica\":\"ul.
+        Kusoci\u0144skiego 10A\"},{\"Identyfikator stacji\":931,\"Kod stacji\":\"WpPoznSpycha\",\"Nazwa
+        stacji\":\"Pozna\u0144, ul. Spychalskiego\",\"WGS84 \u03C6 N\":\"52.392866\",\"WGS84
+        \u03BB E\":\"16.928442\",\"Identyfikator miasta\":729,\"Nazwa miasta\":\"Pozna\u0144\",\"Gmina\":\"Pozna\u0144\",\"Powiat\":\"Pozna\u0144\",\"Wojew\xF3dztwo\":\"WIELKOPOLSKIE\",\"Ulica\":\"ul.
+        Spychalskiego 34\"},{\"Identyfikator stacji\":932,\"Kod stacji\":\"WpPoznSzyman\",\"Nazwa
+        stacji\":\"Pozna\u0144, ul. Szymanowskiego\",\"WGS84 \u03C6 N\":\"52.459192\",\"WGS84
+        \u03BB E\":\"16.906200\",\"Identyfikator miasta\":729,\"Nazwa miasta\":\"Pozna\u0144\",\"Gmina\":\"Pozna\u0144\",\"Powiat\":\"Pozna\u0144\",\"Wojew\xF3dztwo\":\"WIELKOPOLSKIE\",\"Ulica\":\"ul.
+        Szymanowskiego 17\"},{\"Identyfikator stacji\":942,\"Kod stacji\":\"WpWagrowLipo\",\"Nazwa
+        stacji\":\"W\u0105growiec, ul. Lipowa\",\"WGS84 \u03C6 N\":\"52.815262\",\"WGS84
+        \u03BB E\":\"17.208381\",\"Identyfikator miasta\":1013,\"Nazwa miasta\":\"W\u0105growiec\",\"Gmina\":\"W\u0105growiec\",\"Powiat\":\"w\u0105growiecki\",\"Wojew\xF3dztwo\":\"WIELKOPOLSKIE\",\"Ulica\":\"ul.
+        Lipowa\"},{\"Identyfikator stacji\":944,\"Kod stacji\":\"WpPoznDabrow\",\"Nazwa
+        stacji\":\"Pozna\u0144, ul. D\u0105browskiego\",\"WGS84 \u03C6 N\":\"52.420319\",\"WGS84
+        \u03BB E\":\"16.877289\",\"Identyfikator miasta\":729,\"Nazwa miasta\":\"Pozna\u0144\",\"Gmina\":\"Pozna\u0144\",\"Powiat\":\"Pozna\u0144\",\"Wojew\xF3dztwo\":\"WIELKOPOLSKIE\",\"Ulica\":\"ul.
+        D\u0105browskiego 169\"},{\"Identyfikator stacji\":946,\"Kod stacji\":\"WpPiaskiKrzy\",\"Nazwa
+        stacji\":\"Piaski, Krzy\u017C\xF3wka\",\"WGS84 \u03C6 N\":\"52.501318\",\"WGS84
+        \u03BB E\":\"17.773175\",\"Identyfikator miasta\":441,\"Nazwa miasta\":\"Krzy\u017C\xF3wka\",\"Gmina\":\"Witkowo\",\"Powiat\":\"gnie\u017Anie\u0144ski\",\"Wojew\xF3dztwo\":\"WIELKOPOLSKIE\",\"Ulica\":\"Piaski
+        10\"},{\"Identyfikator stacji\":950,\"Kod stacji\":\"WpBoroDrapal\",\"Nazwa
+        stacji\":\"Bor\xF3wiec, ul. Drapa\u0142ka\",\"WGS84 \u03C6 N\":\"52.276720\",\"WGS84
+        \u03BB E\":\"17.074187\",\"Identyfikator miasta\":62,\"Nazwa miasta\":\"Bor\xF3wiec\",\"Gmina\":\"K\xF3rnik\",\"Powiat\":\"pozna\u0144ski\",\"Wojew\xF3dztwo\":\"WIELKOPOLSKIE\",\"Ulica\":\"ul.
+        Drapa\u0142ka 4\"},{\"Identyfikator stacji\":952,\"Kod stacji\":\"WpKaliSawick\",\"Nazwa
+        stacji\":\"Kalisz, ul. Wyszy\u0144skiego\",\"WGS84 \u03C6 N\":\"51.747950\",\"WGS84
+        \u03BB E\":\"18.049063\",\"Identyfikator miasta\":336,\"Nazwa miasta\":\"Kalisz\",\"Gmina\":\"Kalisz\",\"Powiat\":\"Kalisz\",\"Wojew\xF3dztwo\":\"WIELKOPOLSKIE\",\"Ulica\":\"ul.
+        Wyszy\u0144skiego\"},{\"Identyfikator stacji\":961,\"Kod stacji\":\"ZpWiduBulRyb\",\"Nazwa
+        stacji\":\"Widuchowa\",\"WGS84 \u03C6 N\":\"53.122325\",\"WGS84 \u03BB E\":\"14.382245\",\"Identyfikator
+        miasta\":1025,\"Nazwa miasta\":\"Widuchowa\",\"Gmina\":\"Widuchowa\",\"Powiat\":\"gryfi\u0144ski\",\"Wojew\xF3dztwo\":\"ZACHODNIOPOMORSKIE\",\"Ulica\":\"ul.
+        Bulwary Rybackie 1\"},{\"Identyfikator stacji\":966,\"Kod stacji\":\"ZpKoszArKraj\",\"Nazwa
+        stacji\":\"Koszalin, Al. Armii Krajowej\",\"WGS84 \u03C6 N\":\"54.193986\",\"WGS84
+        \u03BB E\":\"16.172544\",\"Identyfikator miasta\":402,\"Nazwa miasta\":\"Koszalin\",\"Gmina\":\"Koszalin\",\"Powiat\":\"Koszalin\",\"Wojew\xF3dztwo\":\"ZACHODNIOPOMORSKIE\",\"Ulica\":\"Al.
+        Armii Krajowej\"},{\"Identyfikator stacji\":967,\"Kod stacji\":\"ZpKoszSpasow\",\"Nazwa
+        stacji\":\"Koszalin, ul. Spasowskiego\",\"WGS84 \u03C6 N\":\"54.207151\",\"WGS84
+        \u03BB E\":\"16.193236\",\"Identyfikator miasta\":402,\"Nazwa miasta\":\"Koszalin\",\"Gmina\":\"Koszalin\",\"Powiat\":\"Koszalin\",\"Wojew\xF3dztwo\":\"ZACHODNIOPOMORSKIE\",\"Ulica\":\"ul.
+        Spasowskiego 2f\"},{\"Identyfikator stacji\":973,\"Kod stacji\":\"ZpMyslZaBram\",\"Nazwa
+        stacji\":\"My\u015Blib\xF3rz, ul. Za Bramk\u0105\",\"WGS84 \u03C6 N\":\"52.926283\",\"WGS84
+        \u03BB E\":\"14.862809\",\"Identyfikator miasta\":584,\"Nazwa miasta\":\"My\u015Blib\xF3rz\",\"Gmina\":\"My\u015Blib\xF3rz\",\"Powiat\":\"my\u015Bliborski\",\"Wojew\xF3dztwo\":\"ZACHODNIOPOMORSKIE\",\"Ulica\":\"ul.
+        Za Bramk\u0105 8\"},{\"Identyfikator stacji\":981,\"Kod stacji\":\"ZpSzczec1Maj\",\"Nazwa
+        stacji\":\"Szczecinek, ul. 1 Maja\",\"WGS84 \u03C6 N\":\"53.712114\",\"WGS84
+        \u03BB E\":\"16.692517\",\"Identyfikator miasta\":918,\"Nazwa miasta\":\"Szczecinek\",\"Gmina\":\"Szczecinek\",\"Powiat\":\"szczecinecki\",\"Wojew\xF3dztwo\":\"ZACHODNIOPOMORSKIE\",\"Ulica\":\"ul.
+        1 Maja 22\"},{\"Identyfikator stacji\":983,\"Kod stacji\":\"ZpSzczecPrze\",\"Nazwa
+        stacji\":\"Szczecinek, ul. Przemys\u0142owa\",\"WGS84 \u03C6 N\":\"53.698902\",\"WGS84
+        \u03BB E\":\"16.704556\",\"Identyfikator miasta\":918,\"Nazwa miasta\":\"Szczecinek\",\"Gmina\":\"Szczecinek\",\"Powiat\":\"szczecinecki\",\"Wojew\xF3dztwo\":\"ZACHODNIOPOMORSKIE\",\"Ulica\":\"ul.
+        Przemys\u0142owa 5\"},{\"Identyfikator stacji\":986,\"Kod stacji\":\"ZpSzczAndrze\",\"Nazwa
+        stacji\":\"Szczecin, ul. Andrzejewskiego\",\"WGS84 \u03C6 N\":\"53.380975\",\"WGS84
+        \u03BB E\":\"14.663347\",\"Identyfikator miasta\":917,\"Nazwa miasta\":\"Szczecin\",\"Gmina\":\"Szczecin\",\"Powiat\":\"Szczecin\",\"Wojew\xF3dztwo\":\"ZACHODNIOPOMORSKIE\",\"Ulica\":\"ul.
+        Andrzejewskiego 23\"},{\"Identyfikator stacji\":987,\"Kod stacji\":\"ZpSzczPilsud\",\"Nazwa
+        stacji\":\"Szczecin, ul. Pi\u0142sudskiego\",\"WGS84 \u03C6 N\":\"53.432169\",\"WGS84
+        \u03BB E\":\"14.553900\",\"Identyfikator miasta\":917,\"Nazwa miasta\":\"Szczecin\",\"Gmina\":\"Szczecin\",\"Powiat\":\"Szczecin\",\"Wojew\xF3dztwo\":\"ZACHODNIOPOMORSKIE\",\"Ulica\":\"ul.
+        Pi\u0142sudskiego 1\"},{\"Identyfikator stacji\":989,\"Kod stacji\":\"ZpSzczLaczna\",\"Nazwa
+        stacji\":\"Szczecin, ul. \u0141\u0105czna\",\"WGS84 \u03C6 N\":\"53.470889\",\"WGS84
+        \u03BB E\":\"14.556250\",\"Identyfikator miasta\":917,\"Nazwa miasta\":\"Szczecin\",\"Gmina\":\"Szczecin\",\"Powiat\":\"Szczecin\",\"Wojew\xF3dztwo\":\"ZACHODNIOPOMORSKIE\",\"Ulica\":\"ul.
+        \u0141\u0105czna\"},{\"Identyfikator stacji\":8873,\"Kod stacji\":\"DsJelGorSoko\",\"Nazwa
+        stacji\":\"Jelenia G\xF3ra, ul. Sokoliki\",\"WGS84 \u03C6 N\":\"50.871214\",\"WGS84
+        \u03BB E\":\"15.700947\",\"Identyfikator miasta\":319,\"Nazwa miasta\":\"Jelenia
+        G\xF3ra\",\"Gmina\":\"Jelenia G\xF3ra\",\"Powiat\":\"Jelenia G\xF3ra\",\"Wojew\xF3dztwo\":\"DOLNO\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        Sokoliki 6\"},{\"Identyfikator stacji\":8953,\"Kod stacji\":\"WmIlawAnders\",\"Nazwa
+        stacji\":\"I\u0142awa, ul.Andersa\",\"WGS84 \u03C6 N\":\"53.587873\",\"WGS84
+        \u03BB E\":\"19.564908\",\"Identyfikator miasta\":286,\"Nazwa miasta\":\"I\u0142awa\",\"Gmina\":\"I\u0142awa\",\"Powiat\":\"i\u0142awski\",\"Wojew\xF3dztwo\":\"WARMI\u0143SKO-MAZURSKIE\",\"Ulica\":\"Andersa
+        8a\"},{\"Identyfikator stacji\":9000,\"Kod stacji\":\"SlCzerKopaln\",\"Nazwa
+        stacji\":\"Czerwionka-Leszczyny, ul. Kopalniana\",\"WGS84 \u03C6 N\":\"50.163850\",\"WGS84
+        \u03BB E\":\"18.659977\",\"Identyfikator miasta\":145,\"Nazwa miasta\":\"Czerwionka-Leszczyny\",\"Gmina\":\"Czerwionka-Leszczyny\",\"Powiat\":\"rybnicki\",\"Wojew\xF3dztwo\":\"\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        Kopalniana\"},{\"Identyfikator stacji\":9114,\"Kod stacji\":\"MzOstroHalle\",\"Nazwa
+        stacji\":\"Ostro\u0142\u0119ka, ul. Hallera\",\"WGS84 \u03C6 N\":\"53.083736\",\"WGS84
+        \u03BB E\":\"21.579322\",\"Identyfikator miasta\":653,\"Nazwa miasta\":\"Ostro\u0142\u0119ka\",\"Gmina\":\"Ostro\u0142\u0119ka\",\"Powiat\":\"Ostro\u0142\u0119ka\",\"Wojew\xF3dztwo\":\"MAZOWIECKIE\",\"Ulica\":\"ul.
+        gen. J. Hallera 12\"},{\"Identyfikator stacji\":9153,\"Kod stacji\":\"DsJelGorOgin\",\"Nazwa
+        stacji\":\"Jelenia G\xF3ra, ul. Ogi\u0144skiego\",\"WGS84 \u03C6 N\":\"50.913433\",\"WGS84
+        \u03BB E\":\"15.765608\",\"Identyfikator miasta\":319,\"Nazwa miasta\":\"Jelenia
+        G\xF3ra\",\"Gmina\":\"Jelenia G\xF3ra\",\"Powiat\":\"Jelenia G\xF3ra\",\"Wojew\xF3dztwo\":\"DOLNO\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        Ogi\u0144skiego 6\"},{\"Identyfikator stacji\":9173,\"Kod stacji\":\"PkDebiGrottg\",\"Nazwa
+        stacji\":\"D\u0119bica, ul.Grottgera\",\"WGS84 \u03C6 N\":\"50.054786\",\"WGS84
+        \u03BB E\":\"21.416256\",\"Identyfikator miasta\":164,\"Nazwa miasta\":\"D\u0119bica\",\"Gmina\":\"D\u0119bica\",\"Powiat\":\"d\u0119bicki\",\"Wojew\xF3dztwo\":\"PODKARPACKIE\",\"Ulica\":\"Grottgera
+        3\"},{\"Identyfikator stacji\":9175,\"Kod stacji\":\"PkKrempnaMPN\",\"Nazwa
+        stacji\":\"Krempna, O\u015Brodek edukacyjno-muzealny MPN\",\"WGS84 \u03C6
+        N\":\"49.511297\",\"WGS84 \u03BB E\":\"21.498606\",\"Identyfikator miasta\":421,\"Nazwa
+        miasta\":\"Krempna\",\"Gmina\":\"Krempna\",\"Powiat\":\"jasielski\",\"Wojew\xF3dztwo\":\"PODKARPACKIE\",\"Ulica\":\"59\"},{\"Identyfikator
+        stacji\":9177,\"Kod stacji\":\"DsGlogWiStwo\",\"Nazwa stacji\":\"G\u0142og\xF3w,
+        ul. Wita Stwosza\",\"WGS84 \u03C6 N\":\"51.657022\",\"WGS84 \u03BB E\":\"16.097822\",\"Identyfikator
+        miasta\":223,\"Nazwa miasta\":\"G\u0142og\xF3w\",\"Gmina\":\"G\u0142og\xF3w\",\"Powiat\":\"g\u0142ogowski\",\"Wojew\xF3dztwo\":\"DOLNO\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        Wita Stwosza 3\"},{\"Identyfikator stacji\":9179,\"Kod stacji\":\"MpSzarowSpok\",\"Nazwa
+        stacji\":\"Szar\xF3w, ul. Spokojna\",\"WGS84 \u03C6 N\":\"50.007500\",\"WGS84
+        \u03BB E\":\"20.259167\",\"Identyfikator miasta\":913,\"Nazwa miasta\":\"Szar\xF3w\",\"Gmina\":\"K\u0142aj\",\"Powiat\":\"wielicki\",\"Wojew\xF3dztwo\":\"MA\u0141OPOLSKIE\",\"Ulica\":\"ul.
+        Spokojna\"},{\"Identyfikator stacji\":9203,\"Kod stacji\":\"KpBrodKochan\",\"Nazwa
+        stacji\":\"Brodnica, ul. Kochanowskiego\",\"WGS84 \u03C6 N\":\"53.249264\",\"WGS84
+        \u03BB E\":\"19.415086\",\"Identyfikator miasta\":70,\"Nazwa miasta\":\"Brodnica\",\"Gmina\":\"Brodnica\",\"Powiat\":\"brodnicki\",\"Wojew\xF3dztwo\":\"KUJAWSKO-POMORSKIE\",\"Ulica\":\"ul.
+        Kochanowskiego\"},{\"Identyfikator stacji\":9218,\"Kod stacji\":\"WpPleszAlMic\",\"Nazwa
+        stacji\":\"Pleszew, Al. Mickiewicza\",\"WGS84 \u03C6 N\":\"51.884922\",\"WGS84
+        \u03BB E\":\"17.791106\",\"Identyfikator miasta\":706,\"Nazwa miasta\":\"Pleszew\",\"Gmina\":\"Pleszew\",\"Powiat\":\"pleszewski\",\"Wojew\xF3dztwo\":\"WIELKOPOLSKIE\",\"Ulica\":\"Al.
+        Mickiewicza\"},{\"Identyfikator stacji\":9236,\"Kod stacji\":\"LdSkierKonop\",\"Nazwa
+        stacji\":\"Skierniewice, ul. Konopnickiej\",\"WGS84 \u03C6 N\":\"51.954297\",\"WGS84
+        \u03BB E\":\"20.149461\",\"Identyfikator miasta\":836,\"Nazwa miasta\":\"Skierniewice\",\"Gmina\":\"Skierniewice\",\"Powiat\":\"Skierniewice\",\"Wojew\xF3dztwo\":\"\u0141\xD3DZKIE\",\"Ulica\":\"ul.
+        Marii Konopnickiej 5\"},{\"Identyfikator stacji\":9791,\"Kod stacji\":\"KpWloclKalis\",\"Nazwa
+        stacji\":\"W\u0142oc\u0142awek, ul. Kaliska\",\"WGS84 \u03C6 N\":\"52.637394\",\"WGS84
+        \u03BB E\":\"19.044486\",\"Identyfikator miasta\":1046,\"Nazwa miasta\":\"W\u0142oc\u0142awek\",\"Gmina\":\"W\u0142oc\u0142awek\",\"Powiat\":\"W\u0142oc\u0142awek\",\"Wojew\xF3dztwo\":\"KUJAWSKO-POMORSKIE\",\"Ulica\":\"ul.
+        Kaliska 108 A\"},{\"Identyfikator stacji\":9798,\"Kod stacji\":\"KpNaklWawrzy\",\"Nazwa
+        stacji\":\"Nak\u0142o nad Noteci\u0105, ul. \u015Aw. Wawrzy\u0144ca\",\"WGS84
+        \u03C6 N\":\"53.136681\",\"WGS84 \u03BB E\":\"17.591539\",\"Identyfikator
+        miasta\":587,\"Nazwa miasta\":\"Nak\u0142o nad Noteci\u0105\",\"Gmina\":\"Nak\u0142o
+        nad Noteci\u0105\",\"Powiat\":\"nakielski\",\"Wojew\xF3dztwo\":\"KUJAWSKO-POMORSKIE\",\"Ulica\":\"ul.
+        \u015Awi\u0119tego Wawrzy\u0144ca\"},{\"Identyfikator stacji\":9913,\"Kod
+        stacji\":\"MzGutyDuCzer\",\"Nazwa stacji\":\"Guty Du\u017Ce\",\"WGS84 \u03C6
+        N\":\"52.943172\",\"WGS84 \u03BB E\":\"21.288167\",\"Identyfikator miasta\":2181,\"Nazwa
+        miasta\":\"Guty Du\u017Ce\",\"Gmina\":\"Czerwonka\",\"Powiat\":\"makowski\",\"Wojew\xF3dztwo\":\"MAZOWIECKIE\",\"Ulica\":\"Guty
+        Du\u017Ce 4\"},{\"Identyfikator stacji\":9973,\"Kod stacji\":\"SkKielWarsza\",\"Nazwa
+        stacji\":\"Kielce, ul. Warszawska 210\",\"WGS84 \u03C6 N\":\"50.894374\",\"WGS84
+        \u03BB E\":\"20.657988\",\"Identyfikator miasta\":360,\"Nazwa miasta\":\"Kielce\",\"Gmina\":\"Kielce\",\"Powiat\":\"Kielce\",\"Wojew\xF3dztwo\":\"\u015AWI\u0118TOKRZYSKIE\",\"Ulica\":\"ul.
+        Warszawska 210\"},{\"Identyfikator stacji\":10005,\"Kod stacji\":\"WmElkStadion\",\"Nazwa
+        stacji\":\"E\u0142k, ul. Pi\u0142sudskiego\",\"WGS84 \u03C6 N\":\"53.828389\",\"WGS84
+        \u03BB E\":\"22.348338\",\"Identyfikator miasta\":203,\"Nazwa miasta\":\"E\u0142k\",\"Gmina\":\"E\u0142k\",\"Powiat\":\"e\u0142cki\",\"Wojew\xF3dztwo\":\"WARMI\u0143SKO-MAZURSKIE\",\"Ulica\":\"ul.
+        Pi\u0142sudskiego 27\"},{\"Identyfikator stacji\":10018,\"Kod stacji\":\"OpGlubRatusz\",\"Nazwa
+        stacji\":\"G\u0142ubczyce, ul. Ratuszowa\",\"WGS84 \u03C6 N\":\"50.200778\",\"WGS84
+        \u03BB E\":\"17.830510\",\"Identyfikator miasta\":228,\"Nazwa miasta\":\"G\u0142ubczyce\",\"Gmina\":\"G\u0142ubczyce\",\"Powiat\":\"g\u0142ubczycki\",\"Wojew\xF3dztwo\":\"OPOLSKIE\",\"Ulica\":\"ul.
+        Ratuszowa 9\"},{\"Identyfikator stacji\":10030,\"Kod stacji\":\"WmOstrPilsud\",\"Nazwa
+        stacji\":\"Ostr\xF3da, ul. Pi\u0142sudskiego\",\"WGS84 \u03C6 N\":\"53.694587\",\"WGS84
+        \u03BB E\":\"19.969041\",\"Identyfikator miasta\":657,\"Nazwa miasta\":\"Ostr\xF3da\",\"Gmina\":\"Ostr\xF3da\",\"Powiat\":\"ostr\xF3dzki\",\"Wojew\xF3dztwo\":\"WARMI\u0143SKO-MAZURSKIE\",\"Ulica\":\"Pi\u0142sudskiego
+        4\"},{\"Identyfikator stacji\":10058,\"Kod stacji\":\"LdLodzJanPaw\",\"Nazwa
+        stacji\":\"\u0141\xF3d\u017A, Al. Jana Paw\u0142a II\",\"WGS84 \u03C6 N\":\"51.754613\",\"WGS84
+        \u03BB E\":\"19.434925\",\"Identyfikator miasta\":516,\"Nazwa miasta\":\"\u0141\xF3d\u017A\",\"Gmina\":\"\u0141\xF3d\u017A\",\"Powiat\":\"\u0141\xF3d\u017A\",\"Wojew\xF3dztwo\":\"\u0141\xD3DZKIE\",\"Ulica\":\"Al.
+        Jana Paw\u0142a II 15\"},{\"Identyfikator stacji\":10059,\"Kod stacji\":\"LdUniejZamko\",\"Nazwa
+        stacji\":\"Uniej\xF3w, ul. Zamkowa\",\"WGS84 \u03C6 N\":\"51.971711\",\"WGS84
+        \u03BB E\":\"18.790289\",\"Identyfikator miasta\":2060,\"Nazwa miasta\":\"Uniej\xF3w\",\"Gmina\":\"Uniej\xF3w\",\"Powiat\":\"podd\u0119bicki\",\"Wojew\xF3dztwo\":\"\u0141\xD3DZKIE\",\"Ulica\":\"ul.
+        Zamkowa 1\"},{\"Identyfikator stacji\":10060,\"Kod stacji\":\"LdBelchEdwar\",\"Nazwa
+        stacji\":\"Be\u0142chat\xF3w, ul. Edward\xF3w\",\"WGS84 \u03C6 N\":\"51.356689\",\"WGS84
+        \u03BB E\":\"19.365903\",\"Identyfikator miasta\":20,\"Nazwa miasta\":\"Be\u0142chat\xF3w\",\"Gmina\":\"Be\u0142chat\xF3w\",\"Powiat\":\"be\u0142chatowski\",\"Wojew\xF3dztwo\":\"\u0141\xD3DZKIE\",\"Ulica\":\"ul.
+        Edward\xF3w 5\"},{\"Identyfikator stacji\":10093,\"Kod stacji\":\"DsDusznSportMOB\",\"Nazwa
+        stacji\":\"Duszniki-Zdr\xF3j, ul. Sportowa\",\"WGS84 \u03C6 N\":\"50.402561\",\"WGS84
+        \u03BB E\":\"16.393311\",\"Identyfikator miasta\":190,\"Nazwa miasta\":\"Duszniki-Zdr\xF3j\",\"Gmina\":\"Duszniki-Zdr\xF3j\",\"Powiat\":\"k\u0142odzki\",\"Wojew\xF3dztwo\":\"DOLNO\u015AL\u0104SKIE\",\"Ulica\":\"Sportowa\"},{\"Identyfikator
+        stacji\":10115,\"Kod stacji\":\"PkMielPogodn\",\"Nazwa stacji\":\"Mielec,
+        ul. Pogodna\",\"WGS84 \u03C6 N\":\"50.318036\",\"WGS84 \u03BB E\":\"21.486372\",\"Identyfikator
+        miasta\":548,\"Nazwa miasta\":\"Mielec\",\"Gmina\":\"Mielec\",\"Powiat\":\"mielecki\",\"Wojew\xF3dztwo\":\"PODKARPACKIE\",\"Ulica\":\"Pogodna
+        2\"},{\"Identyfikator stacji\":10119,\"Kod stacji\":\"MpKaszowLisz\",\"Nazwa
+        stacji\":\"Kasz\xF3w\",\"WGS84 \u03C6 N\":\"50.025028\",\"WGS84 \u03BB E\":\"19.726833\",\"Identyfikator
+        miasta\":2042,\"Nazwa miasta\":\"Kasz\xF3w\",\"Gmina\":\"Liszki\",\"Powiat\":\"krakowski\",\"Wojew\xF3dztwo\":\"MA\u0141OPOLSKIE\",\"Ulica\":\"Bory\"},{\"Identyfikator
+        stacji\":10120,\"Kod stacji\":\"MpTarRoSitko\",\"Nazwa stacji\":\"Tarn\xF3w,
+        ul. Ks. Romana Sitko\",\"WGS84 \u03C6 N\":\"50.018253\",\"WGS84 \u03BB E\":\"20.992578\",\"Identyfikator
+        miasta\":958,\"Nazwa miasta\":\"Tarn\xF3w\",\"Gmina\":\"Tarn\xF3w\",\"Powiat\":\"Tarn\xF3w\",\"Wojew\xF3dztwo\":\"MA\u0141OPOLSKIE\",\"Ulica\":\"ul.
+        Ks. Romana Sitko\"},{\"Identyfikator stacji\":10122,\"Kod stacji\":\"PkIwonZdrRab\",\"Nazwa
+        stacji\":\"Iwonicz Zdr\xF3j, ul. R\u0105ba\",\"WGS84 \u03C6 N\":\"49.565183\",\"WGS84
+        \u03BB E\":\"21.791308\",\"Identyfikator miasta\":291,\"Nazwa miasta\":\"Iwonicz-Zdr\xF3j\",\"Gmina\":\"Iwonicz-Zdr\xF3j\",\"Powiat\":\"kro\u015Bnie\u0144ski\",\"Wojew\xF3dztwo\":\"PODKARPACKIE\",\"Ulica\":\"Ksi\u0119dza
+        R\u0105ba\"},{\"Identyfikator stacji\":10123,\"Kod stacji\":\"MpKrakZloRog\",\"Nazwa
+        stacji\":\"Krak\xF3w, ul. Z\u0142oty R\xF3g\",\"WGS84 \u03C6 N\":\"50.081197\",\"WGS84
+        \u03BB E\":\"19.895358\",\"Identyfikator miasta\":415,\"Nazwa miasta\":\"Krak\xF3w\",\"Gmina\":\"Krak\xF3w\",\"Powiat\":\"Krak\xF3w\",\"Wojew\xF3dztwo\":\"MA\u0141OPOLSKIE\",\"Ulica\":\"Z\u0142oty
+        R\xF3g\"},{\"Identyfikator stacji\":10124,\"Kod stacji\":\"MpSuchaNiesz\",\"Nazwa
+        stacji\":\"Sucha Beskidzka, ul. Nieszczy\u0144skiej\",\"WGS84 \u03C6 N\":\"49.743131\",\"WGS84
+        \u03BB E\":\"19.600339\",\"Identyfikator miasta\":897,\"Nazwa miasta\":\"Sucha
+        Beskidzka\",\"Gmina\":\"Sucha Beskidzka\",\"Powiat\":\"suski\",\"Wojew\xF3dztwo\":\"MA\u0141OPOLSKIE\",\"Ulica\":\"ul.
+        Nieszczy\u0144skiej\"},{\"Identyfikator stacji\":10125,\"Kod stacji\":\"PkRzeszPilsu\",\"Nazwa
+        stacji\":\"Rzesz\xF3w, Al. Pi\u0142sudskiego\",\"WGS84 \u03C6 N\":\"50.040675\",\"WGS84
+        \u03BB E\":\"22.004656\",\"Identyfikator miasta\":810,\"Nazwa miasta\":\"Rzesz\xF3w\",\"Gmina\":\"Rzesz\xF3w\",\"Powiat\":\"Rzesz\xF3w\",\"Wojew\xF3dztwo\":\"PODKARPACKIE\",\"Ulica\":\"Al.
+        Pi\u0142sudskiego\"},{\"Identyfikator stacji\":10126,\"Kod stacji\":\"PkStWolWoPol\",\"Nazwa
+        stacji\":\"Stalowa Wola, ul. Wojska Polskiego\",\"WGS84 \u03C6 N\":\"50.577828\",\"WGS84
+        \u03BB E\":\"22.054336\",\"Identyfikator miasta\":866,\"Nazwa miasta\":\"Stalowa
+        Wola\",\"Gmina\":\"Stalowa Wola\",\"Powiat\":\"stalowowolski\",\"Wojew\xF3dztwo\":\"PODKARPACKIE\",\"Ulica\":\"Wojska
+        Polskiego 9\"},{\"Identyfikator stacji\":10139,\"Kod stacji\":\"MpKrakOsPias\",\"Nazwa
+        stacji\":\"Krak\xF3w, Os. Piast\xF3w\",\"WGS84 \u03C6 N\":\"50.098508\",\"WGS84
+        \u03BB E\":\"20.018269\",\"Identyfikator miasta\":415,\"Nazwa miasta\":\"Krak\xF3w\",\"Gmina\":\"Krak\xF3w\",\"Powiat\":\"Krak\xF3w\",\"Wojew\xF3dztwo\":\"MA\u0141OPOLSKIE\",\"Ulica\":\"Os.
+        Piast\xF3w\"},{\"Identyfikator stacji\":10140,\"Kod stacji\":\"LdSieraPolna\",\"Nazwa
+        stacji\":\"Sieradz, ul. Polna\",\"WGS84 \u03C6 N\":\"51.592058\",\"WGS84 \u03BB
+        E\":\"18.734811\",\"Identyfikator miasta\":827,\"Nazwa miasta\":\"Sieradz\",\"Gmina\":\"Sieradz\",\"Powiat\":\"sieradzki\",\"Wojew\xF3dztwo\":\"\u0141\xD3DZKIE\",\"Ulica\":\"ul.
+        Polna 18/20\"},{\"Identyfikator stacji\":10141,\"Kod stacji\":\"DsSwidnFolwa\",\"Nazwa
+        stacji\":\"\u015Awidnica, ul. Folwarczna\",\"WGS84 \u03C6 N\":\"50.844430\",\"WGS84
+        \u03BB E\":\"16.494006\",\"Identyfikator miasta\":935,\"Nazwa miasta\":\"\u015Awidnica\",\"Gmina\":\"\u015Awidnica\",\"Powiat\":\"\u015Bwidnicki\",\"Wojew\xF3dztwo\":\"DOLNO\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        Folwarczna 2\"},{\"Identyfikator stacji\":10148,\"Kod stacji\":\"WpPoznHetman\",\"Nazwa
+        stacji\":\"Poznan, ul. Hetma\u0144ska\",\"WGS84 \u03C6 N\":\"52.384293\",\"WGS84
+        \u03BB E\":\"16.918156\",\"Identyfikator miasta\":729,\"Nazwa miasta\":\"Pozna\u0144\",\"Gmina\":\"Pozna\u0144\",\"Powiat\":\"Pozna\u0144\",\"Wojew\xF3dztwo\":\"WIELKOPOLSKIE\",\"Ulica\":\"Hetma\u0144ska\"},{\"Identyfikator
+        stacji\":10158,\"Kod stacji\":\"SlBielPartyz\",\"Nazwa stacji\":\"Bielsko-Bia\u0142a,
+        ul. Partyzant\xF3w\",\"WGS84 \u03C6 N\":\"49.802075\",\"WGS84 \u03BB E\":\"19.048610\",\"Identyfikator
+        miasta\":41,\"Nazwa miasta\":\"Bielsko-Bia\u0142a\",\"Gmina\":\"Bielsko-Bia\u0142a\",\"Powiat\":\"Bielsko-Bia\u0142a\",\"Wojew\xF3dztwo\":\"\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        Partyzant\xF3w\"},{\"Identyfikator stacji\":10374,\"Kod stacji\":\"OpOpoleKoszy\",\"Nazwa
+        stacji\":\"Opole, ul. Koszyka\",\"WGS84 \u03C6 N\":\"50.666736\",\"WGS84 \u03BB
+        E\":\"17.899137\",\"Identyfikator miasta\":645,\"Nazwa miasta\":\"Opole\",\"Gmina\":\"Opole\",\"Powiat\":\"Opole\",\"Wojew\xF3dztwo\":\"OPOLSKIE\",\"Ulica\":\"ul.
+        Koszyka 21\"},{\"Identyfikator stacji\":10414,\"Kod stacji\":\"PkRymZdrPark\",\"Nazwa
+        stacji\":\"Ryman\xF3w Zdr\xF3j, ul. Parkowa\",\"WGS84 \u03C6 N\":\"49.546539\",\"WGS84
+        \u03BB E\":\"21.851006\",\"Identyfikator miasta\":805,\"Nazwa miasta\":\"Ryman\xF3w-Zdr\xF3j\",\"Gmina\":\"Ryman\xF3w\",\"Powiat\":\"kro\u015Bnie\u0144ski\",\"Wojew\xF3dztwo\":\"PODKARPACKIE\",\"Ulica\":\"Parkowa
+        5\"},{\"Identyfikator stacji\":10438,\"Kod stacji\":\"PkMielBierna\",\"Nazwa
+        stacji\":\"Mielec, ul. Biernackiego\",\"WGS84 \u03C6 N\":\"50.299128\",\"WGS84
+        \u03BB E\":\"21.440942\",\"Identyfikator miasta\":548,\"Nazwa miasta\":\"Mielec\",\"Gmina\":\"Mielec\",\"Powiat\":\"mielecki\",\"Wojew\xF3dztwo\":\"PODKARPACKIE\",\"Ulica\":\"Biernackiego\"},{\"Identyfikator
+        stacji\":10446,\"Kod stacji\":\"MpRabkaOrkan\",\"Nazwa stacji\":\"Rabka-Zdr\xF3j,
+        ul. Orkana\",\"WGS84 \u03C6 N\":\"49.608647\",\"WGS84 \u03BB E\":\"19.966008\",\"Identyfikator
+        miasta\":767,\"Nazwa miasta\":\"Rabka-Zdr\xF3j\",\"Gmina\":\"Rabka-Zdr\xF3j\",\"Powiat\":\"nowotarski\",\"Wojew\xF3dztwo\":\"MA\u0141OPOLSKIE\",\"Ulica\":\"Orkana\"},{\"Identyfikator
+        stacji\":10447,\"Kod stacji\":\"MpKrakWadow\",\"Nazwa stacji\":\"Krak\xF3w,
+        Os. Wad\xF3w\",\"WGS84 \u03C6 N\":\"50.100569\",\"WGS84 \u03BB E\":\"20.122561\",\"Identyfikator
+        miasta\":415,\"Nazwa miasta\":\"Krak\xF3w\",\"Gmina\":\"Krak\xF3w\",\"Powiat\":\"Krak\xF3w\",\"Wojew\xF3dztwo\":\"MA\u0141OPOLSKIE\",\"Ulica\":\"Wad\xF3w\"},{\"Identyfikator
+        stacji\":10456,\"Kod stacji\":\"LdOpocSkCuri\",\"Nazwa stacji\":\"Opoczno,
+        ul. Sk\u0142odowskiej-Curie\",\"WGS84 \u03C6 N\":\"51.379128\",\"WGS84 \u03BB
+        E\":\"20.282169\",\"Identyfikator miasta\":644,\"Nazwa miasta\":\"Opoczno\",\"Gmina\":\"Opoczno\",\"Powiat\":\"opoczy\u0144ski\",\"Wojew\xF3dztwo\":\"\u0141\xD3DZKIE\",\"Ulica\":\"ul.
+        Sk\u0142odowskiej-Curie 5\"},{\"Identyfikator stacji\":10554,\"Kod stacji\":\"SlZorySikor2\",\"Nazwa
+        stacji\":\"\u017Bory, Os. Gen. W\u0142adys\u0142awa Sikorskiego\",\"WGS84
+        \u03C6 N\":\"50.029416\",\"WGS84 \u03BB E\":\"18.689527\",\"Identyfikator
+        miasta\":1123,\"Nazwa miasta\":\"\u017Bory\",\"Gmina\":\"\u017Bory\",\"Powiat\":\"\u017Bory\",\"Wojew\xF3dztwo\":\"\u015AL\u0104SKIE\",\"Ulica\":\"Os.
+        Sikorskiego 52\"},{\"Identyfikator stacji\":10694,\"Kod stacji\":\"KpWloclGniaz\",\"Nazwa
+        stacji\":\"W\u0142oc\u0142awek, ul. Gniazdowskiego\",\"WGS84 \u03C6 N\":\"52.651561\",\"WGS84
+        \u03BB E\":\"19.051886\",\"Identyfikator miasta\":1046,\"Nazwa miasta\":\"W\u0142oc\u0142awek\",\"Gmina\":\"W\u0142oc\u0142awek\",\"Powiat\":\"W\u0142oc\u0142awek\",\"Wojew\xF3dztwo\":\"KUJAWSKO-POMORSKIE\",\"Ulica\":\"ul.
+        Gniazdowskiego 7\"},{\"Identyfikator stacji\":10794,\"Kod stacji\":\"SkMaloSlonec\",\"Nazwa
+        stacji\":\"Ma\u0142ogoszcz, ul. S\u0142oneczna\",\"WGS84 \u03C6 N\":\"50.809610\",\"WGS84
+        \u03BB E\":\"20.266032\",\"Identyfikator miasta\":531,\"Nazwa miasta\":\"Ma\u0142ogoszcz\",\"Gmina\":\"Ma\u0142ogoszcz\",\"Powiat\":\"j\u0119drzejowski\",\"Wojew\xF3dztwo\":\"\u015AWI\u0118TOKRZYSKIE\",\"Ulica\":\"ul.
+        S\u0142oneczna 18\"},{\"Identyfikator stacji\":10814,\"Kod stacji\":\"MpOswiecBema\",\"Nazwa
+        stacji\":\"O\u015Bwi\u0119cim, ul. J. Bema\",\"WGS84 \u03C6 N\":\"50.033083\",\"WGS84
+        \u03BB E\":\"19.245275\",\"Identyfikator miasta\":660,\"Nazwa miasta\":\"O\u015Bwi\u0119cim\",\"Gmina\":\"O\u015Bwi\u0119cim\",\"Powiat\":\"o\u015Bwi\u0119cimski\",\"Wojew\xF3dztwo\":\"MA\u0141OPOLSKIE\",\"Ulica\":\"J.
+        Bema\"},{\"Identyfikator stacji\":10817,\"Kod stacji\":\"MpZlockieMusMOB\",\"Nazwa
+        stacji\":\"Z\u0142ockie, szko\u0142a podstawowa\",\"WGS84 \u03C6 N\":\"49.374147\",\"WGS84
+        \u03BB E\":\"20.879581\",\"Identyfikator miasta\":2180,\"Nazwa miasta\":\"Z\u0142ockie\",\"Gmina\":\"Muszyna\",\"Powiat\":\"nowos\u0105decki\",\"Wojew\xF3dztwo\":\"MA\u0141OPOLSKIE\",\"Ulica\":\"Z\u0142ockie
+        79\"},{\"Identyfikator stacji\":10834,\"Kod stacji\":\"WpKozieosLes\",\"Nazwa
+        stacji\":\"Kozieg\u0142owy, Os. Le\u015Bne\",\"WGS84 \u03C6 N\":\"52.449295\",\"WGS84
+        \u03BB E\":\"16.999634\",\"Identyfikator miasta\":2163,\"Nazwa miasta\":\"Kozieg\u0142owy\",\"Gmina\":\"Czerwonak\",\"Powiat\":\"pozna\u0144ski\",\"Wojew\xF3dztwo\":\"WIELKOPOLSKIE\",\"Ulica\":\"Osiedle
+        Le\u015Bne 22\"},{\"Identyfikator stacji\":10854,\"Kod stacji\":\"KpWieniZdroj\",\"Nazwa
+        stacji\":\"Wieniec Zdr\xF3j, ul. Wieniecka\",\"WGS84 \u03C6 N\":\"52.656773\",\"WGS84
+        \u03BB E\":\"18.987456\",\"Identyfikator miasta\":2240,\"Nazwa miasta\":\"Wieniec-Zdr\xF3j\",\"Gmina\":\"Brze\u015B\u0107
+        Kujawski\",\"Powiat\":\"w\u0142oc\u0142awski\",\"Wojew\xF3dztwo\":\"KUJAWSKO-POMORSKIE\",\"Ulica\":\"ul.
+        Wieniecka\"},{\"Identyfikator stacji\":10874,\"Kod stacji\":\"LbFlorianRPN\",\"Nazwa
+        stacji\":\"Florianka, RPN\",\"WGS84 \u03C6 N\":\"50.551894\",\"WGS84 \u03BB
+        E\":\"22.982861\",\"Identyfikator miasta\":2201,\"Nazwa miasta\":\"Florianka\",\"Gmina\":\"J\xF3zef\xF3w\",\"Powiat\":\"bi\u0142gorajski\",\"Wojew\xF3dztwo\":\"LUBELSKIE\",\"Ulica\":null},{\"Identyfikator
+        stacji\":10934,\"Kod stacji\":\"ZpKolZolkiew\",\"Nazwa stacji\":\"Ko\u0142obrzeg,
+        ul. \u017B\xF3\u0142kiewskiego\",\"WGS84 \u03C6 N\":\"54.179381\",\"WGS84
+        \u03BB E\":\"15.596347\",\"Identyfikator miasta\":386,\"Nazwa miasta\":\"Ko\u0142obrzeg\",\"Gmina\":\"Ko\u0142obrzeg\",\"Powiat\":\"ko\u0142obrzeski\",\"Wojew\xF3dztwo\":\"ZACHODNIOPOMORSKIE\",\"Ulica\":\"ul.
+        \u017B\xF3\u0142kiewskiego\"},{\"Identyfikator stacji\":10955,\"Kod stacji\":\"MzWarChrosci\",\"Nazwa
+        stacji\":\"Warszawa, ul. Chro\u015Bcickiego\",\"WGS84 \u03C6 N\":\"52.207742\",\"WGS84
+        \u03BB E\":\"20.906073\",\"Identyfikator miasta\":1006,\"Nazwa miasta\":\"Warszawa\",\"Gmina\":\"Warszawa\",\"Powiat\":\"Warszawa\",\"Wojew\xF3dztwo\":\"MAZOWIECKIE\",\"Ulica\":\"ul.
+        Chro\u015Bcickiego 16/18\"},{\"Identyfikator stacji\":10956,\"Kod stacji\":\"MzWarBajkowa\",\"Nazwa
+        stacji\":\"Warszawa, ul. Bajkowa\",\"WGS84 \u03C6 N\":\"52.188474\",\"WGS84
+        \u03BB E\":\"21.176233\",\"Identyfikator miasta\":1006,\"Nazwa miasta\":\"Warszawa\",\"Gmina\":\"Warszawa\",\"Powiat\":\"Warszawa\",\"Wojew\xF3dztwo\":\"MAZOWIECKIE\",\"Ulica\":\"ul.
+        Bajkowa 17/21\"},{\"Identyfikator stacji\":11154,\"Kod stacji\":\"PdSuwPulask2\",\"Nazwa
+        stacji\":\"Suwa\u0142ki, ul. Pu\u0142askiego 26\",\"WGS84 \u03C6 N\":\"54.115897\",\"WGS84
+        \u03BB E\":\"22.938464\",\"Identyfikator miasta\":906,\"Nazwa miasta\":\"Suwa\u0142ki\",\"Gmina\":\"Suwa\u0142ki\",\"Powiat\":\"Suwa\u0142ki\",\"Wojew\xF3dztwo\":\"PODLASKIE\",\"Ulica\":\"ul.
+        Pu\u0142askiego 26\"},{\"Identyfikator stacji\":11174,\"Kod stacji\":\"PdBialPPiech\",\"Nazwa
+        stacji\":\"Bia\u0142ystok, ul. 42 Pu\u0142ku Piechoty\",\"WGS84 \u03C6 N\":\"53.144122\",\"WGS84
+        \u03BB E\":\"23.216322\",\"Identyfikator miasta\":35,\"Nazwa miasta\":\"Bia\u0142ystok\",\"Gmina\":\"Bia\u0142ystok\",\"Powiat\":\"Bia\u0142ystok\",\"Wojew\xF3dztwo\":\"PODLASKIE\",\"Ulica\":\"ul.
+        42 Pu\u0142ku Piechoty 117\"},{\"Identyfikator stacji\":11195,\"Kod stacji\":\"SkKielTargow\",\"Nazwa
+        stacji\":\"Kielce, ul. Targowa\",\"WGS84 \u03C6 N\":\"50.878998\",\"WGS84
+        \u03BB E\":\"20.633692\",\"Identyfikator miasta\":360,\"Nazwa miasta\":\"Kielce\",\"Gmina\":\"Kielce\",\"Powiat\":\"Kielce\",\"Wojew\xF3dztwo\":\"\u015AWI\u0118TOKRZYSKIE\",\"Ulica\":\"ul.
+        Targowa 3\"},{\"Identyfikator stacji\":11234,\"Kod stacji\":\"DsLegPolarna\",\"Nazwa
+        stacji\":\"Legnica, ul. Polarna\",\"WGS84 \u03C6 N\":\"51.208104\",\"WGS84
+        \u03BB E\":\"16.183784\",\"Identyfikator miasta\":453,\"Nazwa miasta\":\"Legnica\",\"Gmina\":\"Legnica\",\"Powiat\":\"Legnica\",\"Wojew\xF3dztwo\":\"DOLNO\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        Polarna 1\"},{\"Identyfikator stacji\":11254,\"Kod stacji\":\"DsNowRudJezi\",\"Nazwa
+        stacji\":\"Nowa Ruda, ul. Jeziorna\",\"WGS84 \u03C6 N\":\"50.581492\",\"WGS84
+        \u03BB E\":\"16.498245\",\"Identyfikator miasta\":602,\"Nazwa miasta\":\"Nowa
+        Ruda\",\"Gmina\":\"Nowa Ruda\",\"Powiat\":\"k\u0142odzki\",\"Wojew\xF3dztwo\":\"DOLNO\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        Jeziorna 19\"},{\"Identyfikator stacji\":11278,\"Kod stacji\":\"SlLublSzymal\",\"Nazwa
+        stacji\":\"Lubliniec, ul. ks. Szyma\u0142y\",\"WGS84 \u03C6 N\":\"50.675693\",\"WGS84
+        \u03BB E\":\"18.682065\",\"Identyfikator miasta\":490,\"Nazwa miasta\":\"Lubliniec\",\"Gmina\":\"Lubliniec\",\"Powiat\":\"lubliniecki\",\"Wojew\xF3dztwo\":\"\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        ks. p\u0142k. Jana Szyma\u0142y 3\"},{\"Identyfikator stacji\":11294,\"Kod
+        stacji\":\"LuZielWyszyn\",\"Nazwa stacji\":\"Zielona G\xF3ra,ul.Wyszy\u0144skiego\",\"WGS84
+        \u03C6 N\":\"51.936249\",\"WGS84 \u03BB E\":\"15.481077\",\"Identyfikator
+        miasta\":1103,\"Nazwa miasta\":\"Zielona G\xF3ra\",\"Gmina\":\"Zielona G\xF3ra\",\"Powiat\":\"Zielona
+        G\xF3ra\",\"Wojew\xF3dztwo\":\"LUBUSKIE\",\"Ulica\":\"Wyszy\u0144skiego\"},{\"Identyfikator
+        stacji\":11301,\"Kod stacji\":\"MpOlkuCegiel\",\"Nazwa stacji\":\"Olkusz,
+        ul. Cegielniana\",\"WGS84 \u03C6 N\":\"50.284000\",\"WGS84 \u03BB E\":\"19.564044\",\"Identyfikator
+        miasta\":638,\"Nazwa miasta\":\"Olkusz\",\"Gmina\":\"Olkusz\",\"Powiat\":\"olkuski\",\"Wojew\xF3dztwo\":\"MA\u0141OPOLSKIE\",\"Ulica\":\"
+        Cegielniana\"},{\"Identyfikator stacji\":11303,\"Kod stacji\":\"MpKrakSwoszo\",\"Nazwa
+        stacji\":\"Krak\xF3w, Os. Swoszowice\",\"WGS84 \u03C6 N\":\"49.991442\",\"WGS84
+        \u03BB E\":\"19.936792\",\"Identyfikator miasta\":415,\"Nazwa miasta\":\"Krak\xF3w\",\"Gmina\":\"Krak\xF3w\",\"Powiat\":\"Krak\xF3w\",\"Wojew\xF3dztwo\":\"MA\u0141OPOLSKIE\",\"Ulica\":\"Lusi\u0144ska\"},{\"Identyfikator
+        stacji\":11336,\"Kod stacji\":\"ZpKoszChopin\",\"Nazwa stacji\":\"Koszalin,
+        ul. Chopina\",\"WGS84 \u03C6 N\":\"54.194114\",\"WGS84 \u03BB E\":\"16.211672\",\"Identyfikator
+        miasta\":402,\"Nazwa miasta\":\"Koszalin\",\"Gmina\":\"Koszalin\",\"Powiat\":\"Koszalin\",\"Wojew\xF3dztwo\":\"ZACHODNIOPOMORSKIE\",\"Ulica\":\"ul.
+        Chopina 42\"},{\"Identyfikator stacji\":11358,\"Kod stacji\":\"MzBialaKmiciMOB\",\"Nazwa
+        stacji\":\"Bia\u0142a, ul. Kmicica\",\"WGS84 \u03C6 N\":\"52.602534\",\"WGS84
+        \u03BB E\":\"19.645100\",\"Identyfikator miasta\":2661,\"Nazwa miasta\":\"Bia\u0142a\",\"Gmina\":\"Stara
+        Bia\u0142a\",\"Powiat\":\"p\u0142ocki\",\"Wojew\xF3dztwo\":\"MAZOWIECKIE\",\"Ulica\":\"ul.
+        Andrzeja Kmicica 33\"},{\"Identyfikator stacji\":11360,\"Kod stacji\":\"LbChelmPolan\",\"Nazwa
+        stacji\":\"Che\u0142m, ul. Po\u0142aniecka\",\"WGS84 \u03C6 N\":\"51.122147\",\"WGS84
+        \u03BB E\":\"23.473075\",\"Identyfikator miasta\":100,\"Nazwa miasta\":\"Che\u0142m\",\"Gmina\":\"Che\u0142m\",\"Powiat\":\"Che\u0142m\",\"Wojew\xF3dztwo\":\"LUBELSKIE\",\"Ulica\":\"ul.
+        Po\u0142aniecka\"},{\"Identyfikator stacji\":11362,\"Kod stacji\":\"LbNaleczAlMa\",\"Nazwa
+        stacji\":\"Na\u0142\u0119cz\xF3w, Al. Ma\u0142achowskiego\",\"WGS84 \u03C6
+        N\":\"51.284931\",\"WGS84 \u03BB E\":\"22.210242\",\"Identyfikator miasta\":588,\"Nazwa
+        miasta\":\"Na\u0142\u0119cz\xF3w\",\"Gmina\":\"Na\u0142\u0119cz\xF3w\",\"Powiat\":\"pu\u0142awski\",\"Wojew\xF3dztwo\":\"LUBELSKIE\",\"Ulica\":\"Al.
+        Ma\u0142achowskiego\"},{\"Identyfikator stacji\":11434,\"Kod stacji\":\"MpZabieWapie\",\"Nazwa
+        stacji\":\"Zabierz\xF3w, ul. Wapienna\",\"WGS84 \u03C6 N\":\"50.116028\",\"WGS84
+        \u03BB E\":\"19.800639\",\"Identyfikator miasta\":2300,\"Nazwa miasta\":\"Zabierz\xF3w\",\"Gmina\":\"Zabierz\xF3w\",\"Powiat\":\"krakowski\",\"Wojew\xF3dztwo\":\"MA\u0141OPOLSKIE\",\"Ulica\":\"Wapienna\"},{\"Identyfikator
+        stacji\":11455,\"Kod stacji\":\"SlZawGalczyn\",\"Nazwa stacji\":\"Zawiercie,
+        ul. Ga\u0142czy\u0144skiego\",\"WGS84 \u03C6 N\":\"50.493045\",\"WGS84 \u03BB
+        E\":\"19.439012\",\"Identyfikator miasta\":1086,\"Nazwa miasta\":\"Zawiercie\",\"Gmina\":\"Zawiercie\",\"Powiat\":\"zawiercia\u0144ski\",\"Wojew\xF3dztwo\":\"\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        Ga\u0142czy\u0144skiego 3\"},{\"Identyfikator stacji\":11457,\"Kod stacji\":\"SlGoczaUzdro\",\"Nazwa
+        stacji\":\"Gocza\u0142kowice-Zdr\xF3j, ul. Parkowa\",\"WGS84 \u03C6 N\":\"49.937850\",\"WGS84
+        \u03BB E\":\"18.975594\",\"Identyfikator miasta\":2280,\"Nazwa miasta\":\"Gocza\u0142kowice-Zdr\xF3j\",\"Gmina\":\"Gocza\u0142kowice-Zdr\xF3j\",\"Powiat\":\"pszczy\u0144ski\",\"Wojew\xF3dztwo\":\"\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        Parkowa\"},{\"Identyfikator stacji\":11554,\"Kod stacji\":\"LdLaskNarutoMOB\",\"Nazwa
+        stacji\":\"\u0141ask, ul. Narutowicza\",\"WGS84 \u03C6 N\":\"51.589208\",\"WGS84
+        \u03BB E\":\"19.131433\",\"Identyfikator miasta\":504,\"Nazwa miasta\":\"\u0141ask\",\"Gmina\":\"\u0141ask\",\"Powiat\":\"\u0142aski\",\"Wojew\xF3dztwo\":\"\u0141\xD3DZKIE\",\"Ulica\":\"ul.
+        Narutowicza 28\"},{\"Identyfikator stacji\":11576,\"Kod stacji\":\"KpBydJezdzie\",\"Nazwa
+        stacji\":\"Bydgoszcz, ul. Je\u017Adziecka\",\"WGS84 \u03C6 N\":\"53.175214\",\"WGS84
+        \u03BB E\":\"18.044164\",\"Identyfikator miasta\":90,\"Nazwa miasta\":\"Bydgoszcz\",\"Gmina\":\"Bydgoszcz\",\"Powiat\":\"Bydgoszcz\",\"Wojew\xF3dztwo\":\"KUJAWSKO-POMORSKIE\",\"Ulica\":\"ul.
+        Je\u017Adziecka\"},{\"Identyfikator stacji\":11754,\"Kod stacji\":\"SkGoluUjWody\",\"Nazwa
+        stacji\":\"Go\u0142uch\xF3w, Uj\u0119cie Wody\",\"WGS84 \u03C6 N\":\"50.621482\",\"WGS84
+        \u03BB E\":\"20.614057\",\"Identyfikator miasta\":2644,\"Nazwa miasta\":\"Go\u0142uch\xF3w\",\"Gmina\":\"Kije\",\"Powiat\":\"pi\u0144czowski\",\"Wojew\xF3dztwo\":\"\u015AWI\u0118TOKRZYSKIE\",\"Ulica\":\"Uj\u0119cie
+        Wody\"},{\"Identyfikator stacji\":11794,\"Kod stacji\":\"SlRaciborzWP\",\"Nazwa
+        stacji\":\"Racib\xF3rz, ul. Wojska Polskiego\",\"WGS84 \u03C6 N\":\"50.091142\",\"WGS84
+        \u03BB E\":\"18.216261\",\"Identyfikator miasta\":768,\"Nazwa miasta\":\"Racib\xF3rz\",\"Gmina\":\"Racib\xF3rz\",\"Powiat\":\"raciborski\",\"Wojew\xF3dztwo\":\"\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        Wojska Polskiego 8\"},{\"Identyfikator stacji\":11814,\"Kod stacji\":\"PdBialAlPils\",\"Nazwa
+        stacji\":\"Bia\u0142ystok, Al. Pi\u0142sudskiego\",\"WGS84 \u03C6 N\":\"53.135286\",\"WGS84
+        \u03BB E\":\"23.161325\",\"Identyfikator miasta\":35,\"Nazwa miasta\":\"Bia\u0142ystok\",\"Gmina\":\"Bia\u0142ystok\",\"Powiat\":\"Bia\u0142ystok\",\"Wojew\xF3dztwo\":\"PODLASKIE\",\"Ulica\":\"Al.
+        J\xF3zefa Pi\u0142sudskiego 34\"},{\"Identyfikator stacji\":11855,\"Kod stacji\":\"SlJastrZdroj\",\"Nazwa
+        stacji\":\"Jastrz\u0119bie-Zdr\xF3j, Al. J.Pi\u0142sudskiego/Harcerska\",\"WGS84
+        \u03C6 N\":\"49.952544\",\"WGS84 \u03BB E\":\"18.607953\",\"Identyfikator
+        miasta\":312,\"Nazwa miasta\":\"Jastrz\u0119bie-Zdr\xF3j\",\"Gmina\":\"Jastrz\u0119bie-Zdr\xF3j\",\"Powiat\":\"Jastrz\u0119bie-Zdr\xF3j\",\"Wojew\xF3dztwo\":\"\u015AL\u0104SKIE\",\"Ulica\":\"Aleja
+        J\xF3zefa Pi\u0142sudskiego/Harcerska 3\"},{\"Identyfikator stacji\":11916,\"Kod
+        stacji\":\"PdAugustowUz\",\"Nazwa stacji\":\"August\xF3w, Uzdrowisko\",\"WGS84
+        \u03C6 N\":\"53.852550\",\"WGS84 \u03BB E\":\"22.984686\",\"Identyfikator
+        miasta\":8,\"Nazwa miasta\":\"August\xF3w\",\"Gmina\":\"August\xF3w\",\"Powiat\":\"augustowski\",\"Wojew\xF3dztwo\":\"PODLASKIE\",\"Ulica\":null},{\"Identyfikator
+        stacji\":11934,\"Kod stacji\":\"DsTrzebniMaj\",\"Nazwa stacji\":\"Trzebnica,
+        ul. 3 Maja\",\"WGS84 \u03C6 N\":\"51.304817\",\"WGS84 \u03BB E\":\"17.071367\",\"Identyfikator
+        miasta\":975,\"Nazwa miasta\":\"Trzebnica\",\"Gmina\":\"Trzebnica\",\"Powiat\":\"trzebnicki\",\"Wojew\xF3dztwo\":\"DOLNO\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        3 Maja\"},{\"Identyfikator stacji\":12096,\"Kod stacji\":\"LbLubOkopowa\",\"Nazwa
+        stacji\":\"Lublin, ul. Okopowa\",\"WGS84 \u03C6 N\":\"51.245464\",\"WGS84
+        \u03BB E\":\"22.554994\",\"Identyfikator miasta\":489,\"Nazwa miasta\":\"Lublin\",\"Gmina\":\"Lublin\",\"Powiat\":\"Lublin\",\"Wojew\xF3dztwo\":\"LUBELSKIE\",\"Ulica\":\"Okopowa
+        5a\"},{\"Identyfikator stacji\":12098,\"Kod stacji\":\"LbKrasnobrod\",\"Nazwa
+        stacji\":\"Krasnobr\xF3d, ul. Sanatoryjna\",\"WGS84 \u03C6 N\":\"50.549297\",\"WGS84
+        \u03BB E\":\"23.197317\",\"Identyfikator miasta\":418,\"Nazwa miasta\":\"Krasnobr\xF3d\",\"Gmina\":\"Krasnobr\xF3d\",\"Powiat\":\"zamojski\",\"Wojew\xF3dztwo\":\"LUBELSKIE\",\"Ulica\":\"ul.
+        Sanatoryjna\"},{\"Identyfikator stacji\":12139,\"Kod stacji\":\"SkOpatPartyz\",\"Nazwa
+        stacji\":\"Opat\xF3w, ul. Partyzant\xF3w\",\"WGS84 \u03C6 N\":\"50.798157\",\"WGS84
+        \u03BB E\":\"21.425202\",\"Identyfikator miasta\":2687,\"Nazwa miasta\":\"Opat\xF3w\",\"Gmina\":\"Opat\xF3w\",\"Powiat\":\"opatowski\",\"Wojew\xF3dztwo\":\"\u015AWI\u0118TOKRZYSKIE\",\"Ulica\":\"ul.
+        Partyzant\xF3w 13 b\"},{\"Identyfikator stacji\":16157,\"Kod stacji\":\"ZpPolczSolanMOB\",\"Nazwa
+        stacji\":\"Po\u0142czyn-Zdr\xF3j, ul. Solankowa\",\"WGS84 \u03C6 N\":\"53.755652\",\"WGS84
+        \u03BB E\":\"16.089278\",\"Identyfikator miasta\":724,\"Nazwa miasta\":\"Po\u0142czyn-Zdr\xF3j\",\"Gmina\":\"Po\u0142czyn-Zdr\xF3j\",\"Powiat\":\"\u015Bwidwi\u0144ski\",\"Wojew\xF3dztwo\":\"ZACHODNIOPOMORSKIE\",\"Ulica\":\"ul.
+        Solankowa 8\"},{\"Identyfikator stacji\":16180,\"Kod stacji\":\"PmGdaGrunwal\",\"Nazwa
+        stacji\":\"Gda\u0144sk, Al. Grunwaldzka\",\"WGS84 \u03C6 N\":\"54.380682\",\"WGS84
+        \u03BB E\":\"18.601559\",\"Identyfikator miasta\":218,\"Nazwa miasta\":\"Gda\u0144sk\",\"Gmina\":\"Gda\u0144sk\",\"Powiat\":\"Gda\u0144sk\",\"Wojew\xF3dztwo\":\"POMORSKIE\",\"Ulica\":\"Al.
+        Grunwaldzka 127\"},{\"Identyfikator stacji\":16196,\"Kod stacji\":\"SkKielWarsz1\",\"Nazwa
+        stacji\":\"Kielce, ul. Warszawska 108\",\"WGS84 \u03C6 N\":\"50.886014\",\"WGS84
+        \u03BB E\":\"20.642858\",\"Identyfikator miasta\":360,\"Nazwa miasta\":\"Kielce\",\"Gmina\":\"Kielce\",\"Powiat\":\"Kielce\",\"Wojew\xF3dztwo\":\"\u015AWI\u0118TOKRZYSKIE\",\"Ulica\":\"ul.
+        Warszawska 108\"},{\"Identyfikator stacji\":16242,\"Kod stacji\":\"PmSopBiPlowc\",\"Nazwa
+        stacji\":\"Sopot, ul. Bitwy Pod P\u0142owcami\",\"WGS84 \u03C6 N\":\"54.434510\",\"WGS84
+        \u03BB E\":\"18.578840\",\"Identyfikator miasta\":861,\"Nazwa miasta\":\"Sopot\",\"Gmina\":\"Sopot\",\"Powiat\":\"Sopot\",\"Wojew\xF3dztwo\":\"POMORSKIE\",\"Ulica\":\"ul.
+        Bitwy pod P\u0142owcami\"},{\"Identyfikator stacji\":16271,\"Kod stacji\":\"MzKonJezZero\",\"Nazwa
+        stacji\":\"Konstancin-Jeziorna, ul. \u017Beromskiego\",\"WGS84 \u03C6 N\":\"52.082277\",\"WGS84
+        \u03BB E\":\"21.124598\",\"Identyfikator miasta\":395,\"Nazwa miasta\":\"Konstancin-Jeziorna\",\"Gmina\":\"Konstancin-Jeziorna\",\"Powiat\":\"piaseczy\u0144ski\",\"Wojew\xF3dztwo\":\"MAZOWIECKIE\",\"Ulica\":\"ul.
+        \u017Beromskiego\"},{\"Identyfikator stacji\":16397,\"Kod stacji\":\"PmWejhDworco\",\"Nazwa
+        stacji\":\"Wejherowo, ul. Dworcowa\",\"WGS84 \u03C6 N\":\"54.604528\",\"WGS84
+        \u03BB E\":\"18.227761\",\"Identyfikator miasta\":1016,\"Nazwa miasta\":\"Wejherowo\",\"Gmina\":\"Wejherowo\",\"Powiat\":\"wejherowski\",\"Wojew\xF3dztwo\":\"POMORSKIE\",\"Ulica\":\"ul.
+        Dworcowa\"},{\"Identyfikator stacji\":16406,\"Kod stacji\":\"SlCiesChopin\",\"Nazwa
+        stacji\":\"Cieszyn, ul. Chopina\",\"WGS84 \u03C6 N\":\"49.755989\",\"WGS84
+        \u03BB E\":\"18.634075\",\"Identyfikator miasta\":124,\"Nazwa miasta\":\"Cieszyn\",\"Gmina\":\"Cieszyn\",\"Powiat\":\"cieszy\u0144ski\",\"Wojew\xF3dztwo\":\"\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        Chopina 37\"},{\"Identyfikator stacji\":16413,\"Kod stacji\":\"OpBrzegPoprzMOB\",\"Nazwa
+        stacji\":\"Brzeg, ul. Poprzeczna\",\"WGS84 \u03C6 N\":\"50.849509\",\"WGS84
+        \u03BB E\":\"17.462579\",\"Identyfikator miasta\":75,\"Nazwa miasta\":\"Brzeg\",\"Gmina\":\"Brzeg\",\"Powiat\":\"brzeski\",\"Wojew\xF3dztwo\":\"OPOLSKIE\",\"Ulica\":\"ul.
+        Poprzeczna 1\"},{\"Identyfikator stacji\":16493,\"Kod stacji\":\"WpPoznSzwajc\",\"Nazwa
+        stacji\":\"Pozna\u0144 ul. Szwajcarska\",\"WGS84 \u03C6 N\":\"52.390879\",\"WGS84
+        \u03BB E\":\"16.998053\",\"Identyfikator miasta\":729,\"Nazwa miasta\":\"Pozna\u0144\",\"Gmina\":\"Pozna\u0144\",\"Powiat\":\"Pozna\u0144\",\"Wojew\xF3dztwo\":\"WIELKOPOLSKIE\",\"Ulica\":\"ul.
+        Szwajcarska\"},{\"Identyfikator stacji\":16495,\"Kod stacji\":\"WpMosinaCzer\",\"Nazwa
+        stacji\":\"Mosina, ul. Czere\u015Bniowa\",\"WGS84 \u03C6 N\":\"52.241497\",\"WGS84
+        \u03BB E\":\"16.865125\",\"Identyfikator miasta\":2712,\"Nazwa miasta\":\"Mosina\",\"Gmina\":\"Mosina\",\"Powiat\":\"pozna\u0144ski\",\"Wojew\xF3dztwo\":\"WIELKOPOLSKIE\",\"Ulica\":\"ul.
+        Czere\u015Bniowa 4\"},{\"Identyfikator stacji\":16497,\"Kod stacji\":\"SkKielJurajs\",\"Nazwa
+        stacji\":\"Kielce, ul. Jurajska\",\"WGS84 \u03C6 N\":\"50.887606\",\"WGS84
+        \u03BB E\":\"20.579965\",\"Identyfikator miasta\":360,\"Nazwa miasta\":\"Kielce\",\"Gmina\":\"Kielce\",\"Powiat\":\"Kielce\",\"Wojew\xF3dztwo\":\"\u015AWI\u0118TOKRZYSKIE\",\"Ulica\":\"ul.
+        Jurajska 7\"},{\"Identyfikator stacji\":16533,\"Kod stacji\":\"MzWarMeteo\",\"Nazwa
+        stacji\":\"Warszawa, IMGW\",\"WGS84 \u03C6 N\":\"52.281304\",\"WGS84 \u03BB
+        E\":\"20.963383\",\"Identyfikator miasta\":1006,\"Nazwa miasta\":\"Warszawa\",\"Gmina\":\"Warszawa\",\"Powiat\":\"Warszawa\",\"Wojew\xF3dztwo\":\"MAZOWIECKIE\",\"Ulica\":\"ul.
+        Podle\u015Bna 61\"},{\"Identyfikator stacji\":16613,\"Kod stacji\":\"LuNowaSolKos\",\"Nazwa
+        stacji\":\"Nowa S\xF3l\",\"WGS84 \u03C6 N\":\"51.809103\",\"WGS84 \u03BB E\":\"15.708042\",\"Identyfikator
+        miasta\":605,\"Nazwa miasta\":\"Nowa S\xF3l\",\"Gmina\":\"Nowa S\xF3l\",\"Powiat\":\"nowosolski\",\"Wojew\xF3dztwo\":\"LUBUSKIE\",\"Ulica\":\"T.
+        Ko\u015Bciuszki\"},{\"Identyfikator stacji\":16753,\"Kod stacji\":\"MpMyslenSoli\",\"Nazwa
+        stacji\":\"My\u015Blenice\",\"WGS84 \u03C6 N\":\"49.831237\",\"WGS84 \u03BB
+        E\":\"19.923591\",\"Identyfikator miasta\":583,\"Nazwa miasta\":\"My\u015Blenice\",\"Gmina\":\"My\u015Blenice\",\"Powiat\":\"my\u015Blenicki\",\"Wojew\xF3dztwo\":\"MA\u0141OPOLSKIE\",\"Ulica\":\"Solidarno\u015Bci
+        6\"},{\"Identyfikator stacji\":16894,\"Kod stacji\":\"MpNoTargAlTy\",\"Nazwa
+        stacji\":\"Nowy Targ, Al. Tysi\u0105clecia\",\"WGS84 \u03C6 N\":\"49.476675\",\"WGS84
+        \u03BB E\":\"20.034878\",\"Identyfikator miasta\":626,\"Nazwa miasta\":\"Nowy
+        Targ\",\"Gmina\":\"Nowy Targ\",\"Powiat\":\"nowotarski\",\"Wojew\xF3dztwo\":\"MA\u0141OPOLSKIE\",\"Ulica\":\"Al.
+        Tysi\u0105clecia\"},{\"Identyfikator stacji\":16896,\"Kod stacji\":\"MpKrakKamien\",\"Nazwa
+        stacji\":\"Krak\xF3w, ul. Kamie\u0144skiego\",\"WGS84 \u03C6 N\":\"50.024605\",\"WGS84
+        \u03BB E\":\"19.978460\",\"Identyfikator miasta\":415,\"Nazwa miasta\":\"Krak\xF3w\",\"Gmina\":\"Krak\xF3w\",\"Powiat\":\"Krak\xF3w\",\"Wojew\xF3dztwo\":\"MA\u0141OPOLSKIE\",\"Ulica\":\"ul.
+        Kamie\u0144skiego\"},{\"Identyfikator stacji\":16913,\"Kod stacji\":\"OpKrap3Maja\",\"Nazwa
+        stacji\":\"Krapkowice, ul. 3 Maja\",\"WGS84 \u03C6 N\":\"50.486194\",\"WGS84
+        \u03BB E\":\"17.974770\",\"Identyfikator miasta\":416,\"Nazwa miasta\":\"Krapkowice\",\"Gmina\":\"Krapkowice\",\"Powiat\":\"krapkowicki\",\"Wojew\xF3dztwo\":\"OPOLSKIE\",\"Ulica\":\"ul.
+        3 Maja 17\"},{\"Identyfikator stacji\":17058,\"Kod stacji\":\"SlPszczBator\",\"Nazwa
+        stacji\":\"Pszczyna, ul. Batorego\",\"WGS84 \u03C6 N\":\"49.975772\",\"WGS84
+        \u03BB E\":\"18.947686\",\"Identyfikator miasta\":761,\"Nazwa miasta\":\"Pszczyna\",\"Gmina\":\"Pszczyna\",\"Powiat\":\"pszczy\u0144ski\",\"Wojew\xF3dztwo\":\"\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        Stefana Batorego 24\"},{\"Identyfikator stacji\":17118,\"Kod stacji\":\"MpWysowaParkMOB\",\"Nazwa
+        stacji\":\"Wysowa-Zdr\xF3j, Park Zdrojowy\",\"WGS84 \u03C6 N\":\"49.440175\",\"WGS84
+        \u03BB E\":\"21.178087\",\"Identyfikator miasta\":995,\"Nazwa miasta\":\"U\u015Bcie
+        Gorlickie Wysowa\",\"Gmina\":\"U\u015Bcie Gorlickie\",\"Powiat\":\"gorlicki\",\"Wojew\xF3dztwo\":\"MA\u0141OPOLSKIE\",\"Ulica\":\"Wysowa\"},{\"Identyfikator
+        stacji\":17179,\"Kod stacji\":\"PkRzeszStarz\",\"Nazwa stacji\":\"Rzesz\xF3w,
+        ul. Starzy\u0144skiego\",\"WGS84 \u03C6 N\":\"50.060381\",\"WGS84 \u03BB E\":\"21.980511\",\"Identyfikator
+        miasta\":810,\"Nazwa miasta\":\"Rzesz\xF3w\",\"Gmina\":\"Rzesz\xF3w\",\"Powiat\":\"Rzesz\xF3w\",\"Wojew\xF3dztwo\":\"PODKARPACKIE\",\"Ulica\":\"Starzy\u0144skiego
+        17\"},{\"Identyfikator stacji\":17318,\"Kod stacji\":\"SlKatoDudyGr\",\"Nazwa
+        stacji\":\"Katowice, ul. Dudy-Gracza\",\"WGS84 \u03C6 N\":\"50.258483\",\"WGS84
+        \u03BB E\":\"19.036217\",\"Identyfikator miasta\":350,\"Nazwa miasta\":\"Katowice\",\"Gmina\":\"Katowice\",\"Powiat\":\"Katowice\",\"Wojew\xF3dztwo\":\"\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        Jerzego Dudy-Gracza\"},{\"Identyfikator stacji\":17658,\"Kod stacji\":\"PdBialUpalna\",\"Nazwa
+        stacji\":\"Bia\u0142ystok, ul. Upalna\",\"WGS84 \u03C6 N\":\"53.129601\",\"WGS84
+        \u03BB E\":\"23.108054\",\"Identyfikator miasta\":35,\"Nazwa miasta\":\"Bia\u0142ystok\",\"Gmina\":\"Bia\u0142ystok\",\"Powiat\":\"Bia\u0142ystok\",\"Wojew\xF3dztwo\":\"PODLASKIE\",\"Ulica\":\"ul.
+        Upalna 26\"},{\"Identyfikator stacji\":17659,\"Kod stacji\":\"WpKepnoSport\",\"Nazwa
+        stacji\":\"K\u0119pno ul. Sportowa\",\"WGS84 \u03C6 N\":\"51.282994\",\"WGS84
+        \u03BB E\":\"17.986739\",\"Identyfikator miasta\":2833,\"Nazwa miasta\":\"K\u0119pno\",\"Gmina\":\"K\u0119pno\",\"Powiat\":\"k\u0119pi\u0144ski\",\"Wojew\xF3dztwo\":\"WIELKOPOLSKIE\",\"Ulica\":\"Sportowa\"},{\"Identyfikator
+        stacji\":17698,\"Kod stacji\":\"WpLesznPrusa\",\"Nazwa stacji\":\"Leszno,
+        ul. Boles\u0142awa Prusa\",\"WGS84 \u03C6 N\":\"51.833683\",\"WGS84 \u03BB
+        E\":\"16.592122\",\"Identyfikator miasta\":457,\"Nazwa miasta\":\"Leszno\",\"Gmina\":\"Leszno\",\"Powiat\":\"Leszno\",\"Wojew\xF3dztwo\":\"WIELKOPOLSKIE\",\"Ulica\":\"Boles\u0142awa
+        Prusa 33\"},{\"Identyfikator stacji\":17880,\"Kod stacji\":\"SlZabSkloCu2\",\"Nazwa
+        stacji\":\"Zabrze, ul. M. Sk\u0142odowskiej-Curie\",\"WGS84 \u03C6 N\":\"50.317072\",\"WGS84
+        \u03BB E\":\"18.771258\",\"Identyfikator miasta\":1073,\"Nazwa miasta\":\"Zabrze\",\"Gmina\":\"Zabrze\",\"Powiat\":\"Zabrze\",\"Wojew\xF3dztwo\":\"\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        M. Sk\u0142odowskiej-Curie 34\"},{\"Identyfikator stacji\":20140,\"Kod stacji\":\"PdWysMazMajaMOB\",\"Nazwa
+        stacji\":\"Wysokie Mazowieckie, ul. 1 Maja\",\"WGS84 \u03C6 N\":\"52.913878\",\"WGS84
+        \u03BB E\":\"22.509275\",\"Identyfikator miasta\":2912,\"Nazwa miasta\":\"Wysokie
+        Mazowieckie\",\"Gmina\":\"Wysokie Mazowieckie\",\"Powiat\":\"wysokomazowiecki\",\"Wojew\xF3dztwo\":\"PODLASKIE\",\"Ulica\":\"ul.
+        1 Maja 6\"},{\"Identyfikator stacji\":20202,\"Kod stacji\":\"PkKrasneWiesMOB\",\"Nazwa
+        stacji\":\"Krasne\",\"WGS84 \u03C6 N\":\"50.043935\",\"WGS84 \u03BB E\":\"22.090741\",\"Identyfikator
+        miasta\":2932,\"Nazwa miasta\":\"Krasne\",\"Gmina\":\"Krasne\",\"Powiat\":\"rzeszowski\",\"Wojew\xF3dztwo\":\"PODKARPACKIE\",\"Ulica\":null},{\"Identyfikator
+        stacji\":20209,\"Kod stacji\":\"MzCiechKraszMOB\",\"Nazwa stacji\":\"Ciechan\xF3w,
+        ul. Kraszewskiego\",\"WGS84 \u03C6 N\":\"52.885541\",\"WGS84 \u03BB E\":\"20.602511\",\"Identyfikator
+        miasta\":120,\"Nazwa miasta\":\"Ciechan\xF3w\",\"Gmina\":\"Ciechan\xF3w\",\"Powiat\":\"ciechanowski\",\"Wojew\xF3dztwo\":\"MAZOWIECKIE\",\"Ulica\":\"ul.
+        Kraszewskiego 8\"},{\"Identyfikator stacji\":20277,\"Kod stacji\":\"LbTomaLubPSPMOB\",\"Nazwa
+        stacji\":\"Tomasz\xF3w Lubelski, ul. Janusza Petera\",\"WGS84 \u03C6 N\":\"50.444128\",\"WGS84
+        \u03BB E\":\"23.421553\",\"Identyfikator miasta\":964,\"Nazwa miasta\":\"Tomasz\xF3w
+        Lubelski\",\"Gmina\":\"Tomasz\xF3w Lubelski\",\"Powiat\":\"tomaszowski\",\"Wojew\xF3dztwo\":\"LUBELSKIE\",\"Ulica\":\"ul.
+        Janusza Petera 7\"},{\"Identyfikator stacji\":20307,\"Kod stacji\":\"WpKrotoOlimpMOB\",\"Nazwa
+        stacji\":\"Krotoszyn, ul. Olimpijska\",\"WGS84 \u03C6 N\":\"51.697308\",\"WGS84
+        \u03BB E\":\"17.441263\",\"Identyfikator miasta\":430,\"Nazwa miasta\":\"Krotoszyn\",\"Gmina\":\"Krotoszyn\",\"Powiat\":\"krotoszy\u0144ski\",\"Wojew\xF3dztwo\":\"WIELKOPOLSKIE\",\"Ulica\":\"Olimpijska
+        10\"},{\"Identyfikator stacji\":20347,\"Kod stacji\":\"PmGdaLaweWzg\",\"Nazwa
+        stacji\":\"Gda\u0144sk, ul. Lawendowe Wzg\xF3rze\",\"WGS84 \u03C6 N\":\"54.328833\",\"WGS84
+        \u03BB E\":\"18.568819\",\"Identyfikator miasta\":218,\"Nazwa miasta\":\"Gda\u0144sk\",\"Gmina\":\"Gda\u0144sk\",\"Powiat\":\"Gda\u0144sk\",\"Wojew\xF3dztwo\":\"POMORSKIE\",\"Ulica\":\"Lawendowe
+        Wzg\xF3rze\"},{\"Identyfikator stacji\":20367,\"Kod stacji\":\"MpKrakPollan\",\"Nazwa
+        stacji\":\"Krak\xF3w, ul. P\xF3\u0142\u0142anki\",\"WGS84 \u03C6 N\":\"50.034702\",\"WGS84
+        \u03BB E\":\"20.044386\",\"Identyfikator miasta\":415,\"Nazwa miasta\":\"Krak\xF3w\",\"Gmina\":\"Krak\xF3w\",\"Powiat\":\"Krak\xF3w\",\"Wojew\xF3dztwo\":\"MA\u0141OPOLSKIE\",\"Ulica\":\"P\xF3\u0142\u0142anki
+        76\"},{\"Identyfikator stacji\":20387,\"Kod stacji\":\"OpNysaRodzi2\",\"Nazwa
+        stacji\":\"Nysa, ul. Rodziewicz\xF3wny 1\",\"WGS84 \u03C6 N\":\"50.460992\",\"WGS84
+        \u03BB E\":\"17.331499\",\"Identyfikator miasta\":628,\"Nazwa miasta\":\"Nysa\",\"Gmina\":\"Nysa\",\"Powiat\":\"nyski\",\"Wojew\xF3dztwo\":\"OPOLSKIE\",\"Ulica\":\"ul.
+        Rodziewicz\xF3wny 1\"},{\"Identyfikator stacji\":20468,\"Kod stacji\":\"DsLubanLudowMOB\",\"Nazwa
+        stacji\":\"Luba\u0144, ul. Ludowa\",\"WGS84 \u03C6 N\":\"51.120091\",\"WGS84
+        \u03BB E\":\"15.298189\",\"Identyfikator miasta\":482,\"Nazwa miasta\":\"Luba\u0144\",\"Gmina\":\"Luba\u0144\",\"Powiat\":\"luba\u0144ski\",\"Wojew\xF3dztwo\":\"DOLNO\u015AL\u0104SKIE\",\"Ulica\":\"Ludowa\"},{\"Identyfikator
+        stacji\":20487,\"Kod stacji\":\"MzWarGrochow\",\"Nazwa stacji\":\"Warszawa,
+        ul. Grochowska\",\"WGS84 \u03C6 N\":\"52.245704\",\"WGS84 \u03BB E\":\"21.080427\",\"Identyfikator
+        miasta\":1006,\"Nazwa miasta\":\"Warszawa\",\"Gmina\":\"Warszawa\",\"Powiat\":\"Warszawa\",\"Wojew\xF3dztwo\":\"MAZOWIECKIE\",\"Ulica\":\"ul.
+        Grochowska 244A\"},{\"Identyfikator stacji\":20488,\"Kod stacji\":\"MzWarSolidar\",\"Nazwa
+        stacji\":\"Warszawa, Al. Solidarno\u015Bci\",\"WGS84 \u03C6 N\":\"52.243573\",\"WGS84
+        \u03BB E\":\"20.999214\",\"Identyfikator miasta\":1006,\"Nazwa miasta\":\"Warszawa\",\"Gmina\":\"Warszawa\",\"Powiat\":\"Warszawa\",\"Wojew\xF3dztwo\":\"MAZOWIECKIE\",\"Ulica\":\"Al.
+        Solidarno\u015Bci 83/89\"},{\"Identyfikator stacji\":20548,\"Kod stacji\":\"LuSzliPrzemyMOB\",\"Nazwa
+        stacji\":\"Szlichtyngowa, ul. Przemys\u0142owa\",\"WGS84 \u03C6 N\":\"51.710278\",\"WGS84
+        \u03BB E\":\"16.239722\",\"Identyfikator miasta\":2952,\"Nazwa miasta\":\"Szlichtyngowa\",\"Gmina\":\"Szlichtyngowa\",\"Powiat\":\"wschowski\",\"Wojew\xF3dztwo\":\"LUBUSKIE\",\"Ulica\":\"Przemys\u0142owa\"},{\"Identyfikator
+        stacji\":20567,\"Kod stacji\":\"SkOstrSwPolnMOB\",\"Nazwa stacji\":\"Ostrowiec
+        \u015Awi\u0119tokrzyski, ul. Polna\",\"WGS84 \u03C6 N\":\"50.945335\",\"WGS84
+        \u03BB E\":\"21.382405\",\"Identyfikator miasta\":656,\"Nazwa miasta\":\"Ostrowiec
+        \u015Awi\u0119tokrzyski\",\"Gmina\":\"Ostrowiec \u015Awi\u0119tokrzyski\",\"Powiat\":\"ostrowiecki\",\"Wojew\xF3dztwo\":\"\u015AWI\u0118TOKRZYSKIE\",\"Ulica\":\"ul.
+        Polna 56\"},{\"Identyfikator stacji\":20568,\"Kod stacji\":\"SkSolecLesnaMOB\",\"Nazwa
+        stacji\":\"Solec-Zdr\xF3j, ul. Le\u015Bna\",\"WGS84 \u03C6 N\":\"50.366080\",\"WGS84
+        \u03BB E\":\"20.884767\",\"Identyfikator miasta\":860,\"Nazwa miasta\":\"Solec
+        Zdr\xF3j\",\"Gmina\":\"Solec-Zdr\xF3j\",\"Powiat\":\"buski\",\"Wojew\xF3dztwo\":\"\u015AWI\u0118TOKRZYSKIE\",\"Ulica\":\"ul.
+        Le\u015Bna\"},{\"Identyfikator stacji\":20590,\"Kod stacji\":\"DsKobierzyceMOB\",\"Nazwa
+        stacji\":\"ul. Sportowa 15\",\"WGS84 \u03C6 N\":\"50.974886\",\"WGS84 \u03BB
+        E\":\"16.929652\",\"Identyfikator miasta\":370,\"Nazwa miasta\":\"Kobierzyce\",\"Gmina\":\"Kobierzyce\",\"Powiat\":\"wroc\u0142awski\",\"Wojew\xF3dztwo\":\"DOLNO\u015AL\u0104SKIE\",\"Ulica\":\"ul.
+        Sportowa 15\"},{\"Identyfikator stacji\":20591,\"Kod stacji\":\"KpSolecTartaMOB\",\"Nazwa
+        stacji\":\"Solec Kujawski, ul. Tartaczna 10\",\"WGS84 \u03C6 N\":\"53.079306\",\"WGS84
+        \u03BB E\":\"18.248444\",\"Identyfikator miasta\":859,\"Nazwa miasta\":\"Solec
+        Kujawski\",\"Gmina\":\"Solec Kujawski\",\"Powiat\":\"bydgoski\",\"Wojew\xF3dztwo\":\"KUJAWSKO-POMORSKIE\",\"Ulica\":\"Tartaczna
+        10\"},{\"Identyfikator stacji\":20607,\"Kod stacji\":\"PmTczewCzyzyMOB\",\"Nazwa
+        stacji\":\"Tczew, ul. Czy\u017Cykowska\",\"WGS84 \u03C6 N\":\"54.081937\",\"WGS84
+        \u03BB E\":\"18.804446\",\"Identyfikator miasta\":960,\"Nazwa miasta\":\"Tczew\",\"Gmina\":\"Tczew\",\"Powiat\":\"tczewski\",\"Wojew\xF3dztwo\":\"POMORSKIE\",\"Ulica\":\"Czy\u017Cykowska\"},{\"Identyfikator
+        stacji\":20647,\"Kod stacji\":\"WmBraniePCKMOB\",\"Nazwa stacji\":\"Braniewo,
+        ul. PCK\",\"WGS84 \u03C6 N\":\"54.383907\",\"WGS84 \u03BB E\":\"19.815018\",\"Identyfikator
+        miasta\":2803,\"Nazwa miasta\":\"Braniewo\",\"Gmina\":\"Braniewo\",\"Powiat\":\"braniewski\",\"Wojew\xF3dztwo\":\"WARMI\u0143SKO-MAZURSKIE\",\"Ulica\":\"PCK
+        4\"}],\"meta\":{\"dc:description\":\"Us\u0142uga sieciowa udost\u0119pniaj\u0105ca
+        list\u0119 funkcjonuj\u0105cych stacji pomiarowych\",\"sy:updateFrequency\":\"1\",\"dc:language\":\"pol
+        (ISO 639-2 / ISO 639-3)\",\"schema:contentType\":\"application/ld+json\",\"schema:provider\":{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"address\":{\"@type\":\"PostalAddress\",\"addressLocality\":\"Warszawa\",\"postalCode\":\"02-362\",\"streetAddress\":\"Bitwy
+        Warszawskiej 1920 3\"},\"email\":\"api@gios.gov.pl\",\"name\":\"G\u0142\xF3wny
+        Inspektorat Ochrony \u015Arodowiska\"},\"schema:dateModified\":\"do uzupe\u0142nienia
+        po publikacji (ISO 8601)\",\"dc:title\":\"Lista stacji pomiarowych\",\"schema:datePublished\":\"10.04.2017\",\"schema:keywords\":\"powietrze,
+        jako\u015B\u0107 powietrza, zanieczyszczenie powietrza, stacje pomiarowe,
+        stanowiska pomiarowe, monitoring powietrza, Pa\u0144stwowy Monitoring \u015Arodowiska,
+        \u015Brodowisko, stan \u015Brodowiska\",\"sy:updatePeriod\":\"year\",\"schema:isPartOf\":\"Pa\u0144stwowy
+        Monitoring \u015Arodowiska, Jako\u015B\u0107 powietrza\"},\"links\":{\"next\":\"https://api.gios.gov.pl/pjp-api/v1/rest/station/findAll?size=500&page=1&size=500\",\"last\":\"https://api.gios.gov.pl/pjp-api/v1/rest/station/findAll?size=500&page=0&size=500\",\"prev\":\"https://api.gios.gov.pl/pjp-api/v1/rest/station/findAll?size=500&page=0&size=500\",\"self\":\"https://api.gios.gov.pl/pjp-api/v1/rest/station/findAll?size=500&page=0&size=500\",\"first\":\"https://api.gios.gov.pl/pjp-api/v1/rest/station/findAll?size=500&page=0&size=500\"},\"totalPages\":1}"
+    headers:
+      access-control-allow-origin:
+      - powietrze.gios.gov.pl
+      cache-control:
+      - max-age=120, public
+      connection:
+      - keep-alive
+      content-length:
+      - '89112'
+      content-type:
+      - application/ld+json;charset=utf-8
+      date:
+      - Thu, 08 Oct 2026 14:56:14 GMT
+      keep-alive:
+      - timeout=60
+      set-cookie:
+      - SERVERID=9983a6401c537cc0eedd7d800eafc76a;max-age=300;Path=/;HttpOnly
+      - cookiesession1=678A3E5FE92863B8654AD9221FD10EC2;Expires=Fri, 08 Oct 2027 14:56:14
+        GMT;Path=/;HttpOnly
+      strict-transport-security:
+      - max-age=31536000 ; includeSubDomains
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - DENY
+      x-xss-protection:
+      - '0'
+    status:
+      code: 200
+      message: ''
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.gios.gov.pl
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: GET
+    uri: https://api.gios.gov.pl/pjp-api/v1/rest/station/sensors/115
+  response:
+    body:
+      string: "{\"@context\":{\"meta\":\"https://schema.org/meta\",\"totalPages\":\"https://schema.org/totalPages\",\"links\":\"https://schema.org/links\"},\"@context\":{\"Lista
+        stanowisk pomiarowych dla podanej stacji\":{\"@id\":\"https://api.gios.gov.pl/pjp-api/v1/rest/station/sensors\"},\"links\":\"https://schema.org/relatedLink\",\"totalPages\":\"https://schema.org/numberOfPages\"},\"Lista
+        stanowisk pomiarowych dla podanej stacji\":[{\"Identyfikator stanowiska\":645,\"Identyfikator
+        stacji\":115,\"Wska\u017Anik\":\"py\u0142 zawieszony PM2.5\",\"Wska\u017Anik
+        - wz\xF3r\":\"PM2.5\",\"Wska\u017Anik - kod\":\"PM2.5\",\"Id wska\u017Anika\":69}],\"meta\":{\"dc:description\":\"Us\u0142uga
+        sieciowa udost\u0119pniaj\u0105ca list\u0119 funkcjonuj\u0105cych stanowisk
+        pomiarowych\",\"sy:updateFrequency\":\"1\",\"dc:language\":\"pol (ISO 639-2
+        / ISO 639-3)\",\"schema:contentType\":\"application/ld+json\",\"schema:provider\":{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"address\":{\"@type\":\"PostalAddress\",\"addressLocality\":\"Warszawa\",\"postalCode\":\"02-362\",\"streetAddress\":\"Bitwy
+        Warszawskiej 1920 3\"},\"email\":\"api@gios.gov.pl\",\"name\":\"G\u0142\xF3wny
+        Inspektorat Ochrony \u015Arodowiska\"},\"schema:dateModified\":\"03.11.2022\",\"dc:title\":\"Lista
+        stanowisk pomiarowych na stacji\",\"schema:datePublished\":\"10.04.2017\",\"schema:keywords\":\"powietrze,
+        jako\u015B\u0107 powietrza, zanieczyszczenie powietrza, stacje pomiarowe,
+        stanowiska pomiarowe, monitoring powietrza, Pa\u0144stwowy Monitoring \u015Arodowiska,
+        \u015Brodowisko, stan \u015Brodowiska\",\"sy:updatePeriod\":\"year\",\"schema:isPartOf\":\"Pa\u0144stwowy
+        Monitoring \u015Arodowiska, Jako\u015B\u0107 powietrza\"},\"links\":{\"next\":\"https://api.gios.gov.pl/pjp-api/v1/rest/station/sensors/115?page=1&size=20\",\"last\":\"https://api.gios.gov.pl/pjp-api/v1/rest/station/sensors/115?page=0&size=20\",\"prev\":\"https://api.gios.gov.pl/pjp-api/v1/rest/station/sensors/115?page=0&size=20\",\"self\":\"https://api.gios.gov.pl/pjp-api/v1/rest/station/sensors/115?page=0&size=20\",\"first\":\"https://api.gios.gov.pl/pjp-api/v1/rest/station/sensors/115?page=0&size=20\"},\"totalPages\":1}"
+    headers:
+      access-control-allow-origin:
+      - powietrze.gios.gov.pl
+      cache-control:
+      - max-age=120, public
+      connection:
+      - keep-alive
+      content-length:
+      - '1939'
+      content-type:
+      - application/ld+json;charset=utf-8
+      date:
+      - Thu, 08 Oct 2026 14:56:15 GMT
+      keep-alive:
+      - timeout=60
+      set-cookie:
+      - SERVERID=9983a6401c537cc0eedd7d800fafc76a;max-age=300;Path=/;HttpOnly
+      - cookiesession1=678A3E5FDC382202879373DA313242FC;Expires=Fri, 08 Oct 2027 14:56:15
+        GMT;Path=/;HttpOnly
+      strict-transport-security:
+      - max-age=31536000 ; includeSubDomains
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - DENY
+      x-xss-protection:
+      - '0'
+    status:
+      code: 200
+      message: ''
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.gios.gov.pl
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: GET
+    uri: https://api.gios.gov.pl/pjp-api/v1/rest/station/sensors/117
+  response:
+    body:
+      string: "{\"@context\":{\"meta\":\"https://schema.org/meta\",\"totalPages\":\"https://schema.org/totalPages\",\"links\":\"https://schema.org/links\"},\"@context\":{\"Lista
+        stanowisk pomiarowych dla podanej stacji\":{\"@id\":\"https://api.gios.gov.pl/pjp-api/v1/rest/station/sensors\"},\"links\":\"https://schema.org/relatedLink\",\"totalPages\":\"https://schema.org/numberOfPages\"},\"Lista
+        stanowisk pomiarowych dla podanej stacji\":[{\"Identyfikator stanowiska\":652,\"Identyfikator
+        stacji\":117,\"Wska\u017Anik\":\"arsen w PM10\",\"Wska\u017Anik - wz\xF3r\":\"As(PM10)\",\"Wska\u017Anik
+        - kod\":\"As(PM10)\",\"Id wska\u017Anika\":60},{\"Identyfikator stanowiska\":653,\"Identyfikator
+        stacji\":117,\"Wska\u017Anik\":\"benzo(a)antracen w PM10\",\"Wska\u017Anik
+        - wz\xF3r\":\"BaA(PM10)\",\"Wska\u017Anik - kod\":\"BaA(PM10)\",\"Id wska\u017Anika\":64},{\"Identyfikator
+        stanowiska\":654,\"Identyfikator stacji\":117,\"Wska\u017Anik\":\"benzo(a)piren
+        w PM10\",\"Wska\u017Anik - wz\xF3r\":\"BaP(PM10)\",\"Wska\u017Anik - kod\":\"BaP(PM10)\",\"Id
+        wska\u017Anika\":61},{\"Identyfikator stanowiska\":655,\"Identyfikator stacji\":117,\"Wska\u017Anik\":\"benzo(b)fluoranten
+        w PM10\",\"Wska\u017Anik - wz\xF3r\":\"BbF(PM10)\",\"Wska\u017Anik - kod\":\"BbF(PM10)\",\"Id
+        wska\u017Anika\":65},{\"Identyfikator stanowiska\":656,\"Identyfikator stacji\":117,\"Wska\u017Anik\":\"benzo(j)fluoranten
+        w PM10\",\"Wska\u017Anik - wz\xF3r\":\"BjF(PM10)\",\"Wska\u017Anik - kod\":\"BjF(PM10)\",\"Id
+        wska\u017Anika\":68},{\"Identyfikator stanowiska\":657,\"Identyfikator stacji\":117,\"Wska\u017Anik\":\"benzo(k)fluoranten
+        w PM10\",\"Wska\u017Anik - wz\xF3r\":\"BkF(PM10)\",\"Wska\u017Anik - kod\":\"BkF(PM10)\",\"Id
+        wska\u017Anika\":66},{\"Identyfikator stanowiska\":658,\"Identyfikator stacji\":117,\"Wska\u017Anik\":\"benzen\",\"Wska\u017Anik
+        - wz\xF3r\":\"C6H6\",\"Wska\u017Anik - kod\":\"C6H6\",\"Id wska\u017Anika\":10},{\"Identyfikator
+        stanowiska\":659,\"Identyfikator stacji\":117,\"Wska\u017Anik\":\"kadm w PM10\",\"Wska\u017Anik
+        - wz\xF3r\":\"Cd(PM10)\",\"Wska\u017Anik - kod\":\"Cd(PM10)\",\"Id wska\u017Anika\":57},{\"Identyfikator
+        stanowiska\":660,\"Identyfikator stacji\":117,\"Wska\u017Anik\":\"tlenek w\u0119gla\",\"Wska\u017Anik
+        - wz\xF3r\":\"CO\",\"Wska\u017Anik - kod\":\"CO\",\"Id wska\u017Anika\":8},{\"Identyfikator
+        stanowiska\":661,\"Identyfikator stacji\":117,\"Wska\u017Anik\":\"dibenzo(a,h)antracen
+        w PM10\",\"Wska\u017Anik - wz\xF3r\":\"DBahA(PM10)\",\"Wska\u017Anik - kod\":\"DBahA(PM10)\",\"Id
+        wska\u017Anika\":63},{\"Identyfikator stanowiska\":662,\"Identyfikator stacji\":117,\"Wska\u017Anik\":\"indeno(1,2,3-cd)piren
+        w PM10\",\"Wska\u017Anik - wz\xF3r\":\"IP(PM10)\",\"Wska\u017Anik - kod\":\"IP(PM10)\",\"Id
+        wska\u017Anika\":67},{\"Identyfikator stanowiska\":663,\"Identyfikator stacji\":117,\"Wska\u017Anik\":\"nikiel
+        w PM10\",\"Wska\u017Anik - wz\xF3r\":\"Ni(PM10)\",\"Wska\u017Anik - kod\":\"Ni(PM10)\",\"Id
+        wska\u017Anika\":58},{\"Identyfikator stanowiska\":664,\"Identyfikator stacji\":117,\"Wska\u017Anik\":\"tlenek
+        azotu\",\"Wska\u017Anik - wz\xF3r\":\"NO\",\"Wska\u017Anik - kod\":\"NO\",\"Id
+        wska\u017Anika\":16},{\"Identyfikator stanowiska\":665,\"Identyfikator stacji\":117,\"Wska\u017Anik\":\"dwutlenek
+        azotu\",\"Wska\u017Anik - wz\xF3r\":\"NO2\",\"Wska\u017Anik - kod\":\"NO2\",\"Id
+        wska\u017Anika\":6},{\"Identyfikator stanowiska\":666,\"Identyfikator stacji\":117,\"Wska\u017Anik\":\"tlenki
+        azotu\",\"Wska\u017Anik - wz\xF3r\":\"NOx\",\"Wska\u017Anik - kod\":\"NOx\",\"Id
+        wska\u017Anika\":7},{\"Identyfikator stanowiska\":667,\"Identyfikator stacji\":117,\"Wska\u017Anik\":\"ozon\",\"Wska\u017Anik
+        - wz\xF3r\":\"O3\",\"Wska\u017Anik - kod\":\"O3\",\"Id wska\u017Anika\":5},{\"Identyfikator
+        stanowiska\":668,\"Identyfikator stacji\":117,\"Wska\u017Anik\":\"o\u0142\xF3w
+        w PM10\",\"Wska\u017Anik - wz\xF3r\":\"Pb(PM10)\",\"Wska\u017Anik - kod\":\"Pb(PM10)\",\"Id
+        wska\u017Anika\":55},{\"Identyfikator stanowiska\":669,\"Identyfikator stacji\":117,\"Wska\u017Anik\":\"py\u0142
+        zawieszony PM10\",\"Wska\u017Anik - wz\xF3r\":\"PM10\",\"Wska\u017Anik - kod\":\"PM10\",\"Id
+        wska\u017Anika\":3},{\"Identyfikator stanowiska\":670,\"Identyfikator stacji\":117,\"Wska\u017Anik\":\"py\u0142
+        zawieszony PM2.5\",\"Wska\u017Anik - wz\xF3r\":\"PM2.5\",\"Wska\u017Anik -
+        kod\":\"PM2.5\",\"Id wska\u017Anika\":69},{\"Identyfikator stanowiska\":672,\"Identyfikator
+        stacji\":117,\"Wska\u017Anik\":\"dwutlenek siarki\",\"Wska\u017Anik - wz\xF3r\":\"SO2\",\"Wska\u017Anik
+        - kod\":\"SO2\",\"Id wska\u017Anika\":1}],\"meta\":{\"dc:description\":\"Us\u0142uga
+        sieciowa udost\u0119pniaj\u0105ca list\u0119 funkcjonuj\u0105cych stanowisk
+        pomiarowych\",\"sy:updateFrequency\":\"1\",\"dc:language\":\"pol (ISO 639-2
+        / ISO 639-3)\",\"schema:contentType\":\"application/ld+json\",\"schema:provider\":{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"address\":{\"@type\":\"PostalAddress\",\"addressLocality\":\"Warszawa\",\"postalCode\":\"02-362\",\"streetAddress\":\"Bitwy
+        Warszawskiej 1920 3\"},\"email\":\"api@gios.gov.pl\",\"name\":\"G\u0142\xF3wny
+        Inspektorat Ochrony \u015Arodowiska\"},\"schema:dateModified\":\"03.11.2022\",\"dc:title\":\"Lista
+        stanowisk pomiarowych na stacji\",\"schema:datePublished\":\"10.04.2017\",\"schema:keywords\":\"powietrze,
+        jako\u015B\u0107 powietrza, zanieczyszczenie powietrza, stacje pomiarowe,
+        stanowiska pomiarowe, monitoring powietrza, Pa\u0144stwowy Monitoring \u015Arodowiska,
+        \u015Brodowisko, stan \u015Brodowiska\",\"sy:updatePeriod\":\"year\",\"schema:isPartOf\":\"Pa\u0144stwowy
+        Monitoring \u015Arodowiska, Jako\u015B\u0107 powietrza\"},\"links\":{\"next\":\"https://api.gios.gov.pl/pjp-api/v1/rest/station/sensors/117?page=1&size=20\",\"last\":\"https://api.gios.gov.pl/pjp-api/v1/rest/station/sensors/117?page=1&size=20\",\"prev\":\"https://api.gios.gov.pl/pjp-api/v1/rest/station/sensors/117?page=0&size=20\",\"self\":\"https://api.gios.gov.pl/pjp-api/v1/rest/station/sensors/117?page=0&size=20\",\"first\":\"https://api.gios.gov.pl/pjp-api/v1/rest/station/sensors/117?page=0&size=20\"},\"totalPages\":2}"
+    headers:
+      access-control-allow-origin:
+      - powietrze.gios.gov.pl
+      cache-control:
+      - max-age=120, public
+      connection:
+      - keep-alive
+      content-length:
+      - '5113'
+      content-type:
+      - application/ld+json;charset=utf-8
+      date:
+      - Thu, 08 Oct 2026 14:56:15 GMT
+      keep-alive:
+      - timeout=60
+      set-cookie:
+      - SERVERID=6eacdc246b609fcbeedd7d800fafc76a;max-age=300;Path=/;HttpOnly
+      - cookiesession1=678A3E5FC2AECC98956339ACBF45439C;Expires=Fri, 08 Oct 2027 14:56:15
+        GMT;Path=/;HttpOnly
+      strict-transport-security:
+      - max-age=31536000 ; includeSubDomains
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - DENY
+      x-xss-protection:
+      - '0'
+    status:
+      code: 200
+      message: ''
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.gios.gov.pl
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: GET
+    uri: https://api.gios.gov.pl/pjp-api/v1/rest/data/getData/669?size=100
+  response:
+    body:
+      string: "{\"error_result\":\"Przepraszamy, nie mo\u017Cna zwr\xF3ci\u0107 danych.\",\"error_reason\":\"Dla
+        stanowiska typu manualnego wyniki pomiar\xF3w nie s\u0105 dost\u0119pne na
+        bie\u017C\u0105co, s\u0105 one udost\u0119pniane po 4-8 tygodniach od poboru
+        pr\xF3by przez us\u0142ug\u0119 API \u201EArchiwalne dane pomiarowe\u201D\",\"error_solution\":\"Prosimy
+        o podanie warto\u015Bci parametr\xF3w zgodnych z dokumentacj\u0105.\",\"error_help\":\"https://powietrze.gios.gov.pl/pjp/content/api\",\"error_code\":\"API-ERR-100003\"}"
+    headers:
+      cache-control:
+      - max-age=30
+      connection:
+      - close
+      content-length:
+      - '442'
+      content-type:
+      - application/json;charset=UTF-8
+      date:
+      - Thu, 08 Oct 2026 14:56:16 GMT
+      expires:
+      - '0'
+      pragma:
+      - no-cache
+      set-cookie:
+      - SERVERID=9983a6401c537cc0eedd7d8010afc76a;max-age=300;Path=/;HttpOnly
+      - cookiesession1=678A3E5F58D96EB1F0933A5F8F3DFDA3;Expires=Fri, 08 Oct 2027 14:56:16
+        GMT;Path=/;HttpOnly
+      strict-transport-security:
+      - max-age=31536000 ; includeSubDomains
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - DENY
+      x-xss-protection:
+      - '0'
+    status:
+      code: 400
+      message: ''
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.gios.gov.pl
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: GET
+    uri: https://api.gios.gov.pl/pjp-api/v1/rest/station/sensors/129
+  response:
+    body:
+      string: "{\"@context\":{\"meta\":\"https://schema.org/meta\",\"totalPages\":\"https://schema.org/totalPages\",\"links\":\"https://schema.org/links\"},\"@context\":{\"Lista
+        stanowisk pomiarowych dla podanej stacji\":{\"@id\":\"https://api.gios.gov.pl/pjp-api/v1/rest/station/sensors\"},\"links\":\"https://schema.org/relatedLink\",\"totalPages\":\"https://schema.org/numberOfPages\"},\"Lista
+        stanowisk pomiarowych dla podanej stacji\":[{\"Identyfikator stanowiska\":737,\"Identyfikator
+        stacji\":129,\"Wska\u017Anik\":\"tlenek w\u0119gla\",\"Wska\u017Anik - wz\xF3r\":\"CO\",\"Wska\u017Anik
+        - kod\":\"CO\",\"Id wska\u017Anika\":8},{\"Identyfikator stanowiska\":739,\"Identyfikator
+        stacji\":129,\"Wska\u017Anik\":\"tlenek azotu\",\"Wska\u017Anik - wz\xF3r\":\"NO\",\"Wska\u017Anik
+        - kod\":\"NO\",\"Id wska\u017Anika\":16},{\"Identyfikator stanowiska\":740,\"Identyfikator
+        stacji\":129,\"Wska\u017Anik\":\"dwutlenek azotu\",\"Wska\u017Anik - wz\xF3r\":\"NO2\",\"Wska\u017Anik
+        - kod\":\"NO2\",\"Id wska\u017Anika\":6},{\"Identyfikator stanowiska\":741,\"Identyfikator
+        stacji\":129,\"Wska\u017Anik\":\"tlenki azotu\",\"Wska\u017Anik - wz\xF3r\":\"NOx\",\"Wska\u017Anik
+        - kod\":\"NOx\",\"Id wska\u017Anika\":7},{\"Identyfikator stanowiska\":744,\"Identyfikator
+        stacji\":129,\"Wska\u017Anik\":\"py\u0142 zawieszony PM2.5\",\"Wska\u017Anik
+        - wz\xF3r\":\"PM2.5\",\"Wska\u017Anik - kod\":\"PM2.5\",\"Id wska\u017Anika\":69},{\"Identyfikator
+        stanowiska\":33220,\"Identyfikator stacji\":129,\"Wska\u017Anik\":\"py\u0142
+        zawieszony PM10\",\"Wska\u017Anik - wz\xF3r\":\"PM10\",\"Wska\u017Anik - kod\":\"PM10\",\"Id
+        wska\u017Anika\":3}],\"meta\":{\"dc:description\":\"Us\u0142uga sieciowa udost\u0119pniaj\u0105ca
+        list\u0119 funkcjonuj\u0105cych stanowisk pomiarowych\",\"sy:updateFrequency\":\"1\",\"dc:language\":\"pol
+        (ISO 639-2 / ISO 639-3)\",\"schema:contentType\":\"application/ld+json\",\"schema:provider\":{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"address\":{\"@type\":\"PostalAddress\",\"addressLocality\":\"Warszawa\",\"postalCode\":\"02-362\",\"streetAddress\":\"Bitwy
+        Warszawskiej 1920 3\"},\"email\":\"api@gios.gov.pl\",\"name\":\"G\u0142\xF3wny
+        Inspektorat Ochrony \u015Arodowiska\"},\"schema:dateModified\":\"03.11.2022\",\"dc:title\":\"Lista
+        stanowisk pomiarowych na stacji\",\"schema:datePublished\":\"10.04.2017\",\"schema:keywords\":\"powietrze,
+        jako\u015B\u0107 powietrza, zanieczyszczenie powietrza, stacje pomiarowe,
+        stanowiska pomiarowe, monitoring powietrza, Pa\u0144stwowy Monitoring \u015Arodowiska,
+        \u015Brodowisko, stan \u015Brodowiska\",\"sy:updatePeriod\":\"year\",\"schema:isPartOf\":\"Pa\u0144stwowy
+        Monitoring \u015Arodowiska, Jako\u015B\u0107 powietrza\"},\"links\":{\"next\":\"https://api.gios.gov.pl/pjp-api/v1/rest/station/sensors/129?page=1&size=20\",\"last\":\"https://api.gios.gov.pl/pjp-api/v1/rest/station/sensors/129?page=0&size=20\",\"prev\":\"https://api.gios.gov.pl/pjp-api/v1/rest/station/sensors/129?page=0&size=20\",\"self\":\"https://api.gios.gov.pl/pjp-api/v1/rest/station/sensors/129?page=0&size=20\",\"first\":\"https://api.gios.gov.pl/pjp-api/v1/rest/station/sensors/129?page=0&size=20\"},\"totalPages\":1}"
+    headers:
+      access-control-allow-origin:
+      - powietrze.gios.gov.pl
+      cache-control:
+      - max-age=120, public
+      connection:
+      - keep-alive
+      content-length:
+      - '2727'
+      content-type:
+      - application/ld+json;charset=utf-8
+      date:
+      - Thu, 08 Oct 2026 14:56:16 GMT
+      keep-alive:
+      - timeout=60
+      set-cookie:
+      - SERVERID=9983a6401c537cc0eedd7d8010afc76a;max-age=300;Path=/;HttpOnly
+      - cookiesession1=678A3E5FD4F669F255D7BA71AB6D41B3;Expires=Fri, 08 Oct 2027 14:56:16
+        GMT;Path=/;HttpOnly
+      strict-transport-security:
+      - max-age=31536000 ; includeSubDomains
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - DENY
+      x-xss-protection:
+      - '0'
+    status:
+      code: 200
+      message: ''
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.gios.gov.pl
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: GET
+    uri: https://api.gios.gov.pl/pjp-api/v1/rest/data/getData/33220?size=100
+  response:
+    body:
+      string: "{\"@context\":{\"meta\":\"https://schema.org/meta\",\"totalPages\":\"https://schema.org/totalPages\",\"links\":\"https://schema.org/links\"},\"@context\":{\"Lista
+        danych pomiarowych\":{\"@id\":\"https://api.gios.gov.pl/pjp-api/v1/rest/data/getData\"},\"links\":\"https://schema.org/relatedLink\",\"totalPages\":\"https://schema.org/numberOfPages\"},\"Lista
+        danych pomiarowych\":[{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-08
+        16:00:00\",\"Warto\u015B\u0107\":25.0},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-08
+        15:00:00\",\"Warto\u015B\u0107\":27.8},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-08
+        14:00:00\",\"Warto\u015B\u0107\":26.3},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-08
+        13:00:00\",\"Warto\u015B\u0107\":26.7},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-08
+        12:00:00\",\"Warto\u015B\u0107\":31.9},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-08
+        11:00:00\",\"Warto\u015B\u0107\":47.5},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-08
+        10:00:00\",\"Warto\u015B\u0107\":51.4},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-08
+        09:00:00\",\"Warto\u015B\u0107\":50.3},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-08
+        08:00:00\",\"Warto\u015B\u0107\":46.5},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-08
+        07:00:00\",\"Warto\u015B\u0107\":49.5},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-08
+        06:00:00\",\"Warto\u015B\u0107\":51.2},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-08
+        05:00:00\",\"Warto\u015B\u0107\":44.2},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-08
+        04:00:00\",\"Warto\u015B\u0107\":42.0},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-08
+        03:00:00\",\"Warto\u015B\u0107\":69.0},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-08
+        02:00:00\",\"Warto\u015B\u0107\":44.8},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-08
+        01:00:00\",\"Warto\u015B\u0107\":62.2},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-08
+        00:00:00\",\"Warto\u015B\u0107\":53.7},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-07
+        23:00:00\",\"Warto\u015B\u0107\":64.5},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-07
+        22:00:00\",\"Warto\u015B\u0107\":57.9},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-07
+        21:00:00\",\"Warto\u015B\u0107\":55.4},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-07
+        20:00:00\",\"Warto\u015B\u0107\":51.0},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-07
+        19:00:00\",\"Warto\u015B\u0107\":45.1},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-07
+        18:00:00\",\"Warto\u015B\u0107\":43.1},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-07
+        17:00:00\",\"Warto\u015B\u0107\":43.4},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-07
+        16:00:00\",\"Warto\u015B\u0107\":45.4},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-07
+        15:00:00\",\"Warto\u015B\u0107\":50.1},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-07
+        14:00:00\",\"Warto\u015B\u0107\":53.6},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-07
+        13:00:00\",\"Warto\u015B\u0107\":null},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-07
+        12:00:00\",\"Warto\u015B\u0107\":53.3},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-07
+        11:00:00\",\"Warto\u015B\u0107\":null},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-07
+        10:00:00\",\"Warto\u015B\u0107\":54.8},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-07
+        09:00:00\",\"Warto\u015B\u0107\":54.5},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-07
+        08:00:00\",\"Warto\u015B\u0107\":65.6},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-07
+        07:00:00\",\"Warto\u015B\u0107\":54.1},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-07
+        06:00:00\",\"Warto\u015B\u0107\":49.8},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-07
+        05:00:00\",\"Warto\u015B\u0107\":43.0},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-07
+        04:00:00\",\"Warto\u015B\u0107\":38.5},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-07
+        03:00:00\",\"Warto\u015B\u0107\":36.3},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-07
+        02:00:00\",\"Warto\u015B\u0107\":36.1},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-07
+        01:00:00\",\"Warto\u015B\u0107\":60.9},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-07
+        00:00:00\",\"Warto\u015B\u0107\":52.5},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-06
+        23:00:00\",\"Warto\u015B\u0107\":41.6},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-06
+        22:00:00\",\"Warto\u015B\u0107\":85.5},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-06
+        21:00:00\",\"Warto\u015B\u0107\":93.5},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-06
+        20:00:00\",\"Warto\u015B\u0107\":72.5},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-06
+        19:00:00\",\"Warto\u015B\u0107\":53.1},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-06
+        18:00:00\",\"Warto\u015B\u0107\":27.3},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-06
+        17:00:00\",\"Warto\u015B\u0107\":22.7},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-06
+        16:00:00\",\"Warto\u015B\u0107\":25.6},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-06
+        15:00:00\",\"Warto\u015B\u0107\":23.1},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-06
+        14:00:00\",\"Warto\u015B\u0107\":22.1},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-06
+        13:00:00\",\"Warto\u015B\u0107\":25.2},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-06
+        12:00:00\",\"Warto\u015B\u0107\":27.0},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-06
+        11:00:00\",\"Warto\u015B\u0107\":43.1},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-06
+        10:00:00\",\"Warto\u015B\u0107\":47.2},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-06
+        09:00:00\",\"Warto\u015B\u0107\":46.7},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-06
+        08:00:00\",\"Warto\u015B\u0107\":50.2},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-06
+        07:00:00\",\"Warto\u015B\u0107\":45.6},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-06
+        06:00:00\",\"Warto\u015B\u0107\":46.8},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-06
+        05:00:00\",\"Warto\u015B\u0107\":41.2},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-06
+        04:00:00\",\"Warto\u015B\u0107\":39.8},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-06
+        03:00:00\",\"Warto\u015B\u0107\":58.9},{\"Kod stanowiska\":\"DsWrocAlWisn-PM10-1g\",\"Data\":\"2026-10-06
+        02:00:00\",\"Warto\u015B\u0107\":39.3}],\"meta\":{\"dc:description\":\"Us\u0142uga
+        sieciowa udost\u0119pniaj\u0105ca wyniki jednogodzinnych pomiar\xF3w dwutlenku
+        siarki (SO2), dwutlenku azotu (NO2), py\u0142u PM10, py\u0142u PM2,5, tlenku
+        w\u0119gla (CO), benzenu (C6H6), ozonu (O3), od ostatniego dost\u0119pnego
+        wyniku do trzeciej doby wstecz, na podstawie identyfikatora stanowiska pomiarowego.
+        Dane udost\u0119pniane s\u0105 w czasie lokalnym w jednostce \u03BCg/m3\",\"sy:updateFrequency\":\"1\",\"dc:language\":\"pol
+        (ISO 639-2 / ISO 639-3)\",\"schema:contentType\":\"application/ld+json\",\"schema:provider\":{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"address\":{\"@type\":\"PostalAddress\",\"addressLocality\":\"Warszawa\",\"postalCode\":\"02-362\",\"streetAddress\":\"Bitwy
+        Warszawskiej 1920 3\"},\"email\":\"api@gios.gov.pl\",\"name\":\"G\u0142\xF3wny
+        Inspektorat Ochrony \u015Arodowiska\"},\"schema:dateModified\":\"03.11.2022\",\"dc:title\":\"Bie\u017C\u0105ce
+        dane pomiarowe z wybranego stanowiska\",\"schema:datePublished\":\"10.04.2017\",\"schema:keywords\":\"dane
+        pomiarowe, wyniki pomiar\xF3w, powietrze, jako\u015B\u0107 powietrza, zanieczyszczenie
+        powietrza, stacje pomiarowe, stanowiska pomiarowe, monitoring powietrza, Pa\u0144stwowy
+        Monitoring \u015Arodowiska, \u015Brodowisko, stan \u015Brodowiska\",\"sy:updatePeriod\":\"hourly\",\"schema:isPartOf\":\"Pa\u0144stwowy
+        Monitoring \u015Arodowiska, Jako\u015B\u0107 powietrza\"},\"links\":{\"next\":\"https://api.gios.gov.pl/pjp-api/v1/rest/data/getData/33220?size=100&page=1&size=100\",\"last\":\"https://api.gios.gov.pl/pjp-api/v1/rest/data/getData/33220?size=100&page=0&size=100\",\"prev\":\"https://api.gios.gov.pl/pjp-api/v1/rest/data/getData/33220?size=100&page=0&size=100\",\"self\":\"https://api.gios.gov.pl/pjp-api/v1/rest/data/getData/33220?size=100&page=0&size=100\",\"first\":\"https://api.gios.gov.pl/pjp-api/v1/rest/data/getData/33220?size=100&page=0&size=100\"},\"totalPages\":1}"
+    headers:
+      cache-control:
+      - max-age=30
+      connection:
+      - keep-alive
+      content-length:
+      - '7635'
+      content-type:
+      - application/ld+json;charset=UTF-8
+      date:
+      - Thu, 08 Oct 2026 14:56:17 GMT
+      expires:
+      - '0'
+      keep-alive:
+      - timeout=60
+      pragma:
+      - no-cache
+      set-cookie:
+      - SERVERID=6eacdc246b609fcbeedd7d8011afc76a;max-age=300;Path=/;HttpOnly
+      - cookiesession1=678A3E5F2286D8E750D0AFE9B17334B0;Expires=Fri, 08 Oct 2027 14:56:17
+        GMT;Path=/;HttpOnly
+      strict-transport-security:
+      - max-age=31536000 ; includeSubDomains
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - DENY
+      x-xss-protection:
+      - '0'
+    status:
+      code: 200
+      message: ''
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.gios.gov.pl
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: GET
+    uri: https://api.gios.gov.pl/pjp-api/v1/rest/data/getData/665?size=100
+  response:
+    body:
+      string: "{\"@context\":{\"meta\":\"https://schema.org/meta\",\"totalPages\":\"https://schema.org/totalPages\",\"links\":\"https://schema.org/links\"},\"@context\":{\"Lista
+        danych pomiarowych\":{\"@id\":\"https://api.gios.gov.pl/pjp-api/v1/rest/data/getData\"},\"links\":\"https://schema.org/relatedLink\",\"totalPages\":\"https://schema.org/numberOfPages\"},\"Lista
+        danych pomiarowych\":[{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-08
+        16:00:00\",\"Warto\u015B\u0107\":16.5},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-08
+        15:00:00\",\"Warto\u015B\u0107\":12.6},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-08
+        14:00:00\",\"Warto\u015B\u0107\":9.9},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-08
+        13:00:00\",\"Warto\u015B\u0107\":12.1},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-08
+        12:00:00\",\"Warto\u015B\u0107\":22.0},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-08
+        11:00:00\",\"Warto\u015B\u0107\":null},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-08
+        10:00:00\",\"Warto\u015B\u0107\":null},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-08
+        09:00:00\",\"Warto\u015B\u0107\":41.7},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-08
+        08:00:00\",\"Warto\u015B\u0107\":38.4},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-08
+        07:00:00\",\"Warto\u015B\u0107\":29.0},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-08
+        06:00:00\",\"Warto\u015B\u0107\":18.6},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-08
+        05:00:00\",\"Warto\u015B\u0107\":15.6},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-08
+        04:00:00\",\"Warto\u015B\u0107\":16.9},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-08
+        03:00:00\",\"Warto\u015B\u0107\":18.6},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-08
+        02:00:00\",\"Warto\u015B\u0107\":23.9},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-08
+        01:00:00\",\"Warto\u015B\u0107\":22.0},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-08
+        00:00:00\",\"Warto\u015B\u0107\":23.9},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-07
+        23:00:00\",\"Warto\u015B\u0107\":29.2},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-07
+        22:00:00\",\"Warto\u015B\u0107\":29.4},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-07
+        21:00:00\",\"Warto\u015B\u0107\":36.5},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-07
+        20:00:00\",\"Warto\u015B\u0107\":46.3},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-07
+        19:00:00\",\"Warto\u015B\u0107\":43.4},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-07
+        18:00:00\",\"Warto\u015B\u0107\":20.2},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-07
+        17:00:00\",\"Warto\u015B\u0107\":22.0},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-07
+        16:00:00\",\"Warto\u015B\u0107\":22.0},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-07
+        15:00:00\",\"Warto\u015B\u0107\":22.0},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-07
+        14:00:00\",\"Warto\u015B\u0107\":24.0},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-07
+        13:00:00\",\"Warto\u015B\u0107\":18.5},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-07
+        12:00:00\",\"Warto\u015B\u0107\":16.7},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-07
+        11:00:00\",\"Warto\u015B\u0107\":17.9},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-07
+        10:00:00\",\"Warto\u015B\u0107\":21.5},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-07
+        09:00:00\",\"Warto\u015B\u0107\":26.3},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-07
+        08:00:00\",\"Warto\u015B\u0107\":28.3},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-07
+        07:00:00\",\"Warto\u015B\u0107\":25.2},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-07
+        06:00:00\",\"Warto\u015B\u0107\":null},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-07
+        05:00:00\",\"Warto\u015B\u0107\":24.7},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-07
+        04:00:00\",\"Warto\u015B\u0107\":26.5},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-07
+        03:00:00\",\"Warto\u015B\u0107\":34.6},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-07
+        02:00:00\",\"Warto\u015B\u0107\":39.8},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-07
+        01:00:00\",\"Warto\u015B\u0107\":47.3},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-07
+        00:00:00\",\"Warto\u015B\u0107\":45.1},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-06
+        23:00:00\",\"Warto\u015B\u0107\":58.5},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-06
+        22:00:00\",\"Warto\u015B\u0107\":62.3},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-06
+        21:00:00\",\"Warto\u015B\u0107\":74.1},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-06
+        20:00:00\",\"Warto\u015B\u0107\":79.0},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-06
+        19:00:00\",\"Warto\u015B\u0107\":29.7},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-06
+        18:00:00\",\"Warto\u015B\u0107\":21.9},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-06
+        17:00:00\",\"Warto\u015B\u0107\":21.3},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-06
+        16:00:00\",\"Warto\u015B\u0107\":10.9},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-06
+        15:00:00\",\"Warto\u015B\u0107\":10.2},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-06
+        14:00:00\",\"Warto\u015B\u0107\":8.2},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-06
+        13:00:00\",\"Warto\u015B\u0107\":10.4},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-06
+        12:00:00\",\"Warto\u015B\u0107\":28.7},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-06
+        11:00:00\",\"Warto\u015B\u0107\":44.9},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-06
+        10:00:00\",\"Warto\u015B\u0107\":32.5},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-06
+        09:00:00\",\"Warto\u015B\u0107\":26.3},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-06
+        08:00:00\",\"Warto\u015B\u0107\":22.6},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-06
+        07:00:00\",\"Warto\u015B\u0107\":21.5},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-06
+        06:00:00\",\"Warto\u015B\u0107\":19.4},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-06
+        05:00:00\",\"Warto\u015B\u0107\":21.5},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-06
+        04:00:00\",\"Warto\u015B\u0107\":28.4},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-06
+        03:00:00\",\"Warto\u015B\u0107\":19.7},{\"Kod stanowiska\":\"DsWrocWybCon-NO2-1g\",\"Data\":\"2026-10-06
+        02:00:00\",\"Warto\u015B\u0107\":34.4}],\"meta\":{\"dc:description\":\"Us\u0142uga
+        sieciowa udost\u0119pniaj\u0105ca wyniki jednogodzinnych pomiar\xF3w dwutlenku
+        siarki (SO2), dwutlenku azotu (NO2), py\u0142u PM10, py\u0142u PM2,5, tlenku
+        w\u0119gla (CO), benzenu (C6H6), ozonu (O3), od ostatniego dost\u0119pnego
+        wyniku do trzeciej doby wstecz, na podstawie identyfikatora stanowiska pomiarowego.
+        Dane udost\u0119pniane s\u0105 w czasie lokalnym w jednostce \u03BCg/m3\",\"sy:updateFrequency\":\"1\",\"dc:language\":\"pol
+        (ISO 639-2 / ISO 639-3)\",\"schema:contentType\":\"application/ld+json\",\"schema:provider\":{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"address\":{\"@type\":\"PostalAddress\",\"addressLocality\":\"Warszawa\",\"postalCode\":\"02-362\",\"streetAddress\":\"Bitwy
+        Warszawskiej 1920 3\"},\"email\":\"api@gios.gov.pl\",\"name\":\"G\u0142\xF3wny
+        Inspektorat Ochrony \u015Arodowiska\"},\"schema:dateModified\":\"03.11.2022\",\"dc:title\":\"Bie\u017C\u0105ce
+        dane pomiarowe z wybranego stanowiska\",\"schema:datePublished\":\"10.04.2017\",\"schema:keywords\":\"dane
+        pomiarowe, wyniki pomiar\xF3w, powietrze, jako\u015B\u0107 powietrza, zanieczyszczenie
+        powietrza, stacje pomiarowe, stanowiska pomiarowe, monitoring powietrza, Pa\u0144stwowy
+        Monitoring \u015Arodowiska, \u015Brodowisko, stan \u015Brodowiska\",\"sy:updatePeriod\":\"hourly\",\"schema:isPartOf\":\"Pa\u0144stwowy
+        Monitoring \u015Arodowiska, Jako\u015B\u0107 powietrza\"},\"links\":{\"next\":\"https://api.gios.gov.pl/pjp-api/v1/rest/data/getData/665?size=100&page=1&size=100\",\"last\":\"https://api.gios.gov.pl/pjp-api/v1/rest/data/getData/665?size=100&page=0&size=100\",\"prev\":\"https://api.gios.gov.pl/pjp-api/v1/rest/data/getData/665?size=100&page=0&size=100\",\"self\":\"https://api.gios.gov.pl/pjp-api/v1/rest/data/getData/665?size=100&page=0&size=100\",\"first\":\"https://api.gios.gov.pl/pjp-api/v1/rest/data/getData/665?size=100&page=0&size=100\"},\"totalPages\":1}"
+    headers:
+      cache-control:
+      - max-age=30
+      connection:
+      - keep-alive
+      content-length:
+      - '7560'
+      content-type:
+      - application/ld+json;charset=UTF-8
+      date:
+      - Thu, 08 Oct 2026 14:56:17 GMT
+      expires:
+      - '0'
+      keep-alive:
+      - timeout=60
+      pragma:
+      - no-cache
+      set-cookie:
+      - SERVERID=9983a6401c537cc0eedd7d8011afc76a;max-age=300;Path=/;HttpOnly
+      - cookiesession1=678A3E5FD341A8FADDFA4E0EF2CCE4FA;Expires=Fri, 08 Oct 2027 14:56:17
+        GMT;Path=/;HttpOnly
+      strict-transport-security:
+      - max-age=31536000 ; includeSubDomains
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - DENY
+      x-xss-protection:
+      - '0'
+    status:
+      code: 200
+      message: ''
+version: 1

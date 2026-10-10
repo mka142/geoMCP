@@ -1,0 +1,43 @@
+# VPS deployment. See docs/deploy-vps.md.
+#
+# Default: geomcp alone, plain HTTP on GEOMCP_BIND (127.0.0.1:8000), behind your own HTTPS proxy (nginx).
+#   docker compose up -d --build                    (--build again after every update)
+#
+# Without a proxy of your own: add Caddy, which gets certificates automatically for GEOMCP_DOMAIN.
+#   docker compose --profile caddy up -d --build
+services:
+  geomcp:
+    build: .
+    image: geomcp:latest
+    restart: unless-stopped
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      # download links must point at the public HTTPS address, not at the container
+      GEOMCP_PUBLIC_URL: ${GEOMCP_PUBLIC_URL:-https://${GEOMCP_DOMAIN:-localhost}}
+    volumes:
+      - geomcp-data:/data
+    ports:
+      - "${GEOMCP_BIND:-127.0.0.1:8000}:8000"
+
+  caddy:
+    profiles: [caddy]
+    image: caddy:2.11.7
+    restart: unless-stopped
+    depends_on: [geomcp]
+    env_file:
+      - path: .env
+        required: false
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+
+volumes:
+  geomcp-data:
+  caddy-data:
+  caddy-config:

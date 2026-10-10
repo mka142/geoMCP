@@ -1,0 +1,189 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - re.jrc.ec.europa.eu
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: GET
+    uri: https://re.jrc.ec.europa.eu/api/v5_3/PVcalc?lat=51.11&lon=17.032&peakpower=1&loss=14&outputformat=json&optimalangles=1
+  response:
+    body:
+      string: '{"inputs":{"location":{"latitude":51.11,"longitude":17.032,"elevation":123.0},"meteo_data":{"radiation_db":"PVGIS-SARAH3","meteo_db":"ERA5","year_min":2005,"year_max":2023,"use_horizon":true,"horizon_db":"DEM-calculated"},"mounting_system":{"fixed":{"slope":{"value":40,"optimal":true},"azimuth":{"value":-2,"optimal":true},"type":"free-standing"}},"pv_module":{"technology":"c-Si","peak_power":1.0,"system_loss":14.0},"economic_data":{"system_cost":null,"interest":null,"lifetime":null}},"outputs":{"monthly":{"fixed":[{"month":1,"E_d":1.29,"E_m":40.13,"H(i)_d":1.48,"H(i)_m":45.87,"SD_m":10.07},{"month":2,"E_d":2.14,"E_m":59.82,"H(i)_d":2.44,"H(i)_m":68.33,"SD_m":16.48},{"month":3,"E_d":3.06,"E_m":94.91,"H(i)_d":3.67,"H(i)_m":113.65,"SD_m":18.59},{"month":4,"E_d":4.03,"E_m":120.81,"H(i)_d":4.99,"H(i)_m":149.6,"SD_m":20.02},{"month":5,"E_d":4.13,"E_m":128.09,"H(i)_d":5.24,"H(i)_m":162.53,"SD_m":18.28},{"month":6,"E_d":4.24,"E_m":127.3,"H(i)_d":5.5,"H(i)_m":164.96,"SD_m":14.47},{"month":7,"E_d":4.21,"E_m":130.41,"H(i)_d":5.51,"H(i)_m":170.75,"SD_m":11.37},{"month":8,"E_d":3.98,"E_m":123.37,"H(i)_d":5.18,"H(i)_m":160.44,"SD_m":12.66},{"month":9,"E_d":3.56,"E_m":106.8,"H(i)_d":4.48,"H(i)_m":134.44,"SD_m":15.79},{"month":10,"E_d":2.51,"E_m":77.89,"H(i)_d":3.07,"H(i)_m":95.07,"SD_m":16.21},{"month":11,"E_d":1.57,"E_m":47.04,"H(i)_d":1.85,"H(i)_m":55.52,"SD_m":9.68},{"month":12,"E_d":1.2,"E_m":37.14,"H(i)_d":1.39,"H(i)_m":43.17,"SD_m":9.34}]},"totals":{"fixed":{"E_d":3.0,"E_m":91.14,"E_y":1093.71,"H(i)_d":3.74,"H(i)_m":113.69,"H(i)_y":1364.33,"SD_m":5.16,"SD_y":61.98,"l_aoi":-2.88,"l_spec":"1.76","l_tg":-5.68,"l_total":-19.84}}},"meta":{"inputs":{"location":{"description":"Selected
+        location","variables":{"latitude":{"description":"Latitude","units":"decimal
+        degree"},"longitude":{"description":"Longitude","units":"decimal degree"},"elevation":{"description":"Elevation","units":"m"}}},"meteo_data":{"description":"Sources
+        of meteorological data","variables":{"radiation_db":{"description":"Solar
+        radiation database"},"meteo_db":{"description":"Database used for meteorological
+        variables other than solar radiation"},"year_min":{"description":"First year
+        of the calculations"},"year_max":{"description":"Last year of the calculations"},"use_horizon":{"description":"Include
+        horizon shadows"},"horizon_db":{"description":"Source of horizon data"}}},"mounting_system":{"description":"Mounting
+        system","choices":"fixed, vertical_axis, inclined_axis, two_axis","fields":{"slope":{"description":"Inclination
+        angle from the horizontal plane","units":"degree"},"azimuth":{"description":"Orientation
+        (azimuth) angle of the (fixed) PV system (0 = S, 90 = W, -90 = E)","units":"degree"}}},"pv_module":{"description":"PV
+        module parameters","variables":{"technology":{"description":"PV technology"},"peak_power":{"description":"Nominal
+        (peak) power of the PV module","units":"kW"},"system_loss":{"description":"Sum
+        of system losses","units":"%"}}},"economic_data":{"description":"Economic
+        inputs","variables":{"system_cost":{"description":"Total cost of the PV system","units":"user-defined
+        currency"},"interest":{"description":"Annual interest","units":"%/y"},"lifetime":{"description":"Expected
+        lifetime of the PV system","units":"y"}}}},"outputs":{"monthly":{"type":"time
+        series","timestamp":"monthly averages","variables":{"E_d":{"description":"Average
+        daily energy production from the given system","units":"kWh/d"},"E_m":{"description":"Average
+        monthly energy production from the given system","units":"kWh/mo"},"H(i)_d":{"description":"Average
+        daily sum of global irradiation per square meter received by the modules of
+        the given system","units":"kWh/m2/d"},"H(i)_m":{"description":"Average monthly
+        sum of global irradiation per square meter received by the modules of the
+        given system","units":"kWh/m2/mo"},"SD_m":{"description":"Standard deviation
+        of the monthly energy production due to year-to-year variation","units":"kWh"}}},"totals":{"type":"time
+        series totals","variables":{"E_d":{"description":"Average daily energy production
+        from the given system","units":"kWh/d"},"E_m":{"description":"Average monthly
+        energy production from the given system","units":"kWh/mo"},"E_y":{"description":"Average
+        annual energy production from the given system","units":"kWh/y"},"H(i)_d":{"description":"Average
+        daily sum of global irradiation per square meter received by the modules of
+        the given system","units":"kWh/m2/d"},"H(i)_m":{"description":"Average monthly
+        sum of global irradiation per square meter received by the modules of the
+        given system","units":"kWh/m2/mo"},"H(i)_y":{"description":"Average annual
+        sum of global irradiation per square meter received by the modules of the
+        given system","units":"kWh/m2/y"},"SD_m":{"description":"Standard deviation
+        of the monthly energy production due to year-to-year variation","units":"kWh"},"SD_y":{"description":"Standard
+        deviation of the annual energy production due to year-to-year variation","units":"kWh"},"l_aoi":{"description":"Angle
+        of incidence loss","units":"%"},"l_spec":{"description":"Spectral loss","units":"%"},"l_tg":{"description":"Temperature
+        and irradiance loss","units":"%"},"l_total":{"description":"Total loss","units":"%"}}}}}}
+
+        '
+    headers:
+      connection:
+      - keep-alive
+      content-length:
+      - '5207'
+      content-security-policy:
+      - 'default-src ''self'' https://europa.eu https://*.europa.eu; object-src ''none'';
+        script-src ''self'' ''unsafe-inline'' ''unsafe-eval'' https://europa.eu https://*.europa.eu;
+        style-src ''self'' ''unsafe-inline'' data: https://europa.eu https://*.europa.eu;
+        font-src ''self'' data: https://europa.eu https://*.europa.eu; img-src ''self''
+        data: https://*.europa.eu https://tiles.maps.eox.at; frame-ancestors ''self''
+        https://visitors-centre.jrc.ec.europa.eu;'
+      content-type:
+      - application/json
+      date:
+      - Sat, 10 Oct 2026 15:44:49 GMT
+      referrer-policy:
+      - same-origin
+      set-cookie:
+      - jrc_cookie=!QC2IiXc/zWOSpxa2i5OOGGrt79E3+B344MPLlhceSf3JpIiSUJEFhJxJHBOhei26uKf6/FwyvAopSB4=;
+        path=/; Httponly; Secure
+      - TS01316d01=01f4fc03dd2be4ed34de8079168a947a4dff57d6fe1fb86e9114cf0fcca465b6efb6263d3833f10b1e44e90cbbb0ce012285d88f68;
+        Path=/
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      x-content-type-options:
+      - nosniff
+      x-download-options:
+      - noopen
+      x-permitted-cross-domain-policies:
+      - none
+      x-robots-tag:
+      - none
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - re.jrc.ec.europa.eu
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: GET
+    uri: https://re.jrc.ec.europa.eu/api/v5_3/PVcalc?lat=51.11&lon=17.032&peakpower=1&loss=14&outputformat=json&angle=0
+  response:
+    body:
+      string: '{"inputs":{"location":{"latitude":51.11,"longitude":17.032,"elevation":123.0},"meteo_data":{"radiation_db":"PVGIS-SARAH3","meteo_db":"ERA5","year_min":2005,"year_max":2023,"use_horizon":true,"horizon_db":"DEM-calculated"},"mounting_system":{"fixed":{"slope":{"value":0,"optimal":false},"azimuth":{"value":0,"optimal":false},"type":"free-standing"}},"pv_module":{"technology":"c-Si","peak_power":1.0,"system_loss":14.0},"economic_data":{"system_cost":null,"interest":null,"lifetime":null}},"outputs":{"monthly":{"fixed":[{"month":1,"E_d":0.6,"E_m":18.46,"H(i)_d":0.79,"H(i)_m":24.62,"SD_m":2.86},{"month":2,"E_d":1.24,"E_m":34.61,"H(i)_d":1.52,"H(i)_m":42.5,"SD_m":6.66},{"month":3,"E_d":2.23,"E_m":69.07,"H(i)_d":2.72,"H(i)_m":84.33,"SD_m":9.59},{"month":4,"E_d":3.5,"E_m":105.14,"H(i)_d":4.33,"H(i)_m":129.83,"SD_m":14.28},{"month":5,"E_d":4.09,"E_m":126.68,"H(i)_d":5.15,"H(i)_m":159.53,"SD_m":16.59},{"month":6,"E_d":4.42,"E_m":132.65,"H(i)_d":5.68,"H(i)_m":170.42,"SD_m":14.43},{"month":7,"E_d":4.27,"E_m":132.46,"H(i)_d":5.55,"H(i)_m":172.07,"SD_m":10.91},{"month":8,"E_d":3.65,"E_m":113.08,"H(i)_d":4.72,"H(i)_m":146.37,"SD_m":10.12},{"month":9,"E_d":2.74,"E_m":82.22,"H(i)_d":3.48,"H(i)_m":104.38,"SD_m":9.62},{"month":10,"E_d":1.55,"E_m":48.16,"H(i)_d":1.99,"H(i)_m":61.76,"SD_m":7.25},{"month":11,"E_d":0.76,"E_m":22.75,"H(i)_d":1.02,"H(i)_m":30.48,"SD_m":2.95},{"month":12,"E_d":0.47,"E_m":14.55,"H(i)_d":0.67,"H(i)_m":20.7,"SD_m":2.17}]},"totals":{"fixed":{"E_d":2.47,"E_m":74.99,"E_y":899.84,"H(i)_d":3.14,"H(i)_m":95.58,"H(i)_y":1147.0,"SD_m":3.17,"SD_y":37.99,"l_aoi":-4.44,"l_spec":"1.52","l_tg":-5.97,"l_total":-21.55}}},"meta":{"inputs":{"location":{"description":"Selected
+        location","variables":{"latitude":{"description":"Latitude","units":"decimal
+        degree"},"longitude":{"description":"Longitude","units":"decimal degree"},"elevation":{"description":"Elevation","units":"m"}}},"meteo_data":{"description":"Sources
+        of meteorological data","variables":{"radiation_db":{"description":"Solar
+        radiation database"},"meteo_db":{"description":"Database used for meteorological
+        variables other than solar radiation"},"year_min":{"description":"First year
+        of the calculations"},"year_max":{"description":"Last year of the calculations"},"use_horizon":{"description":"Include
+        horizon shadows"},"horizon_db":{"description":"Source of horizon data"}}},"mounting_system":{"description":"Mounting
+        system","choices":"fixed, vertical_axis, inclined_axis, two_axis","fields":{"slope":{"description":"Inclination
+        angle from the horizontal plane","units":"degree"},"azimuth":{"description":"Orientation
+        (azimuth) angle of the (fixed) PV system (0 = S, 90 = W, -90 = E)","units":"degree"}}},"pv_module":{"description":"PV
+        module parameters","variables":{"technology":{"description":"PV technology"},"peak_power":{"description":"Nominal
+        (peak) power of the PV module","units":"kW"},"system_loss":{"description":"Sum
+        of system losses","units":"%"}}},"economic_data":{"description":"Economic
+        inputs","variables":{"system_cost":{"description":"Total cost of the PV system","units":"user-defined
+        currency"},"interest":{"description":"Annual interest","units":"%/y"},"lifetime":{"description":"Expected
+        lifetime of the PV system","units":"y"}}}},"outputs":{"monthly":{"type":"time
+        series","timestamp":"monthly averages","variables":{"E_d":{"description":"Average
+        daily energy production from the given system","units":"kWh/d"},"E_m":{"description":"Average
+        monthly energy production from the given system","units":"kWh/mo"},"H(i)_d":{"description":"Average
+        daily sum of global irradiation per square meter received by the modules of
+        the given system","units":"kWh/m2/d"},"H(i)_m":{"description":"Average monthly
+        sum of global irradiation per square meter received by the modules of the
+        given system","units":"kWh/m2/mo"},"SD_m":{"description":"Standard deviation
+        of the monthly energy production due to year-to-year variation","units":"kWh"}}},"totals":{"type":"time
+        series totals","variables":{"E_d":{"description":"Average daily energy production
+        from the given system","units":"kWh/d"},"E_m":{"description":"Average monthly
+        energy production from the given system","units":"kWh/mo"},"E_y":{"description":"Average
+        annual energy production from the given system","units":"kWh/y"},"H(i)_d":{"description":"Average
+        daily sum of global irradiation per square meter received by the modules of
+        the given system","units":"kWh/m2/d"},"H(i)_m":{"description":"Average monthly
+        sum of global irradiation per square meter received by the modules of the
+        given system","units":"kWh/m2/mo"},"H(i)_y":{"description":"Average annual
+        sum of global irradiation per square meter received by the modules of the
+        given system","units":"kWh/m2/y"},"SD_m":{"description":"Standard deviation
+        of the monthly energy production due to year-to-year variation","units":"kWh"},"SD_y":{"description":"Standard
+        deviation of the annual energy production due to year-to-year variation","units":"kWh"},"l_aoi":{"description":"Angle
+        of incidence loss","units":"%"},"l_spec":{"description":"Spectral loss","units":"%"},"l_tg":{"description":"Temperature
+        and irradiance loss","units":"%"},"l_total":{"description":"Total loss","units":"%"}}}}}}
+
+        '
+    headers:
+      connection:
+      - keep-alive
+      content-length:
+      - '5199'
+      content-security-policy:
+      - 'default-src ''self'' https://europa.eu https://*.europa.eu; object-src ''none'';
+        script-src ''self'' ''unsafe-inline'' ''unsafe-eval'' https://europa.eu https://*.europa.eu;
+        style-src ''self'' ''unsafe-inline'' data: https://europa.eu https://*.europa.eu;
+        font-src ''self'' data: https://europa.eu https://*.europa.eu; img-src ''self''
+        data: https://*.europa.eu https://tiles.maps.eox.at; frame-ancestors ''self''
+        https://visitors-centre.jrc.ec.europa.eu;'
+      content-type:
+      - application/json
+      date:
+      - Sat, 10 Oct 2026 15:44:50 GMT
+      referrer-policy:
+      - same-origin
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      x-content-type-options:
+      - nosniff
+      x-download-options:
+      - noopen
+      x-permitted-cross-domain-policies:
+      - none
+      x-robots-tag:
+      - none
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+version: 1

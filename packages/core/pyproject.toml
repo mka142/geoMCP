@@ -1,0 +1,43 @@
+[project]
+name = "geomcp-core"
+version = "0.1.0"
+description = "Geodata engine for geomcp: areas, sources, routing, summaries and provenance."
+requires-python = "==3.12.*"
+dependencies = [
+    "httpx==0.28.1",
+    "numpy==2.5.3",
+    "pyarrow==25.0.1",
+    "pydantic==2.13.5",
+    "pillow==12.3.0",
+    "pyproj==3.8.0",
+    "rasterio==1.5.2",
+    "shapely==2.2.0",
+    "stamina==26.1.0",
+    "tifffile==2026.9.20",
+]
+
+[project.entry-points."geomcp.adapters"]
+synthetic = "geomcp_core.adapters.synthetic:SyntheticAdapter"
+synthetic_station = "geomcp_core.adapters.synthetic:SyntheticRestrictedAdapter"
+sentinel2 = "geomcp_core.adapters.sentinel_hub:Sentinel2Adapter"
+sentinel1 = "geomcp_core.adapters.sentinel_hub:Sentinel1Adapter"
+sentinel5p = "geomcp_core.adapters.sentinel_hub:Sentinel5PAdapter"
+copernicus_dem = "geomcp_core.adapters.sentinel_hub:CopernicusDemAdapter"
+era5_land = "geomcp_core.adapters.cds:Era5LandAdapter"
+osm = "geomcp_core.adapters.osm:OsmAdapter"
+worldcover = "geomcp_core.adapters.worldcover:WorldCoverAdapter"
+gus_bdl = "geomcp_core.adapters.gus_bdl:GusBdlAdapter"
+gios = "geomcp_core.adapters.gios:GiosAdapter"
+gugik_nmt = "geomcp_core.adapters.gugik_nmt:GugikNmtAdapter"
+ghsl_population = "geomcp_core.adapters.europe:GhslPopulationAdapter"
+pvgis = "geomcp_core.adapters.europe:PvgisAdapter"
+corine = "geomcp_core.adapters.europe:CorineAdapter"
+climate_projection = "geomcp_core.adapters.europe:ClimateProjectionAdapter"
+bdot10k = "geomcp_core.adapters.bdot10k:Bdot10kAdapter"
+
+[build-system]
+requires = ["hatchling==1.32.4"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/geomcp_core"]

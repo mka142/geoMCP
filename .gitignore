@@ -1,0 +1,13 @@
+__pycache__/
+*.py[oc]
+.venv/
+.pytest_cache/
+.ruff_cache/
+dist/
+build/
+*.egg-info
+.env
+data/
+.DS_Store
+.claude/settings.local.json
+.claude/scheduled_tasks.lock
