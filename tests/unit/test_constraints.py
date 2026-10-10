@@ -88,4 +88,8 @@ def test_a_truncated_feature_list_is_refused(monkeypatch: pytest.MonkeyPatch) ->
     items, gaps = constraints._gdos(area, geom)  # pyright: ignore[reportPrivateUsage]
     assert not items and len(gaps) == len(constraints.PROTECTED) and "more features" in gaps[0]
     with pytest.raises(GeomcpError):
-        constraints._features({"features": [], "exceededTransferLimit": True}, "x")  # pyright: ignore[reportPrivateUsage]
+        constraints._features({"features": [], "exceededTransferLimit": True}, "x", None)  # pyright: ignore[reportPrivateUsage]
+    many = {
+        "features": [{"geometry": None}] * 500
+    }  # ArcGIS layers return up to 1,000-2,000 features and flag truncation
+    assert len(constraints._features(many, "x", None)) == 500  # pyright: ignore[reportPrivateUsage]

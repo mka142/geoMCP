@@ -137,11 +137,14 @@ def _json(url: str, params: dict[str, Any], post: bool = False) -> Any:
     return payload
 
 
-def _features(payload: dict[str, Any], label: str) -> list[dict[str, Any]]:
-    """The features of an ArcGIS or GeoServer answer, refusing a truncated one (its shares would be too small)."""
+def _features(payload: dict[str, Any], label: str, cap: int | None) -> list[dict[str, Any]]:
+    """The features of an ArcGIS or GeoServer answer, refusing a truncated one (its shares would be too small).
+
+    ArcGIS flags truncation itself; GeoServer does not, so a page filled to the requested `cap` counts as truncated.
+    """
     features: list[dict[str, Any]] = payload.get("features", [])
     truncated = payload.get("exceededTransferLimit") or (payload.get("properties") or {}).get("exceededTransferLimit")
-    if truncated or len(features) >= GDOS_COUNT:
+    if truncated or (cap is not None and len(features) >= cap):
         raise GeomcpError("source_error", f"{label}: more features than the service returns at once.")
     return features
 
@@ -187,7 +190,7 @@ def _gdos(area: Area, geom: BaseGeometry) -> Group:
             "count": GDOS_COUNT,
         }
         try:
-            features = _features(_json(GDOS, params), label)
+            features = _features(_json(GDOS, params), label, GDOS_COUNT)
         except GeomcpError as e:
             gaps.append(f"{label}: {e.message}")
             continue
@@ -224,7 +227,7 @@ def _pig(area: Area, geom: BaseGeometry) -> Group:
             "f": "geojson",
         }
         try:
-            features = _features(_json(f"{PIG}/{path}/query", params), label)
+            features = _features(_json(f"{PIG}/{path}/query", params), label, None)
         except GeomcpError as e:  # the SOPO landslide layers refuse queries (October 2026): a gap, not "none"
             gaps.append(f"{label}: {e.message}")
             continue
