@@ -66,6 +66,17 @@ def _utm(area: Area) -> tuple[BaseGeometry, int]:
     return project(geom, "EPSG:4326", f"EPSG:{epsg}"), epsg
 
 
+def bbox_fill(geom: BaseGeometry) -> float:
+    """Share of the geometry's bounding box that the geometry covers (1 for a square, pi/4 for a circle).
+
+    Sentinel Hub computes statistics on the bounding box grid and counts pixels outside the polygon as no-data,
+    so its no-data share mixes clouds with the polygon's shape; dividing by this share leaves only the clouds.
+    """
+    minx, miny, maxx, maxy = geom.bounds
+    box = (maxx - minx) * (maxy - miny)
+    return min(1.0, geom.area / box) if box > 0 else 1.0
+
+
 def _bounds(geom: BaseGeometry, epsg: int) -> dict[str, Any]:
     return {"geometry": mapping(geom), "properties": {"crs": f"http://www.opengis.net/def/crs/EPSG/0/{epsg}"}}
 
@@ -146,7 +157,7 @@ class _StatsAdapter:
             day = date.fromisoformat(interval["interval"]["from"][:10])
             for variable, (oid, band) in self.outputs.items():
                 s = interval["outputs"][oid]["bands"][band]["stats"]
-                n = s.get("sampleCount") or 0
+                n = s.get("sampleCount") or 0  # every pixel of the bounding box; see bbox_fill
                 valid = 0.0 if not n or _nan(s.get("mean")) else 1 - (s.get("noDataCount") or 0) / n
                 if valid <= 0:
                     out[variable].append(Observation(day=day, mean=0.0, valid_fraction=0.0))
@@ -180,6 +191,7 @@ class _StatsAdapter:
         """Per-acquisition observations inside the requested periods, the cost, and the statistics resolution."""
         today = datetime.now(UTC).date()
         res = stats_resolution(area.area_km2, self.native_res)
+        fill = bbox_fill(_utm(area)[0])  # applied at read time, so cached chunks keep the raw no-data share
         cost = Cost()
         obs: list[Observation] = []
         with ThreadPoolExecutor(max_workers=cdse.MAX_PARALLEL) as pool:
@@ -188,7 +200,11 @@ class _StatsAdapter:
                 return self._chunk(area, res, chunk, today)
 
             for chunk_obs, c in pool.map(one, self._chunks(periods, today)):
-                obs.extend(o for o in chunk_obs[variable] if periods[0].start <= o.day < periods[-1].end)
+                obs.extend(
+                    o.model_copy(update={"valid_fraction": round(min(1.0, o.valid_fraction / fill), 4)})
+                    for o in chunk_obs[variable]
+                    if periods[0].start <= o.day < periods[-1].end
+                )
                 cost.add(c)
         return obs, cost, res
 
