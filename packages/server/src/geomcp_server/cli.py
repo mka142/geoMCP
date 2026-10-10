@@ -148,10 +148,7 @@ def main(argv: list[str] | None = None) -> int:
         import fastmcp
 
         fastmcp.settings.home = settings.data_dir / "fastmcp"  # OAuth client registrations, kept with the data
-    provider = auth.http_auth(
-        url, public, settings.google_client_id, settings.google_client_secret, settings.allowed_emails
-    )
-    server = build_server(auth=provider, public_url=public)  # also applies migrations
+    server = build_server(auth=auth.http_auth(url, public, settings), public_url=public)  # also applies migrations
     if not env("GEOMCP_CONTACT"):
         log.warning("no_contact", hint=CONTACT_HINT)
     if not any(k.revoked_at is None for k in auth.list_keys(url)):

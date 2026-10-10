@@ -21,13 +21,21 @@ class Settings(BaseSettings):
     google_client_id: str | None = None  # Google sign-in for OAuth-only clients; see docs/deploy-vps.md
     google_client_secret: str | None = None
     allowed_emails: Annotated[list[str], NoDecode] = []  # who may sign in with Google: emails or "@domain"
+    # where OAuth clients may be sent back after sign-in: claude.ai, Claude Desktop and mobile (claude.com is the
+    # announced successor), and loopback ports for Claude Code, mcp-remote and other local clients
+    oauth_redirect_uris: Annotated[list[str], NoDecode] = [
+        "https://claude.ai/api/mcp/auth_callback",
+        "https://claude.com/api/mcp/auth_callback",
+        "http://localhost:*",
+        "http://127.0.0.1:*",
+    ]
     sync_budget_s: float = 45.0
     sentinel_hub_monthly_units: float = 10_000.0
     sentinel_hub_monthly_requests: int = 10_000
 
-    @field_validator("allowed_emails", mode="before")
+    @field_validator("allowed_emails", "oauth_redirect_uris", mode="before")
     @classmethod
-    def _emails(cls, v: object) -> object:
+    def _comma_list(cls, v: object) -> object:
         """Comma-separated (`a@x.com, @y.com`) or a JSON list."""
         if isinstance(v, str):
             return [e.strip(" \"'[]") for e in v.split(",") if e.strip(" \"'[]")]

@@ -52,9 +52,13 @@ def test_google_allowlist() -> None:
 
 
 def test_google_sign_in_needs_an_allowlist(db_url: str) -> None:
+    from geomcp_server.settings import Settings
+
+    google = Settings(_env_file=None, google_client_id="id", google_client_secret="secret")  # pyright: ignore[reportCallIssue]
     with pytest.raises(ValueError, match="ALLOWED_EMAILS"):
-        auth.http_auth(db_url, "https://geo.example.org", "id", "secret", [])
-    assert isinstance(auth.http_auth(db_url, "https://geo.example.org", None, None, []), auth.ApiKeyVerifier)
+        auth.http_auth(db_url, "https://geo.example.org", google)
+    keys_only = Settings(_env_file=None)  # pyright: ignore[reportCallIssue]
+    assert isinstance(auth.http_auth(db_url, "https://geo.example.org", keys_only), auth.ApiKeyVerifier)
 
 
 async def test_google_tokens_outside_the_allowlist_are_refused(monkeypatch: pytest.MonkeyPatch) -> None:

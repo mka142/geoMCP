@@ -17,6 +17,7 @@ API keys (ADR 0002) therefore reach only Claude Code and clients with a JSON con
 - The Google user's email replaces the client id in logs and `geomcp-admin stats`.
 - OAuth client registrations are stored, encrypted, in the data volume, so restarts do not log people out.
 - FastMCP's consent page stays on: it stops another site from silently reusing a registered client.
+- Clients may register only redirect URIs on `GEOMCP_OAUTH_REDIRECT_URIS`: by default Claude's callback (`claude.ai`, and `claude.com`, which Anthropic announced as its successor) and loopback ports for Claude Code, so a phishing client cannot register a callback of its own.
 
 ## Consequences
 

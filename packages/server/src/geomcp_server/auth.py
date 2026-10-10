@@ -19,6 +19,7 @@ from mcp.server.auth.provider import AccessToken as UpstreamToken
 from sqlalchemy import select
 
 from geomcp_server.db import ApiKey, sessions
+from geomcp_server.settings import Settings
 
 PREFIX = "gmk"
 
@@ -97,18 +98,18 @@ class GoogleSignIn(GoogleProvider):
         return found.model_copy(update={"client_id": claims["email"]})
 
 
-def http_auth(
-    db_url: str, public_url: str, google_client_id: str | None, google_client_secret: str | None,
-    allowed_emails: list[str],
-) -> AuthProvider:  # fmt: skip
+def http_auth(db_url: str, public_url: str, settings: Settings) -> AuthProvider:
     """API keys alone, or Google sign-in first and API keys as the fallback."""
     keys = ApiKeyVerifier(db_url)
-    if not google_client_id:
+    if not settings.google_client_id:
         return keys
-    if not google_client_secret or not allowed_emails:
+    if not settings.google_client_secret or not settings.allowed_emails:
         raise ValueError("Google sign-in needs GEOMCP_GOOGLE_CLIENT_SECRET and GEOMCP_ALLOWED_EMAILS.")
     google = GoogleSignIn(
-        client_id=google_client_id, client_secret=google_client_secret, base_url=public_url,
-        allowed_emails=allowed_emails,
-    )  # fmt: skip
+        client_id=settings.google_client_id,
+        client_secret=settings.google_client_secret,
+        base_url=public_url,
+        allowed_emails=settings.allowed_emails,
+        allowed_client_redirect_uris=settings.oauth_redirect_uris,
+    )
     return MultiAuth(server=google, verifiers=[keys], required_scopes=[])  # API keys carry no scopes

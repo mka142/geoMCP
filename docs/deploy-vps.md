@@ -108,6 +108,7 @@ The server refuses to start with Google sign-in but no allowlist, because any Go
 `geomcp-admin stats` shows Google users by email.
 Sign-in state lives in the data volume (`/data/fastmcp`), so restarts do not log people out.
 To remove someone, take them off the list and restart.
+Sign-in only returns to Claude's own callbacks (claude.ai, Claude Desktop, mobile) and to local ports (Claude Code); another client, such as Cursor, needs its callback added to `GEOMCP_OAUTH_REDIRECT_URIS`.
 
 ## 7. See who uses what
 
