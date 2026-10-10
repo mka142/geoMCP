@@ -4,6 +4,9 @@ with the 2020/21 count of the same section for comparison.
 National roads crossing the area come from OpenStreetMap refs. Each survey section has a measurement point
 (coordinates in the section list), so for every road the sections measured inside the area are reported, or
 else the section measured nearest to it. Counts cover national roads outside city limits.
+Section numbers were reassigned between the surveys (a third of the 2025 numbers named a different section in
+2020/21), so the 2020/21 count comes through the section list's "Porównanie_z_2020" column, which names the
+comparable 2020 section or is empty.
 """
 
 import csv
@@ -33,7 +36,7 @@ MAX_DISTANCE_KM = 15.0  # a section measured further away than this says little 
 TTL_S = 365 * 24 * 3600
 OSM_TTL_S = 30 * 24 * 3600
 POLAND = (14.07, 49.0, 24.15, 54.84)
-NATIONAL = re.compile(r"^(?:A|S|DK)?\s*(\d{1,3})$")
+NATIONAL = re.compile(r"^(?:A|S|DK)?\s*(\d{1,2})$")  # national roads are numbered 1-99; 3 digits are voivodeship roads
 
 
 class Segment(BaseModel):
@@ -83,11 +86,14 @@ def _csv(url: str, encoding: str) -> list[dict[str, str]]:
 
 def _survey() -> list[dict[str, Any]]:
     """GPR 2025 sections with counts, measurement point (lon, lat) and the 2020/21 count."""
-    if (hit := cache.get("traffic", "gpr2025|v2")) is not None:
+    if (hit := cache.get("traffic", "gpr2025|v3")) is not None:
         return hit
     old = {r["NR2020"]: int(r["SDRR2020"]) for r in _csv(SDRR_2020, "cp1250") if r.get("SDRR2020", "").isdigit()}
     points: dict[str, tuple[float, float, str]] = {}
+    compare: dict[str, str] = {}  # 2025 section -> the 2020/21 section it is comparable with
     for r in _csv(SECTIONS_2025, "utf-8-sig"):
+        if r.get("Porównanie_z_2020", "").strip():
+            compare[r["Numer_odcinka_pomiarowego"]] = r["Porównanie_z_2020"].strip()
         coords = [  # right and left measurement points; many sections list only one
             (_num(r[f"Dł._geo_punktu_{side}"]), _num(r[f"Szer._geo_punktu_{side}"]))
             for side in ("prawego", "lewego")
@@ -117,7 +123,7 @@ def _survey() -> list[dict[str, Any]]:
                 "km_from": _num(r["pikietaz_pocz"]),
                 "km_to": _num(r["pikietaz_kon"]),
                 "total": total,
-                "total_2020": old.get(section),
+                "total_2020": old.get(compare.get(section, "")),
                 "cars": p[1],
                 "heavy": p[4] + p[5] + p[6],
                 "lon": lon,
@@ -125,7 +131,7 @@ def _survey() -> list[dict[str, Any]]:
                 "place": place,
             }
         )
-    cache.put("traffic", "gpr2025|v2", rows, TTL_S)
+    cache.put("traffic", "gpr2025|v3", rows, TTL_S)
     return rows
 
 
