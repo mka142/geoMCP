@@ -37,6 +37,16 @@ def _free_port() -> int:
         return s.getsockname()[1]
 
 
+def _wait_for(base: str) -> None:
+    for _ in range(100):
+        try:
+            if httpx.get(f"{base}/healthz").status_code == 200:
+                return
+        except httpx.TransportError:
+            time.sleep(0.1)
+    raise RuntimeError("server did not start")
+
+
 GOOGLE = {
     "GEOMCP_GOOGLE_CLIENT_ID": "123-test.apps.googleusercontent.com",
     "GEOMCP_GOOGLE_CLIENT_SECRET": "test-secret",
@@ -60,14 +70,7 @@ def http_server(tmp_path: Path, request: pytest.FixtureRequest):  # type: ignore
     )
     base = f"http://127.0.0.1:{port}"
     try:
-        for _ in range(100):
-            try:
-                if httpx.get(f"{base}/healthz").status_code == 200:
-                    break
-            except httpx.TransportError:
-                time.sleep(0.1)
-        else:
-            raise RuntimeError("server did not start")
+        _wait_for(base)
         yield base, token
     finally:
         proc.terminate()
@@ -105,12 +108,7 @@ def test_google_sign_in_is_discoverable(tmp_path: Path) -> None:
     env = _env(tmp_path) | GOOGLE | {"GEOMCP_PUBLIC_URL": base}
     proc = subprocess.Popen([BIN / "geomcp", "serve", "--http", "--port", str(port)], env=env, cwd=tmp_path)
     try:
-        for _ in range(100):
-            try:
-                if httpx.get(f"{base}/healthz").status_code == 200:
-                    break
-            except httpx.TransportError:
-                time.sleep(0.1)
+        _wait_for(base)
         r = httpx.post(f"{base}/mcp", json={}, headers={"Accept": "application/json, text/event-stream"})
         assert r.status_code == 401 and "resource_metadata" in r.headers["www-authenticate"]
         meta = httpx.get(f"{base}/.well-known/oauth-protected-resource/mcp").json()
@@ -126,6 +124,22 @@ def test_google_sign_in_is_discoverable(tmp_path: Path) -> None:
             },
         )  # fmt: skip
         assert start.status_code in (200, 302)  # consent page, then Google
+    finally:
+        proc.terminate()
+        proc.wait(timeout=10)
+
+
+def test_allowed_hosts_reject_other_host_headers(tmp_path: Path) -> None:
+    """GEOMCP_ALLOWED_HOSTS is enforced: a request for another host name is misdirected (421), not served."""
+    port = _free_port()
+    base = f"http://127.0.0.1:{port}"
+    env = _env(tmp_path) | {"GEOMCP_ALLOWED_HOSTS": '["geo.example.org"]'}
+    proc = subprocess.Popen([BIN / "geomcp", "serve", "--http", "--port", str(port)], env=env, cwd=tmp_path)
+    try:
+        _wait_for(base)
+        assert httpx.post(f"{base}/mcp", headers={"Host": "evil.example"}).status_code == 421
+        assert httpx.post(f"{base}/mcp", headers={"Host": "geo.example.org"}).status_code == 401  # then auth
+        assert httpx.get(f"{base}/healthz").status_code == 200  # the container's own health check keeps working
     finally:
         proc.terminate()
         proc.wait(timeout=10)

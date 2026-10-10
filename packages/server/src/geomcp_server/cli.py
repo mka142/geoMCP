@@ -165,6 +165,8 @@ def main(argv: list[str] | None = None) -> int:
         port=port,
         path="/mcp",
         show_banner=False,
+        # FastMCP ignores allowed_hosts unless its Host guard is on; "auto" guards only loopback binds
+        host_origin_protection=True if settings.allowed_hosts else "auto",
         allowed_hosts=settings.allowed_hosts,
         uvicorn_config={"log_config": None},  # keep our JSON logging
     )

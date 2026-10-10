@@ -103,7 +103,7 @@ docker compose exec geomcp geomcp-admin stats
 | `GEOMCP_HOST`, `GEOMCP_PORT` | `127.0.0.1`, `8000` (`0.0.0.0` in Docker) | HTTP bind address |
 | `GEOMCP_GOOGLE_CLIENT_ID`, `GEOMCP_GOOGLE_CLIENT_SECRET` | none | Google sign-in for clients that connect with just the address (Claude Desktop, claude.ai) |
 | `GEOMCP_ALLOWED_EMAILS` | none | Who may sign in with Google: comma-separated emails or `@domain`; required with Google sign-in |
-| `GEOMCP_ALLOWED_HOSTS` | unset | JSON list of accepted Host headers |
+| `GEOMCP_ALLOWED_HOSTS` | unset | JSON list of accepted Host headers; other names get HTTP 421 (optional hardening behind nginx) |
 | `GEOMCP_LOG_LEVEL` | `INFO` | JSON logs on stderr |
 | `GEOMCP_ENABLE_SYNTHETIC` | `false` | Synthetic demo sources (tests and demos) |
 
