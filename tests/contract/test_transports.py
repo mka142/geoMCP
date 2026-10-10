@@ -143,3 +143,17 @@ def test_allowed_hosts_reject_other_host_headers(tmp_path: Path) -> None:
     finally:
         proc.terminate()
         proc.wait(timeout=10)
+
+
+def test_loopback_server_rejects_foreign_host_headers(tmp_path: Path) -> None:
+    """Without GEOMCP_ALLOWED_HOSTS a loopback server still refuses other names (DNS rebinding)."""
+    port = _free_port()
+    base = f"http://127.0.0.1:{port}"
+    proc = subprocess.Popen([BIN / "geomcp", "serve", "--http", "--port", str(port)], env=_env(tmp_path), cwd=tmp_path)
+    try:
+        _wait_for(base)
+        assert httpx.post(f"{base}/mcp", headers={"Host": "evil.example"}).status_code == 421
+        assert httpx.post(f"{base}/mcp", headers={"Host": f"localhost:{port}"}).status_code == 401  # then auth
+    finally:
+        proc.terminate()
+        proc.wait(timeout=10)
