@@ -19,9 +19,17 @@ def test_satellite_valid_fraction_is_over_used_acquisitions_only() -> None:
 
 
 def test_weather_sums_report_share_of_days() -> None:
+    obs = [Observation(day=date(2024, 6, d), mean=2.0) for d in range(1, 30)]  # 29 of 30 days
+    (v,) = to_periods(obs, JUNE, "sum", TODAY, coverage="days")
+    assert v.mean == 58.0 and v.n_obs == 29 and v.valid_fraction == 0.967 and v.status == "final"
+
+
+def test_settled_sum_missing_many_days_is_a_gap_not_a_low_total() -> None:
     obs = [Observation(day=date(2024, 6, d), mean=2.0) for d in range(1, 16)]  # half the month
     (v,) = to_periods(obs, JUNE, "sum", TODAY, coverage="days")
-    assert v.mean == 30.0 and v.n_obs == 15 and v.valid_fraction == 0.5
+    assert v.mean is None and v.status == "missing" and v.valid_fraction == 0.5
+    (mean,) = to_periods(obs, JUNE, "mean", TODAY, coverage="days")  # a mean of the days present is still fair
+    assert mean.mean == 2.0 and mean.status == "final"
 
 
 def test_no_usable_observation_is_missing() -> None:

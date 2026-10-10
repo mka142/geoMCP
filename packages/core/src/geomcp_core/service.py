@@ -232,10 +232,19 @@ def get_timeseries(
         )
         for v in data.values:
             rows.append([v.period, variable, v.mean, v.p10, v.p90, v.valid_fraction, v.n_obs, v.status])
-            if v.status == "missing":
+            if v.status == "missing" and v.valid_fraction > 0:
+                gaps.append(
+                    Gap(variable=variable, period=v.period, reason="incomplete_days", valid_fraction=v.valid_fraction)
+                )
+            elif v.status == "missing":
                 gaps.append(Gap(variable=variable, period=v.period, reason="no_valid_observation"))
         if notice := _restricted_notice(variable, data):
             notices.append(notice)
+        short = [v for v in data.values if v.status == "final" and v.valid_fraction < 1]
+        if short and _aggregation(variable) == "sum":
+            notices.append(
+                f"{variable}: {len(short)} total(s) miss a few days of data (95% or more present) and may be low."
+            )
         if n_pre := sum(v.status == "preliminary" for v in data.values):
             notices.append(f"{variable}: {n_pre} recent value(s) are preliminary or incomplete and may change.")
 

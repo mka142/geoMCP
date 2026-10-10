@@ -7,6 +7,7 @@ from typing import Literal
 from geomcp_core.models import Observation, Period, PeriodValue
 
 How = Literal["mean", "sum"]
+MIN_SUM_DAYS = 0.95  # a settled total over fewer days reads as a lower total: a gap, not a wrong number
 
 
 def to_periods(
@@ -22,6 +23,7 @@ def to_periods(
     `sum`: total of daily values (precipitation, radiation); valid_fraction is the share of days present.
     Observations below `min_valid` (for example cloudy scenes) are not used but count toward valid_fraction.
     Periods ending after `preliminary_from` are `preliminary`; periods starting today or later are `missing`.
+    A settled `sum` with day coverage below MIN_SUM_DAYS is `missing`, keeping its valid_fraction as the reason.
     """
     out: list[PeriodValue] = []
     for p in periods:
@@ -49,6 +51,11 @@ def to_periods(
             else:
                 p10 = p90 = None
         status = "preliminary" if preliminary_from is not None and p.end > preliminary_from else "final"
+        if how == "sum" and coverage == "days" and status == "final" and vf < MIN_SUM_DAYS:
+            out.append(
+                PeriodValue(period=p.start, mean=None, valid_fraction=round(vf, 3), n_obs=len(usable), status="missing")
+            )
+            continue
         out.append(
             PeriodValue(
                 period=p.start,
