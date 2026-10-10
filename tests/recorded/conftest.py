@@ -18,7 +18,22 @@ from tests.conftest import CREDENTIAL_VARS, REPO
 SCRUBBED = "REDACTED"
 
 
-PERSONAL = ("nazwa", "imie", "nazwisko", "ulica", "budynek", "lokal", "nip", "regon")
+# CEIDG fields that name a person or point straight at their record (id and link open the public entry)
+PERSONAL = (
+    "nazwa",
+    "imie",
+    "nazwisko",
+    "ulica",
+    "budynek",
+    "lokal",
+    "nip",
+    "regon",
+    "id",
+    "link",
+    "email",
+    "telefon",
+    "www",
+)
 
 
 def _redact(value: Any) -> Any:
@@ -30,21 +45,45 @@ def _redact(value: Any) -> Any:
     return value
 
 
+def _without_accounts(value: Any) -> Any:
+    """The VAT whitelist lists a company's bank accounts; geomcp never keeps them, so neither does git."""
+    if isinstance(value, dict):
+        return {k: [] if k == "accountNumbers" else _without_accounts(v) for k, v in value.items()}  # pyright: ignore[reportUnknownVariableType]
+    if isinstance(value, list):
+        return [_without_accounts(v) for v in value]  # pyright: ignore[reportUnknownVariableType]
+    return value
+
+
 def _scrub_response(response: dict[str, Any]) -> dict[str, Any]:
     body = response.get("body", {}).get("string")
-    if isinstance(body, bytes) and b'"firmy"' in body and b"adresDzialalnosci" in body:
-        response["body"]["string"] = json.dumps(_redact(json.loads(body)), ensure_ascii=False).encode()
-        body = response["body"]["string"]
-    if isinstance(body, bytes) and b"<ms:DOK_TWORCA" in body:  # RCN: notary names and deed numbers
+    if isinstance(body, str):
+        body = body.encode()
+    if not isinstance(body, bytes):
+        return response
+    if b'"firmy"' in body and b"adresDzialalnosci" in body:
+        body = json.dumps(_redact(json.loads(body)), ensure_ascii=False).encode()
+    if b"<ms:DOK_TWORCA" in body:  # RCN: notary names and deed numbers
         body = re.sub(rb"<ms:(DOK_TWORCA|DOK_OZNACZENIE)>[^<]*</ms:\1>", rb"<ms:\1>REDACTED</ms:\1>", body)
-        response["body"]["string"] = body
-    if isinstance(body, bytes) and b"access_token" in body:
+    if b"accountNumbers" in body:
+        body = json.dumps(_without_accounts(json.loads(body)), ensure_ascii=False).encode()
+    if b"ZalogujResult" in body:  # REGON: the session id of the login call
+        body = re.sub(rb"<ZalogujResult>[^<]*</ZalogujResult>", rb"<ZalogujResult>REDACTED</ZalogujResult>", body)
+    if b"access_token" in body:
         payload = json.loads(body)
         for key in ("access_token", "refresh_token", "id_token"):
             if key in payload:
                 payload[key] = SCRUBBED
-        response["body"]["string"] = json.dumps(payload).encode()
+        body = json.dumps(payload).encode()
+    response["body"]["string"] = body
     return response
+
+
+def _scrub_request(request: Any) -> Any:
+    """Header filters miss the REGON session header, so drop it here (requests are matched without headers)."""
+    for name in list(getattr(request, "headers", {})):
+        if name.lower() == "sid":
+            del request.headers[name]
+    return request
 
 
 @pytest.fixture(scope="module")
@@ -53,6 +92,7 @@ def vcr_config() -> dict[str, Any]:
         "filter_headers": ["authorization", "private-token", "x-clientid", "sid", "cookie", "set-cookie"],
         "filter_post_data_parameters": [("client_id", SCRUBBED), ("client_secret", SCRUBBED)],
         "before_record_response": _scrub_response,
+        "before_record_request": _scrub_request,
         "match_on": ["method", "scheme", "host", "path", "query", "body"],
         "decode_compressed_response": True,
     }

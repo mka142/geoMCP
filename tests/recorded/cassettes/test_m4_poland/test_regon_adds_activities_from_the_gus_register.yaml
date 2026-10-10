@@ -21,12 +21,19 @@ interactions:
     uri: https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc
   response:
     body:
-      string: "\r\n--uuid:f7958d02-86b1-4c31-a811-f095ba4a5485+id=376173\r\nContent-ID:
-        <http://tempuri.org/0>\r\nContent-Transfer-Encoding: 8bit\r\nContent-Type:
-        application/xop+xml;charset=utf-8;type=\"application/soap+xml\"\r\n\r\n<s:Envelope
-        xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a=\"http://www.w3.org/2005/08/addressing\"><s:Header><a:Action
-        s:mustUnderstand=\"1\">http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/ZalogujResponse</a:Action></s:Header><s:Body><ZalogujResponse
-        xmlns=\"http://CIS/BIR/PUBL/2014/07\"><ZalogujResult>3e9bx2hhue76gy5e688x</ZalogujResult></ZalogujResponse></s:Body></s:Envelope>\r\n--uuid:f7958d02-86b1-4c31-a811-f095ba4a5485+id=376173--\r\n"
+      string: !!binary |
+        DQotLXV1aWQ6Zjc5NThkMDItODZiMS00YzMxLWE4MTEtZjA5NWJhNGE1NDg1K2lkPTM3NjE3Mw0K
+        Q29udGVudC1JRDogPGh0dHA6Ly90ZW1wdXJpLm9yZy8wPg0KQ29udGVudC1UcmFuc2Zlci1FbmNv
+        ZGluZzogOGJpdA0KQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi94b3AreG1sO2NoYXJzZXQ9dXRm
+        LTg7dHlwZT0iYXBwbGljYXRpb24vc29hcCt4bWwiDQoNCjxzOkVudmVsb3BlIHhtbG5zOnM9Imh0
+        dHA6Ly93d3cudzMub3JnLzIwMDMvMDUvc29hcC1lbnZlbG9wZSIgeG1sbnM6YT0iaHR0cDovL3d3
+        dy53My5vcmcvMjAwNS8wOC9hZGRyZXNzaW5nIj48czpIZWFkZXI+PGE6QWN0aW9uIHM6bXVzdFVu
+        ZGVyc3RhbmQ9IjEiPmh0dHA6Ly9DSVMvQklSL1BVQkwvMjAxNC8wNy9JVXNsdWdhQklSemV3blB1
+        YmwvWmFsb2d1alJlc3BvbnNlPC9hOkFjdGlvbj48L3M6SGVhZGVyPjxzOkJvZHk+PFphbG9ndWpS
+        ZXNwb25zZSB4bWxucz0iaHR0cDovL0NJUy9CSVIvUFVCTC8yMDE0LzA3Ij48WmFsb2d1alJlc3Vs
+        dD5SRURBQ1RFRDwvWmFsb2d1alJlc3VsdD48L1phbG9ndWpSZXNwb25zZT48L3M6Qm9keT48L3M6
+        RW52ZWxvcGU+DQotLXV1aWQ6Zjc5NThkMDItODZiMS00YzMxLWE4MTEtZjA5NWJhNGE1NDg1K2lk
+        PTM3NjE3My0tDQo=
     headers:
       cache-control:
       - private,no-cache, no-store, max-age=0, must-revalidate
@@ -72,29 +79,41 @@ interactions:
       - application/soap+xml; charset=utf-8
       host:
       - wyszukiwarkaregontest.stat.gov.pl
-      sid:
-      - 3e9bx2hhue76gy5e688x
       user-agent:
       - geomcp/0.1 (+https://github.com/; geodata MCP server)
     method: POST
     uri: https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc
   response:
     body:
-      string: "\r\n--uuid:f7958d02-86b1-4c31-a811-f095ba4a5485+id=376176\r\nContent-ID:
-        <http://tempuri.org/0>\r\nContent-Transfer-Encoding: 8bit\r\nContent-Type:
-        application/xop+xml;charset=utf-8;type=\"application/soap+xml\"\r\n\r\n<s:Envelope
-        xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a=\"http://www.w3.org/2005/08/addressing\"><s:Header><a:Action
-        s:mustUnderstand=\"1\">http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DaneSzukajPodmiotyResponse</a:Action></s:Header><s:Body><DaneSzukajPodmiotyResponse
-        xmlns=\"http://CIS/BIR/PUBL/2014/07\"><DaneSzukajPodmiotyResult>&lt;root&gt;&#xD;\n
-        \ &lt;dane&gt;&#xD;\n    &lt;Regon&gt;000331501&lt;/Regon&gt;&#xD;\n    &lt;Nip&gt;5261040828&lt;/Nip&gt;&#xD;\n
-        \   &lt;StatusNip /&gt;&#xD;\n    &lt;Nazwa&gt;G\u0141\xD3WNY URZ\u0104D STATYSTYCZNY&lt;/Nazwa&gt;&#xD;\n
-        \   &lt;Wojewodztwo&gt;MAZOWIECKIE&lt;/Wojewodztwo&gt;&#xD;\n    &lt;Powiat&gt;m.
-        st. Warszawa&lt;/Powiat&gt;&#xD;\n    &lt;Gmina&gt;\u015Ar\xF3dmie\u015Bcie&lt;/Gmina&gt;&#xD;\n
-        \   &lt;Miejscowosc&gt;Warszawa&lt;/Miejscowosc&gt;&#xD;\n    &lt;KodPocztowy&gt;00-925&lt;/KodPocztowy&gt;&#xD;\n
-        \   &lt;Ulica&gt;ul. Test-Krucza&lt;/Ulica&gt;&#xD;\n    &lt;NrNieruchomosci&gt;208&lt;/NrNieruchomosci&gt;&#xD;\n
-        \   &lt;NrLokalu /&gt;&#xD;\n    &lt;Typ&gt;P&lt;/Typ&gt;&#xD;\n    &lt;SilosID&gt;6&lt;/SilosID&gt;&#xD;\n
-        \   &lt;DataZakonczeniaDzialalnosci /&gt;&#xD;\n    &lt;MiejscowoscPoczty&gt;Warszawa&lt;/MiejscowoscPoczty&gt;&#xD;\n
-        \ &lt;/dane&gt;&#xD;\n&lt;/root&gt;</DaneSzukajPodmiotyResult></DaneSzukajPodmiotyResponse></s:Body></s:Envelope>\r\n--uuid:f7958d02-86b1-4c31-a811-f095ba4a5485+id=376176--\r\n"
+      string: !!binary |
+        DQotLXV1aWQ6Zjc5NThkMDItODZiMS00YzMxLWE4MTEtZjA5NWJhNGE1NDg1K2lkPTM3NjE3Ng0K
+        Q29udGVudC1JRDogPGh0dHA6Ly90ZW1wdXJpLm9yZy8wPg0KQ29udGVudC1UcmFuc2Zlci1FbmNv
+        ZGluZzogOGJpdA0KQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi94b3AreG1sO2NoYXJzZXQ9dXRm
+        LTg7dHlwZT0iYXBwbGljYXRpb24vc29hcCt4bWwiDQoNCjxzOkVudmVsb3BlIHhtbG5zOnM9Imh0
+        dHA6Ly93d3cudzMub3JnLzIwMDMvMDUvc29hcC1lbnZlbG9wZSIgeG1sbnM6YT0iaHR0cDovL3d3
+        dy53My5vcmcvMjAwNS8wOC9hZGRyZXNzaW5nIj48czpIZWFkZXI+PGE6QWN0aW9uIHM6bXVzdFVu
+        ZGVyc3RhbmQ9IjEiPmh0dHA6Ly9DSVMvQklSL1BVQkwvMjAxNC8wNy9JVXNsdWdhQklSemV3blB1
+        YmwvRGFuZVN6dWthalBvZG1pb3R5UmVzcG9uc2U8L2E6QWN0aW9uPjwvczpIZWFkZXI+PHM6Qm9k
+        eT48RGFuZVN6dWthalBvZG1pb3R5UmVzcG9uc2UgeG1sbnM9Imh0dHA6Ly9DSVMvQklSL1BVQkwv
+        MjAxNC8wNyI+PERhbmVTenVrYWpQb2RtaW90eVJlc3VsdD4mbHQ7cm9vdCZndDsmI3hEOwogICZs
+        dDtkYW5lJmd0OyYjeEQ7CiAgICAmbHQ7UmVnb24mZ3Q7MDAwMzMxNTAxJmx0Oy9SZWdvbiZndDsm
+        I3hEOwogICAgJmx0O05pcCZndDs1MjYxMDQwODI4Jmx0Oy9OaXAmZ3Q7JiN4RDsKICAgICZsdDtT
+        dGF0dXNOaXAgLyZndDsmI3hEOwogICAgJmx0O05hendhJmd0O0fFgcOTV05ZIFVSWsSERCBTVEFU
+        WVNUWUNaTlkmbHQ7L05hendhJmd0OyYjeEQ7CiAgICAmbHQ7V29qZXdvZHp0d28mZ3Q7TUFaT1dJ
+        RUNLSUUmbHQ7L1dvamV3b2R6dHdvJmd0OyYjeEQ7CiAgICAmbHQ7UG93aWF0Jmd0O20uIHN0LiBX
+        YXJzemF3YSZsdDsvUG93aWF0Jmd0OyYjeEQ7CiAgICAmbHQ7R21pbmEmZ3Q7xZpyw7NkbWllxZtj
+        aWUmbHQ7L0dtaW5hJmd0OyYjeEQ7CiAgICAmbHQ7TWllanNjb3dvc2MmZ3Q7V2Fyc3phd2EmbHQ7
+        L01pZWpzY293b3NjJmd0OyYjeEQ7CiAgICAmbHQ7S29kUG9jenRvd3kmZ3Q7MDAtOTI1Jmx0Oy9L
+        b2RQb2N6dG93eSZndDsmI3hEOwogICAgJmx0O1VsaWNhJmd0O3VsLiBUZXN0LUtydWN6YSZsdDsv
+        VWxpY2EmZ3Q7JiN4RDsKICAgICZsdDtOck5pZXJ1Y2hvbW9zY2kmZ3Q7MjA4Jmx0Oy9Ock5pZXJ1
+        Y2hvbW9zY2kmZ3Q7JiN4RDsKICAgICZsdDtOckxva2FsdSAvJmd0OyYjeEQ7CiAgICAmbHQ7VHlw
+        Jmd0O1AmbHQ7L1R5cCZndDsmI3hEOwogICAgJmx0O1NpbG9zSUQmZ3Q7NiZsdDsvU2lsb3NJRCZn
+        dDsmI3hEOwogICAgJmx0O0RhdGFaYWtvbmN6ZW5pYUR6aWFsYWxub3NjaSAvJmd0OyYjeEQ7CiAg
+        ICAmbHQ7TWllanNjb3dvc2NQb2N6dHkmZ3Q7V2Fyc3phd2EmbHQ7L01pZWpzY293b3NjUG9jenR5
+        Jmd0OyYjeEQ7CiAgJmx0Oy9kYW5lJmd0OyYjeEQ7CiZsdDsvcm9vdCZndDs8L0RhbmVTenVrYWpQ
+        b2RtaW90eVJlc3VsdD48L0RhbmVTenVrYWpQb2RtaW90eVJlc3BvbnNlPjwvczpCb2R5PjwvczpF
+        bnZlbG9wZT4NCi0tdXVpZDpmNzk1OGQwMi04NmIxLTRjMzEtYTgxMS1mMDk1YmE0YTU0ODUraWQ9
+        Mzc2MTc2LS0NCg==
     headers:
       cache-control:
       - private,no-cache, no-store, max-age=0, must-revalidate
@@ -140,24 +159,31 @@ interactions:
       - application/soap+xml; charset=utf-8
       host:
       - wyszukiwarkaregontest.stat.gov.pl
-      sid:
-      - 3e9bx2hhue76gy5e688x
       user-agent:
       - geomcp/0.1 (+https://github.com/; geodata MCP server)
     method: POST
     uri: https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc
   response:
     body:
-      string: "\r\n--uuid:f7958d02-86b1-4c31-a811-f095ba4a5485+id=376179\r\nContent-ID:
-        <http://tempuri.org/0>\r\nContent-Transfer-Encoding: 8bit\r\nContent-Type:
-        application/xop+xml;charset=utf-8;type=\"application/soap+xml\"\r\n\r\n<s:Envelope
-        xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a=\"http://www.w3.org/2005/08/addressing\"><s:Header><a:Action
-        s:mustUnderstand=\"1\">http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DanePobierzPelnyRaportResponse</a:Action></s:Header><s:Body><DanePobierzPelnyRaportResponse
-        xmlns=\"http://CIS/BIR/PUBL/2014/07\"><DanePobierzPelnyRaportResult>&lt;root&gt;&#xD;\n
-        \ &lt;dane&gt;&#xD;\n    &lt;praw_pkdKod&gt;8411Z&lt;/praw_pkdKod&gt;&#xD;\n
-        \   &lt;praw_pkdNazwa&gt;KIEROWANIE PODSTAWOWYMI RODZAJAMI DZIA\u0141ALNO\u015ACI
-        PUBLICZNEJ&lt;/praw_pkdNazwa&gt;&#xD;\n    &lt;praw_pkdPrzewazajace&gt;1&lt;/praw_pkdPrzewazajace&gt;&#xD;\n
-        \ &lt;/dane&gt;&#xD;\n&lt;/root&gt;</DanePobierzPelnyRaportResult></DanePobierzPelnyRaportResponse></s:Body></s:Envelope>\r\n--uuid:f7958d02-86b1-4c31-a811-f095ba4a5485+id=376179--\r\n"
+      string: !!binary |
+        DQotLXV1aWQ6Zjc5NThkMDItODZiMS00YzMxLWE4MTEtZjA5NWJhNGE1NDg1K2lkPTM3NjE3OQ0K
+        Q29udGVudC1JRDogPGh0dHA6Ly90ZW1wdXJpLm9yZy8wPg0KQ29udGVudC1UcmFuc2Zlci1FbmNv
+        ZGluZzogOGJpdA0KQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi94b3AreG1sO2NoYXJzZXQ9dXRm
+        LTg7dHlwZT0iYXBwbGljYXRpb24vc29hcCt4bWwiDQoNCjxzOkVudmVsb3BlIHhtbG5zOnM9Imh0
+        dHA6Ly93d3cudzMub3JnLzIwMDMvMDUvc29hcC1lbnZlbG9wZSIgeG1sbnM6YT0iaHR0cDovL3d3
+        dy53My5vcmcvMjAwNS8wOC9hZGRyZXNzaW5nIj48czpIZWFkZXI+PGE6QWN0aW9uIHM6bXVzdFVu
+        ZGVyc3RhbmQ9IjEiPmh0dHA6Ly9DSVMvQklSL1BVQkwvMjAxNC8wNy9JVXNsdWdhQklSemV3blB1
+        YmwvRGFuZVBvYmllcnpQZWxueVJhcG9ydFJlc3BvbnNlPC9hOkFjdGlvbj48L3M6SGVhZGVyPjxz
+        OkJvZHk+PERhbmVQb2JpZXJ6UGVsbnlSYXBvcnRSZXNwb25zZSB4bWxucz0iaHR0cDovL0NJUy9C
+        SVIvUFVCTC8yMDE0LzA3Ij48RGFuZVBvYmllcnpQZWxueVJhcG9ydFJlc3VsdD4mbHQ7cm9vdCZn
+        dDsmI3hEOwogICZsdDtkYW5lJmd0OyYjeEQ7CiAgICAmbHQ7cHJhd19wa2RLb2QmZ3Q7ODQxMVom
+        bHQ7L3ByYXdfcGtkS29kJmd0OyYjeEQ7CiAgICAmbHQ7cHJhd19wa2ROYXp3YSZndDtLSUVST1dB
+        TklFIFBPRFNUQVdPV1lNSSBST0RaQUpBTUkgRFpJQcWBQUxOT8WaQ0kgUFVCTElDWk5FSiZsdDsv
+        cHJhd19wa2ROYXp3YSZndDsmI3hEOwogICAgJmx0O3ByYXdfcGtkUHJ6ZXdhemFqYWNlJmd0OzEm
+        bHQ7L3ByYXdfcGtkUHJ6ZXdhemFqYWNlJmd0OyYjeEQ7CiAgJmx0Oy9kYW5lJmd0OyYjeEQ7CiZs
+        dDsvcm9vdCZndDs8L0RhbmVQb2JpZXJ6UGVsbnlSYXBvcnRSZXN1bHQ+PC9EYW5lUG9iaWVyelBl
+        bG55UmFwb3J0UmVzcG9uc2U+PC9zOkJvZHk+PC9zOkVudmVsb3BlPg0KLS11dWlkOmY3OTU4ZDAy
+        LTg2YjEtNGMzMS1hODExLWYwOTViYTRhNTQ4NStpZD0zNzYxNzktLQ0K
     headers:
       cache-control:
       - private,no-cache, no-store, max-age=0, must-revalidate
@@ -203,24 +229,32 @@ interactions:
       - application/soap+xml; charset=utf-8
       host:
       - wyszukiwarkaregontest.stat.gov.pl
-      sid:
-      - 3e9bx2hhue76gy5e688x
       user-agent:
       - geomcp/0.1 (+https://github.com/; geodata MCP server)
     method: POST
     uri: https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc
   response:
     body:
-      string: "\r\n--uuid:f7958d02-86b1-4c31-a811-f095ba4a5485+id=376181\r\nContent-ID:
-        <http://tempuri.org/0>\r\nContent-Transfer-Encoding: 8bit\r\nContent-Type:
-        application/xop+xml;charset=utf-8;type=\"application/soap+xml\"\r\n\r\n<s:Envelope
-        xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a=\"http://www.w3.org/2005/08/addressing\"><s:Header><a:Action
-        s:mustUnderstand=\"1\">http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DaneSzukajPodmiotyResponse</a:Action></s:Header><s:Body><DaneSzukajPodmiotyResponse
-        xmlns=\"http://CIS/BIR/PUBL/2014/07\"><DaneSzukajPodmiotyResult>&lt;root&gt;&#xD;\n
-        \ &lt;dane&gt;&#xD;\n    &lt;ErrorCode&gt;4&lt;/ErrorCode&gt;&#xD;\n    &lt;ErrorMessagePl&gt;Nie
-        znaleziono podmiotu dla podanych kryteri\xF3w wyszukiwania.&lt;/ErrorMessagePl&gt;&#xD;\n
-        \   &lt;ErrorMessageEn&gt;No data found for the specified search criteria.&lt;/ErrorMessageEn&gt;&#xD;\n
-        \   &lt;Nip&gt;1111111111&lt;/Nip&gt;&#xD;\n  &lt;/dane&gt;&#xD;\n&lt;/root&gt;</DaneSzukajPodmiotyResult></DaneSzukajPodmiotyResponse></s:Body></s:Envelope>\r\n--uuid:f7958d02-86b1-4c31-a811-f095ba4a5485+id=376181--\r\n"
+      string: !!binary |
+        DQotLXV1aWQ6Zjc5NThkMDItODZiMS00YzMxLWE4MTEtZjA5NWJhNGE1NDg1K2lkPTM3NjE4MQ0K
+        Q29udGVudC1JRDogPGh0dHA6Ly90ZW1wdXJpLm9yZy8wPg0KQ29udGVudC1UcmFuc2Zlci1FbmNv
+        ZGluZzogOGJpdA0KQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi94b3AreG1sO2NoYXJzZXQ9dXRm
+        LTg7dHlwZT0iYXBwbGljYXRpb24vc29hcCt4bWwiDQoNCjxzOkVudmVsb3BlIHhtbG5zOnM9Imh0
+        dHA6Ly93d3cudzMub3JnLzIwMDMvMDUvc29hcC1lbnZlbG9wZSIgeG1sbnM6YT0iaHR0cDovL3d3
+        dy53My5vcmcvMjAwNS8wOC9hZGRyZXNzaW5nIj48czpIZWFkZXI+PGE6QWN0aW9uIHM6bXVzdFVu
+        ZGVyc3RhbmQ9IjEiPmh0dHA6Ly9DSVMvQklSL1BVQkwvMjAxNC8wNy9JVXNsdWdhQklSemV3blB1
+        YmwvRGFuZVN6dWthalBvZG1pb3R5UmVzcG9uc2U8L2E6QWN0aW9uPjwvczpIZWFkZXI+PHM6Qm9k
+        eT48RGFuZVN6dWthalBvZG1pb3R5UmVzcG9uc2UgeG1sbnM9Imh0dHA6Ly9DSVMvQklSL1BVQkwv
+        MjAxNC8wNyI+PERhbmVTenVrYWpQb2RtaW90eVJlc3VsdD4mbHQ7cm9vdCZndDsmI3hEOwogICZs
+        dDtkYW5lJmd0OyYjeEQ7CiAgICAmbHQ7RXJyb3JDb2RlJmd0OzQmbHQ7L0Vycm9yQ29kZSZndDsm
+        I3hEOwogICAgJmx0O0Vycm9yTWVzc2FnZVBsJmd0O05pZSB6bmFsZXppb25vIHBvZG1pb3R1IGRs
+        YSBwb2RhbnljaCBrcnl0ZXJpw7N3IHd5c3p1a2l3YW5pYS4mbHQ7L0Vycm9yTWVzc2FnZVBsJmd0
+        OyYjeEQ7CiAgICAmbHQ7RXJyb3JNZXNzYWdlRW4mZ3Q7Tm8gZGF0YSBmb3VuZCBmb3IgdGhlIHNw
+        ZWNpZmllZCBzZWFyY2ggY3JpdGVyaWEuJmx0Oy9FcnJvck1lc3NhZ2VFbiZndDsmI3hEOwogICAg
+        Jmx0O05pcCZndDsxMTExMTExMTExJmx0Oy9OaXAmZ3Q7JiN4RDsKICAmbHQ7L2RhbmUmZ3Q7JiN4
+        RDsKJmx0Oy9yb290Jmd0OzwvRGFuZVN6dWthalBvZG1pb3R5UmVzdWx0PjwvRGFuZVN6dWthalBv
+        ZG1pb3R5UmVzcG9uc2U+PC9zOkJvZHk+PC9zOkVudmVsb3BlPg0KLS11dWlkOmY3OTU4ZDAyLTg2
+        YjEtNGMzMS1hODExLWYwOTViYTRhNTQ4NStpZD0zNzYxODEtLQ0K
     headers:
       cache-control:
       - private,no-cache, no-store, max-age=0, must-revalidate

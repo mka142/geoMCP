@@ -16,54 +16,64 @@ interactions:
     uri: https://dane.biznes.gov.pl/api/ceidg/v3/firmy?limit=5&miasto=Smolec&pkd=4322Z&status=AKTYWNY
   response:
     body:
-      string: "{\"firmy\": [{\"id\": \"B88B6E6E-A676-430D-A08B-648C2F8EE5A5\", \"nazwa\":
-        \"REDACTED\", \"adresDzialalnosci\": {\"ulica\": \"REDACTED\", \"budynek\":
-        \"REDACTED\", \"miasto\": \"SMOLEC\", \"wojewodztwo\": \"dolno\u015Bl\u0105skie\",
-        \"powiat\": \"wroc\u0142awski\", \"gmina\": \"K\u0105ty Wroc\u0142awskie\",
-        \"kraj\": \"PL\", \"kod\": \"55-080\", \"terc\": \"0223045\", \"simc\": \"0875187\",
-        \"ulic\": \"06274\"}, \"wlasciciel\": {\"imie\": \"REDACTED\", \"nazwisko\":
-        \"REDACTED\", \"nip\": \"REDACTED\", \"regon\": \"REDACTED\"}, \"dataRozpoczecia\":
-        \"2026-01-15\", \"status\": \"AKTYWNY\", \"link\": \"https://dane.biznes.gov.pl/api/ceidg/v3/firma/B88B6E6E-A676-430D-A08B-648C2F8EE5A5\"},
-        {\"id\": \"825C8F27-9E9D-4AFA-BDE7-4284D6F3B2AD\", \"nazwa\": \"REDACTED\",
-        \"adresDzialalnosci\": {\"ulica\": \"REDACTED\", \"budynek\": \"REDACTED\",
-        \"lokal\": \"REDACTED\", \"miasto\": \"Smolec\", \"wojewodztwo\": \"DOLNO\u015AL\u0104SKIE\",
-        \"powiat\": \"wroc\u0142awski\", \"gmina\": \"K\u0105ty Wroc\u0142awskie\",
-        \"kraj\": \"PL\", \"kod\": \"55-080\", \"terc\": \"0223045\", \"simc\": \"0875187\",
-        \"ulic\": \"03554\"}, \"wlasciciel\": {\"imie\": \"REDACTED\", \"nazwisko\":
-        \"REDACTED\", \"nip\": \"REDACTED\", \"regon\": \"REDACTED\"}, \"dataRozpoczecia\":
-        \"2024-11-12\", \"status\": \"AKTYWNY\", \"link\": \"https://dane.biznes.gov.pl/api/ceidg/v3/firma/825C8F27-9E9D-4AFA-BDE7-4284D6F3B2AD\"},
-        {\"id\": \"37306E83-EF4D-489D-863C-42A3AA45CB67\", \"nazwa\": \"REDACTED\",
-        \"adresDzialalnosci\": {\"ulica\": \"REDACTED\", \"budynek\": \"REDACTED\",
-        \"lokal\": \"REDACTED\", \"miasto\": \"Smolec\", \"wojewodztwo\": \"DOLNO\u015AL\u0104SKIE\",
-        \"powiat\": \"wroc\u0142awski\", \"gmina\": \"K\u0105ty Wroc\u0142awskie\",
-        \"kraj\": \"PL\", \"kod\": \"55-080\", \"terc\": \"0223045\", \"simc\": \"0875187\",
-        \"ulic\": \"18403\"}, \"wlasciciel\": {\"imie\": \"REDACTED\", \"nazwisko\":
-        \"REDACTED\", \"nip\": \"REDACTED\", \"regon\": \"REDACTED\"}, \"dataRozpoczecia\":
-        \"2024-07-08\", \"status\": \"AKTYWNY\", \"link\": \"https://dane.biznes.gov.pl/api/ceidg/v3/firma/37306E83-EF4D-489D-863C-42A3AA45CB67\"},
-        {\"id\": \"6A05800A-ADCE-4441-B02C-857B5BD6B08B\", \"nazwa\": \"REDACTED\",
-        \"adresDzialalnosci\": {\"ulica\": \"REDACTED\", \"budynek\": \"REDACTED\",
-        \"lokal\": \"REDACTED\", \"miasto\": \"Smolec\", \"wojewodztwo\": \"DOLNO\u015AL\u0104SKIE\",
-        \"powiat\": \"wroc\u0142awski\", \"gmina\": \"K\u0105ty Wroc\u0142awskie\",
-        \"kraj\": \"PL\", \"kod\": \"55-080\", \"terc\": \"0223045\", \"simc\": \"0875187\",
-        \"ulic\": \"18511\"}, \"wlasciciel\": {\"imie\": \"REDACTED\", \"nazwisko\":
-        \"REDACTED\", \"nip\": \"REDACTED\", \"regon\": \"REDACTED\"}, \"dataRozpoczecia\":
-        \"2024-04-02\", \"status\": \"AKTYWNY\", \"link\": \"https://dane.biznes.gov.pl/api/ceidg/v3/firma/6A05800A-ADCE-4441-B02C-857B5BD6B08B\"},
-        {\"id\": \"4FB75C2B-281A-4361-85FD-48F191FEAC8A\", \"nazwa\": \"REDACTED\",
-        \"adresDzialalnosci\": {\"ulica\": \"REDACTED\", \"budynek\": \"REDACTED\",
-        \"miasto\": \"Smolec\", \"wojewodztwo\": \"DOLNO\u015AL\u0104SKIE\", \"powiat\":
-        \"wroc\u0142awski\", \"gmina\": \"K\u0105ty Wroc\u0142awskie\", \"kraj\":
-        \"PL\", \"kod\": \"55-080\", \"terc\": \"0223045\", \"simc\": \"0875187\",
-        \"ulic\": \"02387\"}, \"wlasciciel\": {\"imie\": \"REDACTED\", \"nazwisko\":
-        \"REDACTED\", \"nip\": \"REDACTED\", \"regon\": \"REDACTED\"}, \"dataRozpoczecia\":
-        \"2023-10-02\", \"status\": \"AKTYWNY\", \"link\": \"https://dane.biznes.gov.pl/api/ceidg/v3/firma/4FB75C2B-281A-4361-85FD-48F191FEAC8A\"}],
-        \"count\": 56, \"links\": {\"next\": \"https://dane.biznes.gov.pl/api/ceidg/v3/firmy?pkd=4322Z&miasto=Smolec&status=AKTYWNY&limit=5&page=1\",
-        \"prev\": \"https://dane.biznes.gov.pl/api/ceidg/v3/firmy?pkd=4322Z&miasto=Smolec&status=AKTYWNY&limit=5&page=0\",
-        \"self\": \"https://dane.biznes.gov.pl/api/ceidg/v3/firmy?pkd=4322Z&miasto=Smolec&status=AKTYWNY&limit=5&page=0\",
-        \"first\": \"https://dane.biznes.gov.pl/api/ceidg/v3/firmy?pkd=4322Z&miasto=Smolec&status=AKTYWNY&limit=5&page=0\",
-        \"last\": \"https://dane.biznes.gov.pl/api/ceidg/v3/firmy?pkd=4322Z&miasto=Smolec&status=AKTYWNY&limit=5&page=11\"},
-        \"properties\": {\"dc:title\": \"firmy\", \"dc:description\": \"Zwraca list\u0119
-        firm\", \"dc:language\": \"pl-PL\", \"schema:provider\": \"Ministerstwo Rozwoju
-        i Technologii\", \"schema:datePublished\": \"2026-10-10 09:09:58\"}}"
+      string: !!binary |
+        eyJmaXJteSI6IFt7ImlkIjogIlJFREFDVEVEIiwgIm5hendhIjogIlJFREFDVEVEIiwgImFkcmVz
+        RHppYWxhbG5vc2NpIjogeyJ1bGljYSI6ICJSRURBQ1RFRCIsICJidWR5bmVrIjogIlJFREFDVEVE
+        IiwgIm1pYXN0byI6ICJTTU9MRUMiLCAid29qZXdvZHp0d28iOiAiZG9sbm/Fm2zEhXNraWUiLCAi
+        cG93aWF0IjogIndyb2PFgmF3c2tpIiwgImdtaW5hIjogIkvEhXR5IFdyb2PFgmF3c2tpZSIsICJr
+        cmFqIjogIlBMIiwgImtvZCI6ICI1NS0wODAiLCAidGVyYyI6ICIwMjIzMDQ1IiwgInNpbWMiOiAi
+        MDg3NTE4NyIsICJ1bGljIjogIjA2Mjc0In0sICJ3bGFzY2ljaWVsIjogeyJpbWllIjogIlJFREFD
+        VEVEIiwgIm5hendpc2tvIjogIlJFREFDVEVEIiwgIm5pcCI6ICJSRURBQ1RFRCIsICJyZWdvbiI6
+        ICJSRURBQ1RFRCJ9LCAiZGF0YVJvenBvY3plY2lhIjogIjIwMjYtMDEtMTUiLCAic3RhdHVzIjog
+        IkFLVFlXTlkiLCAibGluayI6ICJSRURBQ1RFRCJ9LCB7ImlkIjogIlJFREFDVEVEIiwgIm5hendh
+        IjogIlJFREFDVEVEIiwgImFkcmVzRHppYWxhbG5vc2NpIjogeyJ1bGljYSI6ICJSRURBQ1RFRCIs
+        ICJidWR5bmVrIjogIlJFREFDVEVEIiwgImxva2FsIjogIlJFREFDVEVEIiwgIm1pYXN0byI6ICJT
+        bW9sZWMiLCAid29qZXdvZHp0d28iOiAiRE9MTk/FmkzEhFNLSUUiLCAicG93aWF0IjogIndyb2PF
+        gmF3c2tpIiwgImdtaW5hIjogIkvEhXR5IFdyb2PFgmF3c2tpZSIsICJrcmFqIjogIlBMIiwgImtv
+        ZCI6ICI1NS0wODAiLCAidGVyYyI6ICIwMjIzMDQ1IiwgInNpbWMiOiAiMDg3NTE4NyIsICJ1bGlj
+        IjogIjAzNTU0In0sICJ3bGFzY2ljaWVsIjogeyJpbWllIjogIlJFREFDVEVEIiwgIm5hendpc2tv
+        IjogIlJFREFDVEVEIiwgIm5pcCI6ICJSRURBQ1RFRCIsICJyZWdvbiI6ICJSRURBQ1RFRCJ9LCAi
+        ZGF0YVJvenBvY3plY2lhIjogIjIwMjQtMTEtMTIiLCAic3RhdHVzIjogIkFLVFlXTlkiLCAibGlu
+        ayI6ICJSRURBQ1RFRCJ9LCB7ImlkIjogIlJFREFDVEVEIiwgIm5hendhIjogIlJFREFDVEVEIiwg
+        ImFkcmVzRHppYWxhbG5vc2NpIjogeyJ1bGljYSI6ICJSRURBQ1RFRCIsICJidWR5bmVrIjogIlJF
+        REFDVEVEIiwgImxva2FsIjogIlJFREFDVEVEIiwgIm1pYXN0byI6ICJTbW9sZWMiLCAid29qZXdv
+        ZHp0d28iOiAiRE9MTk/FmkzEhFNLSUUiLCAicG93aWF0IjogIndyb2PFgmF3c2tpIiwgImdtaW5h
+        IjogIkvEhXR5IFdyb2PFgmF3c2tpZSIsICJrcmFqIjogIlBMIiwgImtvZCI6ICI1NS0wODAiLCAi
+        dGVyYyI6ICIwMjIzMDQ1IiwgInNpbWMiOiAiMDg3NTE4NyIsICJ1bGljIjogIjE4NDAzIn0sICJ3
+        bGFzY2ljaWVsIjogeyJpbWllIjogIlJFREFDVEVEIiwgIm5hendpc2tvIjogIlJFREFDVEVEIiwg
+        Im5pcCI6ICJSRURBQ1RFRCIsICJyZWdvbiI6ICJSRURBQ1RFRCJ9LCAiZGF0YVJvenBvY3plY2lh
+        IjogIjIwMjQtMDctMDgiLCAic3RhdHVzIjogIkFLVFlXTlkiLCAibGluayI6ICJSRURBQ1RFRCJ9
+        LCB7ImlkIjogIlJFREFDVEVEIiwgIm5hendhIjogIlJFREFDVEVEIiwgImFkcmVzRHppYWxhbG5v
+        c2NpIjogeyJ1bGljYSI6ICJSRURBQ1RFRCIsICJidWR5bmVrIjogIlJFREFDVEVEIiwgImxva2Fs
+        IjogIlJFREFDVEVEIiwgIm1pYXN0byI6ICJTbW9sZWMiLCAid29qZXdvZHp0d28iOiAiRE9MTk/F
+        mkzEhFNLSUUiLCAicG93aWF0IjogIndyb2PFgmF3c2tpIiwgImdtaW5hIjogIkvEhXR5IFdyb2PF
+        gmF3c2tpZSIsICJrcmFqIjogIlBMIiwgImtvZCI6ICI1NS0wODAiLCAidGVyYyI6ICIwMjIzMDQ1
+        IiwgInNpbWMiOiAiMDg3NTE4NyIsICJ1bGljIjogIjE4NTExIn0sICJ3bGFzY2ljaWVsIjogeyJp
+        bWllIjogIlJFREFDVEVEIiwgIm5hendpc2tvIjogIlJFREFDVEVEIiwgIm5pcCI6ICJSRURBQ1RF
+        RCIsICJyZWdvbiI6ICJSRURBQ1RFRCJ9LCAiZGF0YVJvenBvY3plY2lhIjogIjIwMjQtMDQtMDIi
+        LCAic3RhdHVzIjogIkFLVFlXTlkiLCAibGluayI6ICJSRURBQ1RFRCJ9LCB7ImlkIjogIlJFREFD
+        VEVEIiwgIm5hendhIjogIlJFREFDVEVEIiwgImFkcmVzRHppYWxhbG5vc2NpIjogeyJ1bGljYSI6
+        ICJSRURBQ1RFRCIsICJidWR5bmVrIjogIlJFREFDVEVEIiwgIm1pYXN0byI6ICJTbW9sZWMiLCAi
+        d29qZXdvZHp0d28iOiAiRE9MTk/FmkzEhFNLSUUiLCAicG93aWF0IjogIndyb2PFgmF3c2tpIiwg
+        ImdtaW5hIjogIkvEhXR5IFdyb2PFgmF3c2tpZSIsICJrcmFqIjogIlBMIiwgImtvZCI6ICI1NS0w
+        ODAiLCAidGVyYyI6ICIwMjIzMDQ1IiwgInNpbWMiOiAiMDg3NTE4NyIsICJ1bGljIjogIjAyMzg3
+        In0sICJ3bGFzY2ljaWVsIjogeyJpbWllIjogIlJFREFDVEVEIiwgIm5hendpc2tvIjogIlJFREFD
+        VEVEIiwgIm5pcCI6ICJSRURBQ1RFRCIsICJyZWdvbiI6ICJSRURBQ1RFRCJ9LCAiZGF0YVJvenBv
+        Y3plY2lhIjogIjIwMjMtMTAtMDIiLCAic3RhdHVzIjogIkFLVFlXTlkiLCAibGluayI6ICJSRURB
+        Q1RFRCJ9XSwgImNvdW50IjogNTYsICJsaW5rcyI6IHsibmV4dCI6ICJodHRwczovL2RhbmUuYml6
+        bmVzLmdvdi5wbC9hcGkvY2VpZGcvdjMvZmlybXk/cGtkPTQzMjJaJm1pYXN0bz1TbW9sZWMmc3Rh
+        dHVzPUFLVFlXTlkmbGltaXQ9NSZwYWdlPTEiLCAicHJldiI6ICJodHRwczovL2RhbmUuYml6bmVz
+        Lmdvdi5wbC9hcGkvY2VpZGcvdjMvZmlybXk/cGtkPTQzMjJaJm1pYXN0bz1TbW9sZWMmc3RhdHVz
+        PUFLVFlXTlkmbGltaXQ9NSZwYWdlPTAiLCAic2VsZiI6ICJodHRwczovL2RhbmUuYml6bmVzLmdv
+        di5wbC9hcGkvY2VpZGcvdjMvZmlybXk/cGtkPTQzMjJaJm1pYXN0bz1TbW9sZWMmc3RhdHVzPUFL
+        VFlXTlkmbGltaXQ9NSZwYWdlPTAiLCAiZmlyc3QiOiAiaHR0cHM6Ly9kYW5lLmJpem5lcy5nb3Yu
+        cGwvYXBpL2NlaWRnL3YzL2Zpcm15P3BrZD00MzIyWiZtaWFzdG89U21vbGVjJnN0YXR1cz1BS1RZ
+        V05ZJmxpbWl0PTUmcGFnZT0wIiwgImxhc3QiOiAiaHR0cHM6Ly9kYW5lLmJpem5lcy5nb3YucGwv
+        YXBpL2NlaWRnL3YzL2Zpcm15P3BrZD00MzIyWiZtaWFzdG89U21vbGVjJnN0YXR1cz1BS1RZV05Z
+        JmxpbWl0PTUmcGFnZT0xMSJ9LCAicHJvcGVydGllcyI6IHsiZGM6dGl0bGUiOiAiZmlybXkiLCAi
+        ZGM6ZGVzY3JpcHRpb24iOiAiWndyYWNhIGxpc3TEmSBmaXJtIiwgImRjOmxhbmd1YWdlIjogInBs
+        LVBMIiwgInNjaGVtYTpwcm92aWRlciI6ICJNaW5pc3RlcnN0d28gUm96d29qdSBpIFRlY2hub2xv
+        Z2lpIiwgInNjaGVtYTpkYXRlUHVibGlzaGVkIjogIjIwMjYtMTAtMTAgMDk6MDk6NTgifX0=
     headers:
       cache-control:
       - max-age=0, no-cache, no-store
