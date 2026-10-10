@@ -9,8 +9,9 @@ Sources and access (all verified live, October 2026):
   hazard-zone layers are drawn: the services also publish rivers, lakes, embankments, labels and a sheet index,
   which are not flood zones.
 - GDOŚ nature protection: GeoServer WFS with GeoJSON output.
-- PIG-PIB: ArcGIS REST for SOPO landslides and MIDAS mining terrains, and the EGMS 2016-2020 vertical
-  ground-motion image service (statistics over the polygon).
+- PIG-PIB: ArcGIS REST for MIDAS mining terrains (query), SOPO landslides (identify: the SOPO service refuses
+  query; identify returns at most 1,000 features, so large areas are split into tiles), and the EGMS 2016-2020
+  vertical ground-motion image service (statistics over the polygon).
 - IMGW: current meteorological warnings (by powiat TERYT) and hydrological warnings (by voivodeship).
 """
 
@@ -67,9 +68,15 @@ PROTECTED = {
 }
 
 PIG = "https://cbdgmapa.pgi.gov.pl/arcgis/rest/services"
+SOPO = f"{PIG}/geozagrozenia/sopo_obszary/MapServer/identify"
+SOPO_LAYERS = {
+    "landslides": (14, "Landslides (SOPO)", ("Numer identyfikacyjny", "Stopień aktywności")),
+    "landslide_prone": (12, "Areas threatened by mass movement (SOPO)", ("Numer identyfikacyjny",)),
+}
+SOPO_CAP = 1000  # identify's maxRecordCount; it does not flag truncation, so a full answer splits the tile
+_ACTIVE = re.compile(r"(?<!nie)aktywne")  # "aktywne okresowo (O) - 13%, nieaktywne (N) - 87%" counts as active
+SOPO_MIN_TILE_DEG = 0.01  # about 1 km; a full answer at this size is reported as a gap
 GEOLOGY = {
-    "landslides": ("geozagrozenia/sopo_obszary/MapServer/14", "Landslides (SOPO)", ("NAZWA", "NR_OSUWISKA")),
-    "landslide_prone": ("geozagrozenia/sopo_obszary/MapServer/12", "Areas threatened by mass movement (SOPO)", ()),
     "mining_terrain": ("midas/MapServer/2", "Mining terrain (teren górniczy)", ("NAZWA_TG", "KOPALINA")),
     "mining_area": ("midas/MapServer/1", "Mining area (obszar górniczy)", ("NAZWA_OG", "KOPALINA")),
     "mineral_deposit": ("midas/MapServer/0", "Documented mineral deposit (złoże)", ("NAZWA_ZLOZA", "KOPALINA")),
@@ -210,27 +217,71 @@ def _gdos(area: Area, geom: BaseGeometry) -> Group:
     return out, gaps
 
 
+def esri_polygon(rings: list[list[list[float]]]) -> dict[str, Any] | None:
+    """ArcGIS rings as a GeoJSON MultiPolygon: clockwise rings are shells, counter-clockwise ones their holes."""
+    shells: list[list[list[float]]] = []
+    holes: list[list[list[float]]] = []
+    for ring in rings:
+        if len(ring) >= 4:
+            (holes if Polygon(ring).exterior.is_ccw else shells).append(ring)
+    if not shells:
+        return None
+    polygons = [[shell] for shell in shells]
+    for hole in holes:
+        owner = next((p for p in polygons if Polygon(p[0]).contains(Polygon(hole).representative_point())), None)
+        if owner is not None:
+            owner.append(hole)
+    return {"type": "MultiPolygon", "coordinates": polygons}
+
+
+def _sopo_features(geom: BaseGeometry, layer: int, label: str) -> list[dict[str, Any]]:
+    """SOPO features over the area's bounding box, tile by tile, as GeoJSON-like features without duplicates."""
+    found: dict[str, dict[str, Any]] = {}
+    tiles = [geom.bounds]
+    while tiles:
+        minx, miny, maxx, maxy = tiles.pop()
+        if not geom.intersects(Polygon([(minx, miny), (maxx, miny), (maxx, maxy), (minx, maxy)])):
+            continue
+        envelope = {"xmin": minx, "ymin": miny, "xmax": maxx, "ymax": maxy, "spatialReference": {"wkid": 4326}}
+        params = {
+            "geometry": json.dumps(envelope),
+            "geometryType": "esriGeometryEnvelope",
+            "sr": 4326,
+            "layers": f"all:{layer}",
+            "tolerance": 0,
+            "mapExtent": f"{minx},{miny},{maxx},{maxy}",
+            "imageDisplay": "1000,1000,96",  # a fine scale, so scale-dependent layers draw
+            "returnGeometry": "true",
+            "maxAllowableOffset": 0.00002,  # about 2 m
+            "f": "json",
+        }
+        results: list[dict[str, Any]] = _json(SOPO, params).get("results", [])
+        if len(results) >= SOPO_CAP:
+            if maxx - minx <= SOPO_MIN_TILE_DEG and maxy - miny <= SOPO_MIN_TILE_DEG:
+                raise GeomcpError("source_error", f"{label}: more features than the service returns at once.")
+            midx, midy = (minx + maxx) / 2, (miny + maxy) / 2
+            tiles += [
+                (minx, miny, midx, midy),
+                (midx, miny, maxx, midy),
+                (minx, midy, midx, maxy),
+                (midx, midy, maxx, maxy),
+            ]
+            continue
+        for r in results:
+            attributes: dict[str, Any] = r.get("attributes") or {}
+            geometry = esri_polygon((r.get("geometry") or {}).get("rings") or [])
+            found[str(attributes.get("ID", len(found)))] = {"geometry": geometry, "properties": attributes}
+    # active landslides first, so the names listed are the ones that matter
+    return sorted(found.values(), key=lambda f: not _ACTIVE.search(str(f["properties"].get("Stopień aktywności"))))
+
+
 def _pig(area: Area, geom: BaseGeometry) -> Group:
     minx, miny, maxx, maxy = geom.bounds
     envelope = {"xmin": minx, "ymin": miny, "xmax": maxx, "ymax": maxy, "spatialReference": {"wkid": 4326}}
     out: list[Constraint] = []
     gaps: list[str] = []
-    for key, (path, label, fields) in GEOLOGY.items():
-        params = {
-            "geometry": json.dumps(envelope),
-            "geometryType": "esriGeometryEnvelope",
-            "inSR": 4326,
-            "spatialRel": "esriSpatialRelIntersects",
-            "outFields": "*",
-            "returnGeometry": "true",
-            "outSR": 4326,
-            "f": "geojson",
-        }
-        try:
-            features = _features(_json(f"{PIG}/{path}/query", params), label, None)
-        except GeomcpError as e:  # the SOPO landslide layers refuse queries (October 2026): a gap, not "none"
-            gaps.append(f"{label}: {e.message}")
-            continue
+
+    def add(key: str, label: str, features: list[dict[str, Any]], fields: tuple[str, ...]) -> None:
         share, count, names = _overlap(geom, features, fields)
         out.append(
             Constraint(
@@ -244,6 +295,31 @@ def _pig(area: Area, geom: BaseGeometry) -> Group:
                 licence="public data (PIG-PIB)",
             )
         )
+
+    for key, (layer, label, fields) in SOPO_LAYERS.items():
+        try:
+            features = _sopo_features(geom, layer, label)
+        except GeomcpError as e:  # a failed or truncated answer is a gap, never "no landslides"
+            gaps.append(f"{label}: {e.message}")
+            continue
+        add(key, label, features, fields)
+    for key, (path, label, fields) in GEOLOGY.items():
+        params = {
+            "geometry": json.dumps(envelope),
+            "geometryType": "esriGeometryEnvelope",
+            "inSR": 4326,
+            "spatialRel": "esriSpatialRelIntersects",
+            "outFields": "*",
+            "returnGeometry": "true",
+            "outSR": 4326,
+            "f": "geojson",
+        }
+        try:
+            features = _features(_json(f"{PIG}/{path}/query", params), label, None)
+        except GeomcpError as e:
+            gaps.append(f"{label}: {e.message}")
+            continue
+        add(key, label, features, fields)
     hull = geom.convex_hull
     ring = [list(p) for p in hull.exterior.coords] if isinstance(hull, Polygon) else []
     try:
@@ -555,7 +631,7 @@ def estimate_s(area_id: str) -> float:
     """Expected seconds: flood tiles dominate (measured: 15 s for 10 km², 67 s for 177 km²)."""
     area = area_from_id(area_id)
     return (
-        3.0 if cache.get("constraints", f"constraints|v4|{area.area_id}") is not None else 12.0 + 0.32 * area.area_km2
+        3.0 if cache.get("constraints", f"constraints|v5|{area.area_id}") is not None else 12.0 + 0.32 * area.area_km2
     )
 
 
@@ -565,7 +641,7 @@ def get_constraints(area_id: str) -> ConstraintsResult:
     area = area_from_id(area_id)
     geom = geometry_of(area)
     terc, _ = _commune_at(area)  # also fails clearly outside Poland
-    key = f"constraints|v4|{area.area_id}"
+    key = f"constraints|v5|{area.area_id}"
     items: list[Constraint] = []
     gaps: list[str] = []
     notices: list[str] = []

@@ -1,4 +1,4 @@
-"""Flood-zone layer selection: only the flood extent is counted, not rivers, embankments, labels or sheet frames."""
+"""Constraints: flood layer selection, gaps instead of false absences, SOPO landslides read through identify."""
 
 import pytest
 from shapely.geometry.base import BaseGeometry
@@ -93,3 +93,40 @@ def test_a_truncated_feature_list_is_refused(monkeypatch: pytest.MonkeyPatch) ->
         "features": [{"geometry": None}] * 500
     }  # ArcGIS layers return up to 1,000-2,000 features and flag truncation
     assert len(constraints._features(many, "x", None)) == 500  # pyright: ignore[reportPrivateUsage]
+
+
+def test_esri_rings_become_shells_with_their_holes() -> None:
+    from shapely.geometry import shape
+
+    from geomcp_core.constraints import esri_polygon
+
+    shell = [[0.0, 0.0], [0.0, 10.0], [10.0, 10.0], [10.0, 0.0], [0.0, 0.0]]  # clockwise: a shell in ArcGIS
+    hole = [[2.0, 2.0], [4.0, 2.0], [4.0, 4.0], [2.0, 4.0], [2.0, 2.0]]  # counter-clockwise: a hole
+    other = [[20.0, 0.0], [20.0, 5.0], [25.0, 5.0], [25.0, 0.0], [20.0, 0.0]]
+    geometry = esri_polygon([shell, hole, other])
+    assert geometry is not None and shape(geometry).area == 100 - 4 + 25
+    assert esri_polygon([hole]) is None
+
+
+def test_a_full_sopo_answer_splits_the_tile(monkeypatch: pytest.MonkeyPatch) -> None:
+    """identify returns at most 1,000 features without saying so: a full answer is split, never trusted."""
+    from geomcp_core import constraints
+
+    calls: list[str] = []
+
+    def fake_json(url: str, params: dict[str, str], post: bool = False) -> object:
+        calls.append(params["mapExtent"])
+        if len(calls) == 1:
+            return {"results": [{"attributes": {"ID": str(i)}} for i in range(constraints.SOPO_CAP)]}
+        ring = [[16.2, 51.405], [16.2, 51.4051], [16.2001, 51.4051], [16.2001, 51.405], [16.2, 51.405]]
+        return {"results": [{"attributes": {"ID": "7"}, "geometry": {"rings": [ring]}}]}  # the same one per tile
+
+    monkeypatch.setattr(constraints, "_json", fake_json)
+    _, geom = _area()
+    features = constraints._sopo_features(geom, 14, "Landslides")  # pyright: ignore[reportPrivateUsage]
+    assert len(calls) == 5 and len(features) == 1  # the box, then its four quarters; duplicates merged
+
+    monkeypatch.setattr(constraints, "SOPO_MIN_TILE_DEG", 1.0)  # the first tile is already the smallest
+    calls.clear()
+    with pytest.raises(GeomcpError, match="more features"):
+        constraints._sopo_features(geom, 14, "Landslides")  # pyright: ignore[reportPrivateUsage]

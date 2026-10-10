@@ -1,0 +1,320 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - cbdgmapa.pgi.gov.pl
+    method: GET
+    uri: https://cbdgmapa.pgi.gov.pl/arcgis/rest/services/geozagrozenia/sopo_obszary/MapServer/identify?geometry=%7B%22xmin%22%3A+19.88443641064331%2C+%22ymin%22%3A+49.7565027499633%2C+%22xmax%22%3A+19.892763589356694%2C+%22ymax%22%3A+49.761897248774304%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A14&tolerance=0&mapExtent=19.88443641064331%2C49.7565027499633%2C19.892763589356694%2C49.761897248774304&imageDisplay=1000%2C1000%2C96&returnGeometry=true&maxAllowableOffset=2e-05&f=json
+  response:
+    body:
+      string: "{\"results\":[{\"layerId\":14,\"layerName\":\"SOPO \u2013 osuwiska\",\"displayFieldName\":\"Numer
+        identyfikacyjny\",\"value\":\"10325\",\"attributes\":{\"ID\":\"7476\",\"Geometria\":\"Polygon\",\"Numer
+        identyfikacyjny\":\"10325\",\"Stopie\u0144 aktywno\u015Bci\":\"aktywne okresowo
+        (O) - 13%, nieaktywne (N) - 87%\",\"Wersja karty\":\"2020\",\"Data ustalenia\":\"29.09.2009\",\"Data
+        wypelnienia\":\"21.02.2024\",\"SHAPE.AREA\":\"1387105,857025\",\"SHAPE.LEN\":\"5896,201663\"},\"geometryType\":\"esriGeometryPolygon\",\"geometry\":{\"rings\":[[[19.892848,49.765549],[19.893446,49.765536],[19.893948,49.765475],[19.895045,49.765428],[19.89511,49.765393],[19.895124,49.765217],[19.895845,49.765119],[19.895931,49.76495],[19.895995,49.764907],[19.896173,49.764944],[19.896611,49.764622],[19.896719,49.764345],[19.896703,49.763498],[19.896732,49.763302],[19.89685,49.762975],[19.896876,49.762779],[19.896697,49.762362],[19.896634,49.761557],[19.896716,49.760917],[19.896398,49.76029],[19.896382,49.760169],[19.89642,49.760039],[19.896603,49.759857],[19.896667,49.759727],[19.896865,49.759604],[19.897223,49.759559],[19.898004,49.759285],[19.898255,49.759171],[19.898381,49.758945],[19.898368,49.758761],[19.898267,49.758578],[19.897828,49.758368],[19.897533,49.75825],[19.897283,49.758189],[19.897188,49.758105],[19.896943,49.758024],[19.896735,49.758065],[19.896425,49.75801],[19.896382,49.757965],[19.896436,49.757902],[19.89673,49.757755],[19.896616,49.757663],[19.896304,49.757525],[19.895854,49.757454],[19.895781,49.757474],[19.895711,49.757444],[19.895817,49.757182],[19.895826,49.75671],[19.895769,49.756515],[19.895644,49.756304],[19.895388,49.756052],[19.89524,49.755854],[19.895073,49.755729],[19.894524,49.755201],[19.894273,49.755053],[19.893513,49.7548],[19.893205,49.75459],[19.892972,49.754498],[19.892877,49.754428],[19.892667,49.754176],[19.892319,49.754072],[19.892157,49.753954],[19.892149,49.753841],[19.891999,49.753797],[19.89158,49.753803],[19.891498,49.753742],[19.891297,49.753728],[19.891238,49.753758],[19.891164,49.753897],[19.891429,49.754098],[19.891496,49.75433],[19.891633,49.754416],[19.891778,49.754606],[19.891709,49.754724],[19.891806,49.754918],[19.891617,49.755017],[19.891458,49.755328],[19.891399,49.755455],[19.891395,49.755749],[19.891307,49.755778],[19.89112,49.755745],[19.890922,49.755608],[19.890704,49.755304],[19.890639,49.755039],[19.890247,49.75476],[19.890307,49.754514],[19.890304,49.75434],[19.890218,49.754244],[19.890255,49.754101],[19.890133,49.753799],[19.890083,49.753559],[19.890006,49.753486],[19.889865,49.753189],[19.889463,49.753019],[19.889248,49.752958],[19.889097,49.752959],[19.888956,49.753],[19.888825,49.753105],[19.888686,49.753301],[19.888327,49.75354],[19.888143,49.75372],[19.887979,49.753968],[19.887734,49.754166],[19.887517,49.754444],[19.887438,49.754473],[19.887311,49.754424],[19.887246,49.754353],[19.886937,49.754287],[19.886728,49.7543],[19.886386,49.75453],[19.886142,49.754506],[19.885971,49.754392],[19.885933,49.754249],[19.885993,49.75411],[19.886189,49.753926],[19.886174,49.753738],[19.885811,49.753547],[19.88548,49.753511],[19.885163,49.75342],[19.884986,49.753462],[19.884928,49.753588],[19.884825,49.753694],[19.884376,49.753827],[19.884141,49.754337],[19.884036,49.754396],[19.88392,49.754402],[19.88352,49.754365],[19.883402,49.754461],[19.883352,49.75497],[19.883294,49.755101],[19.882968,49.755212],[19.882862,49.755549],[19.882766,49.755703],[19.882679,49.755758],[19.882667,49.755808],[19.882689,49.755858],[19.88285,49.755977],[19.882778,49.756108],[19.882749,49.756343],[19.882808,49.756414],[19.88283,49.756519],[19.883098,49.756683],[19.883068,49.756855],[19.882907,49.757055],[19.882678,49.757045],[19.882019,49.756742],[19.88153,49.756618],[19.880704,49.756217],[19.880394,49.756221],[19.880281,49.756254],[19.879794,49.756627],[19.87973,49.756727],[19.879713,49.756957],[19.879918,49.757347],[19.879987,49.757558],[19.879816,49.757605],[19.879556,49.757595],[19.879385,49.757646],[19.879425,49.757926],[19.879397,49.758007],[19.879084,49.758347],[19.879061,49.75842],[19.879099,49.758523],[19.879039,49.758665],[19.878952,49.758774],[19.878996,49.758915],[19.879117,49.759037],[19.879142,49.759106],[19.879098,49.759478],[19.879285,49.759672],[19.879259,49.759849],[19.879399,49.76004],[19.879406,49.760097],[19.879318,49.760194],[19.879366,49.760519],[19.879286,49.760666],[19.879133,49.760744],[19.878897,49.760795],[19.878793,49.760907],[19.878817,49.761248],[19.878778,49.761423],[19.878628,49.761763],[19.878642,49.76208],[19.878801,49.762263],[19.878755,49.76241],[19.878537,49.76276],[19.87852,49.762838],[19.878771,49.763182],[19.879006,49.76339],[19.879184,49.763634],[19.879428,49.763796],[19.879578,49.763986],[19.879844,49.764107],[19.87998,49.764275],[19.880271,49.764444],[19.880615,49.764477],[19.881232,49.764321],[19.882246,49.764238],[19.883665,49.763839],[19.883937,49.763807],[19.884488,49.763829],[19.88557,49.76407],[19.885958,49.764252],[19.88613,49.764404],[19.886518,49.76455],[19.887187,49.764875],[19.887927,49.765073],[19.88902,49.765229],[19.889553,49.765252],[19.889855,49.765234],[19.889949,49.765207],[19.890019,49.765133],[19.890208,49.765105],[19.891453,49.765372],[19.891811,49.765491],[19.892215,49.765573],[19.892848,49.765549]]],\"spatialReference\":{\"wkid\":4326,\"latestWkid\":4326}}}]}"
+    headers:
+      cache-control:
+      - max-age=00:00:00
+      content-length:
+      - '5252'
+      content-type:
+      - application/json; charset=UTF-8
+      date:
+      - Sat, 10 Oct 2026 23:29:01 GMT
+      etag:
+      - '"2c9aa228"'
+      server:
+      - Apache Viper 69
+      set-cookie:
+      - AGS_ROLES="419jqfa+uOZgYod4xPOQ8Q=="; Version=1; Max-Age=60; Expires=Sat,
+        10 Oct 2026 23:30:01 GMT; Path=/arcgis/rest; HttpOnly
+      - visid_incap_3291022=byMqQfoDQmqPzmWx6Kb3QjzKymoAAAAAQUIPAAAAAADYSwn8iv9p458usIN0WLOe;
+        expires=Sun, 10 Oct 2027 22:24:49 GMT; HttpOnly; path=/; Domain=.pgi.gov.pl
+      - incap_ses_689_3291022=gL3IOodZHxazja1tkdKPCTzKymoAAAAAMJ9G6wE6FZDCVNT8u1HT0Q==;
+        path=/; Domain=.pgi.gov.pl
+      vary:
+      - Origin
+      x-cdn:
+      - Imperva
+      x-content-type-options:
+      - nosniff
+      x-iinfo:
+      - 4-17074680-17074682 NNNY CT(5 7 0) RT(1791674941251 20) q(0 0 0 -1) r(1 1)
+        U2
+      x-powered-by:
+      - ASP.NET
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - cbdgmapa.pgi.gov.pl
+    method: GET
+    uri: https://cbdgmapa.pgi.gov.pl/arcgis/rest/services/geozagrozenia/sopo_obszary/MapServer/identify?geometry=%7B%22xmin%22%3A+19.88443641064331%2C+%22ymin%22%3A+49.7565027499633%2C+%22xmax%22%3A+19.892763589356694%2C+%22ymax%22%3A+49.761897248774304%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A12&tolerance=0&mapExtent=19.88443641064331%2C49.7565027499633%2C19.892763589356694%2C49.761897248774304&imageDisplay=1000%2C1000%2C96&returnGeometry=true&maxAllowableOffset=2e-05&f=json
+  response:
+    body:
+      string: '{"results":[]}'
+    headers:
+      cache-control:
+      - max-age=00:00:00
+      content-length:
+      - '14'
+      content-type:
+      - application/json; charset=UTF-8
+      date:
+      - Sat, 10 Oct 2026 23:29:01 GMT
+      etag:
+      - '"c9f6d295"'
+      server:
+      - Apache Viper 69
+      set-cookie:
+      - AGS_ROLES="419jqfa+uOZgYod4xPOQ8Q=="; Version=1; Max-Age=60; Expires=Sat,
+        10 Oct 2026 23:30:01 GMT; Path=/arcgis/rest; HttpOnly
+      - visid_incap_3291022=+PsHK5JQTwmfoeJgJOZRDj3KymoAAAAAQUIPAAAAAADt8Ivn2XGV6d0QKKif/Bdr;
+        expires=Sun, 10 Oct 2027 22:24:50 GMT; HttpOnly; path=/; Domain=.pgi.gov.pl
+      - incap_ses_689_3291022=Is8LY0M7YzDAja1tkdKPCT3KymoAAAAAdCD2Gli1f7Cz0TZennkWgg==;
+        path=/; Domain=.pgi.gov.pl
+      vary:
+      - Origin
+      x-cdn:
+      - Imperva
+      x-content-type-options:
+      - nosniff
+      x-iinfo:
+      - 13-21088188-21088190 NNNY CT(4 7 0) RT(1791674941437 23) q(0 0 0 -1) r(1 1)
+        U2
+      x-powered-by:
+      - ASP.NET
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - cbdgmapa.pgi.gov.pl
+    method: GET
+    uri: https://cbdgmapa.pgi.gov.pl/arcgis/rest/services/midas/MapServer/2/query?geometry=%7B%22xmin%22%3A+19.88443641064331%2C+%22ymin%22%3A+49.7565027499633%2C+%22xmax%22%3A+19.892763589356694%2C+%22ymax%22%3A+49.761897248774304%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&f=geojson
+  response:
+    body:
+      string: '{"type":"FeatureCollection","features":[]}'
+    headers:
+      cache-control:
+      - max-age=00:00:00
+      content-length:
+      - '42'
+      content-type:
+      - application/geo+json; charset=UTF-8
+      date:
+      - Sat, 10 Oct 2026 23:29:01 GMT
+      etag:
+      - '"b5731b5a"'
+      server:
+      - Apache Viper 69
+      set-cookie:
+      - AGS_ROLES="419jqfa+uOZgYod4xPOQ8Q=="; Version=1; Max-Age=60; Expires=Sat,
+        10 Oct 2026 23:30:01 GMT; Path=/arcgis/rest; HttpOnly
+      - visid_incap_3291022=smewZ6mGQ6qDeX/7hutxxD3KymoAAAAAQUIPAAAAAACZmRPvV2IKxDyxP/gER83o;
+        expires=Sun, 10 Oct 2027 22:24:51 GMT; HttpOnly; path=/; Domain=.pgi.gov.pl
+      - incap_ses_689_3291022=vaS0NcpUWjDNja1tkdKPCT3KymoAAAAA2x0TtT2ymxNE8HUfNJUTFg==;
+        path=/; Domain=.pgi.gov.pl
+      vary:
+      - Origin
+      x-cdn:
+      - Imperva
+      x-content-type-options:
+      - nosniff
+      x-iinfo:
+      - 10-9672192-9672182 PNNN RT(1791674941581 20) q(0 0 0 -1) r(1 1) U2
+      x-powered-by:
+      - ASP.NET
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - cbdgmapa.pgi.gov.pl
+    method: GET
+    uri: https://cbdgmapa.pgi.gov.pl/arcgis/rest/services/midas/MapServer/1/query?geometry=%7B%22xmin%22%3A+19.88443641064331%2C+%22ymin%22%3A+49.7565027499633%2C+%22xmax%22%3A+19.892763589356694%2C+%22ymax%22%3A+49.761897248774304%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&f=geojson
+  response:
+    body:
+      string: '{"type":"FeatureCollection","features":[]}'
+    headers:
+      cache-control:
+      - max-age=00:00:00
+      content-length:
+      - '42'
+      content-type:
+      - application/geo+json; charset=UTF-8
+      date:
+      - Sat, 10 Oct 2026 23:29:01 GMT
+      etag:
+      - '"b5731b5a"'
+      server:
+      - Apache Viper 69
+      set-cookie:
+      - AGS_ROLES="419jqfa+uOZgYod4xPOQ8Q=="; Version=1; Max-Age=60; Expires=Sat,
+        10 Oct 2026 23:30:01 GMT; Path=/arcgis/rest; HttpOnly
+      - visid_incap_3291022=TWNfFu0UTLSGbZXSXuQwYD3KymoAAAAAQUIPAAAAAABXA9uUJxnIU3MBbou0DJWZ;
+        expires=Sun, 10 Oct 2027 22:24:50 GMT; HttpOnly; path=/; Domain=.pgi.gov.pl
+      - incap_ses_689_3291022=T5wecAWeawbfja1tkdKPCT3KymoAAAAA8lSAKDgiSIKYTOlFCyfwyQ==;
+        path=/; Domain=.pgi.gov.pl
+      vary:
+      - Origin
+      x-cdn:
+      - Imperva
+      x-content-type-options:
+      - nosniff
+      x-iinfo:
+      - 12-17195257-17195258 NNNY CT(4 6 0) RT(1791674941703 21) q(0 1 1 -1) r(1 1)
+        U2
+      x-powered-by:
+      - ASP.NET
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - cbdgmapa.pgi.gov.pl
+    method: GET
+    uri: https://cbdgmapa.pgi.gov.pl/arcgis/rest/services/midas/MapServer/0/query?geometry=%7B%22xmin%22%3A+19.88443641064331%2C+%22ymin%22%3A+49.7565027499633%2C+%22xmax%22%3A+19.892763589356694%2C+%22ymax%22%3A+49.761897248774304%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&f=geojson
+  response:
+    body:
+      string: '{"type":"FeatureCollection","features":[]}'
+    headers:
+      cache-control:
+      - max-age=00:00:00
+      content-length:
+      - '42'
+      content-type:
+      - application/geo+json; charset=UTF-8
+      date:
+      - Sat, 10 Oct 2026 23:29:01 GMT
+      etag:
+      - '"b5731b5a"'
+      server:
+      - Apache Viper 69
+      set-cookie:
+      - AGS_ROLES="419jqfa+uOZgYod4xPOQ8Q=="; Version=1; Max-Age=60; Expires=Sat,
+        10 Oct 2026 23:30:01 GMT; Path=/arcgis/rest; HttpOnly
+      - visid_incap_3291022=igvl8XS7QZ+c5HJ3XLrTyz3KymoAAAAAQUIPAAAAAADL0qNmWKNs+otB7eNRc4Xu;
+        expires=Sun, 10 Oct 2027 22:24:41 GMT; HttpOnly; path=/; Domain=.pgi.gov.pl
+      - incap_ses_689_3291022=YmFZOTDL9Vvyja1tkdKPCT3KymoAAAAAQ4Pebd4zmFKUvOr+oOxIwQ==;
+        path=/; Domain=.pgi.gov.pl
+      vary:
+      - Origin
+      x-cdn:
+      - Imperva
+      x-content-type-options:
+      - nosniff
+      x-iinfo:
+      - 11-12835658-12835659 NNNY CT(4 6 0) RT(1791674941902 21) q(0 1 1 -1) r(1 1)
+        U2
+      x-powered-by:
+      - ASP.NET
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: geometry=%7B%22rings%22%3A+%5B%5B%5B19.8886%2C+49.7565027499633%5D%2C+%5B19.888191919404424%2C+49.75651573724382%5D%2C+%5B19.887787768199374%2C+49.7565545740313%5D%2C+%5B19.887391437958122%2C+49.75661888636698%5D%2C+%5B19.887006744982678%2C+49.75670805498662%5D%2C+%5B19.886637393572776%2C+49.75682122128049%5D%2C+%5B19.886286940370866%2C+49.75695729555713%5D%2C+%5B19.885958760125522%2C+49.757114967531514%5D%2C+%5B19.88565601320262%2C+49.757292718936675%5D%2C+%5B19.88538161515656%2C+49.75748883813775%5D%2C+%5B19.88513820865434%2C+49.75770143660803%5D%2C+%5B19.88492813802277%2C+49.75792846710834%5D%2C+%5B19.88475342666408%2C+49.75816774339556%5D%2C+%5B19.884615757557636%2C+49.75841696127007%5D%2C+%5B19.884516457036057%2C+49.75867372076038%5D%2C+%5B19.884456481992522%2C+49.758935549230955%5D%2C+%5B19.88443641064331%2C+49.75919992519128%5D%2C+%5B19.884456436935267%2C+49.75946430257692%5D%2C+%5B19.88451636865307%2C+49.75972613526861%5D%2C+%5B19.884615629245427%2C+49.759982901613654%5D%2C+%5B19.884753263353613%2C+49.7602321287131%5D%2C+%5B19.884927945989972%2C+49.76047141624092%5D%2C+%5B19.88513799527893%2C+49.760698459565546%5D%2C+%5B19.885381388638443%2C+49.760911071951%5D%2C+%5B19.885655782246747%2C+49.76110720562342%5D%2C+%5B19.885958533607404%2C+49.76128497149989%5D%2C+%5B19.88628672699547%2C+49.76144265738946%5D%2C+%5B19.88663720153999%2C+49.76157874449041%5D%2C+%5B19.887006581672214%2C+49.76169192202488%5D%2C+%5B19.887391309645913%2C+49.76178109986946%5D%2C+%5B19.887787679816388%2C+49.76184541905989%5D%2C+%5B19.888191874347168%2C+49.761884260068484%5D%2C+%5B19.8886%2C+49.761897248774304%5D%2C+%5B19.889008125652833%2C+49.761884260068484%5D%2C+%5B19.889412320183617%2C+49.76184541905989%5D%2C+%5B19.88980869035409%2C+49.76178109986946%5D%2C+%5B19.89019341832779%2C+49.76169192202488%5D%2C+%5B19.890562798460017%2C+49.76157874449041%5D%2C+%5B19.890913273004532%2C+49.76144265738946%5D%2C+%5B19.891241466392596%2C+49.76128497149988%5D%2C+%5B19.891544217753257%2C+49.76110720562341%5D%2C+%5B19.891818611361558%2C+49.760911071951%5D%2C+%5B19.89206200472107%2C+49.760698459565546%5D%2C+%5B19.89227205401003%2C+49.76047141624091%5D%2C+%5B19.892446736646388%2C+49.7602321287131%5D%2C+%5B19.892584370754577%2C+49.75998290161366%5D%2C+%5B19.892683631346934%2C+49.75972613526861%5D%2C+%5B19.892743563064737%2C+49.75946430257692%5D%2C+%5B19.892763589356694%2C+49.75919992519128%5D%2C+%5B19.89274351800748%2C+49.758935549230955%5D%2C+%5B19.892683542963947%2C+49.75867372076038%5D%2C+%5B19.892584242442368%2C+49.75841696127007%5D%2C+%5B19.892446573335924%2C+49.75816774339555%5D%2C+%5B19.89227186197724%2C+49.75792846710834%5D%2C+%5B19.89206179134566%2C+49.75770143660803%5D%2C+%5B19.891818384843443%2C+49.75748883813775%5D%2C+%5B19.891543986797384%2C+49.757292718936675%5D%2C+%5B19.891241239874482%2C+49.757114967531514%5D%2C+%5B19.89091305962914%2C+49.75695729555713%5D%2C+%5B19.890562606427224%2C+49.75682122128049%5D%2C+%5B19.890193255017326%2C+49.75670805498662%5D%2C+%5B19.889808562041882%2C+49.75661888636698%5D%2C+%5B19.88941223180063%2C+49.7565545740313%5D%2C+%5B19.88900808059558%2C+49.75651573724382%5D%2C+%5B19.8886%2C+49.7565027499633%5D%5D%5D%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryPolygon&f=json
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '3266'
+      content-type:
+      - application/x-www-form-urlencoded
+      host:
+      - cbdgmapa.pgi.gov.pl
+    method: POST
+    uri: https://cbdgmapa.pgi.gov.pl/arcgis/rest/services/geozagrozenia/egms_2016_2020_pion_interpol/ImageServer/computeStatisticsHistograms
+  response:
+    body:
+      string: '{"statistics":[{"min":0,"max":0,"mean":0,"standardDeviation":0,"median":0,"mode":0,"skipX":1,"skipY":1,"count":12,"covariances":"0,000000","sum":0}],"histograms":[{"size":256,"min":-128.5,"max":127.5,"counts":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}]}'
+    headers:
+      cache-control:
+      - max-age=00:00:00
+      content-length:
+      - '726'
+      content-type:
+      - application/json; charset=UTF-8
+      date:
+      - Sat, 10 Oct 2026 23:29:02 GMT
+      etag:
+      - '"d996fc16"'
+      server:
+      - Apache Viper 69
+      set-cookie:
+      - AGS_ROLES="419jqfa+uOZgYod4xPOQ8Q=="; Version=1; Max-Age=60; Expires=Sat,
+        10 Oct 2026 23:30:02 GMT; Path=/arcgis/rest; HttpOnly
+      - visid_incap_3291022=1mhL6EfnTwqY48yi5jaeXj3KymoAAAAAQUIPAAAAAABdDwClNDraPedoB4INuk94;
+        expires=Sun, 10 Oct 2027 22:24:52 GMT; HttpOnly; path=/; Domain=.pgi.gov.pl
+      - incap_ses_689_3291022=CNVSAu1y1gf+ja1tkdKPCT3KymoAAAAA+NL3RDDjRHf0GYtHFO0XMA==;
+        path=/; Domain=.pgi.gov.pl
+      vary:
+      - Origin
+      x-cdn:
+      - Imperva
+      x-content-type-options:
+      - nosniff
+      x-iinfo:
+      - 0-9088418-9088419 NNNN CT(9 5 0) RT(1791674942027 22) q(0 0 0 -1) r(0 0) U6
+      x-powered-by:
+      - ASP.NET
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+version: 1

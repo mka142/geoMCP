@@ -9,6 +9,7 @@ pytestmark = pytest.mark.vcr
 
 KOZANOW = "a_pt_51.1450_16.9550_ci500"  # Wrocław district on the Odra floodplain, flooded in 1997
 LUBIN = "a_pt_51.4050_16.2000_ci500"  # inside the Lubin copper mine's mining terrain
+PCIM = "a_pt_49.7592_19.8886_ci300"  # on a periodically active landslide (SOPO no. 10325) in the Beskids
 
 
 @pytest.fixture(autouse=True)
@@ -34,9 +35,8 @@ def test_get_statistics_compares_the_gmina_with_higher_units() -> None:
 def test_flood_zones_on_the_odra_floodplain() -> None:
     r = constraints.get_constraints(KOZANOW)
     shares = {i.key: i.share for i in r.items if i.category == "flood"}
-    # the PIG-PIB landslide layers refuse queries ("operation is not supported"): reported, never read as "none"
-    assert all(g.startswith("geology: ") and "SOPO" in g for g in r.gaps) and len(r.gaps) == 2
-    assert not any(i.key.startswith("landslide") for i in r.items)
+    assert not r.gaps  # every group answered, landslides included (SOPO through identify)
+    assert {"landslides", "landslide_prone"} <= {i.key for i in r.items}
     assert 0 < (shares["flood_10pct"] or 0) <= (shares["flood_1pct"] or 0) <= (shares["flood_02pct"] or 0) <= 1
 
 
@@ -46,6 +46,17 @@ def test_mining_terrain_and_subsidence_near_lubin() -> None:
     assert items["mining_terrain"].share == 1.0 and "Lubin" in items["mining_terrain"].names[0]
     motion = items["ground_motion_vertical"].value
     assert motion["mean"] < 0  # the ground subsides over the copper mine
+    assert items["landslides"].count == 0 and not any("SOPO" in g for g in r.gaps)  # answered, and none here
+
+
+def test_landslides_come_from_sopo_with_their_activity() -> None:
+    from geomcp_core.areas import area_from_id, geometry_of
+
+    area = area_from_id(PCIM)
+    items, gaps = constraints._pig(area, geometry_of(area))  # pyright: ignore[reportPrivateUsage]
+    slides = next(i for i in items if i.key == "landslides")
+    assert not gaps and slides.count >= 1 and slides.share and slides.share > 0.2
+    assert any("10325" in n and "aktywne okresowo" in n for n in slides.names)
 
 
 def test_orthophoto_of_a_parcel_is_a_quarter_metre_picture() -> None:

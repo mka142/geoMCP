@@ -10,8 +10,6 @@ interactions:
       - keep-alive
       host:
       - uldk.gugik.gov.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
     method: GET
     uri: https://uldk.gugik.gov.pl/?request=GetCommuneByXY&xy=16.955000000000002%2C51.14500005273027%2C4326&result=teryt%2Ccommune
   response:
@@ -27,7 +25,7 @@ interactions:
       content-type:
       - text/plain; charset=UTF-8
       date:
-      - Sat, 10 Oct 2026 22:36:27 GMT
+      - Sat, 10 Oct 2026 23:30:49 GMT
       keep-alive:
       - timeout=5, max=500
     status:
@@ -44,34 +42,30 @@ interactions:
       - keep-alive
       host:
       - cbdgmapa.pgi.gov.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
     method: GET
-    uri: https://cbdgmapa.pgi.gov.pl/arcgis/rest/services/geozagrozenia/sopo_obszary/MapServer/14/query?geometry=%7B%22xmin%22%3A+16.947854964054827%2C+%22ymin%22%3A+51.140505658741056%2C+%22xmax%22%3A+16.96214503594517%2C+%22ymax%22%3A+51.14949433778592%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&f=geojson
+    uri: https://cbdgmapa.pgi.gov.pl/arcgis/rest/services/geozagrozenia/sopo_obszary/MapServer/identify?geometry=%7B%22xmin%22%3A+16.947854964054827%2C+%22ymin%22%3A+51.140505658741056%2C+%22xmax%22%3A+16.96214503594517%2C+%22ymax%22%3A+51.14949433778592%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A14&tolerance=0&mapExtent=16.947854964054827%2C51.140505658741056%2C16.96214503594517%2C51.14949433778592&imageDisplay=1000%2C1000%2C96&returnGeometry=true&maxAllowableOffset=2e-05&f=json
   response:
     body:
-      string: '{"error":{"code":400,"extendedCode":-2147220222,"message":"Requested
-        operation is not supported by this service.","details":["The requested capability
-        is not supported."]}}'
+      string: '{"results":[]}'
     headers:
       cache-control:
       - max-age=00:00:00
       content-length:
-      - '172'
+      - '14'
       content-type:
-      - application/geo+json; charset=UTF-8
+      - application/json; charset=UTF-8
       date:
-      - Sat, 10 Oct 2026 22:36:29 GMT
+      - Sat, 10 Oct 2026 23:30:51 GMT
       etag:
-      - '"bb34d0f6"'
+      - '"c9f6d295"'
       server:
       - Apache Viper 69
       set-cookie:
       - AGS_ROLES="419jqfa+uOZgYod4xPOQ8Q=="; Version=1; Max-Age=60; Expires=Sat,
-        10 Oct 2026 22:37:29 GMT; Path=/arcgis/rest; HttpOnly
-      - visid_incap_3291022=Q1HFONGTQP6/GoICKt/daey9ymoAAAAAQUIPAAAAAABzPnc6Osq4umVpNcOzIpSy;
+        10 Oct 2026 23:31:51 GMT; Path=/arcgis/rest; HttpOnly
+      - visid_incap_3291022=S5rm+b01S1W/WwqCUfiveqrKymoAAAAAQUIPAAAAAAA1lzoe85MdNzQUt3DC3clr;
         expires=Sun, 10 Oct 2027 22:24:49 GMT; HttpOnly; path=/; Domain=.pgi.gov.pl
-      - incap_ses_689_3291022=rF36JCjQ+lsxf6htkdKPCey9ymoAAAAAskjUyIQfEWWqHsFcCLccSw==;
+      - incap_ses_689_3291022=4hGqQoqc1DcBvK1tkdKPCarKymoAAAAA8ze7PM8U9j4mTFtctUTBgw==;
         path=/; Domain=.pgi.gov.pl
       vary:
       - Origin
@@ -80,7 +74,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-iinfo:
-      - 4-17015734-17015736 NNNN CT(4 6 0) RT(1791671789005 18) q(0 1 1 -1) r(1 1)
+      - 4-17076588-17076589 NNNN CT(3 15 0) RT(1791675051181 20) q(0 0 0 -1) r(1 1)
         U2
       x-powered-by:
       - ASP.NET
@@ -100,13 +94,11 @@ interactions:
       - keep-alive
       host:
       - sdi.gdos.gov.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
     method: GET
     uri: https://sdi.gdos.gov.pl/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=GDOS%3ASpecjalneObszaryOchrony&outputFormat=application%2Fjson&srsName=EPSG%3A4326&bbox=51.140505658741056%2C16.947854964054827%2C51.14949433778592%2C16.96214503594517%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=200
   response:
     body:
-      string: '{"type":"FeatureCollection","features":[{"type":"Feature","id":"SpecjalneObszaryOchrony.fid--1de26f_1a127f0868b_1cfd","geometry":{"type":"MultiPolygon","coordinates":[[[[16.949622808365973,51.159657781488484],[16.95024517063195,51.15935382659584],[16.95038266404652,51.15940850449174],[16.950704976643678,51.159282899412645],[16.950892362391162,51.15902529416675],[16.952314922422612,51.158290217466615],[16.955683938113623,51.156674079235984],[16.95816485042141,51.15559452513964],[16.959062060584728,51.15556574785926],[16.959792945564423,51.15548404301749],[16.96138832567467,51.15502841458473],[16.962223731843807,51.15506114889488],[16.963624072075337,51.15554488924717],[16.964696232843714,51.15571757085996],[16.967161042557084,51.155977795271134],[16.969324668803665,51.1562235612945],[16.970794280391438,51.15620373355165],[16.97206774944561,51.15605372994121],[16.972911638041207,51.15585110541552],[16.97377619422363,51.15551290107983],[16.97425153181485,51.15517712409445],[16.97505760056963,51.15452105253951],[16.97574145180222,51.15370884556654],[16.97660100371431,51.152483153241235],[16.977245243512648,51.15125399994443],[16.977381410972413,51.15077659045948],[16.97737085560931,51.15035070971131],[16.97717030884073,51.14967720652131],[16.975966820574072,51.14723875110983],[16.97570028758427,51.14708030247013],[16.975577565808937,51.147250364271216],[16.975586831700237,51.148028872746075],[16.975757626720732,51.14888475589236],[16.97607518939981,51.149841777143536],[16.975958283288808,51.15015335960384],[16.975377651656828,51.15171313681802],[16.975184961373724,51.15174614463258],[16.97480499173835,51.1523059621924],[16.9745655884544,51.15240608090555],[16.97438050426958,51.152477632760835],[16.97412279142875,51.151921343527306],[16.97404944800756,51.15193356698818],[16.970970204385463,51.15249748987984],[16.970930638657304,51.15245380163377],[16.970832149815134,51.15248159989377],[16.970363269831676,51.15259859854703],[16.969646688732837,51.15236575179272],[16.969118320347977,51.15219239582152],[16.968873145956326,51.15207514532292],[16.96860041684676,51.15186880335337],[16.968254123860824,51.1512075957485],[16.968217250423244,51.15108316775359],[16.968213257179556,51.15106987399796],[16.96813570879059,51.15080988661232],[16.968017843677135,51.150412726647545],[16.967766916895155,51.14958026825081],[16.966050184659828,51.14953557375115],[16.96599770601969,51.14969461278292],[16.96619457562784,51.150818870268346],[16.96662074501574,51.15149424787884],[16.966539661040578,51.15151982627684],[16.965142417532313,51.15167975994608],[16.963587635780435,51.15170091122151],[16.963074665123656,51.151636559621146],[16.962793579273534,51.151594598338114],[16.962573618493824,51.151535349302236],[16.961972130284856,51.15131795481301],[16.961572366264235,51.15099594011923],[16.96097679450055,51.150443446026],[16.960638997269996,51.150257271360886],[16.960616787248814,51.15024518894684],[16.960438947602107,51.15013269342446],[16.960107517821054,51.14986386341537],[16.959905162662977,51.14963596818091],[16.959748634929568,51.14945547245944],[16.959735425583627,51.1494403982664],[16.959606949461556,51.14929196841944],[16.959703502181974,51.14929509268067],[16.959649085169954,51.14923818685912],[16.95974458735438,51.14897977380208],[16.959810915590037,51.14898713854616],[16.95967924633212,51.14887220879827],[16.95976784724258,51.14875077707674],[16.960267475011324,51.14805950141803],[16.960728101174634,51.14770750908661],[16.961782422174924,51.147193319226695],[16.962401311991314,51.14695275303825],[16.962676181488813,51.14677150189789],[16.962549557293073,51.14649005400436],[16.96244266587139,51.14635810650857],[16.962057255510395,51.14588646674615],[16.961584889948846,51.145317590275546],[16.961419729897464,51.14511895376038],[16.96128837223371,51.14495167335938],[16.96048417327293,51.14509112277244],[16.96043846617514,51.14476538326384],[16.959955171987183,51.145168257182995],[16.95930711060211,51.14462113498116],[16.9594041021394,51.144863745690365],[16.95957393568272,51.14518967274458],[16.9595885277671,51.14532576979744],[16.959405385380265,51.14560631325013],[16.959337882444643,51.14558678288941],[16.9586097078532,51.14609351119092],[16.95831902979358,51.14638962798076],[16.95860191701209,51.14653256892397],[16.95922267625666,51.146745819666705],[16.959411263540183,51.146799129959824],[16.959556955758178,51.14691052641047],[16.95958552681726,51.146982634630916],[16.959494601597445,51.14716331051074],[16.95938815024084,51.14728092198888],[16.95895225659923,51.14756820847896],[16.95886821119977,51.14762854508517],[16.956465732612283,51.146557685847164],[16.955888979426817,51.14675361665988],[16.95586217846567,51.148434625350625],[16.955834561734605,51.14861289673261],[16.955474384897965,51.149247667343516],[16.955127775870782,51.14970796822751],[16.954695257886886,51.150018058419526],[16.954136697662317,51.1503771299831],[16.952730987703312,51.15128390042985],[16.95265171432915,51.15131687781133],[16.952206423161538,51.15156259244901],[16.95112831863526,51.15215688590911],[16.9506095460683,51.15244322913188],[16.950429675028854,51.152538314698894],[16.949778129591202,51.15293801780786],[16.949705368857177,51.152982082755244],[16.949308960401588,51.15321182075999],[16.949430160658014,51.153285106182516],[16.94967067326086,51.15347428545841],[16.949774888561265,51.15357579058658],[16.94987635717558,51.15367472852678],[16.950005040660955,51.15381804490093],[16.950063078570203,51.153883475108806],[16.950390501717408,51.15408065376509],[16.95046172306332,51.15424887135776],[16.95041488869183,51.154869866643175],[16.95042491170273,51.15496648141701],[16.94970066145197,51.15505643059129],[16.949946046538752,51.155845829991904],[16.94985284162975,51.156173456118],[16.949882515700544,51.15648182574607],[16.950322879704075,51.15726843513126],[16.95054727356104,51.15744095674547],[16.950565919384886,51.15797889522908],[16.95046683037507,51.15837793822931],[16.9504010228048,51.15836823838535],[16.950246525430487,51.15876819916385],[16.95000258108074,51.158991346068106],[16.94985015992504,51.159073327821346],[16.94967467085118,51.159133493994005],[16.949527248581273,51.15921241432054],[16.949391799717073,51.159350379446714],[16.949477868274645,51.15951939762003],[16.949622808365973,51.159657781488484]]]]},"geometry_name":"geom","properties":{"gid":44873,"nazwa":"Las
+      string: '{"type":"FeatureCollection","features":[{"type":"Feature","id":"SpecjalneObszaryOchrony.fid--1de26f_1a128010750_1bdb","geometry":{"type":"MultiPolygon","coordinates":[[[[16.949622808365973,51.159657781488484],[16.95024517063195,51.15935382659584],[16.95038266404652,51.15940850449174],[16.950704976643678,51.159282899412645],[16.950892362391162,51.15902529416675],[16.952314922422612,51.158290217466615],[16.955683938113623,51.156674079235984],[16.95816485042141,51.15559452513964],[16.959062060584728,51.15556574785926],[16.959792945564423,51.15548404301749],[16.96138832567467,51.15502841458473],[16.962223731843807,51.15506114889488],[16.963624072075337,51.15554488924717],[16.964696232843714,51.15571757085996],[16.967161042557084,51.155977795271134],[16.969324668803665,51.1562235612945],[16.970794280391438,51.15620373355165],[16.97206774944561,51.15605372994121],[16.972911638041207,51.15585110541552],[16.97377619422363,51.15551290107983],[16.97425153181485,51.15517712409445],[16.97505760056963,51.15452105253951],[16.97574145180222,51.15370884556654],[16.97660100371431,51.152483153241235],[16.977245243512648,51.15125399994443],[16.977381410972413,51.15077659045948],[16.97737085560931,51.15035070971131],[16.97717030884073,51.14967720652131],[16.975966820574072,51.14723875110983],[16.97570028758427,51.14708030247013],[16.975577565808937,51.147250364271216],[16.975586831700237,51.148028872746075],[16.975757626720732,51.14888475589236],[16.97607518939981,51.149841777143536],[16.975958283288808,51.15015335960384],[16.975377651656828,51.15171313681802],[16.975184961373724,51.15174614463258],[16.97480499173835,51.1523059621924],[16.9745655884544,51.15240608090555],[16.97438050426958,51.152477632760835],[16.97412279142875,51.151921343527306],[16.97404944800756,51.15193356698818],[16.970970204385463,51.15249748987984],[16.970930638657304,51.15245380163377],[16.970832149815134,51.15248159989377],[16.970363269831676,51.15259859854703],[16.969646688732837,51.15236575179272],[16.969118320347977,51.15219239582152],[16.968873145956326,51.15207514532292],[16.96860041684676,51.15186880335337],[16.968254123860824,51.1512075957485],[16.968217250423244,51.15108316775359],[16.968213257179556,51.15106987399796],[16.96813570879059,51.15080988661232],[16.968017843677135,51.150412726647545],[16.967766916895155,51.14958026825081],[16.966050184659828,51.14953557375115],[16.96599770601969,51.14969461278292],[16.96619457562784,51.150818870268346],[16.96662074501574,51.15149424787884],[16.966539661040578,51.15151982627684],[16.965142417532313,51.15167975994608],[16.963587635780435,51.15170091122151],[16.963074665123656,51.151636559621146],[16.962793579273534,51.151594598338114],[16.962573618493824,51.151535349302236],[16.961972130284856,51.15131795481301],[16.961572366264235,51.15099594011923],[16.96097679450055,51.150443446026],[16.960638997269996,51.150257271360886],[16.960616787248814,51.15024518894684],[16.960438947602107,51.15013269342446],[16.960107517821054,51.14986386341537],[16.959905162662977,51.14963596818091],[16.959748634929568,51.14945547245944],[16.959735425583627,51.1494403982664],[16.959606949461556,51.14929196841944],[16.959703502181974,51.14929509268067],[16.959649085169954,51.14923818685912],[16.95974458735438,51.14897977380208],[16.959810915590037,51.14898713854616],[16.95967924633212,51.14887220879827],[16.95976784724258,51.14875077707674],[16.960267475011324,51.14805950141803],[16.960728101174634,51.14770750908661],[16.961782422174924,51.147193319226695],[16.962401311991314,51.14695275303825],[16.962676181488813,51.14677150189789],[16.962549557293073,51.14649005400436],[16.96244266587139,51.14635810650857],[16.962057255510395,51.14588646674615],[16.961584889948846,51.145317590275546],[16.961419729897464,51.14511895376038],[16.96128837223371,51.14495167335938],[16.96048417327293,51.14509112277244],[16.96043846617514,51.14476538326384],[16.959955171987183,51.145168257182995],[16.95930711060211,51.14462113498116],[16.9594041021394,51.144863745690365],[16.95957393568272,51.14518967274458],[16.9595885277671,51.14532576979744],[16.959405385380265,51.14560631325013],[16.959337882444643,51.14558678288941],[16.9586097078532,51.14609351119092],[16.95831902979358,51.14638962798076],[16.95860191701209,51.14653256892397],[16.95922267625666,51.146745819666705],[16.959411263540183,51.146799129959824],[16.959556955758178,51.14691052641047],[16.95958552681726,51.146982634630916],[16.959494601597445,51.14716331051074],[16.95938815024084,51.14728092198888],[16.95895225659923,51.14756820847896],[16.95886821119977,51.14762854508517],[16.956465732612283,51.146557685847164],[16.955888979426817,51.14675361665988],[16.95586217846567,51.148434625350625],[16.955834561734605,51.14861289673261],[16.955474384897965,51.149247667343516],[16.955127775870782,51.14970796822751],[16.954695257886886,51.150018058419526],[16.954136697662317,51.1503771299831],[16.952730987703312,51.15128390042985],[16.95265171432915,51.15131687781133],[16.952206423161538,51.15156259244901],[16.95112831863526,51.15215688590911],[16.9506095460683,51.15244322913188],[16.950429675028854,51.152538314698894],[16.949778129591202,51.15293801780786],[16.949705368857177,51.152982082755244],[16.949308960401588,51.15321182075999],[16.949430160658014,51.153285106182516],[16.94967067326086,51.15347428545841],[16.949774888561265,51.15357579058658],[16.94987635717558,51.15367472852678],[16.950005040660955,51.15381804490093],[16.950063078570203,51.153883475108806],[16.950390501717408,51.15408065376509],[16.95046172306332,51.15424887135776],[16.95041488869183,51.154869866643175],[16.95042491170273,51.15496648141701],[16.94970066145197,51.15505643059129],[16.949946046538752,51.155845829991904],[16.94985284162975,51.156173456118],[16.949882515700544,51.15648182574607],[16.950322879704075,51.15726843513126],[16.95054727356104,51.15744095674547],[16.950565919384886,51.15797889522908],[16.95046683037507,51.15837793822931],[16.9504010228048,51.15836823838535],[16.950246525430487,51.15876819916385],[16.95000258108074,51.158991346068106],[16.94985015992504,51.159073327821346],[16.94967467085118,51.159133493994005],[16.949527248581273,51.15921241432054],[16.949391799717073,51.159350379446714],[16.949477868274645,51.15951939762003],[16.949622808365973,51.159657781488484]]]]},"geometry_name":"geom","properties":{"gid":44873,"nazwa":"Las
         Pilczycki","kod":"PLH020069","kodinspire":"PL.ZIPOP.1393.N2K.PLH020069.H"}}],"crs":{"type":"EPSG","properties":{"code":"4326"}}}'
     headers:
       access-control-allow-origin:
@@ -120,391 +112,22 @@ interactions:
       content-type:
       - application/json
       date:
-      - Sat, 10 Oct 2026 22:36:29 GMT
+      - Sat, 10 Oct 2026 23:30:51 GMT
       server:
       - nginx/1.18.0 (Ubuntu)
       set-cookie:
-      - visid_incap_3278221=mkWnoGboRyKnrpV6qrN5duy9ymoAAAAAQUIPAAAAAACGaunrZFb+pPIjZLUa2euW;
-        expires=Sat, 09 Oct 2027 22:45:08 GMT; HttpOnly; path=/; Domain=.gdos.gov.pl;
+      - JSESSSIONID=221745094.1.698864672.2472491520; path=/; httponly;secure ;
+      - visid_incap_3278221=bTG2vSICS9WGAxzYl2AxDvzJymoAAAAAQUIPAAAAAAARemDEF9C8obFfjCW/X5uK;
+        expires=Sun, 10 Oct 2027 22:38:14 GMT; HttpOnly; path=/; Domain=.gdos.gov.pl;
         Secure; SameSite=None
-      - incap_ses_683_3278221=SChUBo6Bzm6QvRX88YB6Cey9ymoAAAAAT5bO84QFoJ8gQ9kuNwOESQ==;
+      - incap_ses_683_3278221=dyz8SvvkBQAl1S388YB6CarKymoAAAAAt9JDtBGWZTsTfpN/ODb0fA==;
         path=/; Domain=.gdos.gov.pl; Secure; SameSite=None
       strict-transport-security:
       - max-age=31536000
       x-cdn:
       - Imperva
       x-iinfo:
-      - 51-37434699-37434417 PNNy RT(1791671789000 17) q(0 0 0 -1) r(1 1) U12
-    status:
-      code: 200
-      message: OK
-- request:
-    body: ''
-    headers:
-      accept:
-      - '*/*'
-      accept-encoding:
-      - gzip, deflate
-      connection:
-      - keep-alive
-      host:
-      - cbdgmapa.pgi.gov.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
-    method: GET
-    uri: https://cbdgmapa.pgi.gov.pl/arcgis/rest/services/geozagrozenia/sopo_obszary/MapServer/12/query?geometry=%7B%22xmin%22%3A+16.947854964054827%2C+%22ymin%22%3A+51.140505658741056%2C+%22xmax%22%3A+16.96214503594517%2C+%22ymax%22%3A+51.14949433778592%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&f=geojson
-  response:
-    body:
-      string: '{"error":{"code":400,"extendedCode":-2147220222,"message":"Requested
-        operation is not supported by this service.","details":["The requested capability
-        is not supported."]}}'
-    headers:
-      cache-control:
-      - max-age=00:00:00
-      content-length:
-      - '172'
-      content-type:
-      - application/geo+json; charset=UTF-8
-      date:
-      - Sat, 10 Oct 2026 22:36:29 GMT
-      etag:
-      - '"bb34d0f6"'
-      server:
-      - Apache Viper 69
-      set-cookie:
-      - AGS_ROLES="419jqfa+uOZgYod4xPOQ8Q=="; Version=1; Max-Age=60; Expires=Sat,
-        10 Oct 2026 22:37:29 GMT; Path=/arcgis/rest; HttpOnly
-      - visid_incap_3291022=2WJhv7z5TummT5T7hgf2QOy9ymoAAAAAQUIPAAAAAAD3DJLgdrW2nGfVxY9mkFFP;
-        expires=Sun, 10 Oct 2027 22:24:50 GMT; HttpOnly; path=/; Domain=.pgi.gov.pl
-      - incap_ses_689_3291022=RVomXbDl8yE9f6htkdKPCey9ymoAAAAAbODWdRFTYmFaI5IeUit/cA==;
-        path=/; Domain=.pgi.gov.pl
-      vary:
-      - Origin
-      x-cdn:
-      - Imperva
-      x-content-type-options:
-      - nosniff
-      x-iinfo:
-      - 6-20031669-20031670 NNNY CT(5 9 0) RT(1791671789108 20) q(0 0 0 -1) r(0 0)
-        U2
-      x-powered-by:
-      - ASP.NET
-      x-xss-protection:
-      - 1; mode=block
-    status:
-      code: 200
-      message: OK
-- request:
-    body: ''
-    headers:
-      accept:
-      - '*/*'
-      accept-encoding:
-      - gzip, deflate
-      connection:
-      - keep-alive
-      host:
-      - cbdgmapa.pgi.gov.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
-    method: GET
-    uri: https://cbdgmapa.pgi.gov.pl/arcgis/rest/services/midas/MapServer/2/query?geometry=%7B%22xmin%22%3A+16.947854964054827%2C+%22ymin%22%3A+51.140505658741056%2C+%22xmax%22%3A+16.96214503594517%2C+%22ymax%22%3A+51.14949433778592%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&f=geojson
-  response:
-    body:
-      string: '{"type":"FeatureCollection","features":[]}'
-    headers:
-      cache-control:
-      - max-age=00:00:00
-      content-length:
-      - '42'
-      content-type:
-      - application/geo+json; charset=UTF-8
-      date:
-      - Sat, 10 Oct 2026 22:36:29 GMT
-      etag:
-      - '"b5731b5a"'
-      server:
-      - Apache Viper 69
-      set-cookie:
-      - AGS_ROLES="419jqfa+uOZgYod4xPOQ8Q=="; Version=1; Max-Age=60; Expires=Sat,
-        10 Oct 2026 22:37:29 GMT; Path=/arcgis/rest; HttpOnly
-      - visid_incap_3291022=CY68giaFTVCOuKXIgw3uxey9ymoAAAAAQUIPAAAAAACpGZGc53WzSDWt4gE+lzn9;
-        expires=Sun, 10 Oct 2027 22:24:50 GMT; HttpOnly; path=/; Domain=.pgi.gov.pl
-      - incap_ses_689_3291022=8VXZTvBw1V5If6htkdKPCey9ymoAAAAA6NX/aPm+0BNaTGz0EAHzzw==;
-        path=/; Domain=.pgi.gov.pl
-      vary:
-      - Origin
-      x-cdn:
-      - Imperva
-      x-content-type-options:
-      - nosniff
-      x-iinfo:
-      - 13-21034965-21034966 NNNY CT(5 7 0) RT(1791671789200 19) q(0 0 0 -1) r(1 1)
-        U2
-      x-powered-by:
-      - ASP.NET
-      x-xss-protection:
-      - 1; mode=block
-    status:
-      code: 200
-      message: OK
-- request:
-    body: ''
-    headers:
-      accept:
-      - '*/*'
-      accept-encoding:
-      - gzip, deflate
-      connection:
-      - keep-alive
-      host:
-      - cbdgmapa.pgi.gov.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
-    method: GET
-    uri: https://cbdgmapa.pgi.gov.pl/arcgis/rest/services/midas/MapServer/1/query?geometry=%7B%22xmin%22%3A+16.947854964054827%2C+%22ymin%22%3A+51.140505658741056%2C+%22xmax%22%3A+16.96214503594517%2C+%22ymax%22%3A+51.14949433778592%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&f=geojson
-  response:
-    body:
-      string: '{"type":"FeatureCollection","features":[]}'
-    headers:
-      cache-control:
-      - max-age=00:00:00
-      content-length:
-      - '42'
-      content-type:
-      - application/geo+json; charset=UTF-8
-      date:
-      - Sat, 10 Oct 2026 22:36:29 GMT
-      etag:
-      - '"b5731b5a"'
-      server:
-      - Apache Viper 69
-      set-cookie:
-      - AGS_ROLES="419jqfa+uOZgYod4xPOQ8Q=="; Version=1; Max-Age=60; Expires=Sat,
-        10 Oct 2026 22:37:29 GMT; Path=/arcgis/rest; HttpOnly
-      - visid_incap_3291022=SFocldsTTM6KgQ0jO0nK/uy9ymoAAAAAQUIPAAAAAAArK1KgJKQGbqXZjBxSQBmD;
-        expires=Sun, 10 Oct 2027 22:24:50 GMT; HttpOnly; path=/; Domain=.pgi.gov.pl
-      - incap_ses_689_3291022=0uEzeu9CflRUf6htkdKPCey9ymoAAAAA4GCbXd5HR4al+fzOR/r8lw==;
-        path=/; Domain=.pgi.gov.pl
-      vary:
-      - Origin
-      x-cdn:
-      - Imperva
-      x-content-type-options:
-      - nosniff
-      x-iinfo:
-      - 6-20031676-20031670 PNNy RT(1791671789312 24) q(0 0 0 -1) r(0 0) U2
-      x-powered-by:
-      - ASP.NET
-      x-xss-protection:
-      - 1; mode=block
-    status:
-      code: 200
-      message: OK
-- request:
-    body: ''
-    headers:
-      accept:
-      - '*/*'
-      accept-encoding:
-      - gzip, deflate
-      connection:
-      - keep-alive
-      host:
-      - sdi.gdos.gov.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
-    method: GET
-    uri: https://sdi.gdos.gov.pl/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=GDOS%3AObszarySpecjalnejOchrony&outputFormat=application%2Fjson&srsName=EPSG%3A4326&bbox=51.140505658741056%2C16.947854964054827%2C51.14949433778592%2C16.96214503594517%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=200
-  response:
-    body:
-      string: '{"type":"FeatureCollection","features":[]}'
-    headers:
-      access-control-allow-origin:
-      - '*'
-      connection:
-      - keep-alive
-      content-disposition:
-      - inline; filename=geoserver-GetFeature.application
-      content-length:
-      - '42'
-      content-type:
-      - application/json
-      date:
-      - Sat, 10 Oct 2026 22:36:29 GMT
-      server:
-      - nginx/1.18.0 (Ubuntu)
-      set-cookie:
-      - visid_incap_3278221=tXUWfcw+SVi2jy/LwG33Uey9ymoAAAAAQUIPAAAAAADUDhUVUmWTAKVv+vCheylZ;
-        expires=Sat, 09 Oct 2027 22:39:05 GMT; HttpOnly; path=/; Domain=.gdos.gov.pl;
-        Secure; SameSite=None
-      - incap_ses_683_3278221=HH2EA1kkGEcLvhX88YB6Cey9ymoAAAAABv1K6Nlkyr00knyfjTIqOQ==;
-        path=/; Domain=.gdos.gov.pl; Secure; SameSite=None
-      strict-transport-security:
-      - max-age=31536000
-      x-cdn:
-      - Imperva
-      x-iinfo:
-      - 62-91179854-91177291 PNNN RT(1791671789201 29) q(0 0 0 -1) r(2 2) U12
-    status:
-      code: 200
-      message: OK
-- request:
-    body: ''
-    headers:
-      accept:
-      - '*/*'
-      accept-encoding:
-      - gzip, deflate
-      connection:
-      - keep-alive
-      host:
-      - cbdgmapa.pgi.gov.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
-    method: GET
-    uri: https://cbdgmapa.pgi.gov.pl/arcgis/rest/services/midas/MapServer/0/query?geometry=%7B%22xmin%22%3A+16.947854964054827%2C+%22ymin%22%3A+51.140505658741056%2C+%22xmax%22%3A+16.96214503594517%2C+%22ymax%22%3A+51.14949433778592%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&f=geojson
-  response:
-    body:
-      string: '{"type":"FeatureCollection","features":[]}'
-    headers:
-      cache-control:
-      - max-age=00:00:00
-      content-length:
-      - '42'
-      content-type:
-      - application/geo+json; charset=UTF-8
-      date:
-      - Sat, 10 Oct 2026 22:36:29 GMT
-      etag:
-      - '"b5731b5a"'
-      server:
-      - Apache Viper 69
-      set-cookie:
-      - AGS_ROLES="419jqfa+uOZgYod4xPOQ8Q=="; Version=1; Max-Age=60; Expires=Sat,
-        10 Oct 2026 22:37:29 GMT; Path=/arcgis/rest; HttpOnly
-      - visid_incap_3291022=wzgApSVeRI2yNMbMA/y0R+29ymoAAAAAQUIPAAAAAABaPQpSeg8KDbEtBLariq6Y;
-        expires=Sun, 10 Oct 2027 22:24:51 GMT; HttpOnly; path=/; Domain=.pgi.gov.pl
-      - incap_ses_689_3291022=YQiRV3KyGDdif6htkdKPCe29ymoAAAAAPOqNrKAbnsW1p+6feUuBWg==;
-        path=/; Domain=.pgi.gov.pl
-      vary:
-      - Origin
-      x-cdn:
-      - Imperva
-      x-content-type-options:
-      - nosniff
-      x-iinfo:
-      - 7-21403801-21403802 NNNY CT(5 7 0) RT(1791671789480 20) q(0 0 0 -1) r(1 1)
-        U2
-      x-powered-by:
-      - ASP.NET
-      x-xss-protection:
-      - 1; mode=block
-    status:
-      code: 200
-      message: OK
-- request:
-    body: ''
-    headers:
-      accept:
-      - '*/*'
-      accept-encoding:
-      - gzip, deflate
-      connection:
-      - keep-alive
-      host:
-      - sdi.gdos.gov.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
-    method: GET
-    uri: https://sdi.gdos.gov.pl/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=GDOS%3AParkiNarodowe&outputFormat=application%2Fjson&srsName=EPSG%3A4326&bbox=51.140505658741056%2C16.947854964054827%2C51.14949433778592%2C16.96214503594517%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=200
-  response:
-    body:
-      string: '{"type":"FeatureCollection","features":[]}'
-    headers:
-      access-control-allow-origin:
-      - '*'
-      connection:
-      - keep-alive
-      content-disposition:
-      - inline; filename=geoserver-GetFeature.application
-      content-length:
-      - '42'
-      content-type:
-      - application/json
-      date:
-      - Sat, 10 Oct 2026 22:36:29 GMT
-      server:
-      - nginx/1.18.0 (Ubuntu)
-      set-cookie:
-      - visid_incap_3278221=lyVqpqWRTPSnMEwQklXC2Oy9ymoAAAAAQUIPAAAAAACXi8HAUFvIZNciWM1fsK7n;
-        expires=Sat, 09 Oct 2027 22:43:04 GMT; HttpOnly; path=/; Domain=.gdos.gov.pl;
-        Secure; SameSite=None
-      - incap_ses_683_3278221=7TT+Va8UqF+QvhX88YB6Cey9ymoAAAAA+8CMN83ZAtIwmD8PUV4RlA==;
-        path=/; Domain=.gdos.gov.pl; Secure; SameSite=None
-      strict-transport-security:
-      - max-age=31536000
-      x-cdn:
-      - Imperva
-      x-iinfo:
-      - 59-81603001-81599158 PNNy RT(1791671789481 19) q(0 0 0 -1) r(1 1) U12
-    status:
-      code: 200
-      message: OK
-- request:
-    body: geometry=%7B%22rings%22%3A+%5B%5B%5B16.955%2C+51.140505658741056%5D%2C+%5B16.954299731682376%2C+51.140527298134614%5D%2C+%5B16.953606205382826%2C+51.14059200797603%5D%2C+%5B16.952926098264975%2C+51.14069916525147%5D%2C+%5B16.9522659584052%2C+51.14084773826575%5D%2C+%5B16.951632141797496%2C+51.141036296567115%5D%2C+%5B16.95103075119986%2C+51.14126302470828%5D%2C+%5B16.950467577409167%2C+51.14152573971211%5D%2C+%5B16.949948043528146%2C+51.141821912074164%5D%2C+%5B16.949477152759727%2C+51.142148690100726%5D%2C+%5B16.949059440230936%2C+51.14250292734885%5D%2C+%5B16.948698929309792%2C+51.14288121290494%5D%2C+%5B16.948399092836258%2C+51.143279904211234%5D%2C+%5B16.948162819641436%2C+51.143695162124914%5D%2C+%5B16.947992386678912%2C+51.14412298787305%5D%2C+%5B16.947889437038253%2C+51.144559261547975%5D%2C+%5B16.947854964054827%2C+51.14499978177325%5D%2C+%5B16.94788930167143%2C+51.14544030615833%5D%2C+%5B16.947992121147333%2C+51.145876592152796%5D%2C+%5B16.94816243414934%2C+51.146304437906764%5D%2C+%5B16.948398602197873%2C+51.14671972274378%5D%2C+%5B16.948698352380095%2C+51.14711844685626%5D%2C+%5B16.949058799181003%2C+51.14749676984065%5D%2C+%5B16.949476472224738%2C+51.147851047700854%5D%2C+%5B16.949947349660683%2C+51.14817786796257%5D%2C+%5B16.95046689687418%2C+51.148474082559765%5D%2C+%5B16.95103011014991%2C+51.14873683817567%5D%2C+%5B16.95163156486778%2C+51.14896360374516%5D%2C+%5B16.95226546776681%2C+51.1491521948527%5D%2C+%5B16.95292571277286%2C+51.14930079479032%5D%2C+%5B16.953605939851244%2C+51.14940797207159%5D%2C+%5B16.954299596315547%2C+51.14947269423255%5D%2C+%5B16.955%2C+51.14949433778592%5D%2C+%5B16.95570040368445%2C+51.14947269423255%5D%2C+%5B16.956394060148753%2C+51.1494079720716%5D%2C+%5B16.957074287227133%2C+51.14930079479032%5D%2C+%5B16.957734532233182%2C+51.14915219485269%5D%2C+%5B16.95836843513221%2C+51.14896360374516%5D%2C+%5B16.958969889850085%2C+51.14873683817567%5D%2C+%5B16.959533103125814%2C+51.148474082559765%5D%2C+%5B16.96005265033931%2C+51.14817786796257%5D%2C+%5B16.96052352777526%2C+51.147851047700854%5D%2C+%5B16.960941200818997%2C+51.14749676984066%5D%2C+%5B16.961301647619898%2C+51.14711844685626%5D%2C+%5B16.961601397802124%2C+51.14671972274379%5D%2C+%5B16.96183756585066%2C+51.14630443790677%5D%2C+%5B16.96200787885266%2C+51.14587659215279%5D%2C+%5B16.962110698328566%2C+51.14544030615833%5D%2C+%5B16.96214503594517%2C+51.14499978177325%5D%2C+%5B16.962110562961744%2C+51.14455926154798%5D%2C+%5B16.962007613321084%2C+51.14412298787305%5D%2C+%5B16.96183718035856%2C+51.143695162124914%5D%2C+%5B16.96160090716374%2C+51.143279904211234%5D%2C+%5B16.9613010706902%2C+51.14288121290494%5D%2C+%5B16.960940559769057%2C+51.14250292734885%5D%2C+%5B16.96052284724027%2C+51.142148690100726%5D%2C+%5B16.96005195647185%2C+51.141821912074164%5D%2C+%5B16.95953242259083%2C+51.14152573971211%5D%2C+%5B16.958969248800138%2C+51.14126302470828%5D%2C+%5B16.9583678582025%2C+51.141036296567115%5D%2C+%5B16.957734041594797%2C+51.14084773826575%5D%2C+%5B16.957073901735022%2C+51.14069916525147%5D%2C+%5B16.95639379461717%2C+51.14059200797603%5D%2C+%5B16.95570026831762%2C+51.140527298134614%5D%2C+%5B16.955%2C+51.140505658741056%5D%5D%5D%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryPolygon&f=json
-    headers:
-      accept:
-      - '*/*'
-      accept-encoding:
-      - gzip, deflate
-      connection:
-      - keep-alive
-      content-length:
-      - '3272'
-      content-type:
-      - application/x-www-form-urlencoded
-      host:
-      - cbdgmapa.pgi.gov.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
-    method: POST
-    uri: https://cbdgmapa.pgi.gov.pl/arcgis/rest/services/geozagrozenia/egms_2016_2020_pion_interpol/ImageServer/computeStatisticsHistograms
-  response:
-    body:
-      string: '{"statistics":[{"min":-1,"max":0,"mean":-0.05405405405405405,"standardDeviation":0.22924343513512566,"median":0,"mode":0,"skipX":1,"skipY":1,"count":37,"covariances":"0,000000","sum":-1.9999999999999998}],"histograms":[{"size":256,"min":-128.5,"max":127.5,"counts":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,35,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}]}'
-    headers:
-      cache-control:
-      - max-age=00:00:00
-      content-length:
-      - '782'
-      content-type:
-      - application/json; charset=UTF-8
-      date:
-      - Sat, 10 Oct 2026 22:36:29 GMT
-      etag:
-      - '"1651c823"'
-      server:
-      - Apache Viper 69
-      set-cookie:
-      - AGS_ROLES="419jqfa+uOZgYod4xPOQ8Q=="; Version=1; Max-Age=60; Expires=Sat,
-        10 Oct 2026 22:37:29 GMT; Path=/arcgis/rest; HttpOnly
-      - visid_incap_3291022=Ox5ZH8d0QmODynT3U0tAJO29ymoAAAAAQUIPAAAAAAAq67P5Kw2Hl5fdlWPZsqGS;
-        expires=Sun, 10 Oct 2027 22:24:51 GMT; HttpOnly; path=/; Domain=.pgi.gov.pl
-      - incap_ses_689_3291022=CI4YFvy6R0R2f6htkdKPCe29ymoAAAAAgvmgQB56vTbvItgQHYwgwA==;
-        path=/; Domain=.pgi.gov.pl
-      vary:
-      - Origin
-      x-cdn:
-      - Imperva
-      x-content-type-options:
-      - nosniff
-      x-iinfo:
-      - 9-7175132-7175133 NNNY CT(4 7 0) RT(1791671789613 20) q(0 0 0 -1) r(0 0) U6
-      x-powered-by:
-      - ASP.NET
-      x-xss-protection:
-      - 1; mode=block
+      - 29-1331539-1331540 NNNN CT(1 3 0) RT(1791675051162 19) q(0 0 0 0) r(1 1) U12
     status:
       code: 200
       message: OK
@@ -519,8 +142,6 @@ interactions:
       - keep-alive
       host:
       - wody.isok.gov.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
     method: GET
     uri: https://wody.isok.gov.pl/gpservices/KZGW/MZP20_Glebokosc_WysokiePrawdopodPowodzi/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities
   response:
@@ -532,8 +153,8 @@ interactions:
         https://wody.isok.gov.pl/gpservices/KZGW/MZP20_Glebokosc_WysokiePrawdopodPowodzi/MapServer/WMSServer?version=1.3.0%26service=WMS%26request=GetSchemaExtension\">\n
         \ <Service>\n    <Name><![CDATA[WMS]]></Name>\n    <Title><![CDATA[MZP z g\u0142\u0119boko\u015Bci\u0105
         wody 10%, raz na 10 lat]]></Title>\n    <Abstract><![CDATA[Us\u0142uga przegl\u0105dania
-        (WMS) prezentuje map\u0119 zagro\u017Cenia powodziowego z g\u0142\u0119boko\u015Bci\u0105
-        wody. Prawdopodobie\u0144stwo wyst\u0105pienia powodzi 10% - raz na 10 lat]]></Abstract>\n
+        (WMS) prezentuje map\u0119 zagro\u017Cenia powdoziowego z g\u0142\u0119boko\u015Bci\u0105
+        wody. Prawdopodbie\u0144stwo wyst\u0105pienia powodzi 10% - raz na 10 lat]]></Abstract>\n
         \   <KeywordList><Keyword><![CDATA[]]></Keyword></KeywordList>\n    <OnlineResource
         xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:type=\"simple\" xlink:href=\"https://wody.isok.gov.pl/gpservices/KZGW/MZP20_Glebokosc_WysokiePrawdopodPowodzi/MapServer/WMSServer?\"/>\n
         \   <ContactInformation>\n      <ContactPersonPrimary>\n        <ContactPerson><![CDATA[]]></ContactPerson>\n
@@ -819,11 +440,11 @@ interactions:
       connection:
       - Keep-Alive
       content-length:
-      - '30175'
+      - '30174'
       content-type:
       - text/xml
       date:
-      - Sat, 10 Oct 2026 22:36:28 GMT
+      - Sat, 10 Oct 2026 23:30:48 GMT
       keep-alive:
       - timeout=60, max=500
       server:
@@ -836,6 +457,361 @@ interactions:
       - Accept-Encoding
       x-xss-protection:
       - '"1; mode=block"'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - cbdgmapa.pgi.gov.pl
+    method: GET
+    uri: https://cbdgmapa.pgi.gov.pl/arcgis/rest/services/geozagrozenia/sopo_obszary/MapServer/identify?geometry=%7B%22xmin%22%3A+16.947854964054827%2C+%22ymin%22%3A+51.140505658741056%2C+%22xmax%22%3A+16.96214503594517%2C+%22ymax%22%3A+51.14949433778592%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A12&tolerance=0&mapExtent=16.947854964054827%2C51.140505658741056%2C16.96214503594517%2C51.14949433778592&imageDisplay=1000%2C1000%2C96&returnGeometry=true&maxAllowableOffset=2e-05&f=json
+  response:
+    body:
+      string: '{"results":[]}'
+    headers:
+      cache-control:
+      - max-age=00:00:00
+      content-length:
+      - '14'
+      content-type:
+      - application/json; charset=UTF-8
+      date:
+      - Sat, 10 Oct 2026 23:30:51 GMT
+      etag:
+      - '"c9f6d295"'
+      server:
+      - Apache Viper 69
+      set-cookie:
+      - AGS_ROLES="419jqfa+uOZgYod4xPOQ8Q=="; Version=1; Max-Age=60; Expires=Sat,
+        10 Oct 2026 23:31:51 GMT; Path=/arcgis/rest; HttpOnly
+      - visid_incap_3291022=ZKMkoN7ORlW2uplISqnZJqvKymoAAAAAQUIPAAAAAADKASPKfQjdZhwakDXSsVPu;
+        expires=Sun, 10 Oct 2027 22:24:50 GMT; HttpOnly; path=/; Domain=.pgi.gov.pl
+      - incap_ses_689_3291022=AnB2UcnYHlUWvK1tkdKPCavKymoAAAAA0WP4jZI8pUIhfFvO2rulTg==;
+        path=/; Domain=.pgi.gov.pl
+      vary:
+      - Origin
+      x-cdn:
+      - Imperva
+      x-content-type-options:
+      - nosniff
+      x-iinfo:
+      - 12-17197265-17197266 NNNY CT(3 14 0) RT(1791675051468 23) q(0 0 0 -1) r(1
+        1) U2
+      x-powered-by:
+      - ASP.NET
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - sdi.gdos.gov.pl
+    method: GET
+    uri: https://sdi.gdos.gov.pl/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=GDOS%3AObszarySpecjalnejOchrony&outputFormat=application%2Fjson&srsName=EPSG%3A4326&bbox=51.140505658741056%2C16.947854964054827%2C51.14949433778592%2C16.96214503594517%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=200
+  response:
+    body:
+      string: '{"type":"FeatureCollection","features":[]}'
+    headers:
+      access-control-allow-origin:
+      - '*'
+      connection:
+      - keep-alive
+      content-disposition:
+      - inline; filename=geoserver-GetFeature.application
+      content-length:
+      - '42'
+      content-type:
+      - application/json
+      date:
+      - Sat, 10 Oct 2026 23:30:51 GMT
+      server:
+      - nginx/1.18.0 (Ubuntu)
+      set-cookie:
+      - visid_incap_3278221=RjskwV2JTUuGPGH7PDAnYqrKymoAAAAAQUIPAAAAAACzqjOl15/AEKN5ZEs5pFTv;
+        expires=Sun, 10 Oct 2027 22:38:33 GMT; HttpOnly; path=/; Domain=.gdos.gov.pl;
+        Secure; SameSite=None
+      - incap_ses_683_3278221=HcC/UpBiSy6lHC/88YB6CarKymoAAAAASRNSVDWT6mtzoPXszMV73w==;
+        path=/; Domain=.gdos.gov.pl; Secure; SameSite=None
+      strict-transport-security:
+      - max-age=31536000
+      x-cdn:
+      - Imperva
+      x-iinfo:
+      - 58-72972949-72970234 PNNy RT(1791675051469 22) q(0 0 0 -1) r(1 1) U12
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - cbdgmapa.pgi.gov.pl
+    method: GET
+    uri: https://cbdgmapa.pgi.gov.pl/arcgis/rest/services/midas/MapServer/2/query?geometry=%7B%22xmin%22%3A+16.947854964054827%2C+%22ymin%22%3A+51.140505658741056%2C+%22xmax%22%3A+16.96214503594517%2C+%22ymax%22%3A+51.14949433778592%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&f=geojson
+  response:
+    body:
+      string: '{"type":"FeatureCollection","features":[]}'
+    headers:
+      cache-control:
+      - max-age=00:00:00
+      content-length:
+      - '42'
+      content-type:
+      - application/geo+json; charset=UTF-8
+      date:
+      - Sat, 10 Oct 2026 23:30:51 GMT
+      etag:
+      - '"b5731b5a"'
+      server:
+      - Apache Viper 69
+      set-cookie:
+      - AGS_ROLES="419jqfa+uOZgYod4xPOQ8Q=="; Version=1; Max-Age=60; Expires=Sat,
+        10 Oct 2026 23:31:51 GMT; Path=/arcgis/rest; HttpOnly
+      - visid_incap_3291022=QVrdReNeSZObLcPyi6Dq56vKymoAAAAAQUIPAAAAAADklOG3tI/nxsHrwIkrWMKn;
+        expires=Sun, 10 Oct 2027 22:24:40 GMT; HttpOnly; path=/; Domain=.pgi.gov.pl
+      - incap_ses_689_3291022=Zuu9azEX9zkrvK1tkdKPCavKymoAAAAAI5Ti4JVofQ9+oplOacoi7A==;
+        path=/; Domain=.pgi.gov.pl
+      vary:
+      - Origin
+      x-cdn:
+      - Imperva
+      x-content-type-options:
+      - nosniff
+      x-iinfo:
+      - 5-18296415-18296417 NNNY CT(3 13 0) RT(1791675051589 30) q(0 0 0 -1) r(1 1)
+        U2
+      x-powered-by:
+      - ASP.NET
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - cbdgmapa.pgi.gov.pl
+    method: GET
+    uri: https://cbdgmapa.pgi.gov.pl/arcgis/rest/services/midas/MapServer/1/query?geometry=%7B%22xmin%22%3A+16.947854964054827%2C+%22ymin%22%3A+51.140505658741056%2C+%22xmax%22%3A+16.96214503594517%2C+%22ymax%22%3A+51.14949433778592%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&f=geojson
+  response:
+    body:
+      string: '{"type":"FeatureCollection","features":[]}'
+    headers:
+      cache-control:
+      - max-age=00:00:00
+      content-length:
+      - '42'
+      content-type:
+      - application/geo+json; charset=UTF-8
+      date:
+      - Sat, 10 Oct 2026 23:30:51 GMT
+      etag:
+      - '"b5731b5a"'
+      server:
+      - Apache Viper 69
+      set-cookie:
+      - AGS_ROLES="419jqfa+uOZgYod4xPOQ8Q=="; Version=1; Max-Age=60; Expires=Sat,
+        10 Oct 2026 23:31:51 GMT; Path=/arcgis/rest; HttpOnly
+      - visid_incap_3291022=UUHVlkqgQ6a+XRx97q6CyqvKymoAAAAAQUIPAAAAAADx8NvAk0atR2iNgXZnNemg;
+        expires=Sun, 10 Oct 2027 22:24:51 GMT; HttpOnly; path=/; Domain=.pgi.gov.pl
+      - incap_ses_689_3291022=Qpe/Li2+jyc2vK1tkdKPCavKymoAAAAATmGtNW+nXWhzis8T3t8atw==;
+        path=/; Domain=.pgi.gov.pl
+      vary:
+      - Origin
+      x-cdn:
+      - Imperva
+      x-content-type-options:
+      - nosniff
+      x-iinfo:
+      - 7-21487046-21487047 NNNY CT(4 7 0) RT(1791675051723 20) q(0 0 0 -1) r(0 0)
+        U2
+      x-powered-by:
+      - ASP.NET
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - sdi.gdos.gov.pl
+    method: GET
+    uri: https://sdi.gdos.gov.pl/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=GDOS%3AParkiNarodowe&outputFormat=application%2Fjson&srsName=EPSG%3A4326&bbox=51.140505658741056%2C16.947854964054827%2C51.14949433778592%2C16.96214503594517%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=200
+  response:
+    body:
+      string: '{"type":"FeatureCollection","features":[]}'
+    headers:
+      access-control-allow-origin:
+      - '*'
+      connection:
+      - keep-alive
+      content-disposition:
+      - inline; filename=geoserver-GetFeature.application
+      content-length:
+      - '42'
+      content-type:
+      - application/json
+      date:
+      - Sat, 10 Oct 2026 23:30:51 GMT
+      server:
+      - nginx/1.18.0 (Ubuntu)
+      set-cookie:
+      - visid_incap_3278221=vDGszJcKS8+9V9JNBmIetarKymoAAAAAQUIPAAAAAAAXpapWJp5RlmdQsTyls30S;
+        expires=Sun, 10 Oct 2027 22:44:56 GMT; HttpOnly; path=/; Domain=.gdos.gov.pl;
+        Secure; SameSite=None
+      - incap_ses_683_3278221=0vKMY5B+XE0CHS/88YB6CarKymoAAAAANtxDGiGxMe/d+QDHzo6wsg==;
+        path=/; Domain=.gdos.gov.pl; Secure; SameSite=None
+      strict-transport-security:
+      - max-age=31536000
+      x-cdn:
+      - Imperva
+      x-iinfo:
+      - 60-85408395-85407753 PNNy RT(1791675051687 20) q(0 0 0 -1) r(1 1) U12
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - cbdgmapa.pgi.gov.pl
+    method: GET
+    uri: https://cbdgmapa.pgi.gov.pl/arcgis/rest/services/midas/MapServer/0/query?geometry=%7B%22xmin%22%3A+16.947854964054827%2C+%22ymin%22%3A+51.140505658741056%2C+%22xmax%22%3A+16.96214503594517%2C+%22ymax%22%3A+51.14949433778592%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&f=geojson
+  response:
+    body:
+      string: '{"type":"FeatureCollection","features":[]}'
+    headers:
+      cache-control:
+      - max-age=00:00:00
+      content-length:
+      - '42'
+      content-type:
+      - application/geo+json; charset=UTF-8
+      date:
+      - Sat, 10 Oct 2026 23:30:51 GMT
+      etag:
+      - '"b5731b5a"'
+      server:
+      - Apache Viper 69
+      set-cookie:
+      - AGS_ROLES="419jqfa+uOZgYod4xPOQ8Q=="; Version=1; Max-Age=60; Expires=Sat,
+        10 Oct 2026 23:31:51 GMT; Path=/arcgis/rest; HttpOnly
+      - visid_incap_3291022=0IL3eGZsQ+uXPYXmYf/qQqvKymoAAAAAQUIPAAAAAAC6XGpfLKbltTl6I9jFeBZg;
+        expires=Sun, 10 Oct 2027 22:24:50 GMT; HttpOnly; path=/; Domain=.pgi.gov.pl
+      - incap_ses_689_3291022=Oc4kBaChdipHvK1tkdKPCavKymoAAAAA8g9eUrWZhOazIR7unlg6Eg==;
+        path=/; Domain=.pgi.gov.pl
+      vary:
+      - Origin
+      x-cdn:
+      - Imperva
+      x-content-type-options:
+      - nosniff
+      x-iinfo:
+      - 14-27099886-27099890 NNNY CT(4 6 0) RT(1791675051836 39) q(0 0 0 -1) r(0 0)
+        U2
+      x-powered-by:
+      - ASP.NET
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: geometry=%7B%22rings%22%3A+%5B%5B%5B16.955%2C+51.140505658741056%5D%2C+%5B16.954299731682376%2C+51.140527298134614%5D%2C+%5B16.953606205382826%2C+51.14059200797603%5D%2C+%5B16.952926098264975%2C+51.14069916525147%5D%2C+%5B16.9522659584052%2C+51.14084773826575%5D%2C+%5B16.951632141797496%2C+51.141036296567115%5D%2C+%5B16.95103075119986%2C+51.14126302470828%5D%2C+%5B16.950467577409167%2C+51.14152573971211%5D%2C+%5B16.949948043528146%2C+51.141821912074164%5D%2C+%5B16.949477152759727%2C+51.142148690100726%5D%2C+%5B16.949059440230936%2C+51.14250292734885%5D%2C+%5B16.948698929309792%2C+51.14288121290494%5D%2C+%5B16.948399092836258%2C+51.143279904211234%5D%2C+%5B16.948162819641436%2C+51.143695162124914%5D%2C+%5B16.947992386678912%2C+51.14412298787305%5D%2C+%5B16.947889437038253%2C+51.144559261547975%5D%2C+%5B16.947854964054827%2C+51.14499978177325%5D%2C+%5B16.94788930167143%2C+51.14544030615833%5D%2C+%5B16.947992121147333%2C+51.145876592152796%5D%2C+%5B16.94816243414934%2C+51.146304437906764%5D%2C+%5B16.948398602197873%2C+51.14671972274378%5D%2C+%5B16.948698352380095%2C+51.14711844685626%5D%2C+%5B16.949058799181003%2C+51.14749676984065%5D%2C+%5B16.949476472224738%2C+51.147851047700854%5D%2C+%5B16.949947349660683%2C+51.14817786796257%5D%2C+%5B16.95046689687418%2C+51.148474082559765%5D%2C+%5B16.95103011014991%2C+51.14873683817567%5D%2C+%5B16.95163156486778%2C+51.14896360374516%5D%2C+%5B16.95226546776681%2C+51.1491521948527%5D%2C+%5B16.95292571277286%2C+51.14930079479032%5D%2C+%5B16.953605939851244%2C+51.14940797207159%5D%2C+%5B16.954299596315547%2C+51.14947269423255%5D%2C+%5B16.955%2C+51.14949433778592%5D%2C+%5B16.95570040368445%2C+51.14947269423255%5D%2C+%5B16.956394060148753%2C+51.1494079720716%5D%2C+%5B16.957074287227133%2C+51.14930079479032%5D%2C+%5B16.957734532233182%2C+51.14915219485269%5D%2C+%5B16.95836843513221%2C+51.14896360374516%5D%2C+%5B16.958969889850085%2C+51.14873683817567%5D%2C+%5B16.959533103125814%2C+51.148474082559765%5D%2C+%5B16.96005265033931%2C+51.14817786796257%5D%2C+%5B16.96052352777526%2C+51.147851047700854%5D%2C+%5B16.960941200818997%2C+51.14749676984066%5D%2C+%5B16.961301647619898%2C+51.14711844685626%5D%2C+%5B16.961601397802124%2C+51.14671972274379%5D%2C+%5B16.96183756585066%2C+51.14630443790677%5D%2C+%5B16.96200787885266%2C+51.14587659215279%5D%2C+%5B16.962110698328566%2C+51.14544030615833%5D%2C+%5B16.96214503594517%2C+51.14499978177325%5D%2C+%5B16.962110562961744%2C+51.14455926154798%5D%2C+%5B16.962007613321084%2C+51.14412298787305%5D%2C+%5B16.96183718035856%2C+51.143695162124914%5D%2C+%5B16.96160090716374%2C+51.143279904211234%5D%2C+%5B16.9613010706902%2C+51.14288121290494%5D%2C+%5B16.960940559769057%2C+51.14250292734885%5D%2C+%5B16.96052284724027%2C+51.142148690100726%5D%2C+%5B16.96005195647185%2C+51.141821912074164%5D%2C+%5B16.95953242259083%2C+51.14152573971211%5D%2C+%5B16.958969248800138%2C+51.14126302470828%5D%2C+%5B16.9583678582025%2C+51.141036296567115%5D%2C+%5B16.957734041594797%2C+51.14084773826575%5D%2C+%5B16.957073901735022%2C+51.14069916525147%5D%2C+%5B16.95639379461717%2C+51.14059200797603%5D%2C+%5B16.95570026831762%2C+51.140527298134614%5D%2C+%5B16.955%2C+51.140505658741056%5D%5D%5D%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryPolygon&f=json
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '3272'
+      content-type:
+      - application/x-www-form-urlencoded
+      host:
+      - cbdgmapa.pgi.gov.pl
+    method: POST
+    uri: https://cbdgmapa.pgi.gov.pl/arcgis/rest/services/geozagrozenia/egms_2016_2020_pion_interpol/ImageServer/computeStatisticsHistograms
+  response:
+    body:
+      string: '{"statistics":[{"min":-1,"max":0,"mean":-0.05405405405405405,"standardDeviation":0.22924343513512566,"median":0,"mode":0,"skipX":1,"skipY":1,"count":37,"covariances":"0,000000","sum":-1.9999999999999998}],"histograms":[{"size":256,"min":-128.5,"max":127.5,"counts":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,35,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}]}'
+    headers:
+      cache-control:
+      - max-age=00:00:00
+      content-length:
+      - '782'
+      content-type:
+      - application/json; charset=UTF-8
+      date:
+      - Sat, 10 Oct 2026 23:30:52 GMT
+      etag:
+      - '"1651c823"'
+      server:
+      - Apache Viper 69
+      set-cookie:
+      - AGS_ROLES="419jqfa+uOZgYod4xPOQ8Q=="; Version=1; Max-Age=60; Expires=Sat,
+        10 Oct 2026 23:31:52 GMT; Path=/arcgis/rest; HttpOnly
+      - visid_incap_3291022=MUp6pk9qQZ24uy6N5X5aRKvKymoAAAAAQUIPAAAAAADkJxBqJuqbf2E5vVwMHYrG;
+        expires=Sun, 10 Oct 2027 22:24:49 GMT; HttpOnly; path=/; Domain=.pgi.gov.pl
+      - incap_ses_689_3291022=llfQDOKTNAxhvK1tkdKPCavKymoAAAAA3TptVRo/ELPS5kIS1QloRQ==;
+        path=/; Domain=.pgi.gov.pl
+      vary:
+      - Origin
+      x-cdn:
+      - Imperva
+      x-content-type-options:
+      - nosniff
+      x-iinfo:
+      - 4-17076600-17076589 PNNN RT(1791675052030 20) q(0 0 0 -1) r(0 0) U6
+      x-powered-by:
+      - ASP.NET
+      x-xss-protection:
+      - 1; mode=block
     status:
       code: 200
       message: OK
@@ -854,8 +830,6 @@ interactions:
       - application/x-www-form-urlencoded
       host:
       - iip.ekoportal.gov.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
     method: POST
     uri: https://iip.ekoportal.gov.pl/geoserver/wms
   response:
@@ -880,13 +854,13 @@ interactions:
       content-type:
       - image/png
       date:
-      - Sat, 10 Oct 2026 22:36:29 GMT
+      - Sat, 10 Oct 2026 23:30:52 GMT
       expires:
-      - Sat, 10 Oct 2026 22:36:29 GMT
+      - Sat, 10 Oct 2026 23:30:52 GMT
       pragma:
       - no-cache
       set-cookie:
-      - cookiesession1=678A3E22BF0AE2D9282B2D2F2434B363;Expires=Sun, 10 Oct 2027 22:36:29
+      - cookiesession1=678A3E228934325BFAB9720EEF78FB02;Expires=Sun, 10 Oct 2027 23:30:52
         GMT;Path=/;HttpOnly
       x-frame-options:
       - SAMEORIGIN
@@ -904,8 +878,6 @@ interactions:
       - keep-alive
       host:
       - sdi.gdos.gov.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
     method: GET
     uri: https://sdi.gdos.gov.pl/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=GDOS%3AParkiKrajobrazowe&outputFormat=application%2Fjson&srsName=EPSG%3A4326&bbox=51.140505658741056%2C16.947854964054827%2C51.14949433778592%2C16.96214503594517%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=200
   response:
@@ -923,69 +895,21 @@ interactions:
       content-type:
       - application/json
       date:
-      - Sat, 10 Oct 2026 22:36:29 GMT
+      - Sat, 10 Oct 2026 23:30:52 GMT
       server:
       - nginx/1.18.0 (Ubuntu)
       set-cookie:
-      - visid_incap_3278221=XRArL15TQA6P2nyj/bg+4O29ymoAAAAAQUIPAAAAAADdpwT9GPOfkUCa9Gg3e2xr;
-        expires=Sat, 09 Oct 2027 22:45:02 GMT; HttpOnly; path=/; Domain=.gdos.gov.pl;
+      - visid_incap_3278221=VArCCuMnRNa4eKrYSCd+BqvKymoAAAAAQUIPAAAAAAB2CYwiMYVhSMN4O00+wCeS;
+        expires=Sun, 10 Oct 2027 22:44:56 GMT; HttpOnly; path=/; Domain=.gdos.gov.pl;
         Secure; SameSite=None
-      - incap_ses_683_3278221=vmU3QiO+yzEDvxX88YB6Ce29ymoAAAAAK+C0ssXpWhpWWDsA8Y/TFg==;
+      - incap_ses_683_3278221=AQk7KXW96UWQHS/88YB6CavKymoAAAAAbZu7Kz/MgzOZkDTyLtoxBg==;
         path=/; Domain=.gdos.gov.pl; Secure; SameSite=None
       strict-transport-security:
       - max-age=31536000
       x-cdn:
       - Imperva
       x-iinfo:
-      - 57-67467034-67461529 PNNy RT(1791671789687 37) q(0 0 0 -1) r(2 2) U12
-    status:
-      code: 200
-      message: OK
-- request:
-    body: ''
-    headers:
-      accept:
-      - '*/*'
-      accept-encoding:
-      - gzip, deflate
-      connection:
-      - keep-alive
-      host:
-      - sdi.gdos.gov.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
-    method: GET
-    uri: https://sdi.gdos.gov.pl/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=GDOS%3ARezerwaty&outputFormat=application%2Fjson&srsName=EPSG%3A4326&bbox=51.140505658741056%2C16.947854964054827%2C51.14949433778592%2C16.96214503594517%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=200
-  response:
-    body:
-      string: '{"type":"FeatureCollection","features":[]}'
-    headers:
-      access-control-allow-origin:
-      - '*'
-      connection:
-      - keep-alive
-      content-disposition:
-      - inline; filename=geoserver-GetFeature.application
-      content-length:
-      - '42'
-      content-type:
-      - application/json
-      date:
-      - Sat, 10 Oct 2026 22:36:30 GMT
-      server:
-      - nginx/1.18.0 (Ubuntu)
-      set-cookie:
-      - visid_incap_3278221=0VDpSNdmQLWhBS1OIZUdzO29ymoAAAAAQUIPAAAAAADFiBPeOgCrKGCQf1NvFKZI;
-        expires=Sat, 09 Oct 2027 22:40:02 GMT; HttpOnly; path=/; Domain=.gdos.gov.pl;
-        Secure; SameSite=None
-      - incap_ses_683_3278221=LA6QO/JnTjbKvxX88YB6Ce29ymoAAAAAUlcBOmB6rjVHdaLz8r5T7A==;
-        path=/; Domain=.gdos.gov.pl; Secure; SameSite=None
-      strict-transport-security:
-      - max-age=31536000
-      x-cdn:
-      - Imperva
-      x-iinfo:
-      - 61-86299608-86295696 PNNy RT(1791671790013 20) q(0 0 0 -1) r(2 2) U12
+      - 60-85408502-85405385 PNNN RT(1791675051992 17) q(0 0 0 -1) r(1 1) U12
     status:
       code: 200
       message: OK
@@ -1004,8 +928,6 @@ interactions:
       - application/x-www-form-urlencoded
       host:
       - iip.ekoportal.gov.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
     method: POST
     uri: https://iip.ekoportal.gov.pl/geoserver/wms
   response:
@@ -1030,9 +952,9 @@ interactions:
       content-type:
       - image/png
       date:
-      - Sat, 10 Oct 2026 22:36:30 GMT
+      - Sat, 10 Oct 2026 23:30:52 GMT
       expires:
-      - Sat, 10 Oct 2026 22:36:30 GMT
+      - Sat, 10 Oct 2026 23:30:52 GMT
       pragma:
       - no-cache
       x-frame-options:
@@ -1051,10 +973,8 @@ interactions:
       - keep-alive
       host:
       - sdi.gdos.gov.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
     method: GET
-    uri: https://sdi.gdos.gov.pl/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=GDOS%3AObszaryChronionegoKrajobrazu&outputFormat=application%2Fjson&srsName=EPSG%3A4326&bbox=51.140505658741056%2C16.947854964054827%2C51.14949433778592%2C16.96214503594517%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=200
+    uri: https://sdi.gdos.gov.pl/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=GDOS%3ARezerwaty&outputFormat=application%2Fjson&srsName=EPSG%3A4326&bbox=51.140505658741056%2C16.947854964054827%2C51.14949433778592%2C16.96214503594517%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=200
   response:
     body:
       string: '{"type":"FeatureCollection","features":[]}'
@@ -1070,21 +990,21 @@ interactions:
       content-type:
       - application/json
       date:
-      - Sat, 10 Oct 2026 22:36:30 GMT
+      - Sat, 10 Oct 2026 23:30:52 GMT
       server:
       - nginx/1.18.0 (Ubuntu)
       set-cookie:
-      - visid_incap_3278221=7SP2qVGkRGWWyQzA3A3I4O29ymoAAAAAQUIPAAAAAAD1j05F+sQlpZUsnQUlwFGO;
-        expires=Sat, 09 Oct 2027 22:45:02 GMT; HttpOnly; path=/; Domain=.gdos.gov.pl;
+      - visid_incap_3278221=6jDC8y21RIqqCFZ+puPY3KvKymoAAAAAQUIPAAAAAAC8VDpa7u+/3WlDQM4e3gz0;
+        expires=Sun, 10 Oct 2027 22:40:03 GMT; HttpOnly; path=/; Domain=.gdos.gov.pl;
         Secure; SameSite=None
-      - incap_ses_683_3278221=3fKPHIRnGFDBwBX88YB6Ce29ymoAAAAAtcovkS3fTpDV+sWqfd422w==;
+      - incap_ses_683_3278221=JF/YZlCB+37hHS/88YB6CavKymoAAAAAMLxgt5KgvmqArxM84gtLFQ==;
         path=/; Domain=.gdos.gov.pl; Secure; SameSite=None
       strict-transport-security:
       - max-age=31536000
       x-cdn:
       - Imperva
       x-iinfo:
-      - 57-67467135-67461529 PNNy RT(1791671790247 18) q(0 0 0 -1) r(1 1) U12
+      - 61-86952803-86941464 PNNy RT(1791675052214 21) q(0 0 0 -1) r(2 2) U12
     status:
       code: 200
       message: OK
@@ -1103,8 +1023,6 @@ interactions:
       - application/x-www-form-urlencoded
       host:
       - iip.ekoportal.gov.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
     method: POST
     uri: https://iip.ekoportal.gov.pl/geoserver/wms
   response:
@@ -1129,14 +1047,11 @@ interactions:
       content-type:
       - image/png
       date:
-      - Sat, 10 Oct 2026 22:36:30 GMT
+      - Sat, 10 Oct 2026 23:30:52 GMT
       expires:
-      - Sat, 10 Oct 2026 22:36:30 GMT
+      - Sat, 10 Oct 2026 23:30:52 GMT
       pragma:
       - no-cache
-      set-cookie:
-      - cookiesession1=678A3E22A96285E9B57BB6C4E300021F;Expires=Sun, 10 Oct 2027 22:36:30
-        GMT;Path=/;HttpOnly
       x-frame-options:
       - SAMEORIGIN
     status:
@@ -1153,8 +1068,52 @@ interactions:
       - keep-alive
       host:
       - sdi.gdos.gov.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: GET
+    uri: https://sdi.gdos.gov.pl/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=GDOS%3AObszaryChronionegoKrajobrazu&outputFormat=application%2Fjson&srsName=EPSG%3A4326&bbox=51.140505658741056%2C16.947854964054827%2C51.14949433778592%2C16.96214503594517%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=200
+  response:
+    body:
+      string: '{"type":"FeatureCollection","features":[]}'
+    headers:
+      access-control-allow-origin:
+      - '*'
+      connection:
+      - keep-alive
+      content-disposition:
+      - inline; filename=geoserver-GetFeature.application
+      content-length:
+      - '42'
+      content-type:
+      - application/json
+      date:
+      - Sat, 10 Oct 2026 23:30:52 GMT
+      server:
+      - nginx/1.18.0 (Ubuntu)
+      set-cookie:
+      - visid_incap_3278221=lYo/+lRwQWuUi7q7rytITqvKymoAAAAAQUIPAAAAAABfqBqQpyhAUCAfwBu1EEmk;
+        expires=Sun, 10 Oct 2027 22:39:06 GMT; HttpOnly; path=/; Domain=.gdos.gov.pl;
+        Secure; SameSite=None
+      - incap_ses_683_3278221=y4sPJ2TpTgxZHi/88YB6CavKymoAAAAAdKybEtFKBqLH7ZCr4jhLdA==;
+        path=/; Domain=.gdos.gov.pl; Secure; SameSite=None
+      strict-transport-security:
+      - max-age=31536000
+      x-cdn:
+      - Imperva
+      x-iinfo:
+      - 62-91916465-91911589 PNNy RT(1791675052529 24) q(0 0 0 -1) r(2 2) U12
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - sdi.gdos.gov.pl
     method: GET
     uri: https://sdi.gdos.gov.pl/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=GDOS%3AUzytkiEkologiczne&outputFormat=application%2Fjson&srsName=EPSG%3A4326&bbox=51.140505658741056%2C16.947854964054827%2C51.14949433778592%2C16.96214503594517%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=200
   response:
@@ -1172,21 +1131,69 @@ interactions:
       content-type:
       - application/json
       date:
-      - Sat, 10 Oct 2026 22:36:30 GMT
+      - Sat, 10 Oct 2026 23:30:52 GMT
       server:
       - nginx/1.18.0 (Ubuntu)
       set-cookie:
-      - visid_incap_3278221=gKfJxXx9R5e2k8jZMlHOCO29ymoAAAAAQUIPAAAAAABviK/qJLvDChIBVj4BFPen;
-        expires=Sat, 09 Oct 2027 22:40:02 GMT; HttpOnly; path=/; Domain=.gdos.gov.pl;
+      - visid_incap_3278221=4ErykLbxRgG5QEOe4CepU6zKymoAAAAAQUIPAAAAAAA0lSJR2b8Y5aK9nNJIZBwX;
+        expires=Sun, 10 Oct 2027 22:38:33 GMT; HttpOnly; path=/; Domain=.gdos.gov.pl;
         Secure; SameSite=None
-      - incap_ses_683_3278221=qbulUmc2g094wRX88YB6Ce29ymoAAAAApYlwYi4Z5sOto39VOFkELg==;
+      - incap_ses_683_3278221=iwi+Qc5ghF2qHi/88YB6CazKymoAAAAAeRAW6tOiy6Nv6L7on0reFA==;
         path=/; Domain=.gdos.gov.pl; Secure; SameSite=None
       strict-transport-security:
       - max-age=31536000
       x-cdn:
       - Imperva
       x-iinfo:
-      - 61-86299756-86295696 PNNy RT(1791671790533 21) q(0 0 0 -1) r(2 2) U12
+      - 58-72973089-72970234 PNNy RT(1791675052751 17) q(0 0 0 -1) r(1 1) U12
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - sdi.gdos.gov.pl
+    method: GET
+    uri: https://sdi.gdos.gov.pl/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=GDOS%3AZespolyPrzyrodniczoKrajobrazowe&outputFormat=application%2Fjson&srsName=EPSG%3A4326&bbox=51.140505658741056%2C16.947854964054827%2C51.14949433778592%2C16.96214503594517%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=200
+  response:
+    body:
+      string: '{"type":"FeatureCollection","features":[]}'
+    headers:
+      access-control-allow-origin:
+      - '*'
+      connection:
+      - keep-alive
+      content-disposition:
+      - inline; filename=geoserver-GetFeature.application
+      content-length:
+      - '42'
+      content-type:
+      - application/json
+      date:
+      - Sat, 10 Oct 2026 23:30:53 GMT
+      server:
+      - nginx/1.18.0 (Ubuntu)
+      set-cookie:
+      - JSESSSIONID=221745094.1.698864672.2472491520; path=/; httponly;secure ;
+      - visid_incap_3278221=IKV5429EQo+xGCmUhIDetqzKymoAAAAAQUIPAAAAAABArq+Ts+CC0OldQvNvoCpo;
+        expires=Sun, 10 Oct 2027 22:43:05 GMT; HttpOnly; path=/; Domain=.gdos.gov.pl;
+        Secure; SameSite=None
+      - incap_ses_683_3278221=2tkoYpnlzgMVHy/88YB6CazKymoAAAAAZtgUlo8Bb1FX7WNLmOGkiw==;
+        path=/; Domain=.gdos.gov.pl; Secure; SameSite=None
+      strict-transport-security:
+      - max-age=31536000
+      x-cdn:
+      - Imperva
+      x-iinfo:
+      - 59-82092650-82092652 NNNY CT(2 4 0) RT(1791675053051 21) q(0 0 0 -1) r(1 1)
+        U12
     status:
       code: 200
       message: OK
@@ -1205,8 +1212,6 @@ interactions:
       - application/x-www-form-urlencoded
       host:
       - iip.ekoportal.gov.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
     method: POST
     uri: https://iip.ekoportal.gov.pl/geoserver/wms
   response:
@@ -1231,64 +1236,16 @@ interactions:
       content-type:
       - image/png
       date:
-      - Sat, 10 Oct 2026 22:36:30 GMT
+      - Sat, 10 Oct 2026 23:30:53 GMT
       expires:
-      - Sat, 10 Oct 2026 22:36:30 GMT
+      - Sat, 10 Oct 2026 23:30:53 GMT
       pragma:
       - no-cache
       set-cookie:
-      - cookiesession1=678A3E22DFE7B06A0E0F61A865B8B8BC;Expires=Sun, 10 Oct 2027 22:36:30
+      - cookiesession1=678A3E22E37C2C30C648C16F44A53099;Expires=Sun, 10 Oct 2027 23:30:53
         GMT;Path=/;HttpOnly
       x-frame-options:
       - SAMEORIGIN
-    status:
-      code: 200
-      message: OK
-- request:
-    body: ''
-    headers:
-      accept:
-      - '*/*'
-      accept-encoding:
-      - gzip, deflate
-      connection:
-      - keep-alive
-      host:
-      - sdi.gdos.gov.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
-    method: GET
-    uri: https://sdi.gdos.gov.pl/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=GDOS%3AZespolyPrzyrodniczoKrajobrazowe&outputFormat=application%2Fjson&srsName=EPSG%3A4326&bbox=51.140505658741056%2C16.947854964054827%2C51.14949433778592%2C16.96214503594517%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=200
-  response:
-    body:
-      string: '{"type":"FeatureCollection","features":[]}'
-    headers:
-      access-control-allow-origin:
-      - '*'
-      connection:
-      - keep-alive
-      content-disposition:
-      - inline; filename=geoserver-GetFeature.application
-      content-length:
-      - '42'
-      content-type:
-      - application/json
-      date:
-      - Sat, 10 Oct 2026 22:36:30 GMT
-      server:
-      - nginx/1.18.0 (Ubuntu)
-      set-cookie:
-      - visid_incap_3278221=oaRiIZI2SdSjuFcYwMPqIe69ymoAAAAAQUIPAAAAAAB5lgCw/81enYbq3gq21WMt;
-        expires=Sat, 09 Oct 2027 22:45:02 GMT; HttpOnly; path=/; Domain=.gdos.gov.pl;
-        Secure; SameSite=None
-      - incap_ses_683_3278221=PVxlXfJRqmX6wRX88YB6Ce69ymoAAAAAKWjAX9lem1OGTO6e4tJLWQ==;
-        path=/; Domain=.gdos.gov.pl; Secure; SameSite=None
-      strict-transport-security:
-      - max-age=31536000
-      x-cdn:
-      - Imperva
-      x-iinfo:
-      - 57-67467194-67461529 PNNy RT(1791671790754 18) q(0 0 0 -1) r(1 1) U12
     status:
       code: 200
       message: OK
@@ -1307,8 +1264,6 @@ interactions:
       - application/x-www-form-urlencoded
       host:
       - iip.ekoportal.gov.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
     method: POST
     uri: https://iip.ekoportal.gov.pl/geoserver/wms
   response:
@@ -1333,11 +1288,69 @@ interactions:
       content-type:
       - image/png
       date:
-      - Sat, 10 Oct 2026 22:36:31 GMT
+      - Sat, 10 Oct 2026 23:30:53 GMT
       expires:
-      - Sat, 10 Oct 2026 22:36:31 GMT
+      - Sat, 10 Oct 2026 23:30:53 GMT
       pragma:
       - no-cache
+      set-cookie:
+      - cookiesession1=678A3E22B63B5695D33CC51B2BF2C855;Expires=Sun, 10 Oct 2027 23:30:53
+        GMT;Path=/;HttpOnly
+      x-frame-options:
+      - SAMEORIGIN
+    status:
+      code: 200
+      message: OK
+- request:
+    body: SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=DF4_8_MRoad2017Lden%3APL_a_Mroad_Lden&SRS=EPSG%3A4326&BBOX=16.947854964054827%2C51.140505658741056%2C16.96214503594517%2C51.14949433778592&WIDTH=100&HEIGHT=99&FORMAT=image%2Fpng&TRANSPARENT=TRUE&FORMAT_OPTIONS=antialias%3Anone&SLD_BODY=%3CStyledLayerDescriptor+version%3D%221.0.0%22+xmlns%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%22+xmlns%3Aogc%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%3E%3CNamedLayer%3E%3CName%3EDF4_8_MRoad2017Lden%3APL_a_Mroad_Lden%3C%2FName%3E%3CUserStyle%3E%3CFeatureTypeStyle%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E40%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23280000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E45%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%232d0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E50%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23320000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E55%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23370000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E60%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%233c0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E65%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23410000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E70%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23460000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E75%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%234b0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E80%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23500000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E85%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23550000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E90%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%235a0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E95%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%235f0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3C%2FFeatureTypeStyle%3E%3C%2FUserStyle%3E%3C%2FNamedLayer%3E%3C%2FStyledLayerDescriptor%3E
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '4974'
+      content-type:
+      - application/x-www-form-urlencoded
+      host:
+      - iip.ekoportal.gov.pl
+    method: POST
+    uri: https://iip.ekoportal.gov.pl/geoserver/wms
+  response:
+    body:
+      string: !!binary |
+        iVBORw0KGgoAAAANSUhEUgAAAGQAAABjCAYAAABt56XsAAAB6klEQVR4Xu3aTYrCUBRE4eyqJ70D
+        97+etApp0Nby5Q+K5hsE1KsvUCen7sTpMk3zcn1fXy/X1/X12dc8z5PrMYMJjK6H4g6EGT1QJjB6
+        YNzq+xfI2ftiOd/OyA/A6UAWADcgYGQYpxsCwGcAzxndDTmjrp5v5P0YnFOACH8s/Fc5TUfb8eom
+        PhsHdCgQwY8H/y6rw4C8u4HP10HaDUTg6wL/lNdmIJ8ONt8GajUQQW8LejS3VUBGD/W97dCGgAh4
+        e8Brs4tA1h7m+/vBvQQi2P3Bbs3wD5CtB/ndMRAfgAj1mFD35MiQsj9aMKQNyB69/Pb4ivO/KIYc
+        /1T9J1MZwhCGJKMZwhCGMKTMAkAAUUvJgjSz1MvsAQQQdaayyiwABBC1lCxIM0u9zB5AAFFnKqvM
+        AkAAUUvJgjSz1MvsAQQQdaayyiwABBC1lCxIM0u9zB5AAFFnKqvMAkAAUUvJgjSz1MvsAQQQdaay
+        yiwABBC1lCxIM0u9zB5AAFFnKqvMAkAAUUvJgjSz1MvsAQQQdaayyiwABBC1lCxIM0u9zB5AAFFn
+        KqvMAkAAUUvJgjSz1MvsAQQQdaayyiwABBC1lCxIM0u9zB5AAFFnKqvMAkAAUUvJgjSz1MvsAQQQ
+        daayyiwABBC1lCxIsx89MvB3ik0ncgAAAABJRU5ErkJggg==
+    headers:
+      cache-control:
+      - max-age=0, no-cache, no-store
+      connection:
+      - keep-alive
+      content-disposition:
+      - inline; filename=DF4_8_MRoad2017Lden-PL_a_Mroad_Lden.png
+      content-length:
+      - '547'
+      content-type:
+      - image/png
+      date:
+      - Sat, 10 Oct 2026 23:30:54 GMT
+      expires:
+      - Sat, 10 Oct 2026 23:30:54 GMT
+      pragma:
+      - no-cache
+      set-cookie:
+      - cookiesession1=678A3E22380C9DF8AB901CDFB24B2ED4;Expires=Sun, 10 Oct 2027 23:30:54
+        GMT;Path=/;HttpOnly
       x-frame-options:
       - SAMEORIGIN
     status:
@@ -1354,8 +1367,53 @@ interactions:
       - keep-alive
       host:
       - wody.isok.gov.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: GET
+    uri: https://wody.isok.gov.pl/gpservices/KZGW/MZP20_Glebokosc_WysokiePrawdopodPowodzi/MapServer/WMSServer?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=1%2C2&STYLES=&CRS=CRS%3A84&BBOX=16.947854964054827%2C51.140505658741056%2C16.96214503594517%2C51.14949433778592&WIDTH=200&HEIGHT=199&FORMAT=image%2Fpng32&TRANSPARENT=TRUE
+  response:
+    body:
+      string: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \r\n  \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html
+        xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n<title>Internal Server
+        Error</title>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"
+        />\r\n<style><!--\r\nbody { font-family:sans-serif; } \r\n.footer { margin-top:20pt;
+        color:#AAAAAA; padding:1em 0em; font-size:10pt; }\r\n.footer a { color:#AAAAAA;
+        }\r\n.footer a:hover { color:#000000; }\r\n--></style></head>\r\n<body><h1>Internal
+        Server Error</h1><hr/><p>While processing your request, the following error
+        was detected. </p>\r\n<pre id=\"msg\">java.lang.RuntimeException: Invalid
+        server response: Content-Encoding: gzip</pre><p class=\"footer\">Copyright
+        \xA92009-2013 <a href=\"http://www.gispartner.pl/\">GISPartner Sp. z o.o.</a></p></body>"
+    headers:
+      access-control-allow-origin:
+      - '*'
+      connection:
+      - close
+      content-length:
+      - '811'
+      content-type:
+      - text/html;charset=UTF-8
+      date:
+      - Sat, 10 Oct 2026 23:30:54 GMT
+      server:
+      - iMapESB 2.2.0.
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains; preload
+      vary:
+      - Accept-Encoding
+      x-xss-protection:
+      - '"1; mode=block"'
+    status:
+      code: 500
+      message: Internal Server Error
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - wody.isok.gov.pl
     method: GET
     uri: https://wody.isok.gov.pl/gpservices/KZGW/MZP20_Glebokosc_WysokiePrawdopodPowodzi/MapServer/WMSServer?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=1%2C2&STYLES=&CRS=CRS%3A84&BBOX=16.947854964054827%2C51.140505658741056%2C16.96214503594517%2C51.14949433778592&WIDTH=200&HEIGHT=199&FORMAT=image%2Fpng32&TRANSPARENT=TRUE
   response:
@@ -1406,7 +1464,7 @@ interactions:
       content-type:
       - image/png
       date:
-      - Sat, 10 Oct 2026 22:36:30 GMT
+      - Sat, 10 Oct 2026 23:30:55 GMT
       keep-alive:
       - timeout=60, max=500
       server:
@@ -1421,6 +1479,81 @@ interactions:
       code: 200
       message: OK
 - request:
+    body: SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=DF4_8_AggRoad2017Lden%3APL_a_AggRoad2017_Lden_polygon&SRS=EPSG%3A4326&BBOX=16.947854964054827%2C51.140505658741056%2C16.96214503594517%2C51.14949433778592&WIDTH=100&HEIGHT=99&FORMAT=image%2Fpng&TRANSPARENT=TRUE&FORMAT_OPTIONS=antialias%3Anone&SLD_BODY=%3CStyledLayerDescriptor+version%3D%221.0.0%22+xmlns%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%22+xmlns%3Aogc%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%3E%3CNamedLayer%3E%3CName%3EDF4_8_AggRoad2017Lden%3APL_a_AggRoad2017_Lden_polygon%3C%2FName%3E%3CUserStyle%3E%3CFeatureTypeStyle%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E40%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23280000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E45%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%232d0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E50%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23320000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E55%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23370000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E60%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%233c0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E65%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23410000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E70%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23460000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E75%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%234b0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E80%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23500000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E85%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23550000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E90%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%235a0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E95%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%235f0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3C%2FFeatureTypeStyle%3E%3C%2FUserStyle%3E%3C%2FNamedLayer%3E%3C%2FStyledLayerDescriptor%3E
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '5006'
+      content-type:
+      - application/x-www-form-urlencoded
+      host:
+      - iip.ekoportal.gov.pl
+    method: POST
+    uri: https://iip.ekoportal.gov.pl/geoserver/wms
+  response:
+    body:
+      string: !!binary |
+        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
+    headers:
+      cache-control:
+      - max-age=0, no-cache, no-store
+      connection:
+      - keep-alive
+      content-disposition:
+      - inline; filename=DF4_8_AggRoad2017Lden-PL_a_AggRoad2017_Lden_polygon.png
+      content-length:
+      - '1693'
+      content-type:
+      - image/png
+      date:
+      - Sat, 10 Oct 2026 23:30:59 GMT
+      expires:
+      - Sat, 10 Oct 2026 23:30:59 GMT
+      pragma:
+      - no-cache
+      set-cookie:
+      - cookiesession1=678A3E22BCEF45460C3603FB0364F76F;Expires=Sun, 10 Oct 2027 23:30:58
+        GMT;Path=/;HttpOnly
+      x-frame-options:
+      - SAMEORIGIN
+    status:
+      code: 200
+      message: OK
+- request:
     body: ''
     headers:
       accept:
@@ -1431,8 +1564,6 @@ interactions:
       - keep-alive
       host:
       - wody.isok.gov.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
     method: GET
     uri: https://wody.isok.gov.pl/gpservices/KZGW/MZP20_Glebokosc_SredniePrawdopodPowodzi/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities
   response:
@@ -1444,8 +1575,8 @@ interactions:
         https://wody.isok.gov.pl/gpservices/KZGW/MZP20_Glebokosc_SredniePrawdopodPowodzi/MapServer/WMSServer?version=1.3.0%26service=WMS%26request=GetSchemaExtension\">\n
         \ <Service>\n    <Name><![CDATA[WMS]]></Name>\n    <Title><![CDATA[MZP z g\u0142\u0119boko\u015Bci\u0105
         wody 1%, raz na 100 lat]]></Title>\n    <Abstract><![CDATA[Us\u0142uga przegl\u0105dania
-        (WMS) prezentuje map\u0119 zagro\u017Cenia powodziowego z g\u0142\u0119boko\u015Bci\u0105
-        wody. Prawdopodobie\u0144stwo wyst\u0105pienia powodzi 1% - raz na 100 lat]]></Abstract>\n
+        (WMS) prezentuje map\u0119 zagro\u017Cenia powdoziowego z g\u0142\u0119boko\u015Bci\u0105
+        wody. Prawdopodbie\u0144stwo wyst\u0105pienia powodzi 1% - raz na 100 lat]]></Abstract>\n
         \   <KeywordList><Keyword><![CDATA[]]></Keyword></KeywordList>\n    <OnlineResource
         xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:type=\"simple\" xlink:href=\"https://wody.isok.gov.pl/gpservices/KZGW/MZP20_Glebokosc_SredniePrawdopodPowodzi/MapServer/WMSServer?\"/>\n
         \   <ContactInformation>\n      <ContactPersonPrimary>\n        <ContactPerson><![CDATA[]]></ContactPerson>\n
@@ -2042,11 +2173,11 @@ interactions:
       connection:
       - Keep-Alive
       content-length:
-      - '63273'
+      - '63272'
       content-type:
       - text/xml
       date:
-      - Sat, 10 Oct 2026 22:36:31 GMT
+      - Sat, 10 Oct 2026 23:30:55 GMT
       keep-alive:
       - timeout=60, max=500
       server:
@@ -2073,8 +2204,6 @@ interactions:
       - keep-alive
       host:
       - wody.isok.gov.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
     method: GET
     uri: https://wody.isok.gov.pl/gpservices/KZGW/MZP20_Glebokosc_SredniePrawdopodPowodzi/MapServer/WMSServer?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=1%2C2%2C16%2C17&STYLES=&CRS=CRS%3A84&BBOX=16.947854964054827%2C51.140505658741056%2C16.96214503594517%2C51.14949433778592&WIDTH=200&HEIGHT=199&FORMAT=image%2Fpng32&TRANSPARENT=TRUE
   response:
@@ -2159,7 +2288,7 @@ interactions:
       content-type:
       - image/png
       date:
-      - Sat, 10 Oct 2026 22:36:34 GMT
+      - Sat, 10 Oct 2026 23:31:11 GMT
       keep-alive:
       - timeout=60, max=500
       server:
@@ -2174,140 +2303,6 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=DF4_8_AggRoad2017Lden%3APL_a_AggRoad2017_Lden_polygon&SRS=EPSG%3A4326&BBOX=16.947854964054827%2C51.140505658741056%2C16.96214503594517%2C51.14949433778592&WIDTH=100&HEIGHT=99&FORMAT=image%2Fpng&TRANSPARENT=TRUE&FORMAT_OPTIONS=antialias%3Anone&SLD_BODY=%3CStyledLayerDescriptor+version%3D%221.0.0%22+xmlns%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%22+xmlns%3Aogc%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%3E%3CNamedLayer%3E%3CName%3EDF4_8_AggRoad2017Lden%3APL_a_AggRoad2017_Lden_polygon%3C%2FName%3E%3CUserStyle%3E%3CFeatureTypeStyle%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E40%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23280000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E45%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%232d0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E50%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23320000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E55%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23370000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E60%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%233c0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E65%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23410000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E70%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23460000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E75%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%234b0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E80%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23500000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E85%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23550000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E90%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%235a0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E95%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%235f0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3C%2FFeatureTypeStyle%3E%3C%2FUserStyle%3E%3C%2FNamedLayer%3E%3C%2FStyledLayerDescriptor%3E
-    headers:
-      accept:
-      - '*/*'
-      accept-encoding:
-      - gzip, deflate
-      connection:
-      - keep-alive
-      content-length:
-      - '5006'
-      content-type:
-      - application/x-www-form-urlencoded
-      host:
-      - iip.ekoportal.gov.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
-    method: POST
-    uri: https://iip.ekoportal.gov.pl/geoserver/wms
-  response:
-    body:
-      string: !!binary |
-        iVBORw0KGgoAAAANSUhEUgAAAGQAAABjCAYAAABt56XsAAAGZElEQVR4Xu2aQbLzOAiE38FmM5u5
-        /43e/KSGDGk3CMl2LNksUhUhGUF/QrLj/Pz+/v7o5++fn1/9iO2vP+0zPnbO+v6//qIFhXEGBPVZ
-        AD4BoB4vIN+oigISg1AwbxgC5czKEN+4Gqq9hfQGUjC24lyxYF5AZOIzgVyR2Kpzng5kVWGuivv0
-        LeuqxFad91Qgq4pyZdwvIGecH1cmtfLcpwBZWZCrYy8g5qejq2HI/Kfc7s6Q2KoxVIXMViFnHOqr
-        rs4Z4j68QmZIauUYDn8OWVmMGWIvIDOeIfo+5IgHxBlW2coxvCvkiMN9ZSFmif3jjeGeCpklodXj
-        2LxTH4Gyuggzxf8GIkGNblszJbR6LB9ARqGsLsJM8W+A9EKZKZk7xEKB9EC5gwgz5fA6N7yAMmeK
-        d23Zx/7F8n4OYQJmHhjZdWUbgyG6vd6HqPCsWlpQSvxx8Zl2GyC9UJjTso1Der8xzFQJO1NK/HHx
-        mXYfr3AVChtogbGneXZN2fphbd6pe1AsEFYpFlKB6Aehmm2A6CHPRG1VSUEZB3E4EHWoUBjQsrWB
-        uRUi1YACtioEx1e7DQA1et/22u3GCm8vKCD9AqPgrfbmSX3Pg2JrsupvA/14hYt3Urpt/WO2r+gO
-        qwRvC97SqIDM9q8T3KKwSoSorRD2UFh3VvsrQyuH/nSCh3oWiIBplWT1x/DoTycekOj8qCqJhc4u
-        xBCIOtEKKSDHiB7B2TwYYnXYMyQ6P6pCjoG1AWIPeUuyquMYwaPqkL7Nn61ZhchAtbeqpDVh9cdg
-        P55DbHUIgN4K8WAVhBiC1Sd8MDwKSJ0vHUBUdLtV6XfbJ9+9Cui1V8X4gDZ/lEMYIl7mQO+FIuML
-        zBbMBogn0ojgo9d4MTzBngZyVpV40J4gPsuxC8i3oTxxW3udD4wU2uyh763qs+wYy51BvW97MWlt
-        2196xaZgzhLf86vxaL8X7+r2zXMIJoRAtP8qMLcHYlc9u+VFQNi+CgzGcZd2+IKqJ0kPjD17ou/e
-        VhXZe+JbZWz4PmRvxUQAor4Iglx3521r83NIJFTPKov89PSp+HjNXaFsgHgCWEEYGDn8vRsANl5t
-        KHRPG/3aysK+VdouEJucJ1KUpAIaBZUF5m1vUWwz96WAZKpGoGUTRVjZymILwwMi9mw8M43rApIF
-        09reIgEysBCMByWaZ9a+ISAjYFDEHmhs20N/d4GyC4gVIbviUMhWW/2OQsnGNcu4w4B4K7RlbwHR
-        fhHsCVAuB4LAWoAUjF3ReA36lPYsFdCK4/U+hCUwi03FtvGIDavlLlA2L6hmARHFoeLfDYrkvAGi
-        JRUJcnWfrYaZoahO3jbFdHSBHAnGC2jPdmmhiB/7cJndvlqCRXFHfUzorK0JJJqYCRqN94LCa7xx
-        aGdQFEwLSm/sGCNrY3wj7d1AWGCebSTAzDUqvsxrt7AICgMic3mxt+yZOHEMxiftrwHBYM5oS0II
-        Rdo28cy8LfFZf8YvA6Axq8+vALErLxP4yBhMFkFof49vJjyzeT4xJttmfqT/K0Ds5F7we+wscZnT
-        +hwBYhcSE1BtGDuLR2zog437OhAMCpMZbbPkPFvPHBgva6s/6bNzsrFeTGqfAoi30nqEk7EsWfHN
-        bomzvpmo1qZ+dG42nsXl2S4HgglkhYrGsVXKoMi4yA8Kj7FKGxeCjvEEb805HRBNMhIq03cEFBYL
-        2tg8Hgwbtwd3SiC4MjMA2BgmVvbBkfljNp0jqgy8jsFQ23JAcIVisthGwbIPjuiHtdG3XQBsvNgi
-        GNI3PRAvAS9hZkfhRs6TjN8IiJcH2pcF0lMp0dYlfiIhGQi1WdAZHyg+ay8NZASKiuBtXREA24dV
-        Z4HI98gPA6G25YHY5CIRvCrBQz7y0QNkFMqtgCgcJiquYFsp+h1F9CqQwUX/LAZmw2q5JRAPDBMS
-        ty4VLao85sfaxAcKHfmzfbcGwsAwMRmUSED1oWNYdURAWFxqewQQSVZXPoqnQuCtsK5ydm60gGRg
-        IJTHAbFQUOQIigdSoOh1HuQsGLtNPqZCcEVaoS0QWyliR7GxOtiYLAg7TiuygPz3s70HpReICtsL
-        RRfI44CwSrHbj/RnqsQKbqEVkD8C9q5G3CpERAtF77rwoGfblfgqIDshMCDZMwXh45a2u0I0EJzo
-        SW3VQCuFVYunBwNi/XnXoV2v+RduvWtn+f5bCAAAAABJRU5ErkJggg==
-    headers:
-      cache-control:
-      - max-age=0, no-cache, no-store
-      connection:
-      - keep-alive
-      content-disposition:
-      - inline; filename=DF4_8_AggRoad2017Lden-PL_a_AggRoad2017_Lden_polygon.png
-      content-length:
-      - '1693'
-      content-type:
-      - image/png
-      date:
-      - Sat, 10 Oct 2026 22:36:36 GMT
-      expires:
-      - Sat, 10 Oct 2026 22:36:36 GMT
-      pragma:
-      - no-cache
-      set-cookie:
-      - cookiesession1=678A3E225176DB32A47A54CB51D5D9CA;Expires=Sun, 10 Oct 2027 22:36:36
-        GMT;Path=/;HttpOnly
-      x-frame-options:
-      - SAMEORIGIN
-    status:
-      code: 200
-      message: OK
-- request:
-    body: SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=DF4_8_MRoad2017Lden%3APL_a_Mroad_Lden&SRS=EPSG%3A4326&BBOX=16.947854964054827%2C51.140505658741056%2C16.96214503594517%2C51.14949433778592&WIDTH=100&HEIGHT=99&FORMAT=image%2Fpng&TRANSPARENT=TRUE&FORMAT_OPTIONS=antialias%3Anone&SLD_BODY=%3CStyledLayerDescriptor+version%3D%221.0.0%22+xmlns%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%22+xmlns%3Aogc%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%3E%3CNamedLayer%3E%3CName%3EDF4_8_MRoad2017Lden%3APL_a_Mroad_Lden%3C%2FName%3E%3CUserStyle%3E%3CFeatureTypeStyle%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E40%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23280000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E45%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%232d0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E50%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23320000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E55%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23370000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E60%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%233c0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E65%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23410000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E70%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23460000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E75%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%234b0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E80%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23500000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E85%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23550000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E90%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%235a0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E95%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%235f0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3C%2FFeatureTypeStyle%3E%3C%2FUserStyle%3E%3C%2FNamedLayer%3E%3C%2FStyledLayerDescriptor%3E
-    headers:
-      accept:
-      - '*/*'
-      accept-encoding:
-      - gzip, deflate
-      connection:
-      - keep-alive
-      content-length:
-      - '4974'
-      content-type:
-      - application/x-www-form-urlencoded
-      host:
-      - iip.ekoportal.gov.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
-    method: POST
-    uri: https://iip.ekoportal.gov.pl/geoserver/wms
-  response:
-    body:
-      string: !!binary |
-        iVBORw0KGgoAAAANSUhEUgAAAGQAAABjCAYAAABt56XsAAAB6klEQVR4Xu3aTYrCUBRE4eyqJ70D
-        97+etApp0Nby5Q+K5hsE1KsvUCen7sTpMk3zcn1fXy/X1/X12dc8z5PrMYMJjK6H4g6EGT1QJjB6
-        YNzq+xfI2ftiOd/OyA/A6UAWADcgYGQYpxsCwGcAzxndDTmjrp5v5P0YnFOACH8s/Fc5TUfb8eom
-        PhsHdCgQwY8H/y6rw4C8u4HP10HaDUTg6wL/lNdmIJ8ONt8GajUQQW8LejS3VUBGD/W97dCGgAh4
-        e8Brs4tA1h7m+/vBvQQi2P3Bbs3wD5CtB/ndMRAfgAj1mFD35MiQsj9aMKQNyB69/Pb4ivO/KIYc
-        /1T9J1MZwhCGJKMZwhCGMKTMAkAAUUvJgjSz1MvsAQQQdaayyiwABBC1lCxIM0u9zB5AAFFnKqvM
-        AkAAUUvJgjSz1MvsAQQQdaayyiwABBC1lCxIM0u9zB5AAFFnKqvMAkAAUUvJgjSz1MvsAQQQdaay
-        yiwABBC1lCxIM0u9zB5AAFFnKqvMAkAAUUvJgjSz1MvsAQQQdaayyiwABBC1lCxIM0u9zB5AAFFn
-        KqvMAkAAUUvJgjSz1MvsAQQQdaayyiwABBC1lCxIM0u9zB5AAFFnKqvMAkAAUUvJgjSz1MvsAQQQ
-        daayyiwABBC1lCxIsx89MvB3ik0ncgAAAABJRU5ErkJggg==
-    headers:
-      cache-control:
-      - max-age=0, no-cache, no-store
-      connection:
-      - keep-alive
-      content-disposition:
-      - inline; filename=DF4_8_MRoad2017Lden-PL_a_Mroad_Lden.png
-      content-length:
-      - '547'
-      content-type:
-      - image/png
-      date:
-      - Sat, 10 Oct 2026 22:36:47 GMT
-      expires:
-      - Sat, 10 Oct 2026 22:36:47 GMT
-      pragma:
-      - no-cache
-      set-cookie:
-      - cookiesession1=678A3E2220E32EA93AE46BC7A5E56318;Expires=Sun, 10 Oct 2027 22:36:47
-        GMT;Path=/;HttpOnly
-      x-frame-options:
-      - SAMEORIGIN
-    status:
-      code: 200
-      message: OK
-- request:
     body: ''
     headers:
       accept:
@@ -2318,8 +2313,6 @@ interactions:
       - keep-alive
       host:
       - wody.isok.gov.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
     method: GET
     uri: https://wody.isok.gov.pl/gpservices/KZGW/MZP20_Glebokosc_NiskiePrawdopodPowodzi/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities
   response:
@@ -2933,15 +2926,13 @@ interactions:
       content-type:
       - text/xml
       date:
-      - Sat, 10 Oct 2026 22:36:47 GMT
+      - Sat, 10 Oct 2026 23:31:24 GMT
       keep-alive:
       - timeout=60, max=500
       server:
       - ''
       strict-transport-security:
       - max-age=15552000; includeSubDomains; preload
-      transfer-encoding:
-      - chunked
       vary:
       - Accept-Encoding
       x-xss-protection:
@@ -2960,8 +2951,6 @@ interactions:
       - keep-alive
       host:
       - wody.isok.gov.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
     method: GET
     uri: https://wody.isok.gov.pl/gpservices/KZGW/MZP20_Glebokosc_NiskiePrawdopodPowodzi/MapServer/WMSServer?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=1%2C2%2C16%2C17&STYLES=&CRS=CRS%3A84&BBOX=16.947854964054827%2C51.140505658741056%2C16.96214503594517%2C51.14949433778592&WIDTH=200&HEIGHT=199&FORMAT=image%2Fpng32&TRANSPARENT=TRUE
   response:
@@ -3043,7 +3032,7 @@ interactions:
       content-type:
       - image/png
       date:
-      - Sat, 10 Oct 2026 22:36:49 GMT
+      - Sat, 10 Oct 2026 23:31:26 GMT
       keep-alive:
       - timeout=60, max=500
       server:
@@ -3068,8 +3057,6 @@ interactions:
       - keep-alive
       host:
       - wody.isok.gov.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
     method: GET
     uri: https://wody.isok.gov.pl/gpservices/KZGW/MZP20_Glebokosc_ZniszczenieWaluPowodziowego/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities
   response:
@@ -3312,15 +3299,13 @@ interactions:
       content-type:
       - text/xml
       date:
-      - Sat, 10 Oct 2026 22:36:49 GMT
+      - Sat, 10 Oct 2026 23:31:26 GMT
       keep-alive:
       - timeout=60, max=500
       server:
       - ''
       strict-transport-security:
       - max-age=15552000; includeSubDomains; preload
-      transfer-encoding:
-      - chunked
       vary:
       - Accept-Encoding
       x-xss-protection:
@@ -3339,8 +3324,6 @@ interactions:
       - keep-alive
       host:
       - wody.isok.gov.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
     method: GET
     uri: https://wody.isok.gov.pl/gpservices/KZGW/MZP20_Glebokosc_ZniszczenieWaluPowodziowego/MapServer/WMSServer?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=0%2C1&STYLES=&CRS=CRS%3A84&BBOX=16.947854964054827%2C51.140505658741056%2C16.96214503594517%2C51.14949433778592&WIDTH=200&HEIGHT=199&FORMAT=image%2Fpng32&TRANSPARENT=TRUE
   response:
@@ -3411,7 +3394,7 @@ interactions:
       content-type:
       - image/png
       date:
-      - Sat, 10 Oct 2026 22:36:52 GMT
+      - Sat, 10 Oct 2026 23:31:28 GMT
       keep-alive:
       - timeout=60, max=500
       server:
@@ -3436,8 +3419,6 @@ interactions:
       - keep-alive
       host:
       - danepubliczne.imgw.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
     method: GET
     uri: https://danepubliczne.imgw.pl/api/data/warningsmeteo
   response:
@@ -3457,7 +3438,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Sat, 10 Oct 2026 22:36:53 GMT
+      - Sat, 10 Oct 2026 23:31:29 GMT
       expires:
       - Thu, 19 Nov 1981 08:52:00 GMT
       pragma:
@@ -3466,7 +3447,7 @@ interactions:
       - Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips mod_fcgid/2.3.9 PHP/7.0.33 mod_perl/2.0.10
         Perl/v5.16.3
       set-cookie:
-      - ci_session=ea2gu1g6t9661i92rpgh95stsdlu5525; expires=Sun, 11-Oct-2026 00:36:53
+      - ci_session=tlclqmhthqdl8j6qvtu8c0k80gbm17u6; expires=Sun, 11-Oct-2026 01:31:29
         GMT; Max-Age=7200; path=/; HttpOnly
       x-powered-by:
       - PHP/7.0.33
@@ -3484,8 +3465,6 @@ interactions:
       - keep-alive
       host:
       - danepubliczne.imgw.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
     method: GET
     uri: https://danepubliczne.imgw.pl/api/data/warningshydro
   response:
@@ -4804,7 +4783,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Sat, 10 Oct 2026 22:36:53 GMT
+      - Sat, 10 Oct 2026 23:31:29 GMT
       expires:
       - Thu, 19 Nov 1981 08:52:00 GMT
       pragma:
@@ -4830,8 +4809,6 @@ interactions:
       - keep-alive
       host:
       - susza.iung.pulawy.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
     method: GET
     uri: https://susza.iung.pulawy.pl/wykazy/2026,0264011/
   response:
@@ -5326,14 +5303,14 @@ interactions:
       content-type:
       - text/html; charset=utf-8
       date:
-      - Sat, 10 Oct 2026 22:36:05 GMT
+      - Sat, 10 Oct 2026 23:30:41 GMT
       keep-alive:
       - timeout=5, max=100
       server:
       - Apache/2.4.67 (Debian)
       set-cookie:
-      - session=xSWUj-ULjlZe-YmOVhJx4M7fUeIx5pN7l42CD82KLQQ; Expires=Sat, 10 Oct 2026
-        23:36:05 GMT; HttpOnly; Path=/
+      - session=mwj3z-1GUrTW6FPTGjrSUeu8gh8FSheDmjS3aqaaGE8; Expires=Sun, 11 Oct 2026
+        00:30:41 GMT; HttpOnly; Path=/
       transfer-encoding:
       - chunked
       vary:
@@ -5352,13 +5329,11 @@ interactions:
       - keep-alive
       host:
       - sgeo.iung.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
     method: GET
     uri: https://sgeo.iung.pl/geoserver/Susza/wms?service=WMS&version=1.3.0&request=GetFeatureInfo&layers=Susza%3Akatgl_landuse2024&query_layers=Susza%3Akatgl_landuse2024&crs=EPSG%3A4326&bbox=51.14400005273027%2C16.954%2C51.146000052730265%2C16.956000000000003&width=101&height=101&i=50&j=50&info_format=application%2Fjson
   response:
     body:
-      string: '{"type":"FeatureCollection","features":[{"type":"Feature","id":"","geometry":null,"properties":{"GRAY_INDEX":13}}],"totalFeatures":"unknown","numberReturned":1,"timeStamp":"2026-10-11T00:48:32.707Z","crs":null}'
+      string: '{"type":"FeatureCollection","features":[{"type":"Feature","id":"","geometry":null,"properties":{"GRAY_INDEX":13}}],"totalFeatures":"unknown","numberReturned":1,"timeStamp":"2026-10-11T01:43:09.079Z","crs":null}'
     headers:
       access-control-allow-origin:
       - '*'
@@ -5375,7 +5350,7 @@ interactions:
       content-type:
       - application/json;charset=utf-8
       date:
-      - Sat, 10 Oct 2026 22:36:54 GMT
+      - Sat, 10 Oct 2026 23:31:30 GMT
       server:
       - nginx/1.22.1
       transfer-encoding:

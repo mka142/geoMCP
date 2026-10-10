@@ -13,7 +13,9 @@ Status: accepted (M4 waves A and B), October 2026.
   Only the water-depth and hazard-zone layers are drawn (October 2026 review): each service also publishes rivers, all surface waters, embankments, labels and a sheet index, and counting them made every lake a flood zone and added grid lines everywhere.
   Areas are capped at 250 km² (a 177 km² gmina takes about 60 s cold, 4 scenarios).
 - Nature protection comes from the GDOŚ GeoServer WFS (GeoJSON), geological hazards from PIG-PIB ArcGIS REST (GeoJSON), and vertical ground motion from the PIG-PIB copy of EGMS 2016-2020 through `computeStatisticsHistograms`, sent as POST because polygons exceed URL limits.
-  The SOPO landslide layers refuse the query operation (HTTP 200 with an error body, October 2026), so landslides are reported as a gap until another access path exists; a provider error or a truncated feature list is never read as "none here".
+  The SOPO landslide layers refuse the query operation (HTTP 200 with an error body, October 2026) but answer `identify` with geometry, so landslides are read through `identify`.
+  It returns at most 1,000 features without flagging truncation, so a full answer splits the tile into quarters down to about 1 km, and a full answer at that size is a gap.
+  A provider error or a truncated feature list is never read as "none here".
 - Constraint results are cached for 30 days, or for a day when a source group could not answer (the gaps are cached with them); current IMGW warnings are never cached with them.
 - Climate extremes (hot days, tropical nights, frost days, heavy-rain and dry days) are derived at read time from the cached ERA5-Land daily values, so they cost no extra downloads.
 

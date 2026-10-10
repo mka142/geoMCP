@@ -232,7 +232,10 @@ ENTRIES: dict[str, CatalogEntry] = {
             update_frequency="registers continuous; ground motion yearly releases",
             tools=["get_constraints"],
             examples=["Czy grunt w tej okolicy osiada przez kopalnie?", "Are there landslides or mining areas here?"],
-            caveats=["Ground motion is interpolated between radar points; an indication, not a survey"],
+            caveats=[
+                "Ground motion is interpolated between radar points; an indication, not a survey",
+                "Landslides are those mapped by SOPO (mostly the Carpathians); unmapped regions show none",
+            ],
         ),
         CatalogEntry(
             id="gios_noise",
