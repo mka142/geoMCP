@@ -9,6 +9,7 @@ import os
 import re
 from collections.abc import Iterator
 from typing import Any
+from urllib.parse import unquote_plus
 
 import pytest
 
@@ -86,6 +87,29 @@ def _scrub_request(request: Any) -> Any:
     return request
 
 
+_FLOAT = re.compile(r"-?\d+\.\d+")
+
+
+def _stable(text: str | bytes | None) -> str:
+    """Numbers rounded to 9 decimals: pyproj and libm differ in the last digits between macOS and Linux."""
+    if isinstance(text, bytes):
+        text = text.decode("utf-8", "replace")
+    return _FLOAT.sub(lambda m: f"{float(m.group()):.9f}", unquote_plus(text or ""))
+
+
+def _same_query(r1: Any, r2: Any) -> None:
+    assert _stable(str(sorted(r1.query))) == _stable(str(sorted(r2.query)))
+
+
+def _same_body(r1: Any, r2: Any) -> None:
+    assert _stable(r1.body) == _stable(r2.body)
+
+
+def pytest_recording_configure(config: pytest.Config, vcr: Any) -> None:
+    vcr.register_matcher("stable_query", _same_query)
+    vcr.register_matcher("stable_body", _same_body)
+
+
 @pytest.fixture(scope="module")
 def vcr_config() -> dict[str, Any]:
     return {
@@ -93,7 +117,7 @@ def vcr_config() -> dict[str, Any]:
         "filter_post_data_parameters": [("client_id", SCRUBBED), ("client_secret", SCRUBBED)],
         "before_record_response": _scrub_response,
         "before_record_request": _scrub_request,
-        "match_on": ["method", "scheme", "host", "path", "query", "body"],
+        "match_on": ["method", "scheme", "host", "path", "stable_query", "stable_body"],
         "decode_compressed_response": True,
     }
 
