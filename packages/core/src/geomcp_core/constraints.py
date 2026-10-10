@@ -5,7 +5,9 @@ motion and current weather and hydrological warnings.
 
 Sources and access (all verified live, October 2026):
 - ISOK flood hazard maps (Wody Polskie): WMS per scenario; the layers draw only at 5 m/pixel or finer, so the
-  area is rendered in tiles and flooded pixels inside the polygon are counted.
+  area is rendered in tiles and flooded pixels inside the polygon are counted. Only the water-depth and
+  hazard-zone layers are drawn: the services also publish rivers, lakes, embankments, labels and a sheet index,
+  which are not flood zones.
 - GDOŚ nature protection: GeoServer WFS with GeoJSON output.
 - PIG-PIB: ArcGIS REST for SOPO landslides and MIDAS mining terrains, and the EGMS 2016-2020 vertical
   ground-motion image service (statistics over the polygon).
@@ -42,6 +44,13 @@ FLOOD_SCENARIOS = {
     ),
 }
 FLOOD_M_PER_PX = 5.0  # the ISOK layers do not draw at coarser scales
+# the flood extent itself: water depth (a raster) and the hazard-zone polygon, by the ids in the layers' abstracts;
+# a 1% or 0.2% service holds a river and a sea variant of each
+_FLOOD_LAYER = re.compile(
+    r"<Name>(\d+)</Name>\s*<Title>(?:(?!</Title>).)*</Title>\s*"  # a title never spans into the next layer
+    r"<Abstract><!\[CDATA\[\[id=mzp\.(?:glebokosc|obszar_zagrozenia)",
+    re.S,
+)
 FLOOD_TILE_PX = 1500
 FLOOD_MAX_KM2 = 250.0
 
@@ -225,9 +234,17 @@ def _pig(area: Area, geom: BaseGeometry) -> list[Constraint]:
     return out
 
 
+def flood_layers(capabilities_xml: str) -> str:
+    """The WMS layer ids of the flood extent (depth and hazard zone), as a LAYERS parameter."""
+    names = _FLOOD_LAYER.findall(capabilities_xml)
+    if not names:
+        raise GeomcpError("source_error", "The ISOK flood service lists no depth or hazard-zone layer.")
+    return ",".join(names)
+
+
 def _flood_share(geom: BaseGeometry, service: str) -> float:
     """Share of the polygon inside the scenario's flood zone, from tiled WMS renders in CRS:84."""
-    caps_key = f"isok-layers|{service}"
+    caps_key = f"isok-layers|v2|{service}"
     if (layers := cache.get("constraints", caps_key)) is None:
         with http.client(60) as c:
             xml = http.with_retries(
@@ -237,7 +254,7 @@ def _flood_share(geom: BaseGeometry, service: str) -> float:
                     ).text
                 )
             )
-        layers = ",".join(re.findall(r'<Layer queryable="1">.*?<Name>([^<]+)</Name>', xml, re.S))
+        layers = flood_layers(xml)
         cache.put("constraints", caps_key, layers, STATIC_TTL_S)
     minx, miny, maxx, maxy = geom.bounds
     lat = (miny + maxy) / 2
@@ -492,7 +509,7 @@ def estimate_s(area_id: str) -> float:
     """Expected seconds: flood tiles dominate (measured: 15 s for 10 km², 67 s for 177 km²)."""
     area = area_from_id(area_id)
     return (
-        3.0 if cache.get("constraints", f"constraints|v3|{area.area_id}") is not None else 12.0 + 0.32 * area.area_km2
+        3.0 if cache.get("constraints", f"constraints|v4|{area.area_id}") is not None else 12.0 + 0.32 * area.area_km2
     )
 
 
@@ -502,7 +519,7 @@ def get_constraints(area_id: str) -> ConstraintsResult:
     area = area_from_id(area_id)
     geom = geometry_of(area)
     terc, _ = _commune_at(area)  # also fails clearly outside Poland
-    key = f"constraints|v3|{area.area_id}"
+    key = f"constraints|v4|{area.area_id}"
     items: list[Constraint] = []
     gaps: list[str] = []
     notices: list[str] = []

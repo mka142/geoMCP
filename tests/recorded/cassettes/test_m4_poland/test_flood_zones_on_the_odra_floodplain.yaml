@@ -27,58 +27,9 @@ interactions:
       content-type:
       - text/plain; charset=UTF-8
       date:
-      - Sat, 10 Oct 2026 15:35:20 GMT
+      - Sat, 10 Oct 2026 22:36:27 GMT
       keep-alive:
       - timeout=5, max=500
-    status:
-      code: 200
-      message: OK
-- request:
-    body: ''
-    headers:
-      accept:
-      - '*/*'
-      accept-encoding:
-      - gzip, deflate
-      connection:
-      - keep-alive
-      host:
-      - sdi.gdos.gov.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
-    method: GET
-    uri: https://sdi.gdos.gov.pl/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=GDOS%3ASpecjalneObszaryOchrony&outputFormat=application%2Fjson&srsName=EPSG%3A4326&bbox=51.140505658741056%2C16.947854964054827%2C51.14949433778592%2C16.96214503594517%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=200
-  response:
-    body:
-      string: '{"type":"FeatureCollection","features":[{"type":"Feature","id":"SpecjalneObszaryOchrony.fid--1de26f_1a1261f6f0b_2877","geometry":{"type":"MultiPolygon","coordinates":[[[[16.949622808365973,51.159657781488484],[16.95024517063195,51.15935382659584],[16.95038266404652,51.15940850449174],[16.950704976643678,51.159282899412645],[16.950892362391162,51.15902529416675],[16.952314922422612,51.158290217466615],[16.955683938113623,51.156674079235984],[16.95816485042141,51.15559452513964],[16.959062060584728,51.15556574785926],[16.959792945564423,51.15548404301749],[16.96138832567467,51.15502841458473],[16.962223731843807,51.15506114889488],[16.963624072075337,51.15554488924717],[16.964696232843714,51.15571757085996],[16.967161042557084,51.155977795271134],[16.969324668803665,51.1562235612945],[16.970794280391438,51.15620373355165],[16.97206774944561,51.15605372994121],[16.972911638041207,51.15585110541552],[16.97377619422363,51.15551290107983],[16.97425153181485,51.15517712409445],[16.97505760056963,51.15452105253951],[16.97574145180222,51.15370884556654],[16.97660100371431,51.152483153241235],[16.977245243512648,51.15125399994443],[16.977381410972413,51.15077659045948],[16.97737085560931,51.15035070971131],[16.97717030884073,51.14967720652131],[16.975966820574072,51.14723875110983],[16.97570028758427,51.14708030247013],[16.975577565808937,51.147250364271216],[16.975586831700237,51.148028872746075],[16.975757626720732,51.14888475589236],[16.97607518939981,51.149841777143536],[16.975958283288808,51.15015335960384],[16.975377651656828,51.15171313681802],[16.975184961373724,51.15174614463258],[16.97480499173835,51.1523059621924],[16.9745655884544,51.15240608090555],[16.97438050426958,51.152477632760835],[16.97412279142875,51.151921343527306],[16.97404944800756,51.15193356698818],[16.970970204385463,51.15249748987984],[16.970930638657304,51.15245380163377],[16.970832149815134,51.15248159989377],[16.970363269831676,51.15259859854703],[16.969646688732837,51.15236575179272],[16.969118320347977,51.15219239582152],[16.968873145956326,51.15207514532292],[16.96860041684676,51.15186880335337],[16.968254123860824,51.1512075957485],[16.968217250423244,51.15108316775359],[16.968213257179556,51.15106987399796],[16.96813570879059,51.15080988661232],[16.968017843677135,51.150412726647545],[16.967766916895155,51.14958026825081],[16.966050184659828,51.14953557375115],[16.96599770601969,51.14969461278292],[16.96619457562784,51.150818870268346],[16.96662074501574,51.15149424787884],[16.966539661040578,51.15151982627684],[16.965142417532313,51.15167975994608],[16.963587635780435,51.15170091122151],[16.963074665123656,51.151636559621146],[16.962793579273534,51.151594598338114],[16.962573618493824,51.151535349302236],[16.961972130284856,51.15131795481301],[16.961572366264235,51.15099594011923],[16.96097679450055,51.150443446026],[16.960638997269996,51.150257271360886],[16.960616787248814,51.15024518894684],[16.960438947602107,51.15013269342446],[16.960107517821054,51.14986386341537],[16.959905162662977,51.14963596818091],[16.959748634929568,51.14945547245944],[16.959735425583627,51.1494403982664],[16.959606949461556,51.14929196841944],[16.959703502181974,51.14929509268067],[16.959649085169954,51.14923818685912],[16.95974458735438,51.14897977380208],[16.959810915590037,51.14898713854616],[16.95967924633212,51.14887220879827],[16.95976784724258,51.14875077707674],[16.960267475011324,51.14805950141803],[16.960728101174634,51.14770750908661],[16.961782422174924,51.147193319226695],[16.962401311991314,51.14695275303825],[16.962676181488813,51.14677150189789],[16.962549557293073,51.14649005400436],[16.96244266587139,51.14635810650857],[16.962057255510395,51.14588646674615],[16.961584889948846,51.145317590275546],[16.961419729897464,51.14511895376038],[16.96128837223371,51.14495167335938],[16.96048417327293,51.14509112277244],[16.96043846617514,51.14476538326384],[16.959955171987183,51.145168257182995],[16.95930711060211,51.14462113498116],[16.9594041021394,51.144863745690365],[16.95957393568272,51.14518967274458],[16.9595885277671,51.14532576979744],[16.959405385380265,51.14560631325013],[16.959337882444643,51.14558678288941],[16.9586097078532,51.14609351119092],[16.95831902979358,51.14638962798076],[16.95860191701209,51.14653256892397],[16.95922267625666,51.146745819666705],[16.959411263540183,51.146799129959824],[16.959556955758178,51.14691052641047],[16.95958552681726,51.146982634630916],[16.959494601597445,51.14716331051074],[16.95938815024084,51.14728092198888],[16.95895225659923,51.14756820847896],[16.95886821119977,51.14762854508517],[16.956465732612283,51.146557685847164],[16.955888979426817,51.14675361665988],[16.95586217846567,51.148434625350625],[16.955834561734605,51.14861289673261],[16.955474384897965,51.149247667343516],[16.955127775870782,51.14970796822751],[16.954695257886886,51.150018058419526],[16.954136697662317,51.1503771299831],[16.952730987703312,51.15128390042985],[16.95265171432915,51.15131687781133],[16.952206423161538,51.15156259244901],[16.95112831863526,51.15215688590911],[16.9506095460683,51.15244322913188],[16.950429675028854,51.152538314698894],[16.949778129591202,51.15293801780786],[16.949705368857177,51.152982082755244],[16.949308960401588,51.15321182075999],[16.949430160658014,51.153285106182516],[16.94967067326086,51.15347428545841],[16.949774888561265,51.15357579058658],[16.94987635717558,51.15367472852678],[16.950005040660955,51.15381804490093],[16.950063078570203,51.153883475108806],[16.950390501717408,51.15408065376509],[16.95046172306332,51.15424887135776],[16.95041488869183,51.154869866643175],[16.95042491170273,51.15496648141701],[16.94970066145197,51.15505643059129],[16.949946046538752,51.155845829991904],[16.94985284162975,51.156173456118],[16.949882515700544,51.15648182574607],[16.950322879704075,51.15726843513126],[16.95054727356104,51.15744095674547],[16.950565919384886,51.15797889522908],[16.95046683037507,51.15837793822931],[16.9504010228048,51.15836823838535],[16.950246525430487,51.15876819916385],[16.95000258108074,51.158991346068106],[16.94985015992504,51.159073327821346],[16.94967467085118,51.159133493994005],[16.949527248581273,51.15921241432054],[16.949391799717073,51.159350379446714],[16.949477868274645,51.15951939762003],[16.949622808365973,51.159657781488484]]]]},"geometry_name":"geom","properties":{"gid":44873,"nazwa":"Las
-        Pilczycki","kod":"PLH020069","kodinspire":"PL.ZIPOP.1393.N2K.PLH020069.H"}}],"crs":{"type":"EPSG","properties":{"code":"4326"}}}'
-    headers:
-      access-control-allow-origin:
-      - '*'
-      connection:
-      - keep-alive
-      content-disposition:
-      - inline; filename=geoserver-GetFeature.application
-      content-length:
-      - '6488'
-      content-type:
-      - application/json
-      date:
-      - Sat, 10 Oct 2026 15:35:27 GMT
-      server:
-      - nginx/1.18.0 (Ubuntu)
-      set-cookie:
-      - visid_incap_3278221=jJQ841jPS5m9C+CKprFO6z5bymoAAAAAQUIPAAAAAACNWowPm1YdyopVguMwUNm6;
-        expires=Sat, 09 Oct 2027 22:43:04 GMT; HttpOnly; path=/; Domain=.gdos.gov.pl;
-        Secure; SameSite=None
-      - incap_ses_683_3278221=zVfHMNLtq0oteQz78YB6CT5bymoAAAAAf3B2kmyRW8NjTRIRH9rNrw==;
-        path=/; Domain=.gdos.gov.pl; Secure; SameSite=None
-      strict-transport-security:
-      - max-age=31536000
-      x-cdn:
-      - Imperva
-      x-iinfo:
-      - 59-75436194-75432629 PNNy RT(1791646526931 26) q(0 0 0 -1) r(2 2) U12
     status:
       code: 200
       message: OK
@@ -110,17 +61,17 @@ interactions:
       content-type:
       - application/geo+json; charset=UTF-8
       date:
-      - Sat, 10 Oct 2026 15:35:26 GMT
+      - Sat, 10 Oct 2026 22:36:29 GMT
       etag:
       - '"bb34d0f6"'
       server:
       - Apache Viper 69
       set-cookie:
       - AGS_ROLES="419jqfa+uOZgYod4xPOQ8Q=="; Version=1; Max-Age=60; Expires=Sat,
-        10 Oct 2026 15:36:26 GMT; Path=/arcgis/rest; HttpOnly
-      - visid_incap_3291022=HafQ59ZNRiWyc+BiMU5XDj5bymoAAAAAQUIPAAAAAABryil2WxTefNZ5jWmI5v/4;
-        expires=Sat, 09 Oct 2027 22:24:39 GMT; HttpOnly; path=/; Domain=.pgi.gov.pl
-      - incap_ses_689_3291022=26jLR/W5cXagNnttkdKPCT5bymoAAAAAElk5e8hoGa7rZmBSYHs/Uw==;
+        10 Oct 2026 22:37:29 GMT; Path=/arcgis/rest; HttpOnly
+      - visid_incap_3291022=Q1HFONGTQP6/GoICKt/daey9ymoAAAAAQUIPAAAAAABzPnc6Osq4umVpNcOzIpSy;
+        expires=Sun, 10 Oct 2027 22:24:49 GMT; HttpOnly; path=/; Domain=.pgi.gov.pl
+      - incap_ses_689_3291022=rF36JCjQ+lsxf6htkdKPCey9ymoAAAAAskjUyIQfEWWqHsFcCLccSw==;
         path=/; Domain=.pgi.gov.pl
       vary:
       - Origin
@@ -129,12 +80,61 @@ interactions:
       x-content-type-options:
       - nosniff
       x-iinfo:
-      - 3-14886826-14886829 NNNN CT(3 6 0) RT(1791646526924 20) q(0 0 0 -1) r(0 0)
+      - 4-17015734-17015736 NNNN CT(4 6 0) RT(1791671789005 18) q(0 1 1 -1) r(1 1)
         U2
       x-powered-by:
       - ASP.NET
       x-xss-protection:
       - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - sdi.gdos.gov.pl
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: GET
+    uri: https://sdi.gdos.gov.pl/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=GDOS%3ASpecjalneObszaryOchrony&outputFormat=application%2Fjson&srsName=EPSG%3A4326&bbox=51.140505658741056%2C16.947854964054827%2C51.14949433778592%2C16.96214503594517%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=200
+  response:
+    body:
+      string: '{"type":"FeatureCollection","features":[{"type":"Feature","id":"SpecjalneObszaryOchrony.fid--1de26f_1a127f0868b_1cfd","geometry":{"type":"MultiPolygon","coordinates":[[[[16.949622808365973,51.159657781488484],[16.95024517063195,51.15935382659584],[16.95038266404652,51.15940850449174],[16.950704976643678,51.159282899412645],[16.950892362391162,51.15902529416675],[16.952314922422612,51.158290217466615],[16.955683938113623,51.156674079235984],[16.95816485042141,51.15559452513964],[16.959062060584728,51.15556574785926],[16.959792945564423,51.15548404301749],[16.96138832567467,51.15502841458473],[16.962223731843807,51.15506114889488],[16.963624072075337,51.15554488924717],[16.964696232843714,51.15571757085996],[16.967161042557084,51.155977795271134],[16.969324668803665,51.1562235612945],[16.970794280391438,51.15620373355165],[16.97206774944561,51.15605372994121],[16.972911638041207,51.15585110541552],[16.97377619422363,51.15551290107983],[16.97425153181485,51.15517712409445],[16.97505760056963,51.15452105253951],[16.97574145180222,51.15370884556654],[16.97660100371431,51.152483153241235],[16.977245243512648,51.15125399994443],[16.977381410972413,51.15077659045948],[16.97737085560931,51.15035070971131],[16.97717030884073,51.14967720652131],[16.975966820574072,51.14723875110983],[16.97570028758427,51.14708030247013],[16.975577565808937,51.147250364271216],[16.975586831700237,51.148028872746075],[16.975757626720732,51.14888475589236],[16.97607518939981,51.149841777143536],[16.975958283288808,51.15015335960384],[16.975377651656828,51.15171313681802],[16.975184961373724,51.15174614463258],[16.97480499173835,51.1523059621924],[16.9745655884544,51.15240608090555],[16.97438050426958,51.152477632760835],[16.97412279142875,51.151921343527306],[16.97404944800756,51.15193356698818],[16.970970204385463,51.15249748987984],[16.970930638657304,51.15245380163377],[16.970832149815134,51.15248159989377],[16.970363269831676,51.15259859854703],[16.969646688732837,51.15236575179272],[16.969118320347977,51.15219239582152],[16.968873145956326,51.15207514532292],[16.96860041684676,51.15186880335337],[16.968254123860824,51.1512075957485],[16.968217250423244,51.15108316775359],[16.968213257179556,51.15106987399796],[16.96813570879059,51.15080988661232],[16.968017843677135,51.150412726647545],[16.967766916895155,51.14958026825081],[16.966050184659828,51.14953557375115],[16.96599770601969,51.14969461278292],[16.96619457562784,51.150818870268346],[16.96662074501574,51.15149424787884],[16.966539661040578,51.15151982627684],[16.965142417532313,51.15167975994608],[16.963587635780435,51.15170091122151],[16.963074665123656,51.151636559621146],[16.962793579273534,51.151594598338114],[16.962573618493824,51.151535349302236],[16.961972130284856,51.15131795481301],[16.961572366264235,51.15099594011923],[16.96097679450055,51.150443446026],[16.960638997269996,51.150257271360886],[16.960616787248814,51.15024518894684],[16.960438947602107,51.15013269342446],[16.960107517821054,51.14986386341537],[16.959905162662977,51.14963596818091],[16.959748634929568,51.14945547245944],[16.959735425583627,51.1494403982664],[16.959606949461556,51.14929196841944],[16.959703502181974,51.14929509268067],[16.959649085169954,51.14923818685912],[16.95974458735438,51.14897977380208],[16.959810915590037,51.14898713854616],[16.95967924633212,51.14887220879827],[16.95976784724258,51.14875077707674],[16.960267475011324,51.14805950141803],[16.960728101174634,51.14770750908661],[16.961782422174924,51.147193319226695],[16.962401311991314,51.14695275303825],[16.962676181488813,51.14677150189789],[16.962549557293073,51.14649005400436],[16.96244266587139,51.14635810650857],[16.962057255510395,51.14588646674615],[16.961584889948846,51.145317590275546],[16.961419729897464,51.14511895376038],[16.96128837223371,51.14495167335938],[16.96048417327293,51.14509112277244],[16.96043846617514,51.14476538326384],[16.959955171987183,51.145168257182995],[16.95930711060211,51.14462113498116],[16.9594041021394,51.144863745690365],[16.95957393568272,51.14518967274458],[16.9595885277671,51.14532576979744],[16.959405385380265,51.14560631325013],[16.959337882444643,51.14558678288941],[16.9586097078532,51.14609351119092],[16.95831902979358,51.14638962798076],[16.95860191701209,51.14653256892397],[16.95922267625666,51.146745819666705],[16.959411263540183,51.146799129959824],[16.959556955758178,51.14691052641047],[16.95958552681726,51.146982634630916],[16.959494601597445,51.14716331051074],[16.95938815024084,51.14728092198888],[16.95895225659923,51.14756820847896],[16.95886821119977,51.14762854508517],[16.956465732612283,51.146557685847164],[16.955888979426817,51.14675361665988],[16.95586217846567,51.148434625350625],[16.955834561734605,51.14861289673261],[16.955474384897965,51.149247667343516],[16.955127775870782,51.14970796822751],[16.954695257886886,51.150018058419526],[16.954136697662317,51.1503771299831],[16.952730987703312,51.15128390042985],[16.95265171432915,51.15131687781133],[16.952206423161538,51.15156259244901],[16.95112831863526,51.15215688590911],[16.9506095460683,51.15244322913188],[16.950429675028854,51.152538314698894],[16.949778129591202,51.15293801780786],[16.949705368857177,51.152982082755244],[16.949308960401588,51.15321182075999],[16.949430160658014,51.153285106182516],[16.94967067326086,51.15347428545841],[16.949774888561265,51.15357579058658],[16.94987635717558,51.15367472852678],[16.950005040660955,51.15381804490093],[16.950063078570203,51.153883475108806],[16.950390501717408,51.15408065376509],[16.95046172306332,51.15424887135776],[16.95041488869183,51.154869866643175],[16.95042491170273,51.15496648141701],[16.94970066145197,51.15505643059129],[16.949946046538752,51.155845829991904],[16.94985284162975,51.156173456118],[16.949882515700544,51.15648182574607],[16.950322879704075,51.15726843513126],[16.95054727356104,51.15744095674547],[16.950565919384886,51.15797889522908],[16.95046683037507,51.15837793822931],[16.9504010228048,51.15836823838535],[16.950246525430487,51.15876819916385],[16.95000258108074,51.158991346068106],[16.94985015992504,51.159073327821346],[16.94967467085118,51.159133493994005],[16.949527248581273,51.15921241432054],[16.949391799717073,51.159350379446714],[16.949477868274645,51.15951939762003],[16.949622808365973,51.159657781488484]]]]},"geometry_name":"geom","properties":{"gid":44873,"nazwa":"Las
+        Pilczycki","kod":"PLH020069","kodinspire":"PL.ZIPOP.1393.N2K.PLH020069.H"}}],"crs":{"type":"EPSG","properties":{"code":"4326"}}}'
+    headers:
+      access-control-allow-origin:
+      - '*'
+      connection:
+      - keep-alive
+      content-disposition:
+      - inline; filename=geoserver-GetFeature.application
+      content-length:
+      - '6488'
+      content-type:
+      - application/json
+      date:
+      - Sat, 10 Oct 2026 22:36:29 GMT
+      server:
+      - nginx/1.18.0 (Ubuntu)
+      set-cookie:
+      - visid_incap_3278221=mkWnoGboRyKnrpV6qrN5duy9ymoAAAAAQUIPAAAAAACGaunrZFb+pPIjZLUa2euW;
+        expires=Sat, 09 Oct 2027 22:45:08 GMT; HttpOnly; path=/; Domain=.gdos.gov.pl;
+        Secure; SameSite=None
+      - incap_ses_683_3278221=SChUBo6Bzm6QvRX88YB6Cey9ymoAAAAAT5bO84QFoJ8gQ9kuNwOESQ==;
+        path=/; Domain=.gdos.gov.pl; Secure; SameSite=None
+      strict-transport-security:
+      - max-age=31536000
+      x-cdn:
+      - Imperva
+      x-iinfo:
+      - 51-37434699-37434417 PNNy RT(1791671789000 17) q(0 0 0 -1) r(1 1) U12
     status:
       code: 200
       message: OK
@@ -166,17 +166,17 @@ interactions:
       content-type:
       - application/geo+json; charset=UTF-8
       date:
-      - Sat, 10 Oct 2026 15:35:26 GMT
+      - Sat, 10 Oct 2026 22:36:29 GMT
       etag:
       - '"bb34d0f6"'
       server:
       - Apache Viper 69
       set-cookie:
       - AGS_ROLES="419jqfa+uOZgYod4xPOQ8Q=="; Version=1; Max-Age=60; Expires=Sat,
-        10 Oct 2026 15:36:27 GMT; Path=/arcgis/rest; HttpOnly
-      - visid_incap_3291022=HOy82p/NSiezBAa+XrbCBT5bymoAAAAAQUIPAAAAAAAZAnZMV91z6BErGH+Q6mp2;
-        expires=Sat, 09 Oct 2027 22:24:49 GMT; HttpOnly; path=/; Domain=.pgi.gov.pl
-      - incap_ses_689_3291022=VRy7DHfbkFi7NnttkdKPCT5bymoAAAAAl6XyiZMcU4iIspVuNQM9sQ==;
+        10 Oct 2026 22:37:29 GMT; Path=/arcgis/rest; HttpOnly
+      - visid_incap_3291022=2WJhv7z5TummT5T7hgf2QOy9ymoAAAAAQUIPAAAAAAD3DJLgdrW2nGfVxY9mkFFP;
+        expires=Sun, 10 Oct 2027 22:24:50 GMT; HttpOnly; path=/; Domain=.pgi.gov.pl
+      - incap_ses_689_3291022=RVomXbDl8yE9f6htkdKPCey9ymoAAAAAbODWdRFTYmFaI5IeUit/cA==;
         path=/; Domain=.pgi.gov.pl
       vary:
       - Origin
@@ -185,8 +185,115 @@ interactions:
       x-content-type-options:
       - nosniff
       x-iinfo:
-      - 6-18899196-18899197 NNNY CT(4 8 0) RT(1791646527158 19) q(0 0 0 -1) r(1 1)
+      - 6-20031669-20031670 NNNY CT(5 9 0) RT(1791671789108 20) q(0 0 0 -1) r(0 0)
         U2
+      x-powered-by:
+      - ASP.NET
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - cbdgmapa.pgi.gov.pl
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: GET
+    uri: https://cbdgmapa.pgi.gov.pl/arcgis/rest/services/midas/MapServer/2/query?geometry=%7B%22xmin%22%3A+16.947854964054827%2C+%22ymin%22%3A+51.140505658741056%2C+%22xmax%22%3A+16.96214503594517%2C+%22ymax%22%3A+51.14949433778592%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&f=geojson
+  response:
+    body:
+      string: '{"type":"FeatureCollection","features":[]}'
+    headers:
+      cache-control:
+      - max-age=00:00:00
+      content-length:
+      - '42'
+      content-type:
+      - application/geo+json; charset=UTF-8
+      date:
+      - Sat, 10 Oct 2026 22:36:29 GMT
+      etag:
+      - '"b5731b5a"'
+      server:
+      - Apache Viper 69
+      set-cookie:
+      - AGS_ROLES="419jqfa+uOZgYod4xPOQ8Q=="; Version=1; Max-Age=60; Expires=Sat,
+        10 Oct 2026 22:37:29 GMT; Path=/arcgis/rest; HttpOnly
+      - visid_incap_3291022=CY68giaFTVCOuKXIgw3uxey9ymoAAAAAQUIPAAAAAACpGZGc53WzSDWt4gE+lzn9;
+        expires=Sun, 10 Oct 2027 22:24:50 GMT; HttpOnly; path=/; Domain=.pgi.gov.pl
+      - incap_ses_689_3291022=8VXZTvBw1V5If6htkdKPCey9ymoAAAAA6NX/aPm+0BNaTGz0EAHzzw==;
+        path=/; Domain=.pgi.gov.pl
+      vary:
+      - Origin
+      x-cdn:
+      - Imperva
+      x-content-type-options:
+      - nosniff
+      x-iinfo:
+      - 13-21034965-21034966 NNNY CT(5 7 0) RT(1791671789200 19) q(0 0 0 -1) r(1 1)
+        U2
+      x-powered-by:
+      - ASP.NET
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - cbdgmapa.pgi.gov.pl
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: GET
+    uri: https://cbdgmapa.pgi.gov.pl/arcgis/rest/services/midas/MapServer/1/query?geometry=%7B%22xmin%22%3A+16.947854964054827%2C+%22ymin%22%3A+51.140505658741056%2C+%22xmax%22%3A+16.96214503594517%2C+%22ymax%22%3A+51.14949433778592%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&f=geojson
+  response:
+    body:
+      string: '{"type":"FeatureCollection","features":[]}'
+    headers:
+      cache-control:
+      - max-age=00:00:00
+      content-length:
+      - '42'
+      content-type:
+      - application/geo+json; charset=UTF-8
+      date:
+      - Sat, 10 Oct 2026 22:36:29 GMT
+      etag:
+      - '"b5731b5a"'
+      server:
+      - Apache Viper 69
+      set-cookie:
+      - AGS_ROLES="419jqfa+uOZgYod4xPOQ8Q=="; Version=1; Max-Age=60; Expires=Sat,
+        10 Oct 2026 22:37:29 GMT; Path=/arcgis/rest; HttpOnly
+      - visid_incap_3291022=SFocldsTTM6KgQ0jO0nK/uy9ymoAAAAAQUIPAAAAAAArK1KgJKQGbqXZjBxSQBmD;
+        expires=Sun, 10 Oct 2027 22:24:50 GMT; HttpOnly; path=/; Domain=.pgi.gov.pl
+      - incap_ses_689_3291022=0uEzeu9CflRUf6htkdKPCey9ymoAAAAA4GCbXd5HR4al+fzOR/r8lw==;
+        path=/; Domain=.pgi.gov.pl
+      vary:
+      - Origin
+      x-cdn:
+      - Imperva
+      x-content-type-options:
+      - nosniff
+      x-iinfo:
+      - 6-20031676-20031670 PNNy RT(1791671789312 24) q(0 0 0 -1) r(0 0) U2
       x-powered-by:
       - ASP.NET
       x-xss-protection:
@@ -224,185 +331,21 @@ interactions:
       content-type:
       - application/json
       date:
-      - Sat, 10 Oct 2026 15:35:27 GMT
+      - Sat, 10 Oct 2026 22:36:29 GMT
       server:
       - nginx/1.18.0 (Ubuntu)
       set-cookie:
-      - JSESSSIONID=221745094.1.698864672.2443972608; path=/; httponly;secure ;
-      - visid_incap_3278221=omGa3AVUTJGLJ2spYPNUtj5bymoAAAAAQUIPAAAAAADuW4JB9tPlKfZ7tB4Jshtm;
-        expires=Sat, 09 Oct 2027 22:44:04 GMT; HttpOnly; path=/; Domain=.gdos.gov.pl;
+      - visid_incap_3278221=tXUWfcw+SVi2jy/LwG33Uey9ymoAAAAAQUIPAAAAAADUDhUVUmWTAKVv+vCheylZ;
+        expires=Sat, 09 Oct 2027 22:39:05 GMT; HttpOnly; path=/; Domain=.gdos.gov.pl;
         Secure; SameSite=None
-      - incap_ses_683_3278221=JaNmSYHX/xbweQz78YB6CT5bymoAAAAAmCgBEhp/pyMmmIrSas4QnQ==;
+      - incap_ses_683_3278221=HH2EA1kkGEcLvhX88YB6Cey9ymoAAAAABv1K6Nlkyr00knyfjTIqOQ==;
         path=/; Domain=.gdos.gov.pl; Secure; SameSite=None
       strict-transport-security:
       - max-age=31536000
       x-cdn:
       - Imperva
       x-iinfo:
-      - 53-43436380-43436381 NNNY CT(2 2 0) RT(1791646527166 20) q(0 0 0 -1) r(1 1)
-        U12
-    status:
-      code: 200
-      message: OK
-- request:
-    body: ''
-    headers:
-      accept:
-      - '*/*'
-      accept-encoding:
-      - gzip, deflate
-      connection:
-      - keep-alive
-      host:
-      - cbdgmapa.pgi.gov.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
-    method: GET
-    uri: https://cbdgmapa.pgi.gov.pl/arcgis/rest/services/midas/MapServer/2/query?geometry=%7B%22xmin%22%3A+16.947854964054827%2C+%22ymin%22%3A+51.140505658741056%2C+%22xmax%22%3A+16.96214503594517%2C+%22ymax%22%3A+51.14949433778592%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&f=geojson
-  response:
-    body:
-      string: '{"type":"FeatureCollection","features":[]}'
-    headers:
-      cache-control:
-      - max-age=00:00:00
-      content-length:
-      - '42'
-      content-type:
-      - application/geo+json; charset=UTF-8
-      date:
-      - Sat, 10 Oct 2026 15:35:26 GMT
-      etag:
-      - '"b5731b5a"'
-      server:
-      - Apache Viper 69
-      set-cookie:
-      - AGS_ROLES="419jqfa+uOZgYod4xPOQ8Q=="; Version=1; Max-Age=60; Expires=Sat,
-        10 Oct 2026 15:36:27 GMT; Path=/arcgis/rest; HttpOnly
-      - visid_incap_3291022=JxNUDtjITLKxr4rEgo4K/T5bymoAAAAAQUIPAAAAAAA2NNHvReEl0wMR9610L2Ki;
-        expires=Sat, 09 Oct 2027 22:24:39 GMT; HttpOnly; path=/; Domain=.pgi.gov.pl
-      - incap_ses_689_3291022=7notJumYlS3WNnttkdKPCT5bymoAAAAA8qLL32ArXQrCbs1QWTjjlA==;
-        path=/; Domain=.pgi.gov.pl
-      vary:
-      - Origin
-      x-cdn:
-      - Imperva
-      x-content-type-options:
-      - nosniff
-      x-iinfo:
-      - 5-17305398-17305400 NNNY CT(3 8 0) RT(1791646527284 20) q(0 0 0 -1) r(1 1)
-        U2
-      x-powered-by:
-      - ASP.NET
-      x-xss-protection:
-      - 1; mode=block
-    status:
-      code: 200
-      message: OK
-- request:
-    body: SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=DF4_8_MRail2017Lden%3APL_a_Mrail_2017_Lden&SRS=EPSG%3A4326&BBOX=16.947854964054827%2C51.140505658741056%2C16.96214503594517%2C51.14949433778592&WIDTH=100&HEIGHT=99&FORMAT=image%2Fpng&TRANSPARENT=TRUE&FORMAT_OPTIONS=antialias%3Anone&SLD_BODY=%3CStyledLayerDescriptor+version%3D%221.0.0%22+xmlns%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%22+xmlns%3Aogc%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%3E%3CNamedLayer%3E%3CName%3EDF4_8_MRail2017Lden%3APL_a_Mrail_2017_Lden%3C%2FName%3E%3CUserStyle%3E%3CFeatureTypeStyle%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E40%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23280000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E45%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%232d0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E50%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23320000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E55%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23370000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E60%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%233c0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E65%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23410000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E70%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23460000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E75%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%234b0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E80%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23500000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E85%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23550000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E90%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%235a0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E95%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%235f0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3C%2FFeatureTypeStyle%3E%3C%2FUserStyle%3E%3C%2FNamedLayer%3E%3C%2FStyledLayerDescriptor%3E
-    headers:
-      accept:
-      - '*/*'
-      accept-encoding:
-      - gzip, deflate
-      connection:
-      - keep-alive
-      content-length:
-      - '4984'
-      content-type:
-      - application/x-www-form-urlencoded
-      host:
-      - iip.ekoportal.gov.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
-    method: POST
-    uri: https://iip.ekoportal.gov.pl/geoserver/wms
-  response:
-    body:
-      string: !!binary |
-        iVBORw0KGgoAAAANSUhEUgAAAGQAAABjCAYAAABt56XsAAABVklEQVR4Xu3VoQHAMAzEwOy/tLPB
-        Y4EDRWZVpH9393ydfwBG7EECAkgnD8VUM4QhDFlmMoQhDGFIzAJAAJGlZcG6GfWYPYAAImeSFbMA
-        EEBkaVmwbkY9Zg8ggMiZZMUsAAQQWVoWrJtRj9kDCCByJlkxCwABRJaWBetm1GP2AAKInElWzAJA
-        AJGlZcG6GfWYPYAAImeSFbMAEEBkaVmwbkY9Zg8ggMiZZMUsAAQQWVoWrJtRj9kDCCByJlkxCwAB
-        RJaWBetm1GP2AAKInElWzAJAAJGlZcG6GfWYPYAAImeSFbMAEEBkaVmwbkY9Zg8ggMiZZMUsAAQQ
-        WVoWrJtRj9kDCCByJlkxCwABRJaWBetm1GP2AAKInElWzAJAAJGlZcG6GfWYPYAAImeSFbMAEEBk
-        aVmwbkY9Zg8ggMiZZMUsAAQQWVoWrJtRj9kDCCByJlkxCxaQDyzDlrrXIAGbAAAAAElFTkSuQmCC
-    headers:
-      cache-control:
-      - max-age=0, no-cache, no-store
-      connection:
-      - keep-alive
-      content-disposition:
-      - inline; filename=DF4_8_MRail2017Lden-PL_a_Mrail_2017_Lden.png
-      content-length:
-      - '399'
-      content-type:
-      - image/png
-      date:
-      - Sat, 10 Oct 2026 15:35:27 GMT
-      expires:
-      - Sat, 10 Oct 2026 15:35:27 GMT
-      pragma:
-      - no-cache
-      set-cookie:
-      - cookiesession1=678A3E22385B6209EF3D31CAFB9F5AA2;Expires=Sun, 10 Oct 2027 15:35:27
-        GMT;Path=/;HttpOnly
-      x-frame-options:
-      - SAMEORIGIN
-    status:
-      code: 200
-      message: OK
-- request:
-    body: ''
-    headers:
-      accept:
-      - '*/*'
-      accept-encoding:
-      - gzip, deflate
-      connection:
-      - keep-alive
-      host:
-      - cbdgmapa.pgi.gov.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
-    method: GET
-    uri: https://cbdgmapa.pgi.gov.pl/arcgis/rest/services/midas/MapServer/1/query?geometry=%7B%22xmin%22%3A+16.947854964054827%2C+%22ymin%22%3A+51.140505658741056%2C+%22xmax%22%3A+16.96214503594517%2C+%22ymax%22%3A+51.14949433778592%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&f=geojson
-  response:
-    body:
-      string: '{"type":"FeatureCollection","features":[]}'
-    headers:
-      cache-control:
-      - max-age=00:00:00
-      content-length:
-      - '42'
-      content-type:
-      - application/geo+json; charset=UTF-8
-      date:
-      - Sat, 10 Oct 2026 15:35:26 GMT
-      etag:
-      - '"b5731b5a"'
-      server:
-      - Apache Viper 69
-      set-cookie:
-      - AGS_ROLES="419jqfa+uOZgYod4xPOQ8Q=="; Version=1; Max-Age=60; Expires=Sat,
-        10 Oct 2026 15:36:27 GMT; Path=/arcgis/rest; HttpOnly
-      - visid_incap_3291022=irpTczcqRuS3U3etQ9IncD9bymoAAAAAQUIPAAAAAAC+lrxhcIr+of3+ZuSdFuDJ;
-        expires=Sat, 09 Oct 2027 22:24:49 GMT; HttpOnly; path=/; Domain=.pgi.gov.pl
-      - incap_ses_689_3291022=d9KmR5QBSGztNnttkdKPCT9bymoAAAAAv+tPKxHdRyDds+OJlsl4lw==;
-        path=/; Domain=.pgi.gov.pl
-      vary:
-      - Origin
-      x-cdn:
-      - Imperva
-      x-content-type-options:
-      - nosniff
-      x-iinfo:
-      - 13-20016918-20016921 NNNY CT(3 7 0) RT(1791646527411 19) q(0 0 0 -1) r(0 0)
-        U2
-      x-powered-by:
-      - ASP.NET
-      x-xss-protection:
-      - 1; mode=block
+      - 62-91179854-91177291 PNNN RT(1791671789201 29) q(0 0 0 -1) r(2 2) U12
     status:
       code: 200
       message: OK
@@ -432,17 +375,17 @@ interactions:
       content-type:
       - application/geo+json; charset=UTF-8
       date:
-      - Sat, 10 Oct 2026 15:35:27 GMT
+      - Sat, 10 Oct 2026 22:36:29 GMT
       etag:
       - '"b5731b5a"'
       server:
       - Apache Viper 69
       set-cookie:
       - AGS_ROLES="419jqfa+uOZgYod4xPOQ8Q=="; Version=1; Max-Age=60; Expires=Sat,
-        10 Oct 2026 15:36:27 GMT; Path=/arcgis/rest; HttpOnly
-      - visid_incap_3291022=rHKes3Y2SX2gGnHGQm61FT9bymoAAAAAQUIPAAAAAAD29TSFA9rlaZcApLp38exR;
-        expires=Sat, 09 Oct 2027 22:24:49 GMT; HttpOnly; path=/; Domain=.pgi.gov.pl
-      - incap_ses_689_3291022=Zgn9H2Bby17/NnttkdKPCT9bymoAAAAALxUus8qJih17FTW0qFMa3g==;
+        10 Oct 2026 22:37:29 GMT; Path=/arcgis/rest; HttpOnly
+      - visid_incap_3291022=wzgApSVeRI2yNMbMA/y0R+29ymoAAAAAQUIPAAAAAABaPQpSeg8KDbEtBLariq6Y;
+        expires=Sun, 10 Oct 2027 22:24:51 GMT; HttpOnly; path=/; Domain=.pgi.gov.pl
+      - incap_ses_689_3291022=YQiRV3KyGDdif6htkdKPCe29ymoAAAAAPOqNrKAbnsW1p+6feUuBWg==;
         path=/; Domain=.pgi.gov.pl
       vary:
       - Origin
@@ -451,7 +394,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-iinfo:
-      - 14-25485420-25485423 NNNY CT(3 5 0) RT(1791646527524 20) q(0 0 0 -1) r(0 0)
+      - 7-21403801-21403802 NNNY CT(5 7 0) RT(1791671789480 20) q(0 0 0 -1) r(1 1)
         U2
       x-powered-by:
       - ASP.NET
@@ -490,23 +433,78 @@ interactions:
       content-type:
       - application/json
       date:
-      - Sat, 10 Oct 2026 15:35:27 GMT
+      - Sat, 10 Oct 2026 22:36:29 GMT
       server:
       - nginx/1.18.0 (Ubuntu)
       set-cookie:
-      - JSESSSIONID=221745094.1.698864672.2443972608; path=/; httponly;secure ;
-      - visid_incap_3278221=fSu7N0cZTn+usZAVD2kTmz5bymoAAAAAQUIPAAAAAABJcSdjV+QKj5Pzn9bIexdf;
-        expires=Sat, 09 Oct 2027 22:44:55 GMT; HttpOnly; path=/; Domain=.gdos.gov.pl;
+      - visid_incap_3278221=lyVqpqWRTPSnMEwQklXC2Oy9ymoAAAAAQUIPAAAAAACXi8HAUFvIZNciWM1fsK7n;
+        expires=Sat, 09 Oct 2027 22:43:04 GMT; HttpOnly; path=/; Domain=.gdos.gov.pl;
         Secure; SameSite=None
-      - incap_ses_683_3278221=Z9/3c9K9Zg6Xegz78YB6CT5bymoAAAAAl+L8asCodZD4f51NCB5zIw==;
+      - incap_ses_683_3278221=7TT+Va8UqF+QvhX88YB6Cey9ymoAAAAA+8CMN83ZAtIwmD8PUV4RlA==;
         path=/; Domain=.gdos.gov.pl; Secure; SameSite=None
       strict-transport-security:
       - max-age=31536000
       x-cdn:
       - Imperva
       x-iinfo:
-      - 60-78628191-78628195 NNNN CT(3 3 0) RT(1791646527379 33) q(0 0 0 -1) r(1 1)
-        U12
+      - 59-81603001-81599158 PNNy RT(1791671789481 19) q(0 0 0 -1) r(1 1) U12
+    status:
+      code: 200
+      message: OK
+- request:
+    body: geometry=%7B%22rings%22%3A+%5B%5B%5B16.955%2C+51.140505658741056%5D%2C+%5B16.954299731682376%2C+51.140527298134614%5D%2C+%5B16.953606205382826%2C+51.14059200797603%5D%2C+%5B16.952926098264975%2C+51.14069916525147%5D%2C+%5B16.9522659584052%2C+51.14084773826575%5D%2C+%5B16.951632141797496%2C+51.141036296567115%5D%2C+%5B16.95103075119986%2C+51.14126302470828%5D%2C+%5B16.950467577409167%2C+51.14152573971211%5D%2C+%5B16.949948043528146%2C+51.141821912074164%5D%2C+%5B16.949477152759727%2C+51.142148690100726%5D%2C+%5B16.949059440230936%2C+51.14250292734885%5D%2C+%5B16.948698929309792%2C+51.14288121290494%5D%2C+%5B16.948399092836258%2C+51.143279904211234%5D%2C+%5B16.948162819641436%2C+51.143695162124914%5D%2C+%5B16.947992386678912%2C+51.14412298787305%5D%2C+%5B16.947889437038253%2C+51.144559261547975%5D%2C+%5B16.947854964054827%2C+51.14499978177325%5D%2C+%5B16.94788930167143%2C+51.14544030615833%5D%2C+%5B16.947992121147333%2C+51.145876592152796%5D%2C+%5B16.94816243414934%2C+51.146304437906764%5D%2C+%5B16.948398602197873%2C+51.14671972274378%5D%2C+%5B16.948698352380095%2C+51.14711844685626%5D%2C+%5B16.949058799181003%2C+51.14749676984065%5D%2C+%5B16.949476472224738%2C+51.147851047700854%5D%2C+%5B16.949947349660683%2C+51.14817786796257%5D%2C+%5B16.95046689687418%2C+51.148474082559765%5D%2C+%5B16.95103011014991%2C+51.14873683817567%5D%2C+%5B16.95163156486778%2C+51.14896360374516%5D%2C+%5B16.95226546776681%2C+51.1491521948527%5D%2C+%5B16.95292571277286%2C+51.14930079479032%5D%2C+%5B16.953605939851244%2C+51.14940797207159%5D%2C+%5B16.954299596315547%2C+51.14947269423255%5D%2C+%5B16.955%2C+51.14949433778592%5D%2C+%5B16.95570040368445%2C+51.14947269423255%5D%2C+%5B16.956394060148753%2C+51.1494079720716%5D%2C+%5B16.957074287227133%2C+51.14930079479032%5D%2C+%5B16.957734532233182%2C+51.14915219485269%5D%2C+%5B16.95836843513221%2C+51.14896360374516%5D%2C+%5B16.958969889850085%2C+51.14873683817567%5D%2C+%5B16.959533103125814%2C+51.148474082559765%5D%2C+%5B16.96005265033931%2C+51.14817786796257%5D%2C+%5B16.96052352777526%2C+51.147851047700854%5D%2C+%5B16.960941200818997%2C+51.14749676984066%5D%2C+%5B16.961301647619898%2C+51.14711844685626%5D%2C+%5B16.961601397802124%2C+51.14671972274379%5D%2C+%5B16.96183756585066%2C+51.14630443790677%5D%2C+%5B16.96200787885266%2C+51.14587659215279%5D%2C+%5B16.962110698328566%2C+51.14544030615833%5D%2C+%5B16.96214503594517%2C+51.14499978177325%5D%2C+%5B16.962110562961744%2C+51.14455926154798%5D%2C+%5B16.962007613321084%2C+51.14412298787305%5D%2C+%5B16.96183718035856%2C+51.143695162124914%5D%2C+%5B16.96160090716374%2C+51.143279904211234%5D%2C+%5B16.9613010706902%2C+51.14288121290494%5D%2C+%5B16.960940559769057%2C+51.14250292734885%5D%2C+%5B16.96052284724027%2C+51.142148690100726%5D%2C+%5B16.96005195647185%2C+51.141821912074164%5D%2C+%5B16.95953242259083%2C+51.14152573971211%5D%2C+%5B16.958969248800138%2C+51.14126302470828%5D%2C+%5B16.9583678582025%2C+51.141036296567115%5D%2C+%5B16.957734041594797%2C+51.14084773826575%5D%2C+%5B16.957073901735022%2C+51.14069916525147%5D%2C+%5B16.95639379461717%2C+51.14059200797603%5D%2C+%5B16.95570026831762%2C+51.140527298134614%5D%2C+%5B16.955%2C+51.140505658741056%5D%5D%5D%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryPolygon&f=json
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '3272'
+      content-type:
+      - application/x-www-form-urlencoded
+      host:
+      - cbdgmapa.pgi.gov.pl
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: POST
+    uri: https://cbdgmapa.pgi.gov.pl/arcgis/rest/services/geozagrozenia/egms_2016_2020_pion_interpol/ImageServer/computeStatisticsHistograms
+  response:
+    body:
+      string: '{"statistics":[{"min":-1,"max":0,"mean":-0.05405405405405405,"standardDeviation":0.22924343513512566,"median":0,"mode":0,"skipX":1,"skipY":1,"count":37,"covariances":"0,000000","sum":-1.9999999999999998}],"histograms":[{"size":256,"min":-128.5,"max":127.5,"counts":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,35,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}]}'
+    headers:
+      cache-control:
+      - max-age=00:00:00
+      content-length:
+      - '782'
+      content-type:
+      - application/json; charset=UTF-8
+      date:
+      - Sat, 10 Oct 2026 22:36:29 GMT
+      etag:
+      - '"1651c823"'
+      server:
+      - Apache Viper 69
+      set-cookie:
+      - AGS_ROLES="419jqfa+uOZgYod4xPOQ8Q=="; Version=1; Max-Age=60; Expires=Sat,
+        10 Oct 2026 22:37:29 GMT; Path=/arcgis/rest; HttpOnly
+      - visid_incap_3291022=Ox5ZH8d0QmODynT3U0tAJO29ymoAAAAAQUIPAAAAAAAq67P5Kw2Hl5fdlWPZsqGS;
+        expires=Sun, 10 Oct 2027 22:24:51 GMT; HttpOnly; path=/; Domain=.pgi.gov.pl
+      - incap_ses_689_3291022=CI4YFvy6R0R2f6htkdKPCe29ymoAAAAAgvmgQB56vTbvItgQHYwgwA==;
+        path=/; Domain=.pgi.gov.pl
+      vary:
+      - Origin
+      x-cdn:
+      - Imperva
+      x-content-type-options:
+      - nosniff
+      x-iinfo:
+      - 9-7175132-7175133 NNNY CT(4 7 0) RT(1791671789613 20) q(0 0 0 -1) r(0 0) U6
+      x-powered-by:
+      - ASP.NET
+      x-xss-protection:
+      - 1; mode=block
     status:
       code: 200
       message: OK
@@ -825,7 +823,7 @@ interactions:
       content-type:
       - text/xml
       date:
-      - Sat, 10 Oct 2026 15:35:25 GMT
+      - Sat, 10 Oct 2026 22:36:28 GMT
       keep-alive:
       - timeout=60, max=500
       server:
@@ -838,6 +836,156 @@ interactions:
       - Accept-Encoding
       x-xss-protection:
       - '"1; mode=block"'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=DF4_8_MRail2017Lden%3APL_a_Mrail_2017_Lden&SRS=EPSG%3A4326&BBOX=16.947854964054827%2C51.140505658741056%2C16.96214503594517%2C51.14949433778592&WIDTH=100&HEIGHT=99&FORMAT=image%2Fpng&TRANSPARENT=TRUE&FORMAT_OPTIONS=antialias%3Anone&SLD_BODY=%3CStyledLayerDescriptor+version%3D%221.0.0%22+xmlns%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%22+xmlns%3Aogc%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%3E%3CNamedLayer%3E%3CName%3EDF4_8_MRail2017Lden%3APL_a_Mrail_2017_Lden%3C%2FName%3E%3CUserStyle%3E%3CFeatureTypeStyle%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E40%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23280000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E45%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%232d0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E50%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23320000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E55%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23370000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E60%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%233c0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E65%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23410000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E70%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23460000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E75%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%234b0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E80%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23500000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E85%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23550000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E90%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%235a0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E95%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%235f0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3C%2FFeatureTypeStyle%3E%3C%2FUserStyle%3E%3C%2FNamedLayer%3E%3C%2FStyledLayerDescriptor%3E
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '4984'
+      content-type:
+      - application/x-www-form-urlencoded
+      host:
+      - iip.ekoportal.gov.pl
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: POST
+    uri: https://iip.ekoportal.gov.pl/geoserver/wms
+  response:
+    body:
+      string: !!binary |
+        iVBORw0KGgoAAAANSUhEUgAAAGQAAABjCAYAAABt56XsAAABVklEQVR4Xu3VoQHAMAzEwOy/tLPB
+        Y4EDRWZVpH9393ydfwBG7EECAkgnD8VUM4QhDFlmMoQhDGFIzAJAAJGlZcG6GfWYPYAAImeSFbMA
+        EEBkaVmwbkY9Zg8ggMiZZMUsAAQQWVoWrJtRj9kDCCByJlkxCwABRJaWBetm1GP2AAKInElWzAJA
+        AJGlZcG6GfWYPYAAImeSFbMAEEBkaVmwbkY9Zg8ggMiZZMUsAAQQWVoWrJtRj9kDCCByJlkxCwAB
+        RJaWBetm1GP2AAKInElWzAJAAJGlZcG6GfWYPYAAImeSFbMAEEBkaVmwbkY9Zg8ggMiZZMUsAAQQ
+        WVoWrJtRj9kDCCByJlkxCwABRJaWBetm1GP2AAKInElWzAJAAJGlZcG6GfWYPYAAImeSFbMAEEBk
+        aVmwbkY9Zg8ggMiZZMUsAAQQWVoWrJtRj9kDCCByJlkxCxaQDyzDlrrXIAGbAAAAAElFTkSuQmCC
+    headers:
+      cache-control:
+      - max-age=0, no-cache, no-store
+      connection:
+      - keep-alive
+      content-disposition:
+      - inline; filename=DF4_8_MRail2017Lden-PL_a_Mrail_2017_Lden.png
+      content-length:
+      - '399'
+      content-type:
+      - image/png
+      date:
+      - Sat, 10 Oct 2026 22:36:29 GMT
+      expires:
+      - Sat, 10 Oct 2026 22:36:29 GMT
+      pragma:
+      - no-cache
+      set-cookie:
+      - cookiesession1=678A3E22BF0AE2D9282B2D2F2434B363;Expires=Sun, 10 Oct 2027 22:36:29
+        GMT;Path=/;HttpOnly
+      x-frame-options:
+      - SAMEORIGIN
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - sdi.gdos.gov.pl
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: GET
+    uri: https://sdi.gdos.gov.pl/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=GDOS%3AParkiKrajobrazowe&outputFormat=application%2Fjson&srsName=EPSG%3A4326&bbox=51.140505658741056%2C16.947854964054827%2C51.14949433778592%2C16.96214503594517%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=200
+  response:
+    body:
+      string: '{"type":"FeatureCollection","features":[]}'
+    headers:
+      access-control-allow-origin:
+      - '*'
+      connection:
+      - keep-alive
+      content-disposition:
+      - inline; filename=geoserver-GetFeature.application
+      content-length:
+      - '42'
+      content-type:
+      - application/json
+      date:
+      - Sat, 10 Oct 2026 22:36:29 GMT
+      server:
+      - nginx/1.18.0 (Ubuntu)
+      set-cookie:
+      - visid_incap_3278221=XRArL15TQA6P2nyj/bg+4O29ymoAAAAAQUIPAAAAAADdpwT9GPOfkUCa9Gg3e2xr;
+        expires=Sat, 09 Oct 2027 22:45:02 GMT; HttpOnly; path=/; Domain=.gdos.gov.pl;
+        Secure; SameSite=None
+      - incap_ses_683_3278221=vmU3QiO+yzEDvxX88YB6Ce29ymoAAAAAK+C0ssXpWhpWWDsA8Y/TFg==;
+        path=/; Domain=.gdos.gov.pl; Secure; SameSite=None
+      strict-transport-security:
+      - max-age=31536000
+      x-cdn:
+      - Imperva
+      x-iinfo:
+      - 57-67467034-67461529 PNNy RT(1791671789687 37) q(0 0 0 -1) r(2 2) U12
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - sdi.gdos.gov.pl
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: GET
+    uri: https://sdi.gdos.gov.pl/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=GDOS%3ARezerwaty&outputFormat=application%2Fjson&srsName=EPSG%3A4326&bbox=51.140505658741056%2C16.947854964054827%2C51.14949433778592%2C16.96214503594517%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=200
+  response:
+    body:
+      string: '{"type":"FeatureCollection","features":[]}'
+    headers:
+      access-control-allow-origin:
+      - '*'
+      connection:
+      - keep-alive
+      content-disposition:
+      - inline; filename=geoserver-GetFeature.application
+      content-length:
+      - '42'
+      content-type:
+      - application/json
+      date:
+      - Sat, 10 Oct 2026 22:36:30 GMT
+      server:
+      - nginx/1.18.0 (Ubuntu)
+      set-cookie:
+      - visid_incap_3278221=0VDpSNdmQLWhBS1OIZUdzO29ymoAAAAAQUIPAAAAAADFiBPeOgCrKGCQf1NvFKZI;
+        expires=Sat, 09 Oct 2027 22:40:02 GMT; HttpOnly; path=/; Domain=.gdos.gov.pl;
+        Secure; SameSite=None
+      - incap_ses_683_3278221=LA6QO/JnTjbKvxX88YB6Ce29ymoAAAAAUlcBOmB6rjVHdaLz8r5T7A==;
+        path=/; Domain=.gdos.gov.pl; Secure; SameSite=None
+      strict-transport-security:
+      - max-age=31536000
+      x-cdn:
+      - Imperva
+      x-iinfo:
+      - 61-86299608-86295696 PNNy RT(1791671790013 20) q(0 0 0 -1) r(2 2) U12
     status:
       code: 200
       message: OK
@@ -882,9 +1030,9 @@ interactions:
       content-type:
       - image/png
       date:
-      - Sat, 10 Oct 2026 15:35:27 GMT
+      - Sat, 10 Oct 2026 22:36:30 GMT
       expires:
-      - Sat, 10 Oct 2026 15:35:27 GMT
+      - Sat, 10 Oct 2026 22:36:30 GMT
       pragma:
       - no-cache
       x-frame-options:
@@ -906,7 +1054,7 @@ interactions:
       user-agent:
       - geomcp/0.1 (+https://github.com/; geodata MCP server)
     method: GET
-    uri: https://sdi.gdos.gov.pl/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=GDOS%3AParkiKrajobrazowe&outputFormat=application%2Fjson&srsName=EPSG%3A4326&bbox=51.140505658741056%2C16.947854964054827%2C51.14949433778592%2C16.96214503594517%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=200
+    uri: https://sdi.gdos.gov.pl/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=GDOS%3AObszaryChronionegoKrajobrazu&outputFormat=application%2Fjson&srsName=EPSG%3A4326&bbox=51.140505658741056%2C16.947854964054827%2C51.14949433778592%2C16.96214503594517%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=200
   response:
     body:
       string: '{"type":"FeatureCollection","features":[]}'
@@ -922,75 +1070,21 @@ interactions:
       content-type:
       - application/json
       date:
-      - Sat, 10 Oct 2026 15:35:27 GMT
+      - Sat, 10 Oct 2026 22:36:30 GMT
       server:
       - nginx/1.18.0 (Ubuntu)
       set-cookie:
-      - visid_incap_3278221=6+qWWBhJS22RLLkeCuSyzj9bymoAAAAAQUIPAAAAAACQ4Tx1xIiyeMdf7ptrcdv+;
-        expires=Sat, 09 Oct 2027 22:40:02 GMT; HttpOnly; path=/; Domain=.gdos.gov.pl;
+      - visid_incap_3278221=7SP2qVGkRGWWyQzA3A3I4O29ymoAAAAAQUIPAAAAAAD1j05F+sQlpZUsnQUlwFGO;
+        expires=Sat, 09 Oct 2027 22:45:02 GMT; HttpOnly; path=/; Domain=.gdos.gov.pl;
         Secure; SameSite=None
-      - incap_ses_683_3278221=XYQOIg/AxmB5ewz78YB6CT9bymoAAAAA/aoHfPcZbK4vRohAB8YKTQ==;
+      - incap_ses_683_3278221=3fKPHIRnGFDBwBX88YB6Ce29ymoAAAAAtcovkS3fTpDV+sWqfd422w==;
         path=/; Domain=.gdos.gov.pl; Secure; SameSite=None
       strict-transport-security:
       - max-age=31536000
       x-cdn:
       - Imperva
       x-iinfo:
-      - 61-79962259-79958362 PNNN RT(1791646527695 20) q(0 0 0 -1) r(2 2) U12
-    status:
-      code: 200
-      message: OK
-- request:
-    body: SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=DF4_8_AggRail2017Lden%3APL_a_AggRail2017_Lden_Polygon&SRS=EPSG%3A4326&BBOX=16.947854964054827%2C51.140505658741056%2C16.96214503594517%2C51.14949433778592&WIDTH=100&HEIGHT=99&FORMAT=image%2Fpng&TRANSPARENT=TRUE&FORMAT_OPTIONS=antialias%3Anone&SLD_BODY=%3CStyledLayerDescriptor+version%3D%221.0.0%22+xmlns%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%22+xmlns%3Aogc%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%3E%3CNamedLayer%3E%3CName%3EDF4_8_AggRail2017Lden%3APL_a_AggRail2017_Lden_Polygon%3C%2FName%3E%3CUserStyle%3E%3CFeatureTypeStyle%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E40%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23280000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E45%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%232d0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E50%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23320000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E55%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23370000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E60%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%233c0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E65%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23410000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E70%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23460000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E75%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%234b0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E80%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23500000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E85%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23550000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E90%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%235a0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E95%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%235f0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3C%2FFeatureTypeStyle%3E%3C%2FUserStyle%3E%3C%2FNamedLayer%3E%3C%2FStyledLayerDescriptor%3E
-    headers:
-      accept:
-      - '*/*'
-      accept-encoding:
-      - gzip, deflate
-      connection:
-      - keep-alive
-      content-length:
-      - '5006'
-      content-type:
-      - application/x-www-form-urlencoded
-      host:
-      - iip.ekoportal.gov.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
-    method: POST
-    uri: https://iip.ekoportal.gov.pl/geoserver/wms
-  response:
-    body:
-      string: !!binary |
-        iVBORw0KGgoAAAANSUhEUgAAAGQAAABjCAYAAABt56XsAAABVklEQVR4Xu3VoQHAMAzEwOy/tLPB
-        Y4EDRWZVpH9393ydfwBG7EECAkgnD8VUM4QhDFlmMoQhDGFIzAJAAJGlZcG6GfWYPYAAImeSFbMA
-        EEBkaVmwbkY9Zg8ggMiZZMUsAAQQWVoWrJtRj9kDCCByJlkxCwABRJaWBetm1GP2AAKInElWzAJA
-        AJGlZcG6GfWYPYAAImeSFbMAEEBkaVmwbkY9Zg8ggMiZZMUsAAQQWVoWrJtRj9kDCCByJlkxCwAB
-        RJaWBetm1GP2AAKInElWzAJAAJGlZcG6GfWYPYAAImeSFbMAEEBkaVmwbkY9Zg8ggMiZZMUsAAQQ
-        WVoWrJtRj9kDCCByJlkxCwABRJaWBetm1GP2AAKInElWzAJAAJGlZcG6GfWYPYAAImeSFbMAEEBk
-        aVmwbkY9Zg8ggMiZZMUsAAQQWVoWrJtRj9kDCCByJlkxCxaQDyzDlrrXIAGbAAAAAElFTkSuQmCC
-    headers:
-      cache-control:
-      - max-age=0, no-cache, no-store
-      connection:
-      - keep-alive
-      content-disposition:
-      - inline; filename=DF4_8_AggRail2017Lden-PL_a_AggRail2017_Lden_Polygon.png
-      content-length:
-      - '399'
-      content-type:
-      - image/png
-      date:
-      - Sat, 10 Oct 2026 15:35:27 GMT
-      expires:
-      - Sat, 10 Oct 2026 15:35:27 GMT
-      pragma:
-      - no-cache
-      set-cookie:
-      - cookiesession1=678A3E228A2C0EF9B1D3D9EB7187EBB4;Expires=Sun, 10 Oct 2027 15:35:27
-        GMT;Path=/;HttpOnly
-      x-frame-options:
-      - SAMEORIGIN
+      - 57-67467135-67461529 PNNy RT(1791671790247 18) q(0 0 0 -1) r(1 1) U12
     status:
       code: 200
       message: OK
@@ -1035,11 +1129,14 @@ interactions:
       content-type:
       - image/png
       date:
-      - Sat, 10 Oct 2026 15:35:28 GMT
+      - Sat, 10 Oct 2026 22:36:30 GMT
       expires:
-      - Sat, 10 Oct 2026 15:35:28 GMT
+      - Sat, 10 Oct 2026 22:36:30 GMT
       pragma:
       - no-cache
+      set-cookie:
+      - cookiesession1=678A3E22A96285E9B57BB6C4E300021F;Expires=Sun, 10 Oct 2027 22:36:30
+        GMT;Path=/;HttpOnly
       x-frame-options:
       - SAMEORIGIN
     status:
@@ -1059,7 +1156,7 @@ interactions:
       user-agent:
       - geomcp/0.1 (+https://github.com/; geodata MCP server)
     method: GET
-    uri: https://sdi.gdos.gov.pl/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=GDOS%3ARezerwaty&outputFormat=application%2Fjson&srsName=EPSG%3A4326&bbox=51.140505658741056%2C16.947854964054827%2C51.14949433778592%2C16.96214503594517%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=200
+    uri: https://sdi.gdos.gov.pl/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=GDOS%3AUzytkiEkologiczne&outputFormat=application%2Fjson&srsName=EPSG%3A4326&bbox=51.140505658741056%2C16.947854964054827%2C51.14949433778592%2C16.96214503594517%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=200
   response:
     body:
       string: '{"type":"FeatureCollection","features":[]}'
@@ -1075,21 +1172,75 @@ interactions:
       content-type:
       - application/json
       date:
-      - Sat, 10 Oct 2026 15:35:28 GMT
+      - Sat, 10 Oct 2026 22:36:30 GMT
       server:
       - nginx/1.18.0 (Ubuntu)
       set-cookie:
-      - visid_incap_3278221=L2RJPTYqRaCWoBgvVyZnqj9bymoAAAAAQUIPAAAAAABqqDr3fCtSFw1SqjQodusi;
-        expires=Sat, 09 Oct 2027 22:39:05 GMT; HttpOnly; path=/; Domain=.gdos.gov.pl;
+      - visid_incap_3278221=gKfJxXx9R5e2k8jZMlHOCO29ymoAAAAAQUIPAAAAAABviK/qJLvDChIBVj4BFPen;
+        expires=Sat, 09 Oct 2027 22:40:02 GMT; HttpOnly; path=/; Domain=.gdos.gov.pl;
         Secure; SameSite=None
-      - incap_ses_683_3278221=0HByAansCWMrfAz78YB6CT9bymoAAAAAJlum8ARIh+q/uQajh4Z9vQ==;
+      - incap_ses_683_3278221=qbulUmc2g094wRX88YB6Ce29ymoAAAAApYlwYi4Z5sOto39VOFkELg==;
         path=/; Domain=.gdos.gov.pl; Secure; SameSite=None
       strict-transport-security:
       - max-age=31536000
       x-cdn:
       - Imperva
       x-iinfo:
-      - 62-84270074-84203479 PNNN RT(1791646527923 21) q(0 0 0 -1) r(2 2) U12
+      - 61-86299756-86295696 PNNy RT(1791671790533 21) q(0 0 0 -1) r(2 2) U12
+    status:
+      code: 200
+      message: OK
+- request:
+    body: SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=DF4_8_AggRail2017Lden%3APL_a_AggRail2017_Lden_Polygon&SRS=EPSG%3A4326&BBOX=16.947854964054827%2C51.140505658741056%2C16.96214503594517%2C51.14949433778592&WIDTH=100&HEIGHT=99&FORMAT=image%2Fpng&TRANSPARENT=TRUE&FORMAT_OPTIONS=antialias%3Anone&SLD_BODY=%3CStyledLayerDescriptor+version%3D%221.0.0%22+xmlns%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%22+xmlns%3Aogc%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%3E%3CNamedLayer%3E%3CName%3EDF4_8_AggRail2017Lden%3APL_a_AggRail2017_Lden_Polygon%3C%2FName%3E%3CUserStyle%3E%3CFeatureTypeStyle%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E40%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23280000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E45%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%232d0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E50%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23320000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E55%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23370000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E60%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%233c0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E65%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23410000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E70%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23460000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E75%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%234b0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E80%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23500000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E85%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23550000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E90%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%235a0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E95%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%235f0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3C%2FFeatureTypeStyle%3E%3C%2FUserStyle%3E%3C%2FNamedLayer%3E%3C%2FStyledLayerDescriptor%3E
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '5006'
+      content-type:
+      - application/x-www-form-urlencoded
+      host:
+      - iip.ekoportal.gov.pl
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: POST
+    uri: https://iip.ekoportal.gov.pl/geoserver/wms
+  response:
+    body:
+      string: !!binary |
+        iVBORw0KGgoAAAANSUhEUgAAAGQAAABjCAYAAABt56XsAAABVklEQVR4Xu3VoQHAMAzEwOy/tLPB
+        Y4EDRWZVpH9393ydfwBG7EECAkgnD8VUM4QhDFlmMoQhDGFIzAJAAJGlZcG6GfWYPYAAImeSFbMA
+        EEBkaVmwbkY9Zg8ggMiZZMUsAAQQWVoWrJtRj9kDCCByJlkxCwABRJaWBetm1GP2AAKInElWzAJA
+        AJGlZcG6GfWYPYAAImeSFbMAEEBkaVmwbkY9Zg8ggMiZZMUsAAQQWVoWrJtRj9kDCCByJlkxCwAB
+        RJaWBetm1GP2AAKInElWzAJAAJGlZcG6GfWYPYAAImeSFbMAEEBkaVmwbkY9Zg8ggMiZZMUsAAQQ
+        WVoWrJtRj9kDCCByJlkxCwABRJaWBetm1GP2AAKInElWzAJAAJGlZcG6GfWYPYAAImeSFbMAEEBk
+        aVmwbkY9Zg8ggMiZZMUsAAQQWVoWrJtRj9kDCCByJlkxCxaQDyzDlrrXIAGbAAAAAElFTkSuQmCC
+    headers:
+      cache-control:
+      - max-age=0, no-cache, no-store
+      connection:
+      - keep-alive
+      content-disposition:
+      - inline; filename=DF4_8_AggRail2017Lden-PL_a_AggRail2017_Lden_Polygon.png
+      content-length:
+      - '399'
+      content-type:
+      - image/png
+      date:
+      - Sat, 10 Oct 2026 22:36:30 GMT
+      expires:
+      - Sat, 10 Oct 2026 22:36:30 GMT
+      pragma:
+      - no-cache
+      set-cookie:
+      - cookiesession1=678A3E22DFE7B06A0E0F61A865B8B8BC;Expires=Sun, 10 Oct 2027 22:36:30
+        GMT;Path=/;HttpOnly
+      x-frame-options:
+      - SAMEORIGIN
     status:
       code: 200
       message: OK
@@ -1107,7 +1258,7 @@ interactions:
       user-agent:
       - geomcp/0.1 (+https://github.com/; geodata MCP server)
     method: GET
-    uri: https://sdi.gdos.gov.pl/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=GDOS%3AObszaryChronionegoKrajobrazu&outputFormat=application%2Fjson&srsName=EPSG%3A4326&bbox=51.140505658741056%2C16.947854964054827%2C51.14949433778592%2C16.96214503594517%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=200
+    uri: https://sdi.gdos.gov.pl/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=GDOS%3AZespolyPrzyrodniczoKrajobrazowe&outputFormat=application%2Fjson&srsName=EPSG%3A4326&bbox=51.140505658741056%2C16.947854964054827%2C51.14949433778592%2C16.96214503594517%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=200
   response:
     body:
       string: '{"type":"FeatureCollection","features":[]}'
@@ -1123,21 +1274,21 @@ interactions:
       content-type:
       - application/json
       date:
-      - Sat, 10 Oct 2026 15:35:28 GMT
+      - Sat, 10 Oct 2026 22:36:30 GMT
       server:
       - nginx/1.18.0 (Ubuntu)
       set-cookie:
-      - visid_incap_3278221=ccBYiW+OTc2LWAVEvi6FDj9bymoAAAAAQUIPAAAAAABZuIxOPvNeVV3t6h9vxV8Z;
-        expires=Sat, 09 Oct 2027 22:43:04 GMT; HttpOnly; path=/; Domain=.gdos.gov.pl;
+      - visid_incap_3278221=oaRiIZI2SdSjuFcYwMPqIe69ymoAAAAAQUIPAAAAAAB5lgCw/81enYbq3gq21WMt;
+        expires=Sat, 09 Oct 2027 22:45:02 GMT; HttpOnly; path=/; Domain=.gdos.gov.pl;
         Secure; SameSite=None
-      - incap_ses_683_3278221=vU0wPy1cAj4BfQz78YB6CT9bymoAAAAADzuLUiwoOO+ubG8ysDA8JA==;
+      - incap_ses_683_3278221=PVxlXfJRqmX6wRX88YB6Ce69ymoAAAAAKWjAX9lem1OGTO6e4tJLWQ==;
         path=/; Domain=.gdos.gov.pl; Secure; SameSite=None
       strict-transport-security:
       - max-age=31536000
       x-cdn:
       - Imperva
       x-iinfo:
-      - 59-75436624-75432629 PNNy RT(1791646528204 31) q(0 0 0 -1) r(2 2) U12
+      - 57-67467194-67461529 PNNy RT(1791671790754 18) q(0 0 0 -1) r(1 1) U12
     status:
       code: 200
       message: OK
@@ -1182,186 +1333,11 @@ interactions:
       content-type:
       - image/png
       date:
-      - Sat, 10 Oct 2026 15:35:28 GMT
+      - Sat, 10 Oct 2026 22:36:31 GMT
       expires:
-      - Sat, 10 Oct 2026 15:35:28 GMT
+      - Sat, 10 Oct 2026 22:36:31 GMT
       pragma:
       - no-cache
-      x-frame-options:
-      - SAMEORIGIN
-    status:
-      code: 200
-      message: OK
-- request:
-    body: ''
-    headers:
-      accept:
-      - '*/*'
-      accept-encoding:
-      - gzip, deflate
-      connection:
-      - keep-alive
-      host:
-      - sdi.gdos.gov.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
-    method: GET
-    uri: https://sdi.gdos.gov.pl/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=GDOS%3AUzytkiEkologiczne&outputFormat=application%2Fjson&srsName=EPSG%3A4326&bbox=51.140505658741056%2C16.947854964054827%2C51.14949433778592%2C16.96214503594517%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=200
-  response:
-    body:
-      string: '{"type":"FeatureCollection","features":[]}'
-    headers:
-      access-control-allow-origin:
-      - '*'
-      connection:
-      - keep-alive
-      content-disposition:
-      - inline; filename=geoserver-GetFeature.application
-      content-length:
-      - '42'
-      content-type:
-      - application/json
-      date:
-      - Sat, 10 Oct 2026 15:35:28 GMT
-      server:
-      - nginx/1.18.0 (Ubuntu)
-      set-cookie:
-      - JSESSSIONID=221745094.1.698864672.2443972608; path=/; httponly;secure ;
-      - visid_incap_3278221=epsQwcF6Qx6+sjFmJ1K9Tj9bymoAAAAAQUIPAAAAAACOukRpeqYMPyz/dz23UGwt;
-        expires=Sat, 09 Oct 2027 22:45:11 GMT; HttpOnly; path=/; Domain=.gdos.gov.pl;
-        Secure; SameSite=None
-      - incap_ses_683_3278221=1KhoP5iGGArKfQz78YB6CT9bymoAAAAAQqy/SPpZXUEewhyvQBytDQ==;
-        path=/; Domain=.gdos.gov.pl; Secure; SameSite=None
-      strict-transport-security:
-      - max-age=31536000
-      x-cdn:
-      - Imperva
-      x-iinfo:
-      - 47-23731468-23731469 NNNY CT(1 4 0) RT(1791646528424 19) q(0 0 0 -1) r(2 2)
-        U12
-    status:
-      code: 200
-      message: OK
-- request:
-    body: ''
-    headers:
-      accept:
-      - '*/*'
-      accept-encoding:
-      - gzip, deflate
-      connection:
-      - keep-alive
-      host:
-      - sdi.gdos.gov.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
-    method: GET
-    uri: https://sdi.gdos.gov.pl/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=GDOS%3AZespolyPrzyrodniczoKrajobrazowe&outputFormat=application%2Fjson&srsName=EPSG%3A4326&bbox=51.140505658741056%2C16.947854964054827%2C51.14949433778592%2C16.96214503594517%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=200
-  response:
-    body:
-      string: '{"type":"FeatureCollection","features":[]}'
-    headers:
-      access-control-allow-origin:
-      - '*'
-      connection:
-      - keep-alive
-      content-disposition:
-      - inline; filename=geoserver-GetFeature.application
-      content-length:
-      - '42'
-      content-type:
-      - application/json
-      date:
-      - Sat, 10 Oct 2026 15:35:28 GMT
-      server:
-      - nginx/1.18.0 (Ubuntu)
-      set-cookie:
-      - visid_incap_3278221=9d9SURIiT9GgaGctXiM7Dj9bymoAAAAAQUIPAAAAAABQdkJnldmhXxH9pAsh4JX/;
-        expires=Sat, 09 Oct 2027 22:39:05 GMT; HttpOnly; path=/; Domain=.gdos.gov.pl;
-        Secure; SameSite=None
-      - incap_ses_683_3278221=lC3wR8rRSXS2fgz78YB6CT9bymoAAAAAfBuOGsOdPFWLfepYH3dcFg==;
-        path=/; Domain=.gdos.gov.pl; Secure; SameSite=None
-      strict-transport-security:
-      - max-age=31536000
-      x-cdn:
-      - Imperva
-      x-iinfo:
-      - 62-84270381-84203479 PNNN RT(1791646528701 18) q(0 0 0 -1) r(1 1) U12
-    status:
-      code: 200
-      message: OK
-- request:
-    body: SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=DF4_8_AggRoad2017Lden%3APL_a_AggRoad2017_Lden_polygon&SRS=EPSG%3A4326&BBOX=16.947854964054827%2C51.140505658741056%2C16.96214503594517%2C51.14949433778592&WIDTH=100&HEIGHT=99&FORMAT=image%2Fpng&TRANSPARENT=TRUE&FORMAT_OPTIONS=antialias%3Anone&SLD_BODY=%3CStyledLayerDescriptor+version%3D%221.0.0%22+xmlns%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%22+xmlns%3Aogc%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%3E%3CNamedLayer%3E%3CName%3EDF4_8_AggRoad2017Lden%3APL_a_AggRoad2017_Lden_polygon%3C%2FName%3E%3CUserStyle%3E%3CFeatureTypeStyle%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E40%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23280000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E45%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%232d0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E50%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23320000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E55%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23370000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E60%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%233c0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E65%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23410000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E70%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23460000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E75%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%234b0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E80%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23500000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E85%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23550000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E90%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%235a0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E95%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%235f0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3C%2FFeatureTypeStyle%3E%3C%2FUserStyle%3E%3C%2FNamedLayer%3E%3C%2FStyledLayerDescriptor%3E
-    headers:
-      accept:
-      - '*/*'
-      accept-encoding:
-      - gzip, deflate
-      connection:
-      - keep-alive
-      content-length:
-      - '5006'
-      content-type:
-      - application/x-www-form-urlencoded
-      host:
-      - iip.ekoportal.gov.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
-    method: POST
-    uri: https://iip.ekoportal.gov.pl/geoserver/wms
-  response:
-    body:
-      string: !!binary |
-        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
-    headers:
-      cache-control:
-      - max-age=0, no-cache, no-store
-      connection:
-      - keep-alive
-      content-disposition:
-      - inline; filename=DF4_8_AggRoad2017Lden-PL_a_AggRoad2017_Lden_polygon.png
-      content-length:
-      - '1693'
-      content-type:
-      - image/png
-      date:
-      - Sat, 10 Oct 2026 15:35:29 GMT
-      expires:
-      - Sat, 10 Oct 2026 15:35:29 GMT
-      pragma:
-      - no-cache
-      set-cookie:
-      - cookiesession1=678A3E227BF70C3E57FF45AE503F827D;Expires=Sun, 10 Oct 2027 15:35:29
-        GMT;Path=/;HttpOnly
       x-frame-options:
       - SAMEORIGIN
     status:
@@ -1381,85 +1357,56 @@ interactions:
       user-agent:
       - geomcp/0.1 (+https://github.com/; geodata MCP server)
     method: GET
-    uri: https://wody.isok.gov.pl/gpservices/KZGW/MZP20_Glebokosc_WysokiePrawdopodPowodzi/MapServer/WMSServer?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10&STYLES=&CRS=CRS%3A84&BBOX=16.947854964054827%2C51.140505658741056%2C16.96214503594517%2C51.14949433778592&WIDTH=200&HEIGHT=199&FORMAT=image%2Fpng32&TRANSPARENT=TRUE
+    uri: https://wody.isok.gov.pl/gpservices/KZGW/MZP20_Glebokosc_WysokiePrawdopodPowodzi/MapServer/WMSServer?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=1%2C2&STYLES=&CRS=CRS%3A84&BBOX=16.947854964054827%2C51.140505658741056%2C16.96214503594517%2C51.14949433778592&WIDTH=200&HEIGHT=199&FORMAT=image%2Fpng32&TRANSPARENT=TRUE
   response:
     body:
       string: !!binary |
-        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
+        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
     headers:
       access-control-allow-origin:
       - '*'
       connection:
       - Keep-Alive
       content-length:
-      - '3648'
+      - '1976'
       content-type:
       - image/png
       date:
-      - Sat, 10 Oct 2026 15:35:28 GMT
+      - Sat, 10 Oct 2026 22:36:30 GMT
       keep-alive:
       - timeout=60, max=500
       server:
@@ -1470,63 +1417,6 @@ interactions:
       - chunked
       x-xss-protection:
       - '"1; mode=block"'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=DF4_8_MRoad2017Lden%3APL_a_Mroad_Lden&SRS=EPSG%3A4326&BBOX=16.947854964054827%2C51.140505658741056%2C16.96214503594517%2C51.14949433778592&WIDTH=100&HEIGHT=99&FORMAT=image%2Fpng&TRANSPARENT=TRUE&FORMAT_OPTIONS=antialias%3Anone&SLD_BODY=%3CStyledLayerDescriptor+version%3D%221.0.0%22+xmlns%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%22+xmlns%3Aogc%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%3E%3CNamedLayer%3E%3CName%3EDF4_8_MRoad2017Lden%3APL_a_Mroad_Lden%3C%2FName%3E%3CUserStyle%3E%3CFeatureTypeStyle%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E40%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23280000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E45%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%232d0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E50%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23320000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E55%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23370000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E60%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%233c0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E65%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23410000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E70%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23460000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E75%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%234b0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E80%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23500000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E85%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23550000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E90%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%235a0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E95%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%235f0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3C%2FFeatureTypeStyle%3E%3C%2FUserStyle%3E%3C%2FNamedLayer%3E%3C%2FStyledLayerDescriptor%3E
-    headers:
-      accept:
-      - '*/*'
-      accept-encoding:
-      - gzip, deflate
-      connection:
-      - keep-alive
-      content-length:
-      - '4974'
-      content-type:
-      - application/x-www-form-urlencoded
-      host:
-      - iip.ekoportal.gov.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
-    method: POST
-    uri: https://iip.ekoportal.gov.pl/geoserver/wms
-  response:
-    body:
-      string: !!binary |
-        iVBORw0KGgoAAAANSUhEUgAAAGQAAABjCAYAAABt56XsAAAB6klEQVR4Xu3aTYrCUBRE4eyqJ70D
-        97+etApp0Nby5Q+K5hsE1KsvUCen7sTpMk3zcn1fXy/X1/X12dc8z5PrMYMJjK6H4g6EGT1QJjB6
-        YNzq+xfI2ftiOd/OyA/A6UAWADcgYGQYpxsCwGcAzxndDTmjrp5v5P0YnFOACH8s/Fc5TUfb8eom
-        PhsHdCgQwY8H/y6rw4C8u4HP10HaDUTg6wL/lNdmIJ8ONt8GajUQQW8LejS3VUBGD/W97dCGgAh4
-        e8Brs4tA1h7m+/vBvQQi2P3Bbs3wD5CtB/ndMRAfgAj1mFD35MiQsj9aMKQNyB69/Pb4ivO/KIYc
-        /1T9J1MZwhCGJKMZwhCGMKTMAkAAUUvJgjSz1MvsAQQQdaayyiwABBC1lCxIM0u9zB5AAFFnKqvM
-        AkAAUUvJgjSz1MvsAQQQdaayyiwABBC1lCxIM0u9zB5AAFFnKqvMAkAAUUvJgjSz1MvsAQQQdaay
-        yiwABBC1lCxIM0u9zB5AAFFnKqvMAkAAUUvJgjSz1MvsAQQQdaayyiwABBC1lCxIM0u9zB5AAFFn
-        KqvMAkAAUUvJgjSz1MvsAQQQdaayyiwABBC1lCxIM0u9zB5AAFFnKqvMAkAAUUvJgjSz1MvsAQQQ
-        daayyiwABBC1lCxIsx89MvB3ik0ncgAAAABJRU5ErkJggg==
-    headers:
-      cache-control:
-      - max-age=0, no-cache, no-store
-      connection:
-      - keep-alive
-      content-disposition:
-      - inline; filename=DF4_8_MRoad2017Lden-PL_a_Mroad_Lden.png
-      content-length:
-      - '547'
-      content-type:
-      - image/png
-      date:
-      - Sat, 10 Oct 2026 15:35:30 GMT
-      expires:
-      - Sat, 10 Oct 2026 15:35:30 GMT
-      pragma:
-      - no-cache
-      set-cookie:
-      - cookiesession1=678A3E220E08816DAD039738D1BDF886;Expires=Sun, 10 Oct 2027 15:35:30
-        GMT;Path=/;HttpOnly
-      x-frame-options:
-      - SAMEORIGIN
     status:
       code: 200
       message: OK
@@ -2156,7 +2046,7 @@ interactions:
       content-type:
       - text/xml
       date:
-      - Sat, 10 Oct 2026 15:35:28 GMT
+      - Sat, 10 Oct 2026 22:36:31 GMT
       keep-alive:
       - timeout=60, max=500
       server:
@@ -2186,130 +2076,90 @@ interactions:
       user-agent:
       - geomcp/0.1 (+https://github.com/; geodata MCP server)
     method: GET
-    uri: https://wody.isok.gov.pl/gpservices/KZGW/MZP20_Glebokosc_SredniePrawdopodPowodzi/MapServer/WMSServer?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C23%2C24%2C25&STYLES=&CRS=CRS%3A84&BBOX=16.947854964054827%2C51.140505658741056%2C16.96214503594517%2C51.14949433778592&WIDTH=200&HEIGHT=199&FORMAT=image%2Fpng32&TRANSPARENT=TRUE
+    uri: https://wody.isok.gov.pl/gpservices/KZGW/MZP20_Glebokosc_SredniePrawdopodPowodzi/MapServer/WMSServer?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=1%2C2%2C16%2C17&STYLES=&CRS=CRS%3A84&BBOX=16.947854964054827%2C51.140505658741056%2C16.96214503594517%2C51.14949433778592&WIDTH=200&HEIGHT=199&FORMAT=image%2Fpng32&TRANSPARENT=TRUE
   response:
     body:
       string: !!binary |
-        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
-        YII=
+        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
+        AAAAAElFTkSuQmCC
     headers:
       access-control-allow-origin:
       - '*'
       connection:
       - Keep-Alive
       content-length:
-      - '6158'
+      - '3888'
       content-type:
       - image/png
       date:
-      - Sat, 10 Oct 2026 15:35:33 GMT
+      - Sat, 10 Oct 2026 22:36:34 GMT
       keep-alive:
       - timeout=60, max=500
       server:
@@ -2320,6 +2170,140 @@ interactions:
       - chunked
       x-xss-protection:
       - '"1; mode=block"'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=DF4_8_AggRoad2017Lden%3APL_a_AggRoad2017_Lden_polygon&SRS=EPSG%3A4326&BBOX=16.947854964054827%2C51.140505658741056%2C16.96214503594517%2C51.14949433778592&WIDTH=100&HEIGHT=99&FORMAT=image%2Fpng&TRANSPARENT=TRUE&FORMAT_OPTIONS=antialias%3Anone&SLD_BODY=%3CStyledLayerDescriptor+version%3D%221.0.0%22+xmlns%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%22+xmlns%3Aogc%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%3E%3CNamedLayer%3E%3CName%3EDF4_8_AggRoad2017Lden%3APL_a_AggRoad2017_Lden_polygon%3C%2FName%3E%3CUserStyle%3E%3CFeatureTypeStyle%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E40%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23280000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E45%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%232d0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E50%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23320000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E55%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23370000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E60%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%233c0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E65%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23410000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E70%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23460000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E75%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%234b0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E80%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23500000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E85%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23550000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E90%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%235a0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E95%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%235f0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3C%2FFeatureTypeStyle%3E%3C%2FUserStyle%3E%3C%2FNamedLayer%3E%3C%2FStyledLayerDescriptor%3E
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '5006'
+      content-type:
+      - application/x-www-form-urlencoded
+      host:
+      - iip.ekoportal.gov.pl
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: POST
+    uri: https://iip.ekoportal.gov.pl/geoserver/wms
+  response:
+    body:
+      string: !!binary |
+        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
+    headers:
+      cache-control:
+      - max-age=0, no-cache, no-store
+      connection:
+      - keep-alive
+      content-disposition:
+      - inline; filename=DF4_8_AggRoad2017Lden-PL_a_AggRoad2017_Lden_polygon.png
+      content-length:
+      - '1693'
+      content-type:
+      - image/png
+      date:
+      - Sat, 10 Oct 2026 22:36:36 GMT
+      expires:
+      - Sat, 10 Oct 2026 22:36:36 GMT
+      pragma:
+      - no-cache
+      set-cookie:
+      - cookiesession1=678A3E225176DB32A47A54CB51D5D9CA;Expires=Sun, 10 Oct 2027 22:36:36
+        GMT;Path=/;HttpOnly
+      x-frame-options:
+      - SAMEORIGIN
+    status:
+      code: 200
+      message: OK
+- request:
+    body: SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=DF4_8_MRoad2017Lden%3APL_a_Mroad_Lden&SRS=EPSG%3A4326&BBOX=16.947854964054827%2C51.140505658741056%2C16.96214503594517%2C51.14949433778592&WIDTH=100&HEIGHT=99&FORMAT=image%2Fpng&TRANSPARENT=TRUE&FORMAT_OPTIONS=antialias%3Anone&SLD_BODY=%3CStyledLayerDescriptor+version%3D%221.0.0%22+xmlns%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%22+xmlns%3Aogc%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%3E%3CNamedLayer%3E%3CName%3EDF4_8_MRoad2017Lden%3APL_a_Mroad_Lden%3C%2FName%3E%3CUserStyle%3E%3CFeatureTypeStyle%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E40%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23280000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E45%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%232d0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E50%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23320000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E55%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23370000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E60%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%233c0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E65%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23410000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E70%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23460000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E75%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%234b0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E80%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23500000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E85%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%23550000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E90%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%235a0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3CRule%3E%3Cogc%3AFilter%3E%3Cogc%3APropertyIsEqualTo%3E%3Cogc%3APropertyName%3Edb_low%3C%2Fogc%3APropertyName%3E%3Cogc%3ALiteral%3E95%3C%2Fogc%3ALiteral%3E%3C%2Fogc%3APropertyIsEqualTo%3E%3C%2Fogc%3AFilter%3E%3CPolygonSymbolizer%3E%3CFill%3E%3CCssParameter+name%3D%22fill%22%3E%235f0000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FPolygonSymbolizer%3E%3C%2FRule%3E%3C%2FFeatureTypeStyle%3E%3C%2FUserStyle%3E%3C%2FNamedLayer%3E%3C%2FStyledLayerDescriptor%3E
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '4974'
+      content-type:
+      - application/x-www-form-urlencoded
+      host:
+      - iip.ekoportal.gov.pl
+      user-agent:
+      - geomcp/0.1 (+https://github.com/; geodata MCP server)
+    method: POST
+    uri: https://iip.ekoportal.gov.pl/geoserver/wms
+  response:
+    body:
+      string: !!binary |
+        iVBORw0KGgoAAAANSUhEUgAAAGQAAABjCAYAAABt56XsAAAB6klEQVR4Xu3aTYrCUBRE4eyqJ70D
+        97+etApp0Nby5Q+K5hsE1KsvUCen7sTpMk3zcn1fXy/X1/X12dc8z5PrMYMJjK6H4g6EGT1QJjB6
+        YNzq+xfI2ftiOd/OyA/A6UAWADcgYGQYpxsCwGcAzxndDTmjrp5v5P0YnFOACH8s/Fc5TUfb8eom
+        PhsHdCgQwY8H/y6rw4C8u4HP10HaDUTg6wL/lNdmIJ8ONt8GajUQQW8LejS3VUBGD/W97dCGgAh4
+        e8Brs4tA1h7m+/vBvQQi2P3Bbs3wD5CtB/ndMRAfgAj1mFD35MiQsj9aMKQNyB69/Pb4ivO/KIYc
+        /1T9J1MZwhCGJKMZwhCGMKTMAkAAUUvJgjSz1MvsAQQQdaayyiwABBC1lCxIM0u9zB5AAFFnKqvM
+        AkAAUUvJgjSz1MvsAQQQdaayyiwABBC1lCxIM0u9zB5AAFFnKqvMAkAAUUvJgjSz1MvsAQQQdaay
+        yiwABBC1lCxIM0u9zB5AAFFnKqvMAkAAUUvJgjSz1MvsAQQQdaayyiwABBC1lCxIM0u9zB5AAFFn
+        KqvMAkAAUUvJgjSz1MvsAQQQdaayyiwABBC1lCxIM0u9zB5AAFFnKqvMAkAAUUvJgjSz1MvsAQQQ
+        daayyiwABBC1lCxIsx89MvB3ik0ncgAAAABJRU5ErkJggg==
+    headers:
+      cache-control:
+      - max-age=0, no-cache, no-store
+      connection:
+      - keep-alive
+      content-disposition:
+      - inline; filename=DF4_8_MRoad2017Lden-PL_a_Mroad_Lden.png
+      content-length:
+      - '547'
+      content-type:
+      - image/png
+      date:
+      - Sat, 10 Oct 2026 22:36:47 GMT
+      expires:
+      - Sat, 10 Oct 2026 22:36:47 GMT
+      pragma:
+      - no-cache
+      set-cookie:
+      - cookiesession1=678A3E2220E32EA93AE46BC7A5E56318;Expires=Sun, 10 Oct 2027 22:36:47
+        GMT;Path=/;HttpOnly
+      x-frame-options:
+      - SAMEORIGIN
     status:
       code: 200
       message: OK
@@ -2949,7 +2933,7 @@ interactions:
       content-type:
       - text/xml
       date:
-      - Sat, 10 Oct 2026 15:35:33 GMT
+      - Sat, 10 Oct 2026 22:36:47 GMT
       keep-alive:
       - timeout=60, max=500
       server:
@@ -2979,109 +2963,87 @@ interactions:
       user-agent:
       - geomcp/0.1 (+https://github.com/; geodata MCP server)
     method: GET
-    uri: https://wody.isok.gov.pl/gpservices/KZGW/MZP20_Glebokosc_NiskiePrawdopodPowodzi/MapServer/WMSServer?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C23%2C24%2C25&STYLES=&CRS=CRS%3A84&BBOX=16.947854964054827%2C51.140505658741056%2C16.96214503594517%2C51.14949433778592&WIDTH=200&HEIGHT=199&FORMAT=image%2Fpng32&TRANSPARENT=TRUE
+    uri: https://wody.isok.gov.pl/gpservices/KZGW/MZP20_Glebokosc_NiskiePrawdopodPowodzi/MapServer/WMSServer?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=1%2C2%2C16%2C17&STYLES=&CRS=CRS%3A84&BBOX=16.947854964054827%2C51.140505658741056%2C16.96214503594517%2C51.14949433778592&WIDTH=200&HEIGHT=199&FORMAT=image%2Fpng32&TRANSPARENT=TRUE
   response:
     body:
       string: !!binary |
-        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
-        AElFTkSuQmCC
+        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
     headers:
       access-control-allow-origin:
       - '*'
       connection:
       - Keep-Alive
       content-length:
-      - '4968'
+      - '3743'
       content-type:
       - image/png
       date:
-      - Sat, 10 Oct 2026 15:35:37 GMT
+      - Sat, 10 Oct 2026 22:36:49 GMT
       keep-alive:
       - timeout=60, max=500
       server:
@@ -3350,13 +3312,15 @@ interactions:
       content-type:
       - text/xml
       date:
-      - Sat, 10 Oct 2026 15:35:36 GMT
+      - Sat, 10 Oct 2026 22:36:49 GMT
       keep-alive:
       - timeout=60, max=500
       server:
       - ''
       strict-transport-security:
       - max-age=15552000; includeSubDomains; preload
+      transfer-encoding:
+      - chunked
       vary:
       - Accept-Encoding
       x-xss-protection:
@@ -3378,144 +3342,76 @@ interactions:
       user-agent:
       - geomcp/0.1 (+https://github.com/; geodata MCP server)
     method: GET
-    uri: https://wody.isok.gov.pl/gpservices/KZGW/MZP20_Glebokosc_ZniszczenieWaluPowodziowego/MapServer/WMSServer?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=0%2C1%2C2%2C3%2C4%2C5%2C6%2C7&STYLES=&CRS=CRS%3A84&BBOX=16.947854964054827%2C51.140505658741056%2C16.96214503594517%2C51.14949433778592&WIDTH=200&HEIGHT=199&FORMAT=image%2Fpng32&TRANSPARENT=TRUE
+    uri: https://wody.isok.gov.pl/gpservices/KZGW/MZP20_Glebokosc_ZniszczenieWaluPowodziowego/MapServer/WMSServer?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=0%2C1&STYLES=&CRS=CRS%3A84&BBOX=16.947854964054827%2C51.140505658741056%2C16.96214503594517%2C51.14949433778592&WIDTH=200&HEIGHT=199&FORMAT=image%2Fpng32&TRANSPARENT=TRUE
   response:
     body:
       string: !!binary |
-        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
+        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
+        QFf+D0aJRziBwHCKAAAAAElFTkSuQmCC
     headers:
       access-control-allow-origin:
       - '*'
       connection:
       - Keep-Alive
       content-length:
-      - '7003'
+      - '3102'
       content-type:
       - image/png
       date:
-      - Sat, 10 Oct 2026 15:35:39 GMT
+      - Sat, 10 Oct 2026 22:36:52 GMT
       keep-alive:
       - timeout=60, max=500
       server:
@@ -3526,63 +3422,6 @@ interactions:
       - chunked
       x-xss-protection:
       - '"1; mode=block"'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: geometry=%7B%22rings%22%3A+%5B%5B%5B16.955%2C+51.140505658741056%5D%2C+%5B16.954299731682376%2C+51.140527298134614%5D%2C+%5B16.953606205382826%2C+51.14059200797603%5D%2C+%5B16.952926098264975%2C+51.14069916525147%5D%2C+%5B16.9522659584052%2C+51.14084773826575%5D%2C+%5B16.951632141797496%2C+51.141036296567115%5D%2C+%5B16.95103075119986%2C+51.14126302470828%5D%2C+%5B16.950467577409167%2C+51.14152573971211%5D%2C+%5B16.949948043528146%2C+51.141821912074164%5D%2C+%5B16.949477152759727%2C+51.142148690100726%5D%2C+%5B16.949059440230936%2C+51.14250292734885%5D%2C+%5B16.948698929309792%2C+51.14288121290494%5D%2C+%5B16.948399092836258%2C+51.143279904211234%5D%2C+%5B16.948162819641436%2C+51.143695162124914%5D%2C+%5B16.947992386678912%2C+51.14412298787305%5D%2C+%5B16.947889437038253%2C+51.144559261547975%5D%2C+%5B16.947854964054827%2C+51.14499978177325%5D%2C+%5B16.94788930167143%2C+51.14544030615833%5D%2C+%5B16.947992121147333%2C+51.145876592152796%5D%2C+%5B16.94816243414934%2C+51.146304437906764%5D%2C+%5B16.948398602197873%2C+51.14671972274378%5D%2C+%5B16.948698352380095%2C+51.14711844685626%5D%2C+%5B16.949058799181003%2C+51.14749676984065%5D%2C+%5B16.949476472224738%2C+51.147851047700854%5D%2C+%5B16.949947349660683%2C+51.14817786796257%5D%2C+%5B16.95046689687418%2C+51.148474082559765%5D%2C+%5B16.95103011014991%2C+51.14873683817567%5D%2C+%5B16.95163156486778%2C+51.14896360374516%5D%2C+%5B16.95226546776681%2C+51.1491521948527%5D%2C+%5B16.95292571277286%2C+51.14930079479032%5D%2C+%5B16.953605939851244%2C+51.14940797207159%5D%2C+%5B16.954299596315547%2C+51.14947269423255%5D%2C+%5B16.955%2C+51.14949433778592%5D%2C+%5B16.95570040368445%2C+51.14947269423255%5D%2C+%5B16.956394060148753%2C+51.1494079720716%5D%2C+%5B16.957074287227133%2C+51.14930079479032%5D%2C+%5B16.957734532233182%2C+51.14915219485269%5D%2C+%5B16.95836843513221%2C+51.14896360374516%5D%2C+%5B16.958969889850085%2C+51.14873683817567%5D%2C+%5B16.959533103125814%2C+51.148474082559765%5D%2C+%5B16.96005265033931%2C+51.14817786796257%5D%2C+%5B16.96052352777526%2C+51.147851047700854%5D%2C+%5B16.960941200818997%2C+51.14749676984066%5D%2C+%5B16.961301647619898%2C+51.14711844685626%5D%2C+%5B16.961601397802124%2C+51.14671972274379%5D%2C+%5B16.96183756585066%2C+51.14630443790677%5D%2C+%5B16.96200787885266%2C+51.14587659215279%5D%2C+%5B16.962110698328566%2C+51.14544030615833%5D%2C+%5B16.96214503594517%2C+51.14499978177325%5D%2C+%5B16.962110562961744%2C+51.14455926154798%5D%2C+%5B16.962007613321084%2C+51.14412298787305%5D%2C+%5B16.96183718035856%2C+51.143695162124914%5D%2C+%5B16.96160090716374%2C+51.143279904211234%5D%2C+%5B16.9613010706902%2C+51.14288121290494%5D%2C+%5B16.960940559769057%2C+51.14250292734885%5D%2C+%5B16.96052284724027%2C+51.142148690100726%5D%2C+%5B16.96005195647185%2C+51.141821912074164%5D%2C+%5B16.95953242259083%2C+51.14152573971211%5D%2C+%5B16.958969248800138%2C+51.14126302470828%5D%2C+%5B16.9583678582025%2C+51.141036296567115%5D%2C+%5B16.957734041594797%2C+51.14084773826575%5D%2C+%5B16.957073901735022%2C+51.14069916525147%5D%2C+%5B16.95639379461717%2C+51.14059200797603%5D%2C+%5B16.95570026831762%2C+51.140527298134614%5D%2C+%5B16.955%2C+51.140505658741056%5D%5D%5D%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryPolygon&f=json
-    headers:
-      accept:
-      - '*/*'
-      accept-encoding:
-      - gzip, deflate
-      connection:
-      - keep-alive
-      content-length:
-      - '3272'
-      content-type:
-      - application/x-www-form-urlencoded
-      host:
-      - cbdgmapa.pgi.gov.pl
-      user-agent:
-      - geomcp/0.1 (+https://github.com/; geodata MCP server)
-    method: POST
-    uri: https://cbdgmapa.pgi.gov.pl/arcgis/rest/services/geozagrozenia/egms_2016_2020_pion_interpol/ImageServer/computeStatisticsHistograms
-  response:
-    body:
-      string: '{"statistics":[{"min":-1,"max":0,"mean":-0.05405405405405405,"standardDeviation":0.22924343513512566,"median":0,"mode":0,"skipX":1,"skipY":1,"count":37,"covariances":"0,000000","sum":-1.9999999999999998}],"histograms":[{"size":256,"min":-128.5,"max":127.5,"counts":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,35,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}]}'
-    headers:
-      cache-control:
-      - max-age=00:00:00
-      content-length:
-      - '782'
-      content-type:
-      - application/json; charset=UTF-8
-      date:
-      - Sat, 10 Oct 2026 15:35:48 GMT
-      etag:
-      - '"1651c823"'
-      server:
-      - Apache Viper 69
-      set-cookie:
-      - AGS_ROLES="419jqfa+uOZgYod4xPOQ8Q=="; Version=1; Max-Age=60; Expires=Sat,
-        10 Oct 2026 15:36:27 GMT; Path=/arcgis/rest; HttpOnly
-      - visid_incap_3291022=Ojd9MgW9Tquw91Z86cPHTVRbymoAAAAAQUIPAAAAAAA/jyk1B8IltSRowI8nFT2C;
-        expires=Sat, 09 Oct 2027 22:24:39 GMT; HttpOnly; path=/; Domain=.pgi.gov.pl
-      - incap_ses_689_3291022=d9d6P2Py8VTcRXttkdKPCVRbymoAAAAAqmSBMH8KBJNzcRcpmdo73A==;
-        path=/; Domain=.pgi.gov.pl
-      vary:
-      - Origin
-      x-cdn:
-      - Imperva
-      x-content-type-options:
-      - nosniff
-      x-iinfo:
-      - 5-17305422-17305400 PNNy RT(1791646527694 22) q(0 0 0 -1) r(209 209) U6
-      x-powered-by:
-      - ASP.NET
-      x-xss-protection:
-      - 1; mode=block
     status:
       code: 200
       message: OK
@@ -3618,7 +3457,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Sat, 10 Oct 2026 15:35:48 GMT
+      - Sat, 10 Oct 2026 22:36:53 GMT
       expires:
       - Thu, 19 Nov 1981 08:52:00 GMT
       pragma:
@@ -3627,7 +3466,7 @@ interactions:
       - Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips mod_fcgid/2.3.9 PHP/7.0.33 mod_perl/2.0.10
         Perl/v5.16.3
       set-cookie:
-      - ci_session=0lus9nsm9q1ma5a72b3596khcu61aprg; expires=Sat, 10-Oct-2026 17:35:48
+      - ci_session=ea2gu1g6t9661i92rpgh95stsdlu5525; expires=Sun, 11-Oct-2026 00:36:53
         GMT; Max-Age=7200; path=/; HttpOnly
       x-powered-by:
       - PHP/7.0.33
@@ -4965,7 +4804,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Sat, 10 Oct 2026 15:35:48 GMT
+      - Sat, 10 Oct 2026 22:36:53 GMT
       expires:
       - Thu, 19 Nov 1981 08:52:00 GMT
       pragma:
@@ -5487,14 +5326,14 @@ interactions:
       content-type:
       - text/html; charset=utf-8
       date:
-      - Sat, 10 Oct 2026 15:35:00 GMT
+      - Sat, 10 Oct 2026 22:36:05 GMT
       keep-alive:
       - timeout=5, max=100
       server:
       - Apache/2.4.67 (Debian)
       set-cookie:
-      - session=fJBMfQ1AEab8NNyvRU_sLoLu8xr07GyNpb3cOcDJer0; Expires=Sat, 10 Oct 2026
-        16:35:00 GMT; HttpOnly; Path=/
+      - session=xSWUj-ULjlZe-YmOVhJx4M7fUeIx5pN7l42CD82KLQQ; Expires=Sat, 10 Oct 2026
+        23:36:05 GMT; HttpOnly; Path=/
       transfer-encoding:
       - chunked
       vary:
@@ -5519,7 +5358,7 @@ interactions:
     uri: https://sgeo.iung.pl/geoserver/Susza/wms?service=WMS&version=1.3.0&request=GetFeatureInfo&layers=Susza%3Akatgl_landuse2024&query_layers=Susza%3Akatgl_landuse2024&crs=EPSG%3A4326&bbox=51.14400005273027%2C16.954%2C51.146000052730265%2C16.956000000000003&width=101&height=101&i=50&j=50&info_format=application%2Fjson
   response:
     body:
-      string: '{"type":"FeatureCollection","features":[{"type":"Feature","id":"","geometry":null,"properties":{"GRAY_INDEX":13}}],"totalFeatures":"unknown","numberReturned":1,"timeStamp":"2026-10-10T17:47:27.599Z","crs":null}'
+      string: '{"type":"FeatureCollection","features":[{"type":"Feature","id":"","geometry":null,"properties":{"GRAY_INDEX":13}}],"totalFeatures":"unknown","numberReturned":1,"timeStamp":"2026-10-11T00:48:32.707Z","crs":null}'
     headers:
       access-control-allow-origin:
       - '*'
@@ -5536,7 +5375,7 @@ interactions:
       content-type:
       - application/json;charset=utf-8
       date:
-      - Sat, 10 Oct 2026 15:35:49 GMT
+      - Sat, 10 Oct 2026 22:36:54 GMT
       server:
       - nginx/1.22.1
       transfer-encoding:
