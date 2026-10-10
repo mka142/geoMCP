@@ -403,9 +403,9 @@ Structured content:
   ],
   "sentinel_hub_quota": {
     "month": "2026-10",
-    "units_used": 1325.9,
+    "units_used": 1336.8,
     "units_limit": 10000.0,
-    "requests_used": 228,
+    "requests_used": 239,
     "requests_limit": 10000
   }
 }
@@ -416,7 +416,7 @@ Text:
 ```
 1 source(s), 14 variable(s) for topic 'weather'.
 - ERA5-Land hourly time series: t2m [degC], t2m_max [degC], t2m_min [degC], precipitation [mm], wind_speed [m s-1], solar_radiation [MJ m-2], soil_moisture [m3 m-3], vpd [kPa], hot_days [days], summer_days [days], tropical_nights [days], frost_days [days], heavy_rain_days [days], dry_days [days]
-Sentinel Hub this month: 1,326 of 10,000 processing units.
+Sentinel Hub this month: 1,337 of 10,000 processing units.
 ```
 
 ## get_timeseries
@@ -458,19 +458,19 @@ Structured content:
       "variable": "ndvi",
       "units": "1",
       "summary": {
-        "trend_per_year": 0.000624,
+        "trend_per_year": 0.000551,
         "trend_method": "Theil-Sen",
-        "trend_p_value": 0.7205,
+        "trend_p_value": 0.5915,
         "min": {
-          "value": 0.489083,
+          "value": 0.487765,
           "period": "2018-01-01"
         },
         "max": {
-          "value": 0.558023,
-          "period": "2017-01-01"
+          "value": 0.549232,
+          "period": "2023-01-01"
         },
         "latest": {
-          "value": 0.516424,
+          "value": 0.517742,
           "period": "2025-01-01"
         },
         "gaps": 0
@@ -483,7 +483,7 @@ Structured content:
         "licence": "Copernicus open data (CC-BY-4.0)",
         "attribution": "Contains modified Copernicus Sentinel data",
         "commercial_safe": true,
-        "retrieved_at": "2026-10-10T21:57:54.818345Z"
+        "retrieved_at": "2026-10-10T22:53:22.203755Z"
       }
     },
     {
@@ -515,7 +515,7 @@ Structured content:
         "licence": "CC-BY-4.0",
         "attribution": "Muñoz Sabater, J. (2019): ERA5-Land hourly data from 1950 to present. Copernicus Climate Change Service (C3S) Climate Data Store (CDS)",
         "commercial_safe": true,
-        "retrieved_at": "2026-10-10T21:57:54.820347Z"
+        "retrieved_at": "2026-10-10T22:53:22.182665Z"
       }
     },
     {
@@ -547,7 +547,7 @@ Structured content:
         "licence": "CC-BY-4.0",
         "attribution": "Muñoz Sabater, J. (2019): ERA5-Land hourly data from 1950 to present. Copernicus Climate Change Service (C3S) Climate Data Store (CDS)",
         "commercial_safe": true,
-        "retrieved_at": "2026-10-10T21:57:54.825889Z"
+        "retrieved_at": "2026-10-10T22:53:22.199482Z"
       }
     }
   ],
@@ -562,8 +562,8 @@ Structured content:
     [
       "2016-01-01",
       "ndvi",
-      0.513886,
-      0.255162,
+      0.512778,
+      0.25573,
       "... 4 more"
     ],
     [
@@ -583,8 +583,8 @@ Structured content:
     [
       "2017-01-01",
       "ndvi",
-      0.558023,
-      0.260707,
+      0.547775,
+      0.258668,
       "... 4 more"
     ],
     "... 26 more"
@@ -593,14 +593,14 @@ Structured content:
   "gaps": [],
   "notices": [],
   "cost": {
-    "duration_s": 0.04,
+    "duration_s": 0.05,
     "sentinel_hub_units": 0.0,
     "cache_hits": 30,
     "cache_misses": 0
   },
   "downloads": {
-    "csv": "~/.geomcp/files/timeseries-a_osm_r3048177-b3b853eda0b222fdf1660d3c062e0010.csv",
-    "parquet": "~/.geomcp/files/timeseries-a_osm_r3048177-b3b853eda0b222fdf1660d3c062e0010.parquet"
+    "csv": "~/.geomcp/files/timeseries-a_osm_r3048177-4d3ab0d8e049cbb9e6a31d9d07decb99.csv",
+    "parquet": "~/.geomcp/files/timeseries-a_osm_r3048177-4d3ab0d8e049cbb9e6a31d9d07decb99.parquet"
   }
 }
 ```
@@ -609,10 +609,10 @@ Text:
 
 ```
 10 periods (P1Y) from 2016-01-01 to 2026-01-01.
-ndvi: seasonal trend +0.000624/yr (p=0.72); latest 0.516 (2025); 0 gap(s); source Sentinel-2 L2A. Method: per acquisition: mean over cloud-free pixels (SCL classes 4-6) at 150 m (bilinear); acquisitions with under 20% cloud-free area dropped; period value = mean of acquisition means.
+ndvi: seasonal trend +0.000551/yr (p=0.59); latest 0.518 (2025); 0 gap(s); source Sentinel-2 L2A. Method: per acquisition: mean over cloud-free pixels (SCL classes 4-6) at 150 m (bilinear); acquisitions with under 20% cloud-free area dropped; period value = mean of acquisition means.
 t2m: seasonal trend +0.101 degC/yr (p=0.59); latest 10.2 degC (2025); 0 gap(s); source ERA5-Land hourly time series. Method: grid cell 51.0N 16.8E nearest to the area centroid; hourly values reduced to daily, then mean of daily values per period; the area is larger than one grid cell, so this is the cell at its centroid.
 precipitation: seasonal trend +3.64 mm/yr (p=0.72); latest 673 mm (2025); 0 gap(s); source ERA5-Land hourly time series. Method: grid cell 51.0N 16.8E nearest to the area centroid; hourly values reduced to daily, then sum of daily totals per period; the area is larger than one grid cell, so this is the cell at its centroid.
-Full table: ~/.geomcp/files/timeseries-a_osm_r3048177-b3b853eda0b222fdf1660d3c062e0010.csv
+Full table: ~/.geomcp/files/timeseries-a_osm_r3048177-4d3ab0d8e049cbb9e6a31d9d07decb99.csv
 ```
 
 ## get_summary
@@ -684,7 +684,7 @@ Structured content:
         "licence": "GUGiK open data (free for any use)",
         "attribution": "Główny Urząd Geodezji i Kartografii (GUGiK), NMT",
         "commercial_safe": true,
-        "retrieved_at": "2026-10-10T21:57:55.195714Z"
+        "retrieved_at": "2026-10-10T22:53:22.583094Z"
       }
     },
     {
@@ -705,7 +705,7 @@ Structured content:
         "licence": "GUGiK open data (free for any use)",
         "attribution": "Główny Urząd Geodezji i Kartografii (GUGiK), NMT",
         "commercial_safe": true,
-        "retrieved_at": "2026-10-10T21:57:55.195714Z"
+        "retrieved_at": "2026-10-10T22:53:22.583094Z"
       }
     },
     {
@@ -730,7 +730,7 @@ Structured content:
         "licence": "CC-BY-4.0",
         "attribution": "© ESA WorldCover project 2021 / Contains modified Copernicus Sentinel data (2021) processed by ESA WorldCover consortium",
         "commercial_safe": true,
-        "retrieved_at": "2026-10-10T21:57:55.217315Z"
+        "retrieved_at": "2026-10-10T22:53:22.432148Z"
       }
     },
     {
@@ -747,7 +747,7 @@ Structured content:
         "licence": "ODbL-1.0",
         "attribution": "© OpenStreetMap contributors",
         "commercial_safe": true,
-        "retrieved_at": "2026-10-10T21:57:55.217425Z"
+        "retrieved_at": "2026-10-10T22:53:22.432351Z"
       }
     },
     "... 9 more"
@@ -755,7 +755,7 @@ Structured content:
   "gaps": [],
   "notices": [],
   "cost": {
-    "duration_s": 0.4,
+    "duration_s": 0.17,
     "sentinel_hub_units": 0.0,
     "cache_hits": 12,
     "cache_misses": 0
@@ -775,11 +775,11 @@ road_length as of 2026-10-09: 566 km (final; OpenStreetMap (Overpass API)).
 schools as of 2026-10-09: 21 (final; OpenStreetMap (Overpass API)).
 population over 2020/2025: latest 31,145, 2020 28,554 persons (final; GUS Local Data Bank (BDL)).
 budget_income_per_capita over 2020/2025: latest 11,128, 2020 6,880 PLN (final; GUS Local Data Bank (BDL)).
-pm10_station over 2026-10-09T21:00Z/2026-10-10T20:00Z: last 24h mean 9.4, latest hour 12.6, hours 24 ug m-3 (preliminary; GIOŚ air-quality monitoring stations).
-ndvi over 2026-08-11/2026-10-10: mean 0.49, p10 0.202, p90 0.784 (final; Sentinel-2 L2A).
+pm10_station over 2026-10-09T22:00Z/2026-10-10T21:00Z: last 24h mean 9.7, latest hour 14.4, hours 24 ug m-3 (preliminary; GIOŚ air-quality monitoring stations).
+ndvi over 2026-08-11/2026-10-10: mean 0.493, p10 0.205, p90 0.783 (final; Sentinel-2 L2A).
 t2m over 2026-09-03/2026-10-03: mean 15.8, p10 12.6, p90 18.8 degC (preliminary; ERA5-Land hourly time series).
 precipitation over 2026-09-03/2026-10-03: total 48.7 mm (preliminary; ERA5-Land hourly time series).
-no2_column over 2026-08-11/2026-10-10: mean 38.6, p10 27.7, p90 49.3 umol m-2 (final; Sentinel-5P TROPOMI L2 (offline)).
+no2_column over 2026-08-11/2026-10-10: mean 39.9, p10 28, p90 50.9 umol m-2 (final; Sentinel-5P TROPOMI L2 (offline)).
 ```
 
 ### Population, buildings, land-cover history, solar, climate to 2050 and air history (Smolec)
@@ -845,7 +845,7 @@ Structured content:
         "licence": "CC-BY-4.0",
         "attribution": "European Commission, Joint Research Centre (JRC), GHS-POP R2023A",
         "commercial_safe": true,
-        "retrieved_at": "2026-10-10T21:57:55.474209Z"
+        "retrieved_at": "2026-10-10T22:53:22.621473Z"
       }
     },
     {
@@ -874,7 +874,7 @@ Structured content:
         "licence": "open data (PZGiK)",
         "attribution": "Główny Urząd Geodezji i Kartografii, BDOT10k",
         "commercial_safe": true,
-        "retrieved_at": "2026-10-10T21:57:55.474307Z"
+        "retrieved_at": "2026-10-10T22:53:22.621502Z"
       }
     },
     {
@@ -902,7 +902,7 @@ Structured content:
         "licence": "Copernicus Land Monitoring Service data policy (free, attribution)",
         "attribution": "© European Union, Copernicus Land Monitoring Service, European Environment Agency (EEA)",
         "commercial_safe": true,
-        "retrieved_at": "2026-10-10T21:57:55.475238Z"
+        "retrieved_at": "2026-10-10T22:53:22.625176Z"
       }
     },
     {
@@ -924,7 +924,7 @@ Structured content:
         "licence": "CC-BY-4.0",
         "attribution": "European Commission, Joint Research Centre, PVGIS",
         "commercial_safe": true,
-        "retrieved_at": "2026-10-10T21:57:55.476198Z"
+        "retrieved_at": "2026-10-10T22:53:22.625591Z"
       }
     },
     "... 2 more"
@@ -988,8 +988,8 @@ Structured content:
       "area_id": "a_osm_R3048177",
       "name": "gmina Kąty Wrocławskie",
       "area_km2": 176.717125,
-      "value": 0.604564,
-      "valid_fraction": 0.375,
+      "value": 0.588791,
+      "valid_fraction": 0.573,
       "status": "final"
     },
     {
@@ -997,8 +997,8 @@ Structured content:
       "area_id": "a_osm_R3049635",
       "name": "gmina Kobierzyce",
       "area_km2": 149.20352,
-      "value": 0.583591,
-      "valid_fraction": 0.398,
+      "value": 0.581791,
+      "valid_fraction": 0.678,
       "status": "final"
     }
   ],
@@ -1010,11 +1010,11 @@ Structured content:
     "licence": "Copernicus open data (CC-BY-4.0)",
     "attribution": "Contains modified Copernicus Sentinel data",
     "commercial_safe": true,
-    "retrieved_at": "2026-10-10T21:57:55.538107Z"
+    "retrieved_at": "2026-10-10T22:53:22.691027Z"
   },
   "notices": [],
   "cost": {
-    "duration_s": 0.04,
+    "duration_s": 0.01,
     "sentinel_hub_units": 0.0,
     "cache_hits": 2,
     "cache_misses": 0
@@ -1025,7 +1025,7 @@ Structured content:
 Text:
 
 ```
-ndvi, mean over the whole period, 2025-06-01 to 2025-09-01: gmina Kąty Wrocławskie 0.605 > gmina Kobierzyce 0.584.
+ndvi, mean over the whole period, 2025-06-01 to 2025-09-01: gmina Kąty Wrocławskie 0.589 > gmina Kobierzyce 0.582.
 ```
 
 ## get_snapshot
@@ -1076,7 +1076,7 @@ Structured content:
     "licence": "Copernicus open data (CC-BY-4.0)",
     "attribution": "Contains modified Copernicus Sentinel data",
     "commercial_safe": true,
-    "retrieved_at": "2026-10-10T21:57:56.937539Z"
+    "retrieved_at": "2026-10-10T22:53:23.885425Z"
   }
 }
 ```
@@ -1128,7 +1128,7 @@ Structured content:
     "licence": "open data (PZGiK, free of charge since 2020)",
     "attribution": "Główny Urząd Geodezji i Kartografii",
     "commercial_safe": true,
-    "retrieved_at": "2026-10-10T21:57:57.634261Z"
+    "retrieved_at": "2026-10-10T22:53:24.323995Z"
   }
 }
 ```
@@ -1511,7 +1511,7 @@ Structured content:
       "key": "flood_10pct",
       "category": "flood",
       "label": "Flood zone, 10% a year (once in 10 years)",
-      "share": 0.0834,
+      "share": 0.0424,
       "count": 0,
       "names": [],
       "value": {},
@@ -1522,7 +1522,7 @@ Structured content:
       "key": "flood_1pct",
       "category": "flood",
       "label": "Flood zone, 1% a year (once in 100 years)",
-      "share": 0.236,
+      "share": 0.1898,
       "count": 0,
       "names": [],
       "value": {},
@@ -1533,7 +1533,7 @@ Structured content:
       "key": "flood_02pct",
       "category": "flood",
       "label": "Flood zone, 0.2% a year (once in 500 years)",
-      "share": 0.4059,
+      "share": 0.3745,
       "count": 0,
       "names": [],
       "value": {},
@@ -1544,20 +1544,23 @@ Structured content:
       "key": "flood_embankment_failure",
       "category": "flood",
       "label": "Flood zone if a flood embankment fails",
-      "share": 0.2217,
+      "share": 0.1596,
       "count": 0,
       "names": [],
       "value": {},
       "source": "ISOK flood hazard maps (Wody Polskie)",
       "licence": "public data (Wody Polskie)"
     },
-    "... 21 more"
+    "... 19 more"
   ],
-  "gaps": [],
+  "gaps": [
+    "geology: Landslides (SOPO): cbdgmapa.pgi.gov.pl: Requested operation is not supported by this service.",
+    "geology: Areas threatened by mass movement (SOPO): cbdgmapa.pgi.gov.pl: Requested operation is not supported by this service."
+  ],
   "notices": [
     "Ground motion is interpolated between radar points (2016-2020); treat it as an indication."
   ],
-  "retrieved_at": "2026-10-10T21:58:00.339601Z"
+  "retrieved_at": "2026-10-10T22:53:24.918266Z"
 }
 ```
 
@@ -1565,16 +1568,18 @@ Text:
 
 ```
 Circle of radius 0.50 km around 51.1450, 16.9550 (78.4 ha):
-- Flood zone, 10% a year (once in 10 years): 8% of the area
-- Flood zone, 1% a year (once in 100 years): 24% of the area
-- Flood zone, 0.2% a year (once in 500 years): 41% of the area
-- Flood zone if a flood embankment fails: 22% of the area
+- Flood zone, 10% a year (once in 10 years): 4% of the area
+- Flood zone, 1% a year (once in 100 years): 19% of the area
+- Flood zone, 0.2% a year (once in 500 years): 37% of the area
+- Flood zone if a flood embankment fails: 16% of the area
 - Natura 2000 habitat site (SOO): 14% of the area; Las Pilczycki - PLH020069
 - Vertical ground motion 2016-2020 (EGMS, interpolated), mm/year; negative is subsidence: mean -0.1, median 0.0, min -1.0, max 0.0
 - Road noise, Lden 55 dB or more: 27% of the area (65 dB or more: 8%)
 - IMGW hydrological warnings in dolnośląskie (floods, drought): 13 active: dolnośląskie,  Odra od ujścia Widawy do Ścinawy, zlewnia Kaczawy, susza hydrologiczna (level -1); dolnośląskie, Czerna Wielka, susza hydrologiczna (level -1); dolnośląskie, Odra od Głogowa do ujścia Bobru, susza hydrologiczna (level -1); dolnośląskie, Odra skanalizowana (od Koźla do Malczyc), susza hydrologiczna (level -1); dolnośląskie, Odra środkowa poniżej Malczyc do ujścia Bobru, susza hydrologiczna (level -1); dolnośląskie, Zlewnia Bobru z Kwisą (od Zb. Pilchowice do ujścia,bez zlewni Czernej Wielkiej, susza hydrologiczna (level -1); dolnośląskie, Zlewnia Bystrzycy, susza hydrologiczna (level -1); dolnośląskie, Zlewnia Widawy, Stobrawy, Odra od ujścia Nysy Kłodzkiej do ujścia Widawy, susza hydrologiczna (level -1); dolnośląskie, Zlewnia Ślęzy i Oławy, susza hydrologiczna (level -1); dolnośląskie, rzeka Bystrzyca od Zb. Mietków do ujścia, susza hydrologiczna (level -1); dolnośląskie, zlewnia górnego Bobru i zlewnia Ostrożnicy w granicach RP, susza hydrologiczna (level -1); dolnośląskie, zlewnie Nysy Kłodzkiej powyżej Zbiornika Nysa i dopływów Łaby w granicach RP, susza hydrologiczna (level -1)
 - IUNG agricultural drought risk for the gmina in 2026 (crops and 10-day periods at risk): 18 active: soil category I: Zboża ozime (periods 02); soil category I: Zboża jare (periods 02); soil category I: Kukurydza na ziarno (periods 09, 10); soil category I: Kukurydza na kiszonkę (periods 09, 10); soil category I: Rzepak i rzepik (periods 06); soil category I: Ziemniak (periods 10); soil category I: Chmiel (periods 10); soil category I: Tytoń (periods 10); soil category I: Warzywa gruntowe (periods 10); soil category I: Krzewy owocowe (periods 02, 09, 10); soil category I: Truskawki (periods 02); soil category I: Rośliny strączkowe (periods 09, 10)
-None found: Natura 2000 bird site (OSO); National park; Landscape park; Nature reserve; Protected landscape area; Ecological use area (użytek ekologiczny); Nature and landscape complex; Landslides (SOPO); Areas threatened by mass movement (SOPO); Mining terrain (teren górniczy); Mining area (obszar górniczy); Documented mineral deposit (złoże); Rail noise, Lden 55 dB or more; Aircraft noise, Lden 55 dB or more; Industrial noise, Lden 55 dB or more; IMGW weather warnings for the powiat.
+None found: Natura 2000 bird site (OSO); National park; Landscape park; Nature reserve; Protected landscape area; Ecological use area (użytek ekologiczny); Nature and landscape complex; Mining terrain (teren górniczy); Mining area (obszar górniczy); Documented mineral deposit (złoże); Rail noise, Lden 55 dB or more; Aircraft noise, Lden 55 dB or more; Industrial noise, Lden 55 dB or more; IMGW weather warnings for the powiat.
+Gap: geology: Landslides (SOPO): cbdgmapa.pgi.gov.pl: Requested operation is not supported by this service.
+Gap: geology: Areas threatened by mass movement (SOPO): cbdgmapa.pgi.gov.pl: Requested operation is not supported by this service.
 Notice: Ground motion is interpolated between radar points (2016-2020); treat it as an indication.
 ```
 
@@ -1712,7 +1717,7 @@ Structured content:
   "notices": [
     "Designations are sampled at points; read the plan text (link) before any decision."
   ],
-  "retrieved_at": "2026-10-10T21:58:00.385871Z"
+  "retrieved_at": "2026-10-10T22:53:24.968284Z"
 }
 ```
 
@@ -1758,7 +1763,7 @@ Structured content:
     "Designations are sampled at points; read the plan text (link) before any decision.",
     "No plan found. Either no local plan covers this area, or the gmina does not publish its plans to the national integration (Wrocław, for example); check the gmina's own geoportal."
   ],
-  "retrieved_at": "2026-10-10T21:58:01.066121Z"
+  "retrieved_at": "2026-10-10T22:53:30.458336Z"
 }
 ```
 
@@ -1795,8 +1800,6 @@ Structured content:
   "survey": "GPR 2025",
   "roads_in_area": [
     "A4",
-    "346",
-    "347",
     "5"
   ],
   "segments": [
@@ -1850,14 +1853,14 @@ Structured content:
   ],
   "source": "GDDKiA Generalny Pomiar Ruchu 2025 and 2020/21 (dane.gov.pl); road refs © OpenStreetMap",
   "licence": "CC0 1.0 (GDDKiA); ODbL-1.0 (OSM)",
-  "retrieved_at": "2026-10-10T21:58:01.207650Z"
+  "retrieved_at": "2026-10-10T22:53:33.578829Z"
 }
 ```
 
 Text:
 
 ```
-Circle of radius 1.50 km around 51.0230, 16.7700: national roads A4, 346, 347, 5 (GPR 2025).
+Circle of radius 1.50 km around 51.0230, 16.7700: national roads A4, 5 (GPR 2025).
 - 5 W. KOSTOMŁOTY /A4/ - MIELĘCIN /DP3396D/: 16,365 vehicles/day, -6% since 2020/21, heavy 14% (measured 11.2 km away, Wichrów)
 - A4 W. KOSTOMŁOTY /DK5/ - W. KĄTY WR. /DW347/: 62,876 vehicles/day, +6% since 2020/21, heavy 24% (measured inside the area, Kąty Wr.)
 - A4 W. KĄTY WR. /DW347/ - W. PIETRZYKOWICE: 69,288 vehicles/day, +10% since 2020/21, heavy 22% (measured inside the area, Kąty Wr.)
@@ -2017,7 +2020,7 @@ Structured content:
     "A PKD code matches any activity a trader declared, not only the main one."
   ],
   "source": "CEIDG (Ministry of Development), via dane.biznes.gov.pl",
-  "retrieved_at": "2026-10-10T21:58:01.229170Z"
+  "retrieved_at": "2026-10-10T22:53:33.600585Z"
 }
 ```
 

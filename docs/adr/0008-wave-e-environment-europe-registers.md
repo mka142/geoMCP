@@ -8,7 +8,8 @@ Status: accepted, October 2026.
   The newer 2022 maps exist only in an API without a spatial filter (1.8 GB per voivodeship), so they are not used.
 - Agricultural drought comes from IUNG's per-gmina pages (`/wykazy/{year},{TERYT}/`), parsed from HTML, with the soil category under the area from IUNG's GeoServer to put the relevant table first.
 - Air-quality history uses the GIOŚ statistics service (verified annual means since 2000), per voivodeship, cached for 30 days; the API rate-limits hard.
-- Traffic moved to GPR 2025 (published 30 September 2026): each measured section has a measurement point, so per road crossing the area the sections measured inside it, or else the nearest within 15 km, are reported, with the 2020/21 count of the same section.
+- Traffic moved to GPR 2025 (published 30 September 2026): each measured section has a measurement point, so per road crossing the area the sections measured inside it, or else the nearest within 15 km, are reported, with the 2020/21 count of the comparable section.
+  Section numbers were reassigned between the surveys (a third of the shared numbers name another section), so the comparison follows the sections list's `Porównanie_z_2020` column and is empty where GDDKiA names no counterpart.
   Vehicle columns p1-p8 are ordered motorcycles, cars, minibuses, vans, trucks, trucks with trailers, buses, tractors, as the values show (minibuses are the new 2025 category).
   e-TOLL monthly totals (GUS TranStat) add a 12-month heavy-vehicle trend for tolled roads; they are whole-road totals, not local counts.
 - Europe-wide facts, all keyless: GHSL population (100 m, read by window from zipped tiles over HTTP), PVGIS solar potential, CORINE land cover 1990-2018 (vector query, geometry generalised to 25 m, clipped locally), and Open-Meteo climate projections.

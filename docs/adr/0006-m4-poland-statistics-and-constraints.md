@@ -10,9 +10,11 @@ Status: accepted (M4 waves A and B), October 2026.
 - Flood zones come from the ISOK WMS (Wody Polskie): the vector downloads are national shapefiles of about 330 MB each and the REST services need a login, while the WMS is open.
   The WMS layers draw only at 5 m per pixel or finer (measured: nothing at 10 m), so the area is rendered at 5 m in tiles of up to 1,500 pixels and coloured pixels inside the polygon are counted.
   The service paints an opaque white background even with `TRANSPARENT=TRUE`, so pixels are counted by colour, not alpha.
+  Only the water-depth and hazard-zone layers are drawn (October 2026 review): each service also publishes rivers, all surface waters, embankments, labels and a sheet index, and counting them made every lake a flood zone and added grid lines everywhere.
   Areas are capped at 250 km² (a 177 km² gmina takes about 60 s cold, 4 scenarios).
 - Nature protection comes from the GDOŚ GeoServer WFS (GeoJSON), geological hazards from PIG-PIB ArcGIS REST (GeoJSON), and vertical ground motion from the PIG-PIB copy of EGMS 2016-2020 through `computeStatisticsHistograms`, sent as POST because polygons exceed URL limits.
-- Constraint results are cached for 30 days; current IMGW warnings are never cached with them.
+  The SOPO landslide layers refuse the query operation (HTTP 200 with an error body, October 2026), so landslides are reported as a gap until another access path exists; a provider error or a truncated feature list is never read as "none here".
+- Constraint results are cached for 30 days, or for a day when a source group could not answer (the gaps are cached with them); current IMGW warnings are never cached with them.
 - Climate extremes (hot days, tropical nights, frost days, heavy-rain and dry days) are derived at read time from the cached ERA5-Land daily values, so they cost no extra downloads.
 
 ## Deferred, with reasons

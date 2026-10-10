@@ -13,6 +13,7 @@ Status: accepted (M1). Every number below was measured live in October 2026 over
 - Sentinel Hub downsamples with NEAREST by default, which biased 30 m NDVI by about -0.024 against 10 m in the live cross-check.
   We request BILINEAR down- and upsampling; Sentinel Hub then agrees with an independent Earth Search / odc-stac computation at 10 m within 0.000-0.005 on five clear dates.
 - Ten yearly chunks run in parallel (10 slots): 10 years of Sentinel-2 in about 20-40 s cold.
+- The Statistical API computes over the bounding-box grid and counts pixels outside the polygon as no-data, so the cloud-free share is divided by the polygon's fill of its box at read time (0.5 for gmina Kąty Wrocławskie); an answer with `status: PARTIAL` (days that timed out) is cached for hours, not forever.
 - Sentinel-5P is slow per day (about 22 s per month), so it is always fetched in parallel monthly chunks.
 - Copernicus DEM GLO-30 is forbidden for this account (403); the default `dem` collection is GLO-90, used through the Process API (the Statistical API returns no intervals for a timeless collection), with elevation and slope computed locally.
   GLO-90 is a surface model: buildings and canopy raise heights and steepen slopes, and results say so.
