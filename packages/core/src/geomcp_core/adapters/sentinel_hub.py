@@ -5,6 +5,7 @@ year, and aggregated locally, so any cadence reuses the same cached acquisitions
 """
 
 import io
+import logging
 import math
 import threading
 from collections import defaultdict
@@ -38,6 +39,7 @@ from geomcp_core.models import (
     VariableInfo,
 )
 
+log = logging.getLogger(__name__)
 TARGET_PIXELS = 15_000  # 10 km² -> 30 m at ~1/9 of the 10 m cost
 # Sentinel Hub downsamples with NEAREST by default, which biased 30 m NDVI by -0.024 against 10 m in the live
 # cross-check (one of nine pixels kept). BILINEAR brought it within 0.005 of the 10 m reference.
@@ -135,7 +137,8 @@ class _StatsAdapter:
 
     def _fetch(
         self, area: Area, res: int, chunk: tuple[date, date], today: date
-    ) -> tuple[dict[str, list[Observation]], float]:
+    ) -> tuple[dict[str, list[Observation]], float, bool]:
+        """Observations per variable, the units spent, and whether every day was computed (`status: OK`)."""
         geom, epsg = _utm(area)
         end = min(chunk[1], today + timedelta(days=1))
         body = {
@@ -151,8 +154,10 @@ class _StatsAdapter:
         }
         payload, units = cdse.statistics(body)
         out: dict[str, list[Observation]] = {v: [] for v in self.outputs}
+        complete = payload.get("status", "OK") == "OK"
         for interval in payload.get("data", []):
-            if "outputs" not in interval:
+            if "outputs" not in interval:  # a day that timed out on their side: PARTIAL answer
+                complete = False
                 continue
             day = date.fromisoformat(interval["interval"]["from"][:10])
             for variable, (oid, band) in self.outputs.items():
@@ -173,7 +178,7 @@ class _StatsAdapter:
                         valid_fraction=round(valid, 4),
                     )
                 )
-        return out, units
+        return out, units, complete
 
     def _chunk(
         self, area: Area, res: int, chunk: tuple[date, date], today: date
@@ -182,9 +187,13 @@ class _StatsAdapter:
         with _lock(key):
             if (hit := cache.get(self.info.id, key)) is not None:
                 return {v: [Observation.model_validate(o) for o in obs] for v, obs in hit.items()}, Cost(cache_hits=1)
-            observations, units = self._fetch(area, res, chunk, today)
+            observations, units, complete = self._fetch(area, res, chunk, today)
             dumped = {v: [o.model_dump(mode="json") for o in obs] for v, obs in observations.items()}
-            cache.put(self.info.id, key, dumped, cache.ttl_for_chunk(chunk[1], today))
+            ttl = cache.ttl_for_chunk(chunk[1], today)
+            if not complete:  # some days are missing: never keep a partial chunk as if it were settled
+                ttl = cache.RECENT_TTL_S
+                log.warning("sentinel hub answered PARTIAL for %s; cached for %d s only", key, ttl)
+            cache.put(self.info.id, key, dumped, ttl)
             return observations, Cost(cache_misses=1, sentinel_hub_units=units)
 
     def observations(self, area: Area, variable: str, periods: list[Period]) -> tuple[list[Observation], Cost, int]:
