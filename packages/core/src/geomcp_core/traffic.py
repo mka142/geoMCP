@@ -137,7 +137,7 @@ def _survey() -> list[dict[str, Any]]:
 
 def _roads(area_id: str) -> set[str]:
     """National road numbers crossing the area, from OpenStreetMap."""
-    key = f"traffic-osm|v3|{area_id}"
+    key = f"traffic-osm|v4|{area_id}"
     if (hit := cache.get("traffic", key)) is not None:
         return set(hit)
     polys = _polys(geometry_of(area_from_id(area_id)))
@@ -252,4 +252,4 @@ def get_traffic(area_id: str) -> TrafficResult:
 
 def estimate_s(area_id: str) -> float:
     area = area_from_id(area_id)
-    return 2.0 if cache.get("traffic", f"traffic-osm|v3|{area.area_id}") is not None else 15.0
+    return 2.0 if cache.get("traffic", f"traffic-osm|v4|{area.area_id}") is not None else 15.0
