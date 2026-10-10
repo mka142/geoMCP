@@ -281,7 +281,10 @@ def estimate_summary_s(area_id: str, variables: list[str], window_days: int | No
 
 
 def get_summary(area_id: str, variables: list[str], window_days: int | None = None) -> SummaryResult:
-    """Static facts (terrain) plus recent values of dynamic variables over a trailing window."""
+    """Static facts (terrain) plus recent values of dynamic variables over a trailing window.
+
+    Every source runs in parallel: a profile asks a dozen sources at once, and the time estimate is their maximum.
+    """
     t0 = time.monotonic()
     area = _area(area_id)
     today = datetime.now(UTC).date()
@@ -302,25 +305,29 @@ def get_summary(area_id: str, variables: list[str], window_days: int | None = No
             static_adapters[adapter.info.id] = adapter
         else:
             dynamic[variable] = adapter
-    for source_id, names in static.items():
-        adapter = static_adapters[source_id]
-        if not isinstance(adapter, registry.StaticFacts):
-            continue
+    sources = {sid: a for sid, a in static_adapters.items() if isinstance(a, registry.StaticFacts)}
+    windows = {v: _recent_period(a, v, window_days, today) for v, a in dynamic.items()}
+    with ThreadPoolExecutor(max_workers=max(1, len(sources) + len(dynamic))) as pool:
+        static_futures = {sid: pool.submit(a.facts, area, static[sid]) for sid, a in sources.items()}
+        dynamic_futures = {v: pool.submit(a.stats, area, v, [windows[v]]) for v, a in dynamic.items()}
+        for source_id, fut in static_futures.items():
+            names = static[source_id]
+            try:
+                found, c = fut.result()
+                facts += found
+                cost.add(c)
+            except GeomcpError as e:
+                gaps += [Gap(variable=n, period=None, reason=e.code) for n in names]
+                notices.append(f"{', '.join(names)}: {e.message}" + (f" {e.hint}" if e.hint else ""))
+            except Exception as e:  # see _run_parallel
+                log.exception("adapter failed for %s", names)
+                gaps += [Gap(variable=n, period=None, reason="source_error") for n in names]
+                notices.append(f"{', '.join(names)}: the source failed unexpectedly ({type(e).__name__}).")
+        dynamic_results = {v: fut for v, fut in dynamic_futures.items()}
+    for variable, fut in dynamic_results.items():
+        period = windows[variable]
         try:
-            found, c = adapter.facts(area, names)
-            facts += found
-            cost.add(c)
-        except GeomcpError as e:
-            gaps += [Gap(variable=n, period=None, reason=e.code) for n in names]
-            notices.append(f"{', '.join(names)}: {e.message}" + (f" {e.hint}" if e.hint else ""))
-        except Exception as e:  # see _run_parallel
-            log.exception("adapter failed for %s", names)
-            gaps += [Gap(variable=n, period=None, reason="source_error") for n in names]
-            notices.append(f"{', '.join(names)}: the source failed unexpectedly ({type(e).__name__}).")
-    for variable, adapter in dynamic.items():
-        period = _recent_period(adapter, variable, window_days, today)
-        try:
-            data = adapter.stats(area, variable, [period])
+            data = fut.result()
         except GeomcpError as e:
             gaps.append(Gap(variable=variable, period=None, reason=e.code))
             notices.append(f"{variable}: {e.message}" + (f" {e.hint}" if e.hint else ""))
