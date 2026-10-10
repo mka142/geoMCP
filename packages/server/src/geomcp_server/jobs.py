@@ -64,7 +64,13 @@ class JobRunner:
             log.exception("job_crashed", job_id=job_id)
             values = {
                 "status": "failed",
-                "error": json.dumps({"code": "internal_error", "message": str(e), "hint": ""}),
+                "error": json.dumps(
+                    {
+                        "code": "internal_error",
+                        "message": f"The job failed unexpectedly ({type(e).__name__}); the server log has details.",
+                        "hint": "Try again; if it repeats, ask the server's owner.",
+                    }
+                ),
             }
         with sessions(self.db_url).begin() as s:
             s.execute(update(Job).where(Job.id == job_id).values(**values, finished_at=datetime.now(UTC)))

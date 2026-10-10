@@ -22,20 +22,27 @@ CACHE = Counter("geomcp_cache_lookups", "Adapter cache lookups", ["result"], reg
 JOBS_RUNNING = Gauge("geomcp_jobs_running", "Background jobs running", registry=REGISTRY)
 
 
-def record(db_url: str, tool: str, client: str, ok: bool, code: str | None, duration_s: float) -> None:
+def record(
+    db_url: str, tool: str, client: str, ok: bool, code: str | None, duration_s: float, units: float = 0.0
+) -> None:  # fmt: skip
     CALLS.labels(tool=tool, outcome="ok" if ok else (code or "error")).inc()
     DURATION.labels(tool=tool).observe(duration_s)
     with sessions(db_url).begin() as s:
         s.add(
-            ToolCall(at=datetime.now(UTC), tool=tool, client=client, ok=ok, code=code, duration_s=duration_s, units=0.0)
+            ToolCall(
+                at=datetime.now(UTC), tool=tool, client=client, ok=ok, code=code, duration_s=duration_s, units=units
+            )
         )
 
 
-def spent(db_url: str, client: str, units: float, cache_hits: int, cache_misses: int) -> None:
-    """Attribute provider cost to the latest call of this client (jobs finish after their call was logged)."""
+def count(units: float, cache_hits: int, cache_misses: int) -> None:
     UNITS.inc(units)
     CACHE.labels(result="hit").inc(cache_hits)
     CACHE.labels(result="miss").inc(cache_misses)
+
+
+def spent_by_last_call(db_url: str, client: str, units: float) -> None:
+    """Attribute a background job's cost to the client's latest logged call: the one that handed it off."""
     if units <= 0:
         return
     with sessions(db_url).begin() as s:

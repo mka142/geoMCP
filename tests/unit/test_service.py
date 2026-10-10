@@ -57,10 +57,11 @@ def test_restricted_source_adds_notice_and_can_be_excluded() -> None:
 def test_future_periods_are_missing_and_recent_ones_preliminary() -> None:
     today = date.today()
     start = date(today.year - 1, 1, 1)
-    end = date(today.year + 1, 1, 1)
+    end = date(today.year + 2, 1, 1)
     r = service.get_timeseries(GOLDEN_AREA_ID, ["synthetic_t2m"], start, end, "P1M", max_rows=500)
     statuses = {row[0]: row[-1] for row in r.rows}
-    assert statuses[date(today.year, 12, 1)] == "missing"
+    assert statuses[date(today.year + 1, 6, 1)] == "missing"  # not December of this year: that fails in December
+    assert statuses[today.replace(day=1)] in ("preliminary", "missing")  # the current month is never final
     assert "preliminary" in statuses.values()
 
 

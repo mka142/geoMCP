@@ -36,6 +36,7 @@ from geomcp_server.settings import Settings, get_settings
 
 log = structlog.get_logger()
 _client: ContextVar[str] = ContextVar("geomcp_client", default="local")
+_pending: ContextVar[Cost | None] = ContextVar("geomcp_pending_cost", default=None)  # the running call's cost
 JOB_LONG_POLL_S = 20.0
 
 INSTRUCTIONS = """\
@@ -221,6 +222,8 @@ def build_server(
         token = get_access_token()
         client = token.client_id if token else "local"
         _client.set(client)
+        pending = Cost()
+        _pending.set(pending)
         t0 = time.monotonic()
         ok, code = True, None
         try:
@@ -230,19 +233,25 @@ def build_server(
             return _error(e)
         finally:
             duration = round(time.monotonic() - t0, 2)
-            log.info("tool", tool=tool, client=client, ok=ok, code=code, duration_s=duration)
-            metrics.record(db_url, tool, client, ok, code, duration)
+            units = pending.sentinel_hub_units
+            log.info("tool", tool=tool, client=client, ok=ok, code=code, duration_s=duration, units=units)
+            metrics.record(db_url, tool, client, ok, code, duration, units)
 
     def charge(cost: Cost) -> None:
         """Provider cost, for the monthly quota and per-person stats (jobs inherit the caller's context)."""
         usage.record(db_url, cost)
-        metrics.spent(db_url, _client.get(), cost.sentinel_hub_units, cost.cache_hits, cost.cache_misses)
+        metrics.count(cost.sentinel_hub_units, cost.cache_hits, cost.cache_misses)
+        if (pending := _pending.get()) is not None:
+            pending.add(cost)  # the call is still running: its own log row gets the units
+        else:
+            metrics.spent_by_last_call(db_url, _client.get(), cost.sentinel_hub_units)  # a job: the hand-off call
 
     def maybe_job(tool: str, eta_s: float, work: Callable[[], Outcome]) -> ToolResult:
         """Run now if the estimate fits the sync budget; otherwise start a job and return its handle."""
         if eta_s <= settings.sync_budget_s:
             structured, text = work()
             return ToolResult(content=[TextContent(type="text", text=text)], structured_content=structured)
+        _pending.set(None)  # the job's copy of this context must attribute its cost to the logged hand-off call
         job_id = runner.submit(tool, eta_s, work)
         wait = round(eta_s)
         handle = JobHandle(

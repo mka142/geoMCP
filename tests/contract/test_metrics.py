@@ -3,9 +3,11 @@
 from pathlib import Path
 
 import httpx
+import pytest
 from fastmcp import Client
 from starlette.applications import Starlette
 
+from geomcp_core import service
 from geomcp_server import auth
 from geomcp_server.app import build_server
 from geomcp_server.metrics import stats_table
@@ -33,3 +35,22 @@ async def test_metrics_endpoint_needs_a_key_over_http(tmp_path: Path) -> None:
         assert (await http.get("/metrics")).status_code == 401
         ok = await http.get("/metrics", headers={"Authorization": f"Bearer {token}"})
         assert ok.status_code == 200 and "geomcp_tool_calls_total" in ok.text and "geomcp_jobs_running" in ok.text
+
+
+async def test_units_are_attributed_to_the_call_that_spent_them(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    real = service.get_timeseries
+
+    def costly(*args: object, **kwargs: object) -> object:
+        r = real(*args, **kwargs)  # type: ignore[arg-type]
+        r.cost.sentinel_hub_units = 7.0
+        return r
+
+    monkeypatch.setattr(service, "get_timeseries", costly)
+    settings = Settings(data_dir=tmp_path)
+    async with Client(build_server(settings=settings)) as c:
+        args = {"area_id": GOLDEN_AREA_ID, "variables": ["synthetic_t2m"], "start": "2024-01-01", "end": "2025-01-01"}
+        await c.call_tool("get_timeseries", args)
+    row = next(line for line in stats_table(settings.database_url, 30).splitlines() if "get_timeseries" in line)
+    assert row.split()[-1] == "7.0"
