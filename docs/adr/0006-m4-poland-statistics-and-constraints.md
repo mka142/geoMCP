@@ -12,6 +12,7 @@ Status: accepted (M4 waves A and B), October 2026.
   The service paints an opaque white background even with `TRANSPARENT=TRUE`, so pixels are counted by colour, not alpha.
   Only the water-depth and hazard-zone layers are drawn (October 2026 review): each service also publishes rivers, all surface waters, embankments, labels and a sheet index, and counting them made every lake a flood zone and added grid lines everywhere.
   Areas are capped at 250 km² (a 177 km² gmina takes about 60 s cold, 4 scenarios).
+  A scenario whose service fails is reported as a named gap; the other scenarios still answer, and no share is guessed for the missing one.
 - Nature protection comes from the GDOŚ GeoServer WFS (GeoJSON), geological hazards from PIG-PIB ArcGIS REST (GeoJSON), and vertical ground motion from the PIG-PIB copy of EGMS 2016-2020 through `computeStatisticsHistograms`, sent as POST because polygons exceed URL limits.
   The SOPO landslide layers refuse the query operation (HTTP 200 with an error body, October 2026) but answer `identify` with geometry, so landslides are read through `identify`.
   It returns at most 1,000 features without flagging truncation, so a full answer splits the tile into quarters down to about 1 km, and a full answer at that size is a gap.

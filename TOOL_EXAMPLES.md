@@ -403,9 +403,9 @@ Structured content:
   ],
   "sentinel_hub_quota": {
     "month": "2026-10",
-    "units_used": 1336.8,
+    "units_used": 1337.0,
     "units_limit": 10000.0,
-    "requests_used": 239,
+    "requests_used": 241,
     "requests_limit": 10000
   }
 }
@@ -483,7 +483,7 @@ Structured content:
         "licence": "Copernicus open data (CC-BY-4.0)",
         "attribution": "Contains modified Copernicus Sentinel data",
         "commercial_safe": true,
-        "retrieved_at": "2026-10-10T22:53:22.203755Z"
+        "retrieved_at": "2026-10-10T23:34:31.327383Z"
       }
     },
     {
@@ -515,7 +515,7 @@ Structured content:
         "licence": "CC-BY-4.0",
         "attribution": "Muñoz Sabater, J. (2019): ERA5-Land hourly data from 1950 to present. Copernicus Climate Change Service (C3S) Climate Data Store (CDS)",
         "commercial_safe": true,
-        "retrieved_at": "2026-10-10T22:53:22.182665Z"
+        "retrieved_at": "2026-10-10T23:34:31.326315Z"
       }
     },
     {
@@ -547,7 +547,7 @@ Structured content:
         "licence": "CC-BY-4.0",
         "attribution": "Muñoz Sabater, J. (2019): ERA5-Land hourly data from 1950 to present. Copernicus Climate Change Service (C3S) Climate Data Store (CDS)",
         "commercial_safe": true,
-        "retrieved_at": "2026-10-10T22:53:22.199482Z"
+        "retrieved_at": "2026-10-10T23:34:31.333231Z"
       }
     }
   ],
@@ -684,7 +684,7 @@ Structured content:
         "licence": "GUGiK open data (free for any use)",
         "attribution": "Główny Urząd Geodezji i Kartografii (GUGiK), NMT",
         "commercial_safe": true,
-        "retrieved_at": "2026-10-10T22:53:22.583094Z"
+        "retrieved_at": "2026-10-10T23:34:31.710166Z"
       }
     },
     {
@@ -705,7 +705,7 @@ Structured content:
         "licence": "GUGiK open data (free for any use)",
         "attribution": "Główny Urząd Geodezji i Kartografii (GUGiK), NMT",
         "commercial_safe": true,
-        "retrieved_at": "2026-10-10T22:53:22.583094Z"
+        "retrieved_at": "2026-10-10T23:34:31.710166Z"
       }
     },
     {
@@ -730,7 +730,7 @@ Structured content:
         "licence": "CC-BY-4.0",
         "attribution": "© ESA WorldCover project 2021 / Contains modified Copernicus Sentinel data (2021) processed by ESA WorldCover consortium",
         "commercial_safe": true,
-        "retrieved_at": "2026-10-10T22:53:22.432148Z"
+        "retrieved_at": "2026-10-10T23:34:31.558612Z"
       }
     },
     {
@@ -747,7 +747,7 @@ Structured content:
         "licence": "ODbL-1.0",
         "attribution": "© OpenStreetMap contributors",
         "commercial_safe": true,
-        "retrieved_at": "2026-10-10T22:53:22.432351Z"
+        "retrieved_at": "2026-10-10T23:34:31.560345Z"
       }
     },
     "... 9 more"
@@ -755,7 +755,7 @@ Structured content:
   "gaps": [],
   "notices": [],
   "cost": {
-    "duration_s": 0.17,
+    "duration_s": 0.3,
     "sentinel_hub_units": 0.0,
     "cache_hits": 12,
     "cache_misses": 0
@@ -775,7 +775,7 @@ road_length as of 2026-10-09: 566 km (final; OpenStreetMap (Overpass API)).
 schools as of 2026-10-09: 21 (final; OpenStreetMap (Overpass API)).
 population over 2020/2025: latest 31,145, 2020 28,554 persons (final; GUS Local Data Bank (BDL)).
 budget_income_per_capita over 2020/2025: latest 11,128, 2020 6,880 PLN (final; GUS Local Data Bank (BDL)).
-pm10_station over 2026-10-09T22:00Z/2026-10-10T21:00Z: last 24h mean 9.7, latest hour 14.4, hours 24 ug m-3 (preliminary; GIOŚ air-quality monitoring stations).
+pm10_station over 2026-10-09T23:00Z/2026-10-10T22:00Z: last 24h mean 9.8, latest hour 8.6, hours 24 ug m-3 (preliminary; GIOŚ air-quality monitoring stations).
 ndvi over 2026-08-11/2026-10-10: mean 0.493, p10 0.205, p90 0.783 (final; Sentinel-2 L2A).
 t2m over 2026-09-03/2026-10-03: mean 15.8, p10 12.6, p90 18.8 degC (preliminary; ERA5-Land hourly time series).
 precipitation over 2026-09-03/2026-10-03: total 48.7 mm (preliminary; ERA5-Land hourly time series).
@@ -845,7 +845,7 @@ Structured content:
         "licence": "CC-BY-4.0",
         "attribution": "European Commission, Joint Research Centre (JRC), GHS-POP R2023A",
         "commercial_safe": true,
-        "retrieved_at": "2026-10-10T22:53:22.621473Z"
+        "retrieved_at": "2026-10-10T23:34:31.871692Z"
       }
     },
     {
@@ -874,7 +874,7 @@ Structured content:
         "licence": "open data (PZGiK)",
         "attribution": "Główny Urząd Geodezji i Kartografii, BDOT10k",
         "commercial_safe": true,
-        "retrieved_at": "2026-10-10T22:53:22.621502Z"
+        "retrieved_at": "2026-10-10T23:34:31.874474Z"
       }
     },
     {
@@ -902,7 +902,7 @@ Structured content:
         "licence": "Copernicus Land Monitoring Service data policy (free, attribution)",
         "attribution": "© European Union, Copernicus Land Monitoring Service, European Environment Agency (EEA)",
         "commercial_safe": true,
-        "retrieved_at": "2026-10-10T22:53:22.625176Z"
+        "retrieved_at": "2026-10-10T23:34:31.876683Z"
       }
     },
     {
@@ -924,7 +924,7 @@ Structured content:
         "licence": "CC-BY-4.0",
         "attribution": "European Commission, Joint Research Centre, PVGIS",
         "commercial_safe": true,
-        "retrieved_at": "2026-10-10T22:53:22.625591Z"
+        "retrieved_at": "2026-10-10T23:34:31.876592Z"
       }
     },
     "... 2 more"
@@ -1010,7 +1010,7 @@ Structured content:
     "licence": "Copernicus open data (CC-BY-4.0)",
     "attribution": "Contains modified Copernicus Sentinel data",
     "commercial_safe": true,
-    "retrieved_at": "2026-10-10T22:53:22.691027Z"
+    "retrieved_at": "2026-10-10T23:34:31.939727Z"
   },
   "notices": [],
   "cost": {
@@ -1076,7 +1076,7 @@ Structured content:
     "licence": "Copernicus open data (CC-BY-4.0)",
     "attribution": "Contains modified Copernicus Sentinel data",
     "commercial_safe": true,
-    "retrieved_at": "2026-10-10T22:53:23.885425Z"
+    "retrieved_at": "2026-10-10T23:34:33.371222Z"
   }
 }
 ```
@@ -1128,7 +1128,7 @@ Structured content:
     "licence": "open data (PZGiK, free of charge since 2020)",
     "attribution": "Główny Urząd Geodezji i Kartografii",
     "commercial_safe": true,
-    "retrieved_at": "2026-10-10T22:53:24.323995Z"
+    "retrieved_at": "2026-10-10T23:34:33.832243Z"
   }
 }
 ```
@@ -1237,7 +1237,8 @@ Structured content:
             "Are there landslides or mining areas here?"
           ],
           "caveats": [
-            "Ground motion is interpolated between radar points; an indication, not a survey"
+            "Ground motion is interpolated between radar points; an indication, not a survey",
+            "Landslides are those mapped by SOPO (mostly the Carpathians); unmapped regions show none"
           ]
         },
         "name": "PIG-PIB geohazards and EGMS ground motion",
@@ -1551,16 +1552,13 @@ Structured content:
       "source": "ISOK flood hazard maps (Wody Polskie)",
       "licence": "public data (Wody Polskie)"
     },
-    "... 19 more"
+    "... 21 more"
   ],
-  "gaps": [
-    "geology: Landslides (SOPO): cbdgmapa.pgi.gov.pl: Requested operation is not supported by this service.",
-    "geology: Areas threatened by mass movement (SOPO): cbdgmapa.pgi.gov.pl: Requested operation is not supported by this service."
-  ],
+  "gaps": [],
   "notices": [
     "Ground motion is interpolated between radar points (2016-2020); treat it as an indication."
   ],
-  "retrieved_at": "2026-10-10T22:53:24.918266Z"
+  "retrieved_at": "2026-10-10T23:34:57.293668Z"
 }
 ```
 
@@ -1577,9 +1575,7 @@ Circle of radius 0.50 km around 51.1450, 16.9550 (78.4 ha):
 - Road noise, Lden 55 dB or more: 27% of the area (65 dB or more: 8%)
 - IMGW hydrological warnings in dolnośląskie (floods, drought): 13 active: dolnośląskie,  Odra od ujścia Widawy do Ścinawy, zlewnia Kaczawy, susza hydrologiczna (level -1); dolnośląskie, Czerna Wielka, susza hydrologiczna (level -1); dolnośląskie, Odra od Głogowa do ujścia Bobru, susza hydrologiczna (level -1); dolnośląskie, Odra skanalizowana (od Koźla do Malczyc), susza hydrologiczna (level -1); dolnośląskie, Odra środkowa poniżej Malczyc do ujścia Bobru, susza hydrologiczna (level -1); dolnośląskie, Zlewnia Bobru z Kwisą (od Zb. Pilchowice do ujścia,bez zlewni Czernej Wielkiej, susza hydrologiczna (level -1); dolnośląskie, Zlewnia Bystrzycy, susza hydrologiczna (level -1); dolnośląskie, Zlewnia Widawy, Stobrawy, Odra od ujścia Nysy Kłodzkiej do ujścia Widawy, susza hydrologiczna (level -1); dolnośląskie, Zlewnia Ślęzy i Oławy, susza hydrologiczna (level -1); dolnośląskie, rzeka Bystrzyca od Zb. Mietków do ujścia, susza hydrologiczna (level -1); dolnośląskie, zlewnia górnego Bobru i zlewnia Ostrożnicy w granicach RP, susza hydrologiczna (level -1); dolnośląskie, zlewnie Nysy Kłodzkiej powyżej Zbiornika Nysa i dopływów Łaby w granicach RP, susza hydrologiczna (level -1)
 - IUNG agricultural drought risk for the gmina in 2026 (crops and 10-day periods at risk): 18 active: soil category I: Zboża ozime (periods 02); soil category I: Zboża jare (periods 02); soil category I: Kukurydza na ziarno (periods 09, 10); soil category I: Kukurydza na kiszonkę (periods 09, 10); soil category I: Rzepak i rzepik (periods 06); soil category I: Ziemniak (periods 10); soil category I: Chmiel (periods 10); soil category I: Tytoń (periods 10); soil category I: Warzywa gruntowe (periods 10); soil category I: Krzewy owocowe (periods 02, 09, 10); soil category I: Truskawki (periods 02); soil category I: Rośliny strączkowe (periods 09, 10)
-None found: Natura 2000 bird site (OSO); National park; Landscape park; Nature reserve; Protected landscape area; Ecological use area (użytek ekologiczny); Nature and landscape complex; Mining terrain (teren górniczy); Mining area (obszar górniczy); Documented mineral deposit (złoże); Rail noise, Lden 55 dB or more; Aircraft noise, Lden 55 dB or more; Industrial noise, Lden 55 dB or more; IMGW weather warnings for the powiat.
-Gap: geology: Landslides (SOPO): cbdgmapa.pgi.gov.pl: Requested operation is not supported by this service.
-Gap: geology: Areas threatened by mass movement (SOPO): cbdgmapa.pgi.gov.pl: Requested operation is not supported by this service.
+None found: Natura 2000 bird site (OSO); National park; Landscape park; Nature reserve; Protected landscape area; Ecological use area (użytek ekologiczny); Nature and landscape complex; Landslides (SOPO); Areas threatened by mass movement (SOPO); Mining terrain (teren górniczy); Mining area (obszar górniczy); Documented mineral deposit (złoże); Rail noise, Lden 55 dB or more; Aircraft noise, Lden 55 dB or more; Industrial noise, Lden 55 dB or more; IMGW weather warnings for the powiat.
 Notice: Ground motion is interpolated between radar points (2016-2020); treat it as an indication.
 ```
 
@@ -1717,7 +1713,7 @@ Structured content:
   "notices": [
     "Designations are sampled at points; read the plan text (link) before any decision."
   ],
-  "retrieved_at": "2026-10-10T22:53:24.968284Z"
+  "retrieved_at": "2026-10-10T23:34:57.334258Z"
 }
 ```
 
@@ -1763,7 +1759,7 @@ Structured content:
     "Designations are sampled at points; read the plan text (link) before any decision.",
     "No plan found. Either no local plan covers this area, or the gmina does not publish its plans to the national integration (Wrocław, for example); check the gmina's own geoportal."
   ],
-  "retrieved_at": "2026-10-10T22:53:30.458336Z"
+  "retrieved_at": "2026-10-10T23:34:57.936208Z"
 }
 ```
 
@@ -1853,7 +1849,7 @@ Structured content:
   ],
   "source": "GDDKiA Generalny Pomiar Ruchu 2025 and 2020/21 (dane.gov.pl); road refs © OpenStreetMap",
   "licence": "CC0 1.0 (GDDKiA); ODbL-1.0 (OSM)",
-  "retrieved_at": "2026-10-10T22:53:33.578829Z"
+  "retrieved_at": "2026-10-10T23:34:58.067657Z"
 }
 ```
 
@@ -2020,7 +2016,7 @@ Structured content:
     "A PKD code matches any activity a trader declared, not only the main one."
   ],
   "source": "CEIDG (Ministry of Development), via dane.biznes.gov.pl",
-  "retrieved_at": "2026-10-10T22:53:33.600585Z"
+  "retrieved_at": "2026-10-10T23:34:58.088726Z"
 }
 ```
 
