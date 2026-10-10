@@ -12,7 +12,10 @@ from mcp.types import TextContent
 # (live tests load them explicitly). All of this must happen before geomcp modules are imported.
 os.environ["GEOMCP_ENABLE_SYNTHETIC"] = "1"
 os.environ["GEOMCP_DATA_DIR"] = tempfile.mkdtemp(prefix="geomcp-test-")
-CREDENTIAL_VARS = ("GEOMCP_CDSE_CLIENT_ID", "GEOMCP_CDSE_CLIENT_SECRET", "GEOMCP_CDS_KEY", "GEOMCP_CEIDG_TOKEN")
+CREDENTIAL_VARS = (
+    "GEOMCP_CDSE_CLIENT_ID", "GEOMCP_CDSE_CLIENT_SECRET", "GEOMCP_CDS_KEY", "GEOMCP_CEIDG_TOKEN",
+    "GEOMCP_CONTACT",  # an operator email; keeps it out of recorded User-Agent headers
+)  # fmt: skip
 REPO = Path(__file__).resolve().parents[1]
 _saved = {v: os.environ.pop(v) for v in CREDENTIAL_VARS if v in os.environ}
 

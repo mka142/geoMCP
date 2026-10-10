@@ -93,6 +93,7 @@ docker compose exec geomcp geomcp-admin stats
 | `GEOMCP_DATA_DIR` | `~/.geomcp` (`/data` in Docker) | SQLite file and cache |
 | `GEOMCP_SYNC_BUDGET_S` | `45` | Longer calls become background jobs |
 | `GEOMCP_SENTINEL_HUB_MONTHLY_UNITS` | `10000` | Quota used for the `quota_low` warning |
+| `GEOMCP_CONTACT` | none | Email or URL sent in the User-Agent to public services such as Nominatim; set it for a team server |
 | `GEOMCP_PUBLIC_URL` | `http://host:port` | Public HTTPS address; base of signed download links |
 | `GEOMCP_BIND` | `127.0.0.1:8000` | Host address and port the container listens on (compose) |
 | `GEOMCP_GUS_BDL_KEY` | none | Free GUS BDL key: 5x the anonymous limit of 1,000 requests per 12 hours; recommended for a team |

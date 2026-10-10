@@ -12,8 +12,10 @@ from pathlib import Path
 import structlog
 from dotenv import load_dotenv
 
+from geomcp_core.config import env
 from geomcp_core.models import GeomcpError
 
+CONTACT_HINT = "GEOMCP_CONTACT is not set: public services such as Nominatim ask for an operator email or URL."
 CREDENTIALS = [
     ("GEOMCP_CDSE_CLIENT_ID", "Copernicus Data Space (Sentinel Hub) OAuth client id", False),
     ("GEOMCP_CDSE_CLIENT_SECRET", "Copernicus Data Space (Sentinel Hub) OAuth client secret", True),
@@ -64,6 +66,8 @@ def check() -> int:
         except Exception as e:  # network trouble and the like: report it, do not crash the check
             failures += 1
             print(f"FAIL  {name}: {type(e).__name__}: {e}")
+    if not env("GEOMCP_CONTACT"):
+        print(f"WARN  {CONTACT_HINT}")
     return 1 if failures else 0
 
 
@@ -148,6 +152,8 @@ def main(argv: list[str] | None = None) -> int:
         url, public, settings.google_client_id, settings.google_client_secret, settings.allowed_emails
     )
     server = build_server(auth=provider, public_url=public)  # also applies migrations
+    if not env("GEOMCP_CONTACT"):
+        log.warning("no_contact", hint=CONTACT_HINT)
     if not any(k.revoked_at is None for k in auth.list_keys(url)):
         log.warning("no_active_api_keys", hint="create one with: geomcp-admin keys create --name <who>")
     log.info(

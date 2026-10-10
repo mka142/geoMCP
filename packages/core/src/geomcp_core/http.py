@@ -6,7 +6,7 @@ from typing import Any
 import httpx
 import stamina
 
-from geomcp_core.config import USER_AGENT
+from geomcp_core.config import user_agent
 from geomcp_core.models import GeomcpError
 
 RETRY_STATUS = {429, 500, 502, 503, 504}
@@ -15,7 +15,7 @@ RETRY_STATUS = {429, 500, 502, 503, 504}
 def client(timeout_s: float = 120.0) -> httpx.Client:
     return httpx.Client(
         timeout=httpx.Timeout(timeout_s, connect=15.0),
-        headers={"User-Agent": USER_AGENT},
+        headers={"User-Agent": user_agent()},
         follow_redirects=True,
     )
 

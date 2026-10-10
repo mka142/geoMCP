@@ -89,7 +89,7 @@ def _scrub_request(request: Any) -> Any:
 @pytest.fixture(scope="module")
 def vcr_config() -> dict[str, Any]:
     return {
-        "filter_headers": ["authorization", "private-token", "x-clientid", "sid", "cookie", "set-cookie"],
+        "filter_headers": ["authorization", "private-token", "x-clientid", "sid", "cookie", "set-cookie", "user-agent"],
         "filter_post_data_parameters": [("client_id", SCRUBBED), ("client_secret", SCRUBBED)],
         "before_record_response": _scrub_response,
         "before_record_request": _scrub_request,
