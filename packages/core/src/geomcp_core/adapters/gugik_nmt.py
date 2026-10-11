@@ -3,7 +3,7 @@
 """GUGiK NMT: Poland's official 1 m digital terrain model (bare ground, heights in PL-KRON86-NH).
 
 Requested through WCS 1.0.0 in EPSG:2180 with the bounding box in easting, northing order, as the
-coverage description publishes it (guide §10 gotcha 7). The grid is capped near one million pixels, so
+coverage description publishes it. The grid is capped near one million pixels, so
 small areas get 1 m cells and a gmina gets about 13 m. Requests are tiled at 4 km, because the service
 silently returns zeros for larger extents; it also drops connections at times, which retries cover.
 """

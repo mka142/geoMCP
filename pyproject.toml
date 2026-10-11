@@ -29,7 +29,7 @@ dev = [
     "pre-commit==4.6.2",
 ]
 
-# Independent reference computation for the costly live cross-check (guide §7.1 recipe).
+# Independent reference computation for the costly live cross-check.
 crosscheck = [
     "odc-stac==0.5.3",
     "pystac-client==0.9.0",
@@ -47,7 +47,7 @@ addopts = "-m 'not live and not costly'"
 [tool.ruff]
 line-length = 120
 target-version = "py312"
-# Never touch Markdown: the guide and contract files are source documents, not code.
+# Never touch Markdown: Markdown is prose, wrapped one sentence per line by hand.
 extend-exclude = ["*.md"]
 
 [tool.ruff.lint]

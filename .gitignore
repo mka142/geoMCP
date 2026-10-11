@@ -11,3 +11,9 @@ data/
 .DS_Store
 .claude/settings.local.json
 .claude/scheduled_tasks.lock
+
+# Local working documents, kept out of the repo
+BUILD_PROMPT.md
+TOOL_EXAMPLES.md
+eo-gis-data-access-guide.md
+docs/review/

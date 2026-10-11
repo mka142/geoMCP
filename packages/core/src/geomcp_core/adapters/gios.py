@@ -3,7 +3,7 @@
 The public API holds only the last ~3 days of hourly data, so the *_station variables are current snapshots
 (last 24 hours at the nearest station measuring the pollutant), reported through get_summary.
 The *_history variables are verified annual means since 2000 from the GIOŚ statistics service.
-Timestamps are Polish local time (guide §10 gotcha 17) and are converted to UTC.
+Timestamps are Polish local time and are converted to UTC.
 """
 
 import math
@@ -33,7 +33,7 @@ from geomcp_core.models import (
 API = "https://api.gios.gov.pl/pjp-api/v1/rest"
 WARSAW = ZoneInfo("Europe/Warsaw")
 MAX_DISTANCE_KM = 25.0
-MIN_INTERVAL_S = 2.0  # the API is rate-limited (guide §10 gotcha 18); station and sensor lists are cached
+MIN_INTERVAL_S = 2.0  # the API is rate-limited; station and sensor lists are cached
 _lock = threading.Lock()
 _last = 0.0
 

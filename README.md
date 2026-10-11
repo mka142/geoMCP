@@ -38,7 +38,7 @@ Prompts: `onboarding(place?)`, a short guide in Polish for new users (what to as
 Variables over time (`get_timeseries`): `ndvi`, `ndmi`, `nbr`, `ndwi`, `mndwi`, `ndbi` (Sentinel-2); `s1_vv`, `s1_vh` (Sentinel-1, dB); `no2_column` (Sentinel-5P); `t2m`, `t2m_max`, `t2m_min`, `precipitation`, `wind_speed`, `solar_radiation`, `soil_moisture`, `vpd` (ERA5-Land); day counts `hot_days`, `summer_days`, `tropical_nights`, `frost_days`, `heavy_rain_days`, `dry_days` (from ERA5-Land daily values).
 
 Facts (`get_summary`): `elevation`, `slope` (Copernicus DEM, worldwide); `elevation_ground`, `slope_ground` (GUGiK NMT, Poland); `landcover` (ESA WorldCover); `buildings`, `schools`, `healthcare`, `shops`, `transit_stops`, `road_length` (OpenStreetMap); `population`, `population_density`, `net_migration`, `natural_increase`, `dwellings_completed`, `new_businesses`, `budget_income_per_capita` (GUS, for the gmina); `pm10_station`, `pm25_station`, `no2_station`, `o3_station` (GIOŚ, last 24 hours); `pm10_history`, `pm25_history`, `no2_history` (GIOŚ, verified annual means since 2000); `building_functions` (GUGiK BDOT10k, Poland); `population_grid` (JRC GHSL, residents inside the area 2000-2025, worldwide); `solar_potential` (JRC PVGIS); `landcover_history` (CORINE 1990-2018, Europe); `climate_projection` (Open-Meteo CMIP6, 2031-2050 against 1991-2010, non-commercial only).
-Real examples of every tool are in [TOOL_EXAMPLES.md](TOOL_EXAMPLES.md), generated from live calls.
+`scripts/make_tool_examples.py` writes real examples of every tool, from live calls, to a local `TOOL_EXAMPLES.md` (not tracked).
 
 ## Quick start (local)
 
@@ -121,7 +121,7 @@ uv run pytest -q                                        # offline: unit, MCP con
 uv run pytest -q -m "live and not costly"               # real services, a few processing units
 uv run --group crosscheck pytest -q -m costly           # performance and Earth Search cross-check, about 600 units
 uv run pytest tests/recorded --record-mode=rewrite      # refresh cassettes (secrets are scrubbed)
-uv run python scripts/make_tool_examples.py             # regenerate TOOL_EXAMPLES.md from real calls
+uv run python scripts/make_tool_examples.py             # write TOOL_EXAMPLES.md (local, untracked) from real calls
 docker build -t geomcp:dev .
 ```
 

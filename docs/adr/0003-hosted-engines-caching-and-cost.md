@@ -21,10 +21,10 @@ Status: accepted (M1). Every number below was measured live in October 2026 over
 ## Weather: CDS ERA5-Land point time series
 
 - `reanalysis-era5-land-timeseries` returns hourly values for the grid cell nearest to the area centroid; one job per calendar year, 4 in parallel: 10 years of 7 variables in about 12 s cold.
-- Unlike the gridded ERA5-Land product (guide §10 gotcha 5), precipitation and radiation arrive as hourly amounts, not accumulations: daily totals are plain sums (2024 at Wrocław: 821 mm).
+- Unlike the gridded ERA5-Land product, precipitation and radiation arrive as hourly amounts, not accumulations: daily totals are plain sums (2024 at Wrocław: 821 mm).
 - One CSV can hold several variables (`d2m` and `t2m`, `u10` and `v10`); the parser reads every value column.
 - The latest ~90 days are ERA5T and reported as `preliminary`.
-- The guide §7.7 ARCO store is not used: its chunks are 1 hour x the whole globe (about 1 TB for a 10-year point series).
+- The ERA5 ARCO Zarr store is not used: its chunks are 1 hour x the whole globe (about 1 TB for a 10-year point series).
   The Earthmover Icechunk `single/temporal` fallback is deferred.
 
 ## Places

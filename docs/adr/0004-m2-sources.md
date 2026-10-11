@@ -26,14 +26,14 @@ Status: accepted (M2). Behaviour below was measured live in October 2026.
 ## GIOŚ stations
 
 - The public API keeps only about 100 hours, so station variables are current snapshots (last 24 hours at the nearest station measuring the pollutant, within 25 km), reported through `get_summary`.
-- Timestamps are Polish local time and are converted to UTC (guide §10 gotcha 17); requests are spaced 2 s apart and lists are cached (gotcha 18).
+- Timestamps are Polish local time and are converted to UTC; requests are spaced 2 s apart (the API is rate-limited) and lists are cached.
 - Pages larger than 100 rows are rejected with HTTP 400.
 
 ## GUGiK NMT
 
-- WCS 1.0.0 in EPSG:2180 with the bounding box in easting, northing order, as the coverage description publishes it (gotcha 7).
+- WCS 1.0.0 in EPSG:2180 with the bounding box in easting, northing order, as the coverage description publishes it.
 - Extents larger than about 4 km come back mostly zeros (82% for a 13 km gmina) while the data exists, so requests are tiled at 4 km and 0.0 is treated as no data.
-- The service drops connections now and then; retries cover it. Heights are PL-KRON86-NH and are never mixed with EGM2008 (gotcha 8).
+- The service drops connections now and then; retries cover it. Heights are PL-KRON86-NH and are never mixed with EGM2008.
 
 ## Deferred
 

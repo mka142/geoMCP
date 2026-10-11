@@ -65,7 +65,7 @@ def test_performance_ten_years_cold_and_warm() -> None:
 @pytest.mark.live
 @pytest.mark.costly
 def test_gotcha_01_crosscheck_ndvi_against_earth_search_cogs() -> None:
-    """Sentinel Hub NDVI means match an independent odc-stac computation (guide §7.1) within 0.03."""
+    """Sentinel Hub NDVI means match an independent odc-stac computation over Earth Search COGs within 0.03."""
     odc_stac = pytest.importorskip("odc.stac")
     pystac_client = pytest.importorskip("pystac_client")
     area = area_from_id(GOLDEN_AREA_ID)
