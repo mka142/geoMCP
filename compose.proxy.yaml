@@ -1,0 +1,28 @@
+# VPS deployment behind an nginx that runs in Docker on a shared network (default name: net).
+# No host port is published: nginx reaches geomcp as http://geomcp:8000 on that network.
+# See docs/deploy-vps.md, section 5b, and docs/nginx/geomcp-docker.conf.
+#   docker compose -f compose.proxy.yaml up -d --build     (--build again after every update)
+services:
+  geomcp:
+    build: .
+    image: geomcp:latest
+    restart: unless-stopped
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      # download links and Google sign-in must use the public HTTPS address, not the container
+      GEOMCP_PUBLIC_URL: ${GEOMCP_PUBLIC_URL:?set GEOMCP_PUBLIC_URL in .env}
+    volumes:
+      - geomcp-data:/data
+    networks:
+      proxy:
+        aliases: [geomcp]  # the name nginx proxies to, whatever the container is called
+
+networks:
+  proxy:
+    name: ${GEOMCP_PROXY_NETWORK:-net}
+    external: true  # created and owned by your nginx setup
+
+volumes:
+  geomcp-data:

@@ -3,6 +3,8 @@
 # Default: geomcp alone, plain HTTP on GEOMCP_BIND (127.0.0.1:8000), behind your own HTTPS proxy (nginx).
 #   docker compose up -d --build                    (--build again after every update)
 #
+# nginx running in Docker on a shared network instead: use compose.proxy.yaml.
+#
 # Without a proxy of your own: add Caddy, which gets certificates automatically for GEOMCP_DOMAIN.
 #   docker compose --profile caddy up -d --build
 services:

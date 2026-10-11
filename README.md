@@ -74,7 +74,7 @@ Everything fetched is cached under `GEOMCP_DATA_DIR` (default `~/.geomcp`): sett
 ## Deploy on a VPS
 
 geomcp runs as one Docker container serving plain HTTP behind your HTTPS proxy (nginx), or behind the built-in Caddy.
-Step-by-step guide, nginx config, access keys, usage stats and backups: [docs/deploy-vps.md](docs/deploy-vps.md).
+Step-by-step guide, nginx config (on the host, or in Docker with `compose.proxy.yaml`), access keys, usage stats and backups: [docs/deploy-vps.md](docs/deploy-vps.md).
 
 ```bash
 cp .env.example .env && chmod 600 .env    # credentials, GEOMCP_PUBLIC_URL, GEOMCP_BIND
@@ -96,6 +96,7 @@ docker compose exec geomcp geomcp-admin stats
 | `GEOMCP_CONTACT` | none | Email or URL sent in the User-Agent to public services such as Nominatim; set it for a team server |
 | `GEOMCP_PUBLIC_URL` | `http://host:port` | Public HTTPS address; base of signed download links |
 | `GEOMCP_BIND` | `127.0.0.1:8000` | Host address and port the container listens on (compose) |
+| `GEOMCP_PROXY_NETWORK` | `net` | Docker network shared with an nginx container (`compose.proxy.yaml`) |
 | `GEOMCP_GUS_BDL_KEY` | none | Free GUS BDL key: 5x the anonymous limit of 1,000 requests per 12 hours; recommended for a team |
 | `GEOMCP_GUS_SMUP_KEY` | none | Optional free GUS SMUP key for higher rate limits |
 | `GEOMCP_REGON_KEY` | none | GUS REGON (BIR) key: adds sole traders, non-VAT payers and PKD codes to `lookup_business` |

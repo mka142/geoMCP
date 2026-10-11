@@ -2,6 +2,7 @@
 
 This guide runs geomcp as one Docker container on a Linux VPS, behind an HTTPS reverse proxy.
 It assumes your own nginx terminates TLS with certificates you manage, and forwards plain HTTP to geomcp.
+If nginx itself runs in Docker on a shared network, section 5b shows the matching compose file.
 If you have no proxy, section 9 shows the built-in Caddy alternative.
 
 ## 1. What you need
@@ -64,6 +65,31 @@ curl -s -o /dev/null -w '%{http_code}\n' -X POST https://geo.example.org/mcp   #
 ```
 
 The important settings are `proxy_buffering off`, `proxy_http_version 1.1` and long read timeouts, because MCP streams its responses.
+
+## 5b. nginx in Docker on a shared network
+
+If nginx runs as a container that owns ports 80 and 443 and reaches apps over a Docker network (for example `net`), use `compose.proxy.yaml` instead of `compose.yaml`.
+It publishes no host port and joins geomcp to that network under the name `geomcp`, so `GEOMCP_BIND` is not used.
+Set the network name in `.env` when it is not `net`:
+
+```
+GEOMCP_PROXY_NETWORK=net
+```
+
+Start it, and test from inside the network:
+
+```bash
+docker compose -f compose.proxy.yaml up -d --build
+docker compose -f compose.proxy.yaml exec geomcp geomcp check
+docker run --rm --network net curlimages/curl -s http://geomcp:8000/healthz   # {"status":"ok",...}
+```
+
+Add the `location` block from [nginx/geomcp-docker.conf](nginx/geomcp-docker.conf) to your HTTPS `server` block and reload nginx (for example `docker exec nginx nginx -s reload`).
+It looks geomcp up through Docker's DNS on each request, so nginx starts even while geomcp is down.
+Then run the two `curl` checks from section 5.
+
+With this file, add `-f compose.proxy.yaml` to every `docker compose` command in this guide (keys, stats, logs, update).
+The data volume is the same `<folder>_geomcp-data` either way.
 
 ## 6. Give people access
 
