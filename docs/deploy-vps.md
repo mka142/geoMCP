@@ -13,12 +13,12 @@ If you have no proxy, section 9 shows the built-in Caddy alternative.
 - A DNS name for the server (for example `geo.example.org`) and nginx serving it over HTTPS.
 - The free data accounts: Copernicus Data Space (a Sentinel Hub OAuth client) and the Climate Data Store (a personal access token, with the licence of `reanalysis-era5-land-timeseries` accepted once on its Download tab).
 
-## 2. Copy the code to the server
+## 2. Get the code on the server
 
-From your machine, copy the repository without local caches:
+The repository is private, so the server needs read access: a deploy key (GitHub: repository Settings, Deploy keys, read-only) or `gh auth login`.
 
 ```bash
-rsync -a --exclude .venv --exclude .env --exclude '__pycache__' ./ user@vps:/opt/geomcp/
+git clone git@github.com:mka142/geoMCP.git /opt/geomcp
 ```
 
 ## 3. Configure
@@ -148,11 +148,15 @@ Logs are JSON lines: `docker compose logs -f geomcp`.
 
 ## 8. Update, back up, restore
 
-Update after copying new code to the server:
+Update to the latest `main`:
 
 ```bash
-docker compose up -d --build
+cd /opt/geomcp
+git pull --ff-only
+docker compose up -d --build        # or: docker compose -f compose.proxy.yaml up -d --build
 ```
+
+`.env` is not tracked, so a pull never touches it; compare it with `.env.example` after an update for new settings.
 
 All state (API keys, jobs, usage, cache) lives in the `geomcp-data` volume.
 Back it up while the service runs (SQLite is consistent at this level for a small team; stop the container first for a guaranteed snapshot):
