@@ -22,10 +22,11 @@ class Settings(BaseSettings):
     google_client_secret: str | None = None
     allowed_emails: Annotated[list[str], NoDecode] = []  # who may sign in with Google: emails or "@domain"
     # where OAuth clients may be sent back after sign-in: claude.ai, Claude Desktop and mobile (claude.com is the
-    # announced successor), and loopback ports for Claude Code, mcp-remote and other local clients
+    # announced successor), ChatGPT connectors, and loopback ports for Claude Code, mcp-remote and other local clients
     oauth_redirect_uris: Annotated[list[str], NoDecode] = [
         "https://claude.ai/api/mcp/auth_callback",
         "https://claude.com/api/mcp/auth_callback",
+        "https://chatgpt.com/connector_platform_oauth_redirect",
         "http://localhost:*",
         "http://127.0.0.1:*",
     ]

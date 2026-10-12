@@ -115,9 +115,11 @@ def test_google_sign_in_is_discoverable(tmp_path: Path) -> None:
         server = httpx.get(f"{base}/.well-known/oauth-authorization-server").json()
         assert meta["authorization_servers"] and server["registration_endpoint"].startswith(base)
         foreign = {"redirect_uris": ["https://evil.example/cb"], "client_name": "phish"}
-        assert httpx.post(server["registration_endpoint"], json=foreign).status_code == 400  # only Claude's callbacks
+        assert httpx.post(server["registration_endpoint"], json=foreign).status_code == 400  # unknown callback
         local = {"redirect_uris": ["http://localhost:51234/callback"], "client_name": "claude-code"}
         assert httpx.post(server["registration_endpoint"], json=local).status_code == 201  # any loopback port
+        chatgpt = {"redirect_uris": ["https://chatgpt.com/connector_platform_oauth_redirect"], "client_name": "ChatGPT"}
+        assert httpx.post(server["registration_endpoint"], json=chatgpt).status_code == 201
         register = {"redirect_uris": ["https://claude.ai/api/mcp/auth_callback"], "client_name": "test"}
         client = httpx.post(server["registration_endpoint"], json=register).json()
         start = httpx.get(
